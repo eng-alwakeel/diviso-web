@@ -2,7 +2,6 @@ import { useEffect, useState, useMemo } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { SEO } from "@/components/SEO";
 import { AppHeader } from "@/components/AppHeader";
-import { BottomNav } from "@/components/BottomNav";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -437,7 +436,7 @@ const GroupInvite = () => {
         </Tabs>
       </div>
 
-      <BottomNav />
+      
       
       {/* Profile Completion Sheet */}
       <ProfileCompletionSheet

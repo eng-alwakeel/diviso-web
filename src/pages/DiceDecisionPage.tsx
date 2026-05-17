@@ -2,7 +2,6 @@ import React, { useState, useEffect, useMemo, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 import { SEO } from "@/components/SEO";
 import { AppHeader } from "@/components/AppHeader";
-import { BottomNav } from "@/components/BottomNav";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { DicePicker } from "@/components/dice/DicePicker";
@@ -246,7 +245,7 @@ const DiceDecisionPage = () => {
       </div>
 
       <div className="h-24" />
-      <BottomNav />
+      
 
       <ZeroCreditsPaywall
         open={showPaywall}

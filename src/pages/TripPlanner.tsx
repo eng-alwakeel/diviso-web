@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { SEO } from "@/components/SEO";
 import { AppHeader } from "@/components/AppHeader";
-import { BottomNav } from "@/components/BottomNav";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -450,7 +449,7 @@ export default function TripPlanner() {
         {step === 'result' && renderResult()}
       </div>
 
-      <BottomNav />
+      
 
       <ZeroCreditsPaywall
         open={showPaywall}

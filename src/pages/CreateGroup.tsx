@@ -16,7 +16,6 @@ import {
 import { CurrencySelector } from "@/components/ui/currency-selector";
 import { AppHeader } from "@/components/AppHeader";
 import { useNavigate } from "react-router-dom";
-import { BottomNav } from "@/components/BottomNav";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { useCurrencies } from "@/hooks/useCurrencies";
@@ -268,7 +267,7 @@ const CreateGroup = () => {
       </UnifiedAdLayout>
       
       <div className="h-32 lg:hidden" />
-      <BottomNav />
+      
       
       {/* Zero Credits Paywall */}
       <ZeroCreditsPaywall

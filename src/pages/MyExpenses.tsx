@@ -15,7 +15,6 @@ import { ExpenseStats } from "@/components/expenses/ExpenseStats";
 import { ExpenseChart } from "@/components/expenses/ExpenseChart";
 import { ExpenseDetailsDialog } from "@/components/group/ExpenseDetailsDialog";
 import { MyExpense } from "@/hooks/useMyExpenses";
-import { BottomNav } from "@/components/BottomNav";
 import { AppHeader } from "@/components/AppHeader";
 import { UnifiedAdLayout } from "@/components/ads/UnifiedAdLayout";
 import { FixedStatsAdBanner } from "@/components/ads/FixedStatsAdBanner";
@@ -298,7 +297,7 @@ const MyExpenses = () => {
       </UnifiedAdLayout>
       
       {/* Bottom Navigation */}
-      <BottomNav />
+      
     </div>
   );
 };

@@ -27,6 +27,7 @@ import { AdminProtectedRoute } from "./components/AdminProtectedRoute";
 import InviteRoute from "./pages/InviteRoute";
 import PhoneInviteRoute from "./pages/PhoneInviteRoute";
 import NotFound from "./pages/NotFound";
+import { AppLayout } from "./layouts/AppLayout";
 
 // Lazy load heavy components
 const LazyCreateGroup = withLazyLoading(lazy(() => import("./pages/CreateGroup")));
@@ -168,35 +169,37 @@ const AppRoutes: React.FC = () => {
             <Route path="/en/*" element={<LazySEOLandingPage />} />
             <Route path="/ar/*" element={<LazySEOLandingPage />} />
             <Route path="/offerwall" element={<LazyOfferwall />} />
-            <Route path="/dashboard" element={<GuestRoute><PageErrorBoundary><LazyDashboard /></PageErrorBoundary></GuestRoute>} />
-            <Route path="/onboarding" element={<ProtectedRoute><PageErrorBoundary><LazyOnboarding /></PageErrorBoundary></ProtectedRoute>} />
-            <Route path="/join" element={<ProtectedRoute><PageErrorBoundary><LazyJoinByLink /></PageErrorBoundary></ProtectedRoute>} />
-            <Route path="/dice" element={<ProtectedRoute><PageErrorBoundary><LazyDiceDecisionPage /></PageErrorBoundary></ProtectedRoute>} />
-            <Route path="/plans" element={<ProtectedRoute><PageErrorBoundary><LazyPlans /></PageErrorBoundary></ProtectedRoute>} />
-            <Route path="/create-plan" element={<ProtectedRoute><PageErrorBoundary><LazyCreatePlan /></PageErrorBoundary></ProtectedRoute>} />
-            <Route path="/plan/:id" element={<ProtectedRoute><PageErrorBoundary><LazyPlanDetails /></PageErrorBoundary></ProtectedRoute>} />
-            <Route path="/create-group" element={<ProtectedRoute><PageErrorBoundary><LazyCreateGroup /></PageErrorBoundary></ProtectedRoute>} />
-            <Route path="/group/:id" element={<ProtectedRoute><PageErrorBoundary><LazyGroupDetails /></PageErrorBoundary></ProtectedRoute>} />
-            <Route path="/group/:id/invite" element={<ProtectedRoute><PageErrorBoundary><LazyGroupInvite /></PageErrorBoundary></ProtectedRoute>} />
-            <Route path="/group/:id/settings" element={<ProtectedRoute><PageErrorBoundary><LazyGroupSettings /></PageErrorBoundary></ProtectedRoute>} />
-            <Route path="/add-expense" element={<ProtectedRoute><PageErrorBoundary><LazyAddExpense /></PageErrorBoundary></ProtectedRoute>} />
-            <Route path="/my-expenses" element={<ProtectedRoute><PageErrorBoundary><LazyMyExpenses /></PageErrorBoundary></ProtectedRoute>} />
-            <Route path="/my-expenses/:type" element={<ProtectedRoute><PageErrorBoundary><LazyBalanceDrilldown /></PageErrorBoundary></ProtectedRoute>} />
-            <Route path="/my-groups" element={<ProtectedRoute><PageErrorBoundary><LazyMyGroups /></PageErrorBoundary></ProtectedRoute>} />
-            <Route path="/financial-plan" element={<ProtectedRoute><PageErrorBoundary><LazyFinancialPlan /></PageErrorBoundary></ProtectedRoute>} />
-            <Route path="/create-unified-budget" element={<ProtectedRoute><PageErrorBoundary><LazyCreateUnifiedBudget /></PageErrorBoundary></ProtectedRoute>} />
-            <Route path="/referral" element={<ProtectedRoute><PageErrorBoundary><LazyReferralCenter /></PageErrorBoundary></ProtectedRoute>} />
-            <Route path="/notifications" element={<ProtectedRoute><PageErrorBoundary><LazyNotifications /></PageErrorBoundary></ProtectedRoute>} />
-            <Route path="/settings" element={<ProtectedRoute><PageErrorBoundary><LazySettings /></PageErrorBoundary></ProtectedRoute>} />
-            <Route path="/pricing-protected" element={<ProtectedRoute><PageErrorBoundary><LazyPricingProtected /></PageErrorBoundary></ProtectedRoute>} />
+            <Route element={<AppLayout />}>
+              <Route path="/dashboard" element={<GuestRoute><PageErrorBoundary><LazyDashboard /></PageErrorBoundary></GuestRoute>} />
+              <Route path="/onboarding" element={<ProtectedRoute><PageErrorBoundary><LazyOnboarding /></PageErrorBoundary></ProtectedRoute>} />
+              <Route path="/join" element={<ProtectedRoute><PageErrorBoundary><LazyJoinByLink /></PageErrorBoundary></ProtectedRoute>} />
+              <Route path="/dice" element={<ProtectedRoute><PageErrorBoundary><LazyDiceDecisionPage /></PageErrorBoundary></ProtectedRoute>} />
+              <Route path="/plans" element={<ProtectedRoute><PageErrorBoundary><LazyPlans /></PageErrorBoundary></ProtectedRoute>} />
+              <Route path="/create-plan" element={<ProtectedRoute><PageErrorBoundary><LazyCreatePlan /></PageErrorBoundary></ProtectedRoute>} />
+              <Route path="/plan/:id" element={<ProtectedRoute><PageErrorBoundary><LazyPlanDetails /></PageErrorBoundary></ProtectedRoute>} />
+              <Route path="/create-group" element={<ProtectedRoute><PageErrorBoundary><LazyCreateGroup /></PageErrorBoundary></ProtectedRoute>} />
+              <Route path="/group/:id" element={<ProtectedRoute><PageErrorBoundary><LazyGroupDetails /></PageErrorBoundary></ProtectedRoute>} />
+              <Route path="/group/:id/invite" element={<ProtectedRoute><PageErrorBoundary><LazyGroupInvite /></PageErrorBoundary></ProtectedRoute>} />
+              <Route path="/group/:id/settings" element={<ProtectedRoute><PageErrorBoundary><LazyGroupSettings /></PageErrorBoundary></ProtectedRoute>} />
+              <Route path="/add-expense" element={<ProtectedRoute><PageErrorBoundary><LazyAddExpense /></PageErrorBoundary></ProtectedRoute>} />
+              <Route path="/my-expenses" element={<ProtectedRoute><PageErrorBoundary><LazyMyExpenses /></PageErrorBoundary></ProtectedRoute>} />
+              <Route path="/my-expenses/:type" element={<ProtectedRoute><PageErrorBoundary><LazyBalanceDrilldown /></PageErrorBoundary></ProtectedRoute>} />
+              <Route path="/my-groups" element={<ProtectedRoute><PageErrorBoundary><LazyMyGroups /></PageErrorBoundary></ProtectedRoute>} />
+              <Route path="/financial-plan" element={<ProtectedRoute><PageErrorBoundary><LazyFinancialPlan /></PageErrorBoundary></ProtectedRoute>} />
+              <Route path="/create-unified-budget" element={<ProtectedRoute><PageErrorBoundary><LazyCreateUnifiedBudget /></PageErrorBoundary></ProtectedRoute>} />
+              <Route path="/referral" element={<ProtectedRoute><PageErrorBoundary><LazyReferralCenter /></PageErrorBoundary></ProtectedRoute>} />
+              <Route path="/notifications" element={<ProtectedRoute><PageErrorBoundary><LazyNotifications /></PageErrorBoundary></ProtectedRoute>} />
+              <Route path="/settings" element={<ProtectedRoute><PageErrorBoundary><LazySettings /></PageErrorBoundary></ProtectedRoute>} />
+              <Route path="/pricing-protected" element={<ProtectedRoute><PageErrorBoundary><LazyPricingProtected /></PageErrorBoundary></ProtectedRoute>} />
+              <Route path="/my-tickets" element={<ProtectedRoute><PageErrorBoundary><LazyMyTickets /></PageErrorBoundary></ProtectedRoute>} />
+              <Route path="/credit-store" element={<ProtectedRoute><PageErrorBoundary><LazyCreditStore /></PageErrorBoundary></ProtectedRoute>} />
+            </Route>
             <Route path="/admin-dashboard" element={<AdminProtectedRoute><LazyAdminDashboard /></AdminProtectedRoute>} />
             <Route path="/admin-management" element={<AdminProtectedRoute><LazyAdminManagement /></AdminProtectedRoute>} />
             <Route path="/admin-tv" element={<AdminProtectedRoute><LazyTVDashboard /></AdminProtectedRoute>} />
             <Route path="/admin/support" element={<AdminProtectedRoute><LazySupportDashboard /></AdminProtectedRoute>} />
-            <Route path="/my-tickets" element={<ProtectedRoute><PageErrorBoundary><LazyMyTickets /></PageErrorBoundary></ProtectedRoute>} />
             <Route path="/ad-test" element={<AdTestPage />} />
             <Route path="/recommendation-test" element={<ProtectedRoute><PageErrorBoundary><LazyRecommendationTest /></PageErrorBoundary></ProtectedRoute>} />
-            <Route path="/credit-store" element={<ProtectedRoute><PageErrorBoundary><LazyCreditStore /></PageErrorBoundary></ProtectedRoute>} />
             <Route path="/payment-callback" element={<ProtectedRoute><PageErrorBoundary><LazyPaymentCallback /></PageErrorBoundary></ProtectedRoute>} />
             <Route path="/pricing" element={<LazyPricing />} />
             <Route path="/pricing-chart" element={<LazyPricingChart />} />

@@ -115,6 +115,15 @@ All colors MUST be HSL.
 
     --radius: 1rem;
 
+    /* Action Menu / FAB z-index scale */
+    --z-bottomnav: 40;
+    --z-fam-trigger: 45;
+    --z-drawer-overlay: 50;
+    --z-drawer-content: 55;
+    --z-dialog: 60;
+    --z-popover-in-dialog: 70;
+    --z-toast: 80;
+
     --sidebar-background: 0 0% 98%;
 
     --sidebar-foreground: 240 5.3% 26.1%;

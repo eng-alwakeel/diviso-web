@@ -5,7 +5,6 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { AlertTriangle, RefreshCw, Users, Receipt, Wallet, Plus, ArrowDown, ArrowUp, Activity, Gift, ChevronLeft } from "lucide-react";
 import { AppHeader } from "@/components/AppHeader";
 import { useNavigate } from "react-router-dom";
-import { BottomNav } from "@/components/BottomNav";
 import { useOptimizedDashboardData } from "@/hooks/useOptimizedQueries";
 import { useAdminAuth } from "@/hooks/useAdminAuth";
 import { useDashboardMode } from "@/hooks/useDashboardMode";
@@ -26,6 +25,7 @@ import { toast } from "@/hooks/use-toast";
 import { ToastAction } from "@/components/ui/toast";
 import { useBrowserNotificationPrompt } from "@/hooks/useBrowserNotificationPrompt";
 import { toast as sonnerToast } from "sonner";
+import { useRegisterPageActions } from "@/components/actions/ActionMenuProvider";
 
 // Lazy load dialogs
 const AchievementPopup = lazy(() => import("@/components/achievements/AchievementPopup").then(m => ({ default: m.AchievementPopup })));
@@ -82,6 +82,7 @@ const ReferralStrip = React.memo(({ totalReferrals, totalEarned, onClick }: {
 ReferralStrip.displayName = 'ReferralStrip';
 
 const Dashboard = React.memo(() => {
+  useRegisterPageActions('dashboard', ['add_expense', 'create_group', 'create_plan']);
   const { t, i18n } = useTranslation(['dashboard', 'common']);
   const navigate = useNavigate();
   const { data: adminData } = useAdminAuth();
@@ -278,7 +279,7 @@ const Dashboard = React.memo(() => {
           <Skeleton className="h-12 w-full rounded-lg" />
           <Skeleton className="h-10 w-full rounded-lg" />
         </div>
-        <BottomNav />
+        
       </div>
     );
   }
@@ -490,7 +491,7 @@ const Dashboard = React.memo(() => {
       </Suspense>
 
       <div className="h-32" />
-      <BottomNav />
+      
     </div>
   );
 });

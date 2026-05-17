@@ -14,7 +14,6 @@ import {
 } from "lucide-react";
 import { AppHeader } from "@/components/AppHeader";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
-import { BottomNav } from "@/components/BottomNav";
 import { useToast } from "@/hooks/use-toast";
 import { InviteManagementDialog } from "@/components/group/InviteManagementDialog";
 import { PendingInvitesSection } from "@/components/group/PendingInvitesSection";
@@ -58,9 +57,11 @@ import { useGroupSourcePlan } from "@/hooks/useGroupSourcePlan";
 import { GroupPlanSection } from "@/components/group/GroupPlanSection";
 import { SmartGroupSuggestions } from "@/components/recommendations/SmartGroupSuggestions";
 import { Progress } from "@/components/ui/progress";
+import { useRegisterPageActions } from "@/components/actions/ActionMenuProvider";
 
 
 const GroupDetails = () => {
+  useRegisterPageActions('group-details', ['group_add_expense', 'settlement', 'invite_member']);
   const navigate = useNavigate();
   const { toast } = useToast();
   const { id: rawId } = useParams();
@@ -954,7 +955,7 @@ const GroupDetails = () => {
       </div>
       
       <div className="h-32 lg:hidden" />
-      <BottomNav />
+      
       
       <ProfileCompletionSheet open={showProfileCompletion} onOpenChange={setShowProfileCompletion} />
     </div>

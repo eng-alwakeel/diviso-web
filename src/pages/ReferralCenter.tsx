@@ -24,7 +24,6 @@ import {
 import { ContactsPicker } from "@/components/group/ContactsPicker";
 import { AppHeader } from "@/components/AppHeader";
 import { useNavigate } from "react-router-dom";
-import { BottomNav } from "@/components/BottomNav";
 import { useToast } from "@/hooks/use-toast";
 import { useReferrals } from "@/hooks/useReferrals";
 import { useReferralStats } from "@/hooks/useReferralStats";
@@ -356,7 +355,7 @@ const ReferralCenter = () => {
         )}
       </div>
 
-      <BottomNav />
+      
     </div>
   );
 };

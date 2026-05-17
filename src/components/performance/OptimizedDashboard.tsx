@@ -4,7 +4,6 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { AlertTriangle, RefreshCw } from "lucide-react";
 import { AppHeader } from "@/components/AppHeader";
 import { useNavigate } from "react-router-dom";
-import { BottomNav } from "@/components/BottomNav";
 import { AppGuide } from "@/components/AppGuide";
 import { useOptimizedDashboardData, useOptimizedSubscriptionData } from "@/hooks/useOptimizedQueries";
 import { useAdminAuth } from "@/hooks/useAdminAuth";
@@ -142,7 +141,7 @@ const OptimizedDashboard = memo(() => {
             <Skeleton className="h-64 w-full" />
           </div>
         </div>
-        <BottomNav />
+        
       </div>
     );
   }
@@ -264,7 +263,7 @@ const OptimizedDashboard = memo(() => {
       {limits && <QuotaUpgradeDialog {...componentProps.quotaDialog} />}
       
       <div className="h-24" />
-      <BottomNav />
+      
     </div>
   );
 });

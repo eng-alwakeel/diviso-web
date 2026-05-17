@@ -2,7 +2,6 @@ import { AppHeader } from "@/components/AppHeader";
 import { PricingPlansSection } from "@/components/pricing/PricingPlansSection";
 import { CreditPackagesGrid } from "@/components/credits/CreditPackagesGrid";
 import { Footer } from "@/components/Footer";
-import { BottomNav } from "@/components/BottomNav";
 import { UnifiedAdLayout } from "@/components/ads/UnifiedAdLayout";
 import { useSearchParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -57,7 +56,7 @@ const PricingProtected = () => {
       
       <Footer />
       <div className="h-32 lg:hidden" />
-      <BottomNav />
+      
     </div>
   );
 };

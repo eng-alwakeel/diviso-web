@@ -10,7 +10,6 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 import { useGroups } from "@/hooks/useGroups";
 import { useGroupArchive } from "@/hooks/useGroupArchive";
 import { useNavigate } from "react-router-dom";
-import { BottomNav } from "@/components/BottomNav";
 import { AppHeader } from "@/components/AppHeader";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Alert, AlertDescription } from "@/components/ui/alert";
@@ -26,8 +25,10 @@ import { useGroupNotifications } from "@/hooks/useGroupNotifications";
 import { useToast } from "@/hooks/use-toast";
 import { useUsageCredits } from "@/hooks/useUsageCredits";
 import { ZeroCreditsPaywall } from "@/components/credits/ZeroCreditsPaywall";
+import { useRegisterPageActions } from "@/components/actions/ActionMenuProvider";
 
 export default function MyGroups() {
+  useRegisterPageActions('my-groups', ['create_group', 'join_by_link', 'create_plan']);
   const { t } = useTranslation(['common', 'groups']);
   const { toast } = useToast();
   const [searchQuery, setSearchQuery] = useState("");
@@ -229,7 +230,7 @@ export default function MyGroups() {
             </AlertDescription>
           </Alert>
         </div>
-        <BottomNav />
+        
       </div>
     );
   }
@@ -369,7 +370,7 @@ export default function MyGroups() {
       />
 
       <div className="h-32 lg:hidden" />
-      <BottomNav />
+      
     </div>
   );
 }

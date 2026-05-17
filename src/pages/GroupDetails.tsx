@@ -61,6 +61,7 @@ import { useRegisterPageActions } from "@/components/actions/ActionMenuProvider"
 
 
 const GroupDetails = () => {
+  useRegisterPageActions('group-details', ['group_add_expense', 'settlement', 'invite_member']);
   const navigate = useNavigate();
   const { toast } = useToast();
   const { id: rawId } = useParams();

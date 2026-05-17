@@ -82,6 +82,7 @@ const ReferralStrip = React.memo(({ totalReferrals, totalEarned, onClick }: {
 ReferralStrip.displayName = 'ReferralStrip';
 
 const Dashboard = React.memo(() => {
+  useRegisterPageActions('dashboard', ['add_expense', 'create_group', 'create_plan']);
   const { t, i18n } = useTranslation(['dashboard', 'common']);
   const navigate = useNavigate();
   const { data: adminData } = useAdminAuth();

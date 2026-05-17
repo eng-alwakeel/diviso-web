@@ -129,7 +129,21 @@
     "create_plan": "Create Plan",
     "settlement": "Settlement",
     "invite_member": "Invite Member",
-    "join_by_link": "Join by Link"
+    "join_by_link": "Join by Link",
+    "filter_expenses": "Filter Expenses",
+    "export_summary": "Export Summary",
+    "edit_group": "Edit Group",
+    "archive_group": "Archive Group",
+    "create_trip_plan": "Create Trip Plan",
+    "convert_plan_to_group": "Convert to Group",
+    "add_plan_item": "Add Plan Item",
+    "share_plan": "Share Plan",
+    "share_referral": "Share Referral",
+    "copy_referral_code": "Copy Referral Code",
+    "buy_credits": "Buy Credits",
+    "create_ticket": "New Support Ticket",
+    "mark_notifications_read": "Mark All as Read",
+    "notification_settings": "Notification Settings"
   },
   "menu": {
     "my_plans": "My Plans",

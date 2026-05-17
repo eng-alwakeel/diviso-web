@@ -129,7 +129,21 @@
     "create_plan": "إنشاء خطة",
     "settlement": "تسوية",
     "invite_member": "دعوة عضو",
-    "join_by_link": "الانضمام برابط"
+    "join_by_link": "الانضمام برابط",
+    "filter_expenses": "تصفية المصاريف",
+    "export_summary": "تصدير الملخص",
+    "edit_group": "تعديل المجموعة",
+    "archive_group": "أرشفة المجموعة",
+    "create_trip_plan": "إنشاء خطة رحلة",
+    "convert_plan_to_group": "تحويل الخطة لمجموعة",
+    "add_plan_item": "إضافة عنصر للخطة",
+    "share_plan": "مشاركة الخطة",
+    "share_referral": "مشاركة الإحالة",
+    "copy_referral_code": "نسخ كود الإحالة",
+    "buy_credits": "شراء نقاط",
+    "create_ticket": "إنشاء تذكرة دعم",
+    "mark_notifications_read": "تعليم الكل كمقروء",
+    "notification_settings": "إعدادات الإشعارات"
   },
   "menu": {
     "my_plans": "خططي",

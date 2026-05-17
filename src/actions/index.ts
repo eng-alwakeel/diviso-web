@@ -3,6 +3,7 @@ import "./contexts/dashboardActions";
 import "./contexts/groupActions";
 import "./contexts/expensesActions";
 import "./contexts/plansActions";
+import "./contexts/extraActions";
 
 export * from "./types";
 export * from "./registry";

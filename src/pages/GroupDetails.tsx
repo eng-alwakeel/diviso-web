@@ -57,6 +57,7 @@ import { useGroupSourcePlan } from "@/hooks/useGroupSourcePlan";
 import { GroupPlanSection } from "@/components/group/GroupPlanSection";
 import { SmartGroupSuggestions } from "@/components/recommendations/SmartGroupSuggestions";
 import { Progress } from "@/components/ui/progress";
+import { useRegisterPageActions } from "@/components/actions/ActionMenuProvider";
 
 
 const GroupDetails = () => {

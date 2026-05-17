@@ -25,6 +25,7 @@ import { toast } from "@/hooks/use-toast";
 import { ToastAction } from "@/components/ui/toast";
 import { useBrowserNotificationPrompt } from "@/hooks/useBrowserNotificationPrompt";
 import { toast as sonnerToast } from "sonner";
+import { useRegisterPageActions } from "@/components/actions/ActionMenuProvider";
 
 // Lazy load dialogs
 const AchievementPopup = lazy(() => import("@/components/achievements/AchievementPopup").then(m => ({ default: m.AchievementPopup })));

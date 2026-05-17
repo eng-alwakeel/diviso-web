@@ -25,6 +25,7 @@ import { useGroupNotifications } from "@/hooks/useGroupNotifications";
 import { useToast } from "@/hooks/use-toast";
 import { useUsageCredits } from "@/hooks/useUsageCredits";
 import { ZeroCreditsPaywall } from "@/components/credits/ZeroCreditsPaywall";
+import { useRegisterPageActions } from "@/components/actions/ActionMenuProvider";
 
 export default function MyGroups() {
   const { t } = useTranslation(['common', 'groups']);

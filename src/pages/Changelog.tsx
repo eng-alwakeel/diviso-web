@@ -1,6 +1,5 @@
 import { SEO } from "@/components/SEO";
 import { AppHeader } from "@/components/AppHeader";
-import { BottomNav } from "@/components/BottomNav";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, ArrowLeft, Sparkles, Zap, Shield, MessageCircle, Users, Wallet, Dice1, BarChart3, Globe, Bell } from "lucide-react";
@@ -251,7 +250,7 @@ const Changelog = () => {
         </div>
       </div>
 
-      <BottomNav />
+      
     </div>
   );
 };

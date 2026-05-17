@@ -2,7 +2,6 @@ import { useEffect, useState, useMemo } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { SEO } from "@/components/SEO";
 import { AppHeader } from "@/components/AppHeader";
-import { BottomNav } from "@/components/BottomNav";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -410,7 +409,7 @@ const GroupSettings = () => {
         </Card>
       </div>
       
-      <BottomNav />
+      
       
       {/* Dialogs */}
       <InviteManagementDialog 

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { SEO } from "@/components/SEO";
 import { AppHeader } from '@/components/AppHeader';
-import { BottomNav } from '@/components/BottomNav';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -65,7 +64,7 @@ const CreditStore = React.memo(() => {
           <Skeleton className="h-12 rounded-xl" />
           <Skeleton className="h-64 rounded-2xl" />
         </div>
-        <BottomNav />
+        
       </div>
     );
   }
@@ -305,7 +304,7 @@ const CreditStore = React.memo(() => {
         </Tabs>
       </main>
 
-      <BottomNav />
+      
     </div>
   );
 });

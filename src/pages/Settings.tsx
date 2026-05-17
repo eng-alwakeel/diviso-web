@@ -9,7 +9,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowRight, ArrowLeft, User, Coins, Globe, Bell, Shield, Save, RefreshCw, Receipt } from "lucide-react";
 import { AppHeader } from "@/components/AppHeader";
 import { useNavigate } from "react-router-dom";
-import { BottomNav } from "@/components/BottomNav";
 import { useToast } from "@/hooks/use-toast";
 import { useUserSettings } from "@/hooks/useUserSettings";
 import { useProfileImage } from "@/hooks/useProfileImage";
@@ -524,7 +523,7 @@ const Settings = () => {
       </UnifiedAdLayout>
       
       {/* Bottom Navigation */}
-      <BottomNav />
+      
     </div>
   );
 };

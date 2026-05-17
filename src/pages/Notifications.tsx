@@ -1,6 +1,5 @@
 import { SEO } from "@/components/SEO";
 import { AppHeader } from '@/components/AppHeader';
-import { BottomNav } from '@/components/BottomNav';
 import { useNotifications } from '@/hooks/useNotifications';
 import { GroupInviteCard } from '@/components/GroupInviteCard';
 import { UnifiedAdLayout } from '@/components/ads/UnifiedAdLayout';
@@ -196,7 +195,7 @@ export default function Notifications() {
             <p className="mt-2 text-muted-foreground">{t('loading')}</p>
           </div>
         </main>
-        <BottomNav />
+        
       </div>
     );
   }
@@ -442,7 +441,7 @@ export default function Notifications() {
       </UnifiedAdLayout>
 
       <div className="h-32 lg:hidden" />
-      <BottomNav />
+      
 
       <BalanceDetailsSheet
         open={showBalanceSheet}

@@ -14,7 +14,6 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { BottomNav } from '@/components/BottomNav';
 import {
   useMyTickets,
   useTicketReplies,
@@ -277,7 +276,7 @@ export default function MyTickets() {
         </DialogContent>
       </Dialog>
 
-      <BottomNav />
+      
     </div>
   );
 }

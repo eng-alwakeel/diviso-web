@@ -4,7 +4,6 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { AlertTriangle, RefreshCw, HelpCircle, Shield } from "lucide-react";
 import { AppHeader } from "@/components/AppHeader";
 import { useNavigate } from "react-router-dom";
-import { BottomNav } from "@/components/BottomNav";
 import { AppGuide } from "@/components/AppGuide";
 import { useDashboardData } from "@/hooks/useDashboardData";
 import { useAdminAuth } from "@/hooks/useAdminAuth";
@@ -48,7 +47,7 @@ const LoadingSkeleton = React.memo(() => (
         <Skeleton className="h-64 w-full" />
       </div>
     </div>
-    <BottomNav />
+    
   </div>
 ));
 
@@ -312,7 +311,7 @@ const OptimizedDashboard = React.memo(() => {
       )}
       
       <div className="h-24" />
-      <BottomNav />
+      
     </div>
   );
 });

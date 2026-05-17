@@ -23,7 +23,6 @@ import {
 } from "lucide-react";
 import { AppHeader } from "@/components/AppHeader";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import { BottomNav } from "@/components/BottomNav";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { useTranslation } from "react-i18next";
@@ -735,7 +734,7 @@ const AddExpense = () => {
             </Button>
           </div>
         </div>
-        <BottomNav />
+        
       </div>
     );
   }
@@ -1421,7 +1420,7 @@ const AddExpense = () => {
       </UnifiedAdLayout>
       
       <div className="h-32 lg:hidden" />
-      <BottomNav />
+      
       
       {/* Zero Credits Paywall */}
       <ZeroCreditsPaywall

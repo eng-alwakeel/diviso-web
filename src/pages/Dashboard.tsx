@@ -5,7 +5,6 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { AlertTriangle, RefreshCw, Users, Receipt, Wallet, Plus, ArrowDown, ArrowUp, Activity, Gift, ChevronLeft } from "lucide-react";
 import { AppHeader } from "@/components/AppHeader";
 import { useNavigate } from "react-router-dom";
-import { BottomNav } from "@/components/BottomNav";
 import { useOptimizedDashboardData } from "@/hooks/useOptimizedQueries";
 import { useAdminAuth } from "@/hooks/useAdminAuth";
 import { useDashboardMode } from "@/hooks/useDashboardMode";
@@ -278,7 +277,7 @@ const Dashboard = React.memo(() => {
           <Skeleton className="h-12 w-full rounded-lg" />
           <Skeleton className="h-10 w-full rounded-lg" />
         </div>
-        <BottomNav />
+        
       </div>
     );
   }
@@ -490,7 +489,7 @@ const Dashboard = React.memo(() => {
       </Suspense>
 
       <div className="h-32" />
-      <BottomNav />
+      
     </div>
   );
 });

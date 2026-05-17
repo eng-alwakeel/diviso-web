@@ -10,7 +10,6 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 import { useGroups } from "@/hooks/useGroups";
 import { useGroupArchive } from "@/hooks/useGroupArchive";
 import { useNavigate } from "react-router-dom";
-import { BottomNav } from "@/components/BottomNav";
 import { AppHeader } from "@/components/AppHeader";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Alert, AlertDescription } from "@/components/ui/alert";
@@ -229,7 +228,7 @@ export default function MyGroups() {
             </AlertDescription>
           </Alert>
         </div>
-        <BottomNav />
+        
       </div>
     );
   }
@@ -369,7 +368,7 @@ export default function MyGroups() {
       />
 
       <div className="h-32 lg:hidden" />
-      <BottomNav />
+      
     </div>
   );
 }

@@ -14,7 +14,6 @@ import {
 } from "lucide-react";
 import { AppHeader } from "@/components/AppHeader";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
-import { BottomNav } from "@/components/BottomNav";
 import { useToast } from "@/hooks/use-toast";
 import { InviteManagementDialog } from "@/components/group/InviteManagementDialog";
 import { PendingInvitesSection } from "@/components/group/PendingInvitesSection";
@@ -954,7 +953,7 @@ const GroupDetails = () => {
       </div>
       
       <div className="h-32 lg:hidden" />
-      <BottomNav />
+      
       
       <ProfileCompletionSheet open={showProfileCompletion} onOpenChange={setShowProfileCompletion} />
     </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { AppHeader } from "@/components/AppHeader";
-import { BottomNav } from "@/components/BottomNav";
 import { UnifiedBudgetCreator } from "@/components/budgets/UnifiedBudgetCreator";
 import { useBudgets, CreateBudgetData } from "@/hooks/useBudgets";
 import { useBudgetCategories } from "@/hooks/useBudgetCategories";
@@ -99,7 +98,7 @@ export default function CreateUnifiedBudget() {
       </UnifiedAdLayout>
       
       <div className="h-32 lg:hidden" />
-      <BottomNav />
+      
     </div>
   );
 }

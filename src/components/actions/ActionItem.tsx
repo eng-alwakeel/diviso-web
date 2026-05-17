@@ -25,6 +25,23 @@ export function ActionItem({ action, runtimeContext, onAfterRun, variant = "row"
     }
     if (action.intent === "navigate") {
       navigate(resolveTarget(action, runtimeContext));
+    } else {
+      // emit / modal / rpc → broadcast a window event so pages can react
+      // without us having to import their internal logic here.
+      try {
+        window.dispatchEvent(
+          new CustomEvent("diviso:action", {
+            detail: {
+              id: action.id,
+              intent: action.intent,
+              target: typeof action.target === "string" ? action.target : undefined,
+              ctx: runtimeContext,
+            },
+          }),
+        );
+      } catch {
+        // no-op (SSR / restricted env)
+      }
     }
     onAfterRun?.();
   };

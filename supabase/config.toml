@@ -3,6 +3,9 @@ project_id = "iwthriddasxzbjddpzzf"
 [functions.og-handler]
 verify_jwt = false
 
+[functions.og-invite-image]
+verify_jwt = false
+
 [functions.invite-preview]
 verify_jwt = false
 

@@ -97,23 +97,12 @@ export default function ReferralLanding() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background via-background to-primary/5">
-      <Helmet>
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        <link rel="canonical" href={pageUrl} />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <meta property="og:url" content={pageUrl} />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        {/* Smart App Banners */}
-        <meta
-          name="apple-itunes-app"
-          content="app-id=0000000000, app-argument=diviso://referral/${referralCode}"
-        />
-        <meta name="google-play-app" content="app-id=app.diviso" />
-        <meta name="robots" content="noindex, follow" />
-      </Helmet>
+      <SEO
+        title={title}
+        description={description}
+        canonical={pageUrl}
+        noIndex={true}
+      />
 
       <main className="container mx-auto max-w-2xl px-4 py-10 sm:py-16">
         {/* Hero */}

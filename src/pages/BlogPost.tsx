@@ -76,6 +76,22 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen bg-background" dir={isRTL ? "rtl" : "ltr"}>
+      <SEO
+        title={title}
+        description={description}
+        canonical={pageUrl}
+        ogImage={ogImage}
+        ogType="article"
+        keywords={keywords.join(", ")}
+        lang={isRTL ? "ar" : "en"}
+        article={{
+          publishedTime: article.publishDate,
+          modifiedTime: article.publishDate,
+          author: "Diviso",
+          section: article.category,
+          tags: keywords,
+        }}
+      />
       <Header />
       
       <main className="container mx-auto px-4 py-12">

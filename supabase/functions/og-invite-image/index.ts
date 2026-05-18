@@ -22,17 +22,12 @@ let wasmReady: Promise<void> | null = null;
 function ensureWasm(): Promise<void> {
   if (!wasmReady) {
     wasmReady = (async () => {
-      try {
-        // resvgWasm is a WebAssembly.Module thanks to Deno's wasm loader
-        await initWasm(resvgWasm as unknown as WebAssembly.Module);
-      } catch (e) {
-        // Fallback: fetch the wasm bytes directly (cold-start path)
-        const res = await fetch(
-          "https://esm.sh/@resvg/resvg-wasm@2.6.2/index_bg.wasm",
-        );
-        const bytes = await res.arrayBuffer();
-        await initWasm(bytes);
-      }
+      const res = await fetch(
+        "https://unpkg.com/@resvg/resvg-wasm@2.6.2/index_bg.wasm",
+      );
+      if (!res.ok) throw new Error(`wasm fetch failed: ${res.status}`);
+      const bytes = await res.arrayBuffer();
+      await initWasm(bytes);
     })();
   }
   return wasmReady;

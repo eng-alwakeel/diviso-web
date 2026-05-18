@@ -5,6 +5,7 @@ import { supabase } from '@/integrations/supabase/client';
 import { BRAND_CONFIG } from '@/lib/brandConfig';
 import { trackAnalyticsEvent } from '@/hooks/useAnalyticsEvents';
 import { toast } from 'sonner';
+import { buildInviteMessage } from '@/lib/inviteMessages';
 
 interface StepInviteProps {
   groupId: string;
@@ -16,7 +17,6 @@ export const StepInvite: React.FC<StepInviteProps> = ({ groupId, onNext }) => {
   const [hasShared, setHasShared] = useState(false);
   const [loading, setLoading] = useState(true);
 
-  const shareMessage = `دفعت عنكم 200 ريال 😅\nشوفوا كم عليكم في Diviso 👇\n`;
 
   useEffect(() => {
     const generateLink = async () => {

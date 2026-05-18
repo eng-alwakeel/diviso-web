@@ -234,20 +234,75 @@ Deno.serve(async (req) => {
     // Get demo parameter for scenario-specific OG
     const demoParam = url.searchParams.get('demo') || undefined;
 
+    // ------ Dynamic OG for group invites: /i/:code ------
+    // Allows WhatsApp/Telegram/Facebook to show a personalized preview
+    // before any redirect happens.
+    const inviteMatch = path.match(/^\/i\/([A-Za-z0-9_-]+)$/);
+    let inviteMeta: { title: string; description: string; image?: string } | null = null;
+    if (inviteMatch) {
+      const token = inviteMatch[1];
+      try {
+        const supaUrl = Deno.env.get('SUPABASE_URL');
+        const anonKey = Deno.env.get('SUPABASE_ANON_KEY');
+        if (supaUrl && anonKey) {
+          const rpcRes = await fetch(`${supaUrl}/rest/v1/rpc/get_invite_preview`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              apikey: anonKey,
+              Authorization: `Bearer ${anonKey}`,
+            },
+            body: JSON.stringify({ p_token: token }),
+          });
+          if (rpcRes.ok) {
+            const preview = await rpcRes.json();
+            if (preview && preview.is_valid) {
+              const inviter = preview.inviter_name
+                ? `${preview.inviter_name} دعاك`
+                : 'دعوة';
+              const grp = preview.group_name || 'مجموعة';
+              inviteMeta = {
+                title: `${inviter} إلى ${grp} على Diviso`,
+                description: 'قسّموا المصاريف بدون تعقيد — انضم وشوف كم لك وكم عليك.',
+              };
+            } else {
+              inviteMeta = {
+                title: 'دعوة Diviso',
+                description: 'انضم وشارك في قسمة المصاريف بسهولة وعدالة.',
+              };
+            }
+          }
+        }
+      } catch (e) {
+        console.error('Failed to fetch invite preview for OG:', e);
+      }
+    }
+
     // Check if request is from a crawler
     if (isCrawler(userAgent)) {
       console.log(`Crawler detected: ${userAgent.substring(0, 50)}... for path: ${path}, demo: ${demoParam || 'none'}`);
-      
-      const html = generateOgHtml(path, fullUrl, demoParam);
-      
+
+      let html: string;
+      if (inviteMeta) {
+        // Inject invite metadata via the same generator
+        const original = pageMetadata[path];
+        pageMetadata[path] = inviteMeta;
+        html = generateOgHtml(path, fullUrl, demoParam);
+        if (original) pageMetadata[path] = original;
+        else delete pageMetadata[path];
+      } else {
+        html = generateOgHtml(path, fullUrl, demoParam);
+      }
+
       return new Response(html, {
         headers: {
           ...corsHeaders,
           'Content-Type': 'text/html; charset=utf-8',
-          'Cache-Control': 'public, max-age=3600',
+          'Cache-Control': 'public, max-age=300',
         },
       });
     }
+
 
     // For regular users, redirect to the app
     console.log(`Regular user redirect to: ${fullUrl}`);

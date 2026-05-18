@@ -54,6 +54,11 @@ const EVENT_CATEGORIES: Record<string, EventCategory> = {
   invite_sent: 'growth',
   invite_activated: 'growth',
   referral_completed: 'growth',
+  invite_link_generated: 'growth',
+  invite_opened: 'growth',
+  invite_preview_viewed: 'growth',
+  invite_share_clicked: 'growth',
+  joined_from_invite: 'growth',
   
   // Retention events
   recommendation_viewed: 'retention',

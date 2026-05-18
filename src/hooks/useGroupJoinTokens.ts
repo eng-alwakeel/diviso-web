@@ -1,6 +1,7 @@
 import { useState, useCallback } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
+import { trackAnalyticsEvent } from "@/hooks/useAnalyticsEvents";
 import { BRAND_CONFIG } from "@/lib/brandConfig";
 
 export interface GroupJoinToken {
@@ -63,14 +64,22 @@ export function useGroupJoinTokens(groupId?: string) {
 
       const tokenData = data[0];
       const url = `${BRAND_CONFIG.url}/i/${tokenData.token}`;
-      
+
+      trackAnalyticsEvent("invite_link_generated", {
+        group_id: groupId,
+        role,
+        link_type: linkType,
+        source: "useGroupJoinTokens",
+      });
+
       await fetchTokens(); // Refresh tokens list
-      
-      return { 
-        success: true, 
+
+      return {
+        success: true,
         data: tokenData,
-        url
+        url,
       };
+
     } catch (error) {
       console.error("Error creating join token:", error);
       toast.error("خطأ في إنشاء رابط الانضمام");

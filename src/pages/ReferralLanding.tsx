@@ -66,6 +66,24 @@ export default function ReferralLanding() {
     })();
   }, [referralCode, trackEvent]);
 
+  // Inject Smart App Banner meta tags (iOS & Android)
+  useEffect(() => {
+    const tags: HTMLMetaElement[] = [];
+    const add = (name: string, content: string) => {
+      const m = document.createElement("meta");
+      m.name = name;
+      m.content = content;
+      document.head.appendChild(m);
+      tags.push(m);
+    };
+    add(
+      "apple-itunes-app",
+      `app-id=0000000000, app-argument=diviso://referral/${referralCode ?? ""}`,
+    );
+    add("google-play-app", "app-id=app.diviso");
+    return () => tags.forEach((t) => t.remove());
+  }, [referralCode]);
+
   const handleDownload = (store: "ios" | "android") => {
     trackEvent("download_clicked", { store, code: referralCode });
     window.location.href = store === "ios" ? APP_STORE_URL : PLAY_STORE_URL;

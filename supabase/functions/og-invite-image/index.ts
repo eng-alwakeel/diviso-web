@@ -10,8 +10,6 @@
 // invalid / expired.
 
 import { Resvg, initWasm } from "npm:@resvg/resvg-wasm@2.6.2";
-// @ts-ignore - wasm asset
-import resvgWasm from "npm:@resvg/resvg-wasm@2.6.2/index_bg.wasm";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",

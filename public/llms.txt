@@ -1,0 +1,26 @@
+# Diviso
+
+> Diviso is a smart bill-splitting and shared-expense app for friends, family, roommates, and travel groups. Bilingual (Arabic + English), free Splitwise alternative with AI-assisted tracking, multi-currency support, and PWA offline mode.
+
+Diviso helps groups log expenses, see who owes whom, and settle up without awkwardness — over the web, as a PWA, or via WhatsApp share links. Built by Takamul Al-Bina Est. in Saudi Arabia.
+
+## Pages
+
+- [Home](/): Overview of Diviso and what it does.
+- [How it works](/how-it-works): 3-step explainer for splitting expenses with a group.
+- [Pricing](/pricing): Free plan plus premium subscription tiers.
+- [FAQ](/faq): Common questions about features, pricing, and privacy.
+- [Use cases](/use-cases): Travel, roommates, family, coworkers, dining out.
+- [Blog](/blog): Guides and tips on group expenses and travel budgeting.
+- [Changelog](/changelog): Latest product updates.
+- [Install Diviso](/install): How to install the PWA on iOS and Android.
+- [Privacy policy](/privacy-policy): How user data is handled.
+- [Terms](/terms): Terms of service.
+- [Refund policy](/refund-policy): Subscription refund rules.
+- [Cookies policy](/cookies-policy): Cookie usage.
+- [Contact / Delete account](/delete-account): Account deletion request.
+
+## Optional
+
+- [Launch landing page](/launch): Seasonal marketing page.
+- [Referral page](/from): Marketing entry for referred visitors.

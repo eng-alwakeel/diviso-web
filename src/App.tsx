@@ -46,6 +46,7 @@ const LazyNotifications = withLazyLoading(lazy(() => import("./pages/Notificatio
 const LazyPricing = withLazyLoading(lazy(() => import("./pages/Pricing")));
 const LazyPricingChart = withLazyLoading(lazy(() => import("./pages/PricingChart")));
 const LazyReferralSignup = withLazyLoading(lazy(() => import("./pages/ReferralSignup")));
+const LazyReferralLanding = withLazyLoading(lazy(() => import("./pages/ReferralLanding")));
 const LazyPrivacyPolicy = withLazyLoading(lazy(() => import("./pages/PrivacyPolicy")));
 const LazyRefundPolicy = withLazyLoading(lazy(() => import("./pages/RefundPolicy")));
 const LazyDeleteAccount = withLazyLoading(lazy(() => import("./pages/DeleteAccount")));

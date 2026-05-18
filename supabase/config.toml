@@ -1,7 +1,11 @@
 project_id = "iwthriddasxzbjddpzzf"
 
+[functions.export-admin-data]
+verify_jwt = true
+
 [functions.og-handler]
 verify_jwt = false
+
 
 [functions.og-invite-image]
 verify_jwt = false

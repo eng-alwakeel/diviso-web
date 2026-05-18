@@ -6238,6 +6238,16 @@ export type Database = {
         }[]
       }
       get_founding_program_stats: { Args: never; Returns: Json }
+      get_friends_from_other_groups: {
+        Args: { current_group_id_param: string; user_id_param: string }
+        Returns: {
+          full_name: string
+          group_id: string
+          group_name: string
+          phone: string
+          user_id: string
+        }[]
+      }
       get_funnel_metrics: {
         Args: { p_days?: number }
         Returns: {

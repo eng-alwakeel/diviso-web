@@ -22,7 +22,30 @@ const handler = async (req: Request): Promise<Response> => {
 
   try {
     console.log("=== Process Referral Signup ===");
-    
+
+    // Require authenticated caller
+    const authHeader = req.headers.get("Authorization");
+    if (!authHeader?.startsWith("Bearer ")) {
+      return new Response(JSON.stringify({ error: "Unauthorized" }), {
+        status: 401,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+    const authClient = createClient(
+      Deno.env.get("SUPABASE_URL") ?? "",
+      Deno.env.get("SUPABASE_ANON_KEY") ?? "",
+      { global: { headers: { Authorization: authHeader } } }
+    );
+    const token = authHeader.replace("Bearer ", "");
+    const { data: claimsData, error: claimsErr } = await authClient.auth.getClaims(token);
+    if (claimsErr || !claimsData?.claims?.sub) {
+      return new Response(JSON.stringify({ error: "Unauthorized" }), {
+        status: 401,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+    const callerId = claimsData.claims.sub as string;
+
     // Initialize Supabase client with service role key
     const supabaseClient = createClient(
       Deno.env.get("SUPABASE_URL") ?? "",
@@ -32,16 +55,19 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Parse request body
     const { userId, referralCode, userEmail, userName, userPhone }: ReferralSignupRequest = await req.json();
-    
-    // Logging sanitized for security - no PII in production logs
-    const isDev = Deno.env.get('ENVIRONMENT') === 'development';
-    if (isDev) {
-      console.log('Processing referral signup for user with code:', referralCode);
-    }
 
     if (!userId || !referralCode) {
       throw new Error("Missing required parameters: userId or referralCode");
     }
+
+    // Caller can only process referral signup for themselves
+    if (userId !== callerId) {
+      return new Response(JSON.stringify({ error: "Forbidden" }), {
+        status: 403,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
     
     // Generate a placeholder phone if not provided (for email signups)
     const effectivePhone = userPhone || `email_${userId.substring(0, 8)}`;

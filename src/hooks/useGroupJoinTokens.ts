@@ -1,6 +1,7 @@
 import { useState, useCallback } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
+import { trackAnalyticsEvent } from "@/hooks/useAnalyticsEvents";
 import { BRAND_CONFIG } from "@/lib/brandConfig";
 
 export interface GroupJoinToken {

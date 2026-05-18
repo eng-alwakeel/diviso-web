@@ -29,6 +29,10 @@ export const StepInvite: React.FC<StepInviteProps> = ({ groupId, onNext }) => {
 
         if (!error && data?.token) {
           setInviteLink(`${BRAND_CONFIG.url}/i/${data.token}`);
+          trackAnalyticsEvent('invite_link_generated', {
+            group_id: groupId,
+            source: 'onboarding_step_invite',
+          });
         }
       } catch {
         // Silent fail
@@ -40,8 +44,14 @@ export const StepInvite: React.FC<StepInviteProps> = ({ groupId, onNext }) => {
     generateLink();
   }, [groupId]);
 
+  const buildMessage = () =>
+    buildInviteMessage({
+      template: 'group',
+      link: inviteLink,
+    });
+
   const handleShare = async () => {
-    const fullMessage = shareMessage + inviteLink;
+    const fullMessage = buildMessage();
     try {
       if (navigator.share) {
         await navigator.share({ text: fullMessage });
@@ -51,18 +61,21 @@ export const StepInvite: React.FC<StepInviteProps> = ({ groupId, onNext }) => {
       }
       setHasShared(true);
       trackAnalyticsEvent('invite_shared', { method: 'native_share', group_id: groupId });
+      trackAnalyticsEvent('invite_share_clicked', { method: 'native_share', group_id: groupId });
     } catch {
       // User cancelled share
     }
   };
 
   const handleCopy = async () => {
-    const fullMessage = shareMessage + inviteLink;
+    const fullMessage = buildMessage();
     await navigator.clipboard.writeText(fullMessage);
     toast.success('تم نسخ الرابط');
     setHasShared(true);
     trackAnalyticsEvent('invite_shared', { method: 'copy', group_id: groupId });
+    trackAnalyticsEvent('invite_share_clicked', { method: 'copy', group_id: groupId });
   };
+
 
   return (
     <div className="w-full max-w-sm space-y-8">

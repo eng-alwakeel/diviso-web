@@ -6327,6 +6327,7 @@ export type Database = {
           total_invites_sent: number
         }[]
       }
+      get_invite_preview: { Args: { p_token: string }; Returns: Json }
       get_known_contacts: {
         Args: { p_exclude_user_ids?: string[] }
         Returns: {

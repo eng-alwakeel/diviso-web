@@ -241,9 +241,14 @@ Deno.serve(async (req) => {
     let inviteMeta: { title: string; description: string; image?: string } | null = null;
     if (inviteMatch) {
       const token = inviteMatch[1];
+      const supaUrl = Deno.env.get('SUPABASE_URL');
+      const anonKey = Deno.env.get('SUPABASE_ANON_KEY');
+      // Always point og:image to the dynamic generator — even on fallback
+      // it returns a branded image, so crawlers never see a broken preview.
+      const dynamicImage = supaUrl
+        ? `${supaUrl}/functions/v1/og-invite-image?token=${encodeURIComponent(token)}`
+        : undefined;
       try {
-        const supaUrl = Deno.env.get('SUPABASE_URL');
-        const anonKey = Deno.env.get('SUPABASE_ANON_KEY');
         if (supaUrl && anonKey) {
           const rpcRes = await fetch(`${supaUrl}/rest/v1/rpc/get_invite_preview`, {
             method: 'POST',
@@ -264,17 +269,32 @@ Deno.serve(async (req) => {
               inviteMeta = {
                 title: `${inviter} إلى ${grp} على Diviso`,
                 description: 'قسّموا المصاريف بدون تعقيد — انضم وشوف كم لك وكم عليك.',
+                image: dynamicImage,
               };
             } else {
               inviteMeta = {
                 title: 'دعوة Diviso',
                 description: 'انضم وشارك في قسمة المصاريف بسهولة وعدالة.',
+                image: dynamicImage,
               };
             }
+          } else if (dynamicImage) {
+            inviteMeta = {
+              title: 'دعوة Diviso',
+              description: 'انضم وشارك في قسمة المصاريف بسهولة وعدالة.',
+              image: dynamicImage,
+            };
           }
         }
       } catch (e) {
         console.error('Failed to fetch invite preview for OG:', e);
+        if (dynamicImage) {
+          inviteMeta = {
+            title: 'دعوة Diviso',
+            description: 'انضم وشارك في قسمة المصاريف بسهولة وعدالة.',
+            image: dynamicImage,
+          };
+        }
       }
     }
 

@@ -103,8 +103,8 @@ function generateOgHtml(path: string, fullUrl: string, demoType?: string): strin
   }
 
   const appUrl = 'https://diviso.app';
-  const ogImage = metadata.image 
-    ? `${appUrl}${metadata.image}` 
+  const ogImage = metadata.image
+    ? (metadata.image.startsWith('http') ? metadata.image : `${appUrl}${metadata.image}`)
     : `${appUrl}/og-image.png`;
   
   // CTA button text based on path

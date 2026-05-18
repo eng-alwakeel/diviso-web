@@ -10,6 +10,7 @@ import { RelatedArticles } from "@/components/blog/RelatedArticles";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { SEO } from "@/components/SEO";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -23,26 +24,40 @@ const BlogPost = () => {
   const content = article ? (isRTL ? article.content : article.contentEn) : "";
   const keywords = article ? (isRTL ? article.keywords : article.keywordsEn) : [];
   const pageUrl = article ? `https://diviso.app/blog/${article.slug}` : "";
+  const ogImage = article?.ogImage || "https://diviso.app/og-image.png";
   const BackArrow = isRTL ? ArrowRight : ArrowLeft;
 
+  // Inject BlogPosting JSON-LD
   useEffect(() => {
     if (!article) return;
-    
-    document.title = `${title} | Diviso`;
-    
-    const updateMeta = (name: string, content: string) => {
-      let meta = document.querySelector(`meta[name="${name}"]`) as HTMLMetaElement;
-      if (!meta) {
-        meta = document.createElement('meta');
-        meta.name = name;
-        document.head.appendChild(meta);
-      }
-      meta.content = content;
+    const existing = document.querySelector('script[data-blog-jsonld]');
+    if (existing) existing.remove();
+    const ld = {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: title,
+      description,
+      image: ogImage,
+      datePublished: article.publishDate,
+      dateModified: article.publishDate,
+      author: { "@type": "Organization", name: "Diviso" },
+      publisher: {
+        "@type": "Organization",
+        name: "Diviso",
+        logo: { "@type": "ImageObject", url: "https://diviso.app/favicon.png" },
+      },
+      mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
+      keywords: keywords.join(", "),
+      inLanguage: isRTL ? "ar" : "en",
     };
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.setAttribute("data-blog-jsonld", "true");
+    script.textContent = JSON.stringify(ld);
+    document.head.appendChild(script);
+    return () => { script.remove(); };
+  }, [article, title, description, ogImage, pageUrl, keywords, isRTL]);
 
-    updateMeta('description', description);
-    updateMeta('keywords', keywords.join(", "));
-  }, [article, title, description, keywords]);
 
   if (!article) {
     return (
@@ -61,6 +76,22 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen bg-background" dir={isRTL ? "rtl" : "ltr"}>
+      <SEO
+        title={title}
+        description={description}
+        canonical={pageUrl}
+        ogImage={ogImage}
+        ogType="article"
+        keywords={keywords.join(", ")}
+        lang={isRTL ? "ar" : "en"}
+        article={{
+          publishedTime: article.publishDate,
+          modifiedTime: article.publishDate,
+          author: "Diviso",
+          section: article.category,
+          tags: keywords,
+        }}
+      />
       <Header />
       
       <main className="container mx-auto px-4 py-12">

@@ -5959,6 +5959,7 @@ export type Database = {
         Args: { p_display_name?: string; p_phone?: string; p_user_id: string }
         Returns: Json
       }
+      approve_expense: { Args: { p_expense_id: string }; Returns: Json }
       archive_group: { Args: { p_group_id: string }; Returns: boolean }
       archive_old_notifications: {
         Args: { p_days_old?: number; p_user_id: string }
@@ -6632,6 +6633,10 @@ export type Database = {
       rebalance_shares_for_member: {
         Args: { p_group_id: string; p_member_user_id: string }
         Returns: undefined
+      }
+      reject_expense: {
+        Args: { p_expense_id: string; p_reason?: string }
+        Returns: Json
       }
       reject_group_invite: {
         Args: { p_group_id: string; p_user_id: string }

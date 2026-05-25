@@ -6050,6 +6050,7 @@ export type Database = {
       }
       compute_all_daily_hubs: { Args: never; Returns: Json }
       compute_daily_hub: { Args: { p_user_id: string }; Returns: Json }
+      confirm_settlement: { Args: { p_settlement_id: string }; Returns: Json }
       consume_credits: {
         Args: {
           p_action_type: string
@@ -6119,8 +6120,21 @@ export type Database = {
         }
         Returns: Json
       }
+      create_settlement: {
+        Args: {
+          p_amount: number
+          p_group_id: string
+          p_note?: string
+          p_to_user_id: string
+        }
+        Returns: Json
+      }
       deduct_credits_fefo: {
         Args: { p_action_type: string; p_amount: number; p_user_id: string }
+        Returns: Json
+      }
+      dispute_settlement: {
+        Args: { p_reason?: string; p_settlement_id: string }
         Returns: Json
       }
       ensure_plan_days: { Args: { p_plan_id: string }; Returns: undefined }
@@ -6312,6 +6326,28 @@ export type Database = {
           user_id: string
         }[]
       }
+      get_group_settlements: {
+        Args: { p_group_id: string }
+        Returns: {
+          amount: number
+          confirmed_at: string
+          confirmed_by: string
+          created_at: string
+          created_by: string
+          dispute_reason: string
+          expires_at: string
+          from_user_avatar: string
+          from_user_id: string
+          from_user_name: string
+          group_id: string
+          id: string
+          note: string
+          status: string
+          to_user_avatar: string
+          to_user_id: string
+          to_user_name: string
+        }[]
+      }
       get_groups_for_admin: {
         Args: never
         Returns: {
@@ -6357,6 +6393,7 @@ export type Database = {
             Args: { p_month: number; p_user_id: string; p_year: number }
             Returns: Json
           }
+      get_pending_actions: { Args: never; Returns: Json }
       get_pending_amounts: {
         Args: { p_group_id: string }
         Returns: {
@@ -6364,6 +6401,20 @@ export type Database = {
           pending_owed: number
           pending_paid: number
           user_id: string
+        }[]
+      }
+      get_pending_expenses_for_approval: {
+        Args: never
+        Returns: {
+          amount: number
+          created_at: string
+          created_by: string
+          created_by_name: string
+          currency: string
+          description: string
+          expense_id: string
+          group_id: string
+          group_name: string
         }[]
       }
       get_pending_group_invites: {

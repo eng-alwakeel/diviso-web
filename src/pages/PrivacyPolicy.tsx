@@ -1,163 +1,223 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ArrowLeft, Shield, Building2, Database, Share2, Lock, UserCheck, Scale } from "lucide-react";
+import {
+  ArrowLeft,
+  ArrowRight,
+  Shield,
+  Mail,
+  Database,
+  Lock,
+  Trash2,
+  Eye,
+  Megaphone,
+  Phone,
+} from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { SEO } from "@/components/SEO";
-import { useTranslation } from "react-i18next";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const PrivacyPolicy = () => {
   const navigate = useNavigate();
-  const { t } = useTranslation('privacy');
   const { isRTL } = useLanguage();
 
   const BackIcon = isRTL ? ArrowRight : ArrowLeft;
 
+  const arabicSections = [
+    {
+      icon: <Database className="h-4 w-4 text-primary" />,
+      title: "جمع البيانات",
+      content:
+        "نجمع الاسم والبريد الإلكتروني عند إنشاء الحساب.",
+    },
+    {
+      icon: <Eye className="h-4 w-4 text-primary" />,
+      title: "استخدام البيانات",
+      content:
+        "لتشغيل التطبيق وتحسين تجربتك.",
+    },
+    {
+      icon: <Lock className="h-4 w-4 text-primary" />,
+      title: "مشاركة البيانات",
+      content:
+        "لا نبيع بياناتك أبداً.",
+    },
+    {
+      icon: <Megaphone className="h-4 w-4 text-primary" />,
+      title: "الإعلانات",
+      content:
+        "نستخدم Google AdMob بمعرفات مجهولة فقط.",
+    },
+    {
+      icon: <Shield className="h-4 w-4 text-primary" />,
+      title: "الأمان",
+      content:
+        "تشفير SSL وحماية على مستوى الصف.",
+    },
+    {
+      icon: <Trash2 className="h-4 w-4 text-primary" />,
+      title: "حذف الحساب",
+      content:
+        "من الإعدادات في أي وقت.",
+    },
+    {
+      icon: <Mail className="h-4 w-4 text-primary" />,
+      title: "التواصل",
+      content: (
+        <>
+          {"support@diviso.app — "}
+          <a
+            href="mailto:support@diviso.app"
+            className="text-primary hover:underline"
+          >
+            اضغط هنا للإرسال
+          </a>
+        </>
+      ),
+    },
+  ];
+
+  const englishSections = [
+    {
+      icon: <Database className="h-4 w-4 text-primary" />,
+      title: "Data Collection",
+      content:
+        "Name and email when creating an account.",
+    },
+    {
+      icon: <Eye className="h-4 w-4 text-primary" />,
+      title: "Data Usage",
+      content:
+        "To operate the app and improve your experience.",
+    },
+    {
+      icon: <Lock className="h-4 w-4 text-primary" />,
+      title: "Data Sharing",
+      content:
+        "We never sell your personal data.",
+    },
+    {
+      icon: <Megaphone className="h-4 w-4 text-primary" />,
+      title: "Advertising",
+      content:
+        "Google AdMob with anonymized identifiers only.",
+    },
+    {
+      icon: <Shield className="h-4 w-4 text-primary" />,
+      title: "Security",
+      content:
+        "SSL encryption and row-level security.",
+    },
+    {
+      icon: <Trash2 className="h-4 w-4 text-primary" />,
+      title: "Account Deletion",
+      content:
+        "From Settings at any time.",
+    },
+    {
+      icon: <Mail className="h-4 w-4 text-primary" />,
+      title: "Contact",
+      content: (
+        <>
+          <a
+            href="mailto:support@diviso.app"
+            className="text-primary hover:underline"
+          >
+            support@diviso.app
+          </a>
+        </>
+      ),
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-background">
-      <SEO 
-        title={t('seo.title')}
-        description={t('seo.description')}
-        canonical="https://diviso.app/privacy-policy"
+      <SEO
+        title="Privacy Policy"
+        description="Diviso Privacy Policy. Learn how we collect, use, and protect your data."
+        canonical="https://diviso.app/privacy"
       />
       <Header />
       <div className="max-w-4xl mx-auto p-6 space-y-8">
         <div className="text-center space-y-4">
           <div className="flex justify-center">
             <div className="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
-              <Shield className="h-8 w-8 text-white" />
+              <Shield className="h-8 w-8 text-black" />
             </div>
           </div>
           <h1 className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            {t('title')}
+            Privacy Policy
           </h1>
           <p className="text-muted-foreground">
-            {t('description')}
+            سياسة الخصوصية
           </p>
           <p className="text-sm text-muted-foreground">
-            {t('last_updated')}: {t('last_updated_date')}
+            Last updated: May 2026 | آخر تحديث: مايو 2026
           </p>
         </div>
 
         <Card>
-          <CardContent className="p-8 space-y-8">
-            {/* Company Info */}
-            <section className="space-y-4">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-8 h-8 bg-blue-100 dark:bg-blue-900/20 rounded-lg flex items-center justify-center">
-                  <Building2 className="h-4 w-4 text-blue-600" />
-                </div>
-                <h2 className="text-xl font-semibold">{t('sections.company_info.title')}</h2>
+          <CardContent className="p-8 space-y-12">
+            {/* Arabic Section */}
+            <div className="space-y-6">
+              <h2 className="text-2xl font-bold text-center border-b border-border pb-4">
+                النسخة العربية
+              </h2>
+              <div className="space-y-4">
+                {arabicSections.map((section, index) => (
+                  <div
+                    key={`ar-${index}`}
+                    className="bg-muted/50 p-4 rounded-lg flex items-start gap-4"
+                  >
+                    <div className="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center shrink-0">
+                      {section.icon}
+                    </div>
+                    <div className="space-y-1">
+                      <h3 className="font-semibold text-foreground">
+                        {section.title}
+                      </h3>
+                      <p className="text-muted-foreground text-sm">
+                        {section.content}
+                      </p>
+                    </div>
+                  </div>
+                ))}
               </div>
-              <div className="bg-muted/50 p-6 rounded-lg space-y-3">
-                <p className="text-foreground">{t('sections.company_info.intro')}</p>
-                <ul className="list-disc list-inside space-y-2 text-muted-foreground ps-4">
-                  <li>{t('sections.company_info.items.legal_name')}</li>
-                  <li>{t('sections.company_info.items.entity_type')}</li>
-                  <li>{t('sections.company_info.items.cr_number')}</li>
-                  <li>{t('sections.company_info.items.country')}</li>
-                </ul>
-              </div>
-            </section>
+            </div>
 
-            {/* Data Collection */}
-            <section className="space-y-4">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-8 h-8 bg-green-100 dark:bg-green-900/20 rounded-lg flex items-center justify-center">
-                  <Database className="h-4 w-4 text-green-600" />
-                </div>
-                <h2 className="text-xl font-semibold">{t('sections.data_collection.title')}</h2>
+            {/* English Section */}
+            <div className="space-y-6">
+              <h2 className="text-2xl font-bold text-center border-b border-border pb-4">
+                English Version
+              </h2>
+              <div className="space-y-4">
+                {englishSections.map((section, index) => (
+                  <div
+                    key={`en-${index}`}
+                    className="bg-muted/50 p-4 rounded-lg flex items-start gap-4"
+                  >
+                    <div className="w-8 h-8 bg-primary/20 rounded-lg flex items-center justify-center shrink-0">
+                      {section.icon}
+                    </div>
+                    <div className="space-y-1">
+                      <h3 className="font-semibold text-foreground">
+                        {section.title}
+                      </h3>
+                      <p className="text-muted-foreground text-sm">
+                        {section.content}
+                      </p>
+                    </div>
+                  </div>
+                ))}
               </div>
-              <div className="bg-muted/50 p-6 rounded-lg space-y-3">
-                <p className="text-foreground">{t('sections.data_collection.intro')}</p>
-                <ul className="list-disc list-inside space-y-2 text-muted-foreground ps-4">
-                  <li>{t('sections.data_collection.items.account')}</li>
-                  <li>{t('sections.data_collection.items.subscriptions')}</li>
-                  <li>{t('sections.data_collection.items.payments')}</li>
-                  <li>{t('sections.data_collection.items.support')}</li>
-                  <li>{t('sections.data_collection.items.experience')}</li>
-                </ul>
-                <p className="text-muted-foreground text-sm italic mt-4">{t('sections.data_collection.note')}</p>
-              </div>
-            </section>
-
-            {/* Data Sharing */}
-            <section className="space-y-4">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-8 h-8 bg-purple-100 dark:bg-purple-900/20 rounded-lg flex items-center justify-center">
-                  <Share2 className="h-4 w-4 text-purple-600" />
-                </div>
-                <h2 className="text-xl font-semibold">{t('sections.data_sharing.title')}</h2>
-              </div>
-              <div className="bg-muted/50 p-6 rounded-lg space-y-3">
-                <p className="text-foreground">{t('sections.data_sharing.intro')}</p>
-                <ul className="list-disc list-inside space-y-2 text-muted-foreground ps-4">
-                  <li>{t('sections.data_sharing.items.payment_providers')}</li>
-                  <li>{t('sections.data_sharing.items.tech_providers')}</li>
-                </ul>
-                <p className="text-muted-foreground text-sm italic mt-4">{t('sections.data_sharing.note')}</p>
-              </div>
-            </section>
-
-            {/* Data Protection */}
-            <section className="space-y-4">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-8 h-8 bg-orange-100 dark:bg-orange-900/20 rounded-lg flex items-center justify-center">
-                  <Lock className="h-4 w-4 text-orange-600" />
-                </div>
-                <h2 className="text-xl font-semibold">{t('sections.data_protection.title')}</h2>
-              </div>
-              <div className="bg-muted/50 p-6 rounded-lg">
-                <p className="text-muted-foreground">
-                  {t('sections.data_protection.content')}
-                </p>
-              </div>
-            </section>
-
-            {/* Your Rights */}
-            <section className="space-y-4">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-8 h-8 bg-teal-100 dark:bg-teal-900/20 rounded-lg flex items-center justify-center">
-                  <UserCheck className="h-4 w-4 text-teal-600" />
-                </div>
-                <h2 className="text-xl font-semibold">{t('sections.your_rights.title')}</h2>
-              </div>
-              <div className="bg-muted/50 p-6 rounded-lg space-y-3">
-                <p className="text-foreground">{t('sections.your_rights.intro')}</p>
-                <ul className="list-disc list-inside space-y-2 text-muted-foreground ps-4">
-                  <li>{t('sections.your_rights.items.access')}</li>
-                  <li>{t('sections.your_rights.items.modify')}</li>
-                  <li>{t('sections.your_rights.items.cancel')}</li>
-                </ul>
-              </div>
-            </section>
-
-            {/* Governing Law */}
-            <section className="space-y-4">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-8 h-8 bg-indigo-100 dark:bg-indigo-900/20 rounded-lg flex items-center justify-center">
-                  <Scale className="h-4 w-4 text-indigo-600" />
-                </div>
-                <h2 className="text-xl font-semibold">{t('sections.governing_law.title')}</h2>
-              </div>
-              <div className="bg-muted/50 p-6 rounded-lg">
-                <p className="text-muted-foreground">
-                  {t('sections.governing_law.content')}
-                </p>
-              </div>
-            </section>
+            </div>
           </CardContent>
         </Card>
 
         <div className="text-center">
-          <Button 
-            onClick={() => navigate(-1)} 
-            className="gap-2"
-            size="lg"
-          >
+          <Button onClick={() => navigate(-1)} className="gap-2" size="lg">
             <BackIcon className="h-4 w-4" />
-            {t('back')}
+            Back
           </Button>
         </div>
       </div>

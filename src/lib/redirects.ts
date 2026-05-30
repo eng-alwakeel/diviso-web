@@ -10,4 +10,5 @@ export const REDIRECTS: Record<string, string> = {
   '/signup': '/auth',
   '/login': '/auth',
   '/register': '/auth',
+  '/privacy-policy': '/privacy',
 };

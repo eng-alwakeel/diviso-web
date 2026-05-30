@@ -48,6 +48,7 @@ const LazyPricingChart = withLazyLoading(lazy(() => import("./pages/PricingChart
 const LazyReferralSignup = withLazyLoading(lazy(() => import("./pages/ReferralSignup")));
 const LazyReferralLanding = withLazyLoading(lazy(() => import("./pages/ReferralLanding")));
 const LazyPrivacyPolicy = withLazyLoading(lazy(() => import("./pages/PrivacyPolicy")));
+const LazySupport = withLazyLoading(lazy(() => import("./pages/Support")));
 const LazyRefundPolicy = withLazyLoading(lazy(() => import("./pages/RefundPolicy")));
 const LazyDeleteAccount = withLazyLoading(lazy(() => import("./pages/DeleteAccount")));
 const LazyTermsConditions = withLazyLoading(lazy(() => import("./pages/TermsConditions")));
@@ -140,7 +141,8 @@ const AppRoutes: React.FC = () => {
             <Route path="/invite-phone/:token" element={<PhoneInviteRoute />} />
             <Route path="/join/:referralCode" element={<LazyReferralSignup />} />
             <Route path="/j/:referralCode" element={<LazyReferralLanding />} />
-            <Route path="/privacy-policy" element={<LazyPrivacyPolicy />} />
+            <Route path="/privacy" element={<LazyPrivacyPolicy />} />
+            <Route path="/support" element={<LazySupport />} />
             <Route path="/refund-policy" element={<LazyRefundPolicy />} />
             <Route path="/delete-account" element={<LazyDeleteAccount />} />
             <Route path="/terms" element={<LazyTermsConditions />} />

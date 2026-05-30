@@ -1040,9 +1040,11 @@ export type Database = {
       }
       credit_packages: {
         Row: {
+          apple_product_id: string | null
           bonus_credits: number | null
           created_at: string | null
           credits: number
+          google_product_id: string | null
           id: string
           is_active: boolean | null
           name: string
@@ -1053,9 +1055,11 @@ export type Database = {
           validity_days: number
         }
         Insert: {
+          apple_product_id?: string | null
           bonus_credits?: number | null
           created_at?: string | null
           credits: number
+          google_product_id?: string | null
           id?: string
           is_active?: boolean | null
           name: string
@@ -1066,9 +1070,11 @@ export type Database = {
           validity_days: number
         }
         Update: {
+          apple_product_id?: string | null
           bonus_credits?: number | null
           created_at?: string | null
           credits?: number
+          google_product_id?: string | null
           id?: string
           is_active?: boolean | null
           name?: string
@@ -4725,10 +4731,12 @@ export type Database = {
       }
       subscription_plans: {
         Row: {
+          apple_product_id: string | null
           billing_cycle: string
           created_at: string | null
           credits_per_month: number
           features: Json | null
+          google_product_id: string | null
           id: string
           is_active: boolean | null
           name: string
@@ -4736,10 +4744,12 @@ export type Database = {
           price_sar: number
         }
         Insert: {
+          apple_product_id?: string | null
           billing_cycle: string
           created_at?: string | null
           credits_per_month: number
           features?: Json | null
+          google_product_id?: string | null
           id?: string
           is_active?: boolean | null
           name: string
@@ -4747,10 +4757,12 @@ export type Database = {
           price_sar: number
         }
         Update: {
+          apple_product_id?: string | null
           billing_cycle?: string
           created_at?: string | null
           credits_per_month?: number
           features?: Json | null
+          google_product_id?: string | null
           id?: string
           is_active?: boolean | null
           name?: string
@@ -5371,6 +5383,33 @@ export type Database = {
           id?: string
           last_ad_at?: string | null
           rewarded_ads_count?: number | null
+          updated_at?: string | null
+          user_id?: string
+        }
+        Relationships: []
+      }
+      user_fcm_tokens: {
+        Row: {
+          created_at: string | null
+          id: string
+          platform: string
+          token: string
+          updated_at: string | null
+          user_id: string
+        }
+        Insert: {
+          created_at?: string | null
+          id?: string
+          platform: string
+          token: string
+          updated_at?: string | null
+          user_id: string
+        }
+        Update: {
+          created_at?: string | null
+          id?: string
+          platform?: string
+          token?: string
           updated_at?: string | null
           user_id?: string
         }
@@ -6133,10 +6172,12 @@ export type Database = {
         Args: { p_action_type: string; p_amount: number; p_user_id: string }
         Returns: Json
       }
+      delete_fcm_token: { Args: { p_token: string }; Returns: undefined }
       dispute_settlement: {
         Args: { p_reason?: string; p_settlement_id: string }
         Returns: Json
       }
+      end_trip: { Args: { p_group_id: string }; Returns: Json }
       ensure_plan_days: { Args: { p_plan_id: string }; Returns: undefined }
       generate_credit_note_number: { Args: never; Returns: string }
       generate_invoice_number: { Args: never; Returns: string }
@@ -6736,6 +6777,10 @@ export type Database = {
         Returns: boolean
       }
       update_user_activity: { Args: { p_user_id: string }; Returns: undefined }
+      upsert_fcm_token: {
+        Args: { p_platform: string; p_token: string }
+        Returns: undefined
+      }
       validate_family_invitation_token: {
         Args: { p_token: string }
         Returns: {

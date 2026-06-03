@@ -352,7 +352,9 @@
     "link_usage_exceeded": "Usage limit reached",
     "link_usage_exceeded_desc": "This link has reached the maximum number of uses. Request a new link from the group admin.",
     "join_error": "Error joining group",
-    "join_error_desc": "Check the invite link validity. If you have a referral link (/join/...), it's for new users only."
+    "join_error_desc": "Check the invite link validity. If you have a referral link (/join/...), it's for new users only.",
+    "download_app": "Download the app",
+    "continue_in_browser": "Continue in browser"
   },
 
   "status": {

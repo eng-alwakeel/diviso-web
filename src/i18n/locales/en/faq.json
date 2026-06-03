@@ -23,6 +23,10 @@
       "question": "Is the app free?",
       "answer": "Yes! You can use <brand>Diviso</brand> for free with basic features. We also offer paid plans for advanced features like Trip Planner and Smart Recommendations."
     },
+    "where_to_download": {
+      "question": "Where can I download the Diviso app?",
+      "answer": "<brand>Diviso</brand> is available now on the App Store for iPhone and iPad — install it from https://apps.apple.com/app/id6761329043. The Android version is coming soon. You can also use Diviso right now from your browser at diviso.app — no download needed."
+    },
     "plan_difference": {
       "question": "What's the difference between plans?",
       "answer": "Starter: 70 credits/month with basic features. Pro: 90 credits with advanced reports and AI receipt scanning. Max: 260 credits with all features including Trip Planner and Smart Recommendations."

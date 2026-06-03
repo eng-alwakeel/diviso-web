@@ -354,6 +354,7 @@
     "join_error": "Error joining group",
     "join_error_desc": "Check the invite link validity. If you have a referral link (/join/...), it's for new users only.",
     "download_app": "Download the app",
+    "reopen_link_hint": "After installing the app, come back and tap this same invite link to join the group.",
     "continue_in_browser": "Continue in browser"
   },
 

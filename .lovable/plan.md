@@ -1,150 +1,90 @@
-# خطة إعادة بناء نظام Action Menu / FAB
+# App Store / Google Play Site-Wide Audit & Fix
 
-## الهدف
-استبدال منطق `getFabActions` المبعثر داخل `BottomNav` بنظام **Actions Registry** مركزي، مع `AppLayout` موحد يمنع تكرار `BottomNav`، ودعم Drawer على الموبايل / Popover على الديسكتوب — بدون تغيير منطق أعمال الصفحات أو الهوية البصرية.
+## Audit results
 
----
+I searched the entire repo (src/, public/, index.html) for: `apple.com`, `play.google`, `App Store`, `Google Play`, `app-store`, `iOS`, `Android`, `download`, `install`, `أندرويد`, `آيفون`, `متجر`, `قريباً`, `coming soon`, and related structured-data / smart-app-banner tags.
 
-## 1) طبقة المنطق المركزية — `src/actions/`
+### Files WITH matches (will be changed)
 
-### `types.ts`
+| Area | File | Issue |
+|---|---|---|
+| Pricing page | `src/pages/Pricing.tsx` | Hardcoded `APP_STORE_URL` (no app id) + `PLAY_STORE_URL`; both CTA buttons (lines 250, 311) link to stores; bottom badges section (385–422); subtitle line 389 says "متاح على iPhone و Android" |
+| Referral landing | `src/pages/ReferralLanding.tsx` | Placeholder App Store URL `id0000000000`, Play Store URL, Smart App Banner meta (`apple-itunes-app`, `google-play-app`), platform detection + Android download branch, two store buttons (lines 183, 192) |
+| SEO landing data | `src/content/seo-pages/seoLandingPagesData.ts:322` | FAQ entry: "Is Diviso available on iOS and Android?" → answer says "Native apps are coming soon" (stale) |
+| Blog article | `src/content/blog/articles.ts:2368` | "Available on iOS, Android, and web" |
+| Structured data | `index.html:70` | JSON-LD `"operatingSystem": "Web, iOS, Android"` |
+| Structured data | `src/pages/UseCaseDetails.tsx:114` | Same JSON-LD `operatingSystem` value |
+
+### Areas SEARCHED with NO app-store/Play-Store matches (verified clean)
+
+- `src/components/Header.tsx`, `src/components/Footer.tsx` (footer only links to `/install` PWA page — no store badges)
+- `src/components/HeroSection.tsx` and all `src/components/landing/*` (hero CTA goes to `/dashboard`)
+- `src/pages/FAQ.tsx` + `src/i18n/locales/{ar,en}/faq.json` (no iOS/Android availability Q&A exists)
+- `src/pages/Support.tsx`, `src/pages/PrivacyPolicy.tsx`, `src/pages/TermsConditions.tsx`, `src/pages/HowItWorks.tsx`, `src/pages/Welcome.tsx`, `src/pages/Onboarding.tsx`
+- `src/pages/Install.tsx` + `src/i18n/locales/{ar,en}/install.json` (PWA install page only — no native store links; the "android" tab here is Chrome PWA install instructions, NOT Google Play, so it stays)
+- `src/i18n/locales/**/*.json` (download strings refer to PWA / invite messaging, not native stores — `groups.download_app` = "download Diviso to split expenses", generic, stays)
+- `public/launch/index.html`, `public/from/index.html`, `public/manifest.json`, `public/sw.js`
+- `src/content/blog/articles.ts` (only 1 hit at line 2368)
+- `src/content/use-cases/useCases.ts` (no matches)
+
+## Changes (old → new)
+
+### 1. Add a single shared flag/constants module
+
+**Create** `src/lib/appStoreLinks.ts`:
 ```ts
-export type ActionIntent = 'navigate' | 'modal' | 'rpc';
-export type ActionContextKey = 'dashboard' | 'my-groups' | 'group-details'
-  | 'expenses' | 'plans' | 'plan-details' | 'default';
-
-export interface ActionGuard {
-  id: string;
-  check: (ctx: ActionRuntimeContext) => boolean | Promise<boolean>;
-}
-
-export interface ActionDescriptor {
-  id: string;                    // 'add_expense', 'create_group'...
-  labelKey: string;              // i18n key in common.fab.*
-  icon: LucideIcon;
-  intent: ActionIntent;
-  target: string | ((ctx) => string); // route or modal id
-  guards?: ActionGuard[];
-  visibleWhen?: (ctx) => boolean;
-  analytics?: { event: string };
-}
-
-export interface ActionRuntimeContext {
-  pathname: string;
-  params: Record<string,string>;
-  user?: { id: string } | null;
-}
+// Single source of truth for native app store links.
+// Flip ANDROID_AVAILABLE to true once Google Play is publicly released.
+export const ANDROID_AVAILABLE = false;
+export const APP_STORE_URL = "https://apps.apple.com/app/id6761329043";
+export const APP_STORE_ID = "6761329043";
+export const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=app.diviso";
 ```
 
-### `registry.ts`
-- Singleton `Map<string, ActionDescriptor>` مع `registerAction()` و `getAction(id)` و `getActions(ids[])`.
-- يُملأ عند تحميل ملفات الـ contexts.
+### 2. `src/pages/Pricing.tsx`
 
-### `contexts/dashboardActions.ts`, `groupActions.ts`, `expensesActions.ts`, `plansActions.ts`
-- كل ملف يستدعي `registerAction({...})` لتسجيل أكشناته (add_expense, create_group, create_plan, settlement, invite_member, join_by_link…).
+- Replace local `APP_STORE_URL` / `PLAY_STORE_URL` constants with imports from `@/lib/appStoreLinks`.
+- Both CTA buttons (`<a href={APP_STORE_URL}>ابدأ مجاناً</a>` line 250, `<a href={APP_STORE_URL}>شراء الحزمة</a>` line 311): add `target="_blank" rel="noopener noreferrer"`.
+- Subtitle line 389: `"متاح على iPhone و Android — مجاناً."` → `"متاح على iPhone — نسخة أندرويد قريباً."`
+- App Store badge: add `target="_blank" rel="noopener noreferrer"`.
+- Google Play badge: wrap in `{ANDROID_AVAILABLE && (...)}` so it disappears entirely; replace with a small disabled label `"Android — قريباً"` (muted, non-clickable) so layout still feels balanced.
 
-### `guards.ts`
-- `requireAuth`, `requireGroupMember`, `requireQuota` — حالياً نوعّن البنية فقط ونمرر `() => true` كوظائف placeholder لربطها لاحقاً بـ `useAuthGate`/`useQuotaHandler` دون تغيير المنطق.
+### 3. `src/pages/ReferralLanding.tsx`
 
----
+- Replace placeholder URLs with imports from `@/lib/appStoreLinks`.
+- Smart App Banner: keep `apple-itunes-app` with real `app-id=6761329043`; remove `google-play-app` meta when `!ANDROID_AVAILABLE`.
+- `handleDownload`: short-circuit android branch when `!ANDROID_AVAILABLE` (no-op + toast or fall through to web continue).
+- "Download on the App Store" button (line 183): add `target="_blank" rel="noopener noreferrer"`.
+- "Get it on Google Play" button (line 192): conditionally render only when `ANDROID_AVAILABLE`; otherwise show a disabled "Android — coming soon" pill.
+- Platform detection logic: when detected `android` and `!ANDROID_AVAILABLE`, default UI to "continue on web" instead of pushing the store.
 
-## 2) طبقة العرض — `src/components/actions/`
+### 4. `src/content/seo-pages/seoLandingPagesData.ts` (line 322)
 
-### `ActionMenuProvider.tsx`
-- React Context يحمل: `currentActions: ActionDescriptor[]`, `setActions(ids)`, `open/close`, `isOpen`.
-- يوفّر hook: `useRegisterPageActions(contextKey, ids[])` — يستدعي `setActions` في `useEffect` وينظّف عند unmount → fallback إلى default.
+Old: `{ question: 'Is Diviso available on iOS and Android?', answer: 'Diviso is a progressive web app that works on any device with a browser. Native apps are coming soon.' }`
 
-### `FloatingActionMenu.tsx`
-- يقرأ من Context.
-- موبايل (`useIsMobile`): يفتح `Drawer` من الأسفل (نفس شكل الـ Drawer الحالي داخل BottomNav).
-- ديسكتوب: `Popover` مرتبط بزر `+` على الـ BottomNav أو بزر عائم زاوية اليمين-السفلى مع نفس الستايل.
+New: `{ question: 'Is Diviso available on iOS and Android?', answer: 'Diviso is available on the App Store for iPhone and iPad (https://apps.apple.com/app/id6761329043). The Android version is coming soon. Diviso also works as a progressive web app in any browser.' }`
 
-### `QuickActionsPanel.tsx`
-- مكوّن إنلاين (Card grid أو List) يستهلك نفس Registry — يحلّ محل `QuickActions/SimpleQuickActions/MinimalQuickActions`.
-- variants: `grid` (لـ QuickActions), `list` (لـ SimpleQuickActions), `inline` (لـ MinimalQuickActions).
+### 5. `src/content/blog/articles.ts` (line 2368)
 
-### `ActionItem.tsx`
-- صف موحّد (icon + label) يستخدم في الـ Drawer والـ Popover والـ Panel.
+Old: `- ✅ Available on iOS, Android, and web`
+New: `- ✅ Available on iOS (App Store) and web — Android coming soon`
 
----
+### 6. `index.html` (line 70) & `src/pages/UseCaseDetails.tsx` (line 114)
 
-## 3) Layout موحّد — `src/layouts/AppLayout.tsx`
-```tsx
-<ActionMenuProvider>
-  <Outlet />
-  <BottomNav />            {/* بدون أي منطق fab */}
-  <FloatingActionMenu />   {/* يدير الـ Drawer/Popover */}
-  <Toaster />
-</ActionMenuProvider>
-```
-- يُلفّ به في `App.tsx` كل المسارات المخصّصة للمستخدم المسجل.
-- يمنع تكرار `BottomNav` لأن الصفحات لن تستورده.
+Old: `"operatingSystem": "Web, iOS, Android"`
+New: `"operatingSystem": "Web, iOS"`
 
----
+### 7. i18n files — verification only
 
-## 4) تنظيف `BottomNav.tsx`
-- إزالة `getFabActions`, `fabActions.map`, `Drawer`, `drawerOpen`.
-- يبقى فقط: tab bar (Home/Groups) + زر `+` يستدعي `useActionMenu().toggle()`.
-- لا يستورد أي action route مباشرة.
+No translation keys reference App Store / Google Play / native download. The only download keys (`groups.download_app`, `groups.whatsapp_message`, `landing.features.cta.downloadApp`) are generic "get Diviso" copy that already correctly steers users to web/PWA. **No i18n file changes needed.** (Will re-grep to confirm before finishing.)
 
----
+## Re-enable Android later
 
-## 5) إزالة BottomNav المكرر من الصفحات
-سأبحث وأزيل `<BottomNav />` و `import BottomNav` من كل الصفحات (~25). القائمة المتوقعة:
-Dashboard, OptimizedDashboard, MyGroups, GroupSettings, CreateGroup, AddExpense, MyExpenses, BalanceDrilldown, Plans, CreatePlan, PlanDetails, TripPlanner, DiceDecisionPage, ReferralCenter, CreditStore, Pricing, PricingProtected, Settings, Notifications, MyTickets, Changelog, FinancialPlan, FoundingProgram, Onboarding (إن وُجد), Welcome.
-- الصفحات العامة (LandingPage, Blog, FAQ…) ستبقى خارج `AppLayout` كما هي.
+Single flip: set `ANDROID_AVAILABLE = true` in `src/lib/appStoreLinks.ts`. All conditional UI (Pricing badge, ReferralLanding button + smart-app-banner meta + android download handler) reactivates automatically. FAQ/blog/structured-data wording must be updated by hand at that point (clear comments will mark each spot).
 
----
+## Out of scope (untouched)
 
-## 6) تسجيل الأكشنات داخل الصفحات
-في أعلى كل صفحة رئيسية:
-```ts
-useRegisterPageActions('dashboard', ['add_expense','create_group','create_plan']);
-useRegisterPageActions('my-groups', ['create_group','join_by_link','create_plan']);
-useRegisterPageActions('group-details', ['add_expense','settlement','invite_member']);
-useRegisterPageActions('expenses', ['add_expense']);
-useRegisterPageActions('plans', ['create_plan']);
-useRegisterPageActions('plan-details', ['add_expense','invite_member']);
-```
-الصفحات بدون تسجيل ترث الـ default: `['add_expense','create_group','create_plan']`.
-
----
-
-## 7) z-index Tokens في `index.css`
-```css
-:root {
-  --z-bottomnav: 40;
-  --z-fam-trigger: 45;
-  --z-drawer-overlay: 50;
-  --z-drawer-content: 55;
-  --z-dialog: 60;
-  --z-popover-in-dialog: 70;
-  --z-toast: 80;
-}
-```
-- استبدال `z-50` داخل `BottomNav`, `drawer.tsx` بالـ tokens.
-
----
-
-## 8) توحيد QuickActions
-- `QuickActions.tsx` → wrapper حول `<QuickActionsPanel variant="grid" ids={[...]} />`.
-- `SimpleQuickActions.tsx` → `variant="list"`.
-- `MinimalQuickActions.tsx` → `variant="inline" ids={['add_expense','create_group']}`.
-- نُبقي الملفات القديمة كـ re-export للتوافق الخلفي حتى لا نكسر الاستيرادات الحالية.
-
----
-
-## القيود
-- لا تغيير على الـ UI/الهوية البصرية.
-- لا تغيير على routes أو منطق business في الصفحات.
-- نفس i18n keys (`common.fab.*`).
-
----
-
-## النتيجة المتوقعة بعد التنفيذ (تقرير سيُرفق)
-1. قائمة الملفات الجديدة (10 ملفات تقريباً).
-2. قائمة الصفحات التي أُزيلت منها `BottomNav` المكررة.
-3. جدول الأكشنات النهائي لكل context.
-4. تأكيد عدم وجود أخطاء build.
-
-هل أبدأ التنفيذ؟
+- Backend, Supabase, edge functions
+- `/install` PWA page and `install.json` (PWA install ≠ Play Store)
+- Any visual restyling beyond hiding the Play badge
+- Publishing — I will NOT publish; only stage changes for your preview review.

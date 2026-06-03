@@ -299,14 +299,6 @@ const InviteRoute = () => {
           </a>
         </Button>
 
-        {/* Re-open hint */}
-        <p className="text-xs text-muted-foreground/90 leading-relaxed px-2">
-          {t("groups:messages.reopen_link_hint", {
-            defaultValue:
-              "بعد تثبيت التطبيق، ارجع واضغط نفس رابط الدعوة لتنضم للمجموعة مباشرة.",
-          })}
-        </p>
-
         {/* Secondary: Continue in browser */}
         <Button
           onClick={handleJoin}

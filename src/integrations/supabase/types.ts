@@ -6075,10 +6075,19 @@ export type Database = {
         Args: { p_months_old?: number }
         Returns: number
       }
-      complete_credit_purchase: {
-        Args: { p_payment_reference?: string; p_purchase_id: string }
-        Returns: Json
-      }
+      complete_credit_purchase:
+        | {
+            Args: { p_payment_reference?: string; p_purchase_id: string }
+            Returns: Json
+          }
+        | {
+            Args: {
+              p_payment_provider?: string
+              p_payment_reference?: string
+              p_purchase_id: string
+            }
+            Returns: Json
+          }
       complete_onboarding_task: {
         Args: { p_task_name: string; p_user_id: string }
         Returns: Json
@@ -6121,19 +6130,34 @@ export type Database = {
           token: string
         }[]
       }
-      create_invoice_for_purchase: {
-        Args: {
-          p_amount: number
-          p_billing_cycle?: string
-          p_description: string
-          p_description_ar: string
-          p_payment_reference?: string
-          p_purchase_id: string
-          p_purchase_type: string
-          p_user_id: string
-        }
-        Returns: string
-      }
+      create_invoice_for_purchase:
+        | {
+            Args: {
+              p_amount: number
+              p_billing_cycle?: string
+              p_description: string
+              p_description_ar: string
+              p_payment_reference?: string
+              p_purchase_id: string
+              p_purchase_type: string
+              p_user_id: string
+            }
+            Returns: string
+          }
+        | {
+            Args: {
+              p_amount: number
+              p_billing_cycle?: string
+              p_description: string
+              p_description_ar: string
+              p_payment_provider?: string
+              p_payment_reference?: string
+              p_purchase_id: string
+              p_purchase_type: string
+              p_user_id: string
+            }
+            Returns: string
+          }
       create_notification: {
         Args: { p_payload?: Json; p_type: string; p_user_id: string }
         Returns: string

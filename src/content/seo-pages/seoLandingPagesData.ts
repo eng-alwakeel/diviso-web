@@ -319,7 +319,7 @@ export const seoLandingPages: SEOLandingPageData[] = [
       { question: 'Is Diviso really a free Splitwise alternative?', answer: 'Yes. Core expense splitting — unlimited groups, expenses, and members — is completely free. Diviso is the best free Splitwise alternative.' },
       { question: 'How is Diviso better than Splitwise?', answer: 'Diviso offers a cleaner interface, faster performance, free multi-currency support, and no paywall on essential features. Many users find it better than Splitwise.' },
       { question: 'Are there other apps like Splitwise?', answer: 'Yes, but Diviso stands out as the most complete free alternative. It offers everything Splitwise does and more, without the paywall.' },
-      { question: 'Is Diviso available on iOS and Android?', answer: 'Diviso is a progressive web app that works on any device with a browser. Native apps are coming soon.' },
+      { question: 'Is Diviso available on iOS and Android?', answer: 'Diviso is available on the App Store for iPhone and iPad (https://apps.apple.com/app/id6761329043). The Android version is coming soon. Diviso also works as a progressive web app in any browser.' },
       { question: 'Does Diviso have ads?', answer: 'Diviso uses minimal, non-intrusive partner recommendations. Your experience is never interrupted by ads.' },
     ],
     ctaText: 'Switch to Diviso — Free',

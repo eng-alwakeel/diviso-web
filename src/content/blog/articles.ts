@@ -2365,7 +2365,7 @@ The pioneer of expense splitting. Splitwise has a large user base and solid func
 
 **Pros:**
 - ✅ Large user base
-- ✅ Available on iOS, Android, and web
+- ✅ Available on iOS (App Store) and web — Android coming soon
 - ✅ Good group management
 
 **Cons:**

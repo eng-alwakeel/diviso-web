@@ -7,9 +7,7 @@ import { Card } from "@/components/ui/card";
 import { Gift, Sparkles, Users, Wallet, Apple, Smartphone, ArrowRight, Loader2 } from "lucide-react";
 import { useAnalyticsEvents } from "@/hooks/useAnalyticsEvents";
 
-// TODO: Replace with real store URLs once published.
-const APP_STORE_URL = "https://apps.apple.com/app/diviso/id0000000000";
-const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=app.diviso";
+import { ANDROID_AVAILABLE, APP_STORE_URL, APP_STORE_ID, PLAY_STORE_URL, EXTERNAL_LINK_PROPS } from "@/lib/appStoreLinks";
 const DEEP_LINK_SCHEME = "diviso://referral";
 
 type Platform = "ios" | "android" | "desktop";
@@ -78,15 +76,18 @@ export default function ReferralLanding() {
     };
     add(
       "apple-itunes-app",
-      `app-id=0000000000, app-argument=diviso://referral/${referralCode ?? ""}`,
+      `app-id=${APP_STORE_ID}, app-argument=diviso://referral/${referralCode ?? ""}`,
     );
-    add("google-play-app", "app-id=app.diviso");
+    if (ANDROID_AVAILABLE) {
+      add("google-play-app", "app-id=app.diviso");
+    }
     return () => tags.forEach((t) => t.remove());
   }, [referralCode]);
 
   const handleDownload = (store: "ios" | "android") => {
+    if (store === "android" && !ANDROID_AVAILABLE) return;
     trackEvent("download_clicked", { store, code: referralCode });
-    window.location.href = store === "ios" ? APP_STORE_URL : PLAY_STORE_URL;
+    window.open(store === "ios" ? APP_STORE_URL : PLAY_STORE_URL, "_blank", "noopener,noreferrer");
   };
 
   const handleOpenInApp = () => {
@@ -172,25 +173,32 @@ export default function ReferralLanding() {
           <p className="text-center text-sm font-medium text-muted-foreground">
             Download the app to get started
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div className={`grid grid-cols-1 ${ANDROID_AVAILABLE ? "sm:grid-cols-2" : ""} gap-3`}>
             <Button
               size="lg"
-              variant={platform === "android" ? "outline" : "default"}
+              variant="default"
               onClick={() => handleDownload("ios")}
               className="h-14 text-base"
             >
               <Apple className="h-5 w-5" />
               Download on the App Store
             </Button>
-            <Button
-              size="lg"
-              variant={platform === "ios" ? "outline" : "default"}
-              onClick={() => handleDownload("android")}
-              className="h-14 text-base"
-            >
-              <Smartphone className="h-5 w-5" />
-              Get it on Google Play
-            </Button>
+            {ANDROID_AVAILABLE ? (
+              <Button
+                size="lg"
+                variant={platform === "ios" ? "outline" : "default"}
+                onClick={() => handleDownload("android")}
+                className="h-14 text-base"
+              >
+                <Smartphone className="h-5 w-5" />
+                Get it on Google Play
+              </Button>
+            ) : (
+              <div className="h-14 flex items-center justify-center gap-2 rounded-md border border-border bg-muted/30 text-muted-foreground text-base">
+                <Smartphone className="h-5 w-5" />
+                Android — coming soon
+              </div>
+            )}
           </div>
 
           {platform !== "desktop" && (

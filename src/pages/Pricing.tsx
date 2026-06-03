@@ -85,8 +85,7 @@ const costs = [
   { tier: "5️⃣", label: "خمس نقاط", items: "إنشاء مجموعة، مخطط الرحلة" },
 ];
 
-const APP_STORE_URL = "https://apps.apple.com/app/diviso";
-const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=app.diviso";
+import { ANDROID_AVAILABLE, APP_STORE_URL, PLAY_STORE_URL, EXTERNAL_LINK_PROPS } from "@/lib/appStoreLinks";
 
 const Pricing = () => {
   const [cycle, setCycle] = useState<Cycle>("yearly");
@@ -247,7 +246,7 @@ const Pricing = () => {
                         : { backgroundColor: `${LIME}1a`, color: LIME, border: `1px solid ${LIME}55` }
                     }
                   >
-                    <a href={APP_STORE_URL}>ابدأ مجاناً</a>
+                    <a href={APP_STORE_URL} {...EXTERNAL_LINK_PROPS}>ابدأ مجاناً</a>
                   </Button>
                 </div>
               );
@@ -308,7 +307,7 @@ const Pricing = () => {
                       : { backgroundColor: `${LIME}1a`, color: LIME, border: `1px solid ${LIME}55` }
                   }
                 >
-                  <a href={APP_STORE_URL}>شراء الحزمة</a>
+                  <a href={APP_STORE_URL} {...EXTERNAL_LINK_PROPS}>شراء الحزمة</a>
                 </Button>
               </div>
             ))}
@@ -386,11 +385,14 @@ const Pricing = () => {
         <section className="px-4 max-w-3xl mx-auto text-center">
           <h3 className="text-xl font-bold mb-2">حمّل التطبيق وابدأ الآن</h3>
           <p className="text-muted-foreground text-sm mb-6">
-            متاح على iPhone و Android — مجاناً.
+            {ANDROID_AVAILABLE
+              ? "متاح على iPhone و Android — مجاناً."
+              : "متاح على iPhone — نسخة أندرويد قريباً."}
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a
               href={APP_STORE_URL}
+              {...EXTERNAL_LINK_PROPS}
               className="flex items-center gap-3 px-5 py-3 rounded-xl bg-foreground text-background hover:opacity-90 transition"
               aria-label="Download on the App Store"
             >
@@ -402,22 +404,36 @@ const Pricing = () => {
                 <div className="text-base font-semibold -mt-0.5">App Store</div>
               </div>
             </a>
-            <a
-              href={PLAY_STORE_URL}
-              className="flex items-center gap-3 px-5 py-3 rounded-xl bg-foreground text-background hover:opacity-90 transition"
-              aria-label="Get it on Google Play"
-            >
-              <svg viewBox="0 0 24 24" className="w-7 h-7" aria-hidden>
-                <path fill="#34A853" d="M3.609 1.814 13.792 12 3.61 22.186a1.5 1.5 0 0 1-.61-1.21V3.024c0-.474.225-.9.61-1.21z"/>
-                <path fill="#FBBC04" d="m13.792 12 3.428-3.428 4.39 2.531c.99.57.99 1.225 0 1.795l-4.39 2.53L13.792 12z"/>
-                <path fill="#EA4335" d="M17.22 8.572 4.5 1.245A1.5 1.5 0 0 0 3.609 1.814L13.792 12l3.428-3.428z"/>
-                <path fill="#4285F4" d="M17.22 15.428 13.792 12 3.61 22.186A1.5 1.5 0 0 0 4.5 22.755l12.72-7.327z"/>
-              </svg>
-              <div className="text-start leading-tight">
-                <div className="text-[10px] opacity-80">GET IT ON</div>
-                <div className="text-base font-semibold -mt-0.5">Google Play</div>
+            {ANDROID_AVAILABLE ? (
+              <a
+                href={PLAY_STORE_URL}
+                {...EXTERNAL_LINK_PROPS}
+                className="flex items-center gap-3 px-5 py-3 rounded-xl bg-foreground text-background hover:opacity-90 transition"
+                aria-label="Get it on Google Play"
+              >
+                <svg viewBox="0 0 24 24" className="w-7 h-7" aria-hidden>
+                  <path fill="#34A853" d="M3.609 1.814 13.792 12 3.61 22.186a1.5 1.5 0 0 1-.61-1.21V3.024c0-.474.225-.9.61-1.21z"/>
+                  <path fill="#FBBC04" d="m13.792 12 3.428-3.428 4.39 2.531c.99.57.99 1.225 0 1.795l-4.39 2.53L13.792 12z"/>
+                  <path fill="#EA4335" d="M17.22 8.572 4.5 1.245A1.5 1.5 0 0 0 3.609 1.814L13.792 12l3.428-3.428z"/>
+                  <path fill="#4285F4" d="M17.22 15.428 13.792 12 3.61 22.186A1.5 1.5 0 0 0 4.5 22.755l12.72-7.327z"/>
+                </svg>
+                <div className="text-start leading-tight">
+                  <div className="text-[10px] opacity-80">GET IT ON</div>
+                  <div className="text-base font-semibold -mt-0.5">Google Play</div>
+                </div>
+              </a>
+            ) : (
+              <div
+                className="flex items-center gap-3 px-5 py-3 rounded-xl border border-border bg-muted/30 text-muted-foreground cursor-not-allowed"
+                aria-label="Android coming soon"
+              >
+                <span className="text-2xl" aria-hidden>🤖</span>
+                <div className="text-start leading-tight">
+                  <div className="text-[10px] opacity-80">Android</div>
+                  <div className="text-base font-semibold -mt-0.5">قريباً</div>
+                </div>
               </div>
-            </a>
+            )}
           </div>
         </section>
       </main>

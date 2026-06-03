@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["8976FU8472.io.diviso.app"],
+        "components": [
+          { "/": "/i/*", "comment": "Group invite tokens" },
+          { "/": "/j/*", "comment": "Referral codes" }
+        ]
+      }
+    ]
+  }
+}

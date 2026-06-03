@@ -287,27 +287,29 @@ const InviteRoute = () => {
           })}
         </p>
 
+        {/* Primary: Download app */}
+        <Button asChild size="lg" className="w-full gap-2 font-bold">
+          <a
+            href="https://apps.apple.com/app/id6761329043"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t("groups:messages.download_app", { defaultValue: "حمّل التطبيق" })}
+            <ArrowRight className="w-4 h-4" />
+          </a>
+        </Button>
+
+        {/* Secondary: Continue in browser */}
         <Button
           onClick={handleJoin}
           disabled={joining}
-          size="lg"
-          className="w-full gap-2 font-bold"
+          variant="ghost"
+          size="sm"
+          className="w-full text-muted-foreground hover:text-foreground"
         >
-          {authed ? (
-            <>
-              {joining
-                ? t("groups:messages.joining", { defaultValue: "جاري الانضمام..." })
-                : t("groups:messages.join_group", { defaultValue: "انضم للمجموعة" })}
-              <ArrowRight className="w-4 h-4" />
-            </>
-          ) : (
-            <>
-              <LogIn className="w-4 h-4" />
-              {t("groups:messages.signup_to_join", {
-                defaultValue: "سجّل دخولك للانضمام",
-              })}
-            </>
-          )}
+          {joining && authed
+            ? t("groups:messages.joining", { defaultValue: "جاري الانضمام..." })
+            : t("groups:messages.continue_in_browser", { defaultValue: "المتابعة عبر المتصفح" })}
         </Button>
 
         <p className="text-[11px] text-muted-foreground/80">

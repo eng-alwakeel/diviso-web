@@ -1,59 +1,150 @@
-# App Store / Google Play Audit & Update
+# خطة إعادة بناء نظام Action Menu / FAB
 
-## Scope of search performed
+## الهدف
+استبدال منطق `getFabActions` المبعثر داخل `BottomNav` بنظام **Actions Registry** مركزي، مع `AppLayout` موحد يمنع تكرار `BottomNav`، ودعم Drawer على الموبايل / Popover على الديسكتوب — بدون تغيير منطق أعمال الصفحات أو الهوية البصرية.
 
-Searched the entire repo (`src/`, `public/`, `index.html`, all `i18n` locales EN+AR) for: `apps.apple`, `play.google`, `app store`, `google play`, `appstore`, `playstore`, `download`, `install`, `get the app`, `available on`, `coming soon`, `iOS`, `Android`, `iPhone`, `iPad`, `أندرويد`, `آيفون`, `قريباً`, `حمّل`, `ثبّت`, `متجر`, plus Open Graph / JSON-LD blocks.
+---
 
-## Files that contain actual native app-store references (will change)
+## 1) طبقة المنطق المركزية — `src/actions/`
 
-### 1. `src/pages/Pricing.tsx`
-- `APP_STORE_URL` constant (line 88) — `https://apps.apple.com/app/diviso` → `https://apps.apple.com/app/id6761329043`
-- `PLAY_STORE_URL` constant (line 89) — remove the constant; gate Google Play UI behind `ANDROID_RELEASED = false` flag.
-- Section "App Store Badges" (lines 385-422):
-  - Subtitle "متاح على iPhone و Android — مجاناً." → "متوفر الآن على App Store — نسخة أندرويد قريباً."
-  - App Store `<a>` → add `target="_blank" rel="noopener noreferrer"`.
-  - Google Play `<a>` → wrap in `{ANDROID_RELEASED && (...)}` so it's hidden, with a clear `// TODO: flip ANDROID_RELEASED to true when Play Store listing is live` comment.
-- Plan CTAs (lines 250, 311) that also point to `APP_STORE_URL` get the new URL + `target/rel`.
+### `types.ts`
+```ts
+export type ActionIntent = 'navigate' | 'modal' | 'rpc';
+export type ActionContextKey = 'dashboard' | 'my-groups' | 'group-details'
+  | 'expenses' | 'plans' | 'plan-details' | 'default';
 
-### 2. `src/pages/ReferralLanding.tsx`
-- `APP_STORE_URL` (line 11) → `https://apps.apple.com/app/id6761329043`.
-- `PLAY_STORE_URL` (line 12) → remove, replaced by `ANDROID_RELEASED = false` flag.
-- `apple-itunes-app` meta (line 81) → `app-id=6761329043`.
-- `google-play-app` meta (line 83) → only inject when `ANDROID_RELEASED`.
-- `handleDownload` (lines 87-90) → only the iOS path; Android path stays unreachable.
-- Download CTAs (lines 175-194):
-  - iOS button keeps "Download on the App Store", opens new tab.
-  - Android button: render only when `ANDROID_RELEASED`; otherwise show a single disabled pill "Android — coming soon".
+export interface ActionGuard {
+  id: string;
+  check: (ctx: ActionRuntimeContext) => boolean | Promise<boolean>;
+}
 
-### 3. FAQ content — `src/i18n/locales/en/faq.json` and `src/i18n/locales/ar/faq.json`
-Currently there is **no Q&A about platform availability / where to download**. To make FAQ tell the same story as the hero/footer/download page, add one new entry in each file (placed in the `general` category):
-- key: `where_to_download`
-- EN Q: "Where can I download the Diviso app?"
-- EN A: "Diviso is available now on the App Store for iPhone and iPad — install it from https://apps.apple.com/app/id6761329043. The Android version is coming soon. You can also use Diviso right now from your browser at diviso.app — no download needed."
-- AR Q: "وين أقدر أحمّل تطبيق Diviso؟"
-- AR A: "Diviso متوفر الآن على App Store للآيفون والآيباد — حمّله من https://apps.apple.com/app/id6761329043. نسخة أندرويد قريباً. وتقدر تستخدم Diviso الحين مباشرة من المتصفح على diviso.app بدون تحميل."
+export interface ActionDescriptor {
+  id: string;                    // 'add_expense', 'create_group'...
+  labelKey: string;              // i18n key in common.fab.*
+  icon: LucideIcon;
+  intent: ActionIntent;
+  target: string | ((ctx) => string); // route or modal id
+  guards?: ActionGuard[];
+  visibleWhen?: (ctx) => boolean;
+  analytics?: { event: string };
+}
 
-(No existing FAQ string mentions Google Play or "available on Android", so nothing to rewrite — only add the new entry above.)
+export interface ActionRuntimeContext {
+  pathname: string;
+  params: Record<string,string>;
+  user?: { id: string } | null;
+}
+```
 
-## Files checked that need NO changes (areas with no matches)
+### `registry.ts`
+- Singleton `Map<string, ActionDescriptor>` مع `registerAction()` و `getAction(id)` و `getActions(ids[])`.
+- يُملأ عند تحميل ملفات الـ contexts.
 
-- `src/components/Footer.tsx` — only links to `/install` (PWA install page). No store links. No change.
-- `src/components/Header.tsx` — no store links / download wording.
-- `src/components/HeroSection.tsx` and `src/components/landing/LandingHero.tsx` — CTA points to `/dashboard` and `/auth`, no store links.
-- `src/pages/Support.tsx`, `src/pages/Install.tsx` — `/install` is the PWA "Add to Home Screen" page. The `install.json` iOS/Android tabs refer to PWA install steps (Safari / Chrome), **not** the native stores, so they stay as-is.
-- `index.html` — head/meta/JSON-LD only mentions `"operatingSystem": "Web, iOS, Android"` (factual app metadata, not a store link); no `apps.apple` or `play.google` URLs to update.
-- `public/llms.txt`, `public/manifest.json`, `public/sw.js`, `public/robots.txt`, `public/launch/index.html`, `public/from/index.html` — no store links.
-- All other `src/i18n/locales/*` files (landing, dashboard, groups, referral, plans, credits, install, support, etc.) — strings reference the PWA install or generic "download Diviso" wording without naming a store, so nothing to rewrite. The `landing.installApp` / `groups.download_app` strings continue to point to the browser / PWA install page.
-- `src/pages/FAQ.tsx` component — purely renders from `faq.json`, so no code change needed beyond the json additions.
+### `contexts/dashboardActions.ts`, `groupActions.ts`, `expensesActions.ts`, `plansActions.ts`
+- كل ملف يستدعي `registerAction({...})` لتسجيل أكشناته (add_expense, create_group, create_plan, settlement, invite_member, join_by_link…).
 
-## Single feature flag
+### `guards.ts`
+- `requireAuth`, `requireGroupMember`, `requireQuota` — حالياً نوعّن البنية فقط ونمرر `() => true` كوظائف placeholder لربطها لاحقاً بـ `useAuthGate`/`useQuotaHandler` دون تغيير المنطق.
 
-Both `Pricing.tsx` and `ReferralLanding.tsx` will define a local `const ANDROID_RELEASED = false;` with a `// Flip to true when the Google Play listing is public.` comment, so re-enabling Android later is a one-line change in each file.
+---
 
-## Deliverable summary the agent will print after build mode
+## 2) طبقة العرض — `src/components/actions/`
 
-A grouped old → new diff list covering:
-- Download / pricing page (Pricing.tsx)
-- Referral landing (ReferralLanding.tsx)
-- FAQ i18n (en + ar)
-- "No-change" confirmation list for Footer, Header, Hero, Install/Support pages, index.html meta, public/*, other locale files.
+### `ActionMenuProvider.tsx`
+- React Context يحمل: `currentActions: ActionDescriptor[]`, `setActions(ids)`, `open/close`, `isOpen`.
+- يوفّر hook: `useRegisterPageActions(contextKey, ids[])` — يستدعي `setActions` في `useEffect` وينظّف عند unmount → fallback إلى default.
+
+### `FloatingActionMenu.tsx`
+- يقرأ من Context.
+- موبايل (`useIsMobile`): يفتح `Drawer` من الأسفل (نفس شكل الـ Drawer الحالي داخل BottomNav).
+- ديسكتوب: `Popover` مرتبط بزر `+` على الـ BottomNav أو بزر عائم زاوية اليمين-السفلى مع نفس الستايل.
+
+### `QuickActionsPanel.tsx`
+- مكوّن إنلاين (Card grid أو List) يستهلك نفس Registry — يحلّ محل `QuickActions/SimpleQuickActions/MinimalQuickActions`.
+- variants: `grid` (لـ QuickActions), `list` (لـ SimpleQuickActions), `inline` (لـ MinimalQuickActions).
+
+### `ActionItem.tsx`
+- صف موحّد (icon + label) يستخدم في الـ Drawer والـ Popover والـ Panel.
+
+---
+
+## 3) Layout موحّد — `src/layouts/AppLayout.tsx`
+```tsx
+<ActionMenuProvider>
+  <Outlet />
+  <BottomNav />            {/* بدون أي منطق fab */}
+  <FloatingActionMenu />   {/* يدير الـ Drawer/Popover */}
+  <Toaster />
+</ActionMenuProvider>
+```
+- يُلفّ به في `App.tsx` كل المسارات المخصّصة للمستخدم المسجل.
+- يمنع تكرار `BottomNav` لأن الصفحات لن تستورده.
+
+---
+
+## 4) تنظيف `BottomNav.tsx`
+- إزالة `getFabActions`, `fabActions.map`, `Drawer`, `drawerOpen`.
+- يبقى فقط: tab bar (Home/Groups) + زر `+` يستدعي `useActionMenu().toggle()`.
+- لا يستورد أي action route مباشرة.
+
+---
+
+## 5) إزالة BottomNav المكرر من الصفحات
+سأبحث وأزيل `<BottomNav />` و `import BottomNav` من كل الصفحات (~25). القائمة المتوقعة:
+Dashboard, OptimizedDashboard, MyGroups, GroupSettings, CreateGroup, AddExpense, MyExpenses, BalanceDrilldown, Plans, CreatePlan, PlanDetails, TripPlanner, DiceDecisionPage, ReferralCenter, CreditStore, Pricing, PricingProtected, Settings, Notifications, MyTickets, Changelog, FinancialPlan, FoundingProgram, Onboarding (إن وُجد), Welcome.
+- الصفحات العامة (LandingPage, Blog, FAQ…) ستبقى خارج `AppLayout` كما هي.
+
+---
+
+## 6) تسجيل الأكشنات داخل الصفحات
+في أعلى كل صفحة رئيسية:
+```ts
+useRegisterPageActions('dashboard', ['add_expense','create_group','create_plan']);
+useRegisterPageActions('my-groups', ['create_group','join_by_link','create_plan']);
+useRegisterPageActions('group-details', ['add_expense','settlement','invite_member']);
+useRegisterPageActions('expenses', ['add_expense']);
+useRegisterPageActions('plans', ['create_plan']);
+useRegisterPageActions('plan-details', ['add_expense','invite_member']);
+```
+الصفحات بدون تسجيل ترث الـ default: `['add_expense','create_group','create_plan']`.
+
+---
+
+## 7) z-index Tokens في `index.css`
+```css
+:root {
+  --z-bottomnav: 40;
+  --z-fam-trigger: 45;
+  --z-drawer-overlay: 50;
+  --z-drawer-content: 55;
+  --z-dialog: 60;
+  --z-popover-in-dialog: 70;
+  --z-toast: 80;
+}
+```
+- استبدال `z-50` داخل `BottomNav`, `drawer.tsx` بالـ tokens.
+
+---
+
+## 8) توحيد QuickActions
+- `QuickActions.tsx` → wrapper حول `<QuickActionsPanel variant="grid" ids={[...]} />`.
+- `SimpleQuickActions.tsx` → `variant="list"`.
+- `MinimalQuickActions.tsx` → `variant="inline" ids={['add_expense','create_group']}`.
+- نُبقي الملفات القديمة كـ re-export للتوافق الخلفي حتى لا نكسر الاستيرادات الحالية.
+
+---
+
+## القيود
+- لا تغيير على الـ UI/الهوية البصرية.
+- لا تغيير على routes أو منطق business في الصفحات.
+- نفس i18n keys (`common.fab.*`).
+
+---
+
+## النتيجة المتوقعة بعد التنفيذ (تقرير سيُرفق)
+1. قائمة الملفات الجديدة (10 ملفات تقريباً).
+2. قائمة الصفحات التي أُزيلت منها `BottomNav` المكررة.
+3. جدول الأكشنات النهائي لكل context.
+4. تأكيد عدم وجود أخطاء build.
+
+هل أبدأ التنفيذ؟

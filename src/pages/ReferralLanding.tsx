@@ -7,9 +7,8 @@ import { Card } from "@/components/ui/card";
 import { Gift, Sparkles, Users, Wallet, Apple, Smartphone, ArrowRight, Loader2 } from "lucide-react";
 import { useAnalyticsEvents } from "@/hooks/useAnalyticsEvents";
 
-const APP_STORE_URL = "https://apps.apple.com/app/id6761329043";
-// Flip to true when the Google Play listing is public.
-const ANDROID_RELEASED = false;
+// TODO: Replace with real store URLs once published.
+const APP_STORE_URL = "https://apps.apple.com/app/diviso/id0000000000";
 const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=app.diviso";
 const DEEP_LINK_SCHEME = "diviso://referral";
 
@@ -79,17 +78,15 @@ export default function ReferralLanding() {
     };
     add(
       "apple-itunes-app",
-      `app-id=6761329043, app-argument=diviso://referral/${referralCode ?? ""}`,
+      `app-id=0000000000, app-argument=diviso://referral/${referralCode ?? ""}`,
     );
-    if (ANDROID_RELEASED) add("google-play-app", "app-id=app.diviso");
+    add("google-play-app", "app-id=app.diviso");
     return () => tags.forEach((t) => t.remove());
   }, [referralCode]);
 
   const handleDownload = (store: "ios" | "android") => {
     trackEvent("download_clicked", { store, code: referralCode });
-    if (store === "android" && !ANDROID_RELEASED) return;
-    const url = store === "ios" ? APP_STORE_URL : PLAY_STORE_URL;
-    window.open(url, "_blank", "noopener,noreferrer");
+    window.location.href = store === "ios" ? APP_STORE_URL : PLAY_STORE_URL;
   };
 
   const handleOpenInApp = () => {
@@ -178,35 +175,22 @@ export default function ReferralLanding() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <Button
               size="lg"
-              variant="default"
+              variant={platform === "android" ? "outline" : "default"}
               onClick={() => handleDownload("ios")}
               className="h-14 text-base"
             >
               <Apple className="h-5 w-5" />
               Download on the App Store
             </Button>
-            {ANDROID_RELEASED ? (
-              <Button
-                size="lg"
-                variant={platform === "ios" ? "outline" : "default"}
-                onClick={() => handleDownload("android")}
-                className="h-14 text-base"
-              >
-                <Smartphone className="h-5 w-5" />
-                Get it on Google Play
-              </Button>
-            ) : (
-              <Button
-                size="lg"
-                variant="outline"
-                disabled
-                className="h-14 text-base cursor-not-allowed"
-                aria-label="Android version coming soon"
-              >
-                <Smartphone className="h-5 w-5" />
-                Android — coming soon
-              </Button>
-            )}
+            <Button
+              size="lg"
+              variant={platform === "ios" ? "outline" : "default"}
+              onClick={() => handleDownload("android")}
+              className="h-14 text-base"
+            >
+              <Smartphone className="h-5 w-5" />
+              Get it on Google Play
+            </Button>
           </div>
 
           {platform !== "desktop" && (

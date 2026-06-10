@@ -576,6 +576,42 @@ export type Database = {
           },
         ]
       }
+      app_config: {
+        Row: {
+          latest_build: number
+          latest_version: string | null
+          message_ar: string | null
+          message_en: string | null
+          min_supported_build: number
+          platform: string
+          soft_prompt: boolean
+          store_url: string | null
+          updated_at: string
+        }
+        Insert: {
+          latest_build?: number
+          latest_version?: string | null
+          message_ar?: string | null
+          message_en?: string | null
+          min_supported_build?: number
+          platform: string
+          soft_prompt?: boolean
+          store_url?: string | null
+          updated_at?: string
+        }
+        Update: {
+          latest_build?: number
+          latest_version?: string | null
+          message_ar?: string | null
+          message_en?: string | null
+          min_supported_build?: number
+          platform?: string
+          soft_prompt?: boolean
+          store_url?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
       balance_notifications: {
         Row: {
           amount_due: number
@@ -3111,6 +3147,39 @@ export type Database = {
           source_session_id?: string | null
           used_at?: string | null
           user_id?: string
+        }
+        Relationships: []
+      }
+      operation_costs: {
+        Row: {
+          action_type: string
+          category: string | null
+          cost: number
+          created_at: string
+          is_active: boolean
+          name_ar: string | null
+          name_en: string | null
+          updated_at: string
+        }
+        Insert: {
+          action_type: string
+          category?: string | null
+          cost: number
+          created_at?: string
+          is_active?: boolean
+          name_ar?: string | null
+          name_en?: string | null
+          updated_at?: string
+        }
+        Update: {
+          action_type?: string
+          category?: string | null
+          cost?: number
+          created_at?: string
+          is_active?: boolean
+          name_ar?: string | null
+          name_en?: string | null
+          updated_at?: string
         }
         Relationships: []
       }
@@ -6018,11 +6087,19 @@ export type Database = {
         Returns: Json
       }
       cancel_group_invite: { Args: { p_invite_id: string }; Returns: Json }
+      charge_for_action: {
+        Args: { p_action_type: string; p_metadata?: Json }
+        Returns: Json
+      }
       check_and_create_achievements: {
         Args: { p_user_id: string }
         Returns: undefined
       }
       check_and_grant_active_7_days_bonus: { Args: never; Returns: number }
+      check_app_version: {
+        Args: { p_build: number; p_platform: string }
+        Returns: Json
+      }
       check_budget_alerts: {
         Args: { p_group_id: string }
         Returns: {
@@ -6202,7 +6279,12 @@ export type Database = {
         Returns: Json
       }
       end_trip: { Args: { p_group_id: string }; Returns: Json }
+      enforce_operation_cost: {
+        Args: { p_action_type: string; p_metadata?: Json; p_user_id: string }
+        Returns: Json
+      }
       ensure_plan_days: { Args: { p_plan_id: string }; Returns: undefined }
+      expire_lapsed_subscriptions: { Args: never; Returns: number }
       generate_credit_note_number: { Args: never; Returns: string }
       generate_invoice_number: { Args: never; Returns: string }
       generate_referral_code: { Args: never; Returns: string }
@@ -6458,6 +6540,8 @@ export type Database = {
             Args: { p_month: number; p_user_id: string; p_year: number }
             Returns: Json
           }
+      get_my_subscription_context: { Args: never; Returns: Json }
+      get_operation_cost: { Args: { p_action_type: string }; Returns: number }
       get_pending_actions: { Args: never; Returns: Json }
       get_pending_amounts: {
         Args: { p_group_id: string }
@@ -6621,6 +6705,8 @@ export type Database = {
         }[]
       }
       grant_daily_credits: { Args: { p_user_id: string }; Returns: Json }
+      grant_founding_monthly_credits: { Args: never; Returns: number }
+      grant_monthly_subscription_credits: { Args: never; Returns: Json }
       grant_referral_credit_limited: {
         Args: { p_amount?: number; p_user_id: string }
         Returns: Json
@@ -6697,6 +6783,7 @@ export type Database = {
       }
       is_admin_level_user: { Args: { _user_id: string }; Returns: boolean }
       is_admin_user: { Args: never; Returns: boolean }
+      is_cost_enforcement_enabled: { Args: never; Returns: boolean }
       is_family_member_of: {
         Args: { p_family_owner_id: string; p_user_id: string }
         Returns: boolean
@@ -6749,6 +6836,16 @@ export type Database = {
       rebalance_shares_for_member: {
         Args: { p_group_id: string; p_member_user_id: string }
         Returns: undefined
+      }
+      refund_credits: {
+        Args: {
+          p_action_type?: string
+          p_amount: number
+          p_metadata?: Json
+          p_user_id: string
+          p_validity_days?: number
+        }
+        Returns: Json
       }
       reject_expense: {
         Args: { p_expense_id: string; p_reason?: string }

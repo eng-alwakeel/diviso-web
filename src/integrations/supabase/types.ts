@@ -3743,7 +3743,9 @@ export type Database = {
           name: string | null
           odoo_partner_id: number | null
           phone: string | null
+          phone_visibility: string
           privacy_policy_accepted_at: string | null
+          reputation_visibility: string
           updated_at: string
           user_number: number | null
         }
@@ -3765,7 +3767,9 @@ export type Database = {
           name?: string | null
           odoo_partner_id?: number | null
           phone?: string | null
+          phone_visibility?: string
           privacy_policy_accepted_at?: string | null
+          reputation_visibility?: string
           updated_at?: string
           user_number?: number | null
         }
@@ -3787,7 +3791,9 @@ export type Database = {
           name?: string | null
           odoo_partner_id?: number | null
           phone?: string | null
+          phone_visibility?: string
           privacy_policy_accepted_at?: string | null
+          reputation_visibility?: string
           updated_at?: string
           user_number?: number | null
         }
@@ -6541,6 +6547,10 @@ export type Database = {
           name: string
           shared_groups_count: number
         }[]
+      }
+      get_member_profile: {
+        Args: { p_group_id: string; p_target_user_id: string }
+        Returns: Json
       }
       get_monthly_stats:
         | { Args: { p_month?: number; p_year?: number }; Returns: Json }

@@ -6195,6 +6195,10 @@ export type Database = {
         }
         Returns: Json
       }
+      create_credit_purchase: {
+        Args: { p_package_id: string }
+        Returns: string
+      }
       create_group_join_token: {
         Args: {
           p_group_id: string
@@ -6268,6 +6272,10 @@ export type Database = {
           p_to_user_id: string
         }
         Returns: Json
+      }
+      create_subscription_purchase: {
+        Args: { p_billing_cycle: string; p_plan_id: string }
+        Returns: string
       }
       deduct_credits_fefo: {
         Args: { p_action_type: string; p_amount: number; p_user_id: string }

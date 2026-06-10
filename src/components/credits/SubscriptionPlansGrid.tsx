@@ -74,22 +74,15 @@ export function SubscriptionPlansGrid() {
 
       setUserId(user.id);
 
-      // Create pending subscription purchase
-      const { data: purchase, error } = await supabase
-        .from('subscription_purchases')
-        .insert({
-          user_id: user.id,
-          plan_id: plan.id,
-          billing_cycle: billingCycle,
-          price_paid: plan.price_sar,
-          status: 'pending'
-        })
-        .select()
-        .single();
+      // Create pending subscription purchase via secure server-side RPC
+      const { data: newPurchaseId, error } = await supabase.rpc('create_subscription_purchase', {
+        p_plan_id: plan.id,
+        p_billing_cycle: billingCycle,
+      });
 
       if (error) throw error;
 
-      setPurchaseId(purchase.id);
+      setPurchaseId(newPurchaseId as string);
       setPaymentDialogOpen(true);
     } catch (error) {
       console.error('Error creating subscription purchase:', error);

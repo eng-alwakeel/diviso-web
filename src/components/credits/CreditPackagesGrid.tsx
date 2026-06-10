@@ -71,22 +71,13 @@ export function CreditPackagesGrid({ onPurchase }: CreditPackagesGridProps) {
 
       setUserId(user.id);
 
-      const totalCredits = pkg.credits + (pkg.bonus_credits || 0);
-      const { data: purchase, error } = await supabase
-        .from('credit_purchases')
-        .insert({
-          user_id: user.id,
-          package_id: pkg.id,
-          credits_purchased: totalCredits,
-          price_paid: pkg.price_sar,
-          status: 'pending'
-        })
-        .select()
-        .single();
+      const { data: newPurchaseId, error } = await supabase.rpc('create_credit_purchase', {
+        p_package_id: pkg.id,
+      });
 
       if (error) throw error;
 
-      setPurchaseId(purchase.id);
+      setPurchaseId(newPurchaseId as string);
       setPaymentDialogOpen(true);
       onPurchase?.(pkg.id);
     } catch (error) {

@@ -6171,11 +6171,23 @@ export type Database = {
             }
             Returns: Json
           }
+      complete_credit_purchase_verified: {
+        Args: {
+          p_payment_provider?: string
+          p_payment_reference: string
+          p_purchase_id: string
+        }
+        Returns: Json
+      }
       complete_onboarding_task: {
         Args: { p_task_name: string; p_user_id: string }
         Returns: Json
       }
       complete_subscription_purchase: {
+        Args: { p_payment_reference: string; p_purchase_id: string }
+        Returns: Json
+      }
+      complete_subscription_purchase_verified: {
         Args: { p_payment_reference: string; p_purchase_id: string }
         Returns: Json
       }

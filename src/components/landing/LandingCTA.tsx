@@ -13,7 +13,7 @@ const LandingCTA: React.FC<LandingCTAProps> = ({ ctaText, subtext, isRTL }) => {
   const navigate = useNavigate();
 
   const handleCTA = () => {
-    navigate('/auth?mode=signup');
+    navigate('/download');
   };
 
   return (

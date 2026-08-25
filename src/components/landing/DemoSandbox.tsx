@@ -459,7 +459,7 @@ export const DemoSandbox = () => {
                 <Button
                   size="lg"
                   className="w-full py-6 text-lg font-semibold hover:scale-[1.02] transition-transform"
-                  onClick={() => navigate('/auth')}
+                  onClick={() => navigate('/download')}
                 >
                   <Sparkles className="w-5 h-5 me-2" />
                   {t('demoSandbox.step4.cta')}

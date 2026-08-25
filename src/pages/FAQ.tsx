@@ -27,7 +27,7 @@ import {
   Sparkles,
   MessageSquare
 } from 'lucide-react';
-import { InstallWidget } from '@/components/pwa/InstallWidget';
+import { DownloadAppButton } from '@/components/DownloadAppButton';
 
 const FAQ = () => {
   const { t, i18n } = useTranslation('faq');
@@ -261,9 +261,9 @@ const FAQ = () => {
             </div>
           </section>
 
-          {/* PWA Install Widget */}
-          <div className="max-w-xl lg:max-w-3xl mx-auto mb-8">
-            <InstallWidget where="faq" />
+          {/* Native app download */}
+          <div className="max-w-xl lg:max-w-3xl mx-auto mb-8 flex justify-center">
+            <DownloadAppButton size="lg" source="faq" className="px-8" />
           </div>
 
           {/* Contact CTA */}

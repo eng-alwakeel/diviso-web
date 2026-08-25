@@ -12,7 +12,7 @@ interface Props {
 
 const SEOLandingPage: React.FC<Props> = ({ data }) => {
   const navigate = useNavigate();
-  const handleCTA = () => navigate('/auth?mode=signup');
+  const handleCTA = () => navigate('/download');
   const isArabic = data.lang === 'ar';
   const dir = data.dir || 'ltr';
 

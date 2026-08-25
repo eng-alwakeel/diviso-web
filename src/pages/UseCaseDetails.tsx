@@ -297,7 +297,7 @@ const UseCaseDetails = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="rounded-full px-8">
-                <Link to="/auth">
+                <Link to="/download">
                   {isRTL ? 'ابدأ مجانًا' : 'Start for Free'}
                 </Link>
               </Button>

@@ -118,7 +118,7 @@ export const InteractiveSplitDemo = () => {
                   variant="default"
                   size="lg"
                   className="w-full py-6 text-lg font-semibold hover:scale-[1.02] transition-transform duration-200"
-                  onClick={() => navigate('/auth')}
+                  onClick={() => navigate('/download')}
                 >
                   <Sparkles className="w-5 h-5 mr-2" />
                   {t('interactiveDemo.cta')}

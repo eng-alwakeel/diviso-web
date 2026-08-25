@@ -18,7 +18,7 @@ const FAQSection = lazy(() => import("@/components/landing/FAQSection").then(m =
 // Import non-lazy for above-the-fold
 import { DemoSandbox } from "@/components/landing/DemoSandbox";
 
-import { InstallWidget } from "@/components/pwa/InstallWidget";
+import { DownloadAppButton } from "@/components/DownloadAppButton";
 
 // Properly sized skeleton to prevent layout shift - using containIntrinsicBlockSize for better CLS
 const BelowFoldSkeleton = () => (
@@ -100,9 +100,9 @@ const Index = () => {
       {/* Interactive Demo Sandbox */}
       <DemoSandbox />
       
-      {/* PWA Install Prompt */}
-      <div className="page-container !py-0 !pb-0">
-        <InstallWidget where="home" />
+      {/* Native app download */}
+      <div className="page-container !py-0 !pb-0 flex justify-center">
+        <DownloadAppButton size="lg" source="home" className="px-8" />
       </div>
       
       {/* Below the fold - consolidated lazy loading */}

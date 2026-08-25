@@ -22,6 +22,8 @@ Disallow: /referral
 Disallow: /credit-store
 Disallow: /trip-planner
 Disallow: /admin*
+Disallow: /payment-callback
+Disallow: /invite-phone
 Disallow: /group/
 Disallow: /create-*
 Disallow: /add-*
@@ -42,6 +44,8 @@ Disallow: /referral
 Disallow: /credit-store
 Disallow: /trip-planner
 Disallow: /admin*
+Disallow: /payment-callback
+Disallow: /invite-phone
 Disallow: /group/
 Disallow: /create-*
 Disallow: /add-*
@@ -62,6 +66,8 @@ Disallow: /referral
 Disallow: /credit-store
 Disallow: /trip-planner
 Disallow: /admin*
+Disallow: /payment-callback
+Disallow: /invite-phone
 Disallow: /group/
 Disallow: /create-*
 Disallow: /add-*
@@ -92,6 +98,8 @@ Disallow: /referral
 Disallow: /credit-store
 Disallow: /trip-planner
 Disallow: /admin*
+Disallow: /payment-callback
+Disallow: /invite-phone
 Disallow: /group/
 Disallow: /create-*
 Disallow: /add-*

@@ -102,7 +102,7 @@ const UseCases = () => {
               }
             </p>
             <Button asChild size="lg" className="rounded-full px-8">
-              <Link to="/auth">
+              <Link to="/download">
                 {isRTL ? 'ابدأ الآن' : 'Start Now'}
               </Link>
             </Button>

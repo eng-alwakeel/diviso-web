@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { BRAND_CONFIG } from '@/lib/brandConfig';
-import { supabase } from '@/integrations/supabase/client';
 import { useGoogleAnalytics } from '@/hooks/useGoogleAnalytics';
 import { SEO } from '@/components/SEO';
 
@@ -21,13 +20,7 @@ const InfluencerPage: React.FC = () => {
   const handleCTA = async () => {
     trackWithUTM('influencer_cta_click');
     
-    const { data: { session } } = await supabase.auth.getSession();
-    
-    if (session) {
-      navigate('/create-group');
-    } else {
-      navigate('/auth?mode=signup&redirect=/create-group');
-    }
+    navigate('/download');
   };
 
   return (

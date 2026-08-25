@@ -99,7 +99,7 @@ export const QuickStartSection = () => {
             variant="secondary"
             size="lg"
             className="text-lg px-8 py-6 h-auto shadow-lg hover:shadow-xl transition-all"
-            onClick={() => navigate('/auth')}
+            onClick={() => navigate('/download')}
           >
             {t('quickStart.cta')}
             <ArrowRight className={`w-5 h-5 ${isRTL ? 'mr-2 rotate-180' : 'ml-2'}`} />

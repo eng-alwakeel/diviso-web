@@ -255,7 +255,7 @@ const FoundingProgram = () => {
                   size="lg"
                   variant="hero"
                   className="text-lg px-8 py-6"
-                  onClick={() => navigate('/auth')}
+                  onClick={() => navigate('/download')}
                   disabled={isClosed}
                 >
                   {t('cta.button')}

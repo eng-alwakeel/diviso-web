@@ -1,45 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import { Link, useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { supabase } from "@/integrations/supabase/client";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { DownloadAppButton } from "./DownloadAppButton";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 
 const appLogo = "/lovable-uploads/e7669fe3-f50f-4cdc-95ba-1e72e597c9c2.png";
 
 export const Header = () => {
-  const navigate = useNavigate();
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const { t, i18n } = useTranslation('landing');
   const isRTL = i18n.language === 'ar';
-
-  useEffect(() => {
-    // Check auth state
-    const checkAuth = async () => {
-      const { data: { session } } = await supabase.auth.getSession();
-      setIsLoggedIn(!!session);
-    };
-    
-    checkAuth();
-
-    // Listen for auth changes
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
-      setIsLoggedIn(!!session);
-    });
-
-    return () => subscription.unsubscribe();
-  }, []);
-
-  const handleLoginClick = () => {
-    if (isLoggedIn) {
-      navigate('/dashboard');
-    } else {
-      navigate('/auth');
-    }
-  };
 
   return (
     <header className="bg-gradient-dark backdrop-blur-sm border-b border-border sticky top-0 z-50">
@@ -48,14 +21,13 @@ export const Header = () => {
           {/* Left: Actions */}
           <div className="justify-self-start flex items-center gap-1 sm:gap-2">
             <LanguageSwitcher />
-            <Button 
-              variant="hero" 
+            <DownloadAppButton
+              variant="hero"
               size="sm"
-              onClick={handleLoginClick}
+              source="header"
+              showIcon={false}
               className="text-xs sm:text-sm px-2 sm:px-3 max-w-[120px] sm:max-w-none truncate"
-            >
-              {isLoggedIn ? t('header.dashboard') : t('header.login')}
-            </Button>
+            />
           </div>
 
           {/* Center: Logo */}
@@ -163,13 +135,7 @@ export const Header = () => {
                   <div className="border-t border-border pt-4 space-y-3">
                     <LanguageSwitcher />
                     <SheetClose asChild>
-                      <Button 
-                        variant="default" 
-                        className="w-full"
-                        onClick={handleLoginClick}
-                      >
-                        {isLoggedIn ? t('header.dashboard') : t('header.login')}
-                      </Button>
+                      <DownloadAppButton variant="default" className="w-full" source="header_menu" />
                     </SheetClose>
                   </div>
                 </div>

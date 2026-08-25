@@ -2,14 +2,12 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { supabase } from "@/integrations/supabase/client";
-import { useToast } from "@/components/ui/use-toast";
-import { useQuotaHandler } from "@/hooks/useQuotaHandler";
-import { useGroupNotifications } from "@/hooks/useGroupNotifications";
 import { trackAnalyticsEvent } from "@/hooks/useAnalyticsEvents";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
-import { Users, Sparkles, LogIn, ArrowRight, AlertTriangle } from "lucide-react";
+import { Users, Sparkles, ArrowRight, AlertTriangle } from "lucide-react";
+import { APP_STORE_ID, APP_STORE_URL, EXTERNAL_LINK_PROPS } from "@/lib/appStoreLinks";
 
 interface InvitePreview {
   is_valid: boolean;
@@ -20,11 +18,6 @@ interface InvitePreview {
   member_count?: number;
   expires_at?: string | null;
 }
-
-const STORAGE_KEYS = {
-  token: "joinToken",
-  redirect: "diviso_auth_redirect",
-};
 
 const groupTypeEmoji = (t?: string) => {
   switch ((t || "").toLowerCase()) {
@@ -47,17 +40,12 @@ const groupTypeEmoji = (t?: string) => {
 const InviteRoute = () => {
   const { code } = useParams<{ code: string }>();
   const navigate = useNavigate();
-  const { toast } = useToast();
-  const { handleQuotaError } = useQuotaHandler();
   const { t } = useTranslation(["groups", "errors"]);
-  const { notifyMemberJoined } = useGroupNotifications();
 
   const [preview, setPreview] = useState<InvitePreview | null>(null);
   const [loadingPreview, setLoadingPreview] = useState(true);
-  const [joining, setJoining] = useState(false);
-  const [authed, setAuthed] = useState<boolean | null>(null);
 
-  // Load preview + auth state
+  // Load preview
   useEffect(() => {
     let cancelled = false;
     const run = async () => {
@@ -68,10 +56,7 @@ const InviteRoute = () => {
 
       trackAnalyticsEvent("invite_opened", { token: code, source: "direct" });
 
-      const [{ data: previewData }, { data: userData }] = await Promise.all([
-        supabase.rpc("get_invite_preview", { p_token: code }),
-        supabase.auth.getUser(),
-      ]);
+      const { data: previewData } = await supabase.rpc("get_invite_preview", { p_token: code });
 
       if (cancelled) return;
 
@@ -80,7 +65,6 @@ const InviteRoute = () => {
         reason: "not_found",
       };
       setPreview(parsed);
-      setAuthed(!!userData?.user);
       setLoadingPreview(false);
 
       trackAnalyticsEvent("invite_preview_viewed", {
@@ -96,106 +80,18 @@ const InviteRoute = () => {
     };
   }, [code, navigate]);
 
-  const handleJoin = async () => {
-    if (!code || joining) return;
+  // Smart App Banner: opening the invite in the installed app via universal link
+  useEffect(() => {
+    if (!code) return;
+    const m = document.createElement("meta");
+    m.name = "apple-itunes-app";
+    m.content = `app-id=${APP_STORE_ID}, app-argument=https://diviso.app/i/${code}`;
+    document.head.appendChild(m);
+    return () => m.remove();
+  }, [code]);
 
-    trackAnalyticsEvent("invite_share_clicked", { token: code, action: "join" });
-
-    if (authed === false) {
-      // Guest: store and redirect to auth
-      localStorage.setItem(STORAGE_KEYS.token, code);
-      localStorage.setItem(STORAGE_KEYS.redirect, `/i/${code}`);
-      navigate(`/auth?redirectTo=${encodeURIComponent(`/i/${code}`)}`);
-      return;
-    }
-
-    setJoining(true);
-    try {
-      const { data: { user } } = await supabase.auth.getUser();
-      if (!user) {
-        localStorage.setItem(STORAGE_KEYS.token, code);
-        navigate(`/auth?redirectTo=${encodeURIComponent(`/i/${code}`)}`);
-        return;
-      }
-
-      const { data, error } = await supabase.rpc("join_group_with_token", {
-        p_token: code,
-      });
-      if (error) throw error;
-
-      if (!data) {
-        toast({
-          variant: "destructive",
-          title: t("groups:messages.invalid_invite_link"),
-          description: t("groups:messages.invalid_invite_link_desc"),
-        });
-        navigate("/dashboard");
-        return;
-      }
-
-      // Notify other members (best-effort)
-      try {
-        const [groupRes, profileRes] = await Promise.all([
-          supabase.from("groups").select("name").eq("id", data).single(),
-          supabase
-            .from("profiles")
-            .select("display_name, name")
-            .eq("id", user.id)
-            .single(),
-        ]);
-        const groupName = groupRes.data?.name || preview?.group_name || "مجموعة";
-        const memberName =
-          profileRes.data?.display_name || profileRes.data?.name || "عضو جديد";
-        await notifyMemberJoined(data, groupName, user.id, memberName);
-      } catch (e) {
-        console.error("notify member joined failed", e);
-      }
-
-      trackAnalyticsEvent("joined_from_invite", {
-        token: code,
-        group_id: data,
-        user_id: user.id,
-      });
-
-      toast({
-        title: t("groups:messages.joined_success"),
-        description: t("groups:messages.added_to_group"),
-      });
-      navigate(`/group/${data}?showProfileCompletion=true`);
-    } catch (e: any) {
-      console.error("Join group error:", e);
-      if (e?.code === "22023") {
-        const msg = e.message;
-        if (msg === "invalid_or_expired_token") {
-          toast({
-            variant: "destructive",
-            title: t("groups:messages.invite_expired"),
-            description: t("groups:messages.invite_expired_desc"),
-          });
-        } else if (msg === "link_usage_exceeded") {
-          toast({
-            variant: "destructive",
-            title: t("groups:messages.link_usage_exceeded"),
-            description: t("groups:messages.link_usage_exceeded_desc"),
-          });
-        } else {
-          toast({
-            variant: "destructive",
-            title: t("groups:messages.invalid_invite_link"),
-            description: t("groups:messages.invalid_invite_link_desc"),
-          });
-        }
-      } else if (!handleQuotaError(e)) {
-        toast({
-          variant: "destructive",
-          title: t("groups:messages.join_error"),
-          description: t("groups:messages.join_error_desc"),
-        });
-      }
-    } finally {
-      localStorage.removeItem(STORAGE_KEYS.token);
-      setJoining(false);
-    }
+  const handleDownload = () => {
+    trackAnalyticsEvent("download_clicked", { store: "ios", source: "invite", token: code });
   };
 
   // ---------- Renders ----------
@@ -233,7 +129,12 @@ const InviteRoute = () => {
           <p className="text-sm text-muted-foreground">
             {t("groups:messages.invalid_invite_link_desc")}
           </p>
-          <Button onClick={() => navigate("/")} className="w-full">
+          <Button asChild className="w-full">
+            <a href={APP_STORE_URL} {...EXTERNAL_LINK_PROPS} onClick={handleDownload}>
+              {t("groups:messages.download_app", { defaultValue: "حمّل التطبيق" })}
+            </a>
+          </Button>
+          <Button onClick={() => navigate("/")} variant="ghost" className="w-full">
             {t("groups:messages.back_to_home", { defaultValue: "العودة للرئيسية" })}
           </Button>
         </Card>
@@ -287,29 +188,17 @@ const InviteRoute = () => {
           })}
         </p>
 
-        {/* Primary: Download app */}
+        <p className="text-sm text-muted-foreground">
+          {t("groups:messages.accept_in_app", {
+            defaultValue: "حمّل تطبيق ديفيزو وافتح رابط الدعوة من جوالك للانضمام للمجموعة.",
+          })}
+        </p>
+
         <Button asChild size="lg" className="w-full gap-2 font-bold">
-          <a
-            href="https://apps.apple.com/app/id6761329043"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={APP_STORE_URL} {...EXTERNAL_LINK_PROPS} onClick={handleDownload}>
             {t("groups:messages.download_app", { defaultValue: "حمّل التطبيق" })}
             <ArrowRight className="w-4 h-4" />
           </a>
-        </Button>
-
-        {/* Secondary: Continue in browser */}
-        <Button
-          onClick={handleJoin}
-          disabled={joining}
-          variant="ghost"
-          size="sm"
-          className="w-full text-muted-foreground hover:text-foreground"
-        >
-          {joining && authed
-            ? t("groups:messages.joining", { defaultValue: "جاري الانضمام..." })
-            : t("groups:messages.continue_in_browser", { defaultValue: "المتابعة عبر المتصفح" })}
         </Button>
 
         <p className="text-[11px] text-muted-foreground/80">

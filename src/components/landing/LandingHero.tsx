@@ -13,7 +13,7 @@ const LandingHero: React.FC<LandingHeroProps> = ({ title, ctaText, isRTL }) => {
   const navigate = useNavigate();
 
   const handleCTA = () => {
-    navigate('/auth?mode=signup');
+    navigate('/download');
   };
 
   return (

@@ -3,7 +3,6 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { ChevronDown, Link2, Sparkles } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { BRAND_CONFIG } from '@/lib/brandConfig';
-import { supabase } from '@/integrations/supabase/client';
 import { useGoogleAnalytics } from '@/hooks/useGoogleAnalytics';
 import { useFoundingProgram } from '@/hooks/useFoundingProgram';
 import { SEO } from '@/components/SEO';
@@ -141,19 +140,13 @@ const LaunchPage: React.FC = () => {
       experience_type: selectedScenario || 'none',
     });
     
-    const { data: { session } } = await supabase.auth.getSession();
-    
-    if (session) {
-      navigate('/create-group');
-    } else {
-      navigate('/auth?mode=signup&redirect=/create-group');
-    }
+    navigate('/download');
   }, [navigate, selectedScenario, trackEvent]);
 
   // Handle signup click from bottom section
   const handleSignupClick = useCallback(() => {
     trackEvent('launch_signup_clicked');
-    navigate('/auth?mode=signup&redirect=/launch');
+    navigate('/download');
   }, [navigate, trackEvent]);
 
   // Handle features click

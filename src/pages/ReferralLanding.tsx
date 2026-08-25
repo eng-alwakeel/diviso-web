@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { SEO } from "@/components/SEO";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
@@ -8,21 +8,11 @@ import { Gift, Sparkles, Users, Wallet, Apple, Smartphone, ArrowRight, Loader2 }
 import { useAnalyticsEvents } from "@/hooks/useAnalyticsEvents";
 
 import { ANDROID_AVAILABLE, APP_STORE_URL, APP_STORE_ID, PLAY_STORE_URL, EXTERNAL_LINK_PROPS } from "@/lib/appStoreLinks";
+import { detectPlatform, Platform } from "@/lib/platform";
 const DEEP_LINK_SCHEME = "diviso://referral";
-
-type Platform = "ios" | "android" | "desktop";
-
-const detectPlatform = (): Platform => {
-  if (typeof navigator === "undefined") return "desktop";
-  const ua = navigator.userAgent || "";
-  if (/iPad|iPhone|iPod/.test(ua)) return "ios";
-  if (/android/i.test(ua)) return "android";
-  return "desktop";
-};
 
 export default function ReferralLanding() {
   const { referralCode } = useParams<{ referralCode: string }>();
-  const navigate = useNavigate();
   const { trackEvent } = useAnalyticsEvents();
   const [platform, setPlatform] = useState<Platform>("desktop");
   const [inviter, setInviter] = useState<string | null>(null);
@@ -93,11 +83,6 @@ export default function ReferralLanding() {
   const handleOpenInApp = () => {
     trackEvent("referral_deep_link_clicked", { code: referralCode });
     window.location.href = `${DEEP_LINK_SCHEME}/${referralCode}`;
-  };
-
-  const handleContinueWeb = () => {
-    trackEvent("referral_continue_web", { code: referralCode });
-    navigate(`/join/${referralCode}`);
   };
 
   const pageUrl = `https://diviso.app/j/${referralCode ?? ""}`;
@@ -211,23 +196,6 @@ export default function ReferralLanding() {
             </Button>
           )}
 
-          <div className="relative my-4">
-            <div className="absolute inset-0 flex items-center">
-              <span className="w-full border-t border-border" />
-            </div>
-            <div className="relative flex justify-center text-xs uppercase">
-              <span className="bg-background px-2 text-muted-foreground">or</span>
-            </div>
-          </div>
-
-          <Button
-            variant="secondary"
-            size="lg"
-            className="w-full h-12"
-            onClick={handleContinueWeb}
-          >
-            Continue on the web
-          </Button>
         </section>
 
         {/* Features */}

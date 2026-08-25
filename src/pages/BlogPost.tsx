@@ -129,7 +129,7 @@ const BlogPost = () => {
               {isRTL ? "ابدأ بتقسيم مصاريفك مع أصدقائك بكل سهولة" : "Start splitting expenses with your friends easily"}
             </p>
             <a
-              href="/auth"
+              href="/download"
               className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
             >
               {isRTL ? "ابدأ مجاناً" : "Start for Free"}

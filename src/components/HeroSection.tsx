@@ -97,7 +97,7 @@ export const HeroSection = () => {
               className="text-lg px-8 py-6 h-auto relative overflow-hidden shadow-[0_0_30px_rgba(var(--primary-rgb),0.4)] hover:shadow-[0_0_50px_rgba(var(--primary-rgb),0.6)] hover:scale-105 transition-all duration-300 before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent before:translate-x-[-200%] hover:before:translate-x-[200%] before:transition-transform before:duration-700"
               onClick={() => {
                 trackClickCTA('start_free', 'hero_section');
-                window.location.href = '/dashboard';
+                window.location.href = '/download';
               }}
             >
               {t('hero.startFree')}

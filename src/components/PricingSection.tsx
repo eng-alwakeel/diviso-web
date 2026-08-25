@@ -91,7 +91,7 @@ export const PricingSection = () => {
           className="text-lg px-8 py-6"
           onClick={() => {
             trackClickCTA('start_free', 'pricing_section');
-            navigate('/auth');
+            navigate('/download');
           }}
         >
           {t('cta')}

@@ -1,16 +1,5 @@
-import { lazy, Suspense } from 'react';
+import { Suspense } from 'react';
 import { Skeleton } from '@/components/ui/skeleton';
-
-// Lazy load heavy components for better performance
-export const LazyGroupDetails = lazy(() => import('@/pages/GroupDetails'));
-export const LazyMyExpenses = lazy(() => import('@/pages/MyExpenses'));
-export const LazyAddExpense = lazy(() => import('@/pages/AddExpense'));
-export const LazyCreateGroup = lazy(() => import('@/pages/CreateGroup'));
-export const LazyAdminDashboard = lazy(() => import('@/pages/AdminDashboard'));
-export const LazySettings = lazy(() => import('@/pages/Settings'));
-export const LazyPricing = lazy(() => import('@/pages/Pricing'));
-export const LazyNotifications = lazy(() => import('@/pages/Notifications'));
-
 
 // Loading skeleton component
 const ComponentSkeleton = () => (

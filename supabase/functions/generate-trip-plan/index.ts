@@ -123,36 +123,6 @@ Deno.serve(async (req) => {
   }
 });
 
-function buildTripPlanPrompt(
-  destination: string,
-  days: number,
-  budget: string,
-  interests: string[]
-): string {
-  const budgetLabels: Record<string, string> = {
-    low: 'اقتصادي (أقل من 500 ريال/يوم)',
-    medium: 'متوسط (500-1000 ريال/يوم)',
-    high: 'فاخر (1000-2000 ريال/يوم)',
-    luxury: 'فخم جداً (أكثر من 2000 ريال/يوم)'
-  };
-
-  const interestsList = interests.length > 0 
-    ? interests.join('، ') 
-    : 'سياحة عامة، طعام، تسوق';
-
-  return `خطط رحلة إلى ${destination} لمدة ${days} أيام.
-الميزانية: ${budgetLabels[budget] || 'متوسط'}
-الاهتمامات: ${interestsList}
-
-أنشئ خطة مفصلة تتضمن:
-- فندق مناسب
-- 2-3 أنشطة يومية
-- مطاعم للغداء والعشاء
-- وسائل النقل عند الحاجة
-
-يجب أن تكون الأماكن حقيقية ومعروفة في ${destination}.`;
-}
-
 function generateFallbackPlan(
   destination: string,
   days: number,

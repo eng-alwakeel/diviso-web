@@ -20,9 +20,6 @@ function buildEmailHtml(bodyHtml: string): string {
   <style>
     body { margin: 0; padding: 0; background-color: #f4f4f7; font-family: 'Segoe UI', Tahoma, Arial, sans-serif; direction: rtl; }
     .container { max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 12px; overflow: hidden; }
-    .header { background: linear-gradient(135deg, #6366f1, #8b5cf6); padding: 32px 24px; text-align: center; }
-    .header img { height: 40px; }
-    .header h1 { color: #ffffff; font-size: 20px; margin: 16px 0 0; }
     .body { padding: 32px 24px; color: #333333; font-size: 16px; line-height: 1.8; }
     .footer { background: #f9fafb; padding: 24px; text-align: center; color: #9ca3af; font-size: 13px; border-top: 1px solid #e5e7eb; }
     .footer a { color: #6366f1; text-decoration: none; }
@@ -32,8 +29,13 @@ function buildEmailHtml(bodyHtml: string): string {
 <body>
   <div style="padding: 24px 16px;">
     <div class="container">
-      <div class="header">
-        <h1>ديفيزو | Diviso</h1>
+      <div style="background:#1A1A1A; padding:32px 24px; text-align:center;">
+        <img src="https://iwthriddasxzbjddpzzf.supabase.co/storage/v1/object/public/branding/diviso-d.png"
+             width="64" height="64" alt="Diviso"
+             style="border-radius:12px; display:block; margin:0 auto 12px;">
+        <div style="color:#C8F169; font-size:20px; font-weight:800; letter-spacing:0.5px; font-family:'Segoe UI',Tahoma,Arial,sans-serif;">
+          Diviso · ديفيزو
+        </div>
       </div>
       <div class="body">
         ${bodyHtml}
@@ -132,22 +134,22 @@ serve(async (req: Request) => {
     const allUsers: { email: string }[] = [];
     let page = 1;
     const perPage = 1000;
-    
+
     while (true) {
       const { data: { users: batch }, error: listError } = await supabaseAdmin.auth.admin.listUsers({
         page,
         perPage,
       });
-      
+
       if (listError) throw listError;
       if (!batch || batch.length === 0) break;
-      
+
       for (const u of batch) {
         if (u.email) {
           allUsers.push({ email: u.email });
         }
       }
-      
+
       if (batch.length < perPage) break;
       page++;
     }

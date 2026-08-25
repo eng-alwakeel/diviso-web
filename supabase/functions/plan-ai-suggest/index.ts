@@ -189,7 +189,7 @@ serve(async (req) => {
     }
 
     return new Response(
-      JSON.stringify({ summary, suggestions, ai_powered: aiSuccess }),
+      JSON.stringify({ summary, suggestions, ai_powered: false }),
       { headers: { ...corsHeaders, "Content-Type": "application/json" } }
     );
   } catch (error) {

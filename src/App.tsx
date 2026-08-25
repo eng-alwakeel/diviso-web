@@ -135,6 +135,7 @@ const AppRoutes: React.FC = () => {
       <ImprovedErrorBoundary>
         <Routes>
             <Route path="/auth" element={<LazyAuth />} />
+            <Route path="/.lovable/oauth/consent" element={<LazyOAuthConsent />} />
             <Route path="/auth/verify" element={<EmailVerify />} />
             <Route path="/welcome" element={<ProtectedRoute><LazyWelcome /></ProtectedRoute>} />
             <Route path="/" element={<LazyIndex />} />

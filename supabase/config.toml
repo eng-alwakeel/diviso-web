@@ -123,3 +123,6 @@ verify_jwt = false
 
 [functions.merge-duplicate-members]
 verify_jwt = false
+
+[functions.mcp]
+verify_jwt = false

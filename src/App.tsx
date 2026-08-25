@@ -19,6 +19,7 @@ import { REDIRECTS } from "@/lib/redirects";
 // Lazy load critical pages for faster initial load
 const LazyIndex = withLazyLoading(lazy(() => import("./pages/Index")));
 const LazyAuth = withLazyLoading(lazy(() => import("./pages/Auth")));
+const LazyOAuthConsent = withLazyLoading(lazy(() => import("./pages/OAuthConsent")));
 import EmailVerify from "./pages/EmailVerify";
 import { AdminProtectedRoute } from "./components/AdminProtectedRoute";
 import InviteRoute from "./pages/InviteRoute";
@@ -111,6 +112,7 @@ const AppRoutes: React.FC = () => {
         <Routes>
             {/* /auth stays only as the admin sign-in door + Supabase email links */}
             <Route path="/auth" element={<LazyAuth />} />
+            <Route path="/.lovable/oauth/consent" element={<LazyOAuthConsent />} />
             <Route path="/auth/verify" element={<EmailVerify />} />
             <Route path="/" element={<LazyIndex />} />
             <Route path="/download" element={<LazyDownload />} />

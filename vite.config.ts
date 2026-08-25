@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 import compression from "vite-plugin-compression";
+import { mcpPlugin } from "@lovable.dev/mcp-js/stacks/supabase/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -12,6 +13,8 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
+    // Emits the Supabase Edge Function for the app's MCP server (src/lib/mcp).
+    mcpPlugin(),
     mode === 'development' && componentTagger(),
     // Gzip compression for production builds
     mode === 'production' && compression({ 

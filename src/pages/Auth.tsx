@@ -213,7 +213,11 @@ const Auth = () => {
   const handleGoogleLogin = async () => {
     try {
       setLoading(true);
-      const redirectUrl = `${window.location.origin}/`;
+      // Preserve ?redirectTo so flows like the OAuth consent screen come back here.
+      const nextPath = new URLSearchParams(window.location.search).get("redirectTo");
+      const redirectUrl = nextPath
+        ? `${window.location.origin}${nextPath.startsWith("/") ? nextPath : `/${nextPath}`}`
+        : `${window.location.origin}/`;
       
       const { error } = await supabase.auth.signInWithOAuth({
         provider: 'google',

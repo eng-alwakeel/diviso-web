@@ -20,6 +20,7 @@ import { REDIRECTS } from "@/lib/redirects";
 const LazyIndex = withLazyLoading(lazy(() => import("./pages/Index")));
 const LazyDashboard = withLazyLoading(lazy(() => import("./pages/Dashboard")));
 const LazyAuth = withLazyLoading(lazy(() => import("./pages/Auth")));
+const LazyOAuthConsent = withLazyLoading(lazy(() => import("./pages/OAuthConsent")));
 import EmailVerify from "./pages/EmailVerify";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 import { GuestRoute } from "./components/GuestRoute";
@@ -134,6 +135,7 @@ const AppRoutes: React.FC = () => {
       <ImprovedErrorBoundary>
         <Routes>
             <Route path="/auth" element={<LazyAuth />} />
+            <Route path="/.lovable/oauth/consent" element={<LazyOAuthConsent />} />
             <Route path="/auth/verify" element={<EmailVerify />} />
             <Route path="/welcome" element={<ProtectedRoute><LazyWelcome /></ProtectedRoute>} />
             <Route path="/" element={<LazyIndex />} />

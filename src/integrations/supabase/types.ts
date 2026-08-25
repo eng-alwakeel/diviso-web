@@ -10,7 +10,7 @@ export type Database = {
   // Allows to automatically instantiate createClient with right options
   // instead of createClient<Database, { PostgrestVersion: 'XX' }>(URL, KEY)
   __InternalSupabase: {
-    PostgrestVersion: "13.0.4"
+    PostgrestVersion: "14.17"
   }
   public: {
     Tables: {
@@ -2238,6 +2238,7 @@ export type Database = {
       groups: {
         Row: {
           archived_at: string | null
+          avatar_url: string | null
           created_at: string | null
           currency: string
           group_type: string | null
@@ -2250,6 +2251,7 @@ export type Database = {
         }
         Insert: {
           archived_at?: string | null
+          avatar_url?: string | null
           created_at?: string | null
           currency?: string
           group_type?: string | null
@@ -2262,6 +2264,7 @@ export type Database = {
         }
         Update: {
           archived_at?: string | null
+          avatar_url?: string | null
           created_at?: string | null
           currency?: string
           group_type?: string | null
@@ -4669,6 +4672,7 @@ export type Database = {
           confirmed_by: string | null
           created_at: string
           created_by: string
+          currency: string
           dispute_reason: string | null
           expires_at: string | null
           from_user_id: string
@@ -4685,6 +4689,7 @@ export type Database = {
           confirmed_by?: string | null
           created_at?: string
           created_by: string
+          currency?: string
           dispute_reason?: string | null
           expires_at?: string | null
           from_user_id: string
@@ -4701,6 +4706,7 @@ export type Database = {
           confirmed_by?: string | null
           created_at?: string
           created_by?: string
+          currency?: string
           dispute_reason?: string | null
           expires_at?: string | null
           from_user_id?: string
@@ -6229,6 +6235,10 @@ export type Database = {
           token: string
         }[]
       }
+      create_group_with_owner: {
+        Args: { p_currency?: string; p_group_type?: string; p_name: string }
+        Returns: Json
+      }
       create_invoice_for_purchase:
         | {
             Args: {
@@ -6299,6 +6309,7 @@ export type Database = {
         Args: { p_action_type: string; p_amount: number; p_user_id: string }
         Returns: Json
       }
+      delete_expense: { Args: { p_expense_id: string }; Returns: Json }
       delete_fcm_token: { Args: { p_token: string }; Returns: undefined }
       dispute_settlement: {
         Args: { p_reason?: string; p_settlement_id: string }
@@ -6461,6 +6472,20 @@ export type Database = {
           settlements_in: number
           settlements_out: number
           user_id: string
+        }[]
+      }
+      get_group_budget_status: {
+        Args: { p_group_id: string }
+        Returns: {
+          amount_limit: number
+          budget_id: string
+          budget_name: string
+          currency: string
+          expense_count: number
+          percentage_used: number
+          remaining_amount: number
+          spent_amount: number
+          status: string
         }[]
       }
       get_group_budget_tracking: {
@@ -6830,6 +6855,7 @@ export type Database = {
       }
       is_valid_phone: { Args: { phone_input: string }; Returns: boolean }
       join_group_with_token: { Args: { p_token: string }; Returns: string }
+      leave_group: { Args: { p_group_id: string }; Returns: Json }
       link_expense_to_plan: {
         Args: { p_expense_id: string; p_plan_id: string }
         Returns: boolean
@@ -6862,6 +6888,14 @@ export type Database = {
       process_referral_milestone: {
         Args: { p_invited_user_id: string; p_milestone: string }
         Returns: Json
+      }
+      promote_next_owner_if_needed: {
+        Args: {
+          p_departing_role: Database["public"]["Enums"]["member_role"]
+          p_departing_user_id: string
+          p_group_id: string
+        }
+        Returns: undefined
       }
       rebalance_shares_for_member: {
         Args: { p_group_id: string; p_member_user_id: string }
@@ -6916,12 +6950,28 @@ export type Database = {
         }
         Returns: Json
       }
+      transfer_group_ownership: {
+        Args: { p_group_id: string; p_new_owner_id: string }
+        Returns: Json
+      }
       unarchive_group: { Args: { p_group_id: string }; Returns: boolean }
       unlink_expense_from_plan: {
         Args: { p_expense_id: string }
         Returns: boolean
       }
       update_daily_referral_analytics: { Args: never; Returns: number }
+      update_expense: {
+        Args: {
+          p_amount?: number
+          p_category_id?: string
+          p_description?: string
+          p_expense_id: string
+          p_new_splits?: Json
+          p_payer_id?: string
+          p_spent_at?: string
+        }
+        Returns: Json
+      }
       update_expired_referrals: { Args: never; Returns: number }
       update_plan_status: {
         Args: { p_plan_id: string; p_status: string }

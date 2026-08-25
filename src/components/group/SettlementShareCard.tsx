@@ -147,6 +147,6 @@ export function buildSettlementShareText(
     `📅 ${new Date().toLocaleDateString("ar-SA")}`,
     ``,
     `— Diviso`,
-    `https://diviso-split-smart.lovable.app`,
+    `https://diviso.app`,
   ].join("\n");
 }

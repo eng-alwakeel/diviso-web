@@ -58,7 +58,7 @@ export const RequestPaymentDialog = ({
       msg += `\nيمكنك معرفة طريقة الدفع من داخل التطبيق.\n`;
     }
 
-    msg += `\nيمكنك تسوية المبلغ من التطبيق مباشرة:\nhttps://diviso-split-smart.lovable.app\n\nشكراً لك! 🙏`;
+    msg += `\nيمكنك تسوية المبلغ من التطبيق مباشرة:\nhttps://diviso.app\n\nشكراً لك! 🙏`;
     return msg;
   };
 

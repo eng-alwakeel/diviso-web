@@ -52,7 +52,7 @@ export const TripSummarySheet = ({
     text += `✅ التسويات: ${settlementCount}\n`;
     if (topPayer) text += `\n🏆 أكثر مساهمة: ${topPayer.name} (${topPayer.amount.toLocaleString()} ${currency})\n`;
     if (fastestSettler) text += `🟢 أسرع سداد: ${fastestSettler.name}\n`;
-    text += `\n— Diviso | قسّم بذكاء\nhttps://diviso-split-smart.lovable.app`;
+    text += `\n— Diviso | قسّم بذكاء\nhttps://diviso.app`;
     return text;
   };
 

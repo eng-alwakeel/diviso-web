@@ -1,5 +1,5 @@
 // Static cache version - update this with each deployment
-const CACHE_VERSION = 'v1.0.1';
+const CACHE_VERSION = 'v1.1.0';
 const CACHE_NAME = `app-cache-${CACHE_VERSION}`;
 const STATIC_CACHE_NAME = `static-cache-${CACHE_VERSION}`;
 

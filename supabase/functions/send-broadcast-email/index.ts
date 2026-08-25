@@ -39,7 +39,7 @@ function buildEmailHtml(bodyHtml: string): string {
         ${bodyHtml}
       </div>
       <div class="footer">
-        <p>هذا البريد مرسل من <a href="https://diviso-split-smart.lovable.app">ديفيزو</a></p>
+        <p>هذا البريد مرسل من <a href="https://diviso.app">ديفيزو</a></p>
         <p style="margin-top:8px;">© ${new Date().getFullYear()} Diviso. جميع الحقوق محفوظة.</p>
       </div>
     </div>

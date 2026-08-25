@@ -5,11 +5,8 @@ const config: CapacitorConfig = {
   appName: 'Diviso',
   webDir: 'dist',
   server: {
-    // For development: use sandbox URL
-    // url: 'https://3776a414-f124-4f36-83bd-711dd8d56f9a.lovableproject.com?forceHideBadge=true',
-    // For production: comment out the url
     cleartext: true,
-    allowNavigation: ['diviso.app', '*.lovableproject.com']
+    allowNavigation: ['diviso.app']
   },
   plugins: {
     SplashScreen: {

@@ -178,131 +178,8 @@ serve(async (req) => {
 
     const total = totalDays || 1;
 
-    // Fetch all days for this plan to get existing activities
-    const { data: allPlanDays } = await supabase
-      .from("plan_days")
-      .select("id, day_index")
-      .eq("plan_id", day.plan_id)
-      .order("day_index", { ascending: true });
-
-    // Fetch existing activities from all days
-    const otherDayIds = (allPlanDays || [])
-      .filter((d) => d.id !== day_id)
-      .map((d) => d.id);
-
-    let existingActivitiesText = "";
-    if (otherDayIds.length > 0) {
-      const { data: otherActivities } = await supabase
-        .from("plan_day_activities")
-        .select("title, plan_day_id")
-        .in("plan_day_id", otherDayIds);
-
-      if (otherActivities && otherActivities.length > 0) {
-        // Group activities by day
-        const dayIndexMap = new Map((allPlanDays || []).map((d) => [d.id, d.day_index]));
-        const activitiesByDay = new Map<number, string[]>();
-
-        for (const act of otherActivities) {
-          const idx = dayIndexMap.get(act.plan_day_id) || 0;
-          if (!activitiesByDay.has(idx)) activitiesByDay.set(idx, []);
-          activitiesByDay.get(idx)!.push(act.title);
-        }
-
-        const lines: string[] = [];
-        for (const [idx, titles] of Array.from(activitiesByDay.entries()).sort((a, b) => a[0] - b[0])) {
-          lines.push(`- اليوم ${idx}: ${titles.join("، ")}`);
-        }
-        existingActivitiesText = lines.join("\n");
-      }
-    }
-
-    let activities: Activity[] = [];
-    let aiPowered = false;
-
-    // Try AI
-    const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
-
-    if (LOVABLE_API_KEY) {
-      try {
-        const isFirst = day.day_index === 1;
-        const isLast = day.day_index === total;
-        const dayPosition = isFirst ? "اليوم الأول (وصول)" : isLast ? "اليوم الأخير (مغادرة)" : `يوم ${day.day_index} من ${total} (يوم وسط)`;
-
-        const systemPrompt = `أنت مخطط رحلات ذكي. مهمتك اقتراح أنشطة ليوم محدد من خطة.
-قدم 3-5 أنشطة مناسبة لموقع اليوم في الرحلة.
-مهم جداً: لا تكرر أي نشاط أو مكان تم اقتراحه في أيام أخرى.
-كل يوم يجب أن يحتوي على أماكن وتجارب مختلفة تماماً.
-كل نشاط يجب أن يحتوي: title, description, time_slot (morning/afternoon/evening), estimated_cost (رقم أو null).
-أجب بصيغة JSON فقط.`;
-
-        const userPrompt = `تفاصيل الخطة:
-- النوع: ${plan.plan_type}
-- الوجهة: ${plan.destination}
-- الميزانية: ${plan.budget_value ? `${plan.budget_value} ${plan.budget_currency}` : "غير محددة"}
-- التاريخ: ${day.date}
-- ${dayPosition}
-${preferences ? `- تفضيلات المستخدم: ${preferences}` : ""}
-${existingActivitiesText ? `\nالأنشطة المقترحة مسبقاً في أيام أخرى (يجب تجنب تكرارها بالكامل):\n${existingActivitiesText}\n\nاقترح أنشطة جديدة ومختلفة تماماً لهذا اليوم.` : ""}
-
-أجب بهذا الشكل:
-{"activities": [{"title": "...", "description": "...", "time_slot": "morning|afternoon|evening", "estimated_cost": null}]}`;
-
-        const aiResponse = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ${LOVABLE_API_KEY}`,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            model: "google/gemini-3-flash-preview",
-            messages: [
-              { role: "system", content: systemPrompt },
-              { role: "user", content: userPrompt },
-            ],
-          }),
-        });
-
-        if (aiResponse.ok) {
-          const aiData = await aiResponse.json();
-          const content = aiData.choices?.[0]?.message?.content;
-          if (content) {
-            const jsonMatch = content.match(/\{[\s\S]*\}/);
-            if (jsonMatch) {
-              const parsed = JSON.parse(jsonMatch[0]);
-              activities = (parsed.activities || []).slice(0, 7).map((a: any) => ({
-                title: a.title || "نشاط",
-                description: a.description || "",
-                time_slot: ["morning", "afternoon", "evening", "any"].includes(a.time_slot) ? a.time_slot : "any",
-                estimated_cost: typeof a.estimated_cost === "number" ? a.estimated_cost : null,
-              }));
-              aiPowered = true;
-            }
-          }
-        } else {
-          const errStatus = aiResponse.status;
-          if (errStatus === 429) {
-            return new Response(
-              JSON.stringify({ error: "AI rate limited, please try again later." }),
-              { status: 429, headers: { ...corsHeaders, "Content-Type": "application/json" } }
-            );
-          }
-          if (errStatus === 402) {
-            return new Response(
-              JSON.stringify({ error: "Payment required for AI features." }),
-              { status: 402, headers: { ...corsHeaders, "Content-Type": "application/json" } }
-            );
-          }
-          console.error("AI gateway error:", errStatus);
-        }
-      } catch (aiErr) {
-        console.error("AI call failed, using fallback:", aiErr);
-      }
-    }
-
-    // Fallback
-    if (!aiPowered || activities.length === 0) {
-      activities = getFallbackActivities(plan.plan_type, day.day_index, total);
-    }
+    // Deterministic suggestions from templates
+    const activities: Activity[] = getFallbackActivities(plan.plan_type, day.day_index, total);
 
     // Delete previous AI activities for this day
     await supabase
@@ -333,7 +210,7 @@ ${existingActivitiesText ? `\nالأنشطة المقترحة مسبقاً في 
     }
 
     return new Response(
-      JSON.stringify({ activities, ai_powered: aiPowered }),
+      JSON.stringify({ activities, ai_powered: false }),
       { headers: { ...corsHeaders, "Content-Type": "application/json" } }
     );
   } catch (error) {

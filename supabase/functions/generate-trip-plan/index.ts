@@ -44,8 +44,7 @@ Deno.serve(async (req) => {
   try {
     const supabaseUrl = Deno.env.get('SUPABASE_URL')!;
     const supabaseServiceKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!;
-    const lovableApiKey = Deno.env.get('LOVABLE_API_KEY');
-    
+
     const supabase = createClient(supabaseUrl, supabaseServiceKey);
 
     const authHeader = req.headers.get('authorization');
@@ -77,102 +76,8 @@ Deno.serve(async (req) => {
       );
     }
 
-    let planData: DayPlan[] = [];
-
-    // Try AI-powered plan generation
-    if (lovableApiKey) {
-      try {
-        const prompt = buildTripPlanPrompt(destination, days, budget, interests);
-        
-        const aiResponse = await fetch('https://ai.gateway.lovable.dev/v1/chat/completions', {
-          method: 'POST',
-          headers: {
-            'Authorization': `Bearer ${lovableApiKey}`,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            model: 'google/gemini-2.5-flash',
-            messages: [
-              {
-                role: 'system',
-                content: `أنت خبير تخطيط رحلات. أنشئ خطة سفر مفصلة يوماً بيوم.
-
-يجب أن تكون الإجابة بصيغة JSON فقط:
-{
-  "days": [
-    {
-      "day": 1,
-      "title": "Day title in English",
-      "titleAr": "عنوان اليوم بالعربية",
-      "items": [
-        {
-          "type": "accommodation|activity|restaurant|transport",
-          "time": "09:00",
-          "name": "Place name",
-          "nameAr": "اسم المكان",
-          "description": "Brief description",
-          "descriptionAr": "وصف مختصر",
-          "estimatedPrice": 100
-        }
-      ]
-    }
-  ]
-}
-
-كل يوم يجب أن يتضمن: إقامة (في اليوم الأول فقط أو عند التغيير)، 2-3 أنشطة، ومطعم واحد على الأقل.`
-              },
-              {
-                role: 'user',
-                content: prompt
-              }
-            ],
-            temperature: 0.7,
-            max_tokens: 3000
-          })
-        });
-
-        if (aiResponse.ok) {
-          const aiData = await aiResponse.json();
-          const content = aiData.choices?.[0]?.message?.content;
-          
-          if (content) {
-            try {
-              const jsonMatch = content.match(/\{[\s\S]*\}/);
-              if (jsonMatch) {
-                const parsed = JSON.parse(jsonMatch[0]);
-                if (parsed.days && Array.isArray(parsed.days)) {
-                  planData = parsed.days.map((day: any) => ({
-                    day: day.day,
-                    title: day.title || `Day ${day.day}`,
-                    titleAr: day.titleAr || `اليوم ${day.day}`,
-                    items: (day.items || []).map((item: any, idx: number) => ({
-                      id: `item_${day.day}_${idx}`,
-                      type: item.type || 'activity',
-                      time: item.time || '10:00',
-                      name: item.name || 'Activity',
-                      nameAr: item.nameAr || item.name,
-                      description: item.description || '',
-                      descriptionAr: item.descriptionAr || item.description,
-                      estimatedPrice: item.estimatedPrice,
-                      currency: 'SAR'
-                    }))
-                  }));
-                }
-              }
-            } catch (parseError) {
-              console.error('Error parsing AI response:', parseError);
-            }
-          }
-        }
-      } catch (aiError) {
-        console.error('AI request failed:', aiError);
-      }
-    }
-
-    // Fallback to template-based plan
-    if (planData.length === 0) {
-      planData = generateFallbackPlan(destination, days, budget, interests);
-    }
+    // Template-based plan generation
+    const planData: DayPlan[] = generateFallbackPlan(destination, days, budget, interests);
 
     // Save the plan to database
     const { data: savedPlan, error: saveError } = await supabase

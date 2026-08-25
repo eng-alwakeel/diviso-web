@@ -43,8 +43,7 @@ Deno.serve(async (req) => {
   try {
     const supabaseUrl = Deno.env.get('SUPABASE_URL')!;
     const supabaseServiceKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!;
-    const lovableApiKey = Deno.env.get('LOVABLE_API_KEY');
-    
+
     const supabase = createClient(supabaseUrl, supabaseServiceKey);
 
     const authHeader = req.headers.get('authorization');
@@ -76,108 +75,10 @@ Deno.serve(async (req) => {
       );
     }
 
-    // Get group info if provided
-    let groupInfo = null;
-    let city = preferences.city;
-    
-    if (group_id) {
-      const { data: group } = await supabase
-        .from('groups')
-        .select('*')
-        .eq('id', group_id)
-        .single();
-      groupInfo = group;
-    }
+    const city = preferences.city;
 
-    // Build AI prompt
-    const prompt = buildPrompt(request_type, preferences, groupInfo);
-    
-    let recommendations: Recommendation[] = [];
-
-    // Try AI-powered recommendations
-    if (lovableApiKey) {
-      try {
-        const aiResponse = await fetch('https://ai.gateway.lovable.dev/v1/chat/completions', {
-          method: 'POST',
-          headers: {
-            'Authorization': `Bearer ${lovableApiKey}`,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            model: 'google/gemini-2.5-flash',
-            messages: [
-              {
-                role: 'system',
-                content: `أنت مساعد توصيات سفر متخصص. قدم 3 توصيات بناءً على طلب المستخدم.
-                
-يجب أن تكون الإجابة بصيغة JSON فقط بالشكل التالي:
-{
-  "recommendations": [
-    {
-      "name": "اسم المكان بالإنجليزية",
-      "nameAr": "اسم المكان بالعربية",
-      "category": "نوع المكان",
-      "rating": 4.5,
-      "priceRange": "$$",
-      "estimatedPrice": 150,
-      "description": "وصف قصير بالإنجليزية",
-      "descriptionAr": "وصف قصير بالعربية",
-      "relevanceReason": "سبب التوصية بالعربية"
-    }
-  ]
-}`
-              },
-              {
-                role: 'user',
-                content: prompt
-              }
-            ],
-            temperature: 0.7,
-            max_tokens: 1500
-          })
-        });
-
-        if (aiResponse.ok) {
-          const aiData = await aiResponse.json();
-          const content = aiData.choices?.[0]?.message?.content;
-          
-          if (content) {
-            try {
-              // Extract JSON from response
-              const jsonMatch = content.match(/\{[\s\S]*\}/);
-              if (jsonMatch) {
-                const parsed = JSON.parse(jsonMatch[0]);
-                if (parsed.recommendations && Array.isArray(parsed.recommendations)) {
-                  recommendations = parsed.recommendations.map((rec: any, index: number) => ({
-                    id: `ai_rec_${Date.now()}_${index}`,
-                    name: rec.name || rec.nameAr,
-                    nameAr: rec.nameAr || rec.name,
-                    category: rec.category || request_type,
-                    rating: rec.rating || 4,
-                    priceRange: rec.priceRange || '$$',
-                    estimatedPrice: rec.estimatedPrice,
-                    currency: 'SAR',
-                    description: rec.description || '',
-                    descriptionAr: rec.descriptionAr || rec.description,
-                    address: rec.address,
-                    relevanceReason: rec.relevanceReason || 'توصية بناءً على تفضيلاتك'
-                  }));
-                }
-              }
-            } catch (parseError) {
-              console.error('Error parsing AI response:', parseError);
-            }
-          }
-        }
-      } catch (aiError) {
-        console.error('AI request failed:', aiError);
-      }
-    }
-
-    // Fallback to template-based recommendations if AI fails
-    if (recommendations.length === 0) {
-      recommendations = generateFallbackRecommendations(request_type, preferences, city);
-    }
+    // Template-based recommendations
+    const recommendations: Recommendation[] = generateFallbackRecommendations(request_type, preferences, city);
 
     // Save the request
     await supabase.from('recommendation_requests').insert({

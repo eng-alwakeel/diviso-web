@@ -152,87 +152,13 @@ serve(async (req) => {
       .select("*", { count: "exact", head: true })
       .eq("plan_id", plan_id);
 
-    let summary = "";
-    let suggestions: Array<{ category: string; title: string; details: string }> = [];
+    const template = FALLBACK_TEMPLATES[plan.plan_type] || FALLBACK_TEMPLATES.activity;
+    let summary = template.summary;
+    const suggestions = template.suggestions;
 
-    // Try AI first
-    const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
-    let aiSuccess = false;
-
-    if (LOVABLE_API_KEY) {
-      try {
-        const systemPrompt = `أنت مساعد تخطيط ذكي لتطبيق "ديفيزو" لتقسيم المصاريف بين الأصدقاء.
-مهمتك: بناءً على تفاصيل الخطة، قدم:
-1. ملخص نية (2-3 أسطر) يوضح الفكرة العامة ونصائح سريعة
-2. اقتراحات عملية (6-9 اقتراحات كحد أقصى) مصنفة حسب: stay, transport, activities, food, other
-
-يجب أن تكون الاقتراحات عملية وقابلة للتنفيذ ومناسبة للسياق السعودي/الخليجي.
-أجب بصيغة JSON فقط بدون أي نص إضافي.`;
-
-        const userPrompt = `تفاصيل الخطة:
-- النوع: ${plan.plan_type}
-- العنوان: ${plan.title}
-- الوجهة: ${plan.destination || "غير محددة"}
-- تاريخ البدء: ${plan.start_date || "غير محدد"}
-- تاريخ الانتهاء: ${plan.end_date || "غير محدد"}
-- الميزانية: ${plan.budget_value ? `${plan.budget_value} ${plan.budget_currency}` : "غير محددة"}
-- عدد الأعضاء: ${memberCount || 1}
-${votes && votes.length > 0 ? `- تصويتات سابقة: ${votes.map((v) => v.title).join(", ")}` : ""}
-
-أجب بهذا الشكل بالضبط:
-{
-  "summary": "ملخص النية هنا",
-  "suggestions": [
-    {"category": "stay", "title": "عنوان الاقتراح", "details": "تفاصيل الاقتراح"}
-  ]
-}`;
-
-        const aiResponse = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ${LOVABLE_API_KEY}`,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            model: "google/gemini-3-flash-preview",
-            messages: [
-              { role: "system", content: systemPrompt },
-              { role: "user", content: userPrompt },
-            ],
-          }),
-        });
-
-        if (aiResponse.ok) {
-          const aiData = await aiResponse.json();
-          const content = aiData.choices?.[0]?.message?.content;
-          if (content) {
-            // Extract JSON from response (might have markdown code blocks)
-            const jsonMatch = content.match(/\{[\s\S]*\}/);
-            if (jsonMatch) {
-              const parsed = JSON.parse(jsonMatch[0]);
-              summary = parsed.summary || "";
-              suggestions = (parsed.suggestions || []).slice(0, 9);
-              aiSuccess = true;
-            }
-          }
-        } else {
-          console.error("AI gateway error:", aiResponse.status, await aiResponse.text());
-        }
-      } catch (aiError) {
-        console.error("AI call failed, using fallback:", aiError);
-      }
-    }
-
-    // Fallback to templates
-    if (!aiSuccess) {
-      const template = FALLBACK_TEMPLATES[plan.plan_type] || FALLBACK_TEMPLATES.activity;
-      summary = template.summary;
-      suggestions = template.suggestions;
-
-      // Customize with destination if available
-      if (plan.destination) {
-        summary = summary.replace(/خطة/, `خطة إلى ${plan.destination}`);
-      }
+    // Customize with destination if available
+    if (plan.destination) {
+      summary = summary.replace(/خطة/, `خطة إلى ${plan.destination}`);
     }
 
     // Store results: upsert ai_summary

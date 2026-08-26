@@ -16,6 +16,186 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-streaming-subscription-costs",
+    title: "كيف تقسم اشتراكات نتفلكس وسبوتيفاي مع العائلة والأصدقاء؟",
+    titleEn: "How to Split Netflix, Spotify, and Streaming Subscription Costs With Friends and Family",
+    description: "أفضل طريقة لتقسيم تكلفة اشتراكات نتفلكس وسبوتيفاي وشاهد VIP بين أفراد العائلة أو الأصدقاء، مع أمثلة حساب دقيقة لنصيب كل شخص وطرق لتجنب نسيان الدفع الشهري.",
+    descriptionEn: "Learn the fairest way to split Netflix, Spotify, and other streaming subscription costs with family or friends, with exact per-person math and tips to never miss a monthly payment.",
+    keywords: ["تقسيم اشتراك نتفلكس", "تقسيم اشتراكات مشتركة", "اشتراك عائلي مشترك", "تقسيم اشتراك سبوتيفاي", "حساب نصيب الاشتراك الشهري", "اشتراكات مشتركة مع الأصدقاء", "تقسيم اشتراك شاهد VIP"],
+    keywordsEn: ["how to split netflix subscription cost", "split streaming subscriptions with friends", "shared family plan cost calculator", "split spotify family plan cost", "recurring subscription expense splitter", "how much does each person pay for shared netflix", "shared subscription tracker app"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-08-26",
+    content: `
+## الإجابة المختصرة
+
+أفضل طريقة لتقسيم اشتراكات نتفلكس وسبوتيفاي وغيرها من الاشتراكات المشتركة هي قسمة تكلفة الاشتراك الشهري على عدد المستخدمين الفعليين، ثم تحصيل نصيب كل شخص في نفس تاريخ التجديد كل شهر عبر تطبيق يسجّل المصروف كمصروف متكرر تلقائياً. هذا يمنع نسيان الدفع، ويوقف الجدال المتكرر حول "مين دفع الشهر هذا؟".
+
+## ليش تقسيم الاشتراكات صعب أكثر من مصاريف الطلعة العادية؟
+
+المصروف العادي (عشاء، رحلة) يحصل مرة وينتهي. لكن الاشتراك المشترك يتكرر كل شهر، وهذا يخلق مشاكل خاصة:
+
+- **النسيان الشهري**: الشخص المسؤول عن الدفع ينسى يطالب الباقين
+- **تغيّر عدد المستخدمين**: شخص يخرج من المجموعة وما يحدّث أحد النصيب
+- **اختلاف الاستخدام**: البعض يستخدم شاشتين والبعض شاشة وحدة
+- **تراكم عدة اشتراكات**: نتفلكس + سبوتيفاي + شاهد = 3 حسابات منفصلة تحتاج تتبع
+
+## أنواع الاشتراكات اللي يتم تقسيمها عادة
+
+### 1. خدمات المشاهدة (نتفلكس، شاهد VIP، OSN+)
+عادة تُشترى بخطة "عائلية" أو "بريميوم" تسمح بعدة شاشات في نفس الوقت.
+
+### 2. خدمات الموسيقى (سبوتيفاي عائلي، أنغامي)
+خطة العائلة تسمح لعدد محدد من الحسابات المنفصلة بسعر أقل من الاشتراك الفردي المكرر.
+
+### 3. الاشتراكات الرياضية (نادي جيم، حجز ملعب أسبوعي)
+مصروف شهري ثابت يُقسّم على عدد أعضاء المجموعة الثابتين.
+
+### 4. التخزين السحابي والألعاب (iCloud+، Xbox Game Pass، PlayStation Plus)
+خطط عائلية تُشارك بين عدة حسابات بسعر موحّد.
+
+## كيف تحسب نصيب كل شخص بدقة؟
+
+القاعدة بسيطة: **تكلفة الاشتراك الشهري ÷ عدد المستخدمين = نصيب الفرد**.
+
+مثال: لو خطة نتفلكس العائلية تكلف 65 ريال شهرياً ويستخدمها 4 أشخاص (شاشات)، فنصيب كل واحد = 65 ÷ 4 = 16.25 ريال شهرياً.
+
+مثال آخر: خطة سبوتيفاي العائلية تكلف تقريباً 35 ريال شهرياً وتُشارك بين 6 أشخاص، فنصيب كل واحد = 35 ÷ 6 ≈ 5.8 ريال شهرياً.
+
+إذا كان الاستخدام غير متساوٍ (مثلاً شخص يستخدم شاشتين من أصل 4)، يمكن تعديل القسمة حسب عدد الشاشات المستخدمة بدلاً من القسمة المتساوية.
+
+## خطوات عملية لتقسيم الاشتراكات بدون صداع
+
+### الخطوة 1: اتفقوا على المسؤول عن الدفع
+شخص واحد يدفع فاتورة الاشتراك كل شهر من بطاقته، والباقون يحوّلون له نصيبهم.
+
+### الخطوة 2: سجّلوا الاشتراك كمصروف متكرر
+بدل ما تسجّل المصروف يدوياً كل شهر، استخدم تطبيق مثل Diviso لتسجيل الاشتراك كمصروف متكرر يذكّر الجميع تلقائياً في نفس تاريخ التجديد.
+
+### الخطوة 3: حدّدوا طريقة القسمة من البداية
+متساوية بين الجميع، أو حسب عدد الشاشات/الحسابات الفعلية لكل شخص.
+
+### الخطوة 4: راجعوا القائمة كل 3 أشهر
+تأكدوا إن كل من يدفع لسا يستخدم الاشتراك، وأزيلوا أي شخص انسحب من المجموعة.
+
+## أخطاء شائعة عند تقسيم الاشتراكات
+
+- **الاعتماد على الذاكرة**: بعد شهرين الكل ينسى مين دفع ومين لأ
+- **عدم تحديث القائمة**: شخص ترك الشلة لكن لسا مسجل في التقسيم
+- **خلط عدة اشتراكات مع بعض**: نتفلكس وسبوتيفاي والجيم بدون فصل واضح لكل واحد
+- **تأجيل التحصيل**: كل ما تأخرت المطالبة، زاد الإحراج
+
+## كيف يساعدك Diviso في تتبع الاشتراكات المشتركة؟
+
+- ✅ تسجيل الاشتراك كمصروف شهري متكرر بضغطة واحدة
+- ✅ تذكير تلقائي لكل عضو في تاريخ التجديد
+- ✅ حساب نصيب كل شخص تلقائياً حتى لو كان الاستخدام غير متساوٍ
+- ✅ سجل واضح يوضح من دفع ومن عليه مبلغ
+- ✅ مجموعة منفصلة لكل نوع اشتراك (ترفيه، رياضة، تخزين)
+
+## أسئلة شائعة
+
+### كم نصيبي إذا كنا 4 أشخاص في اشتراك نتفلكس بـ65 ريال؟
+نصيبك الشهري = 65 ÷ 4 = 16.25 ريال، ما لم تتفقوا على قسمة غير متساوية حسب عدد الشاشات المستخدمة.
+
+### هل يجب أن يدفع الجميع نفس المبلغ حتى لو استخدم أحدهم شاشتين؟
+لا بالضرورة. يمكنكم قسمة التكلفة حسب عدد الشاشات أو الحسابات الفرعية التي يستخدمها كل شخص بدلاً من التقسيم المتساوي البحت.
+
+### كيف أتجنب نسيان تحصيل نصيب الاشتراك كل شهر؟
+سجّل الاشتراك كمصروف متكرر في تطبيق تقسيم مصاريف مثل Diviso، وسيُذكّر جميع الأعضاء تلقائياً في نفس تاريخ التجديد كل شهر.
+
+## الخلاصة
+
+الاشتراكات المشتركة توفر فلوس، لكنها تحتاج نظام واضح حتى لا تتحول إلى مصدر إزعاج شهري. اتفقوا على طريقة القسمة، سجّلوا الاشتراك كمصروف متكرر، وخلّوا التطبيق يذكّر الجميع بدل ما تصير أنت المسؤول عن المطالبة كل شهر.
+
+**جرب Diviso الآن وسجّل اشتراكاتك المشتركة كمصاريف متكررة بدون نسيان.**
+    `,
+    contentEn: `
+## Quick Answer
+
+The fairest way to split Netflix, Spotify, and other shared subscriptions is to divide the monthly subscription cost by the number of actual users, then collect each person's share on the same renewal date every month using an app that logs the subscription as a recurring expense. This removes the guesswork and stops the monthly "wait, did I already pay for this?" awkwardness.
+
+## Why Splitting Subscriptions Is Harder Than a One-Time Bill
+
+A restaurant bill or a trip expense happens once and is done. A shared subscription repeats every single month, which creates its own set of problems:
+
+- **Monthly forgetfulness**: the person who pays the bill forgets to collect from everyone else
+- **Changing group size**: someone leaves the group, but nobody updates the split
+- **Uneven usage**: some people use two screens, others use one
+- **Multiple subscriptions stacking up**: Netflix + Spotify + a shared gym membership become three separate things to track
+
+## Common Types of Subscriptions People Split
+
+### 1. Streaming Video (Netflix, Shahid VIP, OSN+)
+Usually bought as a "Family" or "Premium" plan that allows several simultaneous screens.
+
+### 2. Music Streaming (Spotify Family, Anghami)
+A family plan lets several separate accounts join at a lower combined cost than paying individually.
+
+### 3. Fitness Memberships and Recurring Bookings
+A gym membership or a weekly sports-court booking is a fixed monthly cost split across a set group.
+
+### 4. Cloud Storage and Gaming (iCloud+, Xbox Game Pass, PlayStation Plus)
+Family plans let multiple accounts share one subscription at a single combined price.
+
+## How to Calculate Each Person's Exact Share
+
+The formula is simple: **monthly subscription cost ÷ number of users = each person's share**.
+
+Example: if a Netflix family plan costs 65 SAR per month and is shared by 4 people (screens), each person's share is 65 ÷ 4 = 16.25 SAR per month.
+
+Another example: a Spotify family plan costing roughly 35 SAR per month split across 6 people works out to 35 ÷ 6 ≈ 5.8 SAR per person, per month.
+
+If usage isn't equal (say, one person uses two of the four available screens), you can adjust the split proportionally by screens used instead of splitting it perfectly evenly.
+
+## A Practical Step-by-Step System
+
+### Step 1: Agree on Who Pays the Provider
+One person's card is charged by Netflix or Spotify each month, and everyone else transfers their share to that person.
+
+### Step 2: Log the Subscription as a Recurring Expense
+Instead of manually re-adding the expense every month, use an app like Diviso to log the subscription once as a recurring expense that automatically reminds everyone on the same renewal date.
+
+### Step 3: Decide the Split Method Upfront
+Equal split among everyone, or proportional based on the number of screens or sub-accounts each person actually uses.
+
+### Step 4: Review the Group Every Few Months
+Confirm everyone still paying is still using the service, and remove anyone who has dropped out of the group.
+
+## Common Mistakes When Splitting Subscriptions
+
+- **Relying on memory**: after a couple of months, nobody remembers who paid and who didn't
+- **Not updating the list**: someone leaves the friend group but stays listed in the split
+- **Mixing multiple subscriptions together**: Netflix, Spotify, and gym costs blended with no clear per-service breakdown
+- **Delaying collection**: the longer you wait to ask, the more awkward it becomes
+
+## How Diviso Helps Track Shared Subscriptions
+
+- ✅ Log a subscription as a recurring monthly expense in one tap
+- ✅ Automatic reminders for every member on the renewal date
+- ✅ Calculates each person's share automatically, even with uneven usage
+- ✅ A clear record of who paid and who still owes
+- ✅ Separate groups for each subscription type (entertainment, fitness, storage)
+
+## Frequently Asked Questions
+
+### How much do I owe if 4 people share a 65 SAR Netflix plan?
+Your monthly share is 65 ÷ 4 = 16.25 SAR, unless you've agreed on an uneven split based on how many screens each person actually uses.
+
+### Should everyone pay the same amount even if one person uses two screens?
+Not necessarily. You can split the cost proportionally by the number of screens or sub-accounts each person uses instead of a strictly equal split.
+
+### How do I stop forgetting to collect the subscription payment every month?
+Log the subscription as a recurring expense in a splitting app like Diviso — it automatically reminds every member on the same renewal date each month, so no one has to chase payments manually.
+
+## Conclusion
+
+Shared subscriptions save money, but without a clear system they turn into a monthly annoyance. Agree on a split method, log the subscription as a recurring expense, and let the app handle the reminders instead of you being the one who has to ask for money every month.
+
+**Try Diviso now and log your shared subscriptions as recurring expenses so nobody forgets to pay.**
+    `
+  },
+  {
     slug: "travel-expenses-guide",
     title: "كيف تقسم مصاريف السفر مع الأصدقاء بذكاء",
     titleEn: "How to Split Travel Expenses with Friends Smartly",

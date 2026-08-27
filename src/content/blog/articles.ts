@@ -16,6 +16,186 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-padel-court-booking-costs",
+    title: "كيف تقسم تكلفة حجز ملعب البادل أو كرة القدم الأسبوعي مع الشلة؟",
+    titleEn: "How to Split the Cost of a Weekly Padel or Football Court Booking With Your Group",
+    description: "دليل عملي لتقسيم تكلفة حجز ملعب البادل أو كرة القدم الأسبوعي بين أعضاء الشلة، مع طريقة عادلة للتعامل مع الغياب وحساب نصيب كل شخص بدقة.",
+    descriptionEn: "A practical guide to splitting the weekly cost of a padel or football court booking among your group, including a fair way to handle no-shows and calculate everyone's share.",
+    keywords: ["تقسيم تكلفة حجز الملعب", "حجز ملعب بادل أسبوعي", "تقسيم فلوس الملعب", "من يدفع إذا ما حضر", "تكلفة حجز كرة القدم", "تقسيم مصاريف الرياضة الجماعية"],
+    keywordsEn: ["how to split padel court cost", "split football court booking cost", "weekly sports court expense splitter", "who pays if someone misses booking", "recurring court booking cost calculator", "group sports expense tracker app"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-08-27",
+    content: `
+## الإجابة المختصرة
+
+أفضل طريقة لتقسيم تكلفة حجز ملعب البادل أو كرة القدم الأسبوعي هي قسمة سعر الساعة على عدد اللاعبين الثابتين في المجموعة، وليس على عدد من حضر فعلياً في كل مرة. الغائب يدفع نصيبه كاملاً لأنه "يحجز مكانه" في الفريق، إلا إذا وجد بديلاً يدفع عنه. هذا النظام يمنع خلافات "ليش أدفع وأنا ما جيت؟" ويخلي الحجز الأسبوعي مستمراً بدون توقف.
+
+## ليش حجز الملعب الأسبوعي يحتاج نظام تقسيم خاص؟
+
+حجز الملعب يختلف عن مصروف العشاء أو الرحلة لأنه **مصروف متكرر بحضور متغير**:
+
+- **الحجز ثابت لكن الحضور متذبذب**: تحجزون كل خميس، لكن ما يحضر نفس العدد كل مرة
+- **الملعب يُدفع كامل بغض النظر عن الحضور**: لو حجزتوا لـ10 وحضر 7، السعر ما يتغير
+- **الغياب المفاجئ**: أحدهم يعتذر قبل ساعة، والحجز صار ملزماً
+- **البدلاء**: أحياناً يجيب شخص غائب بديلاً عنه من برا المجموعة
+
+## كيف تحسب نصيب كل شخص بدقة؟
+
+### الطريقة الأساسية: القسمة على عدد اللاعبين الثابتين
+لو تكلفة ساعة ملعب البادل 200 ريال، والمجموعة الثابتة 4 لاعبين، فنصيب كل واحد = 200 ÷ 4 = 50 ريال أسبوعياً، بغض النظر عمّن حضر فعلياً.
+
+### مثال ملعب كرة القدم (خماسي)
+تكلفة الساعة 250 ريال، والمجموعة 8 لاعبين ثابتين → نصيب كل واحد = 250 ÷ 8 ≈ 31.25 ريال أسبوعياً.
+
+### إذا انضم لاعب إضافي لمرة واحدة
+لو صديق زائر لعب معكم مرة واحدة، يمكن تحصيل نصيبه فقط لتلك الجلسة وتخفيف نصيب الباقين قليلاً لنفس الأسبوع، بدل تعديل النظام الثابت بالكامل.
+
+## سياسات التعامل مع الغياب
+
+### السياسة 1: الغائب يدفع كامل نصيبه (الأكثر شيوعاً)
+لأن الحجز يُدفع للملعب سواء حضر أو لا، فمن العدل أن يدفع كل عضو ثابت نصيبه كل أسبوع، حتى لو غاب.
+
+### السياسة 2: إعفاء بشرط الإشعار المسبق
+لو أعلن الغائب قبل 24 ساعة على الأقل، يُعفى من نصيبه ويُعاد توزيعه على الحاضرين فقط.
+
+### السياسة 3: البديل يدفع بدل الغائب
+لو جاب الغائب شخص بديل، فالبديل يدفع النصيب وليس الغائب.
+
+اختاروا سياسة واحدة واثبتوها من البداية لتجنب الجدال الأسبوعي.
+
+## خطوات عملية لتنظيم حجز الملعب الأسبوعي
+
+### الخطوة 1: حددوا المجموعة الثابتة
+اتفقوا من البداية على عدد اللاعبين الأساسيين اللي يتقاسمون التكلفة كل أسبوع.
+
+### الخطوة 2: سجّلوا الحجز كمصروف متكرر
+بدل تسجيل المصروف يدوياً كل أسبوع، استخدم تطبيق مثل Diviso لتسجيل حجز الملعب كمصروف أسبوعي متكرر يُذكّر الجميع تلقائياً.
+
+### الخطوة 3: اتفقوا على سياسة الغياب مسبقاً
+سواء دفع كامل، إعفاء بإشعار، أو بديل يدفع — اكتبوها في وصف المجموعة حتى ما ينساها أحد.
+
+### الخطوة 4: راجعوا الأرصدة شهرياً
+تأكدوا إن كل الأعضاء دافعين نصيبهم أولاً بأول، ولا تخلّوا المتأخرات تتراكم لشهرين أو ثلاثة.
+
+## أخطاء شائعة تفسد حجز الملعب الأسبوعي
+
+- **القسمة على عدد الحاضرين فقط**: يخلي نصيب كل شخص يتغير كل أسبوع ويصير محيّر
+- **عدم وجود سياسة غياب واضحة**: كل أسبوع نقاش جديد "أنا ما جيت ليش أدفع؟"
+- **الاعتماد على شخص واحد يحصّل الفلوس يدوياً**: يتعب ويصير عرضة للنسيان
+- **عدم تسجيل من دفع فعلاً**: يصعب معرفة المتأخرين بعد شهر
+
+## كيف يساعدك Diviso في تنظيم حجز الملعب؟
+
+- ✅ تسجيل حجز الملعب كمصروف أسبوعي متكرر تلقائياً
+- ✅ حساب نصيب كل عضو ثابت بدقة دون الحاجة لإعادة القسمة يدوياً
+- ✅ تتبع من دفع ومن لم يدفع بعد لكل أسبوع
+- ✅ تذكيرات تلقائية قبل موعد التحصيل
+- ✅ سجل واضح يوضح تاريخ كل حجز ومن شارك فيه
+
+## أسئلة شائعة
+
+### هل يدفع الغائب نفس مبلغ الحاضر في حجز الملعب الأسبوعي؟
+نعم في أغلب المجموعات، لأن الملعب يُدفع بالكامل بغض النظر عن الحضور. الاستثناء الوحيد هو لو اتفقتم مسبقاً على إعفاء الغياب المُعلن قبل مدة كافية.
+
+### كيف نحسب نصيب كل لاعب في حجز ملعب البادل؟
+اقسم سعر الساعة الكامل على عدد اللاعبين الثابتين في المجموعة، وليس على عدد من حضر تلك الجلسة بالذات، إلا إذا اتفقتم على نظام إعفاء واضح.
+
+### ماذا لو أحضر أحد اللاعبين ضيفاً معه لمرة واحدة؟
+حصّلوا نصيب الضيف لتلك الجلسة فقط، ويمكن تخفيف نصيب باقي الأعضاء الثابتين قليلاً لنفس الأسبوع دون تغيير النظام الأساسي.
+
+## الخلاصة
+
+حجز الملعب الأسبوعي يستمر بدون مشاكل لما تتفقون على قاعدة واضحة لتقسيم التكلفة وسياسة ثابتة للغياب من أول يوم. سجّلوه كمصروف متكرر في تطبيق يتابع الأرصدة تلقائياً، وخلّوا كل تركيزكم على اللعب لا على الحسابات.
+
+**جرب Diviso الآن ونظّم حجز ملعبكم الأسبوعي بدون صداع الحسابات.**
+    `,
+    contentEn: `
+## Quick Answer
+
+The fairest way to split a recurring weekly padel or football court booking is to divide the hourly cost by the number of regular players in the group, not by however many actually show up each week. Someone who's absent still pays their full share because they're holding a spot on the team, unless they send a substitute who pays instead. This system stops the recurring "why do I have to pay if I didn't come?" argument and keeps the weekly booking running smoothly.
+
+## Why a Weekly Court Booking Needs Its Own Splitting System
+
+Booking a court is different from a one-off dinner or trip expense because it's a **recurring cost with variable attendance**:
+
+- **The booking is fixed, but attendance fluctuates**: you book every Thursday, but the same number of people rarely show up
+- **The court gets paid in full regardless of attendance**: if you booked for 10 and only 7 show up, the price stays the same
+- **Last-minute cancellations happen**: someone bails an hour before, but the booking is already committed
+- **Substitutes**: sometimes an absent player brings in a replacement from outside the group
+
+## How to Calculate Each Player's Exact Share
+
+### The Basic Method: Divide by the Number of Regular Players
+If an hour on a padel court costs 200 SAR and the regular group is 4 players, each person's share is 200 ÷ 4 = 50 SAR per week, regardless of who actually shows up.
+
+### Football (Five-a-Side) Example
+The court costs 250 SAR per hour with a group of 8 regular players → each person's share is 250 ÷ 8 ≈ 31.25 SAR per week.
+
+### When an Extra Player Joins for One Session
+If a visiting friend plays with you just once, you can collect their share only for that session and slightly reduce everyone else's share for that week, instead of overhauling the fixed system.
+
+## Policies for Handling No-Shows
+
+### Policy 1: The Absent Player Pays Their Full Share (Most Common)
+Since the court is paid in full whether someone attends or not, it's fair for every regular member to pay their share every week, even when absent.
+
+### Policy 2: Exemption With Advance Notice
+If a player gives at least 24 hours' notice, they're exempted from that week's share, and the cost is redistributed only among those who attend.
+
+### Policy 3: The Substitute Pays Instead of the Absent Player
+If the absent player brings in a replacement, the substitute pays the share instead of the original player.
+
+Pick one policy and set it in stone from day one to avoid a weekly argument.
+
+## A Practical System for Running the Weekly Booking
+
+### Step 1: Define the Regular Group
+Agree upfront on the core group of players who share the cost every week.
+
+### Step 2: Log the Booking as a Recurring Expense
+Instead of manually re-adding the expense every week, use an app like Diviso to log the court booking as a recurring weekly expense that automatically reminds everyone.
+
+### Step 3: Agree on the No-Show Policy in Advance
+Whether it's full payment, notice-based exemption, or substitute-pays — write it into the group description so nobody forgets it.
+
+### Step 4: Review Balances Monthly
+Make sure every member is paying their share on time, and don't let unpaid balances pile up for two or three months.
+
+## Common Mistakes That Ruin a Weekly Court Booking
+
+- **Splitting only among those who showed up**: makes each person's share change every week and becomes confusing
+- **No clear no-show policy**: a fresh argument every week — "I didn't come, why should I pay?"
+- **Relying on one person to collect money manually**: exhausting and prone to being forgotten
+- **Not tracking who actually paid**: hard to figure out who's behind after a month
+
+## How Diviso Helps Organize Your Court Booking
+
+- ✅ Logs the court booking as an automatic recurring weekly expense
+- ✅ Calculates each regular member's share precisely without manual re-splitting
+- ✅ Tracks who has and hasn't paid for each week
+- ✅ Automatic reminders before the collection is due
+- ✅ A clear record of every booking date and who was included
+
+## Frequently Asked Questions
+
+### Does an absent player pay the same amount as someone who showed up?
+Yes, in most groups, because the court is paid in full regardless of attendance. The only exception is if the group has agreed in advance to exempt players who cancel with enough notice.
+
+### How do I calculate each player's share for a padel court booking?
+Divide the full hourly rate by the number of regular players in the group, not by however many attended that specific session, unless you've agreed on a clear exemption policy.
+
+### What if a player brings a one-time guest to the session?
+Collect the guest's share for that single session only, and you can slightly reduce the regular members' shares for that week without changing the core system.
+
+## Conclusion
+
+A weekly court booking runs smoothly once your group agrees on a clear cost-splitting rule and a fixed no-show policy from day one. Log it as a recurring expense in an app that tracks balances automatically, and keep your focus on the game instead of the math.
+
+**Try Diviso now and run your weekly court booking without the payment headaches.**
+    `
+  },
+  {
     slug: "split-streaming-subscription-costs",
     title: "كيف تقسم اشتراكات نتفلكس وسبوتيفاي مع العائلة والأصدقاء؟",
     titleEn: "How to Split Netflix, Spotify, and Streaming Subscription Costs With Friends and Family",

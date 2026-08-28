@@ -16,6 +16,182 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-chalet-istirahah-rental-costs",
+    title: "كيف تقسم تكلفة استئجار الشاليه أو الاستراحة مع الشباب؟",
+    titleEn: "How to Split the Cost of Renting a Chalet or Istirahah With Your Group",
+    description: "دليل عملي لتقسيم تكلفة استئجار الشاليه أو الاستراحة بين الشباب، وكيف تتعامل مع التأمين القابل للاسترداد ونصيب من يحضر ليلة واحدة فقط.",
+    descriptionEn: "A practical guide to splitting the cost of renting a chalet or istirahah among a group, including how to handle the refundable deposit and members who only stay one night.",
+    keywords: ["تقسيم تكلفة الشاليه", "حجز استراحة مع الشباب", "كم نصيبي في الشاليه", "تقسيم فلوس الاستراحة", "مصاريف تأجير شاليه", "حجز شاليه جماعي"],
+    keywordsEn: ["how to split chalet rental cost", "split istirahah rental with friends", "group chalet booking expense calculator", "vacation rental deposit split", "weekend getaway cost splitter", "split cabin rental cost with friends"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-08-28",
+    content: `
+## الإجابة المختصرة
+
+أفضل طريقة لتقسيم تكلفة استئجار الشاليه أو الاستراحة هي جمع تكلفة الإيجار الكامل + التأمين القابل للاسترداد، ثم قسمتها على عدد الحاضرين الفعليين، مع تعديل نصيب من يحضر ليلة واحدة فقط بدل الليالي كاملة. التأمين يُعاد توزيعه على الجميع بعد استرجاعه من المالك، ولا يُحسب كمصروف نهائي إلا إذا اقتُطع منه بسبب أضرار.
+
+## ليش تقسيم تكلفة الشاليه مختلف عن الكشتة أو الفندق؟
+
+استئجار الشاليه أو الاستراحة له خصوصية عن باقي أنواع الرحلات الجماعية:
+
+- **دفعة مقدمة كبيرة**: عادة يُطلب دفع كامل المبلغ أو نسبة كبيرة منه مقدماً لحجز التاريخ
+- **تأمين قابل للاسترداد**: مبلغ إضافي (عادة 200-500 ريال) يُرد بعد التأكد من سلامة الشاليه
+- **اختلاف مدة الحضور**: البعض يحضر الليلتين، والبعض يجي ليلة وحدة بس
+- **مصاريف إضافية مشتركة**: فحم، طعام، ألعاب مائية إذا فيه مسبح — تُضاف فوق إيجار الشاليه نفسه
+
+## كيف تحسب نصيب كل شخص بدقة؟
+
+### مثال 1: الجميع يحضر نفس المدة
+لو الشاليه بـ900 ريال لليلة الواحدة، والحجز ليلتين = 1800 ريال، بالإضافة إلى تأمين 300 ريال قابل للاسترداد، فالمجموع المطلوب مقدماً = 2100 ريال. لو المجموعة 6 أشخاص وكلهم باقون الليلتين، فنصيب كل واحد = 2100 ÷ 6 = 350 ريال.
+
+بعد انتهاء الإقامة وإرجاع التأمين كاملاً من المالك، يُعاد توزيع الـ300 ريال على الجميع = 50 ريال لكل شخص، فتصبح التكلفة الفعلية النهائية لكل واحد = 300 ريال فقط (نصيبه من الإيجار بدون التأمين).
+
+### مثال 2: حضور متفاوت
+لو 4 أشخاص حضروا الليلتين و2 حضروا ليلة وحدة فقط من أصل نفس الشاليه بـ1800 ريال إيجار:
+احسب "ليالي الشخص" الإجمالية: (4 × 2) + (2 × 1) = 10 ليالي-شخص.
+تكلفة الليلة-شخص = 1800 ÷ 10 = 180 ريال.
+من حضر الليلتين يدفع 360 ريال، ومن حضر ليلة وحدة يدفع 180 ريال فقط.
+
+## كيف تدير التأمين القابل للاسترداد بذكاء؟
+
+- **اجمعه مع الإيجار من البداية** ولا تتركه لآخر لحظة
+- **سجّله كبند منفصل** في تطبيق تتبع المصاريف حتى تعرف بالضبط كم يجب أن يُرد
+- **وزّعه فوراً بعد استرداده** من المالك خلال أيام من انتهاء الإقامة
+- **إذا اقتُطع جزء منه** بسبب ضرر، وضّح من المسؤول قبل قسمة الخصم على الجميع
+
+## خطوات عملية لتنظيم حجز الشاليه
+
+### قبل الحجز
+1. حددوا الميزانية التقريبية للفرد
+2. اجمعوا المبلغ من كل شخص مسبقاً قبل الدفع للمالك
+3. حددوا من سيحضر كم ليلة بالضبط
+
+### أثناء الإقامة
+1. سجّلوا أي مصروف إضافي فوراً (فحم، طعام، تنظيف)
+2. صوروا حالة الشاليه عند الوصول لحماية التأمين
+
+### بعد المغادرة
+1. تابعوا استرداد التأمين من المالك
+2. وزّعوا التأمين المُسترد على الجميع
+3. راجعوا كل المصاريف الإضافية وسوّوا الحسابات النهائية
+
+## أخطاء شائعة تفسد حجز الشاليه الجماعي
+
+- **نسيان تتبع التأمين**: يضيع وسط باقي المصاريف ولا أحد يتابع استرداده
+- **القسمة بالتساوي رغم اختلاف عدد الليالي**: يشعر من حضر ليلة وحدة بالظلم
+- **عدم تسجيل المصاريف الإضافية فوراً**: الفحم والطعام يُنسى ولا يُحتسب
+- **الاعتماد على شخص واحد يحفظ كل الفواتير**: يصعب المراجعة لاحقاً
+
+## كيف يساعدك Diviso في تنظيم حجز الشاليه؟
+
+- ✅ تسجيل الإيجار والتأمين كبندين منفصلين واضحين
+- ✅ تقسيم مخصص حسب عدد الليالي لكل شخص وليس بالتساوي فقط
+- ✅ تصنيف المصاريف الإضافية (طعام، فحم، تنظيف) لكل رحلة
+- ✅ حساب تلقائي لإعادة توزيع التأمين بعد استرداده
+- ✅ سجل واضح يوضح من دفع ومن باقي عليه مبلغ
+
+## أسئلة شائعة
+
+### هل يدفع التأمين نفسه من حضر الشاليه أم يُحسب ضمن الإيجار؟
+التأمين يُجمع مع الإيجار مقدماً كجزء من المبلغ المطلوب، لكنه يبقى منفصلاً محاسبياً لأنه يُرد لاحقاً، بعكس الإيجار الذي يُعتبر مصروفاً نهائياً.
+
+### كيف أحسب نصيب شخص حضر ليلة واحدة فقط من أصل ليلتين؟
+اقسم إجمالي الإيجار على مجموع "ليالي الشخص" (عدد الأشخاص × الليالي لكل واحد)، ثم اضرب الناتج في عدد الليالي التي حضرها كل فرد فعلياً.
+
+### ماذا يحدث لو اقتُطع جزء من التأمين بسبب ضرر في الشاليه؟
+حدّدوا أولاً إن كان الضرر بسبب شخص معين يتحمله وحده، أو ضرر عام يُقسّم على الجميع بنفس نسبة تقسيم الإيجار الأصلية.
+
+## الخلاصة
+
+استئجار الشاليه أو الاستراحة يفسده غالباً سوء تتبع التأمين واختلاف عدد الليالي بين الحاضرين، لا الإيجار نفسه. اجمعوا المبلغ مقدماً، سجّلوا كل بند بوضوح، ووزّعوا التأمين فور استرداده.
+
+**جرب Diviso الآن ونظّم حجز الشاليه القادم بدون أي التباس في الحسابات.**
+    `,
+    contentEn: `
+## Quick Answer
+
+The fairest way to split the cost of renting a chalet or istirahah is to add the full rental price plus the refundable security deposit, then divide that by the number of actual attendees, adjusting the share for anyone who only stays one night instead of the full booking. The deposit should be redistributed among everyone once it's returned by the owner, and only counts as a real cost if part of it is withheld for damages.
+
+## Why Splitting a Chalet Rental Is Different From Camping or a Hotel
+
+Renting a chalet or istirahah has quirks that other group getaways don't:
+
+- **A large upfront payment**: owners typically require the full amount, or a large portion of it, paid in advance to hold the date
+- **A refundable security deposit**: an extra amount (commonly 200-500 SAR) returned after the property is confirmed undamaged
+- **Uneven length of stay**: some people stay both nights, others come for just one
+- **Shared extra costs**: charcoal, food, and pool activities add on top of the base rental price
+
+## How to Calculate Each Person's Exact Share
+
+### Example 1: Everyone Stays the Same Length
+If the chalet costs 900 SAR per night and you book two nights = 1,800 SAR, plus a refundable deposit of 300 SAR, the total due upfront is 2,100 SAR. With a group of 6 people all staying both nights, each person's share is 2,100 ÷ 6 = 350 SAR.
+
+Once the stay ends and the owner returns the full deposit, redistribute that 300 SAR among everyone (50 SAR each), bringing the actual final cost per person down to 300 SAR — just their share of the rental, minus the deposit.
+
+### Example 2: Uneven Attendance
+Say 4 people stay both nights and 2 people stay just one night, out of the same 1,800 SAR rental:
+Calculate total "person-nights": (4 × 2) + (2 × 1) = 10 person-nights.
+Cost per person-night = 1,800 ÷ 10 = 180 SAR.
+Those staying both nights pay 360 SAR, and those staying one night pay just 180 SAR.
+
+## How to Manage the Refundable Deposit Properly
+
+- **Collect it together with the rental upfront** — don't leave it until the last minute
+- **Log it as a separate line item** in your expense tracker so you know exactly how much should come back
+- **Redistribute it immediately** once the owner returns it, within days of checkout
+- **If part of it is withheld** for damage, determine who's responsible before splitting the deduction among everyone
+
+## A Practical System for Booking a Chalet
+
+### Before Booking
+1. Agree on a rough per-person budget
+2. Collect the money from everyone before paying the owner
+3. Confirm exactly how many nights each person will stay
+
+### During the Stay
+1. Log any extra expense immediately (charcoal, food, cleaning)
+2. Photograph the chalet's condition on arrival to protect the deposit
+
+### After Checkout
+1. Follow up on the deposit refund from the owner
+2. Redistribute the returned deposit among everyone
+3. Review all extra expenses and do the final settlement
+
+## Common Mistakes That Ruin a Group Chalet Booking
+
+- **Forgetting to track the deposit**: it gets lost among other expenses and nobody follows up on getting it back
+- **Splitting equally despite different lengths of stay**: whoever stayed one night feels shortchanged
+- **Not logging extras immediately**: charcoal and food get forgotten and never counted
+- **Relying on one person to keep every receipt**: makes reviewing the bill later difficult
+
+## How Diviso Helps Organize a Chalet Booking
+
+- ✅ Logs the rental and the deposit as two clear, separate line items
+- ✅ Custom splitting by number of nights per person, not just an equal split
+- ✅ Categorizes extra expenses (food, charcoal, cleaning) per trip
+- ✅ Automatically recalculates the redistribution once the deposit is refunded
+- ✅ A clear record of who paid and who still owes
+
+## Frequently Asked Questions
+
+### Does the person who stays pay the deposit themselves, or is it counted with the rental?
+The deposit is collected upfront together with the rental as part of the total due, but it stays accounted for separately since it's refundable later, unlike the rental which is a final cost.
+
+### How do I calculate the share for someone who only stayed one night out of two?
+Divide the total rental cost by the sum of "person-nights" (number of people × nights each stayed), then multiply that per-person-night rate by the number of nights each individual actually stayed.
+
+### What happens if part of the deposit is withheld for damage?
+First determine whether the damage was caused by one specific person, who bears it alone, or if it's general wear split among everyone using the same ratio as the original rental split.
+
+## Conclusion
+
+A chalet or istirahah rental usually gets messed up by poor deposit tracking and uneven lengths of stay, not the rental cost itself. Collect the money upfront, log every line item clearly, and redistribute the deposit as soon as it's refunded.
+
+**Try Diviso now and organize your next chalet booking without any confusion over the money.**
+    `
+  },
+  {
     slug: "split-padel-court-booking-costs",
     title: "كيف تقسم تكلفة حجز ملعب البادل أو كرة القدم الأسبوعي مع الشلة؟",
     titleEn: "How to Split the Cost of a Weekly Padel or Football Court Booking With Your Group",

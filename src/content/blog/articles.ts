@@ -16,6 +16,194 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-carpool-gas-costs",
+    title: "كيف تقسم تكلفة البنزين مع زملاء التوصيل اليومي؟",
+    titleEn: "How to Split Gas Money for a Daily Carpool — A Fair Cost-Per-Trip Method",
+    description: "طريقة عملية لحساب وتقسيم تكلفة البنزين بين زملاء التوصيل اليومي للعمل أو الجامعة، مع مثال حساب دقيق ونظام تناوب السواقة بدون فلوس.",
+    descriptionEn: "A practical formula for calculating and splitting daily carpool gas costs with coworkers or classmates, with a worked example and a no-cash driving-rotation alternative.",
+    keywords: ["تقسيم تكلفة البنزين", "تقسيم فلوس التوصيل", "توصيل مع الزملاء", "حساب تكلفة البنزين للسيارة", "تقسيم مصاريف السيارة المشتركة", "تكلفة التوصيل اليومي للعمل"],
+    keywordsEn: ["how to split gas money for carpool", "carpool cost calculator", "split fuel cost with coworkers", "daily commute expense splitter", "fair way to split gas money", "carpool gas cost per person"],
+    category: "tips",
+    readTime: 6,
+    publishDate: "2026-08-29",
+    content: `
+## الإجابة المختصرة
+
+أفضل طريقة لتقسيم تكلفة البنزين في التوصيل اليومي هي حساب تكلفة الرحلة الفعلية (كمية البنزين المستهلكة × سعر اللتر)، ثم قسمتها على عدد الركاب في السيارة بمن فيهم السائق، وتحصيلها أسبوعياً بدل يومياً. البديل الأسهل بدون أي تحويل فلوس هو نظام "تناوب السواقة" — كل واحد يسوق أسبوعاً بسيارته، فتتعادل التكلفة تلقائياً مع الوقت.
+
+## ليش تقسيم تكلفة البنزين مختلف عن مصاريف الرحلة العادية؟
+
+التوصيل اليومي مصروف متكرر يومياً وليس مرة واحدة، وهذا يخلق تحديات خاصة:
+
+- **يتكرر 5 أيام أسبوعياً**: حتى الفرق البسيط باليوم يتراكم بسرعة على شهر كامل
+- **السائق يتحمل تكلفة إضافية**: البنزين، الصيانة، الإطارات — مو بس وقت السواقة
+- **غياب متقطع**: أحدهم يأخذ إجازة أو يوصّل نفسه أحياناً
+- **تجنّب الإحراج اليومي**: ما أحد يبغى يذكّر زميله بالفلوس كل صباح
+
+## كيف تحسب تكلفة الرحلة بدقة؟
+
+القاعدة: **تكلفة الرحلة = المسافة (كم) ÷ 100 × معدل استهلاك السيارة (لتر/100كم) × سعر اللتر**.
+
+### مثال عملي
+لو الرحلة ذهاباً وإياباً للعمل 30 كم، والسيارة تستهلك تقريباً 7 لترات لكل 100 كم، وسعر اللتر 2.33 ريال:
+
+- كمية البنزين المستهلكة = 30 ÷ 100 × 7 = 2.1 لتر
+- تكلفة الرحلة اليومية = 2.1 × 2.33 ≈ 4.9 ريال
+- التكلفة الأسبوعية (5 أيام عمل) ≈ 24.5 ريال
+
+لو السيارة فيها 4 أشخاص (السائق + 3 ركاب)، فنصيب كل واحد أسبوعياً = 24.5 ÷ 4 ≈ 6.1 ريال، أي حوالي 24-25 ريال شهرياً للشخص.
+
+### هل يدفع السائق نصيبه أيضاً؟
+الأعدل أن يُحسب نصيب السائق ضمن القسمة مثل الباقين تماماً، لأن تكلفة البنزين تُصرف بغض النظر عن مين يسوق. بعض المجموعات تضيف نسبة بسيطة إضافية (10-15%) تُدفع للسائق فقط كتعويض عن الصيانة والإطارات.
+
+## طريقتان لتنظيم توصيل الزملاء
+
+### الطريقة 1: تحصيل أسبوعي أو شهري ثابت
+شخص واحد يسوق دائماً، والباقون يحوّلون له مبلغاً ثابتاً كل أسبوع أو شهر بدل حساب كل يوم على حدة.
+
+**مناسبة لـ**: مجموعة عندها سيارة واحدة موثوقة وسائق ثابت.
+
+### الطريقة 2: تناوب السواقة بدون فلوس
+كل شخص يسوق بسيارته أسبوعاً كاملاً بالتناوب. النتيجة: كل واحد يدفع بنزين سيارته بنفس عدد الأسابيع تقريباً، فتتعادل التكلفة بدون أي تحويلات مالية.
+
+**مناسبة لـ**: مجموعة كل أفرادها عندهم سيارات ويفضلون تجنب حسابات الفلوس اليومية.
+
+## خطوات عملية لتقسيم تكلفة التوصيل
+
+### الخطوة 1: احسبوا التكلفة الأسبوعية الفعلية
+استخدموا معدل استهلاك السيارة الحقيقي (تقدر تشوفه من عداد السيارة أو تطبيق الوقود) بدل التخمين.
+
+### الخطوة 2: سجّلوا التوصيل كمصروف متكرر
+استخدم تطبيق مثل Diviso لتسجيل مصروف البنزين الأسبوعي كمصروف متكرر بين أعضاء مجموعة التوصيل، بدل ما تعتمدون على الذاكرة.
+
+### الخطوة 3: اتفقوا على التعامل مع الغياب
+حددوا مسبقاً: هل الغائب يدفع نصيبه كامل، أم يُخصم يوم الغياب من حسابه؟
+
+### الخطوة 4: راجعوا الاتفاق كل شهر
+أسعار الوقود ومعدلات الاستهلاك قد تتغير، فراجعوا الحساب دورياً للتأكد إن التقسيم لسا عادل.
+
+## أخطاء شائعة تفسد توصيل الزملاء
+
+- **الاعتماد على تقدير تقريبي**: "خلنا نقول 20 ريال بس" بدون حساب فعلي يخلي أحداً يدفع أكثر من نصيبه
+- **عدم تسجيل من دفع**: بعد شهر محد يتذكر مين حوّل ومين لأ
+- **تجاهل تكلفة الصيانة**: البنزين مو التكلفة الوحيدة، والسائق يتحمل استهلاك إضافي في السيارة
+- **عدم وجود سياسة غياب واضحة**: نقاش متكرر كل ما غاب أحد
+
+## كيف يساعدك Diviso في تنظيم توصيل الزملاء؟
+
+- ✅ تسجيل تكلفة البنزين كمصروف أسبوعي متكرر
+- ✅ تقسيم دقيق على عدد ركاب كل رحلة بمن فيهم السائق
+- ✅ تذكير تلقائي بموعد التحصيل الأسبوعي أو الشهري
+- ✅ سجل واضح يوضح من دفع نصيبه ومن لم يدفع بعد
+- ✅ مجموعة منفصلة لكل خط توصيل (عمل، جامعة)
+
+## أسئلة شائعة
+
+### كم تكلفة البنزين لتوصيل يومي مسافته 30 كم؟
+باستهلاك 7 لترات لكل 100 كم وسعر لتر 2.33 ريال، تكلفة الرحلة اليومية تقريباً 4.9 ريال، أي حوالي 24.5 ريال أسبوعياً لكل سيارة.
+
+### هل يدفع السائق نفس مبلغ الراكب في التوصيل اليومي؟
+غالباً نعم بنفس النسبة، لأن تكلفة البنزين واحدة بغض النظر عن مين يسوق. بعض المجموعات تضيف نسبة صغيرة إضافية للسائق تعويضاً عن صيانة السيارة.
+
+### ما البديل إذا ما حبينا نتعامل بالفلوس كل أسبوع؟
+نظام تناوب السواقة — كل شخص يسوق بسيارته أسبوعاً بالتناوب — يلغي الحاجة لأي تحويلات مالية لأن التكلفة تتعادل تلقائياً مع الوقت.
+
+## الخلاصة
+
+توصيل الزملاء اليومي يوفر فلوس ووقت، لكنه يحتاج نظام واضح لحساب البنزين حتى لا يتحول لمصدر إحراج يومي. احسبوا التكلفة الفعلية، سجّلوها كمصروف متكرر، أو اعتمدوا نظام التناوب لتجنّبوا الحسابات نهائياً.
+
+**جرب Diviso الآن ونظّم تكلفة التوصيل اليومي مع زملائك بدون صداع.**
+    `,
+    contentEn: `
+## Quick Answer
+
+The fairest way to split daily carpool gas money is to calculate the actual trip cost (fuel consumed × price per liter) and divide it by the number of people in the car, including the driver, then collect it weekly instead of daily. The simplest cash-free alternative is a driving rotation — each person drives their own car for a week at a time, which balances out the cost automatically over time.
+
+## Why Carpool Gas Splitting Is Different From a Trip Expense
+
+A daily commute is a recurring cost that repeats every single day, not a one-time trip, and that creates its own challenges:
+
+- **It repeats 5 days a week**: even a small daily difference adds up quickly over a month
+- **The driver bears extra costs**: fuel, maintenance, and tire wear, not just their driving time
+- **Attendance is irregular**: someone takes a day off, drives themselves occasionally, or works from home
+- **Nobody wants the daily awkwardness**: reminding a coworker about money every morning gets old fast
+
+## How to Calculate the Trip Cost Accurately
+
+The formula: **trip cost = distance (km) ÷ 100 × car's fuel consumption rate (liters/100km) × price per liter**.
+
+### Worked Example
+Say the round-trip commute is 30 km, the car consumes about 7 liters per 100 km, and fuel costs 2.33 SAR per liter:
+
+- Fuel used = 30 ÷ 100 × 7 = 2.1 liters
+- Daily trip cost = 2.1 × 2.33 ≈ 4.9 SAR
+- Weekly cost (5 working days) ≈ 24.5 SAR
+
+With 4 people in the car (driver + 3 passengers), each person's weekly share is 24.5 ÷ 4 ≈ 6.1 SAR, or roughly 24-25 SAR per month per person.
+
+### Does the Driver Pay a Share Too?
+The fairest approach is to include the driver's share in the split just like everyone else, since the fuel cost is spent regardless of who's driving. Some groups add a small extra percentage (10-15%) paid only to the driver as compensation for maintenance and tire wear.
+
+## Two Ways to Organize Coworker Carpooling
+
+### Method 1: Fixed Weekly or Monthly Collection
+One person always drives, and everyone else transfers a fixed amount weekly or monthly instead of calculating each day separately.
+
+**Best for**: a group with one reliable car and a consistent driver.
+
+### Method 2: Cash-Free Driving Rotation
+Each person drives their own car for a full week, taking turns. The result: everyone ends up paying for their own car's fuel roughly the same number of weeks, so the cost balances out with no money changing hands.
+
+**Best for**: a group where everyone owns a car and prefers to avoid daily money math entirely.
+
+## A Practical System for Splitting Commute Costs
+
+### Step 1: Calculate the Real Weekly Cost
+Use the car's actual fuel consumption rate (check the car's display or a fuel-tracking app) instead of guessing.
+
+### Step 2: Log the Commute as a Recurring Expense
+Use an app like Diviso to log the weekly gas cost as a recurring expense among the carpool group instead of relying on memory.
+
+### Step 3: Agree on How to Handle Absences
+Decide in advance: does an absent person still pay their full share, or is that day deducted from their total?
+
+### Step 4: Review the Agreement Monthly
+Fuel prices and consumption rates can change, so revisit the calculation periodically to make sure the split is still fair.
+
+## Common Mistakes That Ruin Coworker Carpooling
+
+- **Relying on a rough guess**: "let's just say 20 SAR" without a real calculation means someone ends up overpaying
+- **Not tracking who paid**: after a month, nobody remembers who transferred money and who didn't
+- **Ignoring maintenance costs**: fuel isn't the only cost — the driver's car takes on extra wear
+- **No clear absence policy**: a repeated argument every time someone misses a day
+
+## How Diviso Helps Organize Coworker Carpooling
+
+- ✅ Logs the gas cost as a recurring weekly expense
+- ✅ Splits it precisely by the number of riders in each trip, including the driver
+- ✅ Automatic reminders when the weekly or monthly collection is due
+- ✅ A clear record of who has and hasn't paid their share
+- ✅ A separate group for each commute route (work, university)
+
+## Frequently Asked Questions
+
+### How much does gas cost for a daily 30 km commute?
+At a consumption rate of 7 liters per 100 km and 2.33 SAR per liter, the daily trip costs roughly 4.9 SAR, or about 24.5 SAR per week for the car.
+
+### Does the driver pay the same amount as a passenger?
+Usually yes, at the same rate, since the fuel cost is the same regardless of who's driving. Some groups add a small extra percentage for the driver to cover maintenance.
+
+### What's the alternative if we don't want to deal with money every week?
+A driving rotation — each person drives their own car for a week at a time — eliminates the need for any money transfers because the cost balances out automatically over time.
+
+## Conclusion
+
+A daily coworker carpool saves money and time, but it needs a clear system for calculating gas costs so it doesn't turn into a daily source of awkwardness. Calculate the real cost, log it as a recurring expense, or switch to a driving rotation to avoid the math altogether.
+
+**Try Diviso now and organize your daily carpool costs with zero hassle.**
+    `
+  },
+  {
     slug: "split-chalet-istirahah-rental-costs",
     title: "كيف تقسم تكلفة استئجار الشاليه أو الاستراحة مع الشباب؟",
     titleEn: "How to Split the Cost of Renting a Chalet or Istirahah With Your Group",

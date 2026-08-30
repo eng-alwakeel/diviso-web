@@ -16,6 +16,182 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "collect-money-for-group-gift",
+    title: "كيف تجمع فلوس هدية جماعية من الزملاء أو الأصدقاء بسهولة؟",
+    titleEn: "How to Collect Money for a Group Gift From Friends or Coworkers",
+    description: "دليل عملي لتنظيم جمع الفلوس لهدية جماعية (زواج، مولود، وداع زميل) بدون ملاحقة أحد، مع طريقة تحديد نصيب الفرد ومتابعة من دفع ومن لم يدفع بعد.",
+    descriptionEn: "A practical guide to collecting money for a group gift — a wedding, a newborn, a coworker's farewell — without chasing anyone down, including how to set each person's share and track who's paid.",
+    keywords: ["تجميع فلوس هدية", "جمع فلوس من الزملاء", "هدية جماعية للزميل", "تنظيم جمع تبرعات هدية", "كم نصيبي في الهدية", "جمع فلوس هدية زواج"],
+    keywordsEn: ["how to collect money for a group gift", "gift pool calculator", "collect money from coworkers for a gift", "group gift contribution app", "pooling money for a wedding gift", "organize a group gift collection"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-08-30",
+    content: `
+## الإجابة المختصرة
+
+أفضل طريقة لجمع فلوس هدية جماعية هي تحديد ميزانية الهدية الإجمالية أولاً، ثم قسمتها على عدد المشاركين المتوقع للوصول لنصيب الفرد المقترح، وتحصيلها عبر رابط أو مجموعة واحدة قبل موعد الشراء بيومين على الأقل. هذا يمنع الشخص المسؤول عن الهدية من دفع الفرق من جيبه أو ملاحقة الزملاء يومياً للسؤال "حولت لي؟".
+
+## ليش جمع فلوس الهدية الجماعية محرج ومعقد؟
+
+جمع فلوس هدية يختلف عن تقسيم مصروف عادي لأنه **تحصيل مسبق قبل الشراء، وليس تسوية بعد الدفع**:
+
+- **الحرج من التذكير**: ما أحد يحب يرسل "بالمرة ما نسيت تحويل نصيبك؟" أكثر من مرة
+- **غموض المبلغ المطلوب**: كثير من الزملاء ما يعرفون كم يفترض يدفعون بالضبط
+- **تفاوت المشاركة**: البعض يبي يشارك بأكثر، والبعض ميزانيته محدودة
+- **ضغط الوقت**: الهدية لها موعد محدد (حفل، وداع)، فما فيه وقت للتأجيل
+
+## كيف تحدد نصيب كل شخص بدقة؟
+
+القاعدة البسيطة: **ميزانية الهدية الإجمالية ÷ عدد المشاركين المتوقع = نصيب الفرد المقترح**.
+
+### مثال عملي
+لو فريق العمل قرر إهداء زميل مسافر هدية وداع بميزانية 800 ريال، والفريق 8 أشخاص، فنصيب كل واحد المقترح = 800 ÷ 8 = 100 ريال.
+
+لو انضم شخصان إضافيان لاحقاً (زملاء من قسم ثاني)، يعاد الحساب: 800 ÷ 10 = 80 ريال للفرد، وتُرد الفروقات لمن دفع 100 ريال بالفعل.
+
+### ماذا لو أراد البعض المساهمة بمبلغ أكبر؟
+اجعلوا "نصيب الفرد المقترح" رقماً إرشادياً لا إلزامياً، وأتيحوا لمن يرغب المساهمة بأكثر أن يفعل ذلك بحرية دون إحراج من دفع الحد الأدنى فقط.
+
+## خطوات عملية لتنظيم جمع فلوس الهدية
+
+### الخطوة 1: حددوا الميزانية والمناسبة بوضوح
+اتفقوا من البداية: ما المناسبة (زواج، مولود، وداع)، وكم الميزانية التقريبية للهدية.
+
+### الخطوة 2: أنشئوا مجموعة تحصيل واحدة
+بدل رسائل واتساب متفرقة يصعب تتبعها، استخدم تطبيق مثل Diviso لإنشاء مجموعة خاصة بالهدية يشوفها الجميع.
+
+### الخطوة 3: حددوا موعداً نهائياً للتحصيل
+اطلبوا التحويل قبل موعد الشراء بيومين على الأقل، حتى يتسع الوقت لمتابعة المتأخرين بدون ضغط اللحظة الأخيرة.
+
+### الخطوة 4: تابعوا من دفع ومن لم يدفع بشفافية
+بدل الرسائل الفردية المحرجة، خلّوا التطبيق يعرض للجميع (أو للمسؤول فقط) حالة كل شخص، فتصير المتابعة تلقائية لا شخصية.
+
+### الخطوة 5: اشتروا الهدية وسجّلوا الفرق
+بعد الشراء، سجّلوا السعر الفعلي. لو زاد أو نقص عن المتوقع، وزّعوا الفرق أو ردّوه بشفافية.
+
+## كيف تتعامل مع من لا يستجيب؟
+
+- **ذكّروا بلطف عبر المجموعة العامة** بدل الرسالة الشخصية المباشرة أول مرة
+- **حددوا مهلة واضحة**: "التحصيل يقفل يوم الخميس"
+- **لا تنتظروا الجميع**: لو اقترب الموعد ونقص التمويل، اشتروا هدية بالميزانية المتوفرة فعلياً
+- **لا تفترضوا سوء النية**: كثير من التأخير سببه النسيان لا التهرب
+
+## أخطاء شائعة تفسد جمع فلوس الهدية
+
+- **عدم تحديد نصيب واضح من البداية**: يخلي كل شخص يحوّل مبلغاً عشوائياً
+- **الاعتماد على شخص واحد يتذكر كل التحويلات يدوياً**: عرضة للخطأ والنسيان
+- **تأجيل التحصيل لآخر لحظة**: يضطر المسؤول لدفع الفرق من جيبه
+- **عدم تسجيل من دفع بالضبط**: يصعب تتبع المتأخرين لاحقاً لو الهدية تكررت
+
+## كيف يساعدك Diviso في تنظيم جمع فلوس الهدية؟
+
+- ✅ إنشاء مجموعة مؤقتة مخصصة لكل مناسبة هدية
+- ✅ عرض نصيب الفرد المقترح تلقائياً بناءً على الميزانية وعدد المشاركين
+- ✅ تتبع من دفع ومن لم يدفع بعد دون رسائل شخصية محرجة
+- ✅ تعديل النصيب تلقائياً إذا انضم أو انسحب أحد المشاركين
+- ✅ إغلاق المجموعة بعد الشراء وتوثيق التكلفة النهائية
+
+## أسئلة شائعة
+
+### كيف أحدد كم يجب أن يدفع كل شخص في الهدية الجماعية؟
+اقسم الميزانية الإجمالية للهدية على عدد المشاركين المتوقع للحصول على نصيب إرشادي لكل فرد، مع السماح لمن يرغب بالمساهمة بأكثر أن يفعل ذلك اختيارياً.
+
+### ماذا أفعل إذا لم يدفع بعض الزملاء في الوقت المحدد؟
+ذكّرهم بلطف عبر رسالة جماعية بدل رسائل شخصية، وحددوا مهلة نهائية واضحة. إذا اقترب موعد الشراء، اشتروا الهدية بالميزانية المتوفرة فعلياً بدل الانتظار إلى ما لا نهاية.
+
+### هل يجب أن يدفع الجميع نفس المبلغ بالضبط؟
+لا، النصيب المقترح إرشادي فقط. من يرغب بالمساهمة بأكثر يمكنه ذلك، والمهم أن يعرف الجميع المبلغ الأدنى المتوقع منهم بوضوح.
+
+## الخلاصة
+
+جمع فلوس الهدية الجماعية لا يجب أن يكون مصدر إحراج أو عبء على شخص واحد. حددوا الميزانية، أنشئوا مجموعة تحصيل واضحة، وخلّوا التطبيق يتابع من دفع بدل ما تصير أنت "شرطي التحصيل".
+
+**جرب Diviso الآن ونظّم جمع فلوس الهدية القادمة بدون ملاحقة أحد.**
+    `,
+    contentEn: `
+## Quick Answer
+
+The best way to collect money for a group gift is to set the total gift budget first, then divide it by the expected number of contributors to get a suggested per-person amount, and collect it through one shared link or group at least two days before you need to buy the gift. This stops the person organizing the gift from covering the shortfall out of pocket or chasing coworkers every day asking "did you send it yet?"
+
+## Why Collecting Money for a Group Gift Is Awkward and Messy
+
+Collecting for a group gift is different from splitting a regular expense because it's **money collected upfront before a purchase, not a settlement after the fact**:
+
+- **The awkwardness of reminding people**: nobody enjoys sending "just a reminder, did you transfer your share?" more than once
+- **Unclear expected amount**: many coworkers genuinely don't know how much they're supposed to contribute
+- **Uneven willingness to contribute**: some people want to give more, others are on a tighter budget
+- **A hard deadline**: the gift has a fixed occasion (a party, a farewell), so there's no room to delay
+
+## How to Set Each Person's Fair Share
+
+The simple formula: **total gift budget ÷ expected number of contributors = suggested per-person share**.
+
+### Worked Example
+If a team decides to give a departing coworker a farewell gift budgeted at 800 SAR, split among 8 people, the suggested share per person is 800 ÷ 8 = 100 SAR.
+
+If two more people from another department join later, recalculate: 800 ÷ 10 = 80 SAR per person, and refund the difference to anyone who already sent 100 SAR.
+
+### What If Some People Want to Contribute More?
+Treat the "suggested per-person share" as a guideline, not a mandatory fixed amount, and let anyone who wants to contribute more do so freely without singling out those who only pay the minimum.
+
+## A Practical System for Collecting Gift Money
+
+### Step 1: Define the Budget and Occasion Clearly
+Agree upfront: what's the occasion (wedding, newborn, farewell), and what's the rough gift budget.
+
+### Step 2: Create One Collection Group
+Instead of scattered WhatsApp messages that are hard to track, use an app like Diviso to create a dedicated group for the gift that everyone can see.
+
+### Step 3: Set a Collection Deadline
+Ask for transfers at least two days before the purchase date, so there's time to follow up on stragglers without last-minute pressure.
+
+### Step 4: Track Who's Paid Transparently
+Instead of awkward individual messages, let the app show everyone (or just the organizer) each person's status, so follow-up becomes automatic instead of personal.
+
+### Step 5: Buy the Gift and Log the Actual Cost
+After purchasing, record the real price. If it came in higher or lower than expected, distribute or refund the difference transparently.
+
+## How to Handle Non-Responders
+
+- **Send a gentle reminder in the shared group first**, not a direct personal message
+- **Set a clear deadline**: "Collection closes Thursday"
+- **Don't wait for everyone**: if the deadline is near and funding is short, buy the gift with whatever's actually been collected
+- **Don't assume bad intent**: most delays are forgetfulness, not avoidance
+
+## Common Mistakes That Ruin a Group Gift Collection
+
+- **Not setting a clear share upfront**: everyone ends up transferring a random amount
+- **Relying on one person to remember every transfer manually**: prone to errors and forgotten payments
+- **Waiting until the last minute to collect**: forces the organizer to cover the shortfall themselves
+- **Not tracking exactly who paid**: makes it hard to follow up if the gift collection repeats later
+
+## How Diviso Helps Organize a Group Gift Collection
+
+- ✅ Creates a temporary group dedicated to each gift occasion
+- ✅ Automatically shows the suggested per-person share based on the budget and number of contributors
+- ✅ Tracks who has and hasn't paid without awkward personal messages
+- ✅ Automatically recalculates the share if someone joins or drops out
+- ✅ Closes the group after the purchase and logs the final cost
+
+## Frequently Asked Questions
+
+### How do I figure out how much each person should pay for a group gift?
+Divide the total gift budget by the expected number of contributors to get a suggested per-person share, while letting anyone who wants to contribute more do so voluntarily.
+
+### What if some coworkers don't pay by the deadline?
+Send a gentle reminder through the shared group instead of individual messages, and set a clear final deadline. If the purchase date is close, buy the gift with whatever has actually been collected instead of waiting indefinitely.
+
+### Does everyone need to pay the exact same amount?
+No, the suggested share is just a guideline. Anyone who wants to contribute more can, as long as everyone clearly knows the minimum amount expected of them.
+
+## Conclusion
+
+Collecting money for a group gift shouldn't be a source of awkwardness or a burden on one person. Set the budget, create a clear collection group, and let the app track who's paid instead of you becoming the "collection police."
+
+**Try Diviso now and organize your next group gift collection without chasing anyone down.**
+    `
+  },
+  {
     slug: "split-carpool-gas-costs",
     title: "كيف تقسم تكلفة البنزين مع زملاء التوصيل اليومي؟",
     titleEn: "How to Split Gas Money for a Daily Carpool — A Fair Cost-Per-Trip Method",

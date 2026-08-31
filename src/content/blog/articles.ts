@@ -16,6 +16,188 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "minimum-transactions-to-settle-group-debts",
+    title: "كم تحويلة تحتاج لتسوية ديون المجموعة؟ طريقة تبسيط الديون",
+    titleEn: "How Many Transactions Do You Need to Settle a Group's Debts? The Debt Simplification Method",
+    description: "لماذا لا يجب أن يحوّل كل شخص لكل شخص عند تسوية مصاريف الرحلة؟ تعرف على طريقة تبسيط الديون التي تقلل عدد التحويلات المطلوبة لتسوية حسابات المجموعة إلى أقل عدد ممكن.",
+    descriptionEn: "Why shouldn't everyone in a group pay everyone else individually? Learn the debt simplification method that reduces the number of transfers needed to settle a group's shared expenses to the minimum possible.",
+    keywords: ["تسوية ديون المجموعة", "تبسيط الديون", "أقل عدد تحويلات لتسوية الحساب", "تسوية حسابات الرحلة", "خوارزمية تسوية المصاريف", "من يدفع لمن في المجموعة"],
+    keywordsEn: ["minimum transactions to settle group debts", "debt simplification algorithm", "how to settle group expenses with fewer payments", "settle up algorithm explained", "minimal cash flow method", "who pays whom in a group expense"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-08-31",
+    content: `
+## الإجابة المختصرة
+
+عند تسوية مصاريف مجموعة، لا يحتاج كل شخص أن يحوّل لكل شخص آخر. الطريقة الصحيحة هي حساب "الرصيد الصافي" لكل فرد (كم دفع مقابل كم يفترض أن يدفع)، ثم مطابقة من عليه فلوس مع من له فلوس مباشرة، بحيث يصل عدد التحويلات المطلوبة إلى أقل رقم ممكن — غالباً عدد الأشخاص الذين عليهم رصيد ناقص من واحد. هذا يسمى "تبسيط الديون" (Debt Simplification)، وهو ما يقوم به تطبيق تقسيم المصاريف الجيد تلقائياً بدلاً منك.
+
+## ما معنى "تبسيط الديون"؟
+
+تبسيط الديون هو حساب رياضي يحوّل شبكة معقدة من "مين يدين لمين" داخل مجموعة، إلى أقل عدد ممكن من التحويلات المالية اللازمة لتصفير كل الأرصدة. بدل تتبع كل معاملة على حدة (فلان دفع كذا لفلان، وفلان دفع كذا لفلان ثاني)، يُحسب **الرصيد الصافي** لكل شخص فقط: الفرق بين ما دفعه فعلياً وما يفترض أنه يتحمله من إجمالي المصاريف.
+
+## ليش التسوية العشوائية تضيّع فلوس ووقت؟
+
+لو مجموعة من 5 أشخاص سجّلت مصاريف متبادلة طوال رحلة، فبدون تبسيط قد تحتاجون نظرياً حتى 10 تحويلات مختلفة (كل شخص مع كل شخص). لكن أغلب هذه التحويلات غير ضرورية إطلاقاً، لأنها تُلغي بعضها البعض حسابياً.
+
+### مثال بسيط يوضح المشكلة
+لو أحمد يدين لسارة 100 ريال، وسارة تدين لخالد 100 ريال، وخالد يدين لأحمد 100 ريال — هذه حلقة مقفلة. لو حوّل كل واحد فعلاً، تحركت 300 ريال في 3 تحويلات، لكن النتيجة النهائية أن **لا أحد يدين لأحد**! رصيد كل شخص صافي = صفر، فلا حاجة لأي تحويلة أصلاً.
+
+## كيف تحسب أقل عدد تحويلات بدقة؟
+
+### الخطوة 1: احسب الرصيد الصافي لكل شخص
+الرصيد الصافي = (إجمالي ما دفعه الشخص) − (إجمالي نصيبه من كل المصاريف).
+
+- رصيد موجب = له فلوس عند المجموعة (دفع أكثر من نصيبه)
+- رصيد سالب = عليه فلوس للمجموعة (دفع أقل من نصيبه)
+
+### الخطوة 2: طابق أصحاب الأرصدة السالبة مع أصحاب الأرصدة الموجبة
+حوّل من صاحب أكبر رصيد سالب إلى صاحب أكبر رصيد موجب، بمبلغ يساوي الأصغر بينهما، وكرر العملية حتى تتصفر كل الأرصدة.
+
+### مثال عملي كامل
+مجموعة من 5 أشخاص بعد رحلة، أرصدتهم الصافية:
+- أحمد: +120 ريال (له عند المجموعة)
+- سارة: +80 ريال (لها عند المجموعة)
+- خالد: −50 ريال (عليه للمجموعة)
+- نورة: −70 ريال (عليها للمجموعة)
+- فهد: −80 ريال (عليه للمجموعة)
+
+بدل أن يحوّل كل واحد من الثلاثة لكل واحد من الاثنين (ما قد يصل لـ6 تحويلات)، تكفي 3 تحويلات فقط:
+- نورة تحوّل 70 ريال لأحمد → يتصفر رصيد نورة، ويتبقى لأحمد 50 ريال
+- خالد يحوّل 50 ريال لأحمد → يتصفر رصيد أحمد وخالد معاً
+- فهد يحوّل 80 ريال لسارة → يتصفر الجميع
+
+**النتيجة: 3 تحويلات بدل 6، بنفس المبالغ الصحيحة تماماً.**
+
+## القاعدة العامة لعدد التحويلات الأدنى
+
+في أغلب الحالات، أقل عدد تحويلات ممكن = (عدد الأشخاص الذين لهم رصيد غير صفري) − 1. كلما زاد عدد أعضاء المجموعة وتشابكت المدفوعات، زاد الفرق بين "التسوية العشوائية" و"التسوية المبسطة".
+
+## متى تحتاج تبسيط الديون فعلياً؟
+
+- **رحلات جماعية طويلة**: كل شخص دفع لأشياء مختلفة (فندق، طعام، مواصلات)
+- **سكن مشترك**: فواتير متفرقة يدفعها أشخاص مختلفون كل شهر
+- **مصاريف متكررة**: اشتراكات أو حجوزات أسبوعية بمدفوعات متغيرة
+- **أي مجموعة تتجاوز 3 أشخاص**: كلما زاد العدد، زادت فائدة التبسيط
+
+## أخطاء شائعة عند التسوية اليدوية
+
+- **تتبع كل معاملة على حدة بدل الرصيد الصافي**: يضيع الوقت في تحويلات غير ضرورية
+- **الاعتماد على الذاكرة**: يصعب حساب الرصيد الصافي يدوياً لمجموعة كبيرة
+- **تجاهل الحلقات المقفلة**: تحويلات فعلية لديون تُلغي بعضها رياضياً
+- **عدم توثيق من دفع فعلاً**: يصعب التحقق لاحقاً من اكتمال التسوية
+
+## كيف يحسب Diviso أقل عدد تحويلات تلقائياً؟
+
+- ✅ يحسب الرصيد الصافي لكل عضو في المجموعة تلقائياً
+- ✅ يطابق الأرصدة الموجبة والسالبة لأقل عدد تحويلات ممكن
+- ✅ يعرض لكل شخص بالضبط لمن يحوّل وكم المبلغ
+- ✅ يحدّث التسوية فوراً عند إضافة أي مصروف جديد
+- ✅ يوثّق كل تحويلة مؤكدة من الطرفين لتجنب الجدال
+
+## أسئلة شائعة
+
+### هل يجب أن يحوّل كل شخص لكل شخص عليه دين له؟
+لا، هذا غير ضروري ومضيعة للوقت والتحويلات. الطريقة الصحيحة هي حساب الرصيد الصافي لكل شخص أولاً، ثم مطابقة أصحاب الأرصدة السالبة مع أصحاب الأرصدة الموجبة مباشرة.
+
+### ما أقل عدد تحويلات ممكن لتسوية مجموعة من 5 أشخاص؟
+في أغلب الحالات، أقل عدد تحويلات = عدد الأشخاص الذين لهم رصيد غير صفري ناقص واحد. لمجموعة من 5 أشخاص كلهم لهم أرصدة غير صفرية، الحد الأقصى النظري هو 4 تحويلات، وقد يكون أقل حسب توزيع المبالغ.
+
+### كيف أعرف الرصيد الصافي لشخص في المجموعة؟
+اطرح إجمالي نصيبه من كل مصاريف المجموعة من إجمالي ما دفعه فعلياً. إذا كان الناتج موجباً فله فلوس عند المجموعة، وإذا كان سالباً فهو مدين للمجموعة بهذا المبلغ.
+
+## الخلاصة
+
+تسوية مصاريف المجموعة لا يجب أن تعني عشرات التحويلات المتبادلة. احسبوا الرصيد الصافي لكل شخص، طابقوا الديون والمستحقات، واتركوا التطبيق يقلل عدد التحويلات إلى أدنى حد ممكن.
+
+**جرب Diviso الآن وسوِّ حسابات مجموعتك بأقل عدد تحويلات ممكن.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When settling a group's shared expenses, nobody needs to transfer money to everyone they technically owe. The correct method is to calculate each person's **net balance** (how much they paid versus how much they should have paid), then match people who owe money directly with people who are owed money, so the total number of transfers needed is as small as possible — usually the number of people with a non-zero balance, minus one. This is called **debt simplification**, and it's exactly what a good expense-splitting app calculates automatically instead of you doing it by hand.
+
+## What Does "Debt Simplification" Mean?
+
+Debt simplification is a calculation that turns a tangled web of "who owes whom" inside a group into the smallest possible number of money transfers needed to zero out every balance. Instead of tracking every individual transaction separately (person A paid person B this much, person C paid person D that much), you calculate each person's **net balance** only: the difference between what they actually paid and what they should have contributed based on the total expenses.
+
+## Why Settling Debts Randomly Wastes Money and Time
+
+If a group of 5 people logged expenses back and forth throughout a trip, settling without simplification could theoretically require up to 10 separate transfers (everyone paying everyone). But most of those transfers are completely unnecessary because they mathematically cancel each other out.
+
+### A Simple Example That Shows the Problem
+Say Ahmed owes Sara 100 SAR, Sara owes Khaled 100 SAR, and Khaled owes Ahmed 100 SAR — that's a closed loop. If everyone actually transferred the money, 300 SAR would move across 3 transactions, but the final result is that **nobody owes anybody anything**! Each person's net balance is zero, so no transfer was needed in the first place.
+
+## How to Calculate the Minimum Number of Transactions
+
+### Step 1: Calculate Each Person's Net Balance
+Net balance = (total amount the person paid) − (total amount they should have contributed based on their share of all expenses).
+
+- A positive balance means the group owes them money (they paid more than their share)
+- A negative balance means they owe the group money (they paid less than their share)
+
+### Step 2: Match Negative Balances With Positive Balances
+Have the person with the largest negative balance pay the person with the largest positive balance, in an amount equal to whichever is smaller, and repeat until every balance reaches zero.
+
+### A Full Worked Example
+A group of 5 people after a trip, with these net balances:
+- Ahmed: +120 SAR (the group owes him)
+- Sara: +80 SAR (the group owes her)
+- Khaled: −50 SAR (he owes the group)
+- Noura: −70 SAR (she owes the group)
+- Fahad: −80 SAR (he owes the group)
+
+Instead of each of the three debtors paying each of the two creditors (which could reach 6 transfers), just 3 transfers are enough:
+- Noura transfers 70 SAR to Ahmed → Noura's balance hits zero, Ahmed has 50 SAR left owed to him
+- Khaled transfers 50 SAR to Ahmed → both Ahmed and Khaled's balances hit zero
+- Fahad transfers 80 SAR to Sara → everyone is settled
+
+**Result: 3 transfers instead of 6, with exactly the right amounts.**
+
+## The General Rule for the Minimum Number of Transactions
+
+In most cases, the minimum possible number of transactions equals (the number of people with a non-zero balance) minus 1. The larger the group and the more tangled the payments, the bigger the gap between "settling randomly" and "settling with simplification."
+
+## When You Actually Need Debt Simplification
+
+- **Long group trips**: everyone paid for different things (hotel, food, transport)
+- **Shared housing**: scattered bills paid by different roommates each month
+- **Recurring expenses**: subscriptions or weekly bookings with varying payments
+- **Any group larger than 3 people**: the bigger the group, the more simplification helps
+
+## Common Mistakes When Settling Manually
+
+- **Tracking every individual transaction instead of the net balance**: wastes time on unnecessary transfers
+- **Relying on memory**: calculating net balances by hand becomes hard for a large group
+- **Ignoring closed loops**: making real transfers for debts that mathematically cancel out
+- **Not documenting who actually paid**: makes it hard to verify the settlement is complete later
+
+## How Diviso Calculates the Minimum Number of Transactions Automatically
+
+- ✅ Automatically calculates every group member's net balance
+- ✅ Matches positive and negative balances to reach the minimum number of transfers
+- ✅ Shows each person exactly who to pay and how much
+- ✅ Updates the settlement instantly whenever a new expense is added
+- ✅ Records each transfer as confirmed by both sides to avoid disputes
+
+## Frequently Asked Questions
+
+### Does everyone need to pay everyone they technically owe money to?
+No, that's unnecessary and wastes time and transfers. The correct approach is to calculate each person's net balance first, then match those with negative balances directly against those with positive balances.
+
+### What's the minimum number of transactions to settle a group of 5 people?
+In most cases, the minimum equals the number of people with a non-zero balance minus one. For a group of 5 people who all have non-zero balances, the theoretical maximum is 4 transfers, and it can be fewer depending on how the amounts line up.
+
+### How do I find a person's net balance in a group?
+Subtract their total share of all group expenses from the total amount they actually paid. A positive result means the group owes them money; a negative result means they owe the group that amount.
+
+## Conclusion
+
+Settling a group's expenses shouldn't mean dozens of back-and-forth transfers. Calculate each person's net balance, match debts against credits, and let the app reduce the number of transfers to the absolute minimum.
+
+**Try Diviso now and settle your group's expenses with the fewest transfers possible.**
+    `
+  },
+  {
     slug: "collect-money-for-group-gift",
     title: "كيف تجمع فلوس هدية جماعية من الزملاء أو الأصدقاء بسهولة؟",
     titleEn: "How to Collect Money for a Group Gift From Friends or Coworkers",

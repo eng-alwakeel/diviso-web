@@ -16,6 +16,194 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-uber-careem-fare-multiple-stops",
+    title: "كيف تقسم تكلفة الأوبر أو كريم بعدل لما يكون فيه أكثر من نقطة نزول؟",
+    titleEn: "How to Split an Uber or Careem Fare Fairly When Everyone's Dropped Off at Different Stops",
+    description: "الطريقة العادلة لتقسيم تكلفة رحلة الأوبر أو كريم بين الأصدقاء عند تعدد نقاط النزول، مع مثال حساب حسب المسافة الفعلية بدل التقسيم المتساوي.",
+    descriptionEn: "The fair way to split an Uber or Careem fare among friends when everyone gets dropped off at a different stop, with a worked example splitting cost by actual distance instead of splitting equally.",
+    keywords: ["تقسيم تكلفة الأوبر", "تقسيم فلوس كريم", "تقسيم أجرة التاكسي بين الأصدقاء", "كيف اقسم الأوبر", "تقسيم أجرة الرحلة المشتركة", "من يدفع أكثر في الأوبر"],
+    keywordsEn: ["how to split uber fare with friends", "split careem cost multiple stops", "fair way to split taxi fare", "split ride cost calculator", "who pays more in a shared uber", "divide ride-hailing fare by distance"],
+    category: "tips",
+    readTime: 6,
+    publishDate: "2026-09-01",
+    content: `
+## الإجابة المختصرة
+
+تقسيم أجرة الأوبر أو كريم بالتساوي غير عادل إذا كان الركاب ينزلون في نقاط مختلفة، لأن من يركب المسافة الأطول يستفيد أكثر من الرحلة. الطريقة الأعدل هي تقسيم الأجرة حسب نسبة المسافة الفعلية التي قطعها كل راكب، لا حسب عدد الركاب فقط. من ينزل أولاً (مسافة أقصر) يدفع أقل، ومن يبقى للنهاية (مسافة أطول) يدفع أكثر.
+
+## ليش التقسيم المتساوي غير عادل هنا؟
+
+لو 3 أصدقاء ركبوا أوبر واحد، ونزل أحدهم بعد ربع الطريق بينما استمر الباقون للنهاية، فالتقسيم المتساوي يعني أن من نزل مبكراً دفع نفس مبلغ من ركب الرحلة كاملة رغم أنه استفاد من جزء بسيط منها فقط. هذا يخلق شعوراً بالظلم، خصوصاً في الرحلات المتكررة مع نفس المجموعة.
+
+## كيف تحسب النصيب العادل حسب المسافة؟
+
+### القاعدة
+1. احسب المسافة الإجمالية للرحلة الكاملة
+2. احسب المسافة الفعلية التي ركبها كل شخص (من نقطة الصعود حتى نقطة نزوله)
+3. اجمع "مسافات الأشخاص" كلها معاً
+4. تكلفة الكيلومتر الواحد = الأجرة الإجمالية ÷ مجموع مسافات الأشخاص
+5. نصيب كل شخص = مسافته الفعلية × تكلفة الكيلومتر الواحد
+
+### مثال عملي
+رحلة أوبر بأجرة إجمالية 60 ريال، بمسافة كلية 20 كم، وفيها 3 ركاب:
+- خالد نزل بعد 6 كم (أول نقطة نزول)
+- سارة نزلت بعد 12 كم
+- أحمد بقي للنهاية 20 كم كاملة
+
+**مجموع مسافات الأشخاص** = 6 + 12 + 20 = 38 كم-شخص
+**تكلفة الكيلومتر الواحد** = 60 ÷ 38 ≈ 1.58 ريال
+
+- نصيب خالد = 6 × 1.58 ≈ 9.5 ريال
+- نصيب سارة = 12 × 1.58 ≈ 18.9 ريال
+- نصيب أحمد = 20 × 1.58 ≈ 31.6 ريال
+
+قارن هذا بالتقسيم المتساوي (20 ريال لكل واحد) الذي كان سيجعل خالد يدفع أكثر من ضعف نصيبه العادل رغم نزوله المبكر.
+
+## متى يكون التقسيم المتساوي مقبولاً؟
+
+- **الجميع ينزل في نفس النقطة تقريباً**: الفرق في المسافة ضئيل ولا يستحق حساباً معقداً
+- **رحلة قصيرة جداً**: الفرق بالريالات بسيط جداً بحيث لا يستحق النقاش
+- **اتفاق مسبق بين المجموعة**: أحياناً يفضل الأصدقاء البساطة على الدقة المطلقة
+
+## طريقة بديلة أبسط: التقسيم حسب ترتيب النزول
+
+إذا كان حساب المسافة الدقيقة صعباً (ما فيه تفاصيل GPS واضحة)، استخدم تقريباً بسيطاً: من ينزل أولاً يدفع أقل نسبة من الأجرة، ومن يبقى للنهاية يدفع أكبر نسبة، بناءً على تقدير تقريبي للمسافة النسبية بدل الحساب الدقيق بالكيلومتر.
+
+## خطوات عملية لتقسيم أجرة الرحلة المشتركة
+
+### الخطوة 1: اتفقوا على طريقة التقسيم قبل الرحلة
+حددوا مسبقاً: تقسيم متساوٍ أم حسب المسافة، خصوصاً إذا كانت نقاط النزول معروفة مسبقاً.
+
+### الخطوة 2: احتفظوا بلقطة شاشة لتفاصيل الرحلة
+تطبيقات الأوبر وكريم تعرض المسافة والأجرة الإجمالية في نهاية الرحلة — احتفظوا بها للرجوع إليها عند الحساب.
+
+### الخطوة 3: سجّلوا المصروف فوراً
+استخدم تطبيق مثل Diviso لتسجيل أجرة الرحلة وتقسيمها بمبالغ مخصصة لكل شخص بدلاً من القسمة المتساوية التلقائية.
+
+### الخطوة 4: حوّلوا الفلوس بنفس الوقت
+لا تتركوا الرحلات تتراكم كديون متفرقة — سوّوا الحساب بعد كل رحلة أو في نهاية الليلة.
+
+## أخطاء شائعة عند تقسيم أجرة الأوبر
+
+- **التقسيم المتساوي دائماً بغض النظر عن نقاط النزول**: يظلم من ينزل مبكراً في الرحلات الطويلة
+- **نسيان تسجيل الرحلة كمصروف**: يضيع وسط رحلات الليلة المتعددة
+- **عدم الاتفاق مسبقاً**: نقاش محرج بعد وصول الفاتورة في نهاية الرحلة
+- **تجاهل رسوم الذروة (Surge)**: يجب تقسيمها بنفس منطق تقسيم الأجرة الأساسية
+
+## كيف يساعدك Diviso في تقسيم رحلات الأوبر؟
+
+- ✅ تسجيل أجرة الرحلة كمصروف فوري بمبالغ مخصصة لكل راكب
+- ✅ دعم التقسيم غير المتساوي حسب المسافة أو نقطة النزول
+- ✅ تجميع كل رحلات الليلة في مجموعة واحدة وتسويتها دفعة واحدة
+- ✅ سجل واضح يوضح من دفع الرحلة الفعلية ومن عليه نصيبه
+
+## أسئلة شائعة
+
+### هل يجب أن يدفع الجميع نفس المبلغ في رحلة الأوبر المشتركة؟
+لا بالضرورة. إذا كان الركاب ينزلون في نقاط مختلفة، فالأعدل تقسيم الأجرة حسب نسبة المسافة الفعلية التي قطعها كل شخص بدلاً من التقسيم المتساوي.
+
+### كيف أحسب نصيبي إذا نزلت قبل نهاية الرحلة؟
+اقسم الأجرة الإجمالية على مجموع مسافات كل الركاب مجتمعة (بالكيلومتر)، ثم اضرب الناتج في المسافة الفعلية التي ركبتها أنت فقط، من نقطة الصعود إلى نقطة نزولك.
+
+### ماذا لو كانت هناك رسوم ذروة (Surge) على الرحلة؟
+اجمع رسوم الذروة مع الأجرة الأساسية لتكوين الأجرة الإجمالية، ثم طبّق نفس طريقة التقسيم حسب المسافة على المجموع الكلي.
+
+## الخلاصة
+
+تقسيم أجرة الأوبر أو كريم بعدل يحتاج التفكير في نقاط النزول، لا فقط عدد الركاب. استخدموا طريقة المسافة الفعلية للحالات ذات الفروقات الكبيرة، وسجّلوا كل رحلة فوراً لتجنّب تراكم الحسابات.
+
+**جرب Diviso الآن وقسّم أجرة رحلاتكم المشتركة بعدل تام.**
+    `,
+    contentEn: `
+## Quick Answer
+
+Splitting an Uber or Careem fare equally is unfair when passengers get dropped off at different stops, because whoever rides the longer distance benefits more from the trip. The fairer method is to split the fare based on the actual distance each rider traveled, not just the headcount. Whoever gets dropped off first (a shorter distance) pays less, and whoever stays until the end (the full distance) pays more.
+
+## Why an Equal Split Doesn't Work Here
+
+If 3 friends share one Uber and one of them gets dropped off after a quarter of the route while the others ride to the very end, an equal split means the person who got off early paid the same amount as someone who rode the entire trip, despite benefiting from only a small portion of it. This creates a sense of unfairness, especially on recurring rides with the same group.
+
+## How to Calculate a Fair Distance-Based Share
+
+### The Formula
+1. Calculate the total distance of the full trip
+2. Calculate the actual distance each person rode (from pickup to their own drop-off point)
+3. Add up all these "person-distances" together
+4. Cost per km = total fare ÷ sum of person-distances
+5. Each person's share = their actual distance × cost per km
+
+### A Worked Example
+An Uber trip with a total fare of 60 SAR, covering 20 km total, with 3 passengers:
+- Khaled gets dropped off after 6 km (first stop)
+- Sara gets dropped off after 12 km
+- Ahmed rides the full 20 km
+
+**Total person-distance** = 6 + 12 + 20 = 38 person-km
+**Cost per km** = 60 ÷ 38 ≈ 1.58 SAR
+
+- Khaled's share = 6 × 1.58 ≈ 9.5 SAR
+- Sara's share = 12 × 1.58 ≈ 18.9 SAR
+- Ahmed's share = 20 × 1.58 ≈ 31.6 SAR
+
+Compare this to an equal split (20 SAR each), which would have made Khaled pay more than double his fair share despite getting off early.
+
+## When Is an Equal Split Actually Fine?
+
+- **Everyone drops off at roughly the same point**: the distance difference is negligible and doesn't justify a complex calculation
+- **A very short trip**: the difference in riyals is too small to be worth discussing
+- **A prior agreement within the group**: sometimes friends prefer simplicity over perfect precision
+
+## A Simpler Alternative: Split by Drop-Off Order
+
+If calculating the exact distance is difficult (no clear GPS breakdown available), use a simple approximation: whoever gets dropped off first pays a smaller share of the fare, and whoever stays until the end pays a larger share, based on a rough estimate of relative distance instead of an exact kilometer calculation.
+
+## A Practical System for Splitting Shared Ride Fares
+
+### Step 1: Agree on the Splitting Method Before the Ride
+Decide in advance: equal split or distance-based split, especially if the drop-off points are already known.
+
+### Step 2: Keep a Screenshot of the Trip Details
+Uber and Careem show the distance and total fare at the end of the trip — save it for reference when calculating the split.
+
+### Step 3: Log the Expense Immediately
+Use an app like Diviso to log the ride fare and split it with custom amounts per person instead of an automatic equal split.
+
+### Step 4: Settle Up Around the Same Time
+Don't let multiple rides pile up as scattered debts — settle the bill after each ride or at the end of the night.
+
+## Common Mistakes When Splitting Uber Fares
+
+- **Always splitting equally regardless of drop-off points**: unfairly penalizes whoever gets off early on longer trips
+- **Forgetting to log the ride as an expense**: it gets lost among multiple rides in one night
+- **Not agreeing in advance**: leads to an awkward conversation once the fare shows up
+- **Ignoring surge pricing**: surge fees should be split using the same logic as the base fare
+
+## How Diviso Helps Split Uber and Careem Rides
+
+- ✅ Logs the ride fare instantly with custom amounts per rider
+- ✅ Supports uneven splits based on distance or drop-off point
+- ✅ Groups all of a night's rides together and settles them in one go
+- ✅ A clear record of who paid for the actual ride and who still owes their share
+
+## Frequently Asked Questions
+
+### Should everyone pay the same amount on a shared Uber ride?
+Not necessarily. If passengers are dropped off at different stops, the fairer approach is to split the fare based on the proportion of the actual distance each person rode, instead of an equal split.
+
+### How do I calculate my share if I got off before the end of the trip?
+Divide the total fare by the combined distance of all riders (in kilometers), then multiply the result by the actual distance you personally rode, from pickup to your drop-off point.
+
+### What if there was surge pricing on the ride?
+Add the surge fee to the base fare to get the total fare, then apply the same distance-based splitting method to that combined total.
+
+## Conclusion
+
+Splitting an Uber or Careem fare fairly means thinking about drop-off points, not just the number of riders. Use the distance-based method for cases with big differences, and log every ride immediately to avoid piling up scattered debts.
+
+**Try Diviso now and split your shared ride fares with complete fairness.**
+    `
+  },
+  {
     slug: "minimum-transactions-to-settle-group-debts",
     title: "كم تحويلة تحتاج لتسوية ديون المجموعة؟ طريقة تبسيط الديون",
     titleEn: "How Many Transactions Do You Need to Settle a Group's Debts? The Debt Simplification Method",

@@ -16,6 +16,210 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "prorated-rent-roommate-moves-out-mid-month",
+    title: "كيف تقسم الإيجار بعدل إذا انتقل أحد الشركاء في منتصف الشهر؟",
+    titleEn: "How to Split Rent Fairly When a Roommate Moves Out Mid-Month",
+    description: "طريقة حساب نصيب الإيجار بالتناسب عند مغادرة أحد شركاء السكن في منتصف الشهر، مع مثال حساب دقيق لتوزيع الفرق على باقي الشركاء.",
+    descriptionEn: "How to calculate a prorated rent share when a roommate moves out mid-month, with a worked example showing exactly how to redistribute the difference among the remaining roommates.",
+    keywords: ["تقسيم الإيجار عند الانتقال", "حساب الإيجار بالتناسب", "انتقال شريك السكن منتصف الشهر", "كيف احسب نصيب الإيجار", "تقسيم فاتورة الإيجار بين الشركاء", "خروج شريك سكن قبل نهاية العقد"],
+    keywordsEn: ["prorated rent calculator roommates", "how to split rent when someone moves out mid-month", "roommate leaving early rent share", "prorate rent formula", "fair rent split when roommate leaves", "calculate partial month rent"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-09-02",
+    content: `
+## الإجابة المختصرة
+
+عند مغادرة أحد شركاء السكن في منتصف الشهر، يُحسب نصيبه بالتناسب مع عدد الأيام الفعلية التي سكنها فقط، وليس شهراً كاملاً. القاعدة: **نصيب اليوم الواحد = (الإيجار الشهري ÷ عدد أشخاص المسكن) ÷ عدد أيام الشهر**، ثم يُضرب في عدد الأيام التي بقي فيها فعلياً. الفرق المتبقي من نصيبه يُوزَّع على الشركاء الباقين لبقية الشهر.
+
+## ليش تحتاج حساب الإيجار بالتناسب أصلاً؟
+
+عقد الإيجار عادة شهري بمبلغ ثابت، لكن سكن الأشخاص بداخله ليس دائماً متزامناً مع بداية ونهاية الشهر:
+
+- **مغادرة مفاجئة**: شريك ينتقل لعمل جديد في مدينة أخرى في منتصف الشهر
+- **انضمام لاحق**: شريك جديد ينضم للسكن بعد بداية الشهر بأيام
+- **فترة إشعار قصيرة**: العقد يتطلب إشعاراً بشهر، لكن الشريك يترك المفروشات ويغادر فعلياً قبل ذلك
+- **غموض من يتحمل الفرق**: هل يدفع المغادر الشهر كاملاً أم فقط الأيام التي سكنها؟
+
+## كيف تحسب النصيب بالتناسب بدقة؟
+
+### القاعدة
+1. احسب نصيب الشخص الشهري العادي (الإيجار الإجمالي ÷ عدد السكان)
+2. اقسم هذا النصيب على عدد أيام الشهر للحصول على "تكلفة اليوم الواحد"
+3. اضرب تكلفة اليوم الواحد في عدد الأيام التي سكنها الشخص فعلياً هذا الشهر
+
+### مثال عملي
+سكن مشترك بإيجار شهري 3000 ريال بين 3 شركاء (أحمد، سالم، فهد)، ونصيب كل واحد عادة 1000 ريال. غادر فهد في اليوم 15 من شهر مكوّن من 30 يوماً.
+
+- تكلفة اليوم الواحد لنصيب فهد = 1000 ÷ 30 ≈ 33.3 ريال
+- نصيب فهد الفعلي هذا الشهر = 33.3 × 15 ≈ 500 ريال
+
+**الفرق المتبقي** = 1000 − 500 = 500 ريال، يجب توزيعه على أحمد وسالم لتغطية بقية الشهر (15 يوماً بدون فهد):
+- 500 ÷ 2 = 250 ريال إضافية لكل واحد منهما
+
+**النتيجة النهائية لهذا الشهر**: فهد يدفع 500 ريال، وأحمد وسالم يدفعان 1250 ريال لكل واحد (1000 + 250). المجموع = 500 + 1250 + 1250 = 3000 ريال، مطابق تماماً للإيجار الإجمالي.
+
+## ماذا لو انضم شريك جديد بدل المغادر في نفس الشهر؟
+
+نفس المنطق يُطبّق بالعكس: الشريك الجديد يدفع فقط عن الأيام التي سكن فيها فعلياً بنفس طريقة الحساب، ويُخصم نصيبه من العبء الإضافي الذي كان يتحمله الباقون.
+
+### مثال
+لو انضم شريك بديل بدءاً من اليوم 16 حتى نهاية الشهر (15 يوماً)، فنصيبه = 33.3 × 15 ≈ 500 ريال، وتنخفض المساهمة الإضافية لأحمد وسالم من 250 ريال لكل واحد إلى 125 ريال فقط لكل واحد (لأن الفراغ صار 15 يوماً بس بدل 15 يوماً كاملة بدون أي بديل).
+
+## ماذا عن فواتير الكهرباء والماء والإنترنت؟
+
+لا تُقسّم هذه الفواتير بنفس منطق الإيجار دائماً، لأنها تعتمد على الاستهلاك الفعلي لا على عدد الأيام فقط:
+
+- **الإنترنت والاشتراكات الثابتة**: تُقسّم بالتناسب مثل الإيجار تماماً
+- **الكهرباء والماء**: إذا أمكن قراءة العداد عند المغادرة، احسب الاستهلاك الفعلي بدل التقسيم بالأيام فقط
+
+## ماذا عن التأمين (الوديعة) عند المغادرة؟
+
+التأمين المدفوع مقدماً يُرد للمغادر بعد التأكد من عدم وجود أضرار، وليس له علاقة بحساب الإيجار الشهري. سجّلوه كبند منفصل حتى لا يختلط بحساب النصيب الشهري.
+
+## خطوات عملية لتجنب الخلاف
+
+### الخطوة 1: أعلنوا موعد المغادرة أو الانضمام بوضوح
+حددوا التاريخ بالضبط (وليس "منتصف الشهر تقريباً") لتجنب الخلاف على عدد الأيام.
+
+### الخطوة 2: سجّلوا الحساب فوراً
+استخدم تطبيق مثل Diviso لتسجيل النصيب المعدّل لكل شخص بمبلغ مخصص بدل الاعتماد على الحساب الذهني.
+
+### الخطوة 3: وثّقوا الاتفاق كتابياً
+رسالة واتساب بسيطة تحدد "فهد يدفع 500 ريال عن أيام 1-15" تكفي لتوثيق الاتفاق ومنع الجدال لاحقاً.
+
+### الخطوة 4: راجعوا فاتورة الإيجار التالية معاً
+تأكدوا إن التقسيم الجديد (بدون المغادر أو مع البديل) واضح للجميع قبل بداية الشهر التالي.
+
+## أخطاء شائعة عند حساب الإيجار بالتناسب
+
+- **تقسيم الشهر إلى نصفين تلقائياً**: قد لا يكون يوم المغادرة بالضبط في منتصف الشهر
+- **نسيان تعديل نصيب الباقين**: المغادر يدفع أقل، لكن أحداً يجب أن يغطي الفرق
+- **الخلط بين التأمين والإيجار الشهري**: يجب معالجتهما كبندين منفصلين تماماً
+- **عدم توثيق الاتفاق**: يصعب إثبات الاتفاق لاحقاً عند وجود خلاف
+
+## كيف يساعدك Diviso في هذا الموقف؟
+
+- ✅ تسجيل مصروف الإيجار بمبالغ مخصصة لكل شريك حسب عدد أيامه الفعلية
+- ✅ تعديل تلقائي لنصيب الباقين عند إضافة أو حذف عضو من المجموعة
+- ✅ سجل واضح لتاريخ الانضمام والمغادرة لكل شخص
+- ✅ فصل بند التأمين عن حساب الإيجار الشهري
+- ✅ تقارير شهرية توضح كيف تغيّر التقسيم من شهر لآخر
+
+## أسئلة شائعة
+
+### كيف أحسب نصيب شريك غادر السكن في منتصف الشهر؟
+اقسم نصيبه الشهري العادي على عدد أيام الشهر للحصول على تكلفة اليوم الواحد، ثم اضربها في عدد الأيام التي سكنها فعلياً قبل المغادرة.
+
+### من يدفع الفرق المتبقي من نصيب المغادر؟
+الشركاء الباقون يقسمون الفرق فيما بينهم بالتساوي (أو حسب نفس نسبة تقسيمهم الأصلية) لتغطية بقية أيام الشهر بعد مغادرة الشريك.
+
+### هل يُحسب التأمين ضمن حساب الإيجار بالتناسب؟
+لا، التأمين بند منفصل تماماً يُرد للمغادر بعد التأكد من سلامة الوحدة السكنية، ولا علاقة له بحساب نصيب الإيجار الشهري بالأيام.
+
+## الخلاصة
+
+انتقال أحد شركاء السكن في منتصف الشهر لا يجب أن يخلق خلافاً مالياً. احسبوا النصيب بالتناسب مع عدد الأيام الفعلية، وثّقوا الاتفاق كتابياً، ودعوا التطبيق يعدّل الحسابات تلقائياً بدل الحساب اليدوي.
+
+**جرب Diviso الآن واحسب نصيب الإيجار بالتناسب بدقة تامة.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When a roommate moves out mid-month, their rent share should be calculated proportionally to the actual number of days they lived there, not a full month. The formula: **daily rate = (monthly rent ÷ number of roommates) ÷ number of days in the month**, then multiply that by the number of days they actually stayed. The remaining difference from their share gets redistributed among the remaining roommates for the rest of the month.
+
+## Why You Need Prorated Rent Calculations at All
+
+A lease is usually a fixed monthly amount, but people's actual residency inside it doesn't always line up with the start and end of the month:
+
+- **A sudden departure**: a roommate takes a new job in another city mid-month
+- **A later move-in**: a new roommate joins the household a few days after the month started
+- **A short notice period**: the lease requires a month's notice, but the roommate moves their furniture out and actually leaves before then
+- **Ambiguity over who covers the gap**: does the departing roommate pay for the full month, or only the days they lived there?
+
+## How to Calculate a Prorated Share Precisely
+
+### The Formula
+1. Calculate the person's normal monthly share (total rent ÷ number of residents)
+2. Divide that share by the number of days in the month to get the "daily rate"
+3. Multiply the daily rate by the number of days the person actually lived there that month
+
+### A Worked Example
+A shared apartment with 3,000 SAR monthly rent split among 3 roommates (Ahmed, Salem, Fahad), each normally paying 1,000 SAR. Fahad moves out on day 15 of a 30-day month.
+
+- Daily rate for Fahad's share = 1,000 ÷ 30 ≈ 33.3 SAR
+- Fahad's actual share this month = 33.3 × 15 ≈ 500 SAR
+
+**The remaining difference** = 1,000 − 500 = 500 SAR, which needs to be split between Ahmed and Salem to cover the rest of the month (15 days without Fahad):
+- 500 ÷ 2 = an extra 250 SAR each
+
+**The final result for this month**: Fahad pays 500 SAR, and Ahmed and Salem each pay 1,250 SAR (1,000 + 250). Total = 500 + 1,250 + 1,250 = 3,000 SAR, matching the total rent exactly.
+
+## What If a New Roommate Replaces the One Who Left the Same Month?
+
+The same logic applies in reverse: the new roommate pays only for the days they actually lived there, using the same calculation, and their share offsets some of the extra burden the remaining roommates would otherwise carry.
+
+### Example
+If a replacement roommate joins starting day 16 through the end of the month (15 days), their share = 33.3 × 15 ≈ 500 SAR, and Ahmed and Salem's extra contribution drops from 250 SAR each to just 125 SAR each (since the gap is now covered for those 15 days instead of being entirely uncovered).
+
+## What About Electricity, Water, and Internet Bills?
+
+These bills don't always follow the same day-based logic as rent, since they depend on actual usage, not just days present:
+
+- **Internet and fixed subscriptions**: prorate them exactly like rent
+- **Electricity and water**: if a meter reading is possible at move-out, calculate actual usage instead of a pure day-based split
+
+## What About the Security Deposit at Move-Out?
+
+The deposit paid upfront is refunded to the departing roommate after confirming no damage, and it's unrelated to the monthly rent calculation. Log it as a completely separate line item so it doesn't get mixed up with the monthly share calculation.
+
+## A Practical System to Avoid Disputes
+
+### Step 1: Announce the Move-Out or Move-In Date Clearly
+Pin down the exact date (not "roughly mid-month") to avoid disagreement over the number of days.
+
+### Step 2: Log the Calculation Immediately
+Use an app like Diviso to log each person's adjusted share as a custom amount instead of relying on mental math.
+
+### Step 3: Document the Agreement in Writing
+A simple message stating "Fahad pays 500 SAR for days 1-15" is enough to document the agreement and prevent later disputes.
+
+### Step 4: Review the Next Rent Bill Together
+Confirm the new split (without the departed roommate, or with the replacement) is clear to everyone before the next month starts.
+
+## Common Mistakes When Calculating Prorated Rent
+
+- **Automatically splitting the month into two halves**: the move-out date may not actually fall exactly mid-month
+- **Forgetting to adjust the remaining roommates' shares**: the departing person pays less, but someone has to cover the difference
+- **Mixing up the deposit with the monthly rent**: they need to be handled as two completely separate line items
+- **Not documenting the agreement**: makes it hard to prove later if a dispute arises
+
+## How Diviso Helps in This Situation
+
+- ✅ Logs the rent expense with custom amounts per roommate based on their actual number of days
+- ✅ Automatically adjusts the remaining roommates' shares when a member is added or removed from the group
+- ✅ A clear record of each person's move-in and move-out date
+- ✅ Keeps the deposit as a separate line item from the monthly rent calculation
+- ✅ Monthly reports showing how the split changed from one month to the next
+
+## Frequently Asked Questions
+
+### How do I calculate the share for a roommate who moved out mid-month?
+Divide their normal monthly share by the number of days in the month to get a daily rate, then multiply that by the number of days they actually lived there before moving out.
+
+### Who pays the remaining difference from the departing roommate's share?
+The remaining roommates split the difference among themselves (equally, or in the same ratio as their original split) to cover the rest of the month after the roommate leaves.
+
+### Is the security deposit included in the prorated rent calculation?
+No, the deposit is a completely separate line item refunded to the departing roommate after confirming the unit's condition, and it has nothing to do with the day-based monthly rent calculation.
+
+## Conclusion
+
+A roommate moving out mid-month shouldn't create a financial dispute. Calculate the share proportionally to the actual number of days, document the agreement in writing, and let the app adjust the numbers automatically instead of doing the math by hand.
+
+**Try Diviso now and calculate prorated rent shares with complete accuracy.**
+    `
+  },
+  {
     slug: "split-uber-careem-fare-multiple-stops",
     title: "كيف تقسم تكلفة الأوبر أو كريم بعدل لما يكون فيه أكثر من نقطة نزول؟",
     titleEn: "How to Split an Uber or Careem Fare Fairly When Everyone's Dropped Off at Different Stops",

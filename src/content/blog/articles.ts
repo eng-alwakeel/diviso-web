@@ -16,6 +16,204 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-bachelor-bachelorette-party-costs",
+    title: "كيف تقسم مصاريف رحلة توديع العزوبية بين المدعوين؟",
+    titleEn: "How to Split Bachelor or Bachelorette Party Costs (Including the Guest of Honor's Share)",
+    description: "دليل عملي لتقسيم مصاريف رحلة أو حفلة توديع العزوبية بين المدعوين بعدل، مع توضيح هل يدفع صاحب المناسبة نصيبه أم لا وكيف تُدار الدفعات المقدمة.",
+    descriptionEn: "A practical guide to splitting bachelor or bachelorette party costs fairly among attendees, including whether the guest of honor pays their share and how to manage upfront deposits.",
+    keywords: ["تقسيم مصاريف توديع العزوبية", "رحلة توديع العزوبية", "هل تدفع العروس نصيبها", "مصاريف حفلة العزابة", "تنظيم رحلة وداع العزوبية", "تقسيم فلوس رحلة الصديقات"],
+    keywordsEn: ["how to split bachelorette party costs", "does the bride pay for her own bachelorette", "bachelor party expense splitting", "bachelorette trip cost calculator", "who pays for the bachelor party", "splitting costs for a bridal party trip"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-09-03",
+    content: `
+## الإجابة المختصرة
+
+العرف السائد في رحلات توديع العزوبية هو أن **صاحب المناسبة (العروس أو العريس) لا يدفع نصيبه من تكلفة الإقامة والأنشطة**، بل يتقاسم باقي المدعوين التكلفة الكاملة فيما بينهم. أي أن نصيب الفرد = التكلفة الإجمالية ÷ (عدد الحاضرين ناقص واحد). المنظم عادة يجمع دفعة مقدمة من الجميع قبل الحجز لتغطية العربون، ويُسوّى الحساب النهائي بعد الرحلة.
+
+## ليش تقسيم مصاريف توديع العزوبية مختلف عن أي رحلة عادية؟
+
+هذا النوع من المناسبات له ديناميكية خاصة لا تنطبق على رحلات الأصدقاء العادية:
+
+- **صاحب المناسبة لا يدفع (عادة)**: التقليد المتعارف عليه أن يتحمل باقي المدعوين تكلفته كهدية غير مباشرة
+- **منظم واحد يتحمل العبء الإداري**: عادة صديقة مقربة أو أخت تتولى الحجوزات والدفع المقدم
+- **مصاريف إضافية خاصة**: ملابس متطابقة، ديكورات، هدايا ترحيبية، كيك — تُضاف فوق تكلفة الإقامة والأنشطة
+- **حساسية الميزانية**: بعض المدعوات قد تكون ميزانيتهن محدودة، فيحتاج المنظم مراعاة ذلك عند اختيار مستوى الفعاليات
+
+## كيف تحسب نصيب كل مدعو بدقة؟
+
+### القاعدة الأساسية
+**نصيب الفرد = التكلفة الإجمالية للرحلة ÷ (عدد الحاضرين − 1)**
+
+الناقص واحد هنا يمثل صاحب المناسبة الذي لا يُحسب ضمن من يدفع.
+
+### مثال عملي
+رحلة توديع عزوبية لعروس مع 6 صديقات (7 حاضرات بالمجموع، منهن العروس)، والتكلفة الإجمالية للإقامة والأنشطة 3500 ريال:
+
+- عدد من يدفع فعلياً = 7 − 1 = 6 أشخاص
+- نصيب كل واحدة = 3500 ÷ 6 ≈ 583 ريال
+
+لو قُسّمت التكلفة على الجميع بمن فيهن العروس (تقسيم خاطئ شائع)، كان نصيب كل واحدة سينخفض إلى 500 ريال، لكن هذا يخالف عرف المناسبة الذي يقوم على "الإهداء الجماعي" لصاحبة المناسبة.
+
+### ماذا عن المصاريف الإضافية (ملابس، ديكور، هدايا)؟
+تُضاف هذه المصاريف إلى التكلفة الإجمالية قبل القسمة، ما لم يتفق المدعوون على استثنائها (مثلاً: كل واحدة تشتري ملابسها الخاصة على حسابها الشخصي بدل تحميلها للمجموعة).
+
+## كيف تُدار الدفعات المقدمة (العربون)؟
+
+- **حدد مبلغاً ثابتاً مقدماً**: يطلب المنظم من الجميع تحويل مبلغ محدد قبل الحجز (مثلاً 200 ريال) لتأمين العربون
+- **وثّق من دفع العربون**: حتى لا يضطر المنظم لتغطية نصيب أحد لم يحوّل بعد
+- **اربط العربون بالتسوية النهائية**: يُخصم من نصيب كل شخص عند التسوية بعد الرحلة، لا يُضاف كمبلغ منفصل
+
+## متى يُستثنى صاحب المناسبة من "عدم الدفع"؟
+
+- **ميزانية المجموعة محدودة**: أحياناً يتفق الجميع على تقسيم متساوٍ يشمل صاحب المناسبة إذا كانت الميزانية ضيقة
+- **صاحب المناسبة يصرّ على المشاركة**: بعض العرسان يفضلون دفع نصيبهم تجنباً للشعور بالمديونية للمجموعة
+- **الأنشطة الفردية الإضافية**: لو أضاف صاحب المناسبة نشاطاً شخصياً خارج البرنامج المتفق عليه، يدفعه بنفسه
+
+## خطوات عملية لتنظيم رحلة توديع العزوبية
+
+### الخطوة 1: حدد الميزانية والحاضرين مبكراً
+اجمع قائمة نهائية بالمدعوين قبل الحجز، لأن أي إضافة أو انسحاب لاحق يغيّر نصيب الجميع.
+
+### الخطوة 2: أنشئ مجموعة تحصيل واحدة
+استخدم تطبيق مثل Diviso لإنشاء مجموعة خاصة بالرحلة، مستثنياً صاحب المناسبة من قائمة من يدفع.
+
+### الخطوة 3: اجمع الدفعة المقدمة قبل الحجز بمهلة كافية
+حدد موعداً نهائياً واضحاً للتحويل حتى لا يتأخر الحجز بسبب انتظار أحد المدعوين.
+
+### الخطوة 4: سجّلوا كل مصروف إضافي أثناء الرحلة
+الطعام، المواصلات، الأنشطة العفوية — كلها تُضاف للحساب الجماعي وتُسوّى في النهاية.
+
+### الخطوة 5: سوّوا الحساب النهائي بعد الرحلة
+راجعوا الفرق بين ما دُفع مقدماً والتكلفة الفعلية، ووزّعوا الفائض أو العجز على الجميع.
+
+## أخطاء شائعة تفسد تنظيم الرحلة
+
+- **عدم الاتفاق مسبقاً على قاعدة "من يدفع"**: يخلق حرجاً عند وصول الفاتورة
+- **تحميل المنظم كل العبء المالي منفرداً**: يجب توزيع الدفعات المقدمة على الجميع من البداية
+- **نسيان تحديث القائمة عند الانسحاب**: يغيّر نصيب الباقين ويحتاج إعادة حساب فورية
+- **خلط مصاريف الملابس الشخصية بمصاريف المجموعة**: يفضّل الفصل الواضح بينهما
+
+## كيف يساعدك Diviso في تنظيم رحلة توديع العزوبية؟
+
+- ✅ استثناء صاحب المناسبة تلقائياً من قسمة التكلفة
+- ✅ تتبع الدفعة المقدمة (العربون) بشكل منفصل عن التسوية النهائية
+- ✅ تسجيل كل مصروف إضافي فوراً أثناء الرحلة
+- ✅ تعديل نصيب الجميع تلقائياً عند تغيّر عدد الحاضرين
+- ✅ سجل واضح يوضح من دفع ومن عليه نصيبه بعد الرحلة
+
+## أسئلة شائعة
+
+### هل تدفع العروس نصيبها في رحلة توديع العزوبية؟
+عادة لا، فالعرف السائد أن باقي المدعوات يتقاسمن تكلفة إقامتها وأنشطتها كهدية جماعية، إلا إذا اتفقت المجموعة على خلاف ذلك بسبب ضيق الميزانية.
+
+### كيف أحسب نصيب كل شخص إذا كانت العروس لا تدفع؟
+اقسم التكلفة الإجمالية للرحلة على عدد الحاضرين ناقص واحد (باستثناء صاحبة المناسبة)، للحصول على نصيب كل مدعوة تدفع فعلياً.
+
+### ماذا لو انسحب أحد المدعوين بعد دفع العربون؟
+اتفقوا مسبقاً على سياسة الاسترجاع، وأعيدوا حساب نصيب الباقين بناءً على العدد الجديد، مع مراعاة أن بعض تكاليف الحجز (كالعربون) قد لا تكون قابلة للاسترداد من الجهة المستضيفة.
+
+## الخلاصة
+
+رحلة توديع العزوبية مناسبة سعيدة، ولا يجب أن تتحول لصداع مالي. اتفقوا على قاعدة "من يدفع" من البداية، وزّعوا الدفعة المقدمة بعدل، ودعوا التطبيق يتابع الحسابات بدل التخمين اليدوي.
+
+**جرب Diviso الآن ونظّم مصاريف رحلة توديع العزوبية بعدل تام.**
+    `,
+    contentEn: `
+## Quick Answer
+
+The common convention for bachelor and bachelorette parties is that **the guest of honor (the bride or groom-to-be) does not pay their own share** of accommodation and activities — the rest of the group splits the full cost among themselves. That means each attendee's share = total cost ÷ (number of attendees minus one). The organizer usually collects an upfront deposit from everyone before booking, and the final bill is settled after the trip.
+
+## Why Splitting Bachelor/Bachelorette Costs Is Different From a Regular Trip
+
+This type of event has a dynamic that doesn't apply to a regular friend trip:
+
+- **The guest of honor typically doesn't pay**: it's a customary group gift covered by everyone else
+- **One organizer carries the administrative load**: usually a close friend or sibling handles bookings and fronts the deposit
+- **Special extra costs**: matching outfits, decorations, welcome bags, a cake — all added on top of accommodation and activities
+- **Budget sensitivity**: some attendees may have a tighter budget, so the organizer needs to factor that in when choosing the activity level
+
+## How to Calculate Each Attendee's Exact Share
+
+### The Basic Formula
+**Each person's share = total trip cost ÷ (number of attendees − 1)**
+
+The "minus one" represents the guest of honor, who isn't counted among those paying.
+
+### A Worked Example
+A bachelorette trip for a bride with 6 friends (7 people total, including the bride), with a total accommodation and activities cost of 3,500 SAR:
+
+- Number of people actually paying = 7 − 1 = 6
+- Each person's share = 3,500 ÷ 6 ≈ 583 SAR
+
+If the cost were split among everyone including the bride (a common mistake), each person's share would drop to 500 SAR — but that contradicts the tradition of the group collectively gifting the trip to the guest of honor.
+
+### What About Extra Costs (Outfits, Decor, Gifts)?
+These get added to the total cost before dividing, unless the group agrees to exclude them (for example: everyone buys their own outfit personally instead of billing it to the group).
+
+## How to Manage the Upfront Deposit
+
+- **Set a fixed upfront amount**: the organizer asks everyone to transfer a set amount (e.g., 200 SAR) before booking to secure the deposit
+- **Track who paid the deposit**: so the organizer doesn't have to cover someone's share who hasn't transferred yet
+- **Tie the deposit to the final settlement**: it gets deducted from each person's total share at settlement, not added as a separate amount
+
+## When Is the Guest of Honor Exempted From "Doesn't Pay"?
+
+- **The group's budget is tight**: sometimes everyone agrees on an equal split that includes the guest of honor if the budget is limited
+- **The guest of honor insists on paying**: some brides or grooms prefer to pay their share to avoid feeling indebted to the group
+- **Extra personal activities**: if the guest of honor adds a personal activity outside the agreed program, they cover that themselves
+
+## A Practical System for Organizing the Trip
+
+### Step 1: Set the Budget and Finalize Attendees Early
+Get a final guest list before booking, since any later addition or dropout changes everyone's share.
+
+### Step 2: Create One Collection Group
+Use an app like Diviso to create a group dedicated to the trip, excluding the guest of honor from the list of people who pay.
+
+### Step 3: Collect the Deposit With Enough Lead Time
+Set a clear deadline for transfers so the booking isn't delayed waiting on one attendee.
+
+### Step 4: Log Every Extra Expense During the Trip
+Food, transportation, spontaneous activities — all get added to the shared bill and settled at the end.
+
+### Step 5: Settle the Final Bill After the Trip
+Review the difference between what was collected upfront and the actual cost, and distribute any surplus or shortfall among everyone.
+
+## Common Mistakes That Ruin the Organization
+
+- **Not agreeing on the "who pays" rule upfront**: creates awkwardness once the bill arrives
+- **Putting the entire financial burden on the organizer alone**: deposits should be spread across everyone from the start
+- **Forgetting to update the list when someone drops out**: changes the remaining attendees' shares and needs an immediate recalculation
+- **Mixing personal outfit costs with group expenses**: it's better to keep them clearly separate
+
+## How Diviso Helps Organize a Bachelor or Bachelorette Trip
+
+- ✅ Automatically excludes the guest of honor from the cost split
+- ✅ Tracks the upfront deposit separately from the final settlement
+- ✅ Logs every extra expense instantly during the trip
+- ✅ Automatically adjusts everyone's share when the number of attendees changes
+- ✅ A clear record of who has paid and who still owes after the trip
+
+## Frequently Asked Questions
+
+### Does the bride pay her own share on a bachelorette trip?
+Usually not — the common convention is that the rest of the attendees split her accommodation and activity costs as a collective gift, unless the group agrees otherwise due to a tight budget.
+
+### How do I calculate each person's share if the bride doesn't pay?
+Divide the total trip cost by the number of attendees minus one (excluding the guest of honor) to get the share for each attendee who actually pays.
+
+### What if someone drops out after paying the deposit?
+Agree in advance on a refund policy, and recalculate the remaining attendees' shares based on the new headcount, keeping in mind that some booking costs (like the deposit) may not be refundable from the venue or host.
+
+## Conclusion
+
+A bachelor or bachelorette trip is a happy occasion, and it shouldn't turn into a financial headache. Agree on the "who pays" rule upfront, distribute the deposit fairly, and let the app track the numbers instead of guessing manually.
+
+**Try Diviso now and organize your bachelor or bachelorette party costs with complete fairness.**
+    `
+  },
+  {
     slug: "prorated-rent-roommate-moves-out-mid-month",
     title: "كيف تقسم الإيجار بعدل إذا انتقل أحد الشركاء في منتصف الشهر؟",
     titleEn: "How to Split Rent Fairly When a Roommate Moves Out Mid-Month",

@@ -16,6 +16,206 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-airbnb-cost-by-room-type",
+    title: "كيف تقسم تكلفة شقة إير بي إن بي (Airbnb) بعدل حسب نوع الغرفة؟",
+    titleEn: "How to Split an Airbnb or Vacation Rental Cost Fairly by Room Type",
+    description: "طريقة عادلة لتقسيم تكلفة شقة أو فيلا مستأجرة بين مجموعة عندما تختلف جودة الغرف، مع مثال حساب باستخدام أوزان نسبية لكل غرفة بدل التقسيم المتساوي البحت.",
+    descriptionEn: "A fair way to split a rented Airbnb or vacation home among a group when the rooms differ in quality, using a weighted formula instead of a plain equal split.",
+    keywords: ["تقسيم تكلفة إير بي إن بي", "تقسيم إيجار شقة مشتركة للرحلة", "من يدفع أكثر للغرفة الرئيسية", "تقسيم تكلفة الفيلا بين الأصدقاء", "حساب نصيب الغرفة في الرحلة", "تقسيم سكن الرحلة الجماعية"],
+    keywordsEn: ["how to split airbnb cost by room", "fair way to split vacation rental cost", "who pays more for the master bedroom split", "split villa rental cost with friends", "weighted room cost splitting", "group trip accommodation cost calculator"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-09-04",
+    content: `
+## الإجابة المختصرة
+
+عندما تختلف جودة الغرف في شقة أو فيلا مستأجرة (غرفة رئيسية بحمام خاص مقابل غرفة أطفال بأسرّة بطابقين)، فالتقسيم المتساوي البحت غير عادل. الطريقة الأعدل هي **التقسيم الموزون**: تُعطى كل غرفة "وزناً نسبياً" حسب جودتها، ثم تُقسّم التكلفة الإجمالية على مجموع الأوزان، بحيث يدفع نزلاء الغرفة الأفضل نصيباً أعلى قليلاً من نزلاء الغرف الأبسط.
+
+## ليش التقسيم المتساوي لا يكفي هنا؟
+
+لو 6 أشخاص استأجروا فيلا فيها 3 غرف مختلفة الجودة (غرفة رئيسية بحمام خاص، غرفة عادية، غرفة بأسرّة بطابقين)، والتقسيم المتساوي يعني أن من ينام في الغرفة الرئيسية يدفع نفس مبلغ من ينام في الغرفة الأبسط رغم الفرق الواضح في الراحة والخصوصية. هذا يخلق شعوراً بعدم العدالة، خصوصاً إذا تكررت هذه الرحلات مع نفس المجموعة.
+
+## كيف تحسب التقسيم الموزون بدقة؟
+
+### الخطوة 1: حدد وزناً نسبياً لكل غرفة
+أعط كل غرفة رقماً يعكس جودتها النسبية (1.0 = المستوى القياسي، أعلى = أفضل، أقل = أبسط). حدد هذه الأوزان بالاتفاق الجماعي قبل الحجز.
+
+### الخطوة 2: اجمع "وزن كل شخص" بناءً على غرفته
+كل نزيل في غرفة معينة يأخذ نفس وزن الغرفة، بغض النظر عن عدد من يشاركونه الغرفة.
+
+### الخطوة 3: اقسم التكلفة الإجمالية على مجموع الأوزان
+هذا يعطيك "قيمة الوحدة الواحدة من الوزن"، ثم تضربها في وزن كل شخص للحصول على نصيبه.
+
+### مثال عملي
+فيلا بتكلفة إجمالية 2400 ريال لثلاث ليالٍ، بها 6 نزلاء موزعين على 3 غرف:
+- الغرفة الرئيسية (حمام خاص، 2 أشخاص): وزن 1.3 لكل شخص
+- الغرفة العادية (2 أشخاص): وزن 1.0 لكل شخص
+- غرفة الأسرّة بطابقين (2 أشخاص): وزن 0.7 لكل شخص
+
+**مجموع الأوزان** = (2 × 1.3) + (2 × 1.0) + (2 × 0.7) = 2.6 + 2 + 1.4 = 6
+
+**قيمة وحدة الوزن** = 2400 ÷ 6 = 400 ريال
+
+- نصيب كل شخص في الغرفة الرئيسية = 400 × 1.3 = 520 ريال
+- نصيب كل شخص في الغرفة العادية = 400 × 1.0 = 400 ريال
+- نصيب كل شخص في غرفة الأسرّة = 400 × 0.7 = 280 ريال
+
+**التحقق**: (520 × 2) + (400 × 2) + (280 × 2) = 1040 + 800 + 560 = 2400 ريال، مطابق تماماً للتكلفة الإجمالية.
+
+قارن هذا بالتقسيم المتساوي (400 ريال لكل شخص بغض النظر عن الغرفة)، الذي كان سيجعل نزلاء الغرفة الرئيسية يدفعون أقل من قيمتها الفعلية على حساب نزلاء الغرفة الأبسط.
+
+## كيف تحدد الأوزان بشكل عادل؟
+
+- **اسألوا: كم كانت لتكلف هذه الغرفة لو حُجزت منفردة؟** استخدموا فرق الأسعار كدليل تقريبي للوزن
+- **راعوا الخصوصية**: حمام خاص أو شرفة يستحق وزناً أعلى من الميزات المشتركة
+- **لا تبالغوا في الدقة**: أوزان بسيطة مثل 0.7 / 1.0 / 1.3 كافية، لا داعي لحسابات معقدة
+
+## ماذا عن المصاريف المشتركة غير المرتبطة بالغرف؟
+
+الطعام، النقل، والأنشطة الجماعية تُقسّم بالتساوي على الجميع بغض النظر عن الغرفة، لأن الجميع يستفيد منها بالتساوي. فقط تكلفة الإقامة نفسها هي التي تخضع للتقسيم الموزون.
+
+## خطوات عملية لتطبيق هذه الطريقة
+
+### الخطوة 1: اتفقوا على الأوزان قبل الحجز
+ناقشوا توزيع الغرف والأوزان المناسبة قبل تأكيد الحجز، لتجنب أي خلاف لاحق.
+
+### الخطوة 2: سجّلوا نصيب كل شخص كمبلغ مخصص
+استخدم تطبيق مثل Diviso لتسجيل مصروف الإقامة بمبالغ فردية مختلفة لكل نزيل بدل القسمة التلقائية المتساوية.
+
+### الخطوة 3: افصلوا مصاريف الإقامة عن باقي مصاريف الرحلة
+سجّلوا الطعام والأنشطة كمصاريف منفصلة تُقسّم بالتساوي، حتى لا تختلط بحساب الغرف.
+
+### الخطوة 4: راجعوا الحساب النهائي قبل السفر
+تأكدوا أن الجميع موافق على الأوزان والنصيب النهائي قبل تحويل الدفعة الأولى.
+
+## أخطاء شائعة عند تقسيم تكلفة السكن الجماعي
+
+- **التقسيم المتساوي البحت رغم اختلاف الغرف**: يظلم نزلاء الغرف الأبسط أو يفضّل نزلاء الغرف الأفضل بشكل غير عادل
+- **عدم الاتفاق على الأوزان مسبقاً**: يخلق نقاشاً محرجاً بعد الوصول للسكن
+- **خلط تكلفة الغرف بمصاريف الطعام والأنشطة**: يصعّب التسوية النهائية
+- **تجاهل حجم الغرفة عند تساوي عدد النزلاء**: غرفة كبيرة لشخصين تستحق وزناً أعلى من غرفة صغيرة لنفس العدد
+
+## كيف يساعدك Diviso في هذا الموقف؟
+
+- ✅ تسجيل مصروف الإقامة بمبالغ مخصصة لكل شخص حسب غرفته
+- ✅ فصل تكلفة الغرف عن باقي مصاريف الرحلة المشتركة
+- ✅ حساب تلقائي دقيق يضمن مطابقة المجموع للتكلفة الإجمالية
+- ✅ سجل واضح يوضح الوزن والنصيب المتفق عليه لكل شخص
+- ✅ سهولة تعديل الأوزان إذا تغيّر توزيع الغرف قبل الرحلة
+
+## أسئلة شائعة
+
+### هل يجب أن يدفع الجميع نفس المبلغ في شقة Airbnb المشتركة؟
+لا، إذا اختلفت جودة الغرف (حمام خاص، حجم، خصوصية)، فالأعدل تطبيق تقسيم موزون يجعل نزلاء الغرف الأفضل يدفعون نصيباً أعلى قليلاً من نزلاء الغرف الأبسط.
+
+### كيف أحدد وزن كل غرفة في الحساب؟
+استخدم فرق الأسعار التقريبي لو حُجزت كل غرفة منفردة كدليل، أو اتفقوا جماعياً على أرقام بسيطة (مثل 0.7 للغرفة الأبسط و1.3 للغرفة الأفضل) قبل الحجز.
+
+### هل يشمل التقسيم الموزون مصاريف الطعام والأنشطة أيضاً؟
+لا، التقسيم الموزون يُطبّق فقط على تكلفة الإقامة نفسها. المصاريف المشتركة الأخرى كالطعام والنقل تُقسّم بالتساوي على الجميع لأن الكل يستفيد منها بنفس القدر.
+
+## الخلاصة
+
+تقسيم تكلفة السكن الجماعي بعدل يحتاج مراعاة اختلاف جودة الغرف، لا فقط عدد النزلاء. استخدموا نظام الأوزان البسيط، اتفقوا عليه مسبقاً، ودعوا التطبيق يحسب النصيب الدقيق لكل شخص.
+
+**جرب Diviso الآن وقسّم تكلفة سكن رحلتكم القادمة بعدل تام.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When a rented Airbnb or vacation home has rooms of different quality (a master suite with a private bathroom versus a bunk room for kids), a plain equal split isn't fair. The better approach is a **weighted split**: assign each room a relative weight based on its quality, then divide the total cost by the sum of those weights, so guests in the nicer room pay a slightly higher share than guests in the simpler rooms.
+
+## Why an Equal Split Doesn't Work Here
+
+If 6 people rent a villa with 3 rooms of different quality (a master suite with a private bathroom, a standard room, and a bunk room), an equal split means whoever sleeps in the master suite pays the same amount as whoever sleeps in the simpler room, despite the obvious difference in comfort and privacy. This creates a sense of unfairness, especially if the same group takes trips like this repeatedly.
+
+## How to Calculate a Weighted Split Precisely
+
+### Step 1: Assign a Relative Weight to Each Room
+Give each room a number reflecting its relative quality (1.0 = standard level, higher = better, lower = simpler). Agree on these weights as a group before booking.
+
+### Step 2: Determine Each Person's Weight Based on Their Room
+Every guest in a given room takes that room's weight, regardless of how many people share the room.
+
+### Step 3: Divide the Total Cost by the Sum of All Weights
+This gives you the "value per weight unit," which you then multiply by each person's weight to get their share.
+
+### A Worked Example
+A villa with a total cost of 2,400 SAR for three nights, with 6 guests split across 3 rooms:
+- Master suite (private bathroom, 2 people): weight 1.3 per person
+- Standard room (2 people): weight 1.0 per person
+- Bunk room (2 people): weight 0.7 per person
+
+**Sum of weights** = (2 × 1.3) + (2 × 1.0) + (2 × 0.7) = 2.6 + 2 + 1.4 = 6
+
+**Value per weight unit** = 2,400 ÷ 6 = 400 SAR
+
+- Each master suite guest's share = 400 × 1.3 = 520 SAR
+- Each standard room guest's share = 400 × 1.0 = 400 SAR
+- Each bunk room guest's share = 400 × 0.7 = 280 SAR
+
+**Check**: (520 × 2) + (400 × 2) + (280 × 2) = 1,040 + 800 + 560 = 2,400 SAR, matching the total cost exactly.
+
+Compare this to an equal split (400 SAR per person regardless of room), which would have let the master suite guests underpay for its actual value at the expense of the guests in the simpler room.
+
+## How to Set the Weights Fairly
+
+- **Ask: what would this room have cost booked separately?** Use the price difference as a rough guide for the weight
+- **Factor in privacy**: a private bathroom or balcony deserves a higher weight than shared amenities
+- **Don't overthink the precision**: simple weights like 0.7 / 1.0 / 1.3 are enough — no need for complex math
+
+## What About Shared Costs Unrelated to Rooms?
+
+Food, transportation, and group activities should be split equally among everyone regardless of room, since everyone benefits from them equally. Only the accommodation cost itself gets the weighted split treatment.
+
+## A Practical System for Applying This Method
+
+### Step 1: Agree on the Weights Before Booking
+Discuss the room assignments and appropriate weights before confirming the booking, to avoid any dispute later.
+
+### Step 2: Log Each Person's Share as a Custom Amount
+Use an app like Diviso to log the accommodation expense with different individual amounts per guest instead of an automatic equal split.
+
+### Step 3: Separate Accommodation Costs From the Rest of the Trip's Expenses
+Log food and activities as separate expenses split equally, so they don't get mixed up with the room calculation.
+
+### Step 4: Review the Final Numbers Before Traveling
+Make sure everyone agrees on the weights and final shares before the first payment is transferred.
+
+## Common Mistakes When Splitting Shared Accommodation Costs
+
+- **A plain equal split despite different rooms**: unfairly penalizes guests in simpler rooms or unfairly favors guests in nicer ones
+- **Not agreeing on weights in advance**: creates an awkward conversation after arriving at the property
+- **Mixing room costs with food and activity expenses**: makes the final settlement harder to untangle
+- **Ignoring room size when occupancy is equal**: a large room for two deserves a higher weight than a small room for the same number of people
+
+## How Diviso Helps in This Situation
+
+- ✅ Logs the accommodation expense with custom amounts per person based on their room
+- ✅ Keeps room costs separate from the rest of the trip's shared expenses
+- ✅ Automatic, accurate calculation that ensures the total matches the actual cost
+- ✅ A clear record of the agreed weight and share for each person
+- ✅ Easy to adjust weights if the room assignment changes before the trip
+
+## Frequently Asked Questions
+
+### Should everyone pay the same amount in a shared Airbnb?
+Not necessarily. If the rooms differ in quality (private bathroom, size, privacy), the fairer approach is a weighted split that has guests in the nicer rooms pay a slightly higher share than those in simpler rooms.
+
+### How do I determine the weight for each room?
+Use the approximate price difference if each room were booked separately as a guide, or agree as a group on simple numbers (like 0.7 for the simplest room and 1.3 for the best one) before booking.
+
+### Does the weighted split also apply to food and activity costs?
+No, the weighted split applies only to the accommodation cost itself. Other shared expenses like food and transportation should be split equally among everyone, since everyone benefits from them the same amount.
+
+## Conclusion
+
+Splitting shared accommodation costs fairly means accounting for the difference in room quality, not just the number of guests. Use a simple weighting system, agree on it in advance, and let the app calculate each person's exact share.
+
+**Try Diviso now and split your next trip's accommodation costs with complete fairness.**
+    `
+  },
+  {
     slug: "split-bachelor-bachelorette-party-costs",
     title: "كيف تقسم مصاريف رحلة توديع العزوبية بين المدعوين؟",
     titleEn: "How to Split Bachelor or Bachelorette Party Costs (Including the Guest of Honor's Share)",

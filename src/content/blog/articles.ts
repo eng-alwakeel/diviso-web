@@ -16,6 +16,222 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-electricity-water-bills-by-usage",
+    title: "كيف تقسم فاتورة الكهرباء والماء بعدل بين شركاء السكن حسب الاستهلاك؟",
+    titleEn: "How to Split Electricity and Water Bills Fairly Among Roommates by Actual Usage",
+    description: "لماذا التقسيم المتساوي لفاتورة الكهرباء ظالم أحياناً؟ تعرف على طريقة تقسيم الفواتير حسب الاستهلاك الفعلي بدل عدد الأشخاص فقط، مع مثال حساب عملي.",
+    descriptionEn: "Why an equal split of the electricity bill can be unfair — learn how to divide utility bills based on actual usage instead of just headcount, with a worked example.",
+    keywords: ["تقسيم فاتورة الكهرباء بين السكان", "تقسيم فاتورة الماء بعدل", "تقسيم فواتير الاستهلاك", "كيف اقسم فاتورة الكهرباء", "خلاف فاتورة الكهرباء بين الشركاء", "تقسيم المرافق حسب الاستخدام"],
+    keywordsEn: ["how to split electricity bill fairly roommates", "fair way to split utility bills", "split water bill by usage", "electricity bill dispute roommates", "utility cost splitting formula", "divide shared bills by actual usage"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-09-05",
+    content: `
+## الإجابة المختصرة
+
+تقسيم فاتورة الكهرباء بالتساوي بين شركاء السكن قد يكون ظالماً إذا اختلف استهلاكهم الفعلي بشكل كبير (مثلاً شخص يعمل من المنزل بالتكييف طوال اليوم مقابل شخص يقضي معظم وقته خارج المنزل). الحل الأعدل هو تقسيم الفاتورة حسب **مؤشر استهلاك تقريبي** لكل شخص — عدد الساعات التي يقضيها في المنزل مع تشغيل الأجهزة — بدل القسمة المتساوية البحتة على عدد الأشخاص.
+
+## ليش التقسيم المتساوي لا يكفي دائماً؟
+
+بعض الفواتير (كالإنترنت) لا تتأثر بمن يستخدمها أكثر، لكن الكهرباء والماء مختلفان:
+
+- **تكييف الهواء**: الشخص الذي يعمل من المنزل يشغّل المكيف ساعات أطول من زميله الذي يخرج طوال النهار
+- **السفر المتكرر**: شريك يسافر نصف الشهر يستهلك أقل بكثير ممن يبقى في المسكن دائماً
+- **أجهزة شخصية**: جهاز ألعاب يعمل 24 ساعة، أو غسالة تُستخدم يومياً من شخص واحد فقط
+- **اختلاف عدد ساعات الاستحمام**: بعض الأشخاص يستهلكون ماء ساخن أكثر من غيرهم
+
+## متى يكفي التقسيم المتساوي؟
+
+- **جدول حياة متشابه**: إذا كان الجميع يعمل بنفس الساعات تقريباً ويقضي وقتاً متقارباً في المنزل
+- **فواتير لا تتأثر بالاستخدام الفردي**: مثل الإنترنت أو رسوم الصيانة الثابتة
+- **فرق ضئيل لا يستحق التعقيد**: أحياناً الفرق بالريالات صغير جداً بحيث لا يستحق حساباً دقيقاً
+
+## كيف تحسب التقسيم حسب الاستهلاك الفعلي؟
+
+### الطريقة الأدق: عداد فرعي أو قارئ استهلاك ذكي
+لو أمكن تركيب مقياس استهلاك ذكي (Smart Plug) على غرفة كل شخص أو جهازه الرئيسي (مكيف الغرفة مثلاً)، يمكن قراءة الاستهلاك الفعلي بالكيلوواط/ساعة لكل شخص وتقسيم الفاتورة بنفس النسبة تماماً.
+
+### الطريقة التقريبية: مؤشر ساعات الوجود مع التشغيل
+إذا لم يتوفر عداد فرعي، استخدم تقديراً معقولاً: عدد الساعات اليومية التي يقضيها كل شخص في المنزل مع تشغيل الأجهزة الرئيسية (تكييف، أجهزة كهربائية).
+
+### مثال عملي
+فاتورة كهرباء شهرية 450 ريال بين 3 شركاء سكن:
+- أحمد يعمل من المنزل، يشغّل المكيف تقريباً 10 ساعات يومياً
+- سالم يخرج للعمل، يشغّله تقريباً 6 ساعات يومياً (المساء والليل)
+- خالد يسافر كثيراً لعمله، متواجد نصف الشهر فقط، بمعدل 3 ساعات يومياً تقريباً على كامل الشهر
+
+**حساب "ساعات الاستخدام الشهرية" لكل شخص** (× 30 يوم):
+- أحمد: 10 × 30 = 300 ساعة
+- سالم: 6 × 30 = 180 ساعة
+- خالد: 3 × 30 = 90 ساعة
+
+**مجموع الساعات** = 300 + 180 + 90 = 570 ساعة
+**تكلفة الساعة الواحدة** = 450 ÷ 570 ≈ 0.79 ريال
+
+- نصيب أحمد = 300 × 0.79 ≈ 237 ريال
+- نصيب سالم = 180 × 0.79 ≈ 142 ريال
+- نصيب خالد = 90 × 0.79 ≈ 71 ريال
+
+قارن هذا بالتقسيم المتساوي (150 ريال لكل واحد)، الذي كان سيجعل خالد يدفع أكثر من ضعف استهلاكه الفعلي رغم غيابه المتكرر.
+
+## ماذا عن فاتورة الماء؟
+
+الماء أصعب في القياس الفردي من الكهرباء، لذا الطرق الشائعة:
+
+- **التقسيم بالتساوي**: مقبول إذا كان الاستهلاك متقارباً بين الجميع
+- **حسب عدد أيام الوجود الفعلي بالشهر**: نفس منطق الكهرباء، لكن بعدد الأيام بدل الساعات
+- **استثناء استخدامات خاصة**: مثل شخص يغسل سيارته بانتظام بخرطوم المسكن — يمكن الاتفاق على مساهمة إضافية منه
+
+## خطوات عملية لتطبيق هذا النظام
+
+### الخطوة 1: اتفقوا على طريقة القياس قبل أول فاتورة
+حددوا: هل ستستخدمون عداداً فرعياً، أم مؤشر الساعات التقريبي، أم تقسيماً متساوياً بسيطاً؟
+
+### الخطوة 2: سجّلوا جدول الحضور التقريبي لكل شخص
+لا يحتاج دقة زائدة — تقدير عام لساعات الوجود في المنزل كافٍ لمعظم الحالات.
+
+### الخطوة 3: سجّلوا كل فاتورة بمبالغ مخصصة
+استخدم تطبيق مثل Diviso لتسجيل فاتورة الكهرباء بنصيب مختلف لكل شخص بدل القسمة التلقائية المتساوية.
+
+### الخطوة 4: راجعوا النسب كل بضعة أشهر
+إذا تغيّر جدول أحد الشركاء (بدأ العمل من المنزل مثلاً)، عدّلوا النسب المتفق عليها.
+
+## أخطاء شائعة عند تقسيم فواتير المرافق
+
+- **التقسيم المتساوي رغم فروقات كبيرة بالاستهلاك**: يخلق استياءً متكرراً كل شهر
+- **عدم توثيق طريقة الحساب**: يصعب تذكر الاتفاق الأصلي بعد أشهر
+- **تجاهل التغيرات الموسمية**: استهلاك الصيف (تكييف) يختلف جذرياً عن الشتاء
+- **الخلط بين فواتير مختلفة الطبيعة**: الإنترنت يُقسّم بالتساوي دائماً، بينما الكهرباء قد تحتاج تقسيماً مختلفاً
+
+## كيف يساعدك Diviso في هذا الموقف؟
+
+- ✅ تسجيل كل فاتورة (كهرباء، ماء، إنترنت) كبند منفصل بطريقة تقسيم مختلفة لكل واحدة
+- ✅ حفظ نسب التقسيم المتفق عليها لإعادة استخدامها كل شهر تلقائياً
+- ✅ تعديل سريع للنسب عند تغيّر ظروف أحد الشركاء
+- ✅ سجل شهري واضح يوضح كيف حُسب نصيب كل شخص
+- ✅ تنبيهات تلقائية عند وصول موعد فاتورة جديدة
+
+## أسئلة شائعة
+
+### هل يجب تقسيم فاتورة الكهرباء بالتساوي بين شركاء السكن؟
+ليس بالضرورة. إذا اختلف استهلاك الأجهزة (خصوصاً التكييف) بشكل كبير بسبب اختلاف ساعات الوجود في المنزل، فالأعدل تقسيم الفاتورة حسب مؤشر استهلاك تقريبي لكل شخص بدل التقسيم المتساوي.
+
+### كيف أحسب نصيبي من فاتورة الكهرباء بدون عداد فرعي؟
+استخدم تقديراً معقولاً لعدد الساعات اليومية التي تقضيها في المنزل مع تشغيل الأجهزة الرئيسية، ثم اقسم الفاتورة الإجمالية على مجموع ساعات كل الشركاء مجتمعة، واضرب الناتج في ساعاتك الفعلية.
+
+### هل تُقسّم فاتورة الإنترنت بنفس طريقة الكهرباء؟
+لا، الإنترنت عادة يُقسّم بالتساوي بين الجميع لأن الاستخدام الفردي لا يزيد التكلفة الإجمالية بشكل ملموس، بعكس الكهرباء والماء اللذين يرتبطان مباشرة بالاستهلاك الفعلي.
+
+## الخلاصة
+
+فواتير المرافق المشتركة لا يجب أن تكون مصدر خلاف شهري متكرر. اتفقوا على طريقة قياس معقولة للاستهلاك، وثّقوها، ودعوا التطبيق يتابع الحسابات بدل الجدال كل شهر.
+
+**جرب Diviso الآن وقسّم فواتير الكهرباء والماء بعدل حسب الاستهلاك الفعلي.**
+    `,
+    contentEn: `
+## Quick Answer
+
+Splitting the electricity bill equally among roommates can be unfair when actual usage differs significantly — for example, someone who works from home with the AC running all day versus someone who's out of the house most of the time. The fairer solution is to split the bill based on an **approximate usage indicator** for each person — the hours they spend at home with appliances running — instead of a plain equal split by headcount.
+
+## Why an Equal Split Doesn't Always Work
+
+Some bills (like internet) aren't affected by who uses them more, but electricity and water are different:
+
+- **Air conditioning**: someone working from home runs the AC far longer than a roommate who's out all day
+- **Frequent travel**: a roommate who travels half the month uses far less than one who's always home
+- **Personal devices**: a gaming PC running 24 hours, or a washing machine used daily by just one person
+- **Different shower habits**: some people use noticeably more hot water than others
+
+## When Is an Equal Split Actually Fine?
+
+- **Similar life schedules**: if everyone works roughly the same hours and spends similar time at home
+- **Bills unaffected by individual usage**: like internet or fixed maintenance fees
+- **A negligible difference**: sometimes the difference in riyals is too small to justify a complex calculation
+
+## How to Calculate a Split Based on Actual Usage
+
+### The Most Accurate Method: A Sub-Meter or Smart Plug
+If you can install a smart plug or sub-meter on each person's room or main appliance (like a room AC unit), you can read the actual kWh consumption per person and split the bill in exactly that proportion.
+
+### The Approximate Method: A "Hours Present With Usage" Indicator
+Without a sub-meter, use a reasonable estimate: the daily hours each person spends at home with major appliances running (AC, electronics).
+
+### A Worked Example
+A monthly electricity bill of 450 SAR split among 3 roommates:
+- Ahmed works from home, running the AC about 10 hours a day
+- Salem goes out to work, running it about 6 hours a day (evenings and night)
+- Khaled travels frequently for work, home only half the month, averaging about 3 hours a day across the full month
+
+**Calculating "monthly usage hours" for each person** (× 30 days):
+- Ahmed: 10 × 30 = 300 hours
+- Salem: 6 × 30 = 180 hours
+- Khaled: 3 × 30 = 90 hours
+
+**Total hours** = 300 + 180 + 90 = 570 hours
+**Cost per hour** = 450 ÷ 570 ≈ 0.79 SAR
+
+- Ahmed's share = 300 × 0.79 ≈ 237 SAR
+- Salem's share = 180 × 0.79 ≈ 142 SAR
+- Khaled's share = 90 × 0.79 ≈ 71 SAR
+
+Compare this to an equal split (150 SAR each), which would have made Khaled pay more than double his actual usage despite his frequent absences.
+
+## What About the Water Bill?
+
+Water is harder to measure individually than electricity, so the common approaches are:
+
+- **Equal split**: acceptable if usage is roughly similar across everyone
+- **By actual days present in the month**: the same logic as electricity, but using days instead of hours
+- **Excluding special usage**: like someone regularly washing their car with the house hose — the group can agree on an extra contribution from them
+
+## A Practical System for Applying This
+
+### Step 1: Agree on the Measurement Method Before the First Bill
+Decide: will you use a sub-meter, an approximate hours indicator, or a simple equal split?
+
+### Step 2: Log Each Person's Approximate Presence Schedule
+No need for excessive precision — a general estimate of hours at home is enough for most cases.
+
+### Step 3: Log Each Bill With Custom Amounts
+Use an app like Diviso to log the electricity bill with a different share for each person instead of an automatic equal split.
+
+### Step 4: Review the Ratios Every Few Months
+If someone's schedule changes (say, they start working from home), adjust the agreed-upon ratios.
+
+## Common Mistakes When Splitting Utility Bills
+
+- **An equal split despite large usage differences**: creates recurring monthly resentment
+- **Not documenting the calculation method**: makes it hard to remember the original agreement months later
+- **Ignoring seasonal changes**: summer usage (AC) differs drastically from winter
+- **Mixing up different bill types**: internet should always split equally, while electricity may need a different split
+
+## How Diviso Helps in This Situation
+
+- ✅ Logs each bill (electricity, water, internet) as a separate line item with its own splitting method
+- ✅ Saves the agreed-upon split ratios to reuse automatically every month
+- ✅ Quickly adjusts ratios when a roommate's circumstances change
+- ✅ A clear monthly record showing how each person's share was calculated
+- ✅ Automatic reminders when a new bill is due
+
+## Frequently Asked Questions
+
+### Should the electricity bill always be split equally among roommates?
+Not necessarily. If appliance usage (especially AC) differs significantly due to different hours spent at home, it's fairer to split the bill based on an approximate usage indicator for each person instead of a plain equal split.
+
+### How do I calculate my share of the electricity bill without a sub-meter?
+Use a reasonable estimate of the daily hours you spend at home with major appliances running, then divide the total bill by the combined hours of all roommates, and multiply the result by your own actual hours.
+
+### Is the internet bill split the same way as electricity?
+No, internet is usually split equally among everyone because individual usage doesn't meaningfully increase the total cost, unlike electricity and water, which are directly tied to actual consumption.
+
+## Conclusion
+
+Shared utility bills shouldn't be a recurring monthly source of conflict. Agree on a reasonable usage measurement method, document it, and let the app track the numbers instead of arguing every month.
+
+**Try Diviso now and split your electricity and water bills fairly based on actual usage.**
+    `
+  },
+  {
     slug: "split-airbnb-cost-by-room-type",
     title: "كيف تقسم تكلفة شقة إير بي إن بي (Airbnb) بعدل حسب نوع الغرفة؟",
     titleEn: "How to Split an Airbnb or Vacation Rental Cost Fairly by Room Type",

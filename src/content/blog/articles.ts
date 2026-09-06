@@ -16,6 +16,190 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-eid-al-adha-sacrifice-cost-family",
+    title: "كيف تقسم تكلفة الأضحية بين الإخوة والعائلة في عيد الأضحى؟",
+    titleEn: "How to Split the Cost of an Eid al-Adha Sacrifice (Udhiyah) Among Siblings or Family",
+    description: "دليل عملي لتقسيم تكلفة الأضحية بين أفراد العائلة، مع شرح نظام الأسباع السبعة للبقر والإبل ومثال حساب لتنظيم جمع الفلوس قبل العيد.",
+    descriptionEn: "A practical guide to splitting the cost of an Eid al-Adha sacrifice among family members, explaining the seven-share system for cows and camels with a worked example for organizing the collection before Eid.",
+    keywords: ["تقسيم تكلفة الأضحية", "أسباع الأضحية", "تقسيم فلوس الأضحية بين الإخوة", "كم سعر سبع الأضحية", "جمع فلوس الأضحية العائلية", "تنظيم مصاريف عيد الأضحى"],
+    keywordsEn: ["how to split cost of udhiyah among family", "seven shares cow sacrifice cost", "eid al-adha sacrifice cost calculator", "splitting qurbani cost with siblings", "cost per share cow sacrifice", "organize family udhiyah collection"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-09-06",
+    content: `
+## الإجابة المختصرة
+
+يمكن تقسيم تكلفة أضحية البقر أو الإبل على 7 أشخاص كحد أقصى (نظام "الأسباع")، بحيث يمثل كل سُبع أضحية مستقلة لشخص أو أسرة. نصيب السُبع الواحد = تكلفة الأضحية الكاملة ÷ 7. أما الغنم والماعز، فتُحسب كل رأس أضحية واحدة فقط لشخص واحد ولا تُقسّم بين عدة أشخاص كأسباع.
+
+## ليش تقسيم تكلفة الأضحية له نظام خاص؟
+
+الأضحية عبادة سنوية متكررة، وتقسيم تكلفتها بين أفراد العائلة له خصوصيات لا تنطبق على المصاريف الجماعية العادية:
+
+- **نظام الأسباع الشرعي**: البقر والإبل فقط يمكن تقسيمها لسبعة أسهم، كل سهم يُحسب أضحية كاملة لصاحبه
+- **ارتفاع الأسعار قرب العيد**: أسعار الأضاحي ترتفع كلما اقترب موعد العيد، فالتخطيط المبكر يوفر فلوساً
+- **تفاوت الرغبات**: البعض يفضل الغنم لسهولة التوزيع، والبعض يفضل المشاركة في بقرة لتقليل التكلفة الفردية
+- **تكرار سنوي**: نفس المجموعة (الإخوة مثلاً) قد تكرر هذا الترتيب كل عام، فيستحق نظاماً ثابتاً
+
+## كيف يعمل نظام الأسباع بالضبط؟
+
+### القاعدة
+البقرة أو الجمل يُحسب كسبع أضحيات مستقلة. يمكن لعائلة واحدة أن تشتري الأسباع السبعة كاملة لتغطية 7 أفراد، أو تشترك في بعض الأسباع فقط وتترك الباقي لعائلات أخرى.
+
+### مثال عملي
+لو سعر البقرة الكاملة 3500 ريال، وأراد 5 إخوة كل واحد يضحي عن نفسه وعائلته:
+
+- تكلفة السُبع الواحد = 3500 ÷ 7 = 500 ريال
+- نصيب كل أخ (سبع واحد لكل واحد) = 500 ريال
+- المجموع لخمسة أسباع = 500 × 5 = 2500 ريال
+- يبقى سبعان (1000 ريال) يمكن للعائلة شراؤهما إضافياً أو تركهما لأشخاص آخرين خارج العائلة
+
+### ماذا عن الغنم والماعز؟
+كل رأس غنم أو ماعز تُحسب أضحية واحدة كاملة لشخص واحد فقط، ولا يمكن تقسيمها على عدة أشخاص كأسهم. لو أراد 3 إخوة كل واحد أضحية غنم منفصلة، فالتكلفة الإجمالية = سعر الرأس الواحد × 3، ويدفع كل واحد سعر أضحيته بالكامل، لا ثلث التكلفة.
+
+## كيف تنظم جمع فلوس الأضحية العائلية؟
+
+### الخطوة 1: حددوا نوع الأضحية مبكراً
+اتفقوا: بقرة بالأسباع، أم كل واحد غنمة منفصلة، أم مزيج بين الاثنين.
+
+### الخطوة 2: احصروا عدد المشاركين والحصص
+لو اخترتم البقرة، حددوا بالضبط من يأخذ كم سُبع، ووثّقوا ذلك حتى لا يحصل لبس عند التوزيع.
+
+### الخطوة 3: اجمعوا الفلوس قبل موعد الذبح بوقت كافٍ
+الحجز المبكر (قبل أسبوعين على الأقل من العيد) يضمن أسعاراً أفضل ويجنّب ضغط اللحظة الأخيرة.
+
+### الخطوة 4: سجّلوا التحصيل في مجموعة واحدة
+استخدم تطبيق مثل Diviso لإنشاء مجموعة "أضحية العائلة" وتتبع من دفع نصيبه ومن لم يدفع بعد.
+
+### الخطوة 5: وثّقوا التكلفة الفعلية بعد الشراء
+لو اختلف السعر النهائي عن التقدير الأولي (ارتفاع أو انخفاض)، عدّلوا نصيب كل شخص ووزّعوا الفرق بشفافية.
+
+## نصائح لتوفير تكلفة الأضحية
+
+- 🐄 **احجزوا مبكراً**: الأسعار ترتفع بشكل ملحوظ في آخر أسبوع قبل العيد
+- 🤝 **شاركوا في بقرة بدل الغنم المنفصل**: التكلفة للفرد الواحد غالباً أقل في نظام الأسباع
+- 📋 **اتفقوا على معايير الجودة مسبقاً**: تجنبوا خلاف "ليش اخترتوا هذا الحجم" بعد الشراء
+- 💰 **افتحوا التحصيل بوقت كافٍ**: شهر كامل قبل العيد يعطي مرونة للجميع
+
+## أخطاء شائعة عند تقسيم تكلفة الأضحية
+
+- **الخلط بين نظام الأسباع والغنم**: الغنم لا يُقسّم كأسهم، كل رأس أضحية كاملة لشخص واحد
+- **التأخر في الحجز**: يرفع التكلفة ويقلل الخيارات المتاحة
+- **عدم توثيق من أخذ أي سُبع**: يسبب لبساً عند توزيع اللحم لاحقاً
+- **نسيان تسوية فرق السعر النهائي**: التقدير المبدئي قد يختلف عن السعر الفعلي وقت الشراء
+
+## كيف يساعدك Diviso في تنظيم أضحية العائلة؟
+
+- ✅ إنشاء مجموعة سنوية ثابتة لأضحية العائلة يمكن إعادة استخدامها كل عام
+- ✅ تسجيل نصيب كل شخص حسب نوع مشاركته (سبع كامل، نصف سبع، غنم منفصلة)
+- ✅ تتبع من دفع نصيبه قبل موعد الحجز
+- ✅ تعديل النصيب تلقائياً عند تغيّر السعر النهائي
+- ✅ سجل واضح يوثّق من شارك وبأي حصة كل عام
+
+## أسئلة شائعة
+
+### كم سعر سبع الأضحية إذا كانت البقرة بـ3500 ريال؟
+سعر السبع الواحد = 3500 ÷ 7 = 500 ريال. هذا يمثل أضحية كاملة ومستقلة لشخص واحد أو أسرة واحدة.
+
+### هل يمكن تقسيم أضحية الغنم بين شخصين؟
+لا، الغنم والماعز تُحسب أضحية واحدة كاملة لشخص واحد فقط، على عكس البقر والإبل التي يمكن تقسيمها إلى 7 أسهم مستقلة.
+
+### متى الأفضل نبدأ جمع فلوس الأضحية من العائلة؟
+يُفضّل البدء قبل شهر تقريباً من العيد، لأن الحجز المبكر يضمن أسعاراً أفضل ويعطي وقتاً كافياً لتحصيل نصيب كل فرد بدون ضغط اللحظة الأخيرة.
+
+## الخلاصة
+
+تقسيم تكلفة الأضحية بين العائلة أسهل بكثير مع فهم نظام الأسباع وتنظيم واضح للتحصيل. حددوا نوع الأضحية مبكراً، وثّقوا الحصص، ودعوا التطبيق يتابع من دفع كل عام.
+
+**جرب Diviso الآن ونظّم جمع فلوس الأضحية مع عائلتك بسهولة.**
+    `,
+    contentEn: `
+## Quick Answer
+
+The cost of a cow or camel sacrifice can be split among up to 7 people (the "seven-share" system), where each share counts as one complete, independent sacrifice for a person or household. The cost per share = total sacrifice cost ÷ 7. Sheep and goats, on the other hand, each count as a single complete sacrifice for one person and cannot be divided into shares among multiple people.
+
+## Why Splitting Udhiyah Costs Has Its Own System
+
+The Eid al-Adha sacrifice is a recurring yearly act of worship, and splitting its cost among family members has quirks that don't apply to ordinary group expenses:
+
+- **The religious seven-share system**: only cows and camels can be split into seven shares, each counting as one complete sacrifice for its owner
+- **Prices rise closer to Eid**: sacrifice animal prices climb the closer it gets to Eid, so early planning saves money
+- **Different preferences**: some prefer a separate sheep for easier distribution, others prefer sharing a cow to lower the individual cost
+- **A yearly repeat**: the same group (siblings, for example) may repeat this arrangement every year, making a consistent system worthwhile
+
+## How the Seven-Share System Works Exactly
+
+### The Rule
+A cow or camel counts as seven independent sacrifices. One family can buy all seven shares to cover 7 people, or take just some shares and leave the rest for other families.
+
+### A Worked Example
+If a full cow costs 3,500 SAR, and 5 siblings each want to perform their own sacrifice:
+
+- Cost per share = 3,500 ÷ 7 = 500 SAR
+- Each sibling's share (one share each) = 500 SAR
+- Total for five shares = 500 × 5 = 2,500 SAR
+- The remaining two shares (1,000 SAR) can be bought additionally by the family or left for other people outside the family
+
+### What About Sheep and Goats?
+Each sheep or goat counts as one complete sacrifice for a single person only, and cannot be divided into shares among multiple people. If 3 siblings each want a separate sheep sacrifice, the total cost = price per head × 3, and each person pays the full price of their own sacrifice, not a third of the total.
+
+## How to Organize a Family Udhiyah Collection
+
+### Step 1: Decide the Type of Sacrifice Early
+Agree on: a cow split into shares, separate sheep for each person, or a mix of both.
+
+### Step 2: List the Participants and Their Shares
+If you choose the cow, determine exactly who takes how many shares, and document it clearly to avoid confusion at distribution time.
+
+### Step 3: Collect the Money With Enough Lead Time Before Slaughter
+Booking early (at least two weeks before Eid) secures better prices and avoids last-minute pressure.
+
+### Step 4: Log the Collection in One Group
+Use an app like Diviso to create a "Family Udhiyah" group and track who has paid their share and who hasn't yet.
+
+### Step 5: Document the Actual Cost After Purchase
+If the final price differs from the initial estimate (higher or lower), adjust each person's share and distribute the difference transparently.
+
+## Tips to Save on Udhiyah Costs
+
+- 🐄 **Book early**: prices rise noticeably in the final week before Eid
+- 🤝 **Share a cow instead of buying separate sheep**: the per-person cost is usually lower with the seven-share system
+- 📋 **Agree on quality standards in advance**: avoid a "why did you pick this size" argument after the purchase
+- 💰 **Open the collection with enough lead time**: a full month before Eid gives everyone flexibility
+
+## Common Mistakes When Splitting Udhiyah Costs
+
+- **Confusing the share system with sheep**: sheep aren't divided into shares — each head is one complete sacrifice for one person
+- **Booking too late**: raises the cost and reduces available options
+- **Not documenting who took which share**: causes confusion later when distributing the meat
+- **Forgetting to settle the final price difference**: the initial estimate may differ from the actual price at purchase time
+
+## How Diviso Helps Organize a Family Udhiyah
+
+- ✅ Creates a recurring yearly group for the family sacrifice that can be reused every year
+- ✅ Logs each person's share based on their participation type (full share, half share, separate sheep)
+- ✅ Tracks who has paid their share before the booking deadline
+- ✅ Automatically adjusts shares when the final price changes
+- ✅ A clear record documenting who participated and with what share each year
+
+## Frequently Asked Questions
+
+### How much does one share of a cow sacrifice cost if the cow is 3,500 SAR?
+The cost per share = 3,500 ÷ 7 = 500 SAR. This represents one complete, independent sacrifice for one person or household.
+
+### Can a sheep sacrifice be split between two people?
+No, sheep and goats each count as one complete sacrifice for a single person only, unlike cows and camels, which can be divided into 7 independent shares.
+
+### When is the best time to start collecting udhiyah money from the family?
+It's best to start about a month before Eid, since booking early secures better prices and gives enough time to collect each person's share without last-minute pressure.
+
+## Conclusion
+
+Splitting the cost of the Eid al-Adha sacrifice among family becomes much easier once you understand the seven-share system and set up a clear collection process. Decide the type of sacrifice early, document the shares, and let the app track who has paid each year.
+
+**Try Diviso now and organize your family's udhiyah collection with ease.**
+    `
+  },
+  {
     slug: "split-electricity-water-bills-by-usage",
     title: "كيف تقسم فاتورة الكهرباء والماء بعدل بين شركاء السكن حسب الاستهلاك؟",
     titleEn: "How to Split Electricity and Water Bills Fairly Among Roommates by Actual Usage",

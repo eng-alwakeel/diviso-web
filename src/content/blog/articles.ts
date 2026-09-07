@@ -16,6 +16,236 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-food-delivery-order-cost-friends",
+    title: "كيف تقسم فاتورة طلب التوصيل (جاهز، هنقرستيشن) مع الأصدقاء بعدل؟",
+    titleEn: "How to Split a Food Delivery Order Cost Fairly With Friends",
+    description: "طريقة عادلة لتقسيم فاتورة طلب توصيل جماعي: كل شخص يدفع ثمن طلبه، بينما تُقسّم رسوم التوصيل والخدمة والبقشيش بالتساوي. مثال حساب عملي مع خصم الكوبون.",
+    descriptionEn: "The fair way to split a group food delivery order: each person pays for their own items, while delivery fees, service fees, and tips are split equally. A worked example including promo code discounts.",
+    keywords: ["تقسيم فاتورة طلب التوصيل", "تقسيم طلب جاهز بين الأصدقاء", "من يدفع رسوم التوصيل", "تقسيم فاتورة هنقرستيشن", "حساب فاتورة الطلب الجماعي", "تقسيم كوبون خصم الطلب"],
+    keywordsEn: ["how to split a food delivery order with friends", "who pays delivery fee group order", "split jahez order cost calculator", "fair way to split food delivery bill", "splitting delivery tip among friends", "group food order cost splitter"],
+    category: "tips",
+    readTime: 6,
+    publishDate: "2026-09-07",
+    content: `
+## الإجابة المختصرة
+
+عند تقسيم فاتورة طلب توصيل جماعي (جاهز، هنقرستيشن، مرسول)، يدفع كل شخص ثمن طلبه الخاص بالضبط، بينما تُقسّم رسوم التوصيل ورسوم الخدمة والبقشيش بالتساوي بين الجميع بغض النظر عن حجم طلب كل واحد. أما خصم الكوبون، فالأعدل توزيعه بنفس نسبة قيمة طلب كل شخص من إجمالي الفاتورة قبل الخصم.
+
+## ليش طلب التوصيل يحتاج طريقة تقسيم مختلفة عن المطعم؟
+
+طلب التوصيل الجماعي يختلف عن الجلوس في المطعم لأنه يحتوي على بنود لا علاقة لها بحجم طلب كل شخص:
+
+- **رسوم التوصيل ثابتة**: نفس المبلغ بغض النظر عمّن طلب أكثر أو أقل
+- **رسوم الخدمة**: غالباً نسبة مئوية من إجمالي الفاتورة، لا من طلب فرد معين
+- **البقشيش**: يُحسب عادة كنسبة من الفاتورة الكلية
+- **كوبونات الخصم**: تُطبّق على الفاتورة الكاملة، فيحتاج توزيعها منطقاً عادلاً
+
+## كيف تقسم الفاتورة خطوة بخطوة؟
+
+### الخطوة 1: كل شخص يدفع ثمن طلبه بالضبط
+اجمعوا أسعار الأصناف التي طلبها كل شخص من قائمة الطلب — هذا الجزء واضح ولا يحتاج تعقيداً.
+
+### الخطوة 2: اجمعوا التكاليف الإضافية المشتركة
+رسوم التوصيل + رسوم الخدمة + البقشيش = "التكلفة الإضافية الإجمالية".
+
+### الخطوة 3: قسّموا التكلفة الإضافية بالتساوي
+اقسموا مجموع الرسوم على عدد المشاركين في الطلب، بغض النظر عن قيمة طلب كل واحد.
+
+### مثال عملي
+3 أصدقاء طلبوا معاً: أحمد بقيمة 45 ريال، سالم بقيمة 35 ريال، خالد بقيمة 20 ريال.
+**المجموع الفرعي** = 45 + 35 + 20 = 100 ريال
+
+رسوم التوصيل 15 ريال + رسوم الخدمة 5 ريال + بقشيش 10 ريال = **30 ريال تكلفة إضافية**
+
+نصيب كل واحد من التكلفة الإضافية = 30 ÷ 3 = 10 ريال
+
+- أحمد يدفع: 45 + 10 = 55 ريال
+- سالم يدفع: 35 + 10 = 45 ريال
+- خالد يدفع: 20 + 10 = 30 ريال
+
+**التحقق**: 55 + 45 + 30 = 130 ريال = 100 (الطلبات) + 30 (الرسوم)، مطابق تماماً للفاتورة الكلية.
+
+## كيف تتعامل مع خصم الكوبون؟
+
+الطريقة الأعدل هي توزيع الخصم بنفس نسبة قيمة طلب كل شخص من المجموع الفرعي، وليس بالتساوي، لأن الخصم عادة نسبة مئوية من قيمة الطلبات.
+
+### مثال مع خصم 20%
+بنفس المثال السابق (مجموع فرعي 100 ريال)، لو طُبّق كوبون خصم 20%:
+
+- أحمد بعد الخصم: 45 × 0.8 = 36 ريال
+- سالم بعد الخصم: 35 × 0.8 = 28 ريال
+- خالد بعد الخصم: 20 × 0.8 = 16 ريال
+
+**مجموع بعد الخصم** = 36 + 28 + 16 = 80 ريال (بدل 100)
+
+ثم يُضاف نصيب كل واحد من التكلفة الإضافية (30 ÷ 3 = 10 ريال لكل واحد):
+- أحمد: 36 + 10 = 46 ريال
+- سالم: 28 + 10 = 38 ريال
+- خالد: 16 + 10 = 26 ريال
+
+**المجموع النهائي** = 46 + 38 + 26 = 110 ريال = 80 + 30، مطابق تماماً.
+
+## ماذا لو طلب شخص صنفاً يُشارك فيه الجميع (مثل مقبلات مشتركة)؟
+
+اجمعوا سعر الصنف المشترك مع التكلفة الإضافية (رسوم التوصيل والخدمة والبقشيش) وقسّموه بالتساوي على الجميع، بدل تحميله لشخص واحد فقط.
+
+## خطوات عملية لتسهيل تقسيم الطلب
+
+### الخطوة 1: اطلبوا بحساب واحد موحّد
+أسهل من تجميع عدة طلبات منفصلة، ويضمن رسوم توصيل واحدة فقط بدل تكرارها.
+
+### الخطوة 2: صوّروا الفاتورة النهائية فور وصولها
+تحتوي على تفصيل الأصناف والرسوم، وتُستخدم كمرجع عند الحساب.
+
+### الخطوة 3: سجّلوا المصروف فوراً في تطبيق تقسيم
+استخدم تطبيق مثل Diviso لتسجيل كل صنف بمبلغه الفعلي، وتوزيع الرسوم المشتركة تلقائياً.
+
+### الخطوة 4: لا تؤجلوا التسوية
+اطلبات التوصيل تتكرر كثيراً بين نفس المجموعة، فالتسوية الفورية تمنع تراكم عدة طلبات في حساب واحد معقد.
+
+## أخطاء شائعة عند تقسيم فاتورة التوصيل
+
+- **تقسيم كل شيء بالتساوي بغض النظر عن قيمة الطلب**: يجعل من طلب أقل يدفع أكثر من نصيبه الفعلي
+- **تحميل رسوم التوصيل على شخص واحد فقط**: غير عادل لأن الجميع استفاد من التوصيل
+- **توزيع الخصم بالتساوي بدل النسبة**: يعطي من طلب أقل خصماً أكبر من استحقاقه الفعلي
+- **نسيان تسجيل من دفع فاتورة التطبيق الأصلية**: يصعب تتبع من يدين لمن لاحقاً
+
+## كيف يساعدك Diviso في تقسيم طلبات التوصيل؟
+
+- ✅ تسجيل كل صنف بمبلغه الفعلي لكل شخص
+- ✅ توزيع تلقائي للرسوم المشتركة (توصيل، خدمة، بقشيش) بالتساوي
+- ✅ توزيع خصم الكوبون بنسبة عادلة حسب قيمة كل طلب
+- ✅ تتبع فوري لمن دفع فاتورة التطبيق ومن عليه نصيبه
+- ✅ سجل تراكمي لكل طلبات التوصيل الجماعية مع نفس المجموعة
+
+## أسئلة شائعة
+
+### هل يُقسّم رسم التوصيل بالتساوي أم حسب حجم الطلب؟
+بالتساوي دائماً، لأن رسم التوصيل مبلغ ثابت لا علاقة له بحجم طلب كل شخص — كل من استفاد من التوصيل يتحمل نفس النصيب.
+
+### كيف أوزع خصم الكوبون بين المشاركين؟
+وزّعه بنفس نسبة قيمة طلب كل شخص من المجموع الفرعي قبل الخصم، وليس بالتساوي، لأن الخصم عادة نسبة مئوية من قيمة الطلبات الفعلية.
+
+### ماذا لو طلب أحد الأصدقاء صنفاً يشاركه فيه الجميع؟
+اجمعوا سعر الصنف المشترك مع باقي التكاليف الإضافية (رسوم التوصيل والخدمة) وقسّموه بالتساوي على كل من شارك في تناوله.
+
+## الخلاصة
+
+طلب التوصيل الجماعي ما يحتاج يكون معقداً. كل شخص يدفع طلبه، وتُقسّم الرسوم بالتساوي، ويُوزّع الخصم بنسبة عادلة. سجّلوا كل شيء فور وصول الفاتورة ولا تتركوا الحسابات تتراكم.
+
+**جرب Diviso الآن وقسّم فاتورة طلب التوصيل القادم بعدل وسرعة.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When splitting a group food delivery order (Jahez, HungerStation, Uber Eats), each person should pay exactly the cost of the items they ordered, while delivery fees, service fees, and tips get split equally among everyone regardless of order size. As for a promo code discount, the fairest approach is to distribute it in proportion to each person's share of the subtotal before the discount.
+
+## Why a Delivery Order Needs a Different Splitting Method Than a Restaurant
+
+A group food delivery order differs from dining in because it includes line items unrelated to the size of anyone's individual order:
+
+- **Delivery fee is fixed**: the same amount regardless of who ordered more or less
+- **Service fee**: usually a percentage of the total bill, not tied to any one person's order
+- **Tip**: typically calculated as a percentage of the whole order
+- **Promo code discounts**: applied to the full bill, so distributing them fairly needs a clear method
+
+## How to Split the Bill Step by Step
+
+### Step 1: Each Person Pays Exactly Their Own Order
+Add up the prices of the items each person ordered from the menu — this part is straightforward and needs no complexity.
+
+### Step 2: Add Up the Shared Extra Costs
+Delivery fee + service fee + tip = "total shared extra cost."
+
+### Step 3: Split the Extra Cost Equally
+Divide the total fees by the number of people in the order, regardless of how much each person's items cost.
+
+### A Worked Example
+3 friends order together: Ahmed's items cost 45 SAR, Salem's cost 35 SAR, Khaled's cost 20 SAR.
+**Subtotal** = 45 + 35 + 20 = 100 SAR
+
+Delivery fee 15 SAR + service fee 5 SAR + tip 10 SAR = **30 SAR in extra costs**
+
+Each person's share of the extra cost = 30 ÷ 3 = 10 SAR
+
+- Ahmed pays: 45 + 10 = 55 SAR
+- Salem pays: 35 + 10 = 45 SAR
+- Khaled pays: 20 + 10 = 30 SAR
+
+**Check**: 55 + 45 + 30 = 130 SAR = 100 (items) + 30 (fees), matching the total bill exactly.
+
+## How to Handle a Promo Code Discount
+
+The fairest method is to distribute the discount in proportion to each person's share of the subtotal, not equally, since discounts are usually a percentage of the order value.
+
+### Example With a 20% Discount
+Using the same example (100 SAR subtotal), if a 20% promo code is applied:
+
+- Ahmed after discount: 45 × 0.8 = 36 SAR
+- Salem after discount: 35 × 0.8 = 28 SAR
+- Khaled after discount: 20 × 0.8 = 16 SAR
+
+**Total after discount** = 36 + 28 + 16 = 80 SAR (instead of 100)
+
+Then add each person's share of the extra cost (30 ÷ 3 = 10 SAR each):
+- Ahmed: 36 + 10 = 46 SAR
+- Salem: 28 + 10 = 38 SAR
+- Khaled: 16 + 10 = 26 SAR
+
+**Final total** = 46 + 38 + 26 = 110 SAR = 80 + 30, matching exactly.
+
+## What If Someone Orders an Item Everyone Shares (Like a Shared Appetizer)?
+
+Add the shared item's price to the extra costs (delivery, service fee, tip) and split it equally among everyone who's sharing it, instead of billing it to just one person.
+
+## A Practical System for Splitting a Delivery Order
+
+### Step 1: Order Through One Combined Cart
+Easier than combining several separate orders, and it guarantees a single delivery fee instead of paying it multiple times.
+
+### Step 2: Photograph the Final Receipt as Soon as It Arrives
+It shows the item and fee breakdown, and serves as your reference for the calculation.
+
+### Step 3: Log the Expense Immediately in a Splitting App
+Use an app like Diviso to log each item at its actual price and automatically distribute the shared fees.
+
+### Step 4: Don't Delay Settlement
+Delivery orders repeat often within the same group, so settling immediately prevents multiple orders from piling up into one confusing tab.
+
+## Common Mistakes When Splitting a Delivery Bill
+
+- **Splitting everything equally regardless of order value**: makes whoever ordered less pay more than their fair share
+- **Billing the delivery fee to just one person**: unfair since everyone benefited from the delivery
+- **Distributing the discount equally instead of proportionally**: gives whoever ordered less a bigger discount than they're actually entitled to
+- **Forgetting to log who paid the original app bill**: makes it hard to track who owes whom later
+
+## How Diviso Helps Split Delivery Orders
+
+- ✅ Logs each item at its actual price per person
+- ✅ Automatically distributes shared fees (delivery, service, tip) equally
+- ✅ Distributes a promo code discount proportionally based on each order's value
+- ✅ Instantly tracks who paid the app bill and who still owes their share
+- ✅ A running record of all group delivery orders with the same crew
+
+## Frequently Asked Questions
+
+### Is the delivery fee split equally or based on order size?
+Always equally, since the delivery fee is a fixed amount unrelated to the size of anyone's individual order — everyone who benefited from the delivery bears the same share.
+
+### How do I distribute a promo code discount among participants?
+Distribute it in proportion to each person's share of the subtotal before the discount, not equally, since discounts are usually a percentage of the actual order value.
+
+### What if a friend orders an item everyone shares?
+Add the shared item's price to the rest of the extra costs (delivery and service fees) and split it equally among everyone who shared it.
+
+## Conclusion
+
+A group food delivery order doesn't have to be complicated. Everyone pays for their own items, the fees get split equally, and the discount gets distributed proportionally. Log everything as soon as the bill arrives and don't let the tabs pile up.
+
+**Try Diviso now and split your next delivery order fairly and quickly.**
+    `
+  },
+  {
     slug: "split-eid-al-adha-sacrifice-cost-family",
     title: "كيف تقسم تكلفة الأضحية بين الإخوة والعائلة في عيد الأضحى؟",
     titleEn: "How to Split the Cost of an Eid al-Adha Sacrifice (Udhiyah) Among Siblings or Family",

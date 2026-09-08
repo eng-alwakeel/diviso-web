@@ -16,6 +16,196 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-home-dinner-party-potluck-costs",
+    title: "كيف تقسم تكلفة عشاء منزلي جماعي أو Potluck بعدل؟",
+    titleEn: "How to Split the Cost of Hosting a Dinner Party or Potluck at Home",
+    description: "هل يدفع الضيوف نصيبهم من مصاريف العشاء المنزلي؟ دليل عملي لتقسيم تكلفة البقالة بين الضيوف وتنظيم مساهمات الـPotluck بدون تكرار أو نقص.",
+    descriptionEn: "Should guests pay the host back for a home-cooked dinner? A practical guide to splitting grocery costs among guests and organizing potluck contributions without duplicates or gaps.",
+    keywords: ["تقسيم تكلفة العشاء المنزلي", "هل يدفع الضيوف نصيبهم", "تنظيم عشاء بوت لك", "تقسيم مصاريف الطبخ الجماعي", "كم يدفع كل ضيف للعشاء", "تقسيم تكلفة البقالة بين الضيوف"],
+    keywordsEn: ["how much should guests pay host for dinner party", "splitting cost of home cooked group dinner", "potluck contribution calculator", "who pays for groceries at a dinner party", "organize potluck dish assignments", "split grocery cost among dinner guests"],
+    category: "tips",
+    readTime: 6,
+    publishDate: "2026-09-08",
+    content: `
+## الإجابة المختصرة
+
+في العشاء المنزلي الذي يطبخه شخص واحد لضيوفه، العرف الشائع هو أن **يقسم الضيوف تكلفة البقالة فقط فيما بينهم، بينما لا يدفع المضيف نصيباً** لأنه ساهم بوقته ومطبخه وجهد الطبخ والتنظيف. أما في عشاء Potluck (كل شخص يحضر طبقاً)، فلا تحويل فلوس عادة، بل تنسيق واضح لتوزيع الأصناف (رئيسي، جانبي، حلا، مشروبات) لتجنب التكرار أو النقص.
+
+## متى يدفع الضيوف نصيبهم في العشاء المنزلي؟
+
+- **عشاء طبخه شخص واحد لضيوفه**: يُقسّم فاتورة البقالة فقط على الضيوف، لا على المضيف
+- **عشاء بمناسبة خاصة (عيد ميلاد، ترحيب)**: المضيف يتحمل التكلفة كاملة عادة، ولا يُطلب من الضيوف الدفع
+- **تجمع دوري بنظام التناوب**: كل مرة شخص مختلف يستضيف ويتحمل التكلفة، فتتعادل مع الوقت
+
+## كيف تحسب نصيب كل ضيف بدقة؟
+
+### القاعدة الأساسية
+**نصيب كل ضيف = تكلفة البقالة الإجمالية ÷ عدد الضيوف** (باستثناء المضيف من القسمة)
+
+### مثال عملي
+مضيف طبخ عشاءً لـ6 ضيوف، وكانت فاتورة البقالة 240 ريال:
+
+- نصيب كل ضيف = 240 ÷ 6 = 40 ريال
+- المضيف لا يدفع شيئاً لأنه ساهم بالوقت والمطبخ والتنظيف
+
+### ماذا لو أراد المضيف المشاركة في التكلفة أيضاً؟
+بعض المضيفين يفضلون تقسيم التكلفة على الجميع بمن فيهم أنفسهم كبادرة كرم إضافية. في هذه الحالة: 240 ÷ 7 (6 ضيوف + المضيف) ≈ 34.3 ريال لكل شخص، لكن هذا اختياري وليس المعيار السائد.
+
+## كيف تنظم عشاء Potluck بدون تكرار أو نقص؟
+
+### الخطوة 1: صنّفوا الأصناف المطلوبة
+حددوا فئات واضحة: طبق رئيسي، طبق جانبي، سلطة، حلا، مشروبات — بدل ترك الأمر عشوائياً.
+
+### الخطوة 2: وزّعوا الفئات على الحاضرين
+اطلبوا من كل شخص اختيار فئة واحدة يحضرها، مع التأكد من تغطية كل الفئات وعدم تكرار نفس الفئة بشكل مفرط.
+
+### الخطوة 3: نسّقوا الكميات التقريبية
+تجنبوا موقف "الكل جاب حلا وما أحد جاب طبق رئيسي" بالتنسيق المسبق ولو بشكل بسيط.
+
+### ماذا عن التكاليف المشتركة الإضافية (ثلج، أكواب، مفارش)؟
+هذه تُجمع كمبلغ صغير من الجميع أو يتطوع بها المضيف، ويمكن تسجيلها كمصروف منفصل يُقسّم بالتساوي.
+
+## متى تختلط الطريقتان (نصف طبخ ونصف Potluck)؟
+
+بعض التجمعات تدمج الطريقتين: المضيف يطبخ الطبق الرئيسي ويتحمل تكلفته، بينما يحضر الضيوف الأطباق الجانبية والحلا بأنفسهم. في هذه الحالة، لا حاجة لتحويل فلوس على الإطلاق — كل شخص يتحمل تكلفة ما أحضره فقط.
+
+## خطوات عملية لتنظيم العشاء الجماعي
+
+### الخطوة 1: حددوا نوع العشاء مسبقاً
+اتفقوا: هل هو عشاء يطبخه شخص واحد ويُقسّم البقالة، أم Potluck كامل، أم مزيج بينهما؟
+
+### الخطوة 2: أنشئوا مجموعة تنسيق قبل الموعد
+استخدم تطبيق مثل Diviso لتسجيل من سيحضر أي صنف، وتتبع أي مصاريف مشتركة إضافية.
+
+### الخطوة 3: سجّلوا فاتورة البقالة فور الشراء
+صوّروا الإيصال وسجّلوه في التطبيق لحساب نصيب كل ضيف بدقة.
+
+### الخطوة 4: حصّلوا الفلوس بعد العشاء مباشرة
+لا تؤجلوا التحصيل — كل ما تأخرتم، زاد احتمال النسيان.
+
+## أخطاء شائعة تفسد العشاء الجماعي
+
+- **عدم تحديد نوع العشاء مسبقاً**: يسبب ارتباكاً — هل يجب أن أحضر شيئاً أم أدفع فلوساً؟
+- **تحميل المضيف تكلفة البقالة كاملة رغم أنه طبخ لمجموعة كبيرة**: مرهق مالياً على المدى الطويل
+- **عدم تنسيق أصناف الـPotluck**: يؤدي لتكرار الحلا وغياب الطبق الرئيسي
+- **نسيان تحصيل نصيب البقالة فور العشاء**: يضيع وسط مصاريف الأسبوع
+
+## كيف يساعدك Diviso في تنظيم العشاء الجماعي؟
+
+- ✅ تسجيل فاتورة البقالة وتقسيمها على الضيوف تلقائياً باستثناء المضيف
+- ✅ تنسيق من يحضر أي صنف في عشاء الـPotluck
+- ✅ تسجيل المصاريف المشتركة الإضافية (ثلج، أكواب) كبند منفصل
+- ✅ تحصيل سريع فور انتهاء العشاء بدل الانتظار
+- ✅ سجل تراكمي لعشوات المجموعة المتكررة بنظام التناوب
+
+## أسئلة شائعة
+
+### هل يدفع المضيف نصيبه من فاتورة البقالة في العشاء المنزلي؟
+عادة لا، لأن المضيف يساهم بوقته ومطبخه وجهد الطبخ والتنظيف. الضيوف يقسمون تكلفة البقالة فقط فيما بينهم، ما لم يفضّل المضيف المشاركة اختيارياً.
+
+### كيف ننظم عشاء Potluck بدون تكرار الأصناف؟
+صنّفوا الأصناف المطلوبة (رئيسي، جانبي، حلا، مشروبات) ووزّعوها على الحاضرين مسبقاً بدل ترك الاختيار عشوائياً، لضمان تغطية جميع الفئات دون تكرار مفرط.
+
+### هل يُحسب طبق المضيف في عشاء Potluck ضمن التوزيع؟
+غالباً لا يُطلب من المضيف إحضار صنف إضافي لأنه يوفر المكان والتنظيم، لكن بعض المضيفين يفضّلون المساهمة بصنف أيضاً كبادرة كرم.
+
+## الخلاصة
+
+العشاء الجماعي في المنزل لا يحتاج تعقيداً. حددوا نوعه من البداية، وزّعوا الأصناف أو قسّموا فاتورة البقالة بوضوح، وسجّلوا كل شيء فوراً لتجنّب النسيان.
+
+**جرب Diviso الآن ونظّم عشاءك الجماعي القادم بعدل وسهولة.**
+    `,
+    contentEn: `
+## Quick Answer
+
+For a home dinner cooked by one person for their guests, the common convention is that **guests split only the grocery cost among themselves, while the host doesn't pay a share**, since they contributed their time, kitchen, cooking effort, and cleanup. For a potluck dinner (everyone brings a dish), no money usually changes hands — instead, dish categories (main, side, dessert, drinks) are coordinated clearly to avoid duplicates or gaps.
+
+## When Do Guests Pay Their Share for a Home Dinner?
+
+- **A dinner cooked by one person for their guests**: only the grocery bill is split among guests, not the host
+- **A dinner for a special occasion (birthday, welcome party)**: the host usually covers the full cost, and guests aren't asked to pay
+- **A recurring rotating gathering**: a different person hosts and covers the cost each time, balancing out over time
+
+## How to Calculate Each Guest's Exact Share
+
+### The Basic Formula
+**Each guest's share = total grocery cost ÷ number of guests** (excluding the host from the split)
+
+### A Worked Example
+A host cooks dinner for 6 guests, and the grocery bill comes to 240 SAR:
+
+- Each guest's share = 240 ÷ 6 = 40 SAR
+- The host pays nothing since they contributed their time, kitchen, and cleanup
+
+### What If the Host Wants to Contribute to the Cost Too?
+Some hosts prefer to split the cost among everyone including themselves as an extra gesture of generosity. In that case: 240 ÷ 7 (6 guests + the host) ≈ 34.3 SAR per person, but this is optional, not the prevailing standard.
+
+## How to Organize a Potluck Without Duplicates or Gaps
+
+### Step 1: Categorize the Needed Dishes
+Set clear categories: main dish, side dish, salad, dessert, drinks — instead of leaving it random.
+
+### Step 2: Assign Categories to Attendees
+Ask each person to pick one category to bring, making sure every category is covered without excessive overlap.
+
+### Step 3: Coordinate Approximate Quantities
+Avoid the "everyone brought dessert and nobody brought a main dish" situation by coordinating in advance, even loosely.
+
+### What About Shared Extras (Ice, Cups, Tablecloths)?
+Collect a small amount from everyone for these, or have the host volunteer them, and log it as a separate expense split equally.
+
+## When the Two Methods Mix (Half Cooked, Half Potluck)
+
+Some gatherings combine both approaches: the host cooks the main dish and covers its cost, while guests bring their own sides and desserts. In this case, no money needs to change hands at all — each person simply covers the cost of what they brought.
+
+## A Practical System for Organizing a Group Dinner
+
+### Step 1: Decide the Dinner Format in Advance
+Agree on: a dinner cooked by one person with a grocery split, a full potluck, or a mix of both.
+
+### Step 2: Create a Coordination Group Before the Date
+Use an app like Diviso to log who's bringing which dish and track any additional shared expenses.
+
+### Step 3: Log the Grocery Bill Right After Purchasing
+Photograph the receipt and log it in the app to calculate each guest's exact share.
+
+### Step 4: Collect the Money Right After Dinner
+Don't delay collection — the longer you wait, the more likely it is to be forgotten.
+
+## Common Mistakes That Ruin a Group Dinner
+
+- **Not deciding the dinner format in advance**: causes confusion — should I bring something or pay money?
+- **Making the host cover the full grocery cost for a large group**: financially draining over time
+- **Not coordinating potluck dishes**: leads to duplicate desserts and no main dish
+- **Forgetting to collect the grocery share right after dinner**: it gets lost among the week's other expenses
+
+## How Diviso Helps Organize a Group Dinner
+
+- ✅ Logs the grocery bill and automatically splits it among guests, excluding the host
+- ✅ Coordinates who's bringing which dish for a potluck
+- ✅ Logs shared extras (ice, cups) as a separate line item
+- ✅ Quick collection right after the dinner instead of waiting
+- ✅ A running record of recurring group dinners on a rotating host system
+
+## Frequently Asked Questions
+
+### Does the host pay their share of the grocery bill for a home dinner?
+Usually not, since the host contributes their time, kitchen, cooking effort, and cleanup. Guests split only the grocery cost among themselves, unless the host prefers to contribute voluntarily.
+
+### How do we organize a potluck without duplicate dishes?
+Categorize the needed dishes (main, side, dessert, drinks) and assign them to attendees in advance instead of leaving the choice random, to ensure every category is covered without excessive overlap.
+
+### Is the host's dish counted in the potluck distribution?
+Usually the host isn't asked to bring an additional dish since they provide the venue and organization, but some hosts prefer to contribute a dish too as a gesture of generosity.
+
+## Conclusion
+
+A group dinner at home doesn't need to be complicated. Decide the format upfront, coordinate dishes or split the grocery bill clearly, and log everything right away to avoid forgetting.
+
+**Try Diviso now and organize your next group dinner fairly and easily.**
+    `
+  },
+  {
     slug: "split-food-delivery-order-cost-friends",
     title: "كيف تقسم فاتورة طلب التوصيل (جاهز، هنقرستيشن) مع الأصدقاء بعدل؟",
     titleEn: "How to Split a Food Delivery Order Cost Fairly With Friends",

@@ -16,6 +16,210 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-moving-costs-with-roommates",
+    title: "كيف تقسم تكلفة نقل العفش عند الانتقال مع شركاء السكن؟",
+    titleEn: "How to Split Moving Costs (Truck Rental, Movers) With New Roommates",
+    description: "طريقة عادلة لتقسيم تكلفة استئجار شاحنة النقل والعمال بين شركاء السكن الجدد، حسب حجم عفش كل شخص بدل التقسيم المتساوي البحت، مع مثال حساب عملي.",
+    descriptionEn: "A fair way to split truck rental and movers' costs among new roommates based on each person's volume of belongings instead of a plain equal split, with a worked example.",
+    keywords: ["تقسيم تكلفة نقل العفش", "تقسيم فلوس شاحنة النقل بين الشركاء", "كم نصيبي من تكلفة النقل", "تقسيم أجرة العمال عند الانتقال", "مصاريف الانتقال مع شركاء السكن", "تقسيم تكلفة شاحنة نقل الأثاث"],
+    keywordsEn: ["how to split moving costs with roommates", "splitting truck rental cost between roommates", "who pays for movers when moving in together", "fair way to split moving expenses", "moving cost calculator roommates", "split furniture moving cost by volume"],
+    category: "tips",
+    readTime: 6,
+    publishDate: "2026-09-09",
+    content: `
+## الإجابة المختصرة
+
+عند الانتقال المشترك مع شركاء سكن جدد، الطريقة الأعدل لتقسيم تكلفة شاحنة النقل والعمال هي التقسيم حسب **حجم عفش كل شخص** (نسبة المساحة التي يشغلها في الشاحنة)، وليس التقسيم المتساوي البحت. من ينقل غرفة نوم كاملة يدفع أكثر ممن ينقل بضعة صناديق فقط.
+
+## ليش التقسيم المتساوي غير عادل هنا؟
+
+تكلفة النقل ليست كمصروف عادي يستفيد منه الجميع بالتساوي:
+
+- **اختلاف كبير في حجم العفش**: أحدهم قادم بغرفة نوم كاملة، وآخر قادم من استوديو صغير ببضعة صناديق
+- **رحلات متعددة أو شاحنة أكبر**: كلما زاد حجم العفش الكلي، زادت تكلفة الشاحنة أو عدد الرحلات
+- **وقت العمال**: تفريغ وتحميل غرفة كاملة يستغرق وقتاً أطول من صندوقين، وأجرة العمال غالباً بالساعة
+
+## متى يكفي التقسيم المتساوي؟
+
+- **الجميع ينتقل بحجم عفش متقارب**: لو كلكم قادمين من استوديوهات بأحجام متشابهة
+- **رحلة واحدة قصيرة بأجرة ثابتة بغض النظر عن الحجم**: بعض شركات النقل تُسعّر بالرحلة لا بالحجم
+
+## كيف تحسب التقسيم حسب الحجم بدقة؟
+
+### القاعدة
+1. قدّروا نسبة مساحة الشاحنة التي يشغلها عفش كل شخص (تقدير تقريبي كافٍ، لا حاجة لقياس دقيق)
+2. اضربوا التكلفة الإجمالية في نسبة كل شخص للحصول على نصيبه
+
+### مثال عملي
+3 شركاء سكن جدد استأجروا شاحنة نقل + عمال بتكلفة إجمالية 900 ريال:
+
+- أحمد قادم بغرفة نوم كاملة (أثاث كبير): يشغل تقريباً 50% من حجم الشاحنة
+- سالم قادم بعفش متوسط: يشغل تقريباً 30%
+- خالد قادم من استوديو صغير ببضعة صناديق: يشغل تقريباً 20%
+
+**نصيب كل شخص** = التكلفة الإجمالية × نسبته
+
+- نصيب أحمد = 900 × 0.50 = 450 ريال
+- نصيب سالم = 900 × 0.30 = 270 ريال
+- نصيب خالد = 900 × 0.20 = 180 ريال
+
+**التحقق**: 450 + 270 + 180 = 900 ريال، مطابق تماماً للتكلفة الإجمالية.
+
+قارن هذا بالتقسيم المتساوي (300 ريال لكل واحد)، الذي كان سيجعل خالد يدفع أكثر من ضعف نصيبه العادل بينما يوفّر أحمد جزءاً كبيراً من تكلفته الفعلية.
+
+## ماذا عن الأثاث المشترك (كنب الصالة، أدوات المطبخ)؟
+
+لو اشترى الشركاء أثاثاً مشتركاً للمسكن الجديد بشكل منفصل عن عفشهم الشخصي، يُقسّم نقله بالتساوي على الجميع بغض النظر عن حجم عفش كل شخص، لأن الكل يستفيد منه بنفس القدر.
+
+## ماذا عن مستلزمات التغليف؟
+
+- **صناديق وأدوات تغليف شخصية**: كل شخص يشتري احتياجه الخاص ويتحمل تكلفته
+- **مستلزمات مشتركة (شريط لاصق، بطانيات حماية للأثاث المشترك)**: تُقسّم بالتساوي
+
+## خطوات عملية لتنظيم تكلفة النقل
+
+### الخطوة 1: قدّروا حجم عفش كل شخص مبكراً
+قبل حجز الشاحنة، اتفقوا تقريبياً على نسبة مساهمة كل شخص في الحجم الكلي.
+
+### الخطوة 2: احصلوا على عروض أسعار قبل الحجز
+قارنوا بين شركات النقل للحصول على أفضل سعر قبل توزيع التكلفة.
+
+### الخطوة 3: سجّلوا التكلفة النهائية فوراً
+استخدم تطبيق مثل Diviso لتسجيل تكلفة النقل بمبالغ مخصصة لكل شخص حسب النسبة المتفق عليها.
+
+### الخطوة 4: افصلوا تكلفة الأثاث المشترك عن العفش الشخصي
+سجّلوهما كبندين منفصلين لتجنب الخلط عند الحساب.
+
+## أخطاء شائعة عند تقسيم تكلفة النقل
+
+- **التقسيم المتساوي رغم فروقات كبيرة بالحجم**: يظلم من ينقل عفشاً أقل
+- **عدم الاتفاق على النسب مسبقاً**: يخلق نقاشاً محرجاً بعد استلام فاتورة الشاحنة
+- **خلط الأثاث المشترك بالعفش الشخصي في نفس الحساب**: يصعّب معرفة من يستحق ماذا
+- **نسيان تسجيل من دفع الحجز الأولي**: يصعب التسوية لاحقاً
+
+## كيف يساعدك Diviso في تقسيم تكلفة النقل؟
+
+- ✅ تسجيل تكلفة النقل بمبالغ مخصصة لكل شخص حسب نسبة حجم عفشه
+- ✅ فصل تكلفة الأثاث المشترك عن العفش الشخصي كبندين منفصلين
+- ✅ حساب تلقائي دقيق يضمن مطابقة المجموع للتكلفة الإجمالية
+- ✅ سجل واضح يوضح من دفع حجز الشاحنة ومن عليه نصيبه
+- ✅ مجموعة مخصصة لمصاريف الانتقال منفصلة عن مصاريف السكن المستمرة
+
+## أسئلة شائعة
+
+### هل يجب أن يدفع الجميع نفس المبلغ عند استئجار شاحنة نقل مشتركة؟
+ليس بالضرورة. إذا اختلف حجم عفش كل شخص بشكل كبير، فالأعدل تقسيم التكلفة حسب نسبة المساحة التي يشغلها عفش كل واحد في الشاحنة بدل التقسيم المتساوي.
+
+### كيف أحسب نصيبي من تكلفة النقل بدقة؟
+قدّر نسبة مساحة الشاحنة التي يشغلها عفشك تقريبياً، ثم اضرب هذه النسبة في التكلفة الإجمالية لشاحنة النقل والعمال للحصول على نصيبك.
+
+### هل يُحسب الأثاث المشترك ضمن التقسيم حسب الحجم؟
+لا، الأثاث الذي اشتراه الشركاء معاً للمسكن الجديد يُقسّم بالتساوي على الجميع، بينما التقسيم حسب الحجم يُطبّق فقط على العفش الشخصي لكل فرد.
+
+## الخلاصة
+
+الانتقال المشترك لا يجب أن يخلق خلافاً مالياً بسبب اختلاف حجم العفش. قدّروا النسب مسبقاً، افصلوا الأثاث المشترك عن الشخصي، ودعوا التطبيق يحسب نصيب كل شخص بدقة.
+
+**جرب Diviso الآن وقسّم تكلفة انتقالكم القادم بعدل تام.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When moving in together with new roommates, the fairest way to split truck rental and movers' costs is to divide it based on **each person's volume of belongings** (the proportion of space they take up in the truck), not a plain equal split. Whoever is moving a full bedroom set should pay more than someone bringing just a few boxes.
+
+## Why an Equal Split Doesn't Work Here
+
+Moving costs aren't like a regular expense that everyone benefits from equally:
+
+- **A big difference in belongings**: one person arrives with a full bedroom set, another comes from a small studio with a few boxes
+- **Multiple trips or a bigger truck**: the more total volume, the higher the truck cost or the more trips needed
+- **Movers' time**: unloading and loading a full room takes much longer than two boxes, and movers are usually paid by the hour
+
+## When Is an Equal Split Actually Fine?
+
+- **Everyone is moving a similar amount**: if you're all coming from similarly sized studios
+- **A single short trip at a flat rate regardless of volume**: some moving companies charge per trip, not by size
+
+## How to Calculate a Volume-Based Split Precisely
+
+### The Formula
+1. Estimate the percentage of truck space each person's belongings take up (a rough estimate is enough — no need for exact measurement)
+2. Multiply the total cost by each person's percentage to get their share
+
+### A Worked Example
+3 new roommates rent a moving truck plus movers for a total cost of 900 SAR:
+
+- Ahmed is bringing a full bedroom set (large furniture): takes up roughly 50% of the truck
+- Salem is bringing a medium amount of belongings: roughly 30%
+- Khaled is coming from a small studio with a few boxes: roughly 20%
+
+**Each person's share** = total cost × their percentage
+
+- Ahmed's share = 900 × 0.50 = 450 SAR
+- Salem's share = 900 × 0.30 = 270 SAR
+- Khaled's share = 900 × 0.20 = 180 SAR
+
+**Check**: 450 + 270 + 180 = 900 SAR, matching the total cost exactly.
+
+Compare this to an equal split (300 SAR each), which would have made Khaled pay more than double his fair share while Ahmed saved a big chunk of his actual cost.
+
+## What About Shared Furniture (Living Room Sofa, Kitchen Items)?
+
+If the roommates bought shared furniture for the new place separately from their personal belongings, its transport cost should be split equally among everyone regardless of each person's belongings volume, since everyone benefits from it equally.
+
+## What About Packing Supplies?
+
+- **Personal boxes and packing materials**: each person buys what they need and covers the cost themselves
+- **Shared supplies (tape, protective blankets for shared furniture)**: split equally
+
+## A Practical System for Organizing Moving Costs
+
+### Step 1: Estimate Each Person's Volume Early
+Before booking the truck, agree roughly on each person's percentage contribution to the total volume.
+
+### Step 2: Get Quotes Before Booking
+Compare moving companies to get the best price before distributing the cost.
+
+### Step 3: Log the Final Cost Immediately
+Use an app like Diviso to log the moving cost with custom amounts per person based on the agreed percentages.
+
+### Step 4: Separate Shared Furniture Costs From Personal Belongings
+Log them as two separate line items to avoid confusion when calculating.
+
+## Common Mistakes When Splitting Moving Costs
+
+- **An equal split despite big volume differences**: unfairly penalizes whoever is moving less
+- **Not agreeing on percentages in advance**: creates an awkward conversation after the truck bill arrives
+- **Mixing shared furniture with personal belongings in the same calculation**: makes it hard to know who owes what
+- **Forgetting to log who paid the initial booking**: makes later settlement difficult
+
+## How Diviso Helps Split Moving Costs
+
+- ✅ Logs the moving cost with custom amounts per person based on their belongings volume percentage
+- ✅ Separates shared furniture costs from personal belongings as distinct line items
+- ✅ Automatic, accurate calculation that ensures the total matches the actual cost
+- ✅ A clear record of who paid the truck booking and who still owes their share
+- ✅ A dedicated group for moving expenses, separate from ongoing housing costs
+
+## Frequently Asked Questions
+
+### Should everyone pay the same amount when renting a shared moving truck?
+Not necessarily. If the volume of each person's belongings differs significantly, it's fairer to split the cost based on the proportion of truck space each person's items take up, instead of an equal split.
+
+### How do I calculate my exact share of the moving cost?
+Estimate the rough percentage of the truck's space your belongings take up, then multiply that percentage by the total cost of the truck rental and movers to get your share.
+
+### Is shared furniture included in the volume-based split?
+No, furniture the roommates bought together for the new place should be split equally among everyone, while the volume-based split applies only to each person's personal belongings.
+
+## Conclusion
+
+Moving in together shouldn't create a financial dispute over differing amounts of belongings. Estimate the percentages in advance, separate shared furniture from personal items, and let the app calculate each person's exact share.
+
+**Try Diviso now and split your next move's costs with complete fairness.**
+    `
+  },
+  {
     slug: "split-home-dinner-party-potluck-costs",
     title: "كيف تقسم تكلفة عشاء منزلي جماعي أو Potluck بعدل؟",
     titleEn: "How to Split the Cost of Hosting a Dinner Party or Potluck at Home",

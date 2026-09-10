@@ -16,6 +16,212 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-grocery-costco-run-roommates",
+    title: "كيف تقسم تكلفة تسوق البقالة (كوستكو) بين شركاء السكن بعدل؟",
+    titleEn: "How to Split a Shared Grocery or Costco Run Cost Fairly Between Roommates",
+    description: "طريقة عادلة لتقسيم فاتورة التسوق الجماعي بين شركاء السكن: المستلزمات المشتركة تُقسّم بالتساوي، والأصناف الشخصية يدفعها من طلبها فقط. مثال حساب عملي.",
+    descriptionEn: "A fair way to split a shared grocery or Costco run between roommates: communal household items split equally, personal items paid individually. A worked example.",
+    keywords: ["تقسيم تكلفة البقالة بين الشركاء", "تقسيم فاتورة كوستكو", "من يدفع مستلزمات المنزل المشتركة", "تقسيم مصاريف التسوق الجماعي", "كم نصيبي من فاتورة البقالة", "تقسيم الأصناف المشتركة والشخصية"],
+    keywordsEn: ["how to split grocery costs with roommates", "splitting costco run cost between roommates", "shared grocery shopping fair split", "who pays for shared pantry items", "split household supplies cost roommates", "grocery bill splitter for roommates"],
+    category: "tips",
+    readTime: 6,
+    publishDate: "2026-09-10",
+    content: `
+## الإجابة المختصرة
+
+عند تسوق البقالة الجماعي (كوستكو أو أي سوبرماركت)، الطريقة الأعدل هي فصل الفاتورة إلى قسمين: **المستلزمات المشتركة** (مناديل، مواد تنظيف، أرز، زيت، قهوة) التي يستفيد منها الجميع وتُقسّم بالتساوي على عدد شركاء السكن، و**الأصناف الشخصية** (وجبات خفيفة معينة، مستلزمات شخصية) التي يدفعها فقط من طلبها ولا تُقسّم على الباقين.
+
+## ليش لا تُقسّم فاتورة البقالة كاملة بالتساوي؟
+
+فاتورة التسوق الجماعي تحتوي عادة على نوعين مختلفين من الأصناف:
+
+- **أصناف يستخدمها الجميع**: ورق التواليت، سائل الأطباق، الأرز، الزيت، القهوة، مواد التنظيف
+- **أصناف شخصية يستهلكها شخص واحد فقط**: نوع معين من الوجبات الخفيفة، منتجات عناية شخصية، مكملات غذائية
+
+لو قسّمتم الفاتورة كاملة بالتساوي، سيدفع من لا يستخدم صنفاً شخصياً معيناً نصيباً من تكلفته، وهذا غير عادل ويخلق استياءً متكرراً.
+
+## كيف تفصل الفاتورة إلى قسمين بدقة؟
+
+### الخطوة 1: صنّفوا كل صنف عند الدفع
+أثناء التسوق أو عند مراجعة الفاتورة، حددوا لكل صنف: "مشترك" أم "شخصي".
+
+### الخطوة 2: اجمعوا تكلفة الأصناف المشتركة فقط
+هذا المجموع يُقسّم بالتساوي على عدد شركاء السكن، بغض النظر عمّن ذهب للتسوق فعلياً.
+
+### الخطوة 3: حمّلوا كل صنف شخصي على من طلبه
+لا يُقسّم، بل يُضاف بالكامل لحساب الشخص الذي طلبه فقط.
+
+### مثال عملي
+رحلة تسوق لكوستكو بفاتورة إجمالية 450 ريال، بين 3 شركاء سكن (أحمد، سارة، خالد):
+
+**الأصناف المشتركة** (ورق تواليت، أرز، زيت، قهوة، مواد تنظيف) = 300 ريال
+**الأصناف الشخصية**:
+- أحمد: بروتين بار خاص به = 60 ريال
+- سارة: وجبات خفيفة ومستلزمات عناية شخصية = 90 ريال
+- خالد: لم يطلب أصنافاً شخصية هذه المرة = 0 ريال
+
+**نصيب كل واحد من الأصناف المشتركة** = 300 ÷ 3 = 100 ريال
+
+**الحساب النهائي**:
+- أحمد يدفع: 100 (نصيبه من المشترك) + 60 (شخصي) = 160 ريال
+- سارة تدفع: 100 + 90 = 190 ريال
+- خالد يدفع: 100 + 0 = 100 ريال
+
+**التحقق**: 160 + 190 + 100 = 450 ريال، مطابق تماماً للفاتورة الإجمالية.
+
+## ماذا لو كان أحد الشركاء نباتياً أو له نظام غذائي خاص؟
+
+الأصناف الغذائية الخاصة بنظام معين (بروتين نباتي، منتجات خالية من الغلوتين) تُصنّف كأصناف شخصية إذا لم يستخدمها باقي الشركاء، حتى لو كانت من فئة "طعام" التي تبدو مشتركة عادة.
+
+## من يذهب للتسوق فعلياً؟
+
+طريقة الدفع لا تتغير بغض النظر عمّن قاد السيارة أو دفع في الكاشير — الشخص الذي دفع الفاتورة يُسجّلها في التطبيق، ثم يُحصّل نصيب كل شخص حسب التصنيف، لا حسب من كان حاضراً في المتجر.
+
+## خطوات عملية لتنظيم تسوق البقالة الجماعي
+
+### الخطوة 1: اتفقوا على قائمة الأصناف المشتركة الثابتة
+حددوا مسبقاً أي فئات تُعتبر مشتركة دائماً (تنظيف، مستلزمات مطبخ أساسية) لتسريع التصنيف كل مرة.
+
+### الخطوة 2: صوّروا الفاتورة فور الشراء
+تساعد على مراجعة الأصناف وتصنيفها بدقة لاحقاً بدل الاعتماد على الذاكرة.
+
+### الخطوة 3: سجّلوا الفاتورة في تطبيق تقسيم فوراً
+استخدم تطبيق مثل Diviso لتسجيل الأصناف المشتركة كمصروف مقسّم بالتساوي، والأصناف الشخصية كمصروف فردي لكل شخص.
+
+### الخطوة 4: راجعوا القائمة المشتركة كل بضعة أشهر
+إذا تغيّرت احتياجات المنزل، عدّلوا تصنيف الأصناف حسب الاستخدام الفعلي.
+
+## أخطاء شائعة عند تقسيم فاتورة البقالة
+
+- **تقسيم الفاتورة كاملة بالتساوي بدون تصنيف**: يظلم من لا يستخدم الأصناف الشخصية لغيره
+- **عدم توثيق التصنيف عند الشراء**: يصعب تذكر أي الأصناف كانت شخصية بعد أيام
+- **الخلط بين "من دفع" و"من يستحق"**: الشخص الذي دفع الكاشير قد يستحق أقل أو أكثر حسب التصنيف
+- **تجاهل مراجعة الفاتورة قبل التسجيل**: يؤدي لتصنيف خاطئ يصعب تعديله لاحقاً
+
+## كيف يساعدك Diviso في تقسيم فاتورة البقالة؟
+
+- ✅ تسجيل الأصناف المشتركة كمصروف مقسّم بالتساوي على شركاء السكن
+- ✅ تسجيل الأصناف الشخصية كمصروف فردي محمّل على شخص واحد فقط
+- ✅ حساب تلقائي دقيق لنصيب كل شخص من الفاتورة المجمّعة
+- ✅ سجل تراكمي لكل رحلات التسوق الجماعي مع نفس المجموعة
+- ✅ تسوية سريعة بعد كل رحلة بدل تراكم عدة فواتير
+
+## أسئلة شائعة
+
+### هل تُقسّم فاتورة البقالة كاملة بالتساوي بين شركاء السكن؟
+لا، الأعدل تقسيم الأصناف المشتركة فقط (تنظيف، مستلزمات أساسية) بالتساوي، بينما تُحمّل الأصناف الشخصية على من طلبها فقط دون تقسيمها على الباقين.
+
+### كيف أصنّف الأصناف المشتركة من الشخصية؟
+اسأل: هل يستخدم هذا الصنف كل شركاء السكن بشكل منتظم (كمواد التنظيف والأرز)؟ إذا كانت الإجابة نعم فهو مشترك، وإذا كان يخص شخصاً واحداً فقط فهو شخصي.
+
+### من يدفع فاتورة الكاشير إذا ذهب شخص واحد للتسوق؟
+لا فرق — الشخص الذي دفع يُسجّل الفاتورة كاملة في التطبيق، ثم يُحصّل نصيب كل شخص حسب تصنيف الأصناف المشتركة والشخصية، بغض النظر عمّن كان حاضراً في المتجر.
+
+## الخلاصة
+
+تسوق البقالة الجماعي لا يحتاج تعقيداً إذا فصلتم الأصناف المشتركة عن الشخصية من البداية. صنّفوا، سجّلوا فوراً، ودعوا التطبيق يحسب نصيب كل شخص بدقة.
+
+**جرب Diviso الآن وقسّم فاتورة البقالة القادمة بعدل تام.**
+    `,
+    contentEn: `
+## Quick Answer
+
+For a shared grocery or Costco run, the fairest approach is to split the bill into two parts: **communal household items** (paper towels, cleaning supplies, rice, oil, coffee) that everyone benefits from, split equally among all roommates, and **personal items** (specific snacks, personal care products) paid entirely by whoever requested them, without dividing that cost among the rest.
+
+## Why Not Split the Whole Grocery Bill Equally?
+
+A shared shopping trip usually mixes two different kinds of items:
+
+- **Items everyone uses**: toilet paper, dish soap, rice, oil, coffee, cleaning supplies
+- **Personal items only one person consumes**: a specific snack, personal care products, supplements
+
+If you split the entire bill equally, whoever doesn't use a particular personal item still ends up paying a share of its cost, which is unfair and creates recurring resentment.
+
+## How to Split the Bill Into Two Parts Precisely
+
+### Step 1: Categorize Every Item at Checkout
+While shopping or reviewing the receipt, mark each item as either "shared" or "personal."
+
+### Step 2: Add Up the Shared Items Only
+This subtotal gets split equally among all roommates, regardless of who actually went shopping.
+
+### Step 3: Bill Each Personal Item to Whoever Requested It
+It's not split — the full amount goes entirely to that one person's tab.
+
+### A Worked Example
+A Costco run with a total bill of 450 SAR, among 3 roommates (Ahmed, Sara, Khaled):
+
+**Shared items** (toilet paper, rice, oil, coffee, cleaning supplies) = 300 SAR
+**Personal items**:
+- Ahmed: his own protein bars = 60 SAR
+- Sara: snacks and personal care products = 90 SAR
+- Khaled: didn't request any personal items this time = 0 SAR
+
+**Each person's share of the shared items** = 300 ÷ 3 = 100 SAR
+
+**Final calculation**:
+- Ahmed pays: 100 (shared share) + 60 (personal) = 160 SAR
+- Sara pays: 100 + 90 = 190 SAR
+- Khaled pays: 100 + 0 = 100 SAR
+
+**Check**: 160 + 190 + 100 = 450 SAR, matching the total bill exactly.
+
+## What If a Roommate Is Vegetarian or Has a Special Diet?
+
+Food items tied to a specific diet (vegetarian protein, gluten-free products) should be categorized as personal if the other roommates don't use them, even though they fall under "food," which usually seems communal.
+
+## Who Actually Goes to the Store?
+
+The payment method doesn't change based on who drove or paid at checkout — whoever paid logs the full receipt in the app, and each person's share is then calculated based on the item categorization, not on who was physically present at the store.
+
+## A Practical System for Organizing Shared Grocery Runs
+
+### Step 1: Agree on a Standing List of Shared Categories
+Decide in advance which categories are always considered shared (cleaning, basic kitchen essentials) to speed up categorization every time.
+
+### Step 2: Photograph the Receipt Right After Purchasing
+It helps review and categorize items accurately later instead of relying on memory.
+
+### Step 3: Log the Receipt in a Splitting App Immediately
+Use an app like Diviso to log shared items as an expense split equally, and personal items as an individual expense billed to one person.
+
+### Step 4: Review the Shared List Every Few Months
+If the household's needs change, adjust the item categorization based on actual usage.
+
+## Common Mistakes When Splitting a Grocery Bill
+
+- **Splitting the whole bill equally without categorizing**: unfairly charges people for items they don't use
+- **Not documenting the categorization at purchase time**: makes it hard to remember which items were personal days later
+- **Confusing "who paid" with "who owes"**: whoever paid at checkout may owe less or more depending on the categorization
+- **Skipping a receipt review before logging**: leads to miscategorization that's hard to fix later
+
+## How Diviso Helps Split a Grocery Bill
+
+- ✅ Logs shared items as an expense split equally among roommates
+- ✅ Logs personal items as an individual expense billed to just one person
+- ✅ Accurate automatic calculation of each person's share of the combined bill
+- ✅ A running record of every shared shopping trip with the same group
+- ✅ Quick settlement after each trip instead of letting several receipts pile up
+
+## Frequently Asked Questions
+
+### Should the whole grocery bill be split equally among roommates?
+No, it's fairer to split only the shared items (cleaning supplies, basic essentials) equally, while personal items are billed entirely to whoever requested them, without dividing that cost among the rest.
+
+### How do I categorize shared items versus personal ones?
+Ask: does every roommate regularly use this item (like cleaning supplies and rice)? If yes, it's shared. If it belongs to just one person, it's personal.
+
+### Who pays the checkout bill if only one roommate goes shopping?
+It doesn't matter — whoever paid logs the full receipt in the app, and each person's share is then calculated based on the shared and personal item categorization, regardless of who was physically at the store.
+
+## Conclusion
+
+Shared grocery shopping doesn't need to be complicated if you separate shared items from personal ones from the start. Categorize, log immediately, and let the app calculate each person's exact share.
+
+**Try Diviso now and split your next grocery bill with complete fairness.**
+    `
+  },
+  {
     slug: "split-moving-costs-with-roommates",
     title: "كيف تقسم تكلفة نقل العفش عند الانتقال مع شركاء السكن؟",
     titleEn: "How to Split Moving Costs (Truck Rental, Movers) With New Roommates",

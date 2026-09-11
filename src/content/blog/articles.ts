@@ -16,6 +16,208 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-road-trip-rental-car-costs",
+    title: "كيف تقسم تكلفة رحلة برية بسيارة مستأجرة مع الأصدقاء؟",
+    titleEn: "How to Split the Cost of a Road Trip in a Rented Car With Friends",
+    description: "طريقة عادلة لتقسيم تكلفة استئجار السيارة والبنزين والرسوم في الرحلة البرية الجماعية، مع توضيح من يدفع التأمين المسترد وكيف تتعامل مع أكثر من سيارة.",
+    descriptionEn: "A fair way to split rental car, fuel, and toll costs on a group road trip, including who covers the refundable deposit and how to handle a trip with more than one car.",
+    keywords: ["تقسيم تكلفة الرحلة البرية", "تقسيم إيجار السيارة بين الأصدقاء", "من يدفع تأمين السيارة المستأجرة", "تقسيم مصاريف البنزين والرسوم", "حساب تكلفة الرحلة بسيارة واحدة", "تقسيم تكلفة رحلة السيارة الجماعية"],
+    keywordsEn: ["how to split rental car costs road trip", "splitting gas and tolls with friends", "who pays rental car deposit group trip", "road trip cost calculator per person", "fair way to split road trip expenses", "group road trip cost splitter"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-09-11",
+    content: `
+## الإجابة المختصرة
+
+في الرحلة البرية بسيارة مستأجرة واحدة، تُقسّم التكلفة الإجمالية (إيجار السيارة + البنزين + الرسوم + مواقف السيارات) بالتساوي على جميع المسافرين، بغض النظر عن اسم من استأجر السيارة رسمياً، لأن الاستئجار باسم شخص واحد مجرد إجراء قانوني وليس مؤشراً على من استفاد أكثر. أما التأمين أو الوديعة القابلة للاسترداد، فيُجمع مقدماً من الجميع ويُعاد توزيعها بعد انتهاء الرحلة.
+
+## ليش لا يتحمل المستأجر الرسمي تكلفة أكبر؟
+
+استئجار السيارة يتطلب رخصة قيادة وبطاقة ائتمانية باسم شخص واحد، لكن هذا لا يعني أنه استفاد أكثر من الرحلة:
+
+- **الجميع يستخدم السيارة بنفس القدر**: كل المسافرين يركبون نفس السيارة ويستفيدون من نفس الرحلة
+- **المستأجر يتحمل مسؤولية إضافية**: المسؤولية القانونية والتأمين تقع عليه، فمن غير العدل أن يتحمل تكلفة أكبر أيضاً
+- **الدفع المسبق لا يعني الاستحقاق**: من دفع بطاقته عند الحجز يجب أن يُعاد له المبلغ فوراً من البقية، لا أن يبقى الدين معلقاً لنهاية الرحلة
+
+## كيف تحسب نصيب كل شخص بدقة؟
+
+### القاعدة
+**نصيب كل شخص = (إيجار السيارة + البنزين + الرسوم + المواقف) ÷ عدد المسافرين**
+
+### مثال عملي
+رحلة برية لـ4 أصدقاء لمدة 3 أيام:
+- إيجار السيارة: 450 ريال
+- البنزين: 300 ريال
+- رسوم الطرق: 40 ريال
+- مواقف السيارات: 60 ريال
+
+**التكلفة الإجمالية** = 450 + 300 + 40 + 60 = 850 ريال
+
+**نصيب كل شخص** = 850 ÷ 4 = 212.5 ريال
+
+بغض النظر عن مين استأجر السيارة باسمه أو مين دفع البنزين في كل محطة — التكلفة الإجمالية تُقسّم بالتساوي على الأربعة.
+
+## كيف تتعامل مع التأمين أو الوديعة المستردة؟
+
+- **اجمعوها مع باقي التكلفة من البداية**: لا تتركوها على عاتق المستأجر وحده
+- **سجّلوها كبند منفصل**: لأنها تُرد لاحقاً، بعكس الإيجار والبنزين اللذين يُعتبران تكلفة نهائية
+- **وزّعوها فوراً بعد استردادها**: خلال أيام من انتهاء الرحلة، لا تتركوها معلقة
+
+## ماذا لو احتجتم أكثر من سيارة؟
+
+### الطريقة الأعدل: تجميع كل التكاليف ثم القسمة على الجميع
+لو استأجرتم سيارتين لمجموعة من 8 أشخاص، اجمعوا تكلفة السيارتين معاً (إيجار + بنزين + رسوم لكل منهما)، ثم اقسموا المجموع الكلي على 8 أشخاص بالتساوي، بدل تقسيم كل سيارة على ركابها فقط.
+
+### ليش هذا أعدل من التقسيم لكل سيارة على حدة؟
+لأن اختيار من يركب في أي سيارة عشوائي غالباً، وقد تكون إحدى السيارتين أوفر من الأخرى (نوع أصغر، استهلاك بنزين أقل). التجميع يمنع أن يدفع ركاب السيارة الأرخص أقل من ركاب السيارة الأغلى بدون سبب منطقي.
+
+## كيف تتعامل مع اختلاف مدة الحضور؟
+
+لو انضم شخص للرحلة يوماً واحداً فقط من أصل ثلاثة أيام، يمكن تعديل نصيبه بنفس منطق "التكلفة لكل يوم-شخص": اجمعوا إجمالي أيام-الأشخاص، ثم احسبوا التكلفة لكل يوم-شخص، واضربوها بعدد أيام كل فرد الفعلية.
+
+## خطوات عملية لتنظيم تكلفة الرحلة البرية
+
+### الخطوة 1: اتفقوا على المستأجر مسبقاً
+حددوا من سيحجز باسمه، واتفقوا على تحصيل التكلفة الكاملة من الجميع قبل الحجز أو فوراً بعده.
+
+### الخطوة 2: سجّلوا كل مصروف فور حدوثه
+البنزين، الرسوم، المواقف — سجّلوها لحظياً في تطبيق مثل Diviso بدل جمع الفواتير للنهاية.
+
+### الخطوة 3: افصلوا الوديعة المستردة عن باقي التكلفة
+تتبعوها كبند منفصل حتى تعرفوا بالضبط كم يجب أن يُرد وكيف يُوزّع.
+
+### الخطوة 4: سوّوا الحساب فور استرداد الوديعة
+لا تؤجلوا التسوية النهائية أكثر من أسبوع بعد انتهاء الرحلة.
+
+## أخطاء شائعة عند تقسيم تكلفة الرحلة البرية
+
+- **تحميل المستأجر الرسمي تكلفة أكبر**: غير منطقي، فهو يتحمل المسؤولية القانونية أصلاً بدون فائدة إضافية
+- **تقسيم كل سيارة على ركابها فقط**: يخلق فروقات غير عادلة إذا اختلفت كفاءة السيارتين
+- **نسيان فصل الوديعة عن التكلفة النهائية**: يصعّب معرفة المبلغ الفعلي المستحق لكل شخص
+- **تأجيل التسوية لنهاية الرحلة**: يجعل المستأجر يتحمل العبء المالي لأيام أو أسابيع بدون داعٍ
+
+## كيف يساعدك Diviso في تقسيم تكلفة الرحلة البرية؟
+
+- ✅ تسجيل إيجار السيارة والبنزين والرسوم كبنود منفصلة أو مجمعة حسب رغبتكم
+- ✅ فصل الوديعة المستردة عن التكلفة النهائية للرحلة
+- ✅ تجميع تكلفة أكثر من سيارة وتقسيمها بالتساوي على كل المسافرين
+- ✅ تعديل النصيب تلقائياً عند اختلاف عدد أيام حضور كل شخص
+- ✅ سجل واضح يوضح من دفع الحجز الأولي ومن عليه نصيبه
+
+## أسئلة شائعة
+
+### هل يدفع الشخص الذي استأجر السيارة باسمه تكلفة أقل؟
+لا، الاستئجار باسم شخص واحد إجراء قانوني فقط ولا يعني استفادة أكبر من الرحلة. التكلفة الإجمالية تُقسّم بالتساوي على جميع المسافرين بغض النظر عن اسم المستأجر.
+
+### كيف نقسم التكلفة إذا استأجرنا سيارتين لمجموعة كبيرة؟
+اجمعوا تكلفة السيارتين معاً (إيجار وبنزين ورسوم) ثم اقسموا المجموع الكلي بالتساوي على جميع المسافرين، بدل تقسيم كل سيارة على ركابها فقط، لتجنب الفروقات الناتجة عن اختلاف كفاءة السيارتين.
+
+### هل الوديعة المستردة تُحسب ضمن تكلفة الرحلة النهائية؟
+لا، الوديعة تُجمع مقدماً كجزء من المبلغ المطلوب للحجز، لكنها تبقى بنداً منفصلاً لأنها تُرد لاحقاً، بعكس إيجار السيارة والبنزين اللذين يُعتبران تكلفة نهائية للرحلة.
+
+## الخلاصة
+
+تقسيم تكلفة الرحلة البرية بسيارة مستأجرة يجب أن يعتمد على من استفاد من الرحلة، لا على اسم المستأجر الرسمي. اجمعوا كل التكاليف، وزّعوها بالتساوي، وسوّوا الحساب فور استرداد الوديعة.
+
+**جرب Diviso الآن وقسّم تكلفة رحلتكم البرية القادمة بعدل تام.**
+    `,
+    contentEn: `
+## Quick Answer
+
+For a road trip in one rented car, the total cost (rental fee + fuel + tolls + parking) should be split equally among all travelers, regardless of whose name is on the rental agreement, since renting under one person is just a legal formality, not an indicator of who benefited more. The refundable deposit or insurance excess should be collected upfront from everyone and redistributed after the trip ends.
+
+## Why Shouldn't the Official Renter Pay More?
+
+Renting a car requires a driver's license and credit card under one person's name, but that doesn't mean they benefited more from the trip:
+
+- **Everyone uses the car equally**: all travelers ride in the same car and benefit from the same trip
+- **The renter takes on extra responsibility**: the legal liability and insurance fall on them, so it's unfair for them to also carry a bigger financial share
+- **Paying upfront isn't the same as owing more**: whoever's card was charged at booking should be reimbursed immediately by the rest, not left carrying the debt until the trip ends
+
+## How to Calculate Each Person's Exact Share
+
+### The Formula
+**Each person's share = (rental fee + fuel + tolls + parking) ÷ number of travelers**
+
+### A Worked Example
+A 3-day road trip for 4 friends:
+- Car rental: 450 SAR
+- Fuel: 300 SAR
+- Toll fees: 40 SAR
+- Parking: 60 SAR
+
+**Total cost** = 450 + 300 + 40 + 60 = 850 SAR
+
+**Each person's share** = 850 ÷ 4 = 212.5 SAR
+
+Regardless of who rented the car under their name or who paid for gas at each stop — the total cost is split equally among all four.
+
+## How to Handle the Refundable Deposit
+
+- **Collect it together with the rest of the cost from the start**: don't leave it solely on the renter's shoulders
+- **Log it as a separate line item**: since it's refunded later, unlike the rental fee and fuel, which are final costs
+- **Redistribute it immediately once refunded**: within days of the trip ending, don't leave it pending
+
+## What If You Need More Than One Car?
+
+### The Fairest Method: Pool All Costs, Then Split Among Everyone
+If you rent two cars for a group of 8, add up both cars' costs together (rental + fuel + tolls for each), then split that combined total equally among all 8 people, instead of splitting each car's cost only among its own riders.
+
+### Why Is This Fairer Than Splitting Per Car?
+Because who ends up in which car is often random, and one car might be more economical than the other (a smaller model, lower fuel consumption). Pooling prevents the cheaper car's riders from paying less than the pricier car's riders for no logical reason.
+
+## How to Handle Different Lengths of Participation
+
+If someone joins the trip for just one day out of three, their share can be adjusted using the same "cost per person-day" logic: calculate total person-days, work out the cost per person-day, and multiply it by each individual's actual number of days.
+
+## A Practical System for Organizing Road Trip Costs
+
+### Step 1: Agree on the Renter in Advance
+Decide who will book under their name, and agree to collect the full cost from everyone before or immediately after booking.
+
+### Step 2: Log Every Expense as It Happens
+Fuel, tolls, parking — log them instantly in an app like Diviso instead of collecting receipts until the end.
+
+### Step 3: Separate the Refundable Deposit From the Rest of the Cost
+Track it as a distinct line item so you know exactly how much should come back and how to redistribute it.
+
+### Step 4: Settle Up as Soon as the Deposit Is Refunded
+Don't delay the final settlement more than a week after the trip ends.
+
+## Common Mistakes When Splitting Road Trip Costs
+
+- **Making the official renter pay a bigger share**: illogical, since they already carry the legal liability with no extra benefit
+- **Splitting each car's cost only among its own riders**: creates unfair differences if the two cars have different efficiency
+- **Forgetting to separate the deposit from the final cost**: makes it hard to know each person's actual amount owed
+- **Delaying settlement until the trip ends**: leaves the renter carrying the financial burden for days or weeks unnecessarily
+
+## How Diviso Helps Split Road Trip Costs
+
+- ✅ Logs the rental fee, fuel, and tolls as separate or combined line items, however you prefer
+- ✅ Keeps the refundable deposit separate from the trip's final cost
+- ✅ Pools the cost of more than one car and splits it equally among all travelers
+- ✅ Automatically adjusts shares when travelers' lengths of participation differ
+- ✅ A clear record of who paid the initial booking and who still owes their share
+
+## Frequently Asked Questions
+
+### Does the person who rented the car under their name pay less?
+No, renting under one name is just a legal formality and doesn't mean they benefited more from the trip. The total cost is split equally among all travelers regardless of whose name is on the rental agreement.
+
+### How do we split the cost if we rented two cars for a large group?
+Add both cars' costs together (rental, fuel, and tolls) and then split that combined total equally among all travelers, instead of splitting each car's cost only among its own riders, to avoid differences caused by the two cars' different efficiency.
+
+### Is the refundable deposit included in the trip's final cost?
+No, the deposit is collected upfront as part of the amount needed for booking, but it stays a separate line item since it's refunded later, unlike the car rental and fuel, which are final trip costs.
+
+## Conclusion
+
+Splitting the cost of a road trip in a rented car should be based on who benefited from the trip, not on whose name is on the rental agreement. Pool all the costs, split them equally, and settle up as soon as the deposit is refunded.
+
+**Try Diviso now and split your next road trip's costs with complete fairness.**
+    `
+  },
+  {
     slug: "split-grocery-costco-run-roommates",
     title: "كيف تقسم تكلفة تسوق البقالة (كوستكو) بين شركاء السكن بعدل؟",
     titleEn: "How to Split a Shared Grocery or Costco Run Cost Fairly Between Roommates",

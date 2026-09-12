@@ -16,6 +16,180 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "organize-office-coffee-snack-fund",
+    title: "كيف تنظم صندوق القهوة والوجبات الخفيفة المشترك في المكتب؟",
+    titleEn: "How to Organize a Shared Office Coffee and Snack Fund",
+    description: "طريقة عملية لتنظيم صندوق مشترك للقهوة والوجبات الخفيفة بين الزملاء بمساهمة شهرية ثابتة بدل حساب كل استخدام، مع مثال حساب ومعالجة انضمام موظف جديد.",
+    descriptionEn: "A practical way to run a shared office coffee and snack fund with a fixed monthly contribution instead of tracking every use, with a worked example and how to handle a new employee joining mid-month.",
+    keywords: ["صندوق القهوة المشترك بالمكتب", "تنظيم مصاريف القهوة بين الزملاء", "اشتراك شهري لمستلزمات المكتب", "تقسيم تكلفة الوجبات الخفيفة بالعمل", "كم نصيبي في صندوق القهوة", "إدارة صندوق مصاريف المكتب"],
+    keywordsEn: ["how to organize an office coffee fund", "splitting cost of office snacks with coworkers", "coffee fund tracker for coworkers", "shared office supplies contribution calculator", "monthly office pantry fund", "office coffee fund fair share"],
+    category: "tips",
+    readTime: 6,
+    publishDate: "2026-09-12",
+    content: `
+## الإجابة المختصرة
+
+أفضل طريقة لتنظيم صندوق القهوة والوجبات الخفيفة المشترك بالمكتب هي مساهمة شهرية ثابتة من كل مشارك (وليس حساب كل كوب قهوة على حدة)، تُجمع في صندوق واحد يستخدمه شخص مسؤول لشراء المستلزمات، مع تتبع الرصيد المتبقي كل شهر. هذا يتجنب النقاشات المحرجة عن "مين يشرب قهوة أكثر" ويبسّط الإدارة لعدد كبير من الزملاء.
+
+## ليش لا تُحسب كل استخدام على حدة؟
+
+تتبع كل كوب قهوة أو كل قطعة بسكويت يستهلكها كل شخص أمر غير عملي:
+
+- **صعوبة القياس الدقيقة**: من يقدر يحسب بالضبط كم كوب شرب كل زميل؟
+- **يخلق جواً من الريبة**: تتبع دقيق لاستهلاك الزملاء يشعرهم بالحرج أو المراقبة
+- **وقت إداري ضائع**: حساب كل استخدام يستغرق وقتاً أطول بكثير من فائدته
+
+## كيف يعمل نظام المساهمة الشهرية الثابتة؟
+
+### القاعدة
+كل مشارك يدفع مبلغاً ثابتاً شهرياً (مثلاً 20 ريال)، بغض النظر عن استهلاكه الفعلي، ويُستخدم المجموع لشراء القهوة والسكر والحليب والوجبات الخفيفة المشتركة.
+
+### مثال عملي
+مكتب فيه 8 موظفين اشتركوا في صندوق القهوة بمساهمة 20 ريال شهرياً لكل واحد:
+
+- **إجمالي الصندوق الشهري** = 20 × 8 = 160 ريال
+- اشترى المسؤول عن الصندوق: قهوة، سكر، حليب، بسكويت بقيمة 140 ريال
+- **الرصيد المتبقي** = 160 − 140 = 20 ريال، يُرحّل للشهر القادم
+
+في الشهر التالي، يصبح الصندوق المتاح = 160 (مساهمات جديدة) + 20 (المتبقي) = 180 ريال، مما يعطي مرونة إذا زاد الاستهلاك أو أرادوا شراء شيء إضافي.
+
+## ماذا لو لم يرغب الجميع بالمشاركة؟
+
+اجعلوا الصندوق اختيارياً: من يشارك في المساهمة الشهرية له حق استخدام مستلزمات الصندوق، ومن لا يرغب لا يُجبر على الدفع ولا يُتوقع منه الاستخدام. هذا أعدل من فرض مساهمة إلزامية على من لا يشرب القهوة أصلاً.
+
+## كيف تتعامل مع انضمام موظف جديد في منتصف الشهر؟
+
+استخدم نفس منطق التقسيم بالتناسب: لو انضم موظف في اليوم 15 من شهر 30 يوماً، فمساهمته الأولى = 20 × (15 ÷ 30) = 10 ريال فقط، ثم يدفع المبلغ الكامل من الشهر التالي.
+
+## خطوات عملية لإدارة صندوق المكتب
+
+### الخطوة 1: حددوا مبلغ المساهمة الشهرية بالاتفاق الجماعي
+اسألوا: كم نحتاج شهرياً لتغطية الاستهلاك المتوقع؟ ثم اقسموا على عدد المشاركين المتوقع.
+
+### الخطوة 2: عيّنوا شخصاً مسؤولاً عن الشراء والتحصيل
+شخص واحد يتولى الشراء الفعلي، لكن التحصيل يُفضّل أن يكون عبر تطبيق بدل جمع النقد يدوياً.
+
+### الخطوة 3: سجّلوا كل عملية شراء بإيصالها
+استخدم تطبيق مثل Diviso لتسجيل المشتريات الشهرية وتتبع الرصيد المتبقي بشفافية للجميع.
+
+### الخطوة 4: راجعوا المساهمة كل ربع سنة
+إذا زاد عدد المشاركين أو تغيّر الاستهلاك، عدّلوا المبلغ الشهري ليبقى كافياً بدون فائض كبير.
+
+## أخطاء شائعة عند إدارة صندوق القهوة المشترك
+
+- **عدم تحديد موعد ثابت للتحصيل الشهري**: يؤدي لتأخر المساهمات وتراكم الديون
+- **خلط المشتريات الشخصية بمشتريات الصندوق**: يصعّب معرفة الرصيد الفعلي المتبقي
+- **عدم الاحتفاظ بالإيصالات**: يخلق شكوكاً حول أين ذهبت الفلوس
+- **إجبار الجميع على المشاركة حتى من لا يستخدم الصندوق**: يخلق استياءً غير ضروري
+
+## كيف يساعدك Diviso في إدارة صندوق المكتب؟
+
+- ✅ تسجيل المساهمة الشهرية الثابتة لكل مشارك تلقائياً
+- ✅ تتبع الرصيد المتبقي ونقله للشهر التالي بدقة
+- ✅ تسجيل كل عملية شراء بإيصالها كمصروف موثّق
+- ✅ تعديل مساهمة الأعضاء الجدد بالتناسب حسب تاريخ انضمامهم
+- ✅ تقرير شهري واضح يوضح الوارد والمصروف لكل الأعضاء
+
+## أسئلة شائعة
+
+### هل يجب حساب كل كوب قهوة يشربه كل موظف؟
+لا، الأفضل استخدام مساهمة شهرية ثابتة بدل تتبع الاستهلاك الفردي، لأن الحساب الدقيق غير عملي ويخلق جواً محرجاً بين الزملاء.
+
+### كم يجب أن تكون المساهمة الشهرية في صندوق القهوة؟
+لا يوجد رقم ثابت — احسبوا متوسط تكلفة المستلزمات الشهرية (قهوة، حليب، سكر، وجبات خفيفة) واقسموها على عدد المشاركين المتوقع، مع هامش بسيط للاستهلاك الإضافي.
+
+### كيف تُحسب مساهمة موظف انضم في منتصف الشهر؟
+اقسم المساهمة الشهرية الكاملة على عدد أيام الشهر للحصول على المعدل اليومي، ثم اضربه في عدد الأيام المتبقية من الشهر منذ تاريخ انضمامه.
+
+## الخلاصة
+
+صندوق القهوة المشترك بالمكتب لا يحتاج تعقيداً أو حساباً دقيقاً لكل استخدام. حددوا مساهمة شهرية ثابتة، عيّنوا مسؤولاً للشراء، ودعوا التطبيق يتابع الرصيد بشفافية للجميع.
+
+**جرب Diviso الآن ونظّم صندوق القهوة المشترك في مكتبك بسهولة.**
+    `,
+    contentEn: `
+## Quick Answer
+
+The best way to run a shared office coffee and snack fund is a fixed monthly contribution from each participant (not tracking every single cup of coffee), pooled into one fund that a designated person uses to buy supplies, with the remaining balance tracked each month. This avoids awkward arguments over "who drinks more coffee" and keeps management simple for a large group of coworkers.
+
+## Why Not Track Every Individual Use?
+
+Tracking every cup of coffee or every cookie each person consumes is impractical:
+
+- **Hard to measure accurately**: who can precisely count how many cups each coworker drank?
+- **Creates an atmosphere of suspicion**: closely tracking coworkers' consumption feels awkward or like surveillance
+- **Wastes administrative time**: calculating every single use takes far more effort than it's worth
+
+## How Does the Fixed Monthly Contribution System Work?
+
+### The Rule
+Each participant pays a fixed amount monthly (say, 20 SAR), regardless of their actual consumption, and the total is used to buy coffee, sugar, milk, and shared snacks.
+
+### A Worked Example
+An office with 8 employees who join the coffee fund, each contributing 20 SAR monthly:
+
+- **Total monthly fund** = 20 × 8 = 160 SAR
+- The fund manager buys coffee, sugar, milk, and cookies worth 140 SAR
+- **Remaining balance** = 160 − 140 = 20 SAR, carried over to next month
+
+The following month, the available fund becomes = 160 (new contributions) + 20 (leftover) = 180 SAR, giving flexibility if consumption increases or the group wants to buy something extra.
+
+## What If Not Everyone Wants to Participate?
+
+Make the fund opt-in: whoever contributes monthly has the right to use the fund's supplies, and whoever doesn't want to isn't forced to pay and isn't expected to use it. This is fairer than requiring a mandatory contribution from someone who doesn't drink coffee at all.
+
+## How to Handle a New Employee Joining Mid-Month
+
+Use the same proration logic: if an employee joins on day 15 of a 30-day month, their first contribution = 20 × (15 ÷ 30) = 10 SAR only, then they pay the full amount starting the following month.
+
+## A Practical System for Managing the Office Fund
+
+### Step 1: Agree on the Monthly Contribution Amount as a Group
+Ask: how much do we need monthly to cover expected consumption? Then divide it by the expected number of participants.
+
+### Step 2: Assign One Person to Handle Purchasing and Collection
+One person handles the actual buying, but collection should go through an app rather than gathering cash manually.
+
+### Step 3: Log Every Purchase With Its Receipt
+Use an app like Diviso to log the monthly purchases and track the remaining balance transparently for everyone.
+
+### Step 4: Review the Contribution Every Quarter
+If the number of participants or consumption changes, adjust the monthly amount to stay sufficient without a large surplus.
+
+## Common Mistakes When Managing a Shared Coffee Fund
+
+- **Not setting a fixed monthly collection date**: leads to delayed contributions and piling debts
+- **Mixing personal purchases with fund purchases**: makes it hard to know the actual remaining balance
+- **Not keeping receipts**: creates doubts about where the money went
+- **Forcing everyone to participate even those who don't use the fund**: creates unnecessary resentment
+
+## How Diviso Helps Manage an Office Fund
+
+- ✅ Automatically logs each participant's fixed monthly contribution
+- ✅ Accurately tracks the remaining balance and carries it over to the next month
+- ✅ Logs every purchase with its receipt as a documented expense
+- ✅ Prorates new members' contributions based on their join date
+- ✅ A clear monthly report showing income and spending for all members
+
+## Frequently Asked Questions
+
+### Should every employee's coffee consumption be tracked individually?
+No, it's better to use a fixed monthly contribution instead of tracking individual consumption, since precise tracking is impractical and creates an awkward atmosphere among coworkers.
+
+### How much should the monthly contribution to a coffee fund be?
+There's no fixed number — calculate the average monthly cost of supplies (coffee, milk, sugar, snacks) and divide it by the expected number of participants, with a small margin for extra consumption.
+
+### How is a new employee's contribution calculated if they join mid-month?
+Divide the full monthly contribution by the number of days in the month to get a daily rate, then multiply it by the number of days remaining in the month since their join date.
+
+## Conclusion
+
+A shared office coffee fund doesn't need complexity or precise tracking of every use. Set a fixed monthly contribution, assign someone to handle purchasing, and let the app track the balance transparently for everyone.
+
+**Try Diviso now and organize your office's shared coffee fund with ease.**
+    `
+  },
+  {
     slug: "split-road-trip-rental-car-costs",
     title: "كيف تقسم تكلفة رحلة برية بسيارة مستأجرة مع الأصدقاء؟",
     titleEn: "How to Split the Cost of a Road Trip in a Rented Car With Friends",

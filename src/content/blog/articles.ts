@@ -16,6 +16,190 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-child-expenses-co-parents",
+    title: "كيف يقسم الأبوان المنفصلان مصاريف الأطفال بعدل؟",
+    titleEn: "How Should Separated or Divorced Parents Split Their Children's Expenses?",
+    description: "دليل عملي لتقسيم مصاريف الأطفال بين الأبوين المنفصلين حسب نسبة الدخل بدل التقسيم المتساوي البحت، مع مثال حساب وتوضيح الفرق بين النفقة والمصاريف الإضافية.",
+    descriptionEn: "A practical guide to splitting children's expenses between separated parents based on income proportion instead of a plain 50/50 split, with a worked example and the difference between child support and extra shared costs.",
+    keywords: ["تقسيم مصاريف الأطفال بين الأبوين", "تقسيم النفقة حسب الدخل", "مصاريف الأطفال بعد الطلاق", "كيف نقسم مصاريف المدرسة", "تقسيم مصاريف الحضانة المشتركة", "نسبة مساهمة كل والد في المصاريف"],
+    keywordsEn: ["how to split child expenses between divorced parents", "co-parenting expense splitting calculator", "proportional to income child cost sharing", "splitting school and medical costs after divorce", "shared custody expense tracker", "fair way to split kids expenses"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-09-13",
+    content: `
+## الإجابة المختصرة
+
+الطريقة الأكثر عدلاً لتقسيم مصاريف الأطفال بين الأبوين المنفصلين هي **التقسيم بنسبة الدخل** بدل التقسيم المتساوي 50/50، بحيث يساهم كل والد بنسبة تعادل حصته من مجموع دخل الطرفين. هذا ينطبق على المصاريف المشتركة الإضافية (المدرسة، الطبية، الأنشطة) وليس النفقة الأساسية المحددة قضائياً أو باتفاق مسبق.
+
+## ليش التقسيم بنسبة الدخل أعدل من 50/50؟
+
+لو كان أحد الأبوين يكسب ضعف دخل الآخر، فالتقسيم المتساوي يشكّل عبئاً أكبر نسبياً على الطرف الأقل دخلاً:
+
+- **العدالة النسبية**: كل والد يساهم بما يتناسب مع قدرته المالية الفعلية
+- **الاستقرار للطفل**: يقلل النزاعات المالية المتكررة التي تؤثر على الطفل نفسياً
+- **مرونة عند تغيّر الدخل**: يمكن تعديل النسبة إذا تغيّر دخل أحد الطرفين مستقبلاً
+
+## كيف تحسب نسبة كل والد بدقة؟
+
+### القاعدة
+**نسبة الوالد = دخله ÷ (دخل الوالد الأول + دخل الوالد الثاني)**
+
+### مثال عملي
+الأب يكسب 12,000 ريال شهرياً، والأم تكسب 8,000 ريال شهرياً:
+
+- **مجموع الدخل** = 12,000 + 8,000 = 20,000 ريال
+- **نسبة الأب** = 12,000 ÷ 20,000 = 60%
+- **نسبة الأم** = 8,000 ÷ 20,000 = 40%
+
+لو كانت قسط مدرسة الطفل 2,000 ريال، فنصيب الأب = 2,000 × 0.60 = 1,200 ريال، ونصيب الأم = 2,000 × 0.40 = 800 ريال.
+
+## ما الفرق بين النفقة والمصاريف الإضافية المشتركة؟
+
+- **النفقة الأساسية**: مبلغ ثابت محدد باتفاق أو حكم قضائي لتغطية الاحتياجات الأساسية (سكن، طعام، ملابس يومية) — لا يخضع لهذا النوع من التقسيم النسبي عادة
+- **المصاريف الإضافية المشتركة**: تكاليف غير متكررة أو متغيرة مثل الرسوم المدرسية، الفواتير الطبية غير المغطاة، الأنشطة الرياضية، المخيمات الصيفية — هذه هي التي يُطبّق عليها التقسيم بنسبة الدخل غالباً
+
+## ما الذي يُعتبر "مصروفاً مشتركاً" وما الذي لا يُعتبر؟
+
+- **مشترك (يُقسّم)**: رسوم المدرسة، الأدوات المدرسية، العلاج الطبي، النشاطات اللامنهجية المتفق عليها
+- **شخصي (لا يُقسّم)**: مشتريات أثناء فترة حضانة أحد الوالدين فقط (ملابس اشتراها أحدهما بمبادرة شخصية، هدايا فردية) ما لم يتفقا على خلاف ذلك
+
+## خطوات عملية لتنظيم تقسيم المصاريف
+
+### الخطوة 1: اتفقا على طريقة التقسيم وثّقاها كتابياً
+حددا: هل التقسيم بنسبة الدخل أم 50/50 أم نسبة أخرى متفق عليها؟ التوثيق يمنع الخلاف لاحقاً.
+
+### الخطوة 2: حددا مسبقاً أي المصاريف تُعتبر مشتركة
+اتفقا على قائمة واضحة (مدرسة، طبي، أنشطة) لتجنب الجدال عند كل مصروف جديد.
+
+### الخطوة 3: استخدما أداة محايدة لتسجيل المصاريف
+بدل الاعتماد على رسائل نصية متفرقة يصعب تتبعها، استخدم تطبيق مثل Diviso لإنشاء مجموعة مخصصة بينكما لتسجيل كل مصروف بإيصاله.
+
+### الخطوة 4: سدّدا الأنصبة بانتظام
+لا تتركا المصاريف تتراكم لأشهر — التسوية الدورية (شهرياً مثلاً) تقلل الاحتكاك.
+
+### الخطوة 5: راجعا النسبة عند تغيّر الدخل
+إذا تغيّر دخل أحد الطرفين بشكل ملحوظ، أعيدا حساب النسبة بنفس الصيغة.
+
+## أخطاء شائعة عند تقسيم مصاريف الأطفال
+
+- **الخلط بين النفقة الأساسية والمصاريف الإضافية**: يسبب التباساً حول ما يجب تقسيمه فعلاً
+- **عدم توثيق طريقة التقسيم**: يخلق خلافاً متكرراً حول "كم نصيب كل واحد"
+- **الاعتماد على الذاكرة أو الرسائل المتفرقة**: يصعّب إثبات من دفع ماذا لاحقاً
+- **قرار أحد الطرفين منفرداً بأن مصروفاً معيناً "مشترك"**: يجب الاتفاق المسبق قبل الشراء لا بعده
+
+## كيف يساعدكما Diviso في تنظيم مصاريف الأطفال؟
+
+- ✅ إنشاء مجموعة محايدة مخصصة بين الوالدين لتتبع مصاريف الأطفال فقط
+- ✅ تقسيم مخصص بنسبة الدخل أو أي نسبة أخرى متفق عليها
+- ✅ تسجيل كل مصروف بإيصاله كدليل موثّق
+- ✅ سجل شفاف يراه الطرفان بدلاً من التفاوض عبر الرسائل
+- ✅ تعديل سهل للنسبة عند تغيّر الظروف المالية
+
+## أسئلة شائعة
+
+### هل يجب أن يدفع كل والد نصف مصاريف الطفل بالتساوي؟
+ليس بالضرورة. الطريقة الأعدل غالباً هي التقسيم بنسبة دخل كل والد من مجموع دخل الطرفين، بحيث يساهم من يكسب أكثر بنسبة أكبر، ما لم يتفقا على تقسيم متساوٍ.
+
+### هل النفقة القضائية هي نفسها المصاريف الإضافية المشتركة؟
+لا، النفقة الأساسية مبلغ ثابت لتغطية الاحتياجات اليومية، بينما المصاريف الإضافية (مدرسة، طبية، أنشطة) بند منفصل يُقسّم عادة بنسبة الدخل بين الطرفين حسب اتفاقهما.
+
+### كيف نتجنب الخلاف حول ما إذا كان مصروف معين "مشتركاً"؟
+اتفقا مسبقاً على قائمة واضحة بأنواع المصاريف المشتركة قبل حدوثها، ووثّقا الاتفاق كتابياً، بدل مناقشة كل مصروف جديد بشكل منفصل بعد حدوثه.
+
+## الخلاصة
+
+تقسيم مصاريف الأطفال بين الأبوين المنفصلين لا يجب أن يكون مصدر توتر متكرر. اتفقا على نسبة عادلة، وثّقا القرار، واستخدما أداة شفافة تتابع كل مصروف بدل الجدال المستمر.
+
+**جرب Diviso الآن ونظّم مصاريف أطفالكما بعدل وشفافية.**
+    `,
+    contentEn: `
+## Quick Answer
+
+The fairest way to split children's expenses between separated or divorced parents is **proportional-to-income splitting** instead of a plain 50/50 division, where each parent contributes a percentage equal to their share of the combined income. This applies to extra shared costs (school, medical, activities), not to a court-ordered or previously agreed base child support amount.
+
+## Why Is Income-Proportional Splitting Fairer Than 50/50?
+
+If one parent earns twice as much as the other, an equal split places a relatively heavier burden on the lower-earning parent:
+
+- **Proportional fairness**: each parent contributes in line with their actual financial capacity
+- **Stability for the child**: reduces recurring financial disputes that affect the child emotionally
+- **Flexibility as income changes**: the ratio can be adjusted later if either parent's income changes
+
+## How to Calculate Each Parent's Exact Percentage
+
+### The Formula
+**Parent's share = their income ÷ (parent A's income + parent B's income)**
+
+### A Worked Example
+The father earns 12,000 SAR monthly, and the mother earns 8,000 SAR monthly:
+
+- **Combined income** = 12,000 + 8,000 = 20,000 SAR
+- **Father's share** = 12,000 ÷ 20,000 = 60%
+- **Mother's share** = 8,000 ÷ 20,000 = 40%
+
+If the child's school tuition installment is 2,000 SAR, the father's share = 2,000 × 0.60 = 1,200 SAR, and the mother's share = 2,000 × 0.40 = 800 SAR.
+
+## What's the Difference Between Child Support and Extra Shared Expenses?
+
+- **Base child support**: a fixed amount set by agreement or court order to cover basic needs (housing, food, everyday clothing) — this usually isn't subject to this kind of proportional split
+- **Extra shared expenses**: irregular or variable costs like school fees, medical bills not otherwise covered, sports activities, summer camps — this is what proportional-to-income splitting is usually applied to
+
+## What Counts as a "Shared Expense" and What Doesn't?
+
+- **Shared (split)**: school fees, school supplies, medical treatment, agreed-upon extracurricular activities
+- **Personal (not split)**: purchases made during one parent's own custody time on their own initiative (clothes they bought, individual gifts), unless both parents agree otherwise
+
+## A Practical System for Organizing Expense Splitting
+
+### Step 1: Agree on the Splitting Method and Document It in Writing
+Decide: income-proportional, 50/50, or another agreed ratio? Documenting it prevents later disputes.
+
+### Step 2: Define in Advance Which Expenses Count as Shared
+Agree on a clear list (school, medical, activities) to avoid arguing over every new expense.
+
+### Step 3: Use a Neutral Tool to Log Expenses
+Instead of relying on scattered text messages that are hard to track, use an app like Diviso to create a dedicated group between the two of you to log every expense with its receipt.
+
+### Step 4: Settle Shares Regularly
+Don't let expenses pile up for months — periodic settlement (monthly, for example) reduces friction.
+
+### Step 5: Revisit the Ratio When Income Changes
+If either parent's income changes significantly, recalculate the percentage using the same formula.
+
+## Common Mistakes When Splitting Children's Expenses
+
+- **Confusing base child support with extra expenses**: causes confusion about what actually needs to be split
+- **Not documenting the splitting method**: creates recurring disputes over "how much does each of us owe"
+- **Relying on memory or scattered messages**: makes it hard to later prove who paid what
+- **One parent unilaterally deciding an expense is "shared"**: agreement should happen before the purchase, not after
+
+## How Diviso Helps Organize Children's Expenses
+
+- ✅ Creates a neutral, dedicated group between parents to track only children's expenses
+- ✅ Custom splitting by income ratio or any other agreed percentage
+- ✅ Logs every expense with its receipt as documented proof
+- ✅ A transparent record both parents can see, instead of negotiating over messages
+- ✅ Easy to adjust the ratio when financial circumstances change
+
+## Frequently Asked Questions
+
+### Should each parent pay exactly half of the child's expenses?
+Not necessarily. The fairer approach is often to split expenses based on each parent's share of the combined income, so the higher earner contributes a larger percentage, unless both agree on an equal split.
+
+### Is court-ordered child support the same as extra shared expenses?
+No, base child support is a fixed amount covering daily needs, while extra expenses (school, medical, activities) are a separate category usually split by income proportion based on the parents' agreement.
+
+### How do we avoid disputes over whether an expense counts as "shared"?
+Agree in advance on a clear list of shared expense categories before they occur, and document the agreement in writing, instead of debating each new expense separately after it happens.
+
+## Conclusion
+
+Splitting children's expenses between separated parents shouldn't be a recurring source of tension. Agree on a fair ratio, document the decision, and use a transparent tool that tracks every expense instead of ongoing arguments.
+
+**Try Diviso now and organize your children's expenses fairly and transparently.**
+    `
+  },
+  {
     slug: "organize-office-coffee-snack-fund",
     title: "كيف تنظم صندوق القهوة والوجبات الخفيفة المشترك في المكتب؟",
     titleEn: "How to Organize a Shared Office Coffee and Snack Fund",

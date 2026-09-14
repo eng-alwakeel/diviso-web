@@ -16,6 +16,196 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-shared-pet-ownership-expenses",
+    title: "كيف تقسم مصاريف الحيوان الأليف المشترك بين شخصين؟",
+    titleEn: "How to Split Expenses for a Jointly-Owned Pet Between Two People",
+    description: "طريقة عملية لتقسيم مصاريف الحيوان الأليف المشترك بين صديقين أو شريكين سابقين: مصاريف متكررة تُقسّم بالتساوي، وصندوق طوارئ بيطري شهري يمنع الخلاف وقت الأزمة.",
+    descriptionEn: "A practical way to split expenses for a pet jointly owned by two people: recurring costs split evenly, plus a monthly vet emergency fund that prevents disputes when something urgent comes up.",
+    keywords: ["تقسيم مصاريف الحيوان الأليف المشترك", "ملكية مشتركة لحيوان أليف", "تقسيم فاتورة البيطري بين شخصين", "صندوق طوارئ للحيوان الأليف", "مصاريف الكلب المشترك", "كيف نقسم مصاريف القطة"],
+    keywordsEn: ["how to split pet expenses between co-owners", "shared dog ownership cost calculator", "splitting vet bills with co-owner", "pet emergency fund for co-owners", "joint pet ownership expense agreement", "fair way to split cat or dog costs"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-09-14",
+    content: `
+## الإجابة المختصرة
+
+عند مشاركة ملكية حيوان أليف بين شخصين (صديقين أو شريكين سابقين)، يُقسّم المصاريف إلى نوعين: **مصاريف متكررة** (طعام، رمل، مستلزمات شهرية) تُقسّم بالتساوي كل شهر، و**مصاريف طارئة** (إصابة، مرض مفاجئ) يُموَّل لها **صندوق طوارئ بيطري** مشترك بمساهمة شهرية ثابتة صغيرة، بدل التفاوض المفاجئ وقت الأزمة نفسها.
+
+## ليش تحتاج نظاماً خاصاً لمصاريف حيوان مشترك؟
+
+ملكية الحيوان المشتركة تختلف عن أي مصروف جماعي عادي:
+
+- **مصاريف متكررة يمكن التنبؤ بها**: طعام، رمل القطط، مستلزمات العناية الشهرية
+- **مصاريف طارئة غير متوقعة**: إصابة مفاجئة أو مرض يتطلب علاجاً بيطرياً عاجلاً وقد يكون مكلفاً
+- **حساسية التوقيت**: التفاوض على من يدفع فاتورة بيطرية طارئة وقت القلق على صحة الحيوان محرج وغير مناسب
+- **اختلاف وقت الحضانة**: أحياناً يبقى الحيوان مع شخص أكثر من الآخر حسب جدول متفق عليه
+
+## كيف تقسم المصاريف المتكررة؟
+
+### القاعدة الأساسية
+**نصيب كل شخص = التكلفة الشهرية للطعام والمستلزمات ÷ 2** (أو حسب نسبة وقت الحضانة إذا كانت غير متساوية)
+
+### مثال عملي
+تكلفة طعام ورمل ومستلزمات شهرية للحيوان = 200 ريال:
+
+- لو الحضانة متساوية: نصيب كل شخص = 200 ÷ 2 = 100 ريال شهرياً
+- لو أحدهما يحتفظ بالحيوان 5 أيام أسبوعياً والآخر يومين فقط، يمكن تعديل النسبة لتكون 70/30 بدل 50/50، بنفس منطق "التقسيم بالتناسب" المستخدم في حالات أخرى
+
+## كيف ينشئ صندوق الطوارئ البيطري؟
+
+### الفكرة
+كل شخص يساهم بمبلغ ثابت صغير شهرياً (مثلاً 50 ريال) في صندوق مشترك مخصص فقط للحالات الطارئة، بدل انتظار حدوث المشكلة والتفاوض حينها.
+
+### مثال عملي
+- مساهمة شهرية = 50 ريال لكل شخص = 100 ريال في الصندوق كل شهر
+- بعد 6 أشهر: الرصيد المتراكم = 600 ريال، كافٍ لتغطية زيارة بيطرية طارئة أو جزء كبير من عملية بسيطة دون ضغط مالي مفاجئ على أي طرف
+
+### ماذا لو تجاوزت الفاتورة الطارئة رصيد الصندوق؟
+اتفقا مسبقاً على قاعدة احتياطية: الفرق يُقسّم بنفس نسبة المصاريف المتكررة (50/50 أو حسب نسبة الحضانة).
+
+## ما الذي يُعتبر "متكرراً" وما الذي يُعتبر "طارئاً"؟
+
+- **متكرر (يُقسّم شهرياً)**: طعام، رمل، ألعاب، مستلزمات نظافة، فحوصات دورية مجدولة
+- **طارئ (يُموَّل من الصندوق)**: إصابة مفاجئة، مرض غير متوقع، عملية جراحية عاجلة
+- **اختياري فردي**: لو أراد أحدهما شراء إكسسوار أو لعبة إضافية بمبادرته الشخصية، لا يُقسّم إلا بالاتفاق
+
+## خطوات عملية لتنظيم ملكية الحيوان المشتركة
+
+### الخطوة 1: وثّقا اتفاقاً بسيطاً من البداية
+حددا: نسبة تقسيم المصاريف المتكررة، مبلغ مساهمة صندوق الطوارئ، وجدول الحضانة إن وجد.
+
+### الخطوة 2: افتحا مجموعة مخصصة لمصاريف الحيوان
+استخدم تطبيق مثل Diviso لإنشاء مجموعة بينكما، تفصل المصاريف المتكررة عن صندوق الطوارئ.
+
+### الخطوة 3: سجّلا كل فاتورة بيطرية بإيصالها
+حتى الفحوصات الروتينية الصغيرة، لتجنب فقدان السجل مع الوقت.
+
+### الخطوة 4: راجعا رصيد الصندوق كل ربع سنة
+تأكدا إن المبلغ المتراكم لا يزال كافياً، وعدّلا المساهمة الشهرية إذا لزم الأمر.
+
+## أخطاء شائعة عند تقسيم مصاريف حيوان مشترك
+
+- **عدم وجود صندوق طوارئ أصلاً**: يجبر الطرفين على تفاوض متوتر وقت مرض الحيوان
+- **عدم توثيق نسبة التقسيم عند اختلاف وقت الحضانة**: يخلق شعوراً بعدم العدالة لاحقاً
+- **نسيان تسجيل المصاريف الصغيرة المتكررة**: تتراكم وتُنسى مع الوقت
+- **خلط المشتريات الشخصية الاختيارية بالمصاريف المشتركة**: يصعّب معرفة النصيب الفعلي لكل طرف
+
+## كيف يساعدكما Diviso في تنظيم مصاريف الحيوان المشترك؟
+
+- ✅ مجموعة مخصصة تفصل المصاريف المتكررة عن صندوق الطوارئ
+- ✅ تتبع رصيد صندوق الطوارئ المتراكم بشفافية لكلا الطرفين
+- ✅ تسجيل كل فاتورة بيطرية بإيصالها كدليل موثّق
+- ✅ تعديل سهل لنسبة التقسيم عند تغيّر جدول الحضانة
+- ✅ سجل تراكمي يوضح كل مصروف منذ بداية الملكية المشتركة
+
+## أسئلة شائعة
+
+### كيف نقسم فاتورة بيطرية طارئة ومفاجئة؟
+الأفضل تمويلها من صندوق طوارئ مشترك بُني بمساهمات شهرية صغيرة مسبقة، وإذا تجاوزت الفاتورة رصيد الصندوق، يُقسّم الفرق بنفس نسبة المصاريف المتكررة المتفق عليها.
+
+### هل تُقسّم مصاريف الطعام والرمل بالتساوي دائماً؟
+غالباً نعم إذا كانت فترة الحضانة متساوية بين الطرفين، لكن إذا بقي الحيوان مع أحدهما وقتاً أطول، يمكن تعديل النسبة لتعكس ذلك بدل التقسيم المتساوي البحت.
+
+### كم يجب أن تكون المساهمة الشهرية في صندوق طوارئ الحيوان؟
+لا يوجد رقم ثابت، لكن مبلغاً صغيراً مثل 50 ريال لكل شخص شهرياً يبني رصيداً معقولاً خلال أشهر قليلة يغطي أغلب الحالات الطارئة الشائعة.
+
+## الخلاصة
+
+الملكية المشتركة لحيوان أليف لا يجب أن تتحول لخلاف مالي وقت الأزمة. قسّما المصاريف المتكررة بعدل، ابنيا صندوق طوارئ مسبقاً، ودعا التطبيق يتابع كل شيء بشفافية.
+
+**جرب Diviso الآن ونظّم مصاريف حيوانكما الأليف المشترك بعدل وهدوء.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When two people (friends or ex-partners) jointly own a pet, expenses split into two categories: **recurring costs** (food, litter, monthly supplies) split evenly each month, and **emergency costs** (an injury, a sudden illness) funded from a shared **vet emergency fund** built with a small fixed monthly contribution, instead of negotiating on the spot during a crisis.
+
+## Why Shared Pet Ownership Needs Its Own System
+
+Jointly owning a pet is different from any ordinary group expense:
+
+- **Predictable recurring costs**: food, cat litter, monthly grooming supplies
+- **Unpredictable emergency costs**: a sudden injury or illness requiring urgent vet care that can get expensive
+- **Timing sensitivity**: negotiating who pays an emergency vet bill while worried about the pet's health is awkward and poorly timed
+- **Different custody schedules**: sometimes the pet stays with one person more than the other based on an agreed schedule
+
+## How to Split Recurring Costs
+
+### The Basic Formula
+**Each person's share = monthly cost of food and supplies ÷ 2** (or by custody-time ratio if it's uneven)
+
+### A Worked Example
+Monthly food, litter, and supply costs for the pet = 200 SAR:
+
+- If custody is equal: each person's share = 200 ÷ 2 = 100 SAR monthly
+- If one person keeps the pet 5 days a week and the other just 2, the ratio can be adjusted to 70/30 instead of 50/50, using the same proportional logic applied in other scenarios
+
+## How to Set Up the Vet Emergency Fund
+
+### The Idea
+Each person contributes a small fixed amount monthly (say, 50 SAR) into a shared fund dedicated solely to emergencies, instead of waiting for a problem to happen and negotiating then.
+
+### A Worked Example
+- Monthly contribution = 50 SAR per person = 100 SAR into the fund each month
+- After 6 months: accumulated balance = 600 SAR, enough to cover an emergency vet visit or a large part of a minor procedure without sudden financial pressure on either party
+
+### What If the Emergency Bill Exceeds the Fund's Balance?
+Agree in advance on a backup rule: the difference gets split using the same ratio as the recurring costs (50/50 or by custody proportion).
+
+## What Counts as "Recurring" vs. "Emergency"?
+
+- **Recurring (split monthly)**: food, litter, toys, grooming supplies, scheduled routine checkups
+- **Emergency (funded from the pool)**: a sudden injury, an unexpected illness, an urgent surgery
+- **Individual optional**: if one person wants to buy an extra accessory or toy on their own initiative, it's not split unless agreed otherwise
+
+## A Practical System for Organizing Shared Pet Ownership
+
+### Step 1: Document a Simple Agreement From the Start
+Define: the recurring cost split ratio, the emergency fund contribution amount, and the custody schedule if there is one.
+
+### Step 2: Open a Dedicated Group for Pet Expenses
+Use an app like Diviso to create a group between the two of you that separates recurring costs from the emergency fund.
+
+### Step 3: Log Every Vet Bill With Its Receipt
+Even small routine checkups, to avoid losing track of the record over time.
+
+### Step 4: Review the Fund's Balance Every Quarter
+Confirm the accumulated amount is still sufficient, and adjust the monthly contribution if needed.
+
+## Common Mistakes When Splitting Shared Pet Expenses
+
+- **Not having an emergency fund at all**: forces both parties into a tense negotiation while the pet is sick
+- **Not documenting the split ratio when custody time is uneven**: creates a sense of unfairness later
+- **Forgetting to log small recurring expenses**: they pile up and get forgotten over time
+- **Mixing optional personal purchases with shared expenses**: makes it hard to know each party's actual share
+
+## How Diviso Helps Organize Shared Pet Expenses
+
+- ✅ A dedicated group that separates recurring costs from the emergency fund
+- ✅ Transparently tracks the emergency fund's accumulated balance for both parties
+- ✅ Logs every vet bill with its receipt as documented proof
+- ✅ Easy to adjust the split ratio when the custody schedule changes
+- ✅ A running record showing every expense since joint ownership began
+
+## Frequently Asked Questions
+
+### How do we split a sudden, unexpected vet bill?
+It's best funded from a shared emergency fund built up through small advance monthly contributions, and if the bill exceeds the fund's balance, the difference is split using the same agreed ratio as the recurring costs.
+
+### Are food and litter costs always split equally?
+Usually yes if custody time is equal between both parties, but if the pet stays with one person longer, the ratio can be adjusted to reflect that instead of a plain equal split.
+
+### How much should the monthly contribution to a pet emergency fund be?
+There's no fixed number, but a small amount like 50 SAR per person monthly builds a reasonable balance within a few months that covers most common emergencies.
+
+## Conclusion
+
+Jointly owning a pet shouldn't turn into a financial dispute during a crisis. Split recurring costs fairly, build an emergency fund in advance, and let the app track everything transparently.
+
+**Try Diviso now and organize your shared pet's expenses calmly and fairly.**
+    `
+  },
+  {
     slug: "split-child-expenses-co-parents",
     title: "كيف يقسم الأبوان المنفصلان مصاريف الأطفال بعدل؟",
     titleEn: "How Should Separated or Divorced Parents Split Their Children's Expenses?",

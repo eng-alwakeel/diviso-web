@@ -16,6 +16,204 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "organize-fantasy-league-money-pool",
+    title: "كيف تنظم صندوق فلوس دوري الفانتازي بين الأصدقاء؟",
+    titleEn: "How to Organize a Fantasy League Money Pool With Friends",
+    description: "دليل عملي لتنظيم صندوق اشتراكات دوري الفانتازي (فانتازي الدوري السعودي، الإنجليزي) وتوزيع الجوائز على الفائزين بعدل، مع مثال حساب لهيكل توزيع شائع.",
+    descriptionEn: "A practical guide to organizing a fantasy league buy-in pool and distributing prizes to winners fairly, with a worked example of a common payout structure.",
+    keywords: ["صندوق فلوس الفانتازي", "تنظيم دوري الفانتازي بين الأصدقاء", "توزيع جوائز دوري الفانتازي", "اشتراك فانتازي الدوري السعودي", "كم توزيع جوائز الفانتازي", "تنظيم مسابقة فانتازي بفلوس"],
+    keywordsEn: ["how to organize a fantasy league money pool", "fantasy football buy-in and payout structure", "fantasy league prize distribution calculator", "fantasy league commissioner fee", "splitting fantasy league winnings fairly", "fantasy sports pool payout rules"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-09-15",
+    content: `
+## الإجابة المختصرة
+
+صندوق دوري الفانتازي يختلف عن تقسيم المصاريف العادي: كل مشارك يدفع اشتراكاً ثابتاً مقدماً (مثلاً 50 ريال) قبل بداية الموسم، تُجمع كلها في صندوق واحد، ثم تُوزَّع في نهاية الموسم على المتصدرين حسب ترتيبهم — وليس بالتساوي على الجميع. الفلوس هنا تدخل كاشتراك وتخرج كجائزة أداء، لا كمصروف يُقسّم.
+
+## ليش صندوق الفانتازي مختلف عن أي صندوق مشترك آخر؟
+
+في معظم السيناريوهات الجماعية (رحلة، عشاء، سكن)، الفلوس التي تدخل هي نفسها التي تُقسّم أو تُصرف على الجميع بشكل متساوٍ أو نسبي. أما في دوري الفانتازي:
+
+- **الدخول ثابت للجميع**: كل مشارك يدفع نفس المبلغ بغض النظر عن أدائه لاحقاً
+- **الخروج غير متساوٍ**: الفائزون فقط يستردون فلوساً، وقد يكون البعض بدون أي استرداد
+- **يعتمد على الأداء لا على المساهمة**: من يدفع أكثر لا يستحق أكثر، الترتيب النهائي هو الحاسم
+- **يحتاج شخصاً مسؤولاً عن الصندوق**: "الكومشنر" الذي يجمع ويحفظ ويوزّع
+
+## كيف تحدد هيكل توزيع الجوائز؟
+
+### الطريقة الأكثر شيوعاً: توزيع على أول 3 مراكز
+بدل "الفائز يأخذ كل شيء" (قد يشعر أغلب المشاركين بعدم الجدوى)، وزّعوا الجائزة على المراكز الثلاثة الأولى بنسب متدرجة.
+
+### مثال عملي
+10 مشاركين، كل واحد يدفع 50 ريال:
+
+**إجمالي الصندوق** = 50 × 10 = 500 ريال
+
+هيكل توزيع شائع: 60% للأول، 30% للثاني، 10% للثالث
+
+- **المركز الأول** يحصل على: 500 × 0.60 = 300 ريال
+- **المركز الثاني** يحصل على: 500 × 0.30 = 150 ريال
+- **المركز الثالث** يحصل على: 500 × 0.10 = 50 ريال
+
+**التحقق**: 300 + 150 + 50 = 500 ريال، مطابق تماماً لإجمالي الصندوق.
+
+### بدائل أخرى للهيكل
+- **الفائز يأخذ كل شيء**: بسيط لكنه يقلل حماس أغلب المشاركين بعد منتصف الموسم
+- **توزيع أوسع**: مثلاً أول 5 مراكز، كل واحد يسترد جزءاً، مناسب للمجموعات الكبيرة
+
+## دور "الكومشنر" في إدارة الصندوق
+
+- **جمع الاشتراكات قبل بداية الموسم**: لا يبدأ الموسم إلا بعد تأكيد دفع الجميع
+- **حفظ الصندوق بشفافية**: لا يُخلط بفلوس الكومشنر الشخصية
+- **توزيع الجوائز فور انتهاء الموسم**: بدون تأخير غير مبرر
+- **توثيق الترتيب النهائي**: لقطة شاشة أو سجل واضح من منصة الفانتازي نفسها
+
+## هل يستحق الكومشنر نسبة إضافية؟
+
+بعض المجموعات تتفق على خصم نسبة صغيرة (مثلاً 5%) من الصندوق كـ"أجر" للكومشنر مقابل جهد المتابعة والتحصيل طوال الموسم. هذا اختياري ويجب الاتفاق عليه مسبقاً وليس بعد جمع الفلوس.
+
+## خطوات عملية لتنظيم صندوق الفانتازي
+
+### الخطوة 1: حددوا الاشتراك وهيكل التوزيع قبل بداية الموسم
+لا تتركوا هذا القرار لمنتصف الموسم — يجب أن يعرف الجميع القواعد قبل الدفع.
+
+### الخطوة 2: اجمعوا الاشتراكات في مجموعة واحدة
+استخدم تطبيق مثل Diviso لتتبع من دفع اشتراكه قبل الموعد النهائي المتفق عليه.
+
+### الخطوة 3: لا تبدأوا الموسم قبل اكتمال التحصيل
+أي مشارك لم يدفع لا يُحسب ضمن المسابقة، لتجنب نزاع لاحقاً حول "دفع بعد فوات الأوان".
+
+### الخطوة 4: وثّقوا الترتيب النهائي ووزّعوا الجوائز فوراً
+بمجرد انتهاء الموسم، راجعوا الترتيب وحوّلوا الجوائز حسب الهيكل المتفق عليه.
+
+## أخطاء شائعة عند إدارة صندوق الفانتازي
+
+- **عدم الاتفاق على هيكل التوزيع مسبقاً**: يسبب خلافاً كبيراً عند نهاية الموسم
+- **بدء الموسم قبل اكتمال التحصيل**: يخلق التباساً حول من يستحق المشاركة أصلاً
+- **خلط صندوق المسابقة بفلوس شخصية للكومشنر**: يفقد الثقة إذا حصل تأخير في التوزيع
+- **تأجيل توزيع الجوائز طويلاً بعد انتهاء الموسم**: يخلق شعوراً بعدم الجدية
+
+## كيف يساعدكم Diviso في تنظيم صندوق الفانتازي؟
+
+- ✅ إنشاء مجموعة مخصصة لتتبع اشتراكات جميع المشاركين
+- ✅ تتبع من دفع ومن لم يدفع بعد قبل بداية الموسم
+- ✅ تسجيل هيكل التوزيع المتفق عليه كمرجع واضح للجميع
+- ✅ توزيع الجوائز النهائية بمبالغ مخصصة حسب الترتيب
+- ✅ سجل شفاف يوثّق كل موسم منفصل إذا تكررت المسابقة سنوياً
+
+## أسئلة شائعة
+
+### كيف نحدد نسبة توزيع الجوائز في دوري الفانتازي؟
+لا توجد قاعدة ثابتة، لكن الهيكل الأكثر شيوعاً هو توزيع الصندوق على أول 3 مراكز بنسب متدرجة (مثلاً 60% / 30% / 10%)، ويجب الاتفاق عليه قبل بداية الموسم وليس بعده.
+
+### ماذا لو لم يدفع أحد المشاركين اشتراكه قبل بداية الموسم؟
+الأفضل استبعاده من المسابقة حتى يدفع، ولا يُسمح ببدء الموسم قبل اكتمال تحصيل جميع الاشتراكات، لتجنب نزاع لاحق حول استحقاقه للجائزة.
+
+### هل يأخذ الكومشنر نسبة من الصندوق مقابل إدارته؟
+يعتمد على اتفاق المجموعة. بعضها يخصص نسبة صغيرة (مثل 5%) كأجر إدارة، لكن هذا يجب أن يكون معلناً وواضحاً للجميع قبل جمع الاشتراكات، لا قراراً منفرداً من الكومشنر لاحقاً.
+
+## الخلاصة
+
+صندوق دوري الفانتازي يحتاج قواعد واضحة من اليوم الأول: اشتراك ثابت، هيكل توزيع متفق عليه، وكومشنر شفاف. حددوا القواعد مبكراً ودعوا التطبيق يتابع من دفع حتى نهاية الموسم.
+
+**جرب Diviso الآن ونظّم صندوق دوري الفانتازي مع أصدقائك بعدل تام.**
+    `,
+    contentEn: `
+## Quick Answer
+
+A fantasy league money pool works differently from a regular shared expense: each participant pays a fixed buy-in upfront (say, 50 SAR) before the season starts, all of it goes into one pool, and it gets distributed at the end of the season to the top finishers based on their ranking — not split evenly among everyone. The money goes in as a buy-in and comes out as a performance-based prize, not as a divided cost.
+
+## Why a Fantasy League Pool Is Different From Any Other Shared Fund
+
+In most group scenarios (a trip, a dinner, shared housing), the money that goes in is the same money that gets divided or spent equally or proportionally among everyone. In a fantasy league, though:
+
+- **Entry is fixed for everyone**: each participant pays the same amount regardless of how they'll perform later
+- **Payout is uneven**: only the winners get money back, and some participants may get nothing at all
+- **It's based on performance, not contribution**: paying more doesn't earn you more — the final standings decide
+- **It needs someone responsible for the pool**: a "commissioner" who collects, holds, and distributes the funds
+
+## How to Set the Payout Structure
+
+### The Most Common Method: Distribute Across the Top 3 Places
+Instead of "winner takes all" (which can demotivate most participants once they're out of contention), distribute the prize across the top three finishers in graduated percentages.
+
+### A Worked Example
+10 participants, each paying 50 SAR:
+
+**Total pool** = 50 × 10 = 500 SAR
+
+A common payout structure: 60% to 1st place, 30% to 2nd, 10% to 3rd
+
+- **1st place** gets: 500 × 0.60 = 300 SAR
+- **2nd place** gets: 500 × 0.30 = 150 SAR
+- **3rd place** gets: 500 × 0.10 = 50 SAR
+
+**Check**: 300 + 150 + 50 = 500 SAR, matching the total pool exactly.
+
+### Other Structure Options
+- **Winner takes all**: simple, but reduces most participants' motivation halfway through the season
+- **A wider spread**: for example, the top 5 places each get a portion, suited to larger groups
+
+## The Commissioner's Role in Managing the Pool
+
+- **Collecting buy-ins before the season starts**: the season shouldn't begin until everyone's payment is confirmed
+- **Holding the pool transparently**: it should never mix with the commissioner's personal funds
+- **Distributing prizes right after the season ends**: without unjustified delay
+- **Documenting the final standings**: a screenshot or clear record from the fantasy platform itself
+
+## Does the Commissioner Deserve an Extra Cut?
+
+Some groups agree to deduct a small percentage (say, 5%) from the pool as a "management fee" for the commissioner's effort tracking and collecting throughout the season. This is optional and must be agreed upon in advance, not decided after the money has already been collected.
+
+## A Practical System for Organizing the Fantasy Pool
+
+### Step 1: Set the Buy-In and Payout Structure Before the Season Starts
+Don't leave this decision until midseason — everyone needs to know the rules before paying.
+
+### Step 2: Collect Buy-Ins in One Group
+Use an app like Diviso to track who has paid their buy-in before the agreed deadline.
+
+### Step 3: Don't Start the Season Before Collection Is Complete
+Anyone who hasn't paid shouldn't be counted in the competition, to avoid a later dispute over "paying too late."
+
+### Step 4: Document the Final Standings and Distribute Prizes Immediately
+As soon as the season ends, review the standings and transfer the prizes according to the agreed structure.
+
+## Common Mistakes When Managing a Fantasy League Pool
+
+- **Not agreeing on the payout structure in advance**: causes major disputes at the end of the season
+- **Starting the season before collection is complete**: creates confusion over who's actually entitled to participate
+- **Mixing the pool with the commissioner's personal funds**: erodes trust if the payout is delayed
+- **Delaying prize distribution too long after the season ends**: creates a sense that the competition isn't being taken seriously
+
+## How Diviso Helps Organize a Fantasy League Pool
+
+- ✅ Creates a dedicated group to track all participants' buy-ins
+- ✅ Tracks who has and hasn't paid before the season starts
+- ✅ Logs the agreed payout structure as a clear reference for everyone
+- ✅ Distributes final prizes as custom amounts based on the standings
+- ✅ A transparent record documenting each season separately if the competition repeats yearly
+
+## Frequently Asked Questions
+
+### How do we decide the payout percentage split in a fantasy league?
+There's no fixed rule, but the most common structure is distributing the pool across the top 3 finishers in graduated percentages (like 60% / 30% / 10%), and it must be agreed upon before the season starts, not after.
+
+### What if a participant doesn't pay their buy-in before the season starts?
+It's best to exclude them from the competition until they pay, and the season shouldn't start until all buy-ins are fully collected, to avoid a later dispute over their entitlement to a prize.
+
+### Does the commissioner take a cut of the pool for managing it?
+It depends on the group's agreement. Some allocate a small percentage (like 5%) as a management fee, but this must be announced and clear to everyone before buy-ins are collected, not a decision the commissioner makes unilaterally afterward.
+
+## Conclusion
+
+A fantasy league money pool needs clear rules from day one: a fixed buy-in, an agreed payout structure, and a transparent commissioner. Set the rules early and let the app track who's paid until the season ends.
+
+**Try Diviso now and organize your fantasy league pool with your friends with complete fairness.**
+    `
+  },
+  {
     slug: "split-shared-pet-ownership-expenses",
     title: "كيف تقسم مصاريف الحيوان الأليف المشترك بين شخصين؟",
     titleEn: "How to Split Expenses for a Jointly-Owned Pet Between Two People",

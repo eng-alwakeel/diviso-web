@@ -16,6 +16,198 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-cost-watching-match-private-room",
+    title: "كيف تقسم تكلفة حجز غرفة خاصة لمشاهدة المباراة مع الشباب؟",
+    titleEn: "How to Split the Cost of Renting a Private Screening Room to Watch a Match",
+    description: "طريقة عادلة لتقسيم تكلفة حجز غرفة خاصة في مطعم أو مقهى لمشاهدة المباراة، مع فهم شرط الحد الأدنى للطلب للشخص ومثال حساب عملي.",
+    descriptionEn: "A fair way to split the cost of booking a private room at a café or restaurant to watch a match, including how the per-person minimum spend requirement works, with a worked example.",
+    keywords: ["تقسيم تكلفة حجز غرفة المباراة", "حجز غرفة خاصة لمشاهدة كورة", "الحد الأدنى للطلب في المقهى", "تقسيم فاتورة استئجار شاشة", "تكلفة حجز صالة مباراة", "تقسيم مصاريف مشاهدة المباراة جماعي"],
+    keywordsEn: ["how to split cost of private screening room", "café minimum spend split calculator", "renting a room to watch a match cost", "splitting sports bar table fee", "watch party room rental cost per person", "group screening room booking split"],
+    category: "tips",
+    readTime: 6,
+    publishDate: "2026-09-16",
+    content: `
+## الإجابة المختصرة
+
+عند حجز غرفة خاصة أو طاولة محجوزة في مطعم أو مقهى لمشاهدة مباراة جماعية، تُقسّم **رسوم الحجز الثابتة** (إن وجدت) بالتساوي على جميع الحاضرين، بينما يدفع كل شخص **طلبه الشخصي من الطعام والمشروبات** بشكل منفصل، مع الالتزام بأي **حد أدنى للطلب للشخص** يفرضه المكان.
+
+## ليش هذا السيناريو له حساب خاص؟
+
+حجز غرفة لمشاهدة مباراة يجمع بين نوعين من التكاليف لا ينطبق عليهما نفس المنطق:
+
+- **رسم حجز ثابت**: بعض الأماكن تفرض رسماً ثابتاً لحجز الغرفة الخاصة أو الشاشة بغض النظر عن عدد الحاضرين
+- **حد أدنى للطلب الفردي**: أغلب المطاعم والمقاهي تشترط طلباً بحد أدنى معين لكل شخص (مثلاً 50 ريال) لتغطية تكلفة حجز المساحة
+- **اختلاف الطلبات الفردية**: أحدهم قد يطلب وجبة كاملة، وآخر يطلب مشروباً واحداً فقط
+
+## كيف تحسب التكلفة بدقة؟
+
+### الخطوة 1: قسّم رسم الحجز الثابت بالتساوي
+لو فرض المكان رسم حجز 300 ريال للغرفة بغض النظر عن العدد، يُقسّم هذا الرسم على عدد الحاضرين بالتساوي.
+
+### الخطوة 2: كل شخص يدفع طلبه الفعلي
+الطعام والمشروبات التي طلبها كل شخص تُحسب على حسابه الخاص، لا تُقسّم على الباقين.
+
+### الخطوة 3: التزم بالحد الأدنى للطلب لكل شخص
+لو كان الحد الأدنى 50 ريال للفرد، ومن طلب أقل من ذلك، يجب أن يكمّل الفرق حتى يصل لهذا الحد.
+
+### مثال عملي
+مجموعة من 8 أشخاص حجزوا غرفة خاصة بمقهى:
+
+- **رسم حجز الغرفة** = 300 ريال ثابت
+- **الحد الأدنى للطلب** = 50 ريال للفرد
+
+**نصيب كل شخص من رسم الحجز** = 300 ÷ 8 = 37.5 ريال
+
+لو طلب أحدهم وجبة بـ70 ريال، فإجمالي ما يدفعه = 70 (طلبه) + 37.5 (نصيبه من الحجز) = 107.5 ريال.
+
+لو طلب آخر مشروباً فقط بـ30 ريال (أقل من الحد الأدنى 50 ريال)، يجب أن يزيد طلبه ليصل لـ50 ريال على الأقل، فيصبح إجمالي ما يدفعه = 50 + 37.5 = 87.5 ريال.
+
+## ماذا لو لم يكن هناك رسم حجز ثابت، فقط حد أدنى للطلب؟
+
+في هذه الحالة، لا حاجة لتقسيم أي رسم — كل شخص يلتزم فقط بالحد الأدنى لطلبه الشخصي، ولا يوجد مبلغ مشترك يُقسّم على الجميع.
+
+## كيف تتعامل مع مشروبات أو مقبلات مشتركة على الطاولة؟
+
+لو طلبت المجموعة أصنافاً مشتركة (مقبلات كبيرة، عصائر للطاولة كلها)، اجمع تكلفتها مع رسم الحجز الثابت (إن وجد) وقسّمها بالتساوي، بدل تحميلها على شخص واحد فقط.
+
+## خطوات عملية لتنظيم الحجز
+
+### الخطوة 1: تأكد من شروط الحجز مسبقاً
+اتصل بالمكان أو راجع الموقع لمعرفة: هل هناك رسم حجز ثابت؟ وما الحد الأدنى للطلب لكل شخص؟
+
+### الخطوة 2: أعلن الشروط للمجموعة قبل الحجز
+حتى يعرف الجميع مسبقاً كم الحد الأدنى المتوقع دفعه، ويتجنب أي مفاجآت عند الفاتورة.
+
+### الخطوة 3: سجّل الفاتورة فور استلامها
+استخدم تطبيق مثل Diviso لتسجيل رسم الحجز كمصروف مقسّم بالتساوي، وطلب كل شخص كمصروف فردي منفصل.
+
+### الخطوة 4: راجع الحد الأدنى قبل إغلاق الطلب
+تأكد أن كل شخص وصل للحد الأدنى المطلوب قبل طلب الفاتورة النهائية، لتجنب رسوم إضافية مفاجئة.
+
+## أخطاء شائعة عند تقسيم تكلفة غرفة المباراة
+
+- **تقسيم كل شيء بالتساوي بما فيها الطلبات الفردية**: يظلم من طلب أقل لصالح من طلب أكثر
+- **تجاهل شرط الحد الأدنى للفرد**: يفاجئ المجموعة برسوم إضافية عند الفاتورة النهائية
+- **عدم الاستفسار عن رسم الحجز مسبقاً**: بعض الأماكن تضيف رسماً غير متوقع لحجز الغرفة نفسها
+- **نسيان تقسيم الأصناف المشتركة على الطاولة**: تبقى معلقة على شخص واحد فقط
+
+## كيف يساعدك Diviso في تقسيم تكلفة مشاهدة المباراة؟
+
+- ✅ تسجيل رسم الحجز الثابت كمصروف يُقسّم بالتساوي على الحاضرين
+- ✅ تسجيل طلب كل شخص كمصروف فردي منفصل تلقائياً
+- ✅ تتبع سهل لمن وصل للحد الأدنى المطلوب ومن لم يصل بعد
+- ✅ تقسيم الأصناف المشتركة على الطاولة بالتساوي
+- ✅ سجل واضح للفاتورة الكاملة يسهّل التسوية بعد المباراة
+
+## أسئلة شائعة
+
+### هل يُقسّم الحد الأدنى للطلب على كل المجموعة؟
+لا، الحد الأدنى للطلب مطلوب من كل شخص على حسابه الفردي فقط، وليس مبلغاً يُجمع ويُقسّم على الجميع. أما رسم حجز الغرفة الثابت (إن وجد) فهو الذي يُقسّم بالتساوي.
+
+### ماذا لو طلب شخص أقل من الحد الأدنى المطلوب؟
+يجب أن يزيد طلبه (بإضافة صنف آخر أو مشروب) حتى يصل لقيمة الحد الأدنى المفروض من المكان لكل فرد.
+
+### كيف نقسم تكلفة أصناف طُلبت للطاولة بالكامل؟
+اجمع تكلفة الأصناف المشتركة مع رسم حجز الغرفة الثابت إن وجد، ثم قسّم المجموع بالتساوي على جميع الحاضرين، بدل تحميلها على شخص واحد.
+
+## الخلاصة
+
+مشاهدة المباراة الجماعية بغرفة خاصة لا تحتاج حسابات معقدة. اعرفوا شروط المكان مسبقاً، قسّموا رسم الحجز بالتساوي، ودعوا كل شخص يدفع طلبه الفعلي.
+
+**جرب Diviso الآن وقسّم تكلفة مشاهدة المباراة القادمة بعدل وسرعة.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When booking a private room or a reserved table at a restaurant or café to watch a match as a group, the **fixed booking fee** (if any) gets split equally among all attendees, while each person pays for their **own food and drink order** separately, subject to any **per-person minimum spend** the venue requires.
+
+## Why This Scenario Needs Its Own Calculation
+
+Booking a room to watch a match combines two types of costs that don't follow the same logic:
+
+- **A fixed booking fee**: some venues charge a flat fee for the private room or screen regardless of headcount
+- **A minimum spend per person**: most restaurants and cafés require each individual to order at least a set amount (say, 50 SAR) to cover the cost of holding the space
+- **Different individual orders**: one person might order a full meal, another just a single drink
+
+## How to Calculate the Cost Precisely
+
+### Step 1: Split the Fixed Booking Fee Equally
+If the venue charges a 300 SAR booking fee for the room regardless of headcount, that fee gets split equally among everyone present.
+
+### Step 2: Each Person Pays Their Own Actual Order
+The food and drinks each person orders go on their own tab, not divided among the rest.
+
+### Step 3: Meet the Per-Person Minimum Spend
+If the minimum is 50 SAR per person, whoever orders less than that needs to top up their order to reach that threshold.
+
+### A Worked Example
+A group of 8 books a private room at a café:
+
+- **Room booking fee** = a flat 300 SAR
+- **Minimum spend** = 50 SAR per person
+
+**Each person's share of the booking fee** = 300 ÷ 8 = 37.5 SAR
+
+If someone orders a 70 SAR meal, their total = 70 (their order) + 37.5 (their share of the booking fee) = 107.5 SAR.
+
+If someone else orders just a 30 SAR drink (below the 50 SAR minimum), they need to add more to their order to reach at least 50 SAR, making their total = 50 + 37.5 = 87.5 SAR.
+
+## What If There's No Fixed Booking Fee, Just a Minimum Spend?
+
+In that case, there's no fee to split at all — each person simply meets the minimum for their own individual order, and there's no shared amount divided among everyone.
+
+## What About Shared Drinks or Appetizers on the Table?
+
+If the group orders shared items (a large appetizer platter, pitchers for the whole table), add their cost to the fixed booking fee (if any) and split the total equally, instead of billing it to just one person.
+
+## A Practical System for Organizing the Booking
+
+### Step 1: Confirm the Venue's Terms in Advance
+Call the venue or check their site to learn: is there a fixed booking fee? What's the minimum spend per person?
+
+### Step 2: Announce the Terms to the Group Before Booking
+So everyone knows in advance roughly how much they're expected to spend, avoiding surprises when the bill arrives.
+
+### Step 3: Log the Bill as Soon as You Get It
+Use an app like Diviso to log the booking fee as an expense split equally, and each person's order as a separate individual expense.
+
+### Step 4: Check the Minimum Spend Before Closing the Order
+Confirm everyone has reached the required minimum before requesting the final bill, to avoid surprise added fees.
+
+## Common Mistakes When Splitting a Match-Watching Room's Cost
+
+- **Splitting everything equally, including individual orders**: unfairly penalizes whoever ordered less in favor of whoever ordered more
+- **Ignoring the per-person minimum spend requirement**: surprises the group with extra fees at the final bill
+- **Not asking about the booking fee in advance**: some venues add an unexpected fee just for reserving the room
+- **Forgetting to split shared items on the table**: leaves them stuck on just one person's tab
+
+## How Diviso Helps Split the Cost of Watching a Match
+
+- ✅ Logs the fixed booking fee as an expense split equally among attendees
+- ✅ Logs each person's order automatically as a separate individual expense
+- ✅ Easily tracks who has and hasn't reached the required minimum
+- ✅ Splits shared table items equally among everyone
+- ✅ A clear record of the full bill that makes settling up after the match easy
+
+## Frequently Asked Questions
+
+### Is the minimum spend requirement split across the whole group?
+No, the minimum spend is required from each person on their own individual tab, not a shared amount collected and divided among everyone. The fixed room booking fee (if any) is what gets split equally.
+
+### What if someone orders less than the required minimum?
+They need to add to their order (another item or drink) until it reaches the minimum amount the venue requires per person.
+
+### How do we split the cost of items ordered for the whole table?
+Add the shared items' cost to the fixed booking fee if there is one, then split the total equally among all attendees, instead of billing it to just one person.
+
+## Conclusion
+
+Watching a match together in a private room doesn't need complicated math. Learn the venue's terms in advance, split the booking fee equally, and let each person pay for what they actually ordered.
+
+**Try Diviso now and split the cost of your next match-watching gathering fairly and quickly.**
+    `
+  },
+  {
     slug: "organize-fantasy-league-money-pool",
     title: "كيف تنظم صندوق فلوس دوري الفانتازي بين الأصدقاء؟",
     titleEn: "How to Organize a Fantasy League Money Pool With Friends",

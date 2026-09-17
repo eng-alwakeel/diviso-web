@@ -16,6 +16,206 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-group-photoshoot-cost-by-family",
+    title: "كيف تقسم تكلفة جلسة التصوير الجماعية بين العائلات؟",
+    titleEn: "How to Split a Group Photoshoot's Cost by Family or Couple Unit",
+    description: "لماذا لا يُقسّم أجر المصور على عدد الرؤوس؟ دليل عملي لتقسيم تكلفة التصوير الجماعي حسب عدد الوحدات العائلية بدل الأفراد، مع مثال حساب وطريقة التعامل مع الإضافات.",
+    descriptionEn: "Why shouldn't a photographer's fee be split by headcount? A practical guide to splitting a group photoshoot's cost by family or couple unit instead, with a worked example and how to handle add-ons.",
+    keywords: ["تقسيم تكلفة التصوير الجماعي", "تصوير عائلي مشترك", "كم نصيب كل عائلة في التصوير", "تقسيم أجر المصور بين الأسر", "تصوير لم شمل العائلة تكلفة", "تقسيم تكلفة جلسة تصوير جماعية"],
+    keywordsEn: ["how to split cost of hiring a photographer for a group", "family photoshoot cost split calculator", "splitting photography package by family unit", "group photo session cost sharing", "family reunion photographer cost split", "fair way to split photoshoot expenses"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-09-17",
+    content: `
+## الإجابة المختصرة
+
+عند حجز مصور لجلسة تصوير جماعية (لم شمل عائلي، مجموعة أصدقاء)، الطريقة الأعدل هي تقسيم أجر الباقة الإجمالي على **عدد الوحدات العائلية المشاركة** (كل أسرة أو زوجين يُحسبان كوحدة واحدة) بدل تقسيمه على عدد الرؤوس، لأن الصور النهائية عادة تُسلّم لكل أسرة كمجموعة واحدة، لا لكل فرد بداخلها.
+
+## ليش التقسيم على عدد الرؤوس غير عادل هنا؟
+
+لو عائلة مكوّنة من 5 أفراد وشخص أعزب حجزوا معاً جلسة تصوير، والتقسيم على عدد الرؤوس (6 أشخاص)، فستدفع تلك العائلة 5 أضعاف ما يدفعه الشخص الأعزب رغم أن:
+
+- **الصور تُسلّم كملف واحد للعائلة**: لا فرق في عدد الصور المسلّمة سواء كانت العائلة كبيرة أو صغيرة
+- **الوقت المخصص للتصوير متقارب**: المصور يقضي وقتاً مشابهاً لتصوير كل وحدة عائلية بغض النظر عن حجمها
+- **الاستفادة من الباقة متساوية بين الوحدات**: كل عائلة تحصل على نفس عدد اللقطات المعدّلة تقريباً
+
+## كيف تحسب نصيب كل وحدة عائلية بدقة؟
+
+### القاعدة
+**نصيب كل وحدة = تكلفة الباقة الإجمالية ÷ عدد الوحدات العائلية المشاركة**
+
+### مثال عملي
+جلسة تصوير للم شمل عائلي بتكلفة باقة 1500 ريال، شارك فيها:
+
+- عائلتان بأطفال (كل عائلة = وحدة واحدة)
+- زوجان بدون أطفال (وحدة واحدة)
+- شقيقان أعزبان، كل واحد يريد صوراً منفصلة (وحدتان منفصلتان)
+
+**إجمالي الوحدات** = 2 + 1 + 2 = 5 وحدات
+
+**نصيب كل وحدة** = 1500 ÷ 5 = 300 ريال
+
+بغض النظر عن حجم العائلة، تدفع كل وحدة 300 ريال فقط، سواء كانت أسرة من 5 أفراد أو شخصاً واحداً أعزب طلب صوراً منفصلة.
+
+## ماذا لو أراد أحدهم إضافات (طباعة، ألبوم، صور إضافية)؟
+
+الإضافات الفردية تُحسب على حساب الوحدة التي طلبتها فقط، ولا تُضاف لتكلفة الباقة الأساسية المشتركة. مثلاً لو طلبت إحدى العائلات ألبوماً مطبوعاً بـ200 ريال إضافية، تدفعه بمفردها فوق نصيبها من الباقة الأساسية.
+
+## ماذا لو انسحب أحد قبل الجلسة؟
+
+أعيدوا حساب عدد الوحدات وقسّموا التكلفة الإجمالية على العدد الجديد. لو كانت الباقة نفسها لا تتغير سعرها بغض النظر عن عدد المشاركين (وهو الشائع)، فالانسحاب يرفع نصيب باقي الوحدات قليلاً.
+
+## كيف تُعرّف "الوحدة العائلية" بوضوح قبل الحجز؟
+
+- **عائلة بأطفال**: وحدة واحدة بغض النظر عن عدد الأطفال
+- **زوجان بدون أطفال**: وحدة واحدة
+- **شخص أعزب يريد صوراً فردية منفصلة**: وحدة مستقلة
+- **مجموعة أصدقاء تريد صورة جماعية واحدة فقط**: قد تُحسب كوحدة واحدة إذا لم يحتاجوا صوراً فردية منفصلة
+
+اتفقوا على هذا التعريف بوضوح قبل الحجز لتجنب أي التباس لاحقاً.
+
+## خطوات عملية لتنظيم تكلفة التصوير الجماعي
+
+### الخطوة 1: حددوا عدد الوحدات المشاركة مبكراً
+اجمعوا قائمة نهائية بالعائلات والأفراد المشاركين قبل التواصل مع المصور.
+
+### الخطوة 2: اتفقوا على تعريف "الوحدة" بوضوح
+هل الأخوة العزاب يُحسبون وحدة واحدة أم منفصلة؟ حسموا هذا قبل الحجز.
+
+### الخطوة 3: سجّلوا العربون والتكلفة النهائية في مجموعة واحدة
+استخدم تطبيق مثل Diviso لتسجيل تكلفة الباقة مقسّمة على الوحدات، والإضافات الفردية منفصلة.
+
+### الخطوة 4: حصّلوا نصيب كل وحدة قبل موعد الجلسة
+لا تنتظروا حتى يستلم المصور الصور — حصّلوا العربون على الأقل مسبقاً.
+
+## أخطاء شائعة عند تقسيم تكلفة التصوير الجماعي
+
+- **التقسيم على عدد الرؤوس بدل الوحدات**: يظلم العائلات الكبيرة بشكل واضح
+- **عدم تعريف "الوحدة" مسبقاً**: يسبب خلافاً حول من يُحسب وحدة مستقلة
+- **خلط الإضافات الفردية بالتكلفة الأساسية**: يصعّب معرفة من طلب ماذا
+- **تأجيل التحصيل لما بعد استلام الصور**: يصعب المطالبة بعد انتهاء الخدمة فعلياً
+
+## كيف يساعدك Diviso في تقسيم تكلفة التصوير الجماعي؟
+
+- ✅ تسجيل تكلفة الباقة الأساسية مقسّمة على عدد الوحدات العائلية
+- ✅ فصل الإضافات الفردية (طباعة، ألبومات) عن التكلفة المشتركة
+- ✅ إعادة حساب النصيب تلقائياً عند تغيّر عدد الوحدات المشاركة
+- ✅ تتبع من دفع العربون ومن عليه نصيبه المتبقي
+- ✅ سجل واضح يوضح تعريف كل وحدة ونصيبها المتفق عليه
+
+## أسئلة شائعة
+
+### هل تدفع العائلة الكبيرة أكثر من الشخص الأعزب في التصوير الجماعي؟
+لا، إذا اتُّبع مبدأ التقسيم بالوحدات، فكل عائلة أو زوجين يُحسبان كوحدة واحدة بغض النظر عن عدد أفرادها، ويدفعون نفس نصيب أي وحدة أخرى، سواء كانت شخصاً واحداً أو أسرة كبيرة.
+
+### كيف نحسب نصيب كل وحدة في جلسة تصوير جماعية؟
+اقسم تكلفة الباقة الإجمالية على عدد الوحدات العائلية المشاركة (وليس عدد الأفراد)، حيث تُحسب كل أسرة أو زوجين كوحدة واحدة مستقلة.
+
+### هل تُضاف تكلفة الطباعة أو الألبوم الإضافي لتكلفة الباقة المشتركة؟
+لا، هذه إضافات فردية تُحمّل فقط على الوحدة التي طلبتها، ولا تُقسّم على باقي المشاركين في الجلسة.
+
+## الخلاصة
+
+تقسيم تكلفة التصوير الجماعي بعدل يعتمد على عدد الوحدات العائلية، لا عدد الرؤوس. عرّفوا "الوحدة" بوضوح مسبقاً، افصلوا الإضافات الفردية، ودعوا التطبيق يحسب نصيب كل وحدة بدقة.
+
+**جرب Diviso الآن وقسّم تكلفة جلسة التصوير الجماعية القادمة بعدل تام.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When booking a photographer for a group session (a family reunion, a friend group), the fairest method is to split the total package fee by the **number of participating family or couple units** (each family or couple counts as one unit) instead of by headcount, since the final photos are usually delivered to each family as one set, not to every individual within it.
+
+## Why Splitting by Headcount Isn't Fair Here
+
+If a family of 5 and a single person book a photoshoot together, and the cost is split by headcount (6 people), that family would pay 5 times what the single person pays, despite the fact that:
+
+- **Photos are delivered as one file per family**: the number of delivered photos doesn't change whether the family is large or small
+- **The time spent shooting is roughly similar**: the photographer spends comparable time on each family unit regardless of its size
+- **The package's value is shared equally among units**: each family gets roughly the same number of edited shots
+
+## How to Calculate Each Unit's Exact Share
+
+### The Formula
+**Each unit's share = total package cost ÷ number of participating family units**
+
+### A Worked Example
+A family reunion photoshoot with a package cost of 1,500 SAR, involving:
+
+- Two families with children (each family = one unit)
+- A couple without children (one unit)
+- Two single siblings, each wanting separate portraits (two separate units)
+
+**Total units** = 2 + 1 + 2 = 5 units
+
+**Each unit's share** = 1,500 ÷ 5 = 300 SAR
+
+Regardless of family size, each unit pays just 300 SAR, whether it's a family of 5 or a single person who requested separate portraits.
+
+## What If Someone Wants Add-Ons (Prints, an Album, Extra Photos)?
+
+Individual add-ons are billed only to the unit that requested them, and aren't added to the shared base package cost. For example, if one family requests a 200 SAR printed album, they pay that on their own, on top of their share of the base package.
+
+## What If Someone Drops Out Before the Session?
+
+Recalculate the number of units and split the total cost by the new count. If the package's price stays fixed regardless of the number of participants (which is common), a dropout slightly raises the remaining units' shares.
+
+## How to Clearly Define a "Family Unit" Before Booking
+
+- **A family with children**: one unit regardless of the number of children
+- **A couple without children**: one unit
+- **A single person wanting separate individual portraits**: a standalone unit
+- **A group of friends who only want one group photo**: may count as a single unit if they don't need separate individual shots
+
+Agree on this definition clearly before booking to avoid any confusion later.
+
+## A Practical System for Organizing the Photoshoot's Cost
+
+### Step 1: Determine the Number of Participating Units Early
+Get a final list of participating families and individuals before contacting the photographer.
+
+### Step 2: Agree on the Definition of a "Unit" Clearly
+Do single siblings count as one unit or separate ones? Settle this before booking.
+
+### Step 3: Log the Deposit and Final Cost in One Group
+Use an app like Diviso to log the package cost split by unit, with individual add-ons tracked separately.
+
+### Step 4: Collect Each Unit's Share Before the Session Date
+Don't wait until the photographer delivers the photos — collect at least the deposit in advance.
+
+## Common Mistakes When Splitting a Group Photoshoot's Cost
+
+- **Splitting by headcount instead of by unit**: clearly disadvantages larger families
+- **Not defining "unit" in advance**: causes disputes over who counts as a standalone unit
+- **Mixing individual add-ons with the base cost**: makes it hard to know who requested what
+- **Delaying collection until after receiving the photos**: makes it harder to collect once the service is already delivered
+
+## How Diviso Helps Split a Group Photoshoot's Cost
+
+- ✅ Logs the base package cost split by the number of family units
+- ✅ Separates individual add-ons (prints, albums) from the shared cost
+- ✅ Automatically recalculates each share when the number of participating units changes
+- ✅ Tracks who has paid the deposit and who still owes their remaining share
+- ✅ A clear record documenting each unit's definition and agreed share
+
+## Frequently Asked Questions
+
+### Does a large family pay more than a single person in a group photoshoot?
+No, if the per-unit splitting principle is followed, each family or couple counts as one unit regardless of its size, and pays the same share as any other unit, whether that's a single person or a large family.
+
+### How do we calculate each unit's share in a group photo session?
+Divide the total package cost by the number of participating family units (not individuals), where each family or couple counts as one independent unit.
+
+### Is the cost of prints or an extra album added to the shared package cost?
+No, these are individual add-ons billed only to the unit that requested them, and aren't split among the rest of the session's participants.
+
+## Conclusion
+
+Splitting a group photoshoot's cost fairly depends on the number of family units, not headcount. Define "unit" clearly in advance, separate individual add-ons, and let the app calculate each unit's exact share.
+
+**Try Diviso now and split your next group photoshoot's cost with complete fairness.**
+    `
+  },
+  {
     slug: "split-cost-watching-match-private-room",
     title: "كيف تقسم تكلفة حجز غرفة خاصة لمشاهدة المباراة مع الشباب؟",
     titleEn: "How to Split the Cost of Renting a Private Screening Room to Watch a Match",

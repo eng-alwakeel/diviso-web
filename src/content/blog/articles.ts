@@ -16,6 +16,200 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-concert-tickets-cost-group-purchase",
+    title: "كيف تقسم تكلفة تذاكر حفلة أو فعالية اشتراها شخص واحد للمجموعة؟",
+    titleEn: "How to Split Concert or Event Ticket Costs When One Person Buys for the Group",
+    description: "لماذا يجب تحصيل فلوس التذاكر قبل الفعالية لا بعدها؟ دليل عملي لتقسيم تكلفة التذاكر الجماعية حسب فئة المقعد، مع سياسة واضحة للتعامل مع الانسحاب بعد الشراء.",
+    descriptionEn: "Why should ticket money be collected before the event, not after? A practical guide to splitting group ticket costs by seat tier, with a clear policy for handling cancellations after purchase.",
+    keywords: ["تقسيم تكلفة تذاكر الحفلة", "شراء تذاكر جماعية", "من يدفع إذا انسحب أحد بعد شراء التذكرة", "تقسيم تذاكر فعالية بين الأصدقاء", "تحصيل فلوس التذاكر مقدماً", "تقسيم تكلفة تذاكر حسب فئة المقعد"],
+    keywordsEn: ["how to split concert ticket costs with friends", "who pays if someone cancels after buying tickets", "group ticket purchase reimbursement", "splitting event tickets by seat tier", "collect ticket money before event", "fair way to split concert ticket prices"],
+    category: "tips",
+    readTime: 6,
+    publishDate: "2026-09-18",
+    content: `
+## الإجابة المختصرة
+
+عندما يشتري شخص واحد تذاكر حفلة أو فعالية لمجموعة أصدقاء (بسبب حد الشراء لكل حساب أو ضرورة اختيار المقاعد معاً)، يجب تحصيل فلوس كل شخص **قبل إتمام عملية الشراء**، لا بعد الفعالية، لأن التذاكر غالباً غير قابلة للاسترجاع. ولو اختلفت أسعار المقاعد داخل المجموعة (VIP مقابل عادي)، يدفع كل شخص سعر مقعده الفعلي، لا حصة متساوية من الإجمالي.
+
+## ليش يشتري شخص واحد التذاكر لكل المجموعة؟
+
+هذا شائع جداً في حجوزات الحفلات والفعاليات الكبيرة:
+
+- **حد شراء لكل حساب**: كثير من منصات التذاكر تحدد عدداً أقصى للتذاكر لكل شخص
+- **ضرورة اختيار المقاعد معاً**: لضمان جلوس المجموعة بجانب بعضها، يجب الشراء في معاملة واحدة
+- **أكواد الحجز المبكر (Presale)**: أحياناً شخص واحد فقط يملك كود الأولوية
+
+## ليش يجب تحصيل الفلوس قبل الشراء لا بعده؟
+
+- **التذاكر غير قابلة للاسترجاع عادة**: بمجرد الشراء، لا يمكن التراجع أو استرداد المبلغ
+- **المشتري يتحمل المخاطرة المالية كاملة**: لو تأخر أحد في الدفع، يبقى المبلغ معلقاً على المشتري وحده
+- **تجنّب "سأدفع لاحقاً" التي تتحول لنسيان**: كلما اقتربت الفعالية، صعُب المطالبة
+
+## كيف تقسم التكلفة إذا اختلفت أسعار المقاعد؟
+
+### القاعدة
+كل شخص يدفع **السعر الفعلي لمقعده**، وليس حصة متساوية من إجمالي الفاتورة.
+
+### مثال عملي
+مجموعة من 6 أصدقاء حجزت لحفلة:
+
+- شخصان اختارا مقاعد VIP بسعر 400 ريال لكل تذكرة
+- 4 أشخاص اختاروا مقاعد عادية بسعر 250 ريال لكل تذكرة
+
+**إجمالي VIP** = 400 × 2 = 800 ريال
+**إجمالي العادي** = 250 × 4 = 1000 ريال
+**الإجمالي الكلي** = 800 + 1000 = 1800 ريال
+
+كل شخص من فئة VIP يدفع 400 ريال، وكل شخص من الفئة العادية يدفع 250 ريال — لا يُقسّم الإجمالي (1800 ÷ 6 = 300 ريال) بالتساوي، لأن هذا يظلم من اختار مقعداً أرخص لصالح من اختار الأغلى.
+
+## ماذا لو انسحب أحد بعد شراء التذكرة؟
+
+اتفقوا مسبقاً على سياسة واضحة:
+
+- **السياسة الأكثر شيوعاً**: الشخص المنسحب يدفع ثمن تذكرته كاملاً لأن الشراء تم بالفعل، ثم يحاول بيعها أو التنازل عنها لشخص آخر
+- **بديل**: لو تمكن من بيع التذكرة لشخص خارج المجموعة، يُعفى من الدفع ويحصل المشتري الجديد على المقعد
+
+المهم أن تُحسم هذه النقطة **قبل الشراء**، لا بعد حدوث الانسحاب فعلياً.
+
+## خطوات عملية لتنظيم شراء التذاكر الجماعي
+
+### الخطوة 1: حددوا فئة المقعد لكل شخص مسبقاً
+اجمعوا القرار النهائي (VIP أم عادي) من الجميع قبل بدء عملية الحجز.
+
+### الخطوة 2: اجمعوا الفلوس قبل الضغط على "شراء"
+لا يبدأ المشتري عملية الدفع الفعلية إلا بعد التأكد من استلام مبلغ كل شخص، أو على الأقل تعهد واضح بالتحويل الفوري.
+
+### الخطوة 3: سجّلوا التذاكر بأسعارها الفعلية
+استخدم تطبيق مثل Diviso لتسجيل كل تذكرة بسعرها الحقيقي حسب فئة المقعد، بدل التقسيم المتساوي التلقائي.
+
+### الخطوة 4: وثّقوا سياسة الانسحاب مسبقاً
+اكتبوها في رسالة جماعية قبل الشراء حتى يعرف الجميع القاعدة إذا اضطر أحدهم للانسحاب لاحقاً.
+
+## أخطاء شائعة عند شراء التذاكر الجماعية
+
+- **الشراء قبل تحصيل الفلوس**: يحمّل المشتري كامل المخاطرة المالية بمفرده
+- **تقسيم الإجمالي بالتساوي رغم اختلاف فئات المقاعد**: غير عادل لمن اختار مقعداً أرخص
+- **عدم الاتفاق على سياسة الانسحاب مسبقاً**: يسبب خلافاً كبيراً لو حدث فعلاً
+- **الاعتماد على الذاكرة لتتبع من دفع**: يصعب المتابعة مع اقتراب موعد الفعالية
+
+## كيف يساعدك Diviso في تقسيم تكلفة التذاكر الجماعية؟
+
+- ✅ تسجيل كل تذكرة بسعرها الفعلي حسب فئة المقعد
+- ✅ تتبع من دفع نصيبه قبل موعد الشراء الفعلي
+- ✅ تذكيرات تلقائية للمتأخرين قبل الموعد النهائي
+- ✅ توثيق واضح لسياسة الانسحاب المتفق عليها
+- ✅ سجل شفاف يوضح من اشترى ومن سدّد نصيبه
+
+## أسئلة شائعة
+
+### هل تُقسّم تكلفة التذاكر بالتساوي حتى لو اختلفت فئات المقاعد؟
+لا، كل شخص يدفع السعر الفعلي لمقعده الذي اختاره (VIP أو عادي)، وليس حصة متساوية من إجمالي فاتورة المجموعة.
+
+### متى يجب تحصيل فلوس التذاكر من الجميع؟
+قبل إتمام عملية الشراء الفعلية، لأن التذاكر غالباً غير قابلة للاسترجاع بمجرد شرائها، وتأخير التحصيل يحمّل المشتري مخاطرة مالية غير ضرورية.
+
+### ماذا لو انسحب أحد أفراد المجموعة بعد شراء التذكرة؟
+الأكثر شيوعاً أن يدفع ثمن تذكرته كاملاً لأن الشراء تم فعلاً، ثم يحاول بيعها أو التنازل عنها لشخص آخر، وهذه السياسة يجب الاتفاق عليها قبل الشراء لا بعده.
+
+## الخلاصة
+
+شراء التذاكر الجماعي لا يحتاج تعقيداً إذا حُدّدت القواعد مسبقاً. حصّلوا الفلوس قبل الشراء، قسّموا حسب فئة المقعد الفعلية، ووثّقوا سياسة الانسحاب من البداية.
+
+**جرب Diviso الآن وقسّم تكلفة تذاكر فعاليتكم القادمة بعدل وبدون مخاطرة.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When one person buys concert or event tickets for a group of friends (due to a per-account purchase limit or the need to select seats together), everyone's money should be collected **before the purchase is completed**, not after the event, since tickets are usually non-refundable. And if seat prices differ within the group (VIP vs. standard), each person pays the actual price of their own seat, not an equal share of the total.
+
+## Why Does One Person Buy Tickets for the Whole Group?
+
+This is very common for concerts and large events:
+
+- **A per-account purchase limit**: many ticketing platforms cap the number of tickets one person can buy
+- **The need to select seats together**: to ensure the group sits next to each other, the purchase has to happen in one transaction
+- **Presale codes**: sometimes only one person has access to an early-access code
+
+## Why Collect the Money Before the Purchase, Not After?
+
+- **Tickets are usually non-refundable**: once bought, there's no backing out or getting a refund
+- **The buyer carries the full financial risk**: if someone is late to pay, the amount stays hanging on the buyer alone
+- **Avoids "I'll pay later" turning into "I forgot"**: the closer the event gets, the harder it is to collect
+
+## How to Split the Cost When Seat Prices Differ
+
+### The Rule
+Each person pays the **actual price of their own seat**, not an equal share of the total bill.
+
+### A Worked Example
+A group of 6 friends books tickets for a concert:
+
+- Two people chose VIP seats at 400 SAR per ticket
+- Four people chose standard seats at 250 SAR per ticket
+
+**Total VIP** = 400 × 2 = 800 SAR
+**Total standard** = 250 × 4 = 1,000 SAR
+**Grand total** = 800 + 1,000 = 1,800 SAR
+
+Each VIP person pays 400 SAR, and each standard person pays 250 SAR — the total isn't split equally (1,800 ÷ 6 = 300 SAR), since that would unfairly favor whoever picked the pricier seat at the expense of whoever picked the cheaper one.
+
+## What If Someone Cancels After Their Ticket Is Bought?
+
+Agree on a clear policy in advance:
+
+- **The most common policy**: the person who cancels still pays for their ticket in full since the purchase already happened, then tries to sell or transfer it to someone else
+- **An alternative**: if they manage to sell the ticket to someone outside the group, they're exempted from paying, and the new buyer takes the seat
+
+The key is settling this point **before** the purchase, not after a cancellation actually happens.
+
+## A Practical System for Organizing a Group Ticket Purchase
+
+### Step 1: Determine Each Person's Seat Tier in Advance
+Get everyone's final decision (VIP or standard) before starting the booking process.
+
+### Step 2: Collect the Money Before Hitting "Buy"
+The buyer shouldn't start the actual payment until everyone's amount has been received, or at least a clear commitment to transfer immediately.
+
+### Step 3: Log the Tickets at Their Actual Prices
+Use an app like Diviso to log each ticket at its real price based on seat tier, instead of an automatic equal split.
+
+### Step 4: Document the Cancellation Policy in Advance
+Write it out in a group message before the purchase, so everyone knows the rule if someone has to cancel later.
+
+## Common Mistakes When Buying Tickets as a Group
+
+- **Buying before collecting the money**: puts the entire financial risk on the buyer alone
+- **Splitting the total equally despite different seat tiers**: unfair to whoever chose the cheaper seat
+- **Not agreeing on a cancellation policy in advance**: causes a major dispute if it actually happens
+- **Relying on memory to track who paid**: gets harder to manage as the event date approaches
+
+## How Diviso Helps Split Group Ticket Costs
+
+- ✅ Logs each ticket at its actual price based on seat tier
+- ✅ Tracks who has paid their share before the actual purchase date
+- ✅ Automatic reminders for latecomers before the deadline
+- ✅ Clear documentation of the agreed cancellation policy
+- ✅ A transparent record showing who bought and who has settled their share
+
+## Frequently Asked Questions
+
+### Is the ticket cost split equally even if seat tiers differ?
+No, each person pays the actual price of the seat they chose (VIP or standard), not an equal share of the group's total bill.
+
+### When should ticket money be collected from everyone?
+Before the actual purchase is completed, since tickets are usually non-refundable once bought, and delaying collection puts unnecessary financial risk on the buyer.
+
+### What if a group member cancels after their ticket is already bought?
+The most common approach is for them to pay for their ticket in full since the purchase already happened, then try to sell or transfer it to someone else — and this policy should be agreed upon before the purchase, not after.
+
+## Conclusion
+
+Buying tickets as a group doesn't need to be complicated if the rules are set in advance. Collect the money before purchasing, split by each person's actual seat tier, and document the cancellation policy from the start.
+
+**Try Diviso now and split your next event's ticket costs fairly and without unnecessary risk.**
+    `
+  },
+  {
     slug: "split-group-photoshoot-cost-by-family",
     title: "كيف تقسم تكلفة جلسة التصوير الجماعية بين العائلات؟",
     titleEn: "How to Split a Group Photoshoot's Cost by Family or Couple Unit",

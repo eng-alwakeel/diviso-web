@@ -16,6 +16,224 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-shared-car-ownership-expenses",
+    title: "كيف تقسم مصاريف سيارة مملوكة بالشراكة بين صديقين أو شقيقين؟",
+    titleEn: "How to Split Expenses for a Car You Co-Own With a Friend or Sibling",
+    description: "دليل عملي لتقسيم مصاريف السيارة المشتركة: التكاليف الثابتة مثل التأمين والقسط تُقسم حسب نسبة الملكية، والوقود والصيانة تُقسم حسب عدد الكيلومترات الفعلية لكل شريك.",
+    descriptionEn: "A practical guide to splitting shared car expenses: fixed costs like insurance and loan installments are split by ownership percentage, while fuel and maintenance are split by each partner's actual kilometers driven.",
+    keywords: ["تقسيم مصاريف سيارة مشتركة", "شراكة سيارة بين صديقين", "تقسيم تأمين السيارة بين شريكين", "سيارة مملوكة بالشراكة", "تقسيم قسط السيارة والصيانة", "تقسيم الوقود حسب عدد الكيلومترات"],
+    keywordsEn: ["how to split car ownership costs", "shared car expenses with a friend", "co-own a car split expenses", "splitting car insurance between partners", "joint car ownership agreement costs", "split fuel and maintenance by mileage"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-09-19",
+    content: `
+## الإجابة المختصرة
+
+عندما يشترك شخصان في تملك سيارة، تُقسم التكاليف الثابتة (التأمين، الاستمارة، قسط التمويل) حسب **نسبة الملكية** المتفق عليها، بينما تُقسم التكاليف المتغيرة (الوقود، الصيانة الدورية) حسب **نسبة الاستخدام الفعلي** المقاسة بعدد الكيلومترات. هذا المزيج بين التقسيم حسب الملكية وحسب الاستخدام هو الطريقة الأعدل لسيارة مشتركة، على عكس سيارة مستأجرة ليوم واحد.
+
+## ليش تختلف السيارة المشتركة عن سيارة الرحلة المستأجرة؟
+
+- **سيارة الرحلة**: علاقة قصيرة، تُقسم عادة بالتساوي بين الركاب بغض النظر عمن استأجرها
+- **السيارة المشتركة**: أصل طويل الأمد له قيمة تتآكل (استهلاك)، وتكاليف ثابتة متكررة شهرياً أو سنوياً، وتكاليف متغيرة تعتمد على من يقودها أكثر
+
+## الخطوة 1: حددوا نسبة الملكية قبل أي شيء آخر
+
+قبل شراء السيارة، اتفقوا كتابياً على نسبة ملكية كل شريك، وعادة تُحسب حسب مساهمة كل شخص في الدفعة الأولى أو ثمن الشراء الكامل.
+
+### مثال
+سيارة بسعر 60,000 ريال، دفع سامي 36,000 ريال ودفع فهد 24,000 ريال:
+
+- نسبة ملكية سامي = 36,000 ÷ 60,000 = 60%
+- نسبة ملكية فهد = 24,000 ÷ 60,000 = 40%
+
+هذه النسبة تُستخدم لاحقاً لتقسيم كل التكاليف الثابتة، وأيضاً لتقسيم عائد البيع عند بيع السيارة مستقبلاً.
+
+## الخطوة 2: قسّموا التكاليف الثابتة حسب نسبة الملكية
+
+التكاليف الثابتة لا علاقة لها بمن يقود أكثر، فتُقسم حسب حصة الملكية:
+
+- التأمين الشامل السنوي
+- رسوم تجديد الاستمارة
+- قسط التمويل الشهري (إن وجد)
+- رسوم الفحص الدوري
+
+### مثال عملي
+بافتراض نسبة الملكية 60%/40% من الخطوة السابقة:
+
+- تأمين سنوي 3,200 ريال + استمارة 650 ريال = 3,850 ريال إجمالي
+- حصة سامي (60%) = 2,310 ريال
+- حصة فهد (40%) = 1,540 ريال
+
+نفس النسبة تُطبق على قسط التمويل الشهري إن كان 1,500 ريال: سامي يدفع 900 ريال وفهد يدفع 600 ريال كل شهر.
+
+## الخطوة 3: قسّموا التكاليف المتغيرة حسب الاستخدام الفعلي
+
+الوقود والصيانة الدورية (تغيير الزيت، الإطارات) تعتمد على من يقود السيارة أكثر، لذا تُقسم حسب عدد الكيلومترات المقطوعة لا حسب نسبة الملكية.
+
+### كيف تتبعون الاستخدام؟
+- سجّلوا قراءة العداد في بداية كل شهر
+- كل شخص يسجّل الكيلومترات التي قطعها (يدوياً أو عبر تطبيق تتبع الموقع)
+- في نهاية الشهر، احسبوا نسبة استخدام كل شخص من إجمالي الكيلومترات
+
+### مثال عملي
+هذا الشهر قطعت السيارة 1,000 كم إجمالي: سامي قاد 650 كم وفهد قاد 350 كم.
+
+- نسبة استخدام سامي = 650 ÷ 1,000 = 65%
+- نسبة استخدام فهد = 350 ÷ 1,000 = 35%
+
+لو كانت فاتورة الوقود هذا الشهر 400 ريال:
+
+- حصة سامي = 400 × 65% = 260 ريال
+- حصة فهد = 400 × 35% = 140 ريال
+
+نفس النسبة تُطبق على تكلفة تغيير الزيت أو أي صيانة دورية مرتبطة بعدد الكيلومترات.
+
+## ماذا عن الصيانة الطارئة أو الحوادث؟
+
+- **صيانة طارئة غير ناتجة عن خطأ أحد الطرفين** (عطل مفاجئ، قطعة تالفة): تُقسم حسب نسبة الملكية، لأنها تخص الأصل نفسه لا الاستخدام
+- **ضرر ناتج عن خطأ أحد السائقين** (حادث بسببه، مخالفة مرورية): يتحمّلها الشخص المسؤول وحده، ولا تُقسم بين الطرفين
+- يُفضّل إنشاء **صندوق طوارئ مشترك** بمساهمة شهرية صغيرة (مثلاً 100 ريال لكل شريك) لتغطية الصيانة الطارئة غير المتوقعة دون خلاف عند حدوثها
+
+## ماذا عند بيع السيارة مستقبلاً؟
+
+يُقسم صافي عائد البيع (سعر البيع ناقص أي التزامات متبقية على التمويل) حسب **نسبة الملكية الأصلية**، وليس حسب من استخدمها أكثر. هذا سبب إضافي لتوثيق نسبة الملكية كتابياً منذ اليوم الأول.
+
+## أخطاء شائعة عند مشاركة ملكية سيارة
+
+- **عدم توثيق نسبة الملكية كتابياً من البداية**: يسبب خلافاً كبيراً عند البيع
+- **تقسيم كل التكاليف بالتساوي رغم اختلاف الاستخدام**: غير عادل لمن يقود أقل
+- **عدم تتبع الكيلومترات فعلياً**: يجعل تقسيم الوقود تخميناً لا حساباً دقيقاً
+- **عدم وجود صندوق طوارئ**: يسبب نقاشاً محرجاً عند أول عطل مفاجئ
+
+## كيف يساعدك Diviso في تقسيم مصاريف السيارة المشتركة؟
+
+- ✅ تسجيل التكاليف الثابتة وتقسيمها تلقائياً حسب نسبة الملكية
+- ✅ تسجيل نفقات الوقود والصيانة وتقسيمها حسب نسبة استخدام كل شريك
+- ✅ متابعة صندوق الطوارئ المشترك بشفافية
+- ✅ سجل كامل لكل التكاليف يسهّل حساب عائد البيع لاحقاً
+
+## أسئلة شائعة
+
+### هل تُقسم كل تكاليف السيارة المشتركة بالتساوي؟
+لا، التكاليف الثابتة مثل التأمين والاستمارة تُقسم حسب نسبة الملكية، بينما تُقسم التكاليف المتغيرة مثل الوقود والصيانة الدورية حسب عدد الكيلومترات التي قادها كل شخص فعلياً.
+
+### كيف نحسب نسبة الملكية لكل شريك؟
+تُحسب عادة حسب مساهمة كل شخص في ثمن الشراء أو الدفعة الأولى، فمن دفع نسبة أكبر يملك حصة أكبر، وتُستخدم هذه النسبة لاحقاً لتقسيم التكاليف الثابتة وعائد البيع.
+
+### من يتحمل تكلفة حادث بسبب أحد الشريكين؟
+الشخص المسؤول عن الحادث أو المخالفة المرورية يتحمّل تكلفتها وحده، ولا تُقسم بين الطرفين، بعكس الصيانة الطارئة غير الناتجة عن خطأ أحد.
+
+## الخلاصة
+
+السيارة المشتركة تحتاج نظام تقسيم مزدوج: نسبة الملكية للتكاليف الثابتة، ونسبة الاستخدام الفعلي للتكاليف المتغيرة. وثّقوا الاتفاق من اليوم الأول لتجنّب أي خلاف عند البيع مستقبلاً.
+
+**جرب Diviso الآن ونظّم مصاريف سيارتكم المشتركة بعدل وشفافية.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When two people co-own a car, fixed costs (insurance, registration, loan installments) should be split according to each partner's **ownership percentage**, while variable costs (fuel, routine maintenance) should be split according to **actual usage**, measured in kilometers driven. This hybrid model — ownership-based for fixed costs, usage-based for variable costs — is the fairest approach for a jointly-owned car, unlike a one-day rental where everyone splits equally.
+
+## Why Is a Co-Owned Car Different From a Rented Trip Car?
+
+- **A rental car**: a short-term arrangement, usually split equally among riders regardless of who rented it
+- **A co-owned car**: a long-term asset that depreciates in value, with recurring fixed monthly or annual costs and variable costs that depend on who drives it more
+
+## Step 1: Agree on Ownership Percentage First
+
+Before buying the car, agree in writing on each partner's ownership share, usually calculated from each person's contribution to the down payment or full purchase price.
+
+### Example
+A car costs 60,000 SAR. Sami paid 36,000 SAR and Fahad paid 24,000 SAR:
+
+- Sami's ownership share = 36,000 ÷ 60,000 = 60%
+- Fahad's ownership share = 24,000 ÷ 60,000 = 40%
+
+This percentage is later used to split all fixed costs, and also to split the proceeds when the car is eventually sold.
+
+## Step 2: Split Fixed Costs by Ownership Percentage
+
+Fixed costs have nothing to do with who drives more, so they're split by ownership share:
+
+- Annual comprehensive insurance
+- Registration renewal fees
+- Monthly loan installment (if any)
+- Periodic inspection fees
+
+### A Worked Example
+Using the 60%/40% ownership split from the previous step:
+
+- Annual insurance 3,200 SAR + registration 650 SAR = 3,850 SAR total
+- Sami's share (60%) = 2,310 SAR
+- Fahad's share (40%) = 1,540 SAR
+
+The same percentage applies to a monthly loan installment of 1,500 SAR: Sami pays 900 SAR and Fahad pays 600 SAR each month.
+
+## Step 3: Split Variable Costs by Actual Usage
+
+Fuel and routine maintenance (oil changes, tires) depend on who drives the car more, so they're split by kilometers driven, not by ownership percentage.
+
+### How to Track Usage
+- Log the odometer reading at the start of each month
+- Each person records the kilometers they drove (manually or via a location-tracking app)
+- At month's end, calculate each person's share of the total kilometers driven
+
+### A Worked Example
+This month the car drove 1,000 km total: Sami drove 650 km and Fahad drove 350 km.
+
+- Sami's usage share = 650 ÷ 1,000 = 65%
+- Fahad's usage share = 350 ÷ 1,000 = 35%
+
+If this month's fuel bill was 400 SAR:
+
+- Sami's share = 400 × 65% = 260 SAR
+- Fahad's share = 400 × 35% = 140 SAR
+
+The same percentage applies to an oil change or any routine maintenance tied to mileage.
+
+## What About Emergency Repairs or Accidents?
+
+- **Emergency repairs not caused by either partner's fault** (a sudden breakdown, a worn part): split by ownership percentage, since they concern the asset itself, not usage
+- **Damage caused by one driver's fault** (an at-fault accident, a traffic violation): the responsible person covers it alone, it isn't split between partners
+- It helps to set up a **shared emergency fund** with a small monthly contribution (e.g., 100 SAR per partner) to cover unexpected repairs without an argument when they happen
+
+## What Happens When You Sell the Car?
+
+The net sale proceeds (sale price minus any remaining loan balance) are split according to the **original ownership percentage**, not according to who used the car more. This is one more reason to document the ownership split in writing from day one.
+
+## Common Mistakes When Co-Owning a Car
+
+- **Not documenting the ownership percentage in writing from the start**: causes major disputes at resale time
+- **Splitting every cost equally despite unequal usage**: unfair to whoever drives less
+- **Not actually tracking kilometers driven**: turns the fuel split into a guess instead of an accurate calculation
+- **Having no emergency fund**: leads to an awkward argument at the first sudden breakdown
+
+## How Diviso Helps Split Shared Car Expenses
+
+- ✅ Logs fixed costs and automatically splits them by ownership percentage
+- ✅ Logs fuel and maintenance expenses and splits them by each partner's usage share
+- ✅ Tracks the shared emergency fund transparently
+- ✅ A complete record of every cost that makes calculating resale proceeds easy later
+
+## Frequently Asked Questions
+
+### Are all costs for a shared car split equally?
+No. Fixed costs like insurance and registration are split by ownership percentage, while variable costs like fuel and routine maintenance are split by the kilometers each person actually drove.
+
+### How do you calculate each partner's ownership percentage?
+It's usually calculated from each person's contribution to the purchase price or down payment — whoever paid a larger share owns a larger stake, and this percentage is later used to split fixed costs and resale proceeds.
+
+### Who pays for damage caused by one partner's accident?
+The person responsible for the accident or traffic violation covers that cost alone; it isn't split between partners, unlike emergency repairs that aren't anyone's fault.
+
+## Conclusion
+
+A co-owned car needs a dual-split system: ownership percentage for fixed costs, and actual usage for variable costs. Document the agreement from day one to avoid disputes when it's time to sell.
+
+**Try Diviso now and manage your shared car's expenses fairly and transparently.**
+    `
+  },
+  {
     slug: "split-concert-tickets-cost-group-purchase",
     title: "كيف تقسم تكلفة تذاكر حفلة أو فعالية اشتراها شخص واحد للمجموعة؟",
     titleEn: "How to Split Concert or Event Ticket Costs When One Person Buys for the Group",

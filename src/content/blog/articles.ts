@@ -16,6 +16,206 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-parents-monthly-expenses-siblings",
+    title: "كيف يقسم الإخوة مصاريف الوالدين الشهرية فيما بينهم بعدل؟",
+    titleEn: "How Should Adult Siblings Split Their Parents' Monthly Expenses?",
+    description: "دليل عملي لتقسيم مصاريف الوالدين الشهرية بين الإخوة: التقسيم المتساوي كنقطة بداية، والتحول لنسبة الدخل عند تفاوته، مع احتساب قيمة الرعاية اليومية للأخ المقيم مع الوالدين.",
+    descriptionEn: "A practical guide to splitting parents' monthly expenses between adult siblings: equal split as a default, income-proportional split when incomes differ widely, and how to credit a sibling who provides daily care.",
+    keywords: ["تقسيم مصاريف الوالدين بين الإخوة", "من يدفع مصاريف الوالدين", "تقسيم مصاريف الوالدين حسب الدخل", "مساهمة الإخوة في مصاريف البيت", "تقسيم مصاريف كبار السن بين الأبناء", "احتساب رعاية الوالدين كمساهمة"],
+    keywordsEn: ["how to split parents expenses between siblings", "who pays for aging parents costs", "income-proportional family expense split", "siblings sharing parents monthly bills", "fair way to split elderly parent care costs", "accounting for a caregiving sibling's contribution"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-09-20",
+    content: `
+## الإجابة المختصرة
+
+نقطة البداية العادلة لتقسيم مصاريف الوالدين الشهرية بين الإخوة القادرين مالياً هي **التقسيم المتساوي**، لكن إذا تفاوتت دخول الإخوة بشكل كبير، يصبح **التقسيم بنسبة الدخل** أعدل. أما الأخ أو الأخت المقيم مع الوالدين ويتولى الرعاية اليومية، فيُحتسب له خصم من نصيبه المالي مقابل هذه المساهمة غير النقدية.
+
+## ليش تحتاج هذه المصاريف لاتفاق واضح؟
+
+مصاريف الوالدين مختلفة عن أي مصروف جماعي آخر:
+
+- **مصروف متكرر طويل الأمد**: ليس رحلة أو فعالية تنتهي، بل التزام شهري مستمر
+- **حساسية عاطفية**: النقاش المالي حول الوالدين أصعب من النقاش حول فاتورة مطعم
+- **تفاوت الدخل شائع بين الإخوة**: خصوصاً مع فروق العمر والمسار المهني
+
+## الخطوة 1: حددوا قائمة المصاريف المشمولة
+
+اتفقوا مسبقاً على ما يُعتبر "مصروف والدين مشترك":
+
+- **ثابتة شهرياً**: إيجار أو قسط سكن، فواتير كهرباء وماء، راتب سائق أو عاملة منزلية
+- **متغيرة**: البقالة، الأدوية المنتظمة
+- **طارئة**: العلاج الطبي غير المغطى بالتأمين، الصيانة العاجلة
+
+يُفضّل معاملة المصاريف الطارئة كبند منفصل له صندوق مخصص، بدل خلطها بالمصاريف الشهرية الثابتة.
+
+## الخطوة 2: ابدأوا بالتقسيم المتساوي بين الإخوة القادرين
+
+القاعدة الافتراضية: يُقسّم إجمالي المصاريف الشهرية بالتساوي بين كل الإخوة القادرين مالياً على المساهمة (وليس بالضرورة كل الإخوة، فمن لا يزال طالباً أو بلا دخل مستقل عادة يُستثنى).
+
+### مثال
+مصاريف الوالدين الشهرية 4,500 ريال، ويساهم 3 إخوة قادرين:
+
+**نصيب كل أخ** = 4,500 ÷ 3 = 1,500 ريال
+
+## الخطوة 3: حوّلوا لنسبة الدخل إذا تفاوتت الدخول بشكل كبير
+
+إذا كان الفارق بين دخول الإخوة كبيراً، فالتقسيم المتساوي يُحمّل الأخ الأقل دخلاً عبئاً نسبياً أثقل. البديل: كل أخ يساهم بنسبة تعادل حصته من مجموع دخل الإخوة المساهمين.
+
+### القاعدة
+**نصيب الأخ = (دخله ÷ مجموع دخل الإخوة المساهمين) × إجمالي المصاريف**
+
+### مثال عملي
+3 إخوة بدخول متفاوتة: أحمد 20,000 ريال، خالد 12,000 ريال، سعد 8,000 ريال. مجموع الدخل = 40,000 ريال. مصاريف الوالدين الشهرية 4,500 ريال:
+
+- **نسبة أحمد** = 20,000 ÷ 40,000 = 50% → نصيبه = 2,250 ريال
+- **نسبة خالد** = 12,000 ÷ 40,000 = 30% → نصيبه = 1,350 ريال
+- **نسبة سعد** = 8,000 ÷ 40,000 = 20% → نصيبه = 900 ريال
+
+هذا التقسيم أعدل من تحميل الثلاثة 1,500 ريال متساوية، خصوصاً أن نصيب سعد (900 ريال) يمثل نسبة أكبر من دخله مقارنة بنصيب أحمد (2,250 ريال) من دخله.
+
+## الخطوة 4: احتسبوا قيمة الرعاية اليومية لمن يقيم مع الوالدين
+
+الأخ أو الأخت الذي يسكن مع الوالدين ويتولى المتابعة اليومية (المواعيد الطبية، المتابعة الصحية، إدارة المنزل) يقدّم مساهمة غير نقدية تستحق التقدير في المعادلة.
+
+### مثال
+لو كان نصيب سعد المحسوب أعلاه 900 ريال، لكنه يقيم مع الوالدين ويتولى رعايتهما يومياً، يمكن للإخوة الاتفاق على تخفيض نصيبه المالي إلى النصف (450 ريال)، على أن يوزَّع الفرق (450 ريال) على أحمد وخالد بنفس نسبة مساهمتهما (50% و30% من الأصل، أي بنسبة 5:3 بينهما تقريباً).
+
+هذا الاتفاق يجب أن يكون **صريحاً ومكتوباً**، لا افتراضاً ضمنياً، لتجنب شعور أي طرف بالغبن لاحقاً.
+
+## فصل المصاريف الطارئة عن الشهرية
+
+- أنشئوا **صندوق طوارئ منفصل** بمساهمة شهرية ثابتة صغيرة من كل أخ (مثلاً 200 ريال لكل أخ) لتغطية العلاج العاجل أو الصيانة المفاجئة
+- هذا يمنع النقاش المُلح وقت الأزمة حول "من يدفع الآن؟"
+
+## أخطاء شائعة عند تقسيم مصاريف الوالدين
+
+- **عدم وجود قائمة واضحة لما يُعتبر مصروفاً مشتركاً**: يسبب جدالاً متكرراً كل شهر
+- **الإصرار على التقسيم المتساوي رغم فارق دخل كبير**: يضع عبئاً غير عادل على الأخ الأقل دخلاً
+- **تجاهل قيمة الرعاية اليومية للأخ المقيم مع الوالدين**: يشعره أنه يدفع مرتين، مالياً وجسدياً
+- **خلط المصاريف الطارئة بالشهرية**: يجعل حساب النصيب الشهري غير ثابت وصعب التخطيط له
+
+## كيف يساعدكم Diviso في تنظيم مصاريف الوالدين؟
+
+- ✅ إنشاء مجموعة عائلية مخصصة لتتبع مصاريف الوالدين فقط
+- ✅ تقسيم مخصص بنسبة الدخل أو أي نسبة متفق عليها بين الإخوة
+- ✅ صندوق طوارئ منفصل بمساهمات شهرية ثابتة
+- ✅ سجل شفاف يراه كل الإخوة بدل الاعتماد على رسائل متفرقة
+- ✅ تعديل سهل للنسب عند تغيّر دخل أحد الإخوة
+
+## أسئلة شائعة
+
+### هل يجب أن يدفع كل الإخوة نفس المبلغ لمصاريف الوالدين؟
+ليس بالضرورة. التقسيم المتساوي نقطة بداية جيدة، لكن إذا تفاوتت دخول الإخوة بشكل كبير، فالتقسيم بنسبة الدخل أعدل، بحيث يساهم من يكسب أكثر بنسبة أكبر.
+
+### كيف نحتسب مساهمة الأخ الذي يعيش مع الوالدين ويرعاهما؟
+يتفق الإخوة على تخفيض نصيبه المالي مقارنة بما يستحقه حسب الدخل، تقديراً لجهده ووقته في الرعاية اليومية، ويُوزَّع الفرق على بقية الإخوة حسب نفس نسبة مساهمتهم.
+
+### هل تُدرج المصاريف الطارئة مع المصاريف الشهرية العادية؟
+يُفضّل فصلها في صندوق طوارئ منفصل بمساهمة شهرية ثابتة صغيرة من كل أخ، بدل خلطها بالمصاريف الشهرية الثابتة، لتجنب الجدال وقت حدوث الطارئة.
+
+## الخلاصة
+
+تقسيم مصاريف الوالدين بين الإخوة لا يحتاج أن يكون مصدر توتر عائلي. ابدأوا بالتقسيم المتساوي، انتقلوا لنسبة الدخل عند الحاجة، واحتسبوا قيمة الرعاية اليومية لمن يقيم مع الوالدين، ووثّقوا كل شيء كتابياً.
+
+**جرب Diviso الآن ونظّم مصاريف والديكم بعدل وشفافية بين كل الإخوة.**
+    `,
+    contentEn: `
+## Quick Answer
+
+The fair starting point for splitting parents' monthly expenses between financially capable adult siblings is an **equal split**, but if siblings' incomes differ significantly, **income-proportional splitting** becomes fairer. A sibling who lives with the parents and handles daily caregiving should get a reduction in their financial share to account for this non-monetary contribution.
+
+## Why Does This Kind of Expense Need a Clear Agreement?
+
+Parents' expenses are different from any other group expense:
+
+- **A long-term recurring cost**: not a trip or event that ends, but an ongoing monthly commitment
+- **Emotional sensitivity**: money conversations about parents are harder than a restaurant bill discussion
+- **Income gaps between siblings are common**: especially with age and career-stage differences
+
+## Step 1: Define the List of Included Expenses
+
+Agree in advance on what counts as a "shared parents' expense":
+
+- **Fixed monthly**: rent or housing installment, electricity and water bills, a driver's or housekeeper's salary
+- **Variable**: groceries, ongoing medication
+- **Emergency**: medical treatment not covered by insurance, urgent repairs
+
+It's better to treat emergency expenses as a separate category with its own fund, instead of mixing them into fixed monthly expenses.
+
+## Step 2: Start With an Equal Split Among Contributing Siblings
+
+The default rule: total monthly expenses are split equally among all siblings who are financially able to contribute (not necessarily every sibling — one who's still a student or has no independent income is usually excluded).
+
+### Example
+Parents' monthly expenses are 4,500 SAR, with 3 contributing siblings:
+
+**Each sibling's share** = 4,500 ÷ 3 = 1,500 SAR
+
+## Step 3: Switch to Income-Proportional Splitting When Incomes Differ Significantly
+
+If the gap between siblings' incomes is large, an equal split places a relatively heavier burden on the lower-earning sibling. The alternative: each sibling contributes a percentage equal to their share of the combined income of contributing siblings.
+
+### The Formula
+**Sibling's share = (their income ÷ total income of contributing siblings) × total expenses**
+
+### A Worked Example
+3 siblings with different incomes: Ahmad earns 20,000 SAR, Khaled earns 12,000 SAR, and Saad earns 8,000 SAR. Combined income = 40,000 SAR. Parents' monthly expenses = 4,500 SAR:
+
+- **Ahmad's share** = 20,000 ÷ 40,000 = 50% → his contribution = 2,250 SAR
+- **Khaled's share** = 12,000 ÷ 40,000 = 30% → his contribution = 1,350 SAR
+- **Saad's share** = 8,000 ÷ 40,000 = 20% → his contribution = 900 SAR
+
+This split is fairer than charging all three an equal 1,500 SAR, especially since Saad's share (900 SAR) represents a larger portion of his income than Ahmad's share (2,250 SAR) represents of his.
+
+## Step 4: Credit the Daily Caregiving of Whoever Lives With the Parents
+
+A sibling who lives with the parents and handles daily follow-up (medical appointments, health monitoring, running the household) is providing a non-monetary contribution that deserves recognition in the equation.
+
+### Example
+If Saad's calculated share above is 900 SAR, but he lives with the parents and handles their daily care, the siblings can agree to cut his financial share in half (450 SAR), with the remaining 450 SAR split between Ahmad and Khaled in the same ratio as their original contribution (roughly 5:3 between them).
+
+This agreement should be **explicit and written down**, not an implicit assumption, to avoid anyone feeling shortchanged later.
+
+## Separate Emergency Expenses From Monthly Ones
+
+- Set up a **separate emergency fund** with a small fixed monthly contribution from each sibling (e.g., 200 SAR each) to cover urgent treatment or a sudden repair
+- This avoids a tense "who's paying right now?" conversation in the middle of a crisis
+
+## Common Mistakes When Splitting Parents' Expenses
+
+- **No clear list of what counts as a shared expense**: causes a recurring argument every month
+- **Insisting on an equal split despite a large income gap**: places an unfair burden on the lower-earning sibling
+- **Ignoring the value of daily caregiving from the sibling who lives with the parents**: makes them feel like they're paying twice, financially and physically
+- **Mixing emergency expenses with monthly ones**: makes the monthly share unpredictable and hard to plan around
+
+## How Diviso Helps Organize Parents' Expenses
+
+- ✅ Creates a dedicated family group to track only parents' expenses
+- ✅ Custom splitting by income ratio or any other ratio the siblings agree on
+- ✅ A separate emergency fund with fixed monthly contributions
+- ✅ A transparent record all siblings can see instead of relying on scattered messages
+- ✅ Easy to adjust ratios when a sibling's income changes
+
+## Frequently Asked Questions
+
+### Should all siblings pay the same amount toward their parents' expenses?
+Not necessarily. An equal split is a good starting point, but if siblings' incomes differ significantly, income-proportional splitting is fairer, with the higher earner contributing a larger share.
+
+### How do you account for a sibling who lives with and cares for the parents?
+The siblings agree to reduce that sibling's financial share compared to what their income would otherwise require, in recognition of their time and effort in daily caregiving, and the difference is redistributed among the remaining siblings in the same ratio as their original contribution.
+
+### Should emergency expenses be lumped in with regular monthly expenses?
+It's better to separate them into a dedicated emergency fund with a small fixed monthly contribution from each sibling, instead of mixing them into fixed monthly expenses, to avoid arguments when an emergency actually happens.
+
+## Conclusion
+
+Splitting parents' expenses between siblings doesn't have to be a source of family tension. Start with an equal split, move to income-proportional splitting when needed, credit the daily caregiving of whoever lives with the parents, and document everything in writing.
+
+**Try Diviso now and organize your parents' expenses fairly and transparently among all siblings.**
+    `
+  },
+  {
     slug: "split-shared-car-ownership-expenses",
     title: "كيف تقسم مصاريف سيارة مملوكة بالشراكة بين صديقين أو شقيقين؟",
     titleEn: "How to Split Expenses for a Car You Co-Own With a Friend or Sibling",

@@ -16,6 +16,186 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-shared-furniture-cost-roommate-moving-out",
+    title: "كيف تحسبون قيمة الأثاث المشترك عند انتقال أحد شركاء السكن؟",
+    titleEn: "How to Split the Value of Shared Furniture When a Roommate Moves Out",
+    description: "عندما يشتري شركاء السكن أثاثاً معاً ثم ينتقل أحدهم، لا يُعاد نصف السعر الأصلي بل القيمة الحالية بعد الاستهلاك. دليل عملي مع معادلة حساب ومثال رقمي.",
+    descriptionEn: "When roommates buy furniture together and one of them moves out, the fair buyout isn't half the original price — it's half the item's current depreciated value. A practical guide with a formula and worked example.",
+    keywords: ["تقسيم قيمة الأثاث المشترك", "شراء أثاث مشترك مع شريك سكن", "من يشتري نصيب الأثاث عند الانتقال", "قيمة الأثاث بعد الاستهلاك", "تسوية الأثاث عند فسخ السكن المشترك", "حساب استهلاك الأثاث"],
+    keywordsEn: ["how to split shared furniture cost when moving out", "buying out a roommate's share of furniture", "furniture depreciation calculator roommates", "who keeps the couch when roommates split up", "fair value of jointly owned furniture", "settling shared furniture cost"],
+    category: "tips",
+    readTime: 6,
+    publishDate: "2026-09-21",
+    content: `
+## الإجابة المختصرة
+
+عندما يشتري شركاء سكن أثاثاً معاً ثم ينتقل أحدهم ويحتفظ الآخر بالقطعة، لا يُعاد للمنتقل نصف **السعر الأصلي**، بل نصف **القيمة الحالية للقطعة بعد الاستهلاك**، لأن الأثاث يفقد جزءاً من قيمته مع الاستخدام والزمن. يُحسب الاستهلاك بمعادلة بسيطة: القيمة الحالية = السعر الأصلي × (1 − عمر القطعة ÷ العمر الافتراضي المقدّر).
+
+## ليش لا يُعاد نصف السعر الأصلي؟
+
+لو دفع شخصان 3,000 ريال لكنبة قبل سنتين، وأراد أحدهما الانتقال والآخر الاحتفاظ بها، فإعادة 1,500 ريال (نصف السعر الأصلي) يكون ظالماً للطرف الباقي، لأن:
+
+- **الكنبة لم تعد تساوي 3,000 ريال**: استُخدمت لسنتين وفقدت جزءاً من قيمتها
+- **الطرف الباقي يدفع أكثر من القيمة الفعلية المتبقية**: لو دفع 1,500 ريال مقابل نصف كنبة تساوي الآن أقل من ذلك بكثير
+- **معيار موضوعي أفضل**: القيمة الحالية تعكس ما يستحقه كل طرف فعلياً، لا سعر الشراء القديم
+
+## كيف تحسبون القيمة الحالية بدقة؟
+
+### المعادلة
+**القيمة الحالية = السعر الأصلي × (1 − (عمر القطعة بالأشهر ÷ العمر الافتراضي المقدّر بالأشهر))**
+
+### العمر الافتراضي التقريبي حسب نوع القطعة
+- **أثاث كبير (كنب، طاولات، أسرّة)**: 5 إلى 7 سنوات (60-84 شهراً)
+- **أجهزة إلكترونية (تلفزيون، لابتوب مشترك)**: 3 إلى 4 سنوات (36-48 شهراً)
+- **أجهزة منزلية كبيرة (ثلاجة، غسالة)**: 7 إلى 10 سنوات (84-120 شهراً)
+
+### مثال عملي
+كنبة سعرها الأصلي 3,000 ريال، اشتراها شريكان بالتساوي (1,500 ريال لكل واحد)، وعمرها الآن 20 شهراً، بافتراض عمر افتراضي 60 شهراً:
+
+**نسبة الاستهلاك** = 20 ÷ 60 = 33%
+**القيمة الحالية** = 3,000 × (1 − 0.33) = 2,010 ريال
+
+بما أن كل شريك يملك 50% من الكنبة، فحصة الشريك المنتقل من القيمة الحالية = 2,010 × 50% = **1,005 ريال**. هذا هو المبلغ الذي يدفعه الشريك الباقي مقابل الاستحواذ على كامل ملكية الكنبة، وليس 1,500 ريال (نصف السعر الأصلي).
+
+## ماذا لو اختلفت نسبة مساهمة كل شخص في الشراء الأصلي؟
+
+استخدموا نفس نسبة المساهمة الأصلية على القيمة الحالية بدل افتراض 50/50 تلقائياً.
+
+### مثال
+لو دفع أحمد 60% من ثمن الكنبة الأصلي وسالم 40%، فحصة أحمد من القيمة الحالية (2,010 ريال) = 2,010 × 60% = 1,206 ريال، وحصة سالم = 2,010 × 40% = 804 ريال.
+
+## ماذا لو اختلفتم على القيمة الحالية للقطعة؟
+
+- **استخدموا سعر إعلانات بيع مماثلة**: ابحثوا عن قطعة مشابهة بنفس العمر تقريباً في منصات البيع المستعمل كمرجع محايد
+- **اطلبوا تقديرين مستقلين**: من صديقين مختلفين أو بائعين، واحسبوا المتوسط
+- **اتفقوا على العمر الافتراضي مسبقاً**: عند الشراء، لا عند الانتقال، لتجنب الخلاف حول الرقم لاحقاً
+
+## متى لا يستحق الأمر حساب الاستهلاك؟
+
+- **قطع رخيصة القيمة**: أدوات مطبخ بسيطة أو أثاث صغير بقيمة أقل من 200-300 ريال، الوقت المستهلك في الحساب لا يستحق الفارق المالي الصغير
+- **قطعة قاربت نهاية عمرها الافتراضي**: لو كانت نسبة الاستهلاك قريبة من 100%، فالقيمة الحالية تقارب الصفر، ولا داعي لأي تسوية مالية
+
+## بديل: بيع القطعة وتقسيم العائد
+
+إذا لم يرغب أي طرف بالاحتفاظ بالقطعة، بيعوها (لصديق آخر أو عبر منصة بيع مستعمل) وقسّموا العائد الفعلي حسب نسبة مساهمة كل شخص في الشراء الأصلي. هذا يتجنب الجدال حول التقدير تماماً لأن السعر يُحدَّد بالسوق الفعلي.
+
+## أخطاء شائعة عند تسوية الأثاث المشترك
+
+- **إعادة نصف السعر الأصلي دون احتساب الاستهلاك**: يظلم الطرف المحتفظ بالقطعة
+- **عدم الاتفاق على العمر الافتراضي عند الشراء**: يخلق خلافاً حول الرقم المناسب وقت الانتقال
+- **تجاهل نسبة المساهمة الأصلية غير المتساوية**: يفترض 50/50 حتى لو دفع أحد الطرفين أكثر
+- **إضاعة وقت في حساب قطع رخيصة القيمة**: التعقيد غير مبرر لفروقات مالية صغيرة
+
+## كيف يساعدكم Diviso في تسوية الأثاث المشترك؟
+
+- ✅ تسجيل الأثاث المشترك مع تاريخ الشراء ونسبة مساهمة كل شخص
+- ✅ حساب واضح للقيمة الحالية عند الحاجة للتسوية
+- ✅ سجل شفاف يوضح من دفع كم عند الشراء الأصلي
+- ✅ فصل تسوية الأثاث عن باقي مصاريف الانتقال أو السكن المشترك
+
+## أسئلة شائعة
+
+### هل يستحق الشريك المنتقل نصف السعر الأصلي للأثاث؟
+لا، يستحق نصف (أو نسبة مساهمته الأصلية من) **القيمة الحالية** للقطعة بعد احتساب الاستهلاك، لأن الأثاث يفقد جزءاً من قيمته مع الاستخدام والزمن، والسعر الأصلي لم يعد يعكس قيمتها الفعلية.
+
+### كيف نحسب نسبة استهلاك قطعة أثاث؟
+اقسموا عمر القطعة الحالي بالأشهر على عمرها الافتراضي المقدّر (مثلاً 60 شهراً للأثاث الكبير)، والنتيجة هي نسبة القيمة المفقودة؛ اطرحوها من 1 واضربوا الناتج في السعر الأصلي للحصول على القيمة الحالية.
+
+### ماذا لو كانت القطعة قاربت نهاية عمرها الافتراضي؟
+إذا كانت نسبة الاستهلاك قريبة من 100%، فالقيمة الحالية تقارب الصفر، وعادة لا تستحق أي تسوية مالية بين الطرفين.
+
+## الخلاصة
+
+تسوية الأثاث المشترك عند انتقال أحد شركاء السكن لا تحتاج تخميناً أو نقاشاً محرجاً. احسبوا القيمة الحالية بعد الاستهلاك بدل السعر الأصلي، طبّقوا نسبة المساهمة الحقيقية، واتفقوا على العمر الافتراضي مسبقاً لتفادي أي خلاف لاحقاً.
+
+**جرب Diviso الآن وسجّل أثاثكم المشترك لتسوية سهلة وعادلة عند الانتقال.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When roommates buy furniture together and one of them moves out while the other keeps the item, the person leaving isn't owed half the **original purchase price** — they're owed half the item's **current depreciated value**, since furniture loses part of its worth with use and time. Depreciation is calculated with a simple formula: current value = original price × (1 − item's age ÷ estimated useful life).
+
+## Why Not Just Refund Half the Original Price?
+
+If two people paid 3,000 SAR for a sofa two years ago, and one wants to move out while the other keeps it, refunding 1,500 SAR (half the original price) would be unfair to the person staying, because:
+
+- **The sofa is no longer worth 3,000 SAR**: it's been used for two years and lost part of its value
+- **The staying roommate would overpay relative to actual remaining worth**: paying 1,500 SAR for half of a sofa now worth much less than that
+- **A better, objective standard**: current value reflects what each person actually deserves, not the old purchase price
+
+## How to Calculate Current Value Precisely
+
+### The Formula
+**Current value = original price × (1 − (item's age in months ÷ estimated useful life in months))**
+
+### Rough Useful Life by Item Type
+- **Large furniture (sofas, tables, beds)**: 5 to 7 years (60-84 months)
+- **Electronics (a shared TV, laptop)**: 3 to 4 years (36-48 months)
+- **Large appliances (fridge, washing machine)**: 7 to 10 years (84-120 months)
+
+### A Worked Example
+A sofa originally cost 3,000 SAR, bought equally by two roommates (1,500 SAR each), and it's now 20 months old, assuming a 60-month useful life:
+
+**Depreciation rate** = 20 ÷ 60 = 33%
+**Current value** = 3,000 × (1 − 0.33) = 2,010 SAR
+
+Since each roommate owns 50% of the sofa, the moving roommate's share of the current value = 2,010 × 50% = **1,005 SAR**. That's what the staying roommate pays to acquire full ownership of the sofa — not 1,500 SAR (half the original price).
+
+## What If the Original Contribution Wasn't 50/50?
+
+Apply the same original contribution ratio to the current value instead of assuming an automatic 50/50 split.
+
+### Example
+If Ahmed paid 60% of the sofa's original price and Salem paid 40%, Ahmed's share of the current value (2,010 SAR) = 2,010 × 60% = 1,206 SAR, and Salem's share = 2,010 × 40% = 804 SAR.
+
+## What If You Disagree on the Item's Current Value?
+
+- **Use listings for similar used items**: look for a comparable item of roughly the same age on a resale platform as a neutral reference
+- **Get two independent estimates**: from two different friends or sellers, and use the average
+- **Agree on the useful life in advance**: at purchase time, not at move-out time, to avoid disputing the number later
+
+## When Isn't It Worth Calculating Depreciation?
+
+- **Low-value items**: simple kitchen tools or small furniture worth less than 200-300 SAR — the time spent calculating isn't worth the small financial difference
+- **An item nearing the end of its useful life**: if the depreciation rate is close to 100%, the current value is close to zero, and no financial settlement is needed at all
+
+## An Alternative: Sell the Item and Split the Proceeds
+
+If neither person wants to keep the item, sell it (to another friend or via a resale platform) and split the actual proceeds according to each person's original contribution percentage. This avoids any argument over estimated value entirely, since the price is set by the real market.
+
+## Common Mistakes When Settling Shared Furniture
+
+- **Refunding half the original price without accounting for depreciation**: unfairly penalizes whoever is keeping the item
+- **Not agreeing on useful life at purchase time**: creates a dispute over the right number at move-out time
+- **Ignoring an unequal original contribution ratio**: assumes 50/50 even when one person paid more
+- **Spending time calculating low-value items**: the added complexity isn't justified for small financial differences
+
+## How Diviso Helps Settle Shared Furniture
+
+- ✅ Logs shared furniture with its purchase date and each person's contribution percentage
+- ✅ A clear calculation of current value whenever a settlement is needed
+- ✅ A transparent record showing who paid what at the original purchase
+- ✅ Keeps furniture settlement separate from other moving or shared-housing expenses
+
+## Frequently Asked Questions
+
+### Is a moving roommate owed half the original price of the furniture?
+No, they're owed half (or their original contribution percentage of) the item's **current depreciated value**, since furniture loses part of its worth with use and time, and the original price no longer reflects its actual value.
+
+### How do you calculate a furniture item's depreciation rate?
+Divide the item's current age in months by its estimated useful life (for example, 60 months for large furniture); the result is the percentage of value lost — subtract that from 1 and multiply by the original price to get the current value.
+
+### What if the item is near the end of its useful life?
+If the depreciation rate is close to 100%, the current value is close to zero, and there usually isn't any financial settlement owed between the two people.
+
+## Conclusion
+
+Settling shared furniture when a roommate moves out doesn't need to involve guesswork or an awkward argument. Calculate the current depreciated value instead of the original price, apply the real contribution ratio, and agree on the useful life in advance to avoid any dispute later.
+
+**Try Diviso now and log your shared furniture for an easy, fair settlement when someone moves out.**
+    `
+  },
+  {
     slug: "split-parents-monthly-expenses-siblings",
     title: "كيف يقسم الإخوة مصاريف الوالدين الشهرية فيما بينهم بعدل؟",
     titleEn: "How Should Adult Siblings Split Their Parents' Monthly Expenses?",

@@ -16,6 +16,208 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "joint-household-budget-pot-for-couples",
+    title: "كيف يدير الزوجان ميزانية البيت المشتركة؟ طريقة الصندوق المشترك",
+    titleEn: "How Should Couples Split a Shared Household Budget? The Joint Pot Method",
+    description: "بدل تسوية كل فاتورة بقالة أو فاتورة كهرباء على حدة، يمكن للزوجين تمويل صندوق مشترك شهرياً بنسبة متفق عليها، وتُدفع منه كل المصاريف المشتركة مباشرة. دليل عملي مع مثال حساب.",
+    descriptionEn: "Instead of settling every grocery run or utility bill separately, couples can fund a shared monthly pot at an agreed ratio and pay all joint household expenses directly from it. A practical guide with a worked example.",
+    keywords: ["ميزانية البيت المشتركة بين الزوجين", "صندوق مصاريف مشترك للزوجين", "تقسيم مصاريف البيت حسب الدخل", "إدارة مصاريف الزوجين الشهرية", "حساب مشترك لمصاريف المنزل", "كيف نقسم مصاريف البيت بعد الزواج"],
+    keywordsEn: ["how couples should split household expenses", "shared budget pot for couples", "joint expense fund for married couples", "income-proportional household budget", "managing shared monthly expenses as a couple", "joint account vs splitting every bill"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-09-22",
+    content: `
+## الإجابة المختصرة
+
+بدل تسوية كل فاتورة بقالة أو كهرباء أو اشتراك على حدة بين الزوجين، الطريقة الأعملية هي إنشاء **صندوق مصاريف مشترك** يموّله الطرفان شهرياً بمبلغ ثابت (متساوٍ أو بنسبة الدخل)، وتُدفع منه كل المصاريف المشتركة مباشرة دون الحاجة لتسوية كل عملية شراء بمفردها. هذا يختصر عشرات التسويات الصغيرة إلى تحويل واحد شهري لكل طرف.
+
+## ليش تسوية كل فاتورة على حدة متعبة؟
+
+الطريقة التقليدية (كل طرف يدفع بعض الفواتير ثم يحسبان من يدين لمن) تتعب مع الوقت لأسباب:
+
+- **كثرة العمليات الصغيرة**: بقالة، فاتورة كهرباء، اشتراك إنترنت، كل واحدة تحتاج تسوية منفصلة
+- **صعوبة معرفة الرصيد الفعلي**: من غير سجل واضح، يصعب معرفة من دفع أكثر هذا الشهر
+- **احتكاك متكرر**: كل تسوية صغيرة فرصة لنقاش أو نسيان
+
+## كيف يعمل نظام الصندوق المشترك؟
+
+### الخطوة 1: احصروا المصاريف المشتركة الشهرية
+اجمعوا كل بند متكرر يخص البيت: الإيجار أو قسط السكن، فاتورة الكهرباء والماء، البقالة، اشتراك الإنترنت، وأي اشتراكات مشتركة أخرى.
+
+### الخطوة 2: قرّروا طريقة التمويل
+- **تمويل متساوٍ (50/50)**: مناسب إذا كان دخل الطرفين متقارباً
+- **تمويل بنسبة الدخل**: أعدل إذا تفاوت الدخل بشكل كبير، بنفس منطق **نصيب الطرف = (دخله ÷ مجموع دخل الطرفين) × إجمالي الميزانية**
+
+### الخطوة 3: حوّلوا نصيبكما إلى الصندوق في بداية كل شهر
+سواء كان حساباً بنكياً مشتركاً أو مجموعة مخصصة في تطبيق مثل Diviso، يحوّل كل طرف نصيبه فور بداية الشهر، قبل أي إنفاق.
+
+### الخطوة 4: ادفعوا كل مصروف مشترك من الصندوق مباشرة
+لا حاجة لتسوية لاحقة — البقالة، الفواتير، الاشتراكات، كلها تُدفع من رصيد الصندوق مباشرة.
+
+## مثال عملي على حساب النسبة
+
+الزوج يكسب 15,000 ريال شهرياً، والزوجة تكسب 9,000 ريال شهرياً. الميزانية الشهرية المشتركة المقدّرة:
+
+- إيجار: 3,000 ريال
+- بقالة: 1,500 ريال
+- كهرباء وماء: 500 ريال
+- اشتراكات مشتركة: 200 ريال
+
+**إجمالي الميزانية** = 3,000 + 1,500 + 500 + 200 = 5,200 ريال
+
+**مجموع الدخل** = 15,000 + 9,000 = 24,000 ريال
+**نسبة الزوج** = 15,000 ÷ 24,000 = 62.5% → يموّل 3,250 ريال
+**نسبة الزوجة** = 9,000 ÷ 24,000 = 37.5% → تموّل 1,950 ريال
+
+## ماذا يحدث في نهاية الشهر؟ الفائض والعجز
+
+### لو تبقّى فائض في الصندوق
+مثلاً صُرف فعلياً 4,900 ريال من أصل 5,200 ريال الممولة (فائض 300 ريال). أمامكم خياران:
+
+- **ترحيل الفائض للشهر القادم**: يقلل مبلغ التمويل المطلوب الشهر التالي
+- **إعادة توزيع الفائض على الطرفين**: بنفس نسبة المساهمة الأصلية (62.5% / 37.5%)
+
+### لو حدث عجز
+لو صُرف 5,500 ريال بدل 5,200 ريال المخطط لها (عجز 300 ريال)، يغطّى العجز بنفس نسبة المساهمة الأصلية: الزوج يضيف 187.5 ريال والزوجة تضيف 112.5 ريال في الشهر التالي.
+
+## ما الذي لا يُدفع من الصندوق المشترك؟
+
+- **المصروف الشخصي البحت**: ملابس شخصية، هدايا فردية، هوايات خاصة — تبقى من دخل كل طرف الشخصي
+- **مصاريف غير متفق عليها مسبقاً**: أي بند جديد يُضاف للقائمة يحتاج اتفاقاً صريحاً قبل دفعه من الصندوق، لا قراراً منفرداً
+
+## متى تراجعون النسبة؟
+
+راجعوا نسبة المساهمة عند أي تغيّر جوهري في دخل أحد الطرفين (ترقية، تغيير وظيفة، توقف عن العمل)، باستخدام نفس معادلة النسبة على الدخل الجديد.
+
+## أخطاء شائعة عند إدارة ميزانية البيت المشتركة
+
+- **عدم الاتفاق على قائمة واضحة للمصاريف المشتركة**: يسبب جدالاً حول كل بند جديد
+- **الإصرار على 50/50 رغم فارق دخل كبير**: يحمّل الطرف الأقل دخلاً عبئاً نسبياً أثقل
+- **دفع مصاريف شخصية من الصندوق المشترك**: يخلط الحسابات ويصعّب تتبع الميزانية الفعلية
+- **عدم مراجعة الفائض أو العجز شهرياً**: يجعل الصندوق يبتعد تدريجياً عن الواقع
+
+## كيف يساعدكما Diviso في إدارة الصندوق المشترك؟
+
+- ✅ إنشاء مجموعة مخصصة للميزانية المشتركة منفصلة عن المصاريف الشخصية
+- ✅ تمويل شهري بنسبة الدخل أو أي نسبة متفق عليها
+- ✅ تسجيل كل مصروف يُدفع من الصندوق بإيصاله
+- ✅ ملخص شهري واضح للفائض أو العجز جاهز للترحيل أو التوزيع
+- ✅ تعديل سهل للنسبة عند تغيّر دخل أحد الطرفين
+
+## أسئلة شائعة
+
+### هل يُفضّل تسوية كل فاتورة على حدة أم إنشاء صندوق مشترك؟
+الصندوق المشترك أعملي على المدى الطويل، لأنه يختصر عشرات التسويات الصغيرة إلى تحويل شهري واحد لكل طرف، ويجعل معرفة الميزانية المتبقية أسهل بكثير من تتبع فواتير متفرقة.
+
+### كيف نحسب نصيب كل طرف في الصندوق المشترك؟
+إما بالتساوي (50/50) إذا كان الدخل متقارباً، أو بنسبة الدخل إذا تفاوت بشكل كبير، بحيث يموّل كل طرف نسبة تعادل حصته من مجموع دخل الطرفين.
+
+### ماذا لو تبقّى فائض في الصندوق نهاية الشهر؟
+يمكن ترحيله للشهر التالي لتقليل مبلغ التمويل المطلوب، أو توزيعه على الطرفين بنفس نسبة مساهمتهما الأصلية.
+
+## الخلاصة
+
+إدارة ميزانية البيت لا تحتاج تسوية كل فاتورة على حدة. أنشئا صندوقاً مشتركاً بنسبة تمويل عادلة، ادفعا كل مصروف مشترك منه مباشرة، وراجعا الفائض أو العجز شهرياً.
+
+**جرب Diviso الآن ونظّما ميزانية بيتكما المشتركة بعدل وبساطة.**
+    `,
+    contentEn: `
+## Quick Answer
+
+Instead of settling every grocery run, utility bill, or subscription separately between partners, a more practical approach is to set up a **shared expense pot**: each partner funds it monthly with a fixed amount (equal or income-proportional), and all joint household expenses are paid directly from it, without settling each individual purchase. This turns dozens of small settlements into a single monthly transfer per partner.
+
+## Why Is Settling Every Bill Separately So Tiring?
+
+The traditional approach — each partner pays some bills, then you calculate who owes whom — gets exhausting over time because:
+
+- **Too many small transactions**: groceries, an electricity bill, an internet subscription, each needing its own settlement
+- **Hard to know the real balance**: without a clear record, it's hard to tell who paid more this month
+- **Recurring friction**: every small settlement is a chance for an argument or something being forgotten
+
+## How Does the Joint Pot System Work?
+
+### Step 1: List Your Monthly Joint Expenses
+Gather every recurring household line item: rent or housing installment, electricity and water bill, groceries, internet subscription, and any other shared subscriptions.
+
+### Step 2: Decide the Funding Method
+- **Equal funding (50/50)**: works well if both partners' incomes are similar
+- **Income-proportional funding**: fairer when incomes differ significantly, using the same logic as **partner's share = (their income ÷ combined income) × total budget**
+
+### Step 3: Transfer Your Share Into the Pot at the Start of Each Month
+Whether it's a shared bank account or a dedicated group in an app like Diviso, each partner transfers their share right at the start of the month, before any spending happens.
+
+### Step 4: Pay Every Joint Expense Directly From the Pot
+No later settlement needed — groceries, bills, subscriptions are all paid straight from the pot's balance.
+
+## A Worked Example of Calculating the Ratio
+
+The husband earns 15,000 SAR monthly, and the wife earns 9,000 SAR monthly. The estimated monthly joint budget:
+
+- Rent: 3,000 SAR
+- Groceries: 1,500 SAR
+- Electricity and water: 500 SAR
+- Shared subscriptions: 200 SAR
+
+**Total budget** = 3,000 + 1,500 + 500 + 200 = 5,200 SAR
+
+**Combined income** = 15,000 + 9,000 = 24,000 SAR
+**Husband's share** = 15,000 ÷ 24,000 = 62.5% → funds 3,250 SAR
+**Wife's share** = 9,000 ÷ 24,000 = 37.5% → funds 1,950 SAR
+
+## What Happens at the End of the Month? Surplus and Deficit
+
+### If a Surplus Remains in the Pot
+Say only 4,900 SAR was actually spent out of the 5,200 SAR funded (a 300 SAR surplus). You have two options:
+
+- **Roll the surplus into next month**: reduces the funding amount needed next month
+- **Redistribute the surplus between partners**: using the same original contribution ratio (62.5% / 37.5%)
+
+### If a Deficit Happens
+If 5,500 SAR was spent instead of the planned 5,200 SAR (a 300 SAR deficit), cover it using the same original contribution ratio: the husband adds 187.5 SAR and the wife adds 112.5 SAR the following month.
+
+## What Shouldn't Be Paid From the Joint Pot?
+
+- **Purely personal spending**: personal clothing, individual gifts, private hobbies — these stay covered by each partner's own personal income
+- **Expenses not agreed on in advance**: any new item added to the list needs explicit agreement before it's paid from the pot, not a unilateral decision
+
+## When Should You Revisit the Ratio?
+
+Revisit the contribution ratio whenever either partner's income changes significantly (a promotion, a job change, stopping work), using the same ratio formula applied to the new income figures.
+
+## Common Mistakes When Managing a Shared Household Budget
+
+- **No clear list of what counts as a joint expense**: causes an argument over every new item
+- **Insisting on 50/50 despite a large income gap**: places a relatively heavier burden on the lower-earning partner
+- **Paying personal expenses from the joint pot**: mixes up the accounting and makes the real budget hard to track
+- **Not reviewing the surplus or deficit monthly**: lets the pot gradually drift away from reality
+
+## How Diviso Helps Manage the Joint Pot
+
+- ✅ Creates a dedicated group for the shared budget, separate from personal expenses
+- ✅ Monthly funding by income ratio or any other agreed percentage
+- ✅ Logs every expense paid from the pot with its receipt
+- ✅ A clear monthly summary of any surplus or deficit, ready to roll over or redistribute
+- ✅ Easy to adjust the ratio when either partner's income changes
+
+## Frequently Asked Questions
+
+### Is it better to settle every bill separately or set up a joint pot?
+A joint pot is more practical long-term, since it turns dozens of small settlements into a single monthly transfer per partner, and makes it much easier to know the remaining budget than tracking scattered bills.
+
+### How do you calculate each partner's share of the joint pot?
+Either equally (50/50) if incomes are similar, or by income ratio if they differ significantly, so each partner funds a percentage equal to their share of the combined income.
+
+### What happens if there's a surplus left in the pot at month's end?
+It can be rolled over into next month to reduce the funding amount needed, or redistributed between partners using the same original contribution ratio.
+
+## Conclusion
+
+Managing a household budget doesn't require settling every bill separately. Set up a shared pot with a fair funding ratio, pay every joint expense directly from it, and review the surplus or deficit every month.
+
+**Try Diviso now and organize your shared household budget fairly and simply.**
+    `
+  },
+  {
     slug: "split-shared-furniture-cost-roommate-moving-out",
     title: "كيف تحسبون قيمة الأثاث المشترك عند انتقال أحد شركاء السكن؟",
     titleEn: "How to Split the Value of Shared Furniture When a Roommate Moves Out",

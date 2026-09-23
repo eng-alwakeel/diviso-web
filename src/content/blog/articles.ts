@@ -16,6 +16,194 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-coworking-space-rent-freelancers",
+    title: "كيف تقسم إيجار مساحة عمل مشتركة بين الفريلانسرز حسب أيام الحضور؟",
+    titleEn: "How to Split Shared Workspace Rent Between Freelancers by Attendance",
+    description: "عندما يشارك فريلانسرز في استئجار مساحة عمل، الطريقة الأعدل لتقسيم الإيجار هي حسب عدد أيام الحضور الأسبوعية لكل شخص، لا بالتساوي. دليل عملي مع معادلة حساب ومثال رقمي.",
+    descriptionEn: "When freelancers share a rented workspace, the fairest way to split rent is by each person's weekly attendance days, not an equal split. A practical guide with a formula and worked example.",
+    keywords: ["تقسيم إيجار مساحة عمل مشتركة", "شراكة مكتب بين فريلانسرز", "تقسيم إيجار مكتب حسب أيام الحضور", "كيف نقسم فاتورة مساحة العمل المشتركة", "مشاركة مكتب عمل بين مستقلين", "تقسيم تكلفة الإنترنت والتنظيف في المكتب المشترك"],
+    keywordsEn: ["how to split coworking space rent", "shared office cost split between freelancers", "attendance-based rent splitting formula", "splitting workspace rent fairly", "shared desk cost calculator", "freelancers sharing an office lease"],
+    category: "guides",
+    readTime: 6,
+    publishDate: "2026-09-23",
+    content: `
+## الإجابة المختصرة
+
+عندما يشارك مجموعة فريلانسرز في استئجار مساحة عمل واحدة، الطريقة الأعدل لتقسيم الإيجار هي حسب **نسبة أيام الحضور الأسبوعية** لكل شخص، لا بالتساوي، لأن من يحضر 5 أيام أسبوعياً يستفيد من المساحة أكثر بكثير ممن يحضر يومين فقط. أما التكاليف الثابتة التي يستفيد منها الجميع بنفس القدر عند حضورهم (الإنترنت، التنظيف)، فتُقسم بالتساوي بين كل الأعضاء بغض النظر عن عدد الأيام.
+
+## ليش التقسيم المتساوي غير عادل هنا؟
+
+مساحة العمل المشتركة مختلفة عن أي مصروف جماعي آخر لأن الاستفادة منها متفاوتة بطبيعتها:
+
+- **تفاوت كبير في عدد أيام الحضور**: بعض الأعضاء يعملون من المساحة بدوام كامل، وآخرون يحضرون يومين أو ثلاثة فقط
+- **المساحة والمقعد محدودان**: من يحضر أكثر يستخدم المكتب والكرسي والإنترنت لساعات أطول فعلياً
+- **الإيجار ثابت شهرياً بغض النظر عن الحضور**: لكن الاستفادة منه غير متساوية، فيجب أن يعكس التقسيم ذلك
+
+## كيف تحسبون التقسيم حسب الحضور بدقة؟
+
+### المعادلة
+**نصيب الشخص = (عدد أيام حضوره الأسبوعية ÷ مجموع أيام حضور كل الأعضاء) × الإيجار الشهري الإجمالي**
+
+### مثال عملي
+4 فريلانسرز يشاركون مساحة عمل بإيجار شهري إجمالي 4,000 ريال:
+
+- شخص أ: يحضر 5 أيام أسبوعياً (دوام كامل)
+- شخص ب: يحضر 5 أيام أسبوعياً (دوام كامل)
+- شخص ج: يحضر 3 أيام أسبوعياً
+- شخص د: يحضر يومين أسبوعياً
+
+**مجموع أيام الحضور** = 5 + 5 + 3 + 2 = 15 يوماً
+
+- نصيب أ = (5 ÷ 15) × 4,000 = 1,333 ريال
+- نصيب ب = (5 ÷ 15) × 4,000 = 1,333 ريال
+- نصيب ج = (3 ÷ 15) × 4,000 = 800 ريال
+- نصيب د = (2 ÷ 15) × 4,000 = 533 ريال
+
+**التحقق**: 1,333 + 1,333 + 800 + 533 = 3,999 ريال تقريباً (فرق بسيط بسبب التقريب)، مطابق للإيجار الإجمالي.
+
+قارن هذا بالتقسيم المتساوي (1,000 ريال لكل شخص)، الذي كان سيجعل شخص د يدفع تقريباً ضعف ما يستحقه فعلياً بينما يوفّر أ وب جزءاً كبيراً من استخدامهما الفعلي.
+
+## ماذا عن التكاليف الثابتة (الإنترنت، التنظيف، القهوة)؟
+
+هذه التكاليف يستفيد منها كل عضو بنفس القدر في الأيام التي يحضر فيها، بغض النظر عن عدد أيامه الإجمالي، لذا الأفضل تقسيمها **بالتساوي** بين كل الأعضاء المشتركين في المساحة، لا حسب نسبة الحضور:
+
+- اشتراك الإنترنت الشهري
+- خدمة التنظيف الأسبوعية
+- مستلزمات المطبخ المشتركة (قهوة، شاي، مناديل)
+
+## ماذا لو تغيّر جدول حضور أحد الأعضاء خلال الشهر؟
+
+- **تغيير دائم (مثلاً انتقل من دوامين لثلاثة أيام)**: أعيدوا حساب النسب من الشهر التالي بالجدول الجديد
+- **تغيير مؤقت لأيام قليلة (سفر أو إجازة)**: لا داعي لإعادة الحساب لتغييرات قصيرة، اعتمدوا متوسط الحضور المعتاد للشخص
+- **عضو جديد ينضم منتصف الشهر**: احسبوا نصيبه بالتناسب مع عدد الأيام المتبقية من الشهر فقط
+
+## اتفاق واضح قبل الانضمام للمساحة المشتركة
+
+- **حددوا جدول الحضور المتوقع لكل عضو كتابياً**: حتى لو تقريبي، يمنع خلافاً لاحقاً حول "من يستحق كم"
+- **اتفقوا على موعد مراجعة الجدول**: شهرياً مثلاً، للتأكد من أن التقسيم لا يزال يعكس الواقع
+- **افصلوا الإيجار عن التكاليف الثابتة في السجل**: بندان منفصلان لتجنب الخلط عند الحساب
+
+## أخطاء شائعة عند تقسيم إيجار مساحة العمل المشتركة
+
+- **التقسيم المتساوي رغم تفاوت كبير في أيام الحضور**: يظلم من يحضر أقل ويفيد من يحضر أكثر على حسابه
+- **خلط الإيجار بالتكاليف الثابتة في نفس الحساب**: يصعّب معرفة أي بند يُقسّم بأي طريقة
+- **عدم تحديث النسب عند تغيّر جدول أحد الأعضاء بشكل دائم**: يجعل التقسيم يبتعد تدريجياً عن الواقع
+- **عدم وجود اتفاق مكتوب من البداية**: يخلق نقاشاً محرجاً كل شهر عند حساب النصيب
+
+## كيف يساعدكم Diviso في تقسيم إيجار مساحة العمل المشتركة؟
+
+- ✅ تسجيل الإيجار الشهري وتقسيمه تلقائياً حسب نسبة أيام حضور كل عضو
+- ✅ فصل التكاليف الثابتة (إنترنت، تنظيف) كبند منفصل يُقسّم بالتساوي
+- ✅ سجل شفاف يوضح جدول حضور كل عضو ونصيبه المحسوب
+- ✅ تعديل سهل للنسب عند انضمام عضو جديد أو تغيّر جدول أحدهم
+
+## أسئلة شائعة
+
+### هل يجب أن يدفع كل أعضاء مساحة العمل المشتركة نفس المبلغ؟
+ليس بالضرورة. إذا تفاوت عدد أيام الحضور الأسبوعية بشكل كبير بين الأعضاء، فالأعدل تقسيم الإيجار حسب نسبة كل شخص من إجمالي أيام حضور المجموعة، بدل التقسيم المتساوي.
+
+### هل تُقسم تكلفة الإنترنت والتنظيف حسب أيام الحضور أيضاً؟
+لا، هذه التكاليف الثابتة يستفيد منها كل عضو بنفس القدر في الأيام التي يحضر فيها، لذا تُقسم بالتساوي بين كل الأعضاء بغض النظر عن عدد أيام حضورهم الإجمالي.
+
+### ماذا لو انضم عضو جديد للمساحة منتصف الشهر؟
+يُحسب نصيبه من الإيجار بالتناسب مع عدد الأيام المتبقية من الشهر فقط، ثم يدخل ضمن التقسيم الكامل حسب أيام حضوره اعتباراً من الشهر التالي.
+
+## الخلاصة
+
+مساحة العمل المشتركة لا تحتاج جدالاً شهرياً حول من يدفع كم. اتفقوا على جدول حضور واضح، قسّموا الإيجار حسب نسبة الاستخدام الفعلي، وافصلوا التكاليف الثابتة كبند مستقل يُقسّم بالتساوي.
+
+**جرب Diviso الآن ونظّم تقسيم إيجار مساحة عملكم المشتركة بعدل تام.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When a group of freelancers shares one rented workspace, the fairest way to split rent is by each person's **weekly attendance ratio**, not an equal split, since someone who shows up 5 days a week benefits from the space far more than someone who comes in only twice. Fixed costs that everyone benefits from equally whenever they're present (internet, cleaning) should instead be split equally among all members regardless of how many days each one attends.
+
+## Why an Equal Split Doesn't Work Here
+
+A shared workspace is different from any other group expense because the benefit is inherently uneven:
+
+- **A big gap in attendance days**: some members work from the space full-time, others come in just two or three days a week
+- **Limited desks and space**: whoever attends more actually uses the desk, chair, and internet for more hours
+- **Rent is fixed monthly regardless of attendance**: but the benefit from it isn't equal, so the split should reflect that
+
+## How to Calculate an Attendance-Based Split Precisely
+
+### The Formula
+**Person's share = (their weekly attendance days ÷ total attendance days of all members) × total monthly rent**
+
+### A Worked Example
+4 freelancers share a workspace with a total monthly rent of 4,000 SAR:
+
+- Person A: attends 5 days a week (full-time)
+- Person B: attends 5 days a week (full-time)
+- Person C: attends 3 days a week
+- Person D: attends 2 days a week
+
+**Total attendance days** = 5 + 5 + 3 + 2 = 15 days
+
+- A's share = (5 ÷ 15) × 4,000 = 1,333 SAR
+- B's share = (5 ÷ 15) × 4,000 = 1,333 SAR
+- C's share = (3 ÷ 15) × 4,000 = 800 SAR
+- D's share = (2 ÷ 15) × 4,000 = 533 SAR
+
+**Check**: 1,333 + 1,333 + 800 + 533 ≈ 4,000 SAR (a small difference from rounding), matching the total rent.
+
+Compare this to an equal split (1,000 SAR each), which would have made Person D pay almost double their actual fair share while A and B saved a large chunk of their real usage cost.
+
+## What About Fixed Costs (Internet, Cleaning, Coffee)?
+
+These costs benefit every member equally on the days they're present, regardless of their total attendance count, so it's better to split them **equally** among all members sharing the space, not by attendance ratio:
+
+- Monthly internet subscription
+- Weekly cleaning service
+- Shared kitchen supplies (coffee, tea, tissues)
+
+## What If a Member's Schedule Changes During the Month?
+
+- **A permanent change** (e.g., moving from 2 days to 3 days a week): recalculate the ratios starting the following month with the new schedule
+- **A temporary change for a few days** (travel or vacation): no need to recalculate for short changes — use the person's usual average attendance
+- **A new member joins mid-month**: calculate their rent share proportionally to only the remaining days left in that month
+
+## A Clear Agreement Before Joining the Shared Space
+
+- **Define each member's expected attendance schedule in writing**: even a rough estimate prevents a later dispute over "who owes how much"
+- **Agree on when to review the schedule**: monthly, for example, to confirm the split still reflects reality
+- **Keep rent separate from fixed costs in your records**: two distinct line items to avoid confusion when calculating
+
+## Common Mistakes When Splitting Shared Workspace Rent
+
+- **An equal split despite a big gap in attendance days**: unfairly benefits whoever attends more at the expense of whoever attends less
+- **Mixing rent with fixed costs in the same calculation**: makes it hard to know which item is split which way
+- **Not updating the ratios when a member's schedule changes permanently**: lets the split gradually drift away from reality
+- **No written agreement from the start**: creates an awkward conversation every month when calculating shares
+
+## How Diviso Helps Split Shared Workspace Rent
+
+- ✅ Logs the monthly rent and automatically splits it by each member's attendance ratio
+- ✅ Separates fixed costs (internet, cleaning) as a distinct line item split equally
+- ✅ A transparent record showing each member's attendance schedule and calculated share
+- ✅ Easy to adjust ratios when a new member joins or someone's schedule changes
+
+## Frequently Asked Questions
+
+### Should all members of a shared workspace pay the same amount?
+Not necessarily. If weekly attendance days differ significantly between members, it's fairer to split the rent based on each person's share of the group's total attendance days, instead of an equal split.
+
+### Is internet and cleaning cost also split by attendance days?
+No, these fixed costs benefit every member equally on the days they're present, so they should be split equally among all members regardless of their total attendance count.
+
+### What if a new member joins the space mid-month?
+Their rent share is calculated proportionally to only the days remaining in that month, and they're then included in the full attendance-based split starting the following month.
+
+## Conclusion
+
+A shared workspace doesn't need a monthly argument over who pays what. Agree on a clear attendance schedule, split rent by actual usage ratio, and keep fixed costs as a separate line item split equally.
+
+**Try Diviso now and organize your shared workspace rent split with complete fairness.**
+    `
+  },
+  {
     slug: "joint-household-budget-pot-for-couples",
     title: "كيف يدير الزوجان ميزانية البيت المشتركة؟ طريقة الصندوق المشترك",
     titleEn: "How Should Couples Split a Shared Household Budget? The Joint Pot Method",

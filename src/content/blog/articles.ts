@@ -16,6 +16,220 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-nanny-share-cost-between-families",
+    title: "كيف تقسمون راتب المربية المشتركة بين عائلتين أو أكثر؟",
+    titleEn: "How to Split a Shared Nanny's Salary Between Two or More Families",
+    description: "عندما تشترك عائلتان في توظيف مربية واحدة، القسمة بالتساوي على عدد الأطفال تظلم العائلة صاحبة الطفل الواحد. دليل عملي لتوزيع الراتب بنظام وزن يراعي خصم الطفل الإضافي، مع مثال حساب.",
+    descriptionEn: "When two families share one nanny, a plain equal split by child count overcharges the single-child family. A practical guide to a weighted split that accounts for a sibling discount, with a worked example.",
+    keywords: ["تقسيم راتب المربية المشتركة", "مشاركة مربية بين عائلتين", "nanny share بالعربي", "تقسيم تكلفة جليسة الأطفال بين أسرتين", "كم يدفع كل بيت من راتب المربية", "ترتيب مربية مشتركة للأطفال"],
+    keywordsEn: ["how to split a shared nanny's salary", "nanny share cost calculator", "splitting babysitter cost between families", "shared nanny arrangement pricing", "nanny share sibling discount", "cost per child nanny share"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-09-24",
+    content: `
+## الإجابة المختصرة
+
+عندما تشترك عائلتان أو أكثر في توظيف مربية واحدة لرعاية أطفالهم معاً (nanny share)، القسمة الأعدل ليست بالتساوي بين العائلات ولا بالتقسيم المتساوي البسيط على عدد الأطفال، بل بنظام **وزن يعطي الطفل الأول وزناً كاملاً والطفل الإضافي من نفس العائلة وزناً أقل** (خصم الطفل الإضافي)، لأن رعاية طفلين من نفس البيت لا تضاعف الجهد فعلياً. هذا يجعل كل عائلة تدفع نصيباً يعكس العبء الفعلي على المربية، لا مجرد عدد الرؤوس.
+
+## ما هي "المربية المشتركة" ولماذا تحتاج قسمة خاصة؟
+
+المربية المشتركة (nanny share) هي ترتيب تتفق فيه عائلتان أو أكثر على توظيف مربية واحدة بدوام كامل ترعى أطفال العائلتين معاً في نفس المكان، بدل أن توظف كل عائلة مربية منفصلة. هذا يقلل التكلفة على الجميع، لكنه يحتاج نظام قسمة عادلاً لأن:
+
+- **عدد الأطفال يختلف بين العائلات**: عائلة بطفلين مقابل عائلة بطفل واحد
+- **رعاية طفلين من نفس البيت أسهل نسبياً من طفلين من بيتين مختلفين**: لا تحتاج المربية جهداً مضاعفاً بالضبط
+- **التقسيم بالتساوي بين العائلات (50/50) يظلم العائلة الأصغر**: تدفع نفس مبلغ العائلة صاحبة الطفلين رغم استفادتها الأقل
+
+## ليش لا تكفي القسمة البسيطة على عدد الأطفال؟
+
+### مثال يوضح المشكلة
+راتب المربية الشهري 4,000 ريال. عائلة أ لديها طفلان، وعائلة ب لديها طفل واحد. بالقسمة البسيطة على عدد الأطفال (3 أطفال إجمالاً):
+
+**تكلفة الطفل الواحد** = 4,000 ÷ 3 = 1,333 ريال
+- عائلة أ تدفع = 1,333 × 2 = 2,667 ريال
+- عائلة ب تدفع = 1,333 × 1 = 1,333 ريال
+
+هذا يبدو منطقياً لأول وهلة، لكنه يفترض أن رعاية الطفل الثاني في عائلة أ تكلّف المربية نفس جهد الطفل الأول تماماً، بينما الواقع أن الطفل الثاني من نفس البيت غالباً أسهل رعاية (يلعبان معاً، روتين واحد، لا حاجة لتنقل إضافي).
+
+## نظام القسمة بالوزن (مع خصم الطفل الإضافي)
+
+### القاعدة
+- **الطفل الأول في كل عائلة**: وزن كامل = 1.0
+- **كل طفل إضافي من نفس العائلة**: وزن مخفّض، عادة 0.6 (خصم 40%)
+
+### إعادة حساب المثال بنظام الوزن
+عائلة أ (طفلان): الوزن = 1.0 + 0.6 = **1.6**
+عائلة ب (طفل واحد): الوزن = **1.0**
+
+**إجمالي الأوزان** = 1.6 + 1.0 = 2.6
+**تكلفة وحدة الوزن الواحدة** = 4,000 ÷ 2.6 = 1,538 ريال تقريباً
+
+- **نصيب عائلة أ** = 1.6 × 1,538 = 2,462 ريال
+- **نصيب عائلة ب** = 1.0 × 1,538 = 1,538 ريال
+
+قارن هذا بالقسمة البسيطة (2,667 مقابل 1,333): نظام الوزن يخفّض عبء عائلة أ (صاحبة الطفلين) ويرفع قليلاً نصيب عائلة ب، لأنه يعكس أن تكلفة رعاية الطفل الثاني ليست مساوية تماماً لتكلفة الطفل الأول.
+
+## ماذا عن التكاليف الإضافية (تأمينات، بدل مواصلات، مكافأة نهاية الخدمة)؟
+
+أي تكلفة أخرى مرتبطة بتوظيف المربية (التأمينات الاجتماعية إن وجدت، بدل المواصلات، المكافأة السنوية) تُقسم **بنفس نسبة الأوزان** المستخدمة لتقسيم الراتب الأساسي، لا بالتساوي بين العائلتين.
+
+## ماذا لو طلبت إحدى العائلات ساعات إضافية؟
+
+لو احتاجت عائلة ب تغطية نهاية أسبوع أو ساعات إضافية خاصة بطفلها فقط، تتحمل هذه العائلة تكلفة الساعات الإضافية **بمفردها**، دون تقسيمها مع العائلة الأخرى التي لم تستفد منها.
+
+## ماذا عند انضمام عائلة جديدة أو انسحاب إحدى العائلات؟
+
+- **انضمام عائلة جديدة**: أعيدوا حساب الأوزان الكلية من جديد بإضافة وزن أطفالها، وقسّموا الراتب على المجموع الجديد
+- **انسحاب عائلة**: أعيدوا حساب النسب بين العائلات المتبقية فقط، مع مراعاة أن الراتب الكلي قد يحتاج تعديلاً إذا انخفض عدد الأطفال بشكل كبير
+
+## خطوات عملية لتنظيم المربية المشتركة
+
+### الخطوة 1: اتفقوا على نسبة خصم الطفل الإضافي كتابياً
+40% خصم رقم شائع، لكن يمكن للعائلات الاتفاق على نسبة مختلفة حسب ظروفهم.
+
+### الخطوة 2: احسبوا الأوزان والنصيب الشهري لكل عائلة
+استخدموا المعادلة أعلاه، ووثّقوا الحساب حتى يرجع له الجميع عند الحاجة.
+
+### الخطوة 3: سجّلوا كل دفعة شهرية وأي ساعات إضافية بشكل منفصل
+استخدم تطبيق مثل Diviso لإنشاء مجموعة مخصصة بين العائلات لتتبع الراتب الأساسي والساعات الإضافية كبنود منفصلة.
+
+### الخطوة 4: راجعوا الترتيب عند أي تغيير في عدد الأطفال
+انضمام طفل جديد، تخرّج طفل من الرعاية، أو انضمام عائلة جديدة، كلها مناسبات لإعادة حساب الأوزان.
+
+## أخطاء شائعة عند تقسيم راتب المربية المشتركة
+
+- **القسمة البسيطة على عدد الأطفال دون خصم الطفل الإضافي**: تحمّل العائلات متعددة الأطفال عبئاً أكبر من العادل
+- **تقسيم الساعات الإضافية الخاصة بعائلة واحدة على الجميع**: يظلم العائلة التي لم تطلب الساعات الإضافية
+- **عدم توثيق نسبة الخصم من البداية**: يسبب خلافاً عند انضمام عائلة جديدة لاحقاً
+- **نسيان تحديث الحساب عند تغيّر عدد الأطفال**: يجعل التقسيم يبتعد عن الواقع تدريجياً
+
+## كيف يساعدكم Diviso في تقسيم راتب المربية المشتركة؟
+
+- ✅ إنشاء مجموعة مخصصة بين العائلات لتتبع راتب المربية فقط
+- ✅ حساب تلقائي للنصيب حسب نظام الوزن المتفق عليه
+- ✅ تسجيل الساعات الإضافية كبند منفصل خاص بالعائلة الطالبة لها
+- ✅ سجل شفاف يوضح نصيب كل عائلة شهرياً
+- ✅ إعادة حساب سهلة عند انضمام أو انسحاب عائلة
+
+## أسئلة شائعة
+
+### هل تُقسم تكلفة المربية المشتركة بالتساوي بين العائلات؟
+لا، الأعدل تقسيمها حسب عدد الأطفال مع خصم للطفل الإضافي من نفس العائلة (عادة 40%)، لأن العائلة صاحبة الطفل الواحد تستفيد أقل من العائلة صاحبة الأطفال المتعددين.
+
+### ليش يُخصَّم على الطفل الثاني من نفس العائلة؟
+لأن رعاية طفلين من نفس البيت أسهل نسبياً على المربية من رعاية طفلين من عائلتين مختلفتين، إذ يشتركان في نفس الروتين واللعب دون حاجة لجهد أو تنقل إضافي مضاعف.
+
+### من يدفع تكلفة الساعات الإضافية التي تطلبها عائلة واحدة فقط؟
+العائلة التي طلبت الساعات الإضافية تتحمل تكلفتها بمفردها، ولا تُقسم مع العائلة الأخرى التي لم تستفد من هذه الساعات.
+
+## الخلاصة
+
+المربية المشتركة توفّر على العائلات تكلفة كبيرة، لكنها تحتاج نظام قسمة يراعي عدد الأطفال والخصم على الطفل الإضافي، لا مجرد قسمة متساوية. اتفقوا على النسبة كتابياً، ووثّقوا كل دفعة وكل ساعة إضافية بوضوح.
+
+**جرب Diviso الآن ونظّم تقسيم راتب مربيتكم المشتركة بعدل بين كل العائلات.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When two or more families share one full-time nanny to care for their children together (a "nanny share"), the fairest split isn't an equal 50/50 between families, nor a plain equal split by child count — it's a **weighted system that gives the first child full weight and each additional child from the same family a reduced weight** (a sibling discount), since caring for two children from the same household doesn't actually double the nanny's effort. This makes each family pay a share that reflects the real burden on the nanny, not just a headcount.
+
+## What Is a "Nanny Share" and Why Does It Need a Special Split?
+
+A nanny share is an arrangement where two or more families agree to jointly employ one full-time nanny who cares for both families' children together in one place, instead of each family hiring a separate nanny. This lowers the cost for everyone, but it needs a fair splitting system because:
+
+- **The number of children differs between families**: a family with two kids versus a family with one
+- **Caring for two kids from the same household is relatively easier than two from different households**: the nanny doesn't need exactly double the effort
+- **A plain 50/50 split between families is unfair to the smaller family**: they'd pay the same as the two-child family despite benefiting less
+
+## Why Isn't a Simple Per-Child Split Enough?
+
+### An Example That Shows the Problem
+The nanny's monthly salary is 4,000 SAR. Family A has two children, and Family B has one child. With a plain per-child split (3 children total):
+
+**Cost per child** = 4,000 ÷ 3 = 1,333 SAR
+- Family A pays = 1,333 × 2 = 2,667 SAR
+- Family B pays = 1,333 × 1 = 1,333 SAR
+
+This seems reasonable at first, but it assumes caring for Family A's second child costs the nanny exactly the same effort as the first, when in reality a second child from the same household is often easier to care for (they play together, share one routine, and need no extra travel).
+
+## The Weighted Splitting System (With a Sibling Discount)
+
+### The Rule
+- **The first child in each family**: full weight = 1.0
+- **Each additional child from the same family**: a reduced weight, typically 0.6 (a 40% discount)
+
+### Recalculating the Example With Weights
+Family A (two children): weight = 1.0 + 0.6 = **1.6**
+Family B (one child): weight = **1.0**
+
+**Total weight** = 1.6 + 1.0 = 2.6
+**Cost per weight unit** = 4,000 ÷ 2.6 ≈ 1,538 SAR
+
+- **Family A's share** = 1.6 × 1,538 = 2,462 SAR
+- **Family B's share** = 1.0 × 1,538 = 1,538 SAR
+
+Compare this to the plain split (2,667 vs. 1,333): the weighted system lowers Family A's burden (the two-child family) and slightly raises Family B's share, since it reflects that the second child doesn't cost exactly as much as the first.
+
+## What About Extra Costs (Insurance, Transportation Allowance, End-of-Service Bonus)?
+
+Any other cost tied to employing the nanny (social insurance where applicable, a transportation allowance, an annual bonus) should be split using **the same weight ratio** used for the base salary, not equally between the two families.
+
+## What If One Family Requests Extra Hours?
+
+If Family B needs weekend coverage or extra hours specifically for their own child, that family covers the cost of those extra hours **on its own**, without splitting it with the other family that didn't benefit from them.
+
+## What Happens When a New Family Joins or One Leaves?
+
+- **A new family joins**: recalculate the total weights by adding their children's weight, and split the salary over the new total
+- **A family leaves**: recalculate the ratios among the remaining families only, keeping in mind the total salary may need adjusting if the number of children drops significantly
+
+## A Practical System for Organizing a Nanny Share
+
+### Step 1: Agree on the Sibling Discount Percentage in Writing
+40% is a common figure, but families can agree on a different percentage based on their circumstances.
+
+### Step 2: Calculate the Weights and Each Family's Monthly Share
+Use the formula above, and document the calculation so everyone can refer back to it when needed.
+
+### Step 3: Log Every Monthly Payment and Any Extra Hours Separately
+Use an app like Diviso to create a dedicated group between the families to track the base salary and extra hours as separate line items.
+
+### Step 4: Revisit the Arrangement Whenever the Number of Children Changes
+A new child joining, a child graduating out of care, or a new family joining — all are occasions to recalculate the weights.
+
+## Common Mistakes When Splitting a Shared Nanny's Salary
+
+- **A plain per-child split without a sibling discount**: places a heavier-than-fair burden on multi-child families
+- **Splitting one family's extra hours among everyone**: unfairly charges the family that didn't request the extra hours
+- **Not documenting the discount percentage from the start**: causes a dispute when a new family joins later
+- **Forgetting to update the calculation when the number of children changes**: lets the split gradually drift away from reality
+
+## How Diviso Helps Split a Shared Nanny's Salary
+
+- ✅ Creates a dedicated group between families to track only the nanny's salary
+- ✅ Automatic calculation of each family's share based on the agreed weight system
+- ✅ Logs extra hours as a separate line item charged to the requesting family
+- ✅ A transparent record showing each family's monthly share
+- ✅ Easy recalculation when a family joins or leaves the arrangement
+
+## Frequently Asked Questions
+
+### Is a shared nanny's cost split equally between families?
+No, it's fairer to split it based on the number of children with a discount for each additional child from the same family (typically 40%), since a single-child family benefits less than a multi-child family.
+
+### Why is there a discount on the second child from the same family?
+Because caring for two children from the same household is relatively easier for the nanny than caring for two from different households, since they share the same routine and play together without needing double the effort or travel.
+
+### Who pays for extra hours requested by only one family?
+The family that requested the extra hours covers that cost on its own; it isn't split with the other family that didn't benefit from those hours.
+
+## Conclusion
+
+A nanny share saves families significant money, but it needs a splitting system that accounts for the number of children and a discount for additional children, not just an equal split. Agree on the percentage in writing, and document every payment and every extra hour clearly.
+
+**Try Diviso now and organize your shared nanny's salary split fairly between all families.**
+    `
+  },
+  {
     slug: "split-coworking-space-rent-freelancers",
     title: "كيف تقسم إيجار مساحة عمل مشتركة بين الفريلانسرز حسب أيام الحضور؟",
     titleEn: "How to Split Shared Workspace Rent Between Freelancers by Attendance",

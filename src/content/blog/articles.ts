@@ -16,6 +16,226 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-security-deposit-refund-roommates",
+    title: "كيف تقسمون استرداد التأمين (الوديعة) بين شركاء السكن بعدل؟",
+    titleEn: "How to Split a Security Deposit Refund Fairly Among Roommates",
+    description: "عند إخلاء الشقة، خصومات التلف العام تُقسم على الجميع حسب نسبة مساهمتهم الأصلية في التأمين، أما التلف الذي سببه شخص واحد فيُخصم من نصيبه فقط. دليل عملي مع مثال حساب.",
+    descriptionEn: "When vacating a rental, general wear-and-tear deductions should be split by each roommate's original deposit contribution, while damage caused by one person is deducted only from their share. A practical guide with a worked example.",
+    keywords: ["تقسيم استرداد التأمين بين شركاء السكن", "من يستحق كم من وديعة الشقة", "خصومات التلف عند إخلاء الشقة", "تقسيم مبلغ التأمين حسب نسبة الإيجار", "استرجاع تأمين الشقة المشتركة", "من يدفع تلف الشقة عند الإخلاء"],
+    keywordsEn: ["how to split a security deposit refund", "who gets what from the apartment deposit", "damage deduction when moving out roommates", "splitting deposit by rent contribution", "shared apartment deposit refund", "who pays for damage when vacating a rental"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-09-25",
+    content: `
+## الإجابة المختصرة
+
+عند إخلاء شقة مشتركة، يُسترد مبلغ التأمين (الوديعة) من المالك ناقصاً أي خصومات للتلف. الخصومات الناتجة عن **تلف عام** (تنظيف احترافي، خدوش بسيطة) تُقسم بين شركاء السكن حسب **نسبة مساهمة كل شخص الأصلية في مبلغ التأمين**، بينما الخصومات الناتجة عن **تلف تسببه شخص واحد تحديداً** (نافذة مكسورة في غرفته، بقعة سببها هو) تُخصم من نصيب هذا الشخص فقط، لا تُقسم بين الجميع.
+
+## كيف يُدفع التأمين عادة عند بداية السكن المشترك؟
+
+في أغلب الحالات، يساهم كل شريك سكن في مبلغ التأمين بنسبة تعادل نسبته من الإيجار الشهري (من يدفع غرفة أكبر يساهم بمبلغ أكبر في التأمين أيضاً). من المهم توثيق مبلغ مساهمة كل شخص منذ البداية، لأن هذا التوثيق هو الأساس الذي يُبنى عليه توزيع الاسترداد لاحقاً.
+
+## القاعدة الأساسية عند الاسترداد
+
+### الخصم العام (يُقسّم على الجميع)
+أي خصم ناتج عن استخدام عادي للشقة على مدى فترة السكن — تنظيف احترافي، طلاء خفيف، خدوش بسيطة في الأرضية — يُعتبر مسؤولية مشتركة، لأن الجميع استخدم الشقة واستفاد منها.
+
+### الخصم الخاص (يُخصم من شخص واحد)
+أي تلف واضح تسبب فيه شخص محدد — نافذة مكسورة في غرفته، حرق في السجادة بسبب إهماله، ثقب في الحائط علّق عليه لوحة — يُخصم من نصيب هذا الشخص فقط عند الاسترداد.
+
+## مثال عملي كامل
+
+3 شركاء سكن دفعوا تأميناً إجمالياً 6,000 ريال عند بداية العقد، بنسبة مساهمة تعادل حصة كل شخص من الإيجار:
+
+- أحمد (غرفة كبيرة): ساهم بـ 2,500 ريال (41.67%)
+- سالم (غرفة متوسطة): ساهم بـ 2,000 ريال (33.33%)
+- خالد (غرفة صغيرة): ساهم بـ 1,500 ريال (25%)
+
+عند الإخلاء، استرد المالك المبلغ ناقصاً 900 ريال إجمالاً:
+- **600 ريال خصم عام**: تنظيف احترافي شامل للشقة
+- **300 ريال خصم خاص**: نافذة مكسورة في غرفة خالد تحديداً
+
+### الخطوة 1: اخصموا الضرر الخاص من صاحبه أولاً
+خالد يتحمل الـ 300 ريال بالكامل من نصيبه.
+
+### الخطوة 2: وزّعوا الخصم العام حسب نسبة المساهمة الأصلية
+الخصم العام 600 ريال يُقسّم بنفس نسب المساهمة الأصلية:
+
+- حصة أحمد من الخصم العام = 600 × 41.67% = 250 ريال
+- حصة سالم من الخصم العام = 600 × 33.33% = 200 ريال
+- حصة خالد من الخصم العام = 600 × 25% = 150 ريال
+
+### الخطوة 3: احسبوا صافي استرداد كل شخص
+**صافي الاسترداد = مساهمته الأصلية − حصته من الخصم العام − أي خصم خاص عليه**
+
+- استرداد أحمد = 2,500 − 250 = **2,250 ريال**
+- استرداد سالم = 2,000 − 200 = **1,800 ريال**
+- استرداد خالد = 1,500 − 150 − 300 = **1,050 ريال**
+
+**التحقق**: 2,250 + 1,800 + 1,050 = 5,100 ريال، مطابق تماماً للمبلغ الذي استرده المالك (6,000 − 900 = 5,100 ريال).
+
+## ماذا لو لم يتفق الشركاء على مصدر الضرر؟
+
+- **وثّقوا حالة الشقة عند الدخول والخروج بالصور**: أفضل دليل موضوعي لتحديد مسؤولية أي ضرر
+- **راجعوا تقرير الفحص من المالك أو مدير العقار**: عادة يوضح موقع كل ضرر، مما يسهّل تصنيفه كعام أو خاص
+- **عند الشك في المسؤول، عاملوه كضرر عام**: يُقسّم على الجميع بدل خلق نزاع بلا دليل واضح
+
+## ماذا لو غادر أحد الشركاء قبل نهاية العقد؟
+
+- **لا يُسترد نصيبه من التأمين فوراً**: عادة يبقى التأمين الأصلي معلقاً حتى إخلاء الشقة بالكامل من الجميع
+- **اتفقوا كتابياً على كيفية تعويضه**: إما ينتقل نصيبه إلى الشريك الجديد الذي حل محله، أو يُسوّى الأمر بينهما مباشرة خارج التأمين الرسمي
+
+## خطوات عملية لتنظيم تأمين السكن المشترك
+
+### الخطوة 1: وثّقوا مساهمة كل شخص في التأمين منذ اليوم الأول
+سجّلوا المبلغ والنسبة لكل شريك عند توقيع العقد.
+
+### الخطوة 2: التقطوا صوراً لحالة الشقة عند الدخول
+دليل موضوعي يحميكم جميعاً عند التفاوض مع المالك لاحقاً.
+
+### الخطوة 3: صنّفوا كل خصم عند الإخلاء كعام أو خاص فور استلام تقرير المالك
+لا تؤجلوا هذا التصنيف — كلما تأخر، صعُب تذكّر من المسؤول عن كل ضرر.
+
+### الخطوة 4: احسبوا صافي استرداد كل شخص وسجّلوه بوضوح
+استخدم تطبيق مثل Diviso لتوثيق مساهمة كل شخص الأصلية والخصومات المطبّقة عليه.
+
+## أخطاء شائعة عند توزيع استرداد التأمين
+
+- **تقسيم كل الخصومات بالتساوي بغض النظر عن مصدرها**: يظلم من لم يتسبب بأي ضرر
+- **عدم توثيق نسبة مساهمة كل شخص الأصلية**: يجعل حساب الاسترداد النهائي تخميناً لا حساباً دقيقاً
+- **عدم التقاط صور لحالة الشقة عند الدخول**: يصعّب إثبات أن ضرراً معيناً لم يكن موجوداً من البداية
+- **تأجيل تصنيف الخصومات (عام/خاص) لفترة طويلة**: يصعّب تذكّر التفاصيل ويزيد احتمال الخلاف
+
+## كيف يساعدكم Diviso في تقسيم استرداد التأمين؟
+
+- ✅ تسجيل مساهمة كل شريك الأصلية في التأمين منذ بداية العقد
+- ✅ تصنيف الخصومات كعامة (تُقسّم على الجميع) أو خاصة (تُخصم من شخص واحد)
+- ✅ حساب تلقائي لصافي استرداد كل شخص عند الإخلاء
+- ✅ سجل شفاف يوثّق كل خصم وسببه لتجنب أي خلاف لاحق
+
+## أسئلة شائعة
+
+### هل يُقسم استرداد التأمين بالتساوي بين شركاء السكن دائماً؟
+لا، الأعدل تقسيمه حسب نسبة مساهمة كل شخص الأصلية في مبلغ التأمين، وأي خصم ناتج عن ضرر تسبب فيه شخص محدد يُخصم من نصيبه فقط، لا من الجميع.
+
+### كيف نفرّق بين الضرر العام والضرر الخاص؟
+الضرر العام ناتج عن الاستخدام الطبيعي للشقة من الجميع (تنظيف، خدوش بسيطة)، بينما الضرر الخاص واضح المصدر ومرتبط بشخص محدد (نافذة مكسورة في غرفته، تلف تسبب فيه بإهماله).
+
+### ماذا لو غادر أحد الشركاء الشقة قبل انتهاء العقد؟
+عادة يبقى نصيبه من التأمين الأصلي معلقاً حتى إخلاء الشقة بالكامل، ويُتفق كتابياً إما على انتقال نصيبه للشريك البديل أو تسوية الأمر مباشرة بينهما خارج التأمين الرسمي.
+
+## الخلاصة
+
+استرداد التأمين لا يحتاج نزاعاً عند الإخلاء. وثّقوا مساهمة كل شخص من البداية، صنّفوا كل خصم كعام أو خاص بوضوح، واحسبوا صافي استرداد كل شخص بدقة بدل التقسيم المتساوي الأعمى.
+
+**جرب Diviso الآن ونظّم توزيع استرداد تأمين سكنكم المشترك بعدل تام.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When vacating a shared rental, the security deposit is refunded by the landlord minus any damage deductions. Deductions from **general wear and tear** (professional cleaning, minor scuffs) should be split among roommates based on **each person's original contribution to the deposit**, while deductions from **damage caused by one specific person** (a broken window in their room, a stain they caused) should come out of that person's share only, not be split among everyone.
+
+## How Is a Deposit Usually Paid When Moving In Together?
+
+In most cases, each roommate contributes to the deposit in the same ratio as their share of the monthly rent (whoever has the bigger room also contributes a larger share of the deposit). It's important to document each person's contribution amount from the start, since that record is the basis for allocating the refund later.
+
+## The Core Rule for the Refund
+
+### General Deductions (Split Among Everyone)
+Any deduction resulting from normal use of the apartment over the lease period — professional cleaning, light touch-up paint, minor scuffs on the floor — is considered a shared responsibility, since everyone used and benefited from the apartment.
+
+### Specific Deductions (Deducted From One Person)
+Any clear damage caused by a specific person — a broken window in their room, a burn on the carpet from their negligence, a hole in the wall where they hung a picture — comes out of that person's refund share only.
+
+## A Complete Worked Example
+
+Three roommates paid a total deposit of 6,000 SAR at the start of the lease, contributing in the same ratio as their share of the rent:
+
+- Ahmed (large room): contributed 2,500 SAR (41.67%)
+- Salem (medium room): contributed 2,000 SAR (33.33%)
+- Khaled (small room): contributed 1,500 SAR (25%)
+
+At move-out, the landlord refunded the deposit minus 900 SAR total:
+- **600 SAR general deduction**: full professional cleaning
+- **300 SAR specific deduction**: a broken window specifically in Khaled's room
+
+### Step 1: Deduct the Specific Damage From Its Owner First
+Khaled bears the full 300 SAR from his own share.
+
+### Step 2: Distribute the General Deduction by Original Contribution Ratio
+The 600 SAR general deduction is split using the same original contribution ratios:
+
+- Ahmed's share of the general deduction = 600 × 41.67% = 250 SAR
+- Salem's share of the general deduction = 600 × 33.33% = 200 SAR
+- Khaled's share of the general deduction = 600 × 25% = 150 SAR
+
+### Step 3: Calculate Each Person's Net Refund
+**Net refund = original contribution − their share of the general deduction − any specific deduction against them**
+
+- Ahmed's refund = 2,500 − 250 = **2,250 SAR**
+- Salem's refund = 2,000 − 200 = **1,800 SAR**
+- Khaled's refund = 1,500 − 150 − 300 = **1,050 SAR**
+
+**Check**: 2,250 + 1,800 + 1,050 = 5,100 SAR, matching exactly what the landlord refunded (6,000 − 900 = 5,100 SAR).
+
+## What If Roommates Disagree on Who Caused the Damage?
+
+- **Document the apartment's condition with photos at move-in and move-out**: the best objective evidence for assigning responsibility for any damage
+- **Review the landlord's or property manager's inspection report**: it usually notes where each item of damage is located, making it easier to classify as general or specific
+- **When responsibility is genuinely unclear, treat it as general damage**: split it among everyone instead of creating a dispute with no clear evidence
+
+## What If a Roommate Leaves Before the Lease Ends?
+
+- **Their share of the deposit isn't refunded immediately**: the original deposit usually stays held until the apartment is fully vacated by everyone
+- **Agree in writing on how to compensate them**: either their share transfers to the replacement roommate, or it's settled directly between the two of them outside the official deposit
+
+## A Practical System for Organizing a Shared Deposit
+
+### Step 1: Document Each Person's Deposit Contribution From Day One
+Record the amount and percentage for each roommate when the lease is signed.
+
+### Step 2: Take Photos of the Apartment's Condition at Move-In
+Objective evidence that protects everyone when negotiating with the landlord later.
+
+### Step 3: Classify Every Deduction as General or Specific as Soon as You Get the Landlord's Report
+Don't delay this classification — the longer you wait, the harder it is to remember who was responsible for what.
+
+### Step 4: Calculate and Clearly Record Each Person's Net Refund
+Use an app like Diviso to document each person's original contribution and the deductions applied to them.
+
+## Common Mistakes When Allocating a Deposit Refund
+
+- **Splitting all deductions equally regardless of their source**: unfairly penalizes whoever caused no damage
+- **Not documenting each person's original contribution ratio**: turns the final refund calculation into a guess instead of an accurate figure
+- **Not taking photos of the apartment's condition at move-in**: makes it hard to prove a given piece of damage wasn't already there
+- **Delaying the classification of deductions (general/specific) for too long**: makes details harder to remember and raises the odds of a dispute
+
+## How Diviso Helps Split a Security Deposit Refund
+
+- ✅ Logs each roommate's original deposit contribution from the start of the lease
+- ✅ Classifies deductions as general (split among everyone) or specific (deducted from one person)
+- ✅ Automatically calculates each person's net refund at move-out
+- ✅ A transparent record documenting every deduction and its cause to avoid later disputes
+
+## Frequently Asked Questions
+
+### Is a security deposit refund always split equally among roommates?
+No, it's fairer to split it based on each person's original contribution to the deposit, and any deduction caused by a specific person's damage should come out of their share only, not everyone's.
+
+### How do you tell the difference between general and specific damage?
+General damage results from normal use of the apartment by everyone (cleaning, minor scuffs), while specific damage has a clear source tied to one person (a broken window in their room, damage caused by their negligence).
+
+### What if a roommate leaves the apartment before the lease ends?
+Their share of the original deposit usually stays held until the apartment is fully vacated, and it's agreed in writing that either their share transfers to the replacement roommate or gets settled directly between the two of them outside the official deposit.
+
+## Conclusion
+
+A deposit refund doesn't need to turn into a dispute at move-out. Document each person's contribution from the start, clearly classify every deduction as general or specific, and calculate each person's net refund precisely instead of a blind equal split.
+
+**Try Diviso now and organize your shared apartment's deposit refund with complete fairness.**
+    `
+  },
+  {
     slug: "split-nanny-share-cost-between-families",
     title: "كيف تقسمون راتب المربية المشتركة بين عائلتين أو أكثر؟",
     titleEn: "How to Split a Shared Nanny's Salary Between Two or More Families",

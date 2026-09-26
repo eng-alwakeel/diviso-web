@@ -16,6 +16,244 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-group-umrah-hajj-package-cost-by-room-occupancy",
+    title: "كيف تقسم مجموعة تكلفة باقة عمرة أو حج جماعية تختلف حسب عدد الأشخاص بالغرفة؟",
+    titleEn: "How to Split a Group Umrah or Hajj Package Cost When Room Occupancy Differs",
+    description: "باقات العمرة والحج تُسعَّر حسب عدد الأشخاص بالغرفة (ثنائي، ثلاثي، رباعي)، فكل شخص يدفع سعر فئته لا متوسط المجموعة. دليل عملي لجدولة الدفعات والتعامل مع انسحاب أحد الأعضاء بعد الحجز.",
+    descriptionEn: "Umrah and Hajj packages are priced by room occupancy (double, triple, quad), so each person pays their own tier's price, not the group average. A practical guide to installment scheduling and handling a member's withdrawal after booking.",
+    keywords: ["تقسيم تكلفة باقة عمرة جماعية", "أسعار العمرة حسب عدد الغرفة", "من يدفع إذا انسحب أحد بعد حجز العمرة", "تقسيم دفعات الحج بين المجموعة", "سعر الغرفة الثلاثي مقابل الرباعي في العمرة", "تنظيم مصاريف رحلة عمرة جماعية"],
+    keywordsEn: ["how to split umrah package cost with friends", "hajj package pricing by room occupancy", "who pays if someone cancels after booking umrah", "splitting hajj installment payments", "double vs triple vs quad umrah pricing", "organizing a group umrah trip budget"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-09-26",
+    content: `
+## الإجابة المختصرة
+
+باقات العمرة والحج التي تحجزها مجموعة عبر مكتب سفريات تُسعَّر عادة حسب **عدد الأشخاص في الغرفة الواحدة** (ثنائي، ثلاثي، رباعي)، وكل فئة لها سعر مختلف للفرد. لذا يدفع كل شخص **سعر فئته الفعلية** لا متوسط تكلفة المجموعة، وتُجمع الدفعات (العربون والأقساط) بنفس النسبة من سعر كل شخص، لا بمبلغ ثابت موحّد. أما لو انسحب أحد أعضاء الغرفة بعد الحجز، فقد يرتفع سعر الفرد للباقين لأن الغرفة أصبحت بعدد أقل.
+
+## ليش تختلف الأسعار حسب عدد أفراد الغرفة؟
+
+مكاتب العمرة والحج تسعّر الباقة شاملة (طيران، فندق، تأشيرة، نقل) بحيث تنخفض حصة الفرد من تكلفة الفندق كلما زاد عدد المشاركين في نفس الغرفة:
+
+- **غرفة ثنائي**: أعلى سعر للفرد لأن تكلفة الفندق تُقسم على شخصين فقط
+- **غرفة ثلاثي**: سعر أقل لأن نفس التكلفة تقريباً تُقسم على 3 أشخاص
+- **غرفة رباعي**: أقل سعر للفرد بين الفئات الثلاث
+
+## القاعدة الأساسية: كل شخص يدفع سعر فئته
+
+### مثال على أسعار الفئات
+مكتب سفريات يعرض باقة عمرة كاملة (طيران + فندق + تأشيرة + نقل) بالأسعار التالية:
+
+- ثنائي: 5,200 ريال للفرد
+- ثلاثي: 4,600 ريال للفرد
+- رباعي: 4,100 ريال للفرد
+
+لو حجزت مجموعة من 4 أصدقاء غرفة رباعي معاً، فكل واحد منهم يدفع 4,100 ريال، لا متوسطاً حسابياً بين الفئات ولا مبلغاً موحّداً افتراضياً.
+
+## كيف تُجدول الدفعات (العربون والأقساط)؟
+
+معظم مكاتب العمرة والحج تطلب الدفع على دفعات، مثلاً:
+
+- **دفعة أولى (عربون) عند الحجز**: 30% من سعر الباقة
+- **دفعة ثانية**: 40% قبل السفر بـ60 يوماً
+- **دفعة نهائية**: 30% المتبقية قبل السفر بأسبوع
+
+### مثال عملي لجدولة دفعات غرفة رباعي (4,100 ريال للفرد)
+- العربون (30%) = 1,230 ريال
+- الدفعة الثانية (40%) = 1,640 ريال
+- الدفعة النهائية (30%) = 1,230 ريال
+- **الإجمالي** = 1,230 + 1,640 + 1,230 = 4,100 ريال
+
+كل عضو في المجموعة يدفع هذه النسب من **سعر فئته هو**، فمن حجز غرفة رباعي يدفع النسب من 4,100 ريال، ومن حجز غرفة ثلاثي يدفعها من 4,600 ريال.
+
+## ماذا لو انسحب أحد أعضاء الغرفة بعد الحجز؟
+
+هذا الموقف الأكثر تعقيداً في العمرة والحج الجماعي، لأن انسحاب شخص واحد يغيّر تصنيف الغرفة بالكامل.
+
+### مثال عملي
+4 أصدقاء حجزوا غرفة رباعي بسعر 4,100 ريال للفرد، ودفعوا العربون (1,230 ريال لكل واحد). ثم انسحب أحدهم بعد دفع العربون.
+
+الآن أصبح الباقون 3 أشخاص في الغرفة، أي أن سعرهم الفعلي يتحول لفئة **الثلاثي (4,600 ريال للفرد)** بدل الرباعي:
+
+- **الفرق الإضافي على كل شخص متبقٍ** = 4,600 − 4,100 = 500 ريال
+- **الرصيد المتبقي الجديد لكل شخص** = 4,600 − 1,230 (العربون المدفوع بالفعل) = 3,370 ريال، يُوزَّع على الدفعتين المتبقيتين بدل الرصيد القديم
+
+### خيارات المجموعة في هذه الحالة
+- **إيجاد بديل رابع**: يحافظ على سعر الرباعي الأصلي لجميع الأعضاء
+- **قبول سعر الثلاثي الأعلى**: كل عضو متبقٍ يتحمل الزيادة على دفعاته القادمة
+- **التفاوض مع المكتب على تعويض جزئي**: بعض المكاتب تسمح بذلك إذا تم الإبلاغ مبكراً
+
+### ماذا عن عربون الشخص المنسحب؟
+يعتمد على سياسة إلغاء المكتب: غالباً غير قابل للاسترداد بالكامل، وأحياناً يمكن استخدام جزء منه لتغطية فرق السعر على الباقين إذا سمح المكتب بذلك، بدل أن يُصادَر بالكامل دون فائدة للمجموعة.
+
+## بنود تُدفع بالتساوي بغض النظر عن نوع الغرفة
+
+بعض البنود ثابتة لكل شخص بغض النظر عن فئة الغرفة، ويجب فصلها عن حساب سعر الغرفة:
+
+- رسوم التأشيرة الفردية إن حُسبت منفصلة
+- بدل النقل الداخلي للفرد الواحد
+- أي رسوم خدمة إدارية ثابتة يفرضها المكتب على كل مسافر
+
+## خطوات عملية لتنظيم عمرة أو حج جماعي
+
+### الخطوة 1: احصلوا على أسعار الفئات الثلاث كتابياً من المكتب قبل الحجز
+هذا يمنع الالتباس لاحقاً حول من يدفع كم.
+
+### الخطوة 2: حددوا تركيبة كل غرفة قبل الدفع
+اتفقوا من سيشارك مع من، لأن هذا يحدد فئة السعر النهائية لكل شخص.
+
+### الخطوة 3: اتفقوا مسبقاً على سياسة الانسحاب بعد الحجز
+حددوا كيف تُوزَّع الزيادة إذا تغيّرت فئة الغرفة، قبل أن يحدث الانسحاب فعلياً لا بعده.
+
+### الخطوة 4: سجّلوا جدول كل دفعة لكل شخص بسعره الخاص
+استخدم تطبيق مثل Diviso لتسجيل سعر فئة كل شخص وجدول أقساطه بشكل منفصل ودقيق.
+
+## أخطاء شائعة عند تقسيم تكلفة العمرة أو الحج الجماعي
+
+- **افتراض أن الجميع يدفع نفس المبلغ**: يتجاهل فروقات الأسعار الحقيقية بين فئات الغرف
+- **عدم الاتفاق على سياسة الانسحاب مسبقاً**: يسبب خلافاً كبيراً إذا انسحب أحد فعلاً
+- **خلط رسوم التأشيرة الفردية بسعر الغرفة**: يصعّب حساب الفرق عند تغيّر تصنيف الغرفة
+- **تأخير تحديد تركيبة الغرف حتى قرب موعد الدفع النهائي**: يقلل خيارات المجموعة عند حدوث أي تغيير
+
+## كيف يساعدكم Diviso في تنظيم عمرة أو حج جماعي؟
+
+- ✅ تسجيل سعر فئة الغرفة الخاصة بكل شخص بشكل منفصل
+- ✅ جدولة الدفعات (العربون والأقساط) تلقائياً حسب سعر كل فرد
+- ✅ إعادة حساب سريعة عند تغيّر تصنيف الغرفة بسبب انسحاب أحد الأعضاء
+- ✅ سجل شفاف يوضح من دفع كم ومتى موعد دفعته القادمة
+
+## أسئلة شائعة
+
+### هل يدفع الجميع نفس المبلغ في عمرة أو حج جماعي؟
+لا، السعر يختلف حسب فئة الغرفة (ثنائي، ثلاثي، رباعي)، وكل شخص يدفع سعر الفئة التي حجز بها فعلياً، لا متوسطاً موحّداً بين كل أفراد المجموعة.
+
+### ماذا يحدث لسعر الباقين إذا انسحب أحد أعضاء الغرفة بعد الحجز؟
+يرتفع سعر الفرد للباقين عادة لأن الغرفة تنتقل لفئة أعلى سعراً (من رباعي إلى ثلاثي مثلاً)، ويجب توزيع هذه الزيادة على الأعضاء المتبقين أو إيجاد بديل يحافظ على الفئة الأصلية.
+
+### هل تُقسم رسوم التأشيرة الفردية حسب فئة الغرفة أيضاً؟
+لا، الرسوم الفردية الثابتة مثل التأشيرة أو النقل الداخلي للفرد الواحد تُدفع بالتساوي بغض النظر عن فئة الغرفة، ويجب فصلها عن حساب سعر الغرفة نفسه.
+
+## الخلاصة
+
+تنظيم عمرة أو حج جماعي لا يحتاج تعقيداً إذا فهم الجميع أن السعر يختلف حسب فئة الغرفة منذ البداية. احصلوا على الأسعار كتابياً، اتفقوا على سياسة الانسحاب مسبقاً، وسجّلوا كل دفعة بسعرها الفعلي.
+
+**جرب Diviso الآن ونظّم دفعات رحلة عمرتكم أو حجكم الجماعي بعدل ودقة.**
+    `,
+    contentEn: `
+## Quick Answer
+
+Umrah and Hajj packages booked by a group through a travel agency are usually priced by **room occupancy** (double, triple, quad), and each tier has a different per-person price. So each person should pay **their own tier's actual price**, not the group's average cost, and installment payments (the deposit and subsequent payments) should be collected as the same percentage of each person's own price, not a single fixed amount for everyone. If a room member withdraws after booking, the remaining roommates' per-person price may increase because the room now has fewer people.
+
+## Why Do Prices Differ by Room Occupancy?
+
+Umrah and Hajj agencies price the all-inclusive package (flights, hotel, visa, transport) so that each person's share of the hotel cost drops as more people share the same room:
+
+- **Double occupancy**: the highest per-person price, since the hotel cost is split between only two people
+- **Triple occupancy**: a lower price, since roughly the same cost is split among three people
+- **Quad occupancy**: the lowest per-person price among the three tiers
+
+## The Core Rule: Each Person Pays Their Own Tier's Price
+
+### An Example of Tier Pricing
+A travel agency offers a complete Umrah package (flights + hotel + visa + transport) at the following prices:
+
+- Double: 5,200 SAR per person
+- Triple: 4,600 SAR per person
+- Quad: 4,100 SAR per person
+
+If a group of 4 friends books a quad room together, each of them pays 4,100 SAR — not an arithmetic average between the tiers, and not a default flat amount.
+
+## How Should Installment Payments Be Scheduled?
+
+Most Umrah and Hajj agencies require payment in installments, for example:
+
+- **First payment (deposit) at booking**: 30% of the package price
+- **Second payment**: 40% due 60 days before departure
+- **Final payment**: the remaining 30% due one week before departure
+
+### A Worked Example for Scheduling a Quad Room's Payments (4,100 SAR per person)
+- Deposit (30%) = 1,230 SAR
+- Second payment (40%) = 1,640 SAR
+- Final payment (30%) = 1,230 SAR
+- **Total** = 1,230 + 1,640 + 1,230 = 4,100 SAR
+
+Each member of the group pays these percentages of **their own tier's price**, so whoever booked a quad room pays these percentages of 4,100 SAR, while whoever booked a triple room pays them from 4,600 SAR.
+
+## What If a Room Member Withdraws After Booking?
+
+This is the trickiest situation in a group Umrah or Hajj trip, since one person withdrawing changes the entire room's classification.
+
+### A Worked Example
+4 friends booked a quad room at 4,100 SAR per person, and each paid the deposit (1,230 SAR). Then one of them withdrew after paying the deposit.
+
+The remaining 3 people are now effectively in a **triple room (4,600 SAR per person)** instead of a quad:
+
+- **The extra amount owed by each remaining person** = 4,600 − 4,100 = 500 SAR
+- **Each person's new remaining balance** = 4,600 − 1,230 (the deposit already paid) = 3,370 SAR, spread across the remaining two payments instead of the old balance
+
+### The Group's Options in This Situation
+- **Find a fourth replacement**: keeps the original quad price for everyone
+- **Accept the higher triple-occupancy price**: each remaining member absorbs the increase in their upcoming payments
+- **Negotiate partial compensation with the agency**: some agencies allow this if reported early
+
+### What About the Withdrawing Person's Deposit?
+It depends on the agency's cancellation policy: usually not fully refundable, and sometimes part of it can be used to help cover the remaining members' price difference if the agency allows it, instead of being forfeited entirely with no benefit to the group.
+
+## Items Paid Equally Regardless of Room Type
+
+Some items are fixed per person regardless of room tier, and should be kept separate from the room price calculation:
+
+- Individual visa fees, if billed separately
+- A single person's internal transport allowance
+- Any fixed administrative service fee the agency charges per traveler
+
+## A Practical System for Organizing a Group Umrah or Hajj Trip
+
+### Step 1: Get the Three Tier Prices in Writing From the Agency Before Booking
+This prevents later confusion over who owes how much.
+
+### Step 2: Decide Each Room's Composition Before Paying
+Agree on who's sharing with whom, since this determines each person's final price tier.
+
+### Step 3: Agree on a Withdrawal Policy in Advance
+Decide how any price increase from a changed room tier will be distributed, before a withdrawal actually happens, not after.
+
+### Step 4: Log Each Person's Payment Schedule at Their Own Price
+Use an app like Diviso to log each person's tier price and their installment schedule separately and precisely.
+
+## Common Mistakes When Splitting a Group Umrah or Hajj Cost
+
+- **Assuming everyone pays the same amount**: ignores the real price differences between room tiers
+- **Not agreeing on a withdrawal policy in advance**: causes a major dispute if someone actually withdraws
+- **Mixing individual visa fees into the room price**: makes it harder to calculate the difference when the room's tier changes
+- **Delaying room composition decisions until close to the final payment**: reduces the group's options if anything changes
+
+## How Diviso Helps Organize a Group Umrah or Hajj Trip
+
+- ✅ Logs each person's room-tier price separately
+- ✅ Automatically schedules installment payments (deposit and subsequent payments) based on each person's own price
+- ✅ Quick recalculation when a room's tier changes due to a member withdrawing
+- ✅ A transparent record showing who paid what and when their next payment is due
+
+## Frequently Asked Questions
+
+### Does everyone pay the same amount on a group Umrah or Hajj trip?
+No, the price differs by room occupancy tier (double, triple, quad), and each person pays the price of the tier they actually booked, not a single average across the whole group.
+
+### What happens to the remaining members' price if a room member withdraws after booking?
+The per-person price for the remaining members usually increases, since the room shifts to a higher-priced tier (from quad to triple, for example), and this increase should be distributed among the remaining members or offset by finding a replacement who keeps the original tier.
+
+### Are individual visa fees also split by room tier?
+No, fixed per-person fees like a visa or one person's internal transport are paid equally regardless of room tier, and should be kept separate from the room price calculation itself.
+
+## Conclusion
+
+Organizing a group Umrah or Hajj trip doesn't need to be complicated once everyone understands the price differs by room tier from the start. Get the prices in writing, agree on a withdrawal policy in advance, and log each payment at its actual price.
+
+**Try Diviso now and organize your group Umrah or Hajj trip's payments fairly and precisely.**
+    `
+  },
+  {
     slug: "split-security-deposit-refund-roommates",
     title: "كيف تقسمون استرداد التأمين (الوديعة) بين شركاء السكن بعدل؟",
     titleEn: "How to Split a Security Deposit Refund Fairly Among Roommates",

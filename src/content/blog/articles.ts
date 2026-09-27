@@ -16,6 +16,240 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-inherited-property-expenses-heirs",
+    title: "كيف يقسم الورثة مصاريف عقار موروث مشترك بينهم؟",
+    titleEn: "How Should Heirs Split Expenses for a Jointly Inherited Property?",
+    description: "قبل بيع العقار الموروث أو تقسيمه رسمياً، تُقسم مصاريفه الدورية وإيراداته حسب نسبة إرث كل وارث لا بالتساوي، مع معاملة سكن أحد الورثة فيه مجاناً كمصروف يُخصم من نصيبه. دليل عملي مع مثال حساب.",
+    descriptionEn: "Before a jointly inherited property is sold or formally divided, its recurring expenses and income should be split by each heir's inheritance share, not equally, and one heir living there rent-free should be treated as a cost charged to their own share. A practical guide with a worked example.",
+    keywords: ["تقسيم مصاريف عقار موروث بين الورثة", "من يدفع صيانة البيت الموروث", "تقسيم إيجار عقار موروث حسب نصيب الإرث", "سكن أحد الورثة في العقار الموروث مجاناً", "تقسيم مصاريف عمارة موروثة بين الإخوة", "إدارة عقار مشترك بين الورثة قبل البيع"],
+    keywordsEn: ["how heirs should split inherited property expenses", "who pays maintenance on an inherited house", "splitting inherited property rental income by share", "one heir living rent-free in inherited property", "shared inherited building costs among siblings", "managing jointly inherited property before selling"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-09-27",
+    content: `
+## الإجابة المختصرة
+
+قبل بيع عقار موروث أو تقسيمه رسمياً بين الورثة، تُقسم **مصاريفه الدورية** (صيانة، تأمين، رسوم، حارس) و**إيراداته** (إن وُجد إيجار) حسب **نسبة إرث كل وارث** المحددة مسبقاً بينهم، لا بالتساوي بين عدد الرؤوس. أما لو سكن أحد الورثة في العقار مجاناً بينما البقية لا يستفيدون منه، فيُعامَل هذا كمصروف ضمني يُحتسب على نصيبه ويُوزَّع تعويضه على بقية الورثة حسب نسبهم.
+
+## ليش تختلف قسمة العقار الموروث عن أي ملكية مشتركة أخرى؟
+
+في العقار الموروث، نسب الملكية غالباً **غير متساوية أصلاً** بحكم قواعد الإرث المتفق عليها بين العائلة أو المحكمة، على عكس شراكة سيارة أو سكن مشترك حيث تُحدَّد النسب بالاتفاق الحر. لذا يجب أن تعكس قسمة المصاريف والإيرادات هذه النسب المحددة سلفاً، لا افتراض المساواة.
+
+## القاعدة الأساسية: كل شيء بنسبة الإرث
+
+### المصاريف الدورية المشتركة
+تُقسم حسب نسبة كل وارث:
+
+- رسوم البلدية أو الضرائب العقارية
+- تأمين المبنى
+- صيانة الأجزاء المشتركة (المصعد، السطح، الواجهة)
+- راتب الحارس أو عامل النظافة إن وُجد
+
+### الإيرادات المشتركة (إن وُجدت)
+لو كان العقار مؤجراً كلياً أو جزئياً، يُوزَّع صافي الإيجار بنفس نسبة الإرث.
+
+## مثال عملي كامل
+
+عمارة موروثة بين 3 ورثة بنسب إرث محددة مسبقاً: الوارث أ (40%)، الوارث ب (40%)، الوارثة ج (20%).
+
+### المصاريف السنوية المشتركة
+رسوم بلدية + تأمين + صيانة المصعد = 12,000 ريال سنوياً:
+
+- حصة أ (40%) = 4,800 ريال
+- حصة ب (40%) = 4,800 ريال
+- حصة ج (20%) = 2,400 ريال
+
+### الإيراد السنوي من تأجير الوحدات
+إجمالي إيجار الوحدات المؤجرة = 60,000 ريال سنوياً:
+
+- حصة أ (40%) = 24,000 ريال
+- حصة ب (40%) = 24,000 ريال
+- حصة ج (20%) = 12,000 ريال
+
+### صافي كل وارث بعد خصم نصيبه من المصاريف
+- صافي أ = 24,000 − 4,800 = **19,200 ريال**
+- صافي ب = 24,000 − 4,800 = **19,200 ريال**
+- صافي ج = 12,000 − 2,400 = **9,600 ريال**
+
+**التحقق**: إجمالي الإيراد (60,000) ناقص إجمالي المصاريف (12,000) = 48,000 ريال، وهو نفس مجموع الأصفية الثلاثة (19,200 + 19,200 + 9,600 = 48,000 ريال).
+
+## ماذا لو سكن أحد الورثة في العقار مجاناً؟
+
+هذا من أكثر المواقف تسبباً للخلاف العائلي. الحل العادل:
+
+### الخطوة 1: قدّروا القيمة الإيجارية العادلة للوحدة التي يسكنها
+اسألوا عن سعر إيجار وحدة مماثلة في نفس المنطقة، أو استعينوا بتقييم عقاري مستقل.
+
+### الخطوة 2: اعتبروا هذا المبلغ إيراداً افتراضياً يخص الوارث الساكن
+لو كانت القيمة الإيجارية العادلة لوحدة الوارث ب هي 1,500 ريال شهرياً (18,000 ريال سنوياً)، فهذا المبلغ يُحسب كأنه إيراد استفاد منه ب وحده.
+
+### الخطوة 3: وزّعوا هذا الإيراد الافتراضي على بقية الورثة حسب نسبهم
+يُخصم من نصيب ب في التوزيع النهائي، ويُضاف لنصيب أ وج بنفس نسبة مساهمتهما (40% و20% من أصل 60% المتبقية لهما، أي بنسبة 2:1 بينهما).
+
+بهذه الطريقة، لا يتحمّل الورثة غير الساكنين خسارة فرصة الاستفادة من العقار دون تعويض.
+
+## متى يُدفع مصروف من وارث واحد فقط؟
+
+لو انقسم العقار فعلياً إلى وحدات منفصلة يسكن كل وارث في وحدته الخاصة، فأي تجديد أو تحسين **داخل وحدة شخص واحد فقط** (تجديد مطبخه، دهان غرفته) يتحمله هو وحده، ولا يُقسّم على الجميع. فقط المصاريف الهيكلية والمشتركة (السطح، الواجهة، المصعد) تُقسّم حسب نسبة الإرث.
+
+## خطوات عملية لإدارة عقار موروث مشترك
+
+### الخطوة 1: وثّقوا نسبة إرث كل وارث كتابياً
+اجعلوا هذه النسبة مرجعاً واحداً يُستخدم في كل حساب لاحق، سواء للمصاريف أو الإيرادات.
+
+### الخطوة 2: افتحوا حساباً أو مجموعة مخصصة لإدارة العقار
+سجّلوا فيها كل مصروف وإيراد يخص العقار فقط، منفصلاً عن حسابات الورثة الشخصية.
+
+### الخطوة 3: قيّموا أي سكن مجاني بقيمته الإيجارية العادلة من البداية
+لا تتركوا هذا البند بلا تقدير، فكلما تأخر الاتفاق عليه صعُب لاحقاً.
+
+### الخطوة 4: صفّوا الحسابات دورياً (سنوياً مثلاً)
+لا تتركوا المصاريف والإيرادات تتراكم لسنوات دون تسوية، لتجنّب تعقيد الحساب لاحقاً.
+
+## أخطاء شائعة عند إدارة عقار موروث مشترك
+
+- **تقسيم المصاريف بالتساوي بين عدد الورثة**: يتجاهل نسب الإرث الفعلية غير المتساوية
+- **تجاهل قيمة سكن أحد الورثة مجاناً**: يجعل بقية الورثة يتحملون خسارة فرصة دون تعويض
+- **خلط حسابات العقار بالحسابات الشخصية لكل وارث**: يصعّب معرفة الوضع المالي الحقيقي للعقار
+- **عدم تحديث حساب الإيرادات والمصاريف دورياً**: يحوّل التسوية النهائية لعملية معقدة ومثيرة للخلاف
+
+## كيف يساعدكم Diviso في إدارة مصاريف العقار الموروث؟
+
+- ✅ تسجيل نسبة إرث كل وارث واستخدامها تلقائياً في كل حساب
+- ✅ تتبع مصاريف العقار وإيراداته منفصلة عن الحسابات الشخصية
+- ✅ احتساب القيمة الإيجارية العادلة لأي سكن مجاني كبند واضح
+- ✅ سجل شفاف يسهّل التسوية الدورية بين كل الورثة
+
+## أسئلة شائعة
+
+### هل تُقسم مصاريف العقار الموروث بالتساوي بين الورثة؟
+لا، الأعدل تقسيمها حسب نسبة إرث كل وارث المحددة مسبقاً، تماماً كما يُوزَّع أي إيراد من العقار بنفس النسب.
+
+### ماذا لو سكن أحد الورثة في العقار دون أن يدفع إيجاراً؟
+تُقدَّر القيمة الإيجارية العادلة لسكنه وتُحتسب كإيراد افتراضي خاص به، ثم يُوزَّع تعويض عادل عنها على بقية الورثة حسب نسبهم في الإرث.
+
+### من يدفع تكلفة تجديد وحدة خاصة بأحد الورثة فقط؟
+إذا كان العقار مقسماً فعلياً لوحدات منفصلة، فتكلفة أي تجديد داخل وحدة شخص واحد يتحملها هو وحده، بينما تُقسّم فقط المصاريف الهيكلية والمشتركة حسب نسبة الإرث.
+
+## الخلاصة
+
+إدارة عقار موروث مشترك لا تحتاج نزاعاً عائلياً إذا التزم الجميع بنسب الإرث المحددة مسبقاً في كل شيء: المصاريف، الإيرادات، وحتى قيمة أي سكن مجاني. وثّقوا الحسابات بوضوح وصفّوها دورياً.
+
+**جرب Diviso الآن وأدر مصاريف عقاركم الموروث المشترك بعدل وشفافية بين كل الورثة.**
+    `,
+    contentEn: `
+## Quick Answer
+
+Before a jointly inherited property is sold or formally divided among heirs, its **recurring expenses** (maintenance, insurance, fees, a guard's salary) and **income** (if it's rented out) should be split according to **each heir's predetermined inheritance share**, not equally by headcount. If one heir lives in the property rent-free while the others get no benefit from it, this should be treated as an implicit cost charged to that heir's own share, with fair compensation distributed to the remaining heirs.
+
+## Why Is an Inherited Property Different From Any Other Joint Ownership?
+
+With an inherited property, ownership shares are usually **already unequal** by the inheritance rules the family or a court has agreed on, unlike a car partnership or shared apartment where shares are set by free agreement. So splitting expenses and income must reflect these predetermined shares, not assume equality.
+
+## The Core Rule: Everything by Inheritance Share
+
+### Shared Recurring Expenses
+Split by each heir's share:
+
+- Municipal fees or property taxes
+- Building insurance
+- Maintenance of shared parts (elevator, roof, facade)
+- A guard's or cleaner's salary, if any
+
+### Shared Income (If Any)
+If the property is fully or partially rented out, net rental income is distributed using the same inheritance shares.
+
+## A Complete Worked Example
+
+A building inherited by 3 heirs with predetermined inheritance shares: Heir A (40%), Heir B (40%), Heir C (20%).
+
+### Annual Shared Expenses
+Municipal fees + insurance + elevator maintenance = 12,000 SAR per year:
+
+- A's share (40%) = 4,800 SAR
+- B's share (40%) = 4,800 SAR
+- C's share (20%) = 2,400 SAR
+
+### Annual Income From Renting the Units
+Total rent from the rented units = 60,000 SAR per year:
+
+- A's share (40%) = 24,000 SAR
+- B's share (40%) = 24,000 SAR
+- C's share (20%) = 12,000 SAR
+
+### Each Heir's Net After Deducting Their Share of Expenses
+- A's net = 24,000 − 4,800 = **19,200 SAR**
+- B's net = 24,000 − 4,800 = **19,200 SAR**
+- C's net = 12,000 − 2,400 = **9,600 SAR**
+
+**Check**: total income (60,000) minus total expenses (12,000) = 48,000 SAR, matching the sum of the three net amounts (19,200 + 19,200 + 9,600 = 48,000 SAR).
+
+## What If One Heir Lives in the Property Rent-Free?
+
+This is one of the most common sources of family disputes. The fair solution:
+
+### Step 1: Estimate the Fair Market Rent of the Unit They Occupy
+Ask what a comparable unit in the same area rents for, or get an independent property valuation.
+
+### Step 2: Treat That Amount as Notional Income Belonging to the Resident Heir
+If the fair market rent for Heir B's unit is 1,500 SAR per month (18,000 SAR per year), that amount is counted as if B alone benefited from it.
+
+### Step 3: Distribute This Notional Income to the Remaining Heirs by Their Shares
+It's deducted from B's final distribution and added to A and C's shares in the same proportion as their remaining stakes (40% and 20% out of the 60% left between them, i.e., a 2:1 ratio between them).
+
+This way, the heirs who aren't living there don't lose the opportunity to benefit from the property without compensation.
+
+## When Is an Expense Paid by Only One Heir?
+
+If the property has actually been divided into separate units where each heir lives in their own, any renovation or improvement **inside just one person's unit** (renovating their kitchen, painting their room) is covered by that heir alone, not split among everyone. Only structural and shared expenses (the roof, facade, elevator) are split by inheritance share.
+
+## A Practical System for Managing a Jointly Inherited Property
+
+### Step 1: Document Each Heir's Inheritance Share in Writing
+Make this percentage the single reference used in every future calculation, whether for expenses or income.
+
+### Step 2: Open a Dedicated Account or Group to Manage the Property
+Log every expense and income item related only to the property, separate from the heirs' personal accounts.
+
+### Step 3: Value Any Rent-Free Occupancy at Fair Market Rent From the Start
+Don't leave this item unestimated — the longer it goes unagreed, the harder it gets to settle later.
+
+### Step 4: Settle the Accounts Periodically (Annually, for Example)
+Don't let expenses and income pile up for years without settling, to avoid a complicated calculation later.
+
+## Common Mistakes When Managing a Jointly Inherited Property
+
+- **Splitting expenses equally by number of heirs**: ignores the actual, unequal inheritance shares
+- **Ignoring the value of one heir living there rent-free**: leaves the other heirs bearing a lost opportunity with no compensation
+- **Mixing the property's accounts with each heir's personal accounts**: makes it hard to know the property's real financial position
+- **Not updating the income and expense calculation periodically**: turns the final settlement into a complicated, dispute-prone process
+
+## How Diviso Helps Manage a Jointly Inherited Property's Expenses
+
+- ✅ Logs each heir's inheritance share and applies it automatically to every calculation
+- ✅ Tracks the property's expenses and income separately from personal accounts
+- ✅ Calculates the fair market rent value of any rent-free occupancy as a clear line item
+- ✅ A transparent record that makes periodic settlement easy for all heirs
+
+## Frequently Asked Questions
+
+### Are expenses for an inherited property split equally among heirs?
+No, it's fairer to split them by each heir's predetermined inheritance share, exactly as any income from the property is distributed using the same shares.
+
+### What if one heir lives in the property without paying rent?
+The fair market rent of their occupancy is estimated and counted as notional income belonging to them, and fair compensation for it is then distributed to the remaining heirs according to their inheritance shares.
+
+### Who pays for renovating a unit that belongs to just one heir?
+If the property has actually been divided into separate units, the cost of renovating inside one person's unit is covered by that heir alone, while only structural and shared expenses are split by inheritance share.
+
+## Conclusion
+
+Managing a jointly inherited property doesn't have to become a family dispute if everyone sticks to the predetermined inheritance shares for everything: expenses, income, and even the value of any rent-free occupancy. Document the accounts clearly and settle them periodically.
+
+**Try Diviso now and manage your jointly inherited property's expenses fairly and transparently among all heirs.**
+    `
+  },
+  {
     slug: "split-group-umrah-hajj-package-cost-by-room-occupancy",
     title: "كيف تقسم مجموعة تكلفة باقة عمرة أو حج جماعية تختلف حسب عدد الأشخاص بالغرفة؟",
     titleEn: "How to Split a Group Umrah or Hajj Package Cost When Room Occupancy Differs",

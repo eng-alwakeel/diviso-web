@@ -16,6 +16,212 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-neighborhood-security-guard-cost",
+    title: "كيف يقسم الجيران تكلفة حارس الحي أو بوابة الحي المشتركة؟",
+    titleEn: "How Should Neighbors Split the Cost of a Shared Security Guard or Gate?",
+    description: "تكلفة حارس الحي أو بوابته الأمنية تُقسم بالتساوي بين كل منزل بغض النظر عن حجمه، لأن الفائدة الأمنية الأساسية متساوية للجميع. دليل عملي لتحصيل الاشتراك الشهري والتعامل مع المنازل الشاغرة والمتأخرين عن الدفع.",
+    descriptionEn: "The cost of a shared neighborhood guard or security gate should be split equally per household regardless of house size, since the basic security benefit is the same for everyone. A practical guide to collecting the monthly fee and handling vacant homes and late payers.",
+    keywords: ["تقسيم تكلفة حارس الحي بين الجيران", "من يدفع اشتراك بوابة الحي", "تكلفة أمن الحي المشترك", "اشتراك حارس الحي الشهري", "من يدفع إذا كان المنزل شاغراً", "التعامل مع المتأخرين عن دفع اشتراك الحارس"],
+    keywordsEn: ["how neighbors should split a security guard cost", "shared gate fee for a private street", "neighborhood watch cost sharing", "monthly guard subscription per household", "who pays for security when a house is vacant", "handling neighbors who don't pay their share"],
+    category: "guides",
+    readTime: 6,
+    publishDate: "2026-09-28",
+    content: `
+## الإجابة المختصرة
+
+عندما يتشارك سكان حي خاص أو شارع مغلق في توظيف حارس أمني أو تركيب بوابة إلكترونية، الطريقة الأعدل لتقسيم التكلفة هي **بالتساوي بين كل منزل** بغض النظر عن حجمه، لأن الفائدة الأمنية الأساسية (وجود الحارس، الدخول عبر البوابة) متساوية لكل الأسر. أما المنازل التي تطلب تغطية إضافية خاصة، أو المنازل الشاغرة، فتُعامَل ببند منفصل يُتفق عليه بشكل مسبق.
+
+## ليش القسمة بالتساوي هي القاعدة الافتراضية هنا؟
+
+على عكس فاتورة الكهرباء التي تختلف حسب الاستهلاك الفعلي، فائدة الحارس أو البوابة الأمنية **لا تتناسب مع حجم المنزل**:
+
+- **منزل كبير ومنزل صغير يستفيدان من نفس مستوى الأمان**: وجود الحارس يحمي الجميع بالتساوي تقريباً
+- **البوابة تُستخدم بنفس القدر من كل الأسر**: كل سيارة تدخل وتخرج من نفس البوابة بغض النظر عن حجم المنزل
+- **معيار حجم المنزل يصعب تطبيقه بدقة**: لا يوجد رابط مباشر بين مساحة الفيلا ومقدار الاستفادة الأمنية
+
+## مثال عملي على القسمة الأساسية
+
+20 فيلا في شارع خاص تشترك في توظيف حارس وصيانة بوابة إلكترونية، بتكلفة شهرية إجمالية 8,000 ريال:
+
+**نصيب كل منزل** = 8,000 ÷ 20 = **400 ريال شهرياً**
+
+## ماذا عن المنازل الزاوية التي تطلب تغطية إضافية؟
+
+بعض المنازل الواقعة على زاوية الشارع أو بجوار مدخل خارجي قد تطلب تغطية أمنية إضافية (دورية ليلية خاصة، كاميرا إضافية). في هذه الحالة:
+
+- تُحدَّد تكلفة التغطية الإضافية بشكل منفصل عن الاشتراك الأساسي
+- يتحمّلها فقط المنزل (أو المنازل) التي طلبتها، لا كل السكان
+
+### مثال
+فيلتان في زاوية الشارع طلبتا دورية ليلية إضافية بتكلفة 100 ريال شهرياً إجمالاً:
+
+- كل فيلا من الفيلتين تدفع 400 ريال (الاشتراك الأساسي) + 50 ريال (نصيبها من التغطية الإضافية) = **450 ريال شهرياً**
+- باقي الفلل الـ18 تدفع 400 ريال فقط كما في القاعدة الأساسية
+
+## ماذا عن المنزل الشاغر (صاحبه مسافر أو المنزل غير مسكون)؟
+
+هذه من أكثر النقاط إثارة للنقاش بين الجيران. الحل العملي الأكثر شيوعاً:
+
+- **المنزل الشاغر يستمر بالمساهمة، لكن بنسبة مخفّضة**: لأن البوابة والطريق المشترك ما زالا يحتاجان صيانة بغض النظر عن السكن الفعلي، لكن الحارس لا يحتاج حراسة نشطة لمنزل فارغ بنفس القدر
+- **نسبة شائعة**: 50% من الاشتراك الكامل للمنزل الشاغر تماماً (200 ريال بدل 400 في المثال أعلاه)
+- **قرار لجنة السكان لا قرار فردي**: يجب أن تكون هذه النسبة متفقاً عليها مسبقاً بين كل السكان، لا قراراً ينفرد به صاحب المنزل الشاغر
+
+## كيف تُحصَّل الاشتراكات الشهرية؟
+
+- **عيّنوا مندوباً أو لجنة سكان**: شخص أو لجنة صغيرة مسؤولة عن التحصيل الشهري من الجميع
+- **حدّدوا موعداً ثابتاً للتحصيل**: أول كل شهر مثلاً، لتجنّب التذكير المتكرر
+- **افصلوا راتب الحارس الشهري عن صندوق الصيانة**: أنشئوا بنداً منفصلاً لصيانة الكاميرات والبوابة الإلكترونية، بمساهمة صغيرة إضافية عند الحاجة فقط
+
+## ماذا لو تأخر أحد السكان عن الدفع؟
+
+- **التذكير المباشر أولاً**: قبل اتخاذ أي إجراء، ذكّروا الشخص بلطف عبر مندوب اللجنة
+- **تقييد صلاحية دخول البوابة عند التأخر المتكرر**: بعض الأحياء تتفق على تعطيل ريموت الدخول مؤقتاً لمن يتأخر عن الدفع لأكثر من شهرين، حتى يسدد المتأخرات
+- **توثيق سياسة التأخر مسبقاً**: يجب أن يعرف الجميع هذه القاعدة من البداية، لا أن تُطبَّق فجأة على شخص واحد
+
+## خطوات عملية لتنظيم اشتراك أمن الحي
+
+### الخطوة 1: اتفقوا على القاعدة الأساسية كتابياً
+وثّقوا أن القسمة بالتساوي لكل منزل، مع تحديد أي استثناءات (زاوية، منزل شاغر) بوضوح.
+
+### الخطوة 2: اجمعوا الاشتراك في مجموعة أو حساب مخصص للحي
+استخدم تطبيق مثل Diviso لإنشاء مجموعة مستقلة لسكان الحي، منفصلة عن أي حسابات شخصية أخرى.
+
+### الخطوة 3: سجّلوا كل دفعة ومن سدّدها بوضوح
+سجل شفاف يمنع الجدال حول "من دفع ومن لم يدفع" شهرياً.
+
+### الخطوة 4: راجعوا الاتفاق دورياً
+إذا انضم سكان جدد أو تغيّرت ظروف أحد المنازل (أصبح شاغراً أو عاد للسكن)، حدّثوا الحساب فوراً.
+
+## أخطاء شائعة عند تقسيم تكلفة أمن الحي
+
+- **تقسيم التكلفة حسب حجم المنزل بدل بالتساوي**: يخلق تعقيداً غير ضروري لفائدة أمنية متساوية أساساً
+- **عدم توثيق نسبة المنازل الشاغرة مسبقاً**: يسبب خلافاً كل مرة يسافر أحد السكان لفترة طويلة
+- **الاعتماد على التحصيل النقدي غير الموثّق**: يصعّب معرفة من دفع فعلاً عند حدوث أي التباس
+- **عدم وجود سياسة واضحة للمتأخرين**: يجعل التعامل مع كل حالة تأخير نقاشاً منفرداً بدل تطبيق قاعدة معروفة للجميع
+
+## كيف يساعدكم Diviso في تنظيم اشتراك أمن الحي؟
+
+- ✅ إنشاء مجموعة مخصصة لسكان الحي منفصلة عن الحسابات الشخصية
+- ✅ تسجيل الاشتراك الشهري الأساسي وأي تغطية إضافية كبنود منفصلة
+- ✅ سجل شفاف يوضح من دفع نصيبه كل شهر
+- ✅ تذكيرات تلقائية للمتأخرين قبل تصعيد الأمر
+
+## أسئلة شائعة
+
+### هل يدفع كل منزل نفس المبلغ لحارس الحي بغض النظر عن حجمه؟
+نعم، القاعدة الافتراضية هي التقسيم بالتساوي بين كل منزل، لأن الفائدة الأمنية الأساسية من وجود الحارس أو البوابة متساوية تقريباً بغض النظر عن حجم المنزل.
+
+### هل يدفع صاحب المنزل الشاغر نفس اشتراك المنزل المسكون؟
+غالباً لا، الشائع أن يدفع نسبة مخفّضة (مثل 50%) لأن البوابة والطريق المشترك ما زالا يحتاجان صيانة، لكن الحارس لا يحتاج حراسة نشطة لمنزل فارغ بنفس القدر، وهذا يجب أن يكون قراراً متفقاً عليه بين كل السكان مسبقاً.
+
+### ماذا يحدث إذا تأخر أحد السكان عن دفع اشتراكه؟
+يبدأ الأمر بتذكير مباشر ولطيف، وإذا استمر التأخر لفترة طويلة (شهرين مثلاً)، تتفق بعض الأحياء على تقييد صلاحية دخول البوابة مؤقتاً حتى تسوية المتأخرات، وفق سياسة موثّقة مسبقاً يعرفها الجميع.
+
+## الخلاصة
+
+تنظيم اشتراك أمن الحي لا يحتاج نزاعاً متكرراً بين الجيران. اتفقوا على القسمة المتساوية كقاعدة أساسية، حدّدوا استثناءات المنازل الزاوية والشاغرة كتابياً، ووثّقوا كل دفعة بوضوح.
+
+**جرب Diviso الآن ونظّم اشتراك أمن حيكم بعدل وشفافية بين كل الجيران.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When residents of a private neighborhood or gated street share the cost of hiring a security guard or installing an electronic gate, the fairest way to split the cost is **equally per household**, regardless of house size, since the basic security benefit (having a guard, gate access) is roughly the same for every family. Homes that request extra dedicated coverage, or vacant homes, are handled as a separate line item agreed on in advance.
+
+## Why Is an Equal Split the Default Rule Here?
+
+Unlike an electricity bill that varies by actual consumption, the benefit of a guard or security gate **doesn't scale with house size**:
+
+- **A large house and a small house get the same level of security**: the guard's presence protects everyone roughly equally
+- **The gate is used the same amount by every household**: every car enters and exits through the same gate regardless of house size
+- **House size is hard to apply as a fair metric here**: there's no direct link between a villa's floor area and the amount of security benefit it gets
+
+## A Worked Example of the Basic Split
+
+20 villas on a private street share the cost of hiring a guard and maintaining an electronic gate, at a total monthly cost of 8,000 SAR:
+
+**Each household's share** = 8,000 ÷ 20 = **400 SAR per month**
+
+## What About Corner Houses That Request Extra Coverage?
+
+Some homes at a street corner or near an outer entrance may request additional security coverage (an extra night patrol, an additional camera). In this case:
+
+- The cost of the extra coverage is calculated separately from the base subscription
+- It's covered only by the home (or homes) that requested it, not by all residents
+
+### An Example
+Two corner villas requested an extra night patrol at a combined cost of 100 SAR per month:
+
+- Each of the two villas pays 400 SAR (base subscription) + 50 SAR (their share of the extra coverage) = **450 SAR per month**
+- The other 18 villas pay just 400 SAR as in the base rule
+
+## What About a Vacant House (Owner Traveling or the House Unoccupied)?
+
+This is one of the most debated points among neighbors. The most common practical solution:
+
+- **The vacant house keeps contributing, but at a reduced rate**: since the shared gate and road still need maintenance regardless of actual occupancy, while the guard doesn't need to actively watch an empty house to the same degree
+- **A common rate**: 50% of the full subscription for a fully vacant house (200 SAR instead of 400 SAR in the example above)
+- **A residents' committee decision, not a unilateral one**: this rate should be agreed on in advance by all residents, not decided unilaterally by the vacant home's owner
+
+## How Should the Monthly Subscription Be Collected?
+
+- **Appoint a representative or a residents' committee**: one person or a small committee responsible for collecting from everyone each month
+- **Set a fixed collection date**: the first of each month, for example, to avoid repeated reminders
+- **Keep the guard's monthly salary separate from a maintenance fund**: create a separate line item for maintaining cameras and the electronic gate, with a small additional contribution only when needed
+
+## What If a Resident Falls Behind on Payment?
+
+- **A direct reminder first**: before taking any action, have the committee representative give a gentle reminder
+- **Restrict gate access for repeated delays**: some neighborhoods agree to temporarily disable the entry remote for anyone more than two months behind, until they settle what they owe
+- **Document the late-payment policy in advance**: everyone should know this rule from the start, rather than having it suddenly applied to one person
+
+## A Practical System for Organizing a Neighborhood Security Subscription
+
+### Step 1: Agree on the Base Rule in Writing
+Document that the split is equal per household, with any exceptions (corner homes, vacant homes) clearly defined.
+
+### Step 2: Collect the Subscription in a Dedicated Group or Account
+Use an app like Diviso to create a separate group for the neighborhood's residents, distinct from any other personal accounts.
+
+### Step 3: Clearly Log Every Payment and Who Made It
+A transparent record prevents a monthly argument over "who paid and who didn't."
+
+### Step 4: Revisit the Agreement Periodically
+If new residents join, or a home's situation changes (becomes vacant or gets reoccupied), update the calculation right away.
+
+## Common Mistakes When Splitting a Neighborhood Security Cost
+
+- **Splitting the cost by house size instead of equally**: creates unnecessary complexity for a benefit that's essentially equal for everyone
+- **Not documenting the vacant-house rate in advance**: causes a dispute every time a resident travels for an extended period
+- **Relying on undocumented cash collection**: makes it hard to know who actually paid when any confusion arises
+- **Having no clear late-payment policy**: turns every delay into a one-off negotiation instead of applying a rule everyone already knows
+
+## How Diviso Helps Organize a Neighborhood Security Subscription
+
+- ✅ Creates a dedicated group for the neighborhood's residents, separate from personal accounts
+- ✅ Logs the base monthly subscription and any extra coverage as separate line items
+- ✅ A transparent record showing who paid their share each month
+- ✅ Automatic reminders for late payers before escalating
+
+## Frequently Asked Questions
+
+### Does every house pay the same amount for a shared guard, regardless of size?
+Yes, the default rule is an equal split per household, since the basic security benefit of having a guard or gate is roughly the same regardless of house size.
+
+### Does a vacant house's owner pay the same subscription as an occupied one?
+Usually not — it's common for them to pay a reduced rate (such as 50%), since the shared gate and road still need maintenance, but the guard doesn't need to actively watch an empty house to the same degree, and this should be a decision agreed on by all residents in advance.
+
+### What happens if a resident falls behind on their subscription?
+It starts with a direct, gentle reminder, and if the delay continues for a long time (two months, for example), some neighborhoods agree to temporarily restrict gate access until the balance is settled, following a policy that's documented in advance and known to everyone.
+
+## Conclusion
+
+Organizing a neighborhood security subscription doesn't need to be a recurring dispute between neighbors. Agree on an equal split as the base rule, clearly define exceptions for corner and vacant homes in writing, and log every payment transparently.
+
+**Try Diviso now and organize your neighborhood's security subscription fairly and transparently among all residents.**
+    `
+  },
+  {
     slug: "split-inherited-property-expenses-heirs",
     title: "كيف يقسم الورثة مصاريف عقار موروث مشترك بينهم؟",
     titleEn: "How Should Heirs Split Expenses for a Jointly Inherited Property?",

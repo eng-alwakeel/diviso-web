@@ -16,6 +16,228 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-family-eidiya-pool-nieces-nephews",
+    title: "كيف يجمع الإخوة العيدية لأبناء العائلة في صندوق واحد بعدل؟",
+    titleEn: "How Should Siblings Pool Eidiya Money for Nieces and Nephews?",
+    description: "بدل أن يعطي كل عم أو خال عيدية مختلفة حسب دخله فيشعر الأطفال بالتفاوت، تجمع العائلة صندوق عيدية مشترك بمساهمة كل شخص حسب دخله، ويُوزَّع بالتساوي لكل طفل حسب فئته العمرية. دليل عملي مع مثال حساب.",
+    descriptionEn: "Instead of each aunt or uncle giving a different Eidiya amount based on their own income and children noticing the gap, families can pool a shared Eidiya fund with income-proportional contributions and an equal, age-tiered payout per child. A practical guide with a worked example.",
+    keywords: ["تجميع العيدية بين الإخوة", "صندوق عيدية مشترك للعائلة", "توزيع العيدية بالتساوي على الأطفال", "كم عيدية لكل طفل حسب العمر", "تقسيم مساهمة العيدية حسب الدخل", "تنظيم عيدية العيد بين الأعمام والأخوال"],
+    keywordsEn: ["how to pool eidiya money for family", "shared eid gift fund for nieces and nephews", "splitting eidiya contribution by income", "equal eidiya payout for cousins", "organizing eid money for extended family", "age-based eidiya amounts for children"],
+    category: "guides",
+    readTime: 6,
+    publishDate: "2026-09-29",
+    content: `
+## الإجابة المختصرة
+
+بدل أن يعطي كل عم أو خال عيدية مختلفة لأبناء إخوته حسب دخله الشخصي، مما يجعل بعض الأطفال يلاحظون تفاوتاً في المبلغ بينهم وبين أبناء عمومتهم، يمكن للإخوة تجميع **صندوق عيدية مشترك**: كل شخص يساهم في الصندوق بنسبة تعادل دخله، بينما يُوزَّع المبلغ على كل الأطفال **بالتساوي** حسب فئتهم العمرية، بغض النظر عن مساهمة والدهم في الصندوق.
+
+## ليش يسبب توزيع العيدية الفردي إحراجاً؟
+
+- **تفاوت واضح بين الأطفال**: طفل يستلم 200 ريال من عمه بينما ابن عمه يستلم 50 ريال فقط من عم آخر أقل دخلاً
+- **مقارنات محرجة بين الأطفال أنفسهم**: الأطفال يقارنون مبالغهم أثناء العيد مباشرة
+- **ضغط غير معلن على الأعمام والأخوال الأقل دخلاً**: يشعرون بالحرج من إعطاء مبلغ أقل أمام بقية العائلة
+
+## كيف يعمل صندوق العيدية المشترك؟
+
+### المبدأ الأساسي
+**فصل المساهمة عن التوزيع**: كل شخص يساهم في الصندوق حسب قدرته المالية (دخله)، لكن كل الأطفال يستلمون نفس المبلغ حسب فئتهم العمرية، بغض النظر عن مساهمة والدهم تحديداً.
+
+### الخطوة 1: حددوا فئات العمر ومبلغ كل فئة
+مثال:
+- الأطفال دون 7 سنوات: 100 ريال لكل طفل
+- الأطفال من 7 سنوات فأكثر: 150 ريال لكل طفل
+
+### الخطوة 2: احسبوا إجمالي المبلغ المطلوب للصندوق
+اجمعوا عدد الأطفال في كل فئة عمرية عبر كل العائلة، واضربوا في مبلغ الفئة.
+
+### الخطوة 3: وزّعوا المساهمة على الإخوة حسب نسبة الدخل
+كل شخص يساهم بنسبة دخله من مجموع دخل كل المساهمين.
+
+## مثال عملي كامل
+
+3 إخوة يجمعون عيدية لأبناء إخوتهم (6 أطفال إجمالاً):
+
+- الأخ أ لديه طفلان: عمر 5 وعمر 9
+- الأخ ب لديه طفل واحد: عمر 3
+- الأخ ج لديه 3 أطفال: أعمار 6، 10، 12
+
+### حساب إجمالي المبلغ المطلوب
+بأسعار الفئات (100 ريال دون 7 سنوات، 150 ريال 7 سنوات فأكثر):
+
+- أطفال أ: طفل عمر 5 (100) + طفل عمر 9 (150) = 250 ريال
+- أطفال ب: طفل عمر 3 (100) = 100 ريال
+- أطفال ج: طفل عمر 6 (100) + طفل عمر 10 (150) + طفل عمر 12 (150) = 400 ريال
+
+**إجمالي الصندوق المطلوب** = 250 + 100 + 400 = **750 ريال**
+
+### حساب مساهمة كل أخ حسب الدخل
+الأخ أ يكسب 15,000 ريال، الأخ ب يكسب 10,000 ريال، الأخ ج يكسب 8,000 ريال. مجموع الدخل = 33,000 ريال:
+
+- نسبة أ = 15,000 ÷ 33,000 = 45.45% → يساهم بـ 341 ريال
+- نسبة ب = 10,000 ÷ 33,000 = 30.30% → يساهم بـ 227 ريال
+- نسبة ج = 8,000 ÷ 33,000 = 24.24% → يساهم بـ 182 ريال
+
+**التحقق**: 341 + 227 + 182 = 750 ريال، مطابق لإجمالي الصندوق المطلوب.
+
+### النقطة الأهم: التوزيع لا علاقة له بمن ساهم بكم
+رغم أن الأخ ج ساهم بأقل مبلغ (182 ريال)، فإن أطفاله الثلاثة يستلمون عيديتهم كاملة حسب فئتهم العمرية (100، 150، 150 ريال) تماماً كأطفال بقية الإخوة، لأن التوزيع من الصندوق المشترك لا من مساهمة والدهم تحديداً.
+
+## ماذا لو أراد أحد الإخوة المساهمة بأكثر من نصيبه؟
+
+هذا مسموح تماماً ومرحّب به: الشخص الأكثر قدرة مالياً يمكنه التبرع بمبلغ إضافي للصندوق دون أن يزيد ذلك من عيدية أطفاله تحديداً، بل يذهب الفائض لصالح كل الأطفال بالتساوي (مثلاً برفع فئة العمر قليلاً للجميع، أو الاحتفاظ به كرصيد للعام القادم).
+
+## خطوات عملية لتنظيم صندوق العيدية
+
+### الخطوة 1: اتفقوا على فئات العمر ومبالغها قبل العيد بوقت كافٍ
+لا تتركوا هذا القرار لليلة العيد، حتى يتسنى لكل شخص تجهيز مساهمته.
+
+### الخطوة 2: اجمعوا المساهمات في مجموعة أو حساب مخصص
+استخدم تطبيق مثل Diviso لإنشاء مجموعة عائلية مخصصة لصندوق العيدية، منفصلة عن أي حسابات عائلية أخرى.
+
+### الخطوة 3: عيّنوا شخصاً مسؤولاً عن التوزيع الفعلي يوم العيد
+لتفادي فوضى توزيع منفصل من كل عم وخال في نفس الوقت.
+
+### الخطوة 4: راجعوا فئات العمر والمبالغ كل عام
+مع تغيّر أعمار الأطفال وانضمام مواليد جدد، حدّثوا القائمة سنوياً.
+
+## أخطاء شائعة عند تنظيم عيدية العائلة
+
+- **ترك كل شخص يعطي عيديته بشكل منفصل دون تنسيق**: يخلق التفاوت المحرج بين الأطفال
+- **عدم فصل المساهمة عن التوزيع**: يجعل بعض الآباء يشعرون أن أطفالهم "يستحقون أقل" لأن مساهمتهم أقل
+- **عدم تحديث فئات العمر سنوياً**: يجعل الحساب غير دقيق مع نمو الأطفال أو ولادة أطفال جدد
+- **عدم توثيق من ساهم بكم**: يصعّب معرفة إن كانت المساهمات متناسبة فعلاً مع الدخل المتفق عليه
+
+## كيف يساعدكم Diviso في تنظيم صندوق العيدية العائلي؟
+
+- ✅ إنشاء مجموعة عائلية مخصصة لصندوق العيدية منفصلة عن الحسابات الأخرى
+- ✅ حساب تلقائي لمساهمة كل شخص حسب نسبة الدخل
+- ✅ تسجيل فئات العمر ومبالغها لتحديث سهل كل عام
+- ✅ سجل شفاف يوضح من ساهم بكم دون التأثير على عدالة التوزيع
+
+## أسئلة شائعة
+
+### هل يستلم كل الأطفال نفس مبلغ العيدية بغض النظر عن مساهمة والدهم؟
+نعم، هذه هي الفكرة الأساسية: يُفصل مبلغ التوزيع عن نسبة المساهمة، فيستلم كل طفل مبلغاً موحداً حسب فئته العمرية، بغض النظر عن مقدار ما ساهم به والده في الصندوق.
+
+### كيف نحدد فئات العمر ومبالغها؟
+تتفق العائلة على عدد الفئات العمرية (عادة فئتان أو ثلاث) والمبلغ المناسب لكل فئة قبل العيد، ويمكن تحديث هذه المبالغ سنوياً حسب الميزانية المتاحة.
+
+### ماذا لو أراد أحد الإخوة المساهمة بأكثر من نصيبه المحسوب؟
+يمكنه ذلك، لكن الفائض يذهب لصالح جميع الأطفال بالتساوي (مثل رفع مبلغ الفئة العمرية للجميع)، لا لزيادة عيدية أطفاله هو تحديداً فقط.
+
+## الخلاصة
+
+العيدية لا تحتاج أن تكون مصدر مقارنة محرجة بين أبناء العائلة. اجمعوا صندوقاً مشتركاً بمساهمة حسب الدخل، ووزّعوا المبلغ بالتساوي حسب الفئة العمرية بغض النظر عمن ساهم بكم.
+
+**جرب Diviso الآن ونظّم صندوق عيدية عائلتكم بعدل بين كل الأطفال.**
+    `,
+    contentEn: `
+## Quick Answer
+
+Instead of each aunt or uncle giving a different Eidiya amount to their nieces and nephews based on their own income, which makes some children notice a gap with their cousins, siblings can pool a **shared Eidiya fund**: each person contributes to the fund in proportion to their income, while the amount is distributed to all the children **equally** by age tier, regardless of how much their own parent contributed to the fund.
+
+## Why Does Giving Eidiya Individually Cause Awkwardness?
+
+- **A clear gap between children**: one child gets 200 SAR from their uncle while their cousin gets only 50 SAR from another, lower-earning uncle
+- **Awkward comparisons among the children themselves**: kids compare their amounts right there during the Eid gathering
+- **Unspoken pressure on lower-earning aunts and uncles**: they feel embarrassed giving a smaller amount in front of the rest of the family
+
+## How Does a Shared Eidiya Fund Work?
+
+### The Core Principle
+**Separate contribution from distribution**: each person contributes to the fund according to their financial capacity (income), but every child receives the same amount based on their age tier, regardless of exactly how much their own parent contributed.
+
+### Step 1: Define Age Tiers and Each Tier's Amount
+For example:
+- Children under 7: 100 SAR per child
+- Children 7 and older: 150 SAR per child
+
+### Step 2: Calculate the Total Amount the Fund Needs
+Add up the number of children in each age tier across the whole family, and multiply by that tier's amount.
+
+### Step 3: Distribute the Contribution Among Siblings by Income Ratio
+Each person contributes a percentage of their income relative to the combined income of all contributors.
+
+## A Complete Worked Example
+
+3 siblings pool Eidiya money for their nieces and nephews (6 children total):
+
+- Sibling A has two children: ages 5 and 9
+- Sibling B has one child: age 3
+- Sibling C has three children: ages 6, 10, and 12
+
+### Calculating the Total Fund Needed
+Using the tier rates (100 SAR under 7, 150 SAR 7 and older):
+
+- A's children: age 5 (100) + age 9 (150) = 250 SAR
+- B's child: age 3 (100) = 100 SAR
+- C's children: age 6 (100) + age 10 (150) + age 12 (150) = 400 SAR
+
+**Total fund needed** = 250 + 100 + 400 = **750 SAR**
+
+### Calculating Each Sibling's Contribution by Income
+Sibling A earns 15,000 SAR, Sibling B earns 10,000 SAR, Sibling C earns 8,000 SAR. Combined income = 33,000 SAR:
+
+- A's share = 15,000 ÷ 33,000 = 45.45% → contributes 341 SAR
+- B's share = 10,000 ÷ 33,000 = 30.30% → contributes 227 SAR
+- C's share = 8,000 ÷ 33,000 = 24.24% → contributes 182 SAR
+
+**Check**: 341 + 227 + 182 = 750 SAR, matching the total fund needed.
+
+### The Key Point: Distribution Has Nothing to Do With Who Contributed What
+Even though Sibling C contributed the least (182 SAR), their three children still receive their full Eidiya according to their age tier (100, 150, 150 SAR), exactly like the other siblings' children, because the distribution comes from the shared fund, not from their own parent's specific contribution.
+
+## What If One Sibling Wants to Contribute More Than Their Calculated Share?
+
+This is entirely fine and welcome: whoever is more financially able can donate an extra amount to the fund without it increasing their own children's Eidiya specifically — instead, the surplus benefits all the children equally (for example, by slightly raising the age-tier amount for everyone, or being kept as a balance for next year).
+
+## A Practical System for Organizing an Eidiya Fund
+
+### Step 1: Agree on Age Tiers and Their Amounts Well Before Eid
+Don't leave this decision to the night before Eid, so everyone has time to prepare their contribution.
+
+### Step 2: Collect Contributions in a Dedicated Group or Account
+Use an app like Diviso to create a dedicated family group for the Eidiya fund, separate from any other family accounts.
+
+### Step 3: Appoint One Person Responsible for the Actual Distribution on Eid Day
+This avoids the chaos of every aunt and uncle handing out money separately at the same time.
+
+### Step 4: Revisit the Age Tiers and Amounts Every Year
+As children's ages change and new babies join the family, update the list annually.
+
+## Common Mistakes When Organizing Family Eidiya
+
+- **Letting everyone give their Eidiya separately with no coordination**: creates the awkward gap between children
+- **Not separating contribution from distribution**: makes some parents feel their children "deserve less" because their own contribution was smaller
+- **Not updating the age tiers annually**: makes the calculation inaccurate as children grow or new ones are born
+- **Not documenting who contributed what**: makes it hard to verify contributions actually matched the agreed income ratio
+
+## How Diviso Helps Organize a Family Eidiya Fund
+
+- ✅ Creates a dedicated family group for the Eidiya fund, separate from other accounts
+- ✅ Automatically calculates each person's contribution by income ratio
+- ✅ Logs age tiers and their amounts for easy updates each year
+- ✅ A transparent record showing who contributed what, without affecting the fairness of the payout
+
+## Frequently Asked Questions
+
+### Do all children receive the same Eidiya amount regardless of their parent's contribution?
+Yes, that's the core idea: the payout amount is separated from the contribution ratio, so every child receives a uniform amount based on their age tier, regardless of how much their own parent contributed to the fund.
+
+### How do we set the age tiers and their amounts?
+The family agrees on the number of age tiers (usually two or three) and the appropriate amount for each tier before Eid, and these amounts can be updated annually based on the available budget.
+
+### What if a sibling wants to contribute more than their calculated share?
+They can, but the surplus benefits all the children equally (such as raising the age-tier amount for everyone), rather than specifically increasing their own children's Eidiya.
+
+## Conclusion
+
+Eidiya doesn't need to become a source of awkward comparison between family members' children. Pool a shared fund with income-proportional contributions, and distribute the amount equally by age tier regardless of who contributed what.
+
+**Try Diviso now and organize your family's Eidiya fund fairly for all the children.**
+    `
+  },
+  {
     slug: "split-neighborhood-security-guard-cost",
     title: "كيف يقسم الجيران تكلفة حارس الحي أو بوابة الحي المشتركة؟",
     titleEn: "How Should Neighbors Split the Cost of a Shared Security Guard or Gate?",

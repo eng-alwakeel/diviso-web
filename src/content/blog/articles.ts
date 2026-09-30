@@ -16,6 +16,208 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-school-van-driver-cost-between-families",
+    title: "كيف تقسم العائلات تكلفة سائق أو باص المدرسة الخاص الشهرية؟",
+    titleEn: "How Should Families Split a Shared School Van or Driver's Monthly Cost?",
+    description: "تكلفة سائق أو باص المدرسة الخاص تُقسم حسب عدد الأطفال لكل عائلة لا بالتساوي بين العائلات، لأن المقعد المحجوز لكل طفل هو وحدة التكلفة الفعلية. دليل عملي لتقسيم الفاتورة الشهرية والتعامل مع الغياب والانضمام المتأخر.",
+    descriptionEn: "The monthly cost of a shared school van driver should be split by the number of children per family, not equally between families, since each reserved seat is the real cost unit. A practical guide to splitting the monthly bill and handling absences and mid-month joiners.",
+    keywords: ["تقسيم تكلفة سائق المدرسة بين العائلات", "من يدفع أكثر في باص المدرسة الخاص", "تقسيم فاتورة سائق المدرسة الشهرية", "كم نصيب كل طفل من تكلفة الباص", "غياب الطفل عن باص المدرسة هل يدفع", "تنظيم توصيل مدرسة مشترك بين الجيران"],
+    keywordsEn: ["how to split a shared school van cost", "school driver monthly fee split between families", "cost per child for a private school van", "does a child pay if absent from the school van", "organizing a shared school carpool for kids", "splitting a hired driver's salary between neighbors"],
+    category: "guides",
+    readTime: 6,
+    publishDate: "2026-09-30",
+    content: `
+## الإجابة المختصرة
+
+عندما تشترك عدة عائلات في توظيف سائق خاص أو باص صغير لتوصيل أطفالهم للمدرسة، الطريقة الأعدل لتقسيم التكلفة الشهرية هي **حسب عدد الأطفال لكل عائلة**، لا بالتساوي بين عدد العائلات، لأن كل مقعد محجوز في الباص يمثل وحدة التكلفة الفعلية بغض النظر عن عدد العائلات المشتركة. العائلة التي لديها طفلان تدفع ضعف العائلة التي لديها طفل واحد.
+
+## ليش التقسيم حسب عدد الأطفال أعدل من التقسيم بين العائلات؟
+
+- **المقعد هو وحدة التكلفة، لا العائلة**: الباص أو السائق يخصص مقعداً لكل طفل، فتكلفة نقل طفلين من عائلة واحدة تساوي تكلفة نقل طفلين من عائلتين مختلفتين
+- **عدد الأطفال يختلف كثيراً بين العائلات**: عائلة بثلاثة أطفال في المدرسة نفسها مقابل عائلة بطفل واحد
+- **التقسيم بين العائلات فقط يظلم العائلات الأصغر**: لو قُسّمت التكلفة على 5 عائلات بالتساوي بغض النظر عن عدد الأطفال، ستدفع العائلة صاحبة الطفل الواحد نفس مبلغ العائلة صاحبة الثلاثة أطفال
+
+## مثال عملي على الحساب
+
+5 عائلات تشترك في توظيف سائق خاص، بتكلفة شهرية إجمالية (راتب السائق + وقود + صيانة الباص) = 2,400 ريال، وعدد الأطفال إجمالاً 8 أطفال:
+
+**تكلفة المقعد الواحد** = 2,400 ÷ 8 = **300 ريال شهرياً لكل طفل**
+
+- عائلة لديها طفلان في الباص: تدفع 300 × 2 = **600 ريال**
+- عائلة لديها طفل واحد: تدفع 300 × 1 = **300 ريال**
+
+## ماذا لو غاب طفل عن الباص لعدة أيام (مرض، سفر)؟
+
+هذه نقطة تختلف جوهرياً عن تقسيم تكلفة كارپول الوقود اليومي بين الكبار (الذي يُحسب بالرحلة الفعلية). في حالة سائق أو باص المدرسة:
+
+- **يبقى المقعد محجوزاً حتى لو غاب الطفل**: السائق يخصص له مقعداً ومساراً ثابتاً بغض النظر عن حضوره الفعلي
+- **القاعدة الشائعة: يستمر دفع النصيب الكامل**: لأن الغياب القصير أو المتقطع لا يقلل تكلفة السائق الثابتة (راتبه لا يتغير)
+- **استثناء واحد شائع**: الغياب الطويل جداً (شهر كامل مثلاً بسبب سفر العائلة) قد يُتفق على خصم جزئي أو استبدال مؤقت بطفل آخر، لكن هذا يحتاج اتفاقاً صريحاً مسبقاً بين العائلات، لا افتراضاً تلقائياً
+
+## ماذا لو انضمت عائلة جديدة أو انسحبت عائلة في منتصف الشهر؟
+
+### انضمام عائلة جديدة
+تُحسب حصتها بالتناسب مع عدد أيام الدراسة المتبقية من الشهر فقط، لا بالشهر الكامل.
+
+### انسحاب عائلة
+يجب إعادة حساب تكلفة المقعد الواحد على العائلات المتبقية، لأن إجمالي التكلفة الثابتة (راتب السائق) لا ينخفض بانخفاض عدد الأطفال، بل يُعاد توزيعها على عدد أقل.
+
+### مثال
+لو انسحبت العائلة صاحبة الطفلين من المثال السابق، يتبقى 6 أطفال من نفس التكلفة الإجمالية 2,400 ريال:
+
+**تكلفة المقعد الجديدة** = 2,400 ÷ 6 = **400 ريال شهرياً لكل طفل** (بدل 300 ريال)
+
+هذا يعني ارتفاع نصيب كل عائلة متبقية، وهي نقطة يجب أن تعرفها كل العائلات مسبقاً حتى لا تُفاجأ بها.
+
+## ماذا عن بدل الانتظار أو المسارات الإضافية؟
+
+لو طلبت عائلة واحدة توقفاً إضافياً أو مساراً أطول (منزل بعيد عن مسار الباص الأساسي)، يمكن الاتفاق على:
+
+- **بدل مسافة إضافي**: تلك العائلة فقط تدفع فرقاً بسيطاً يعكس الوقت أو الوقود الإضافي
+- **بقاء التكلفة الأساسية مشتركة**: التكلفة الأساسية (راتب السائق ومسار الأطفال الرئيسي) تبقى مقسّمة حسب عدد الأطفال كالمعتاد
+
+## خطوات عملية لتنظيم توصيل المدرسة المشترك
+
+### الخطوة 1: وثّقوا التكلفة الشهرية الإجمالية وعدد الأطفال المشتركين
+حدّدوا هذين الرقمين بوضوح قبل بداية كل فصل دراسي.
+
+### الخطوة 2: اتفقوا على سياسة الغياب مسبقاً
+هل يُخصم شيء عند غياب طويل؟ حددوا القاعدة قبل حدوث أي غياب فعلي.
+
+### الخطوة 3: سجّلوا الفاتورة الشهرية في مجموعة مخصصة
+استخدم تطبيق مثل Diviso لإنشاء مجموعة بين العائلات المشتركة، وتحديد نصيب كل عائلة حسب عدد أطفالها تلقائياً.
+
+### الخطوة 4: أعيدوا الحساب فوراً عند تغيّر عدد الأطفال
+انضمام أو انسحاب أي عائلة يجب أن يُحدَّث في الحساب الشهري التالي مباشرة.
+
+## أخطاء شائعة عند تقسيم تكلفة سائق المدرسة
+
+- **التقسيم بالتساوي بين العائلات بغض النظر عن عدد الأطفال**: يظلم العائلات صاحبة الطفل الواحد أو الاثنين مقابل العائلات الأكبر
+- **عدم توضيح سياسة الغياب من البداية**: يسبب نقاشاً محرجاً عند أول غياب طويل لأحد الأطفال
+- **عدم إعادة حساب تكلفة المقعد عند انسحاب عائلة**: يترك العائلات المتبقية تدفع أقل من التكلفة الفعلية، فيضطر السائق أو منظم الترتيب للمطالبة بفرق غير متوقع
+- **خلط بدل المسار الإضافي بالتكلفة الأساسية المشتركة**: يجعل حساب نصيب كل عائلة غير دقيق
+
+## كيف يساعدكم Diviso في تنظيم تكلفة توصيل المدرسة المشترك؟
+
+- ✅ حساب تلقائي لتكلفة المقعد الواحد وتوزيعها حسب عدد أطفال كل عائلة
+- ✅ إعادة حساب سريعة عند انضمام أو انسحاب عائلة
+- ✅ فصل بدل المسار الإضافي عن التكلفة الأساسية المشتركة
+- ✅ سجل شفاف يوضح نصيب كل عائلة والدفعات الشهرية
+
+## أسئلة شائعة
+
+### هل تُقسم تكلفة سائق المدرسة بالتساوي بين العائلات المشتركة؟
+لا، الأعدل تقسيمها حسب عدد الأطفال لكل عائلة، لأن كل مقعد في الباص يمثل وحدة التكلفة الفعلية، فالعائلة صاحبة طفلين تدفع ضعف العائلة صاحبة طفل واحد.
+
+### هل يدفع الطفل الغائب لعدة أيام نصيبه كاملاً؟
+نعم عادة، لأن المقعد يبقى محجوزاً له بغض النظر عن حضوره الفعلي، وراتب السائق الثابت لا يتغير مع غياب قصير أو متقطع، إلا إذا اتفقت العائلات مسبقاً على استثناء للغياب الطويل جداً.
+
+### ماذا يحدث لتكلفة كل عائلة إذا انسحبت عائلة أخرى من الترتيب؟
+تزداد تكلفة المقعد الواحد للعائلات المتبقية، لأن التكلفة الثابتة الإجمالية تُقسّم الآن على عدد أطفال أقل، ويجب توضيح هذه النقطة للجميع مسبقاً لتجنب المفاجأة.
+
+## الخلاصة
+
+تنظيم توصيل المدرسة المشترك بين العائلات لا يحتاج نقاشاً متكرراً كل شهر. اتفقوا على التقسيم حسب عدد الأطفال، وضّحوا سياسة الغياب والانسحاب مسبقاً، ووثّقوا كل دفعة بوضوح.
+
+**جرب Diviso الآن ونظّم تقسيم تكلفة توصيل أطفالكم للمدرسة بعدل بين كل العائلات.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When several families share the cost of hiring a private driver or small van to take their children to school, the fairest way to split the monthly cost is **by the number of children per family**, not equally between the number of families, since each reserved seat on the van is the real cost unit regardless of how many families are sharing it. A family with two children pays double what a family with one child pays.
+
+## Why Is Splitting by Number of Children Fairer Than Splitting by Family?
+
+- **The seat is the cost unit, not the family**: the van or driver allocates a seat to each child, so transporting two children from one family costs the same as transporting two children from two different families
+- **The number of children varies a lot between families**: a family with three children at the same school versus a family with just one
+- **Splitting only between families unfairly penalizes smaller families**: if the cost were split equally across 5 families regardless of child count, the single-child family would pay the same as the three-child family
+
+## A Worked Example of the Calculation
+
+5 families share the cost of hiring a private driver, at a total monthly cost (driver's salary + fuel + van maintenance) of 2,400 SAR, with 8 children total:
+
+**Cost per seat** = 2,400 ÷ 8 = **300 SAR per child per month**
+
+- A family with two children on the van: pays 300 × 2 = **600 SAR**
+- A family with one child: pays 300 × 1 = **300 SAR**
+
+## What If a Child Misses the Van for Several Days (Illness, Travel)?
+
+This is fundamentally different from splitting a daily adult carpool's fuel cost (which is calculated per actual trip). For a school driver or van:
+
+- **The seat stays reserved even if the child is absent**: the driver allocates them a fixed seat and route regardless of actual attendance
+- **The common rule: the full share keeps being paid**: since a short or intermittent absence doesn't reduce the driver's fixed cost (their salary doesn't change)
+- **One common exception**: a very long absence (a full month, for example, due to family travel) may be agreed to warrant a partial discount or a temporary swap with another child, but this needs an explicit prior agreement between the families, not an automatic assumption
+
+## What If a New Family Joins or One Withdraws Mid-Month?
+
+### A New Family Joins
+Their share is calculated proportionally to only the remaining school days in the month, not the full month.
+
+### A Family Withdraws
+The cost per seat must be recalculated among the remaining families, since the total fixed cost (the driver's salary) doesn't drop just because there are fewer children — it gets redistributed over a smaller number.
+
+### An Example
+If the two-child family from the earlier example withdraws, 6 children remain from the same total cost of 2,400 SAR:
+
+**New cost per seat** = 2,400 ÷ 6 = **400 SAR per child per month** (up from 300 SAR)
+
+This means each remaining family's share goes up — something all families should know in advance so it isn't a surprise.
+
+## What About a Waiting Allowance or Extra Route Detours?
+
+If one family requests an extra stop or a longer route (a home far from the van's main route), it can be agreed that:
+
+- **An extra distance allowance**: only that family pays a small additional amount reflecting the extra time or fuel
+- **The base cost stays shared**: the base cost (the driver's salary and the main children's route) stays split by number of children as usual
+
+## A Practical System for Organizing a Shared School Run
+
+### Step 1: Document the Total Monthly Cost and the Number of Children Sharing It
+Establish these two figures clearly before each school term starts.
+
+### Step 2: Agree on an Absence Policy in Advance
+Is anything discounted for a long absence? Decide the rule before any actual absence happens.
+
+### Step 3: Log the Monthly Bill in a Dedicated Group
+Use an app like Diviso to create a group between the sharing families, automatically calculating each family's share based on their number of children.
+
+### Step 4: Recalculate Immediately When the Number of Children Changes
+A family joining or withdrawing should be reflected in the very next monthly calculation.
+
+## Common Mistakes When Splitting a School Driver's Cost
+
+- **Splitting equally between families regardless of child count**: unfairly penalizes families with one or two children compared to larger ones
+- **Not clarifying the absence policy from the start**: causes an awkward discussion at the first long absence of a child
+- **Not recalculating the cost per seat when a family withdraws**: leaves the remaining families paying less than the actual cost, forcing an unexpected demand for the difference from the driver or organizer
+- **Mixing an extra-route allowance into the shared base cost**: makes each family's share inaccurate
+
+## How Diviso Helps Organize a Shared School Run's Cost
+
+- ✅ Automatically calculates the cost per seat and distributes it by each family's number of children
+- ✅ Quick recalculation when a family joins or withdraws
+- ✅ Separates an extra-route allowance from the shared base cost
+- ✅ A transparent record showing each family's share and monthly payments
+
+## Frequently Asked Questions
+
+### Is a shared school driver's cost split equally between the participating families?
+No, it's fairer to split it by the number of children per family, since each seat on the van represents the real cost unit, so a family with two children pays double what a family with one child pays.
+
+### Does a child who's absent for several days still pay their full share?
+Usually yes, since their seat stays reserved regardless of actual attendance, and the driver's fixed salary doesn't change for a short or intermittent absence, unless the families have agreed in advance on an exception for a very long absence.
+
+### What happens to each family's cost if another family withdraws from the arrangement?
+The cost per seat increases for the remaining families, since the total fixed cost is now split over fewer children, and this point should be made clear to everyone in advance to avoid surprise.
+
+## Conclusion
+
+Organizing a shared school run between families doesn't need a recurring monthly argument. Agree to split by number of children, clarify the absence and withdrawal policy in advance, and log every payment clearly.
+
+**Try Diviso now and organize your children's shared school run cost fairly among all the families.**
+    `
+  },
+  {
     slug: "split-family-eidiya-pool-nieces-nephews",
     title: "كيف يجمع الإخوة العيدية لأبناء العائلة في صندوق واحد بعدل؟",
     titleEn: "How Should Siblings Pool Eidiya Money for Nieces and Nephews?",

@@ -16,6 +16,220 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "pet-sitting-co-op-cost-reimbursement-friends",
+    title: "كيف تتعاملون مع تكاليف تبادل رعاية الحيوانات بين الأصدقاء؟",
+    titleEn: "How to Handle Costs When Trading Pet-Sitting Duties With Friends",
+    description: "عندما يتبادل الأصدقاء رعاية حيواناتهم بدل الدفع، لا تُدفع أجرة للرعاية نفسها، لكن أي مصروف فعلي يدفعه الراعي (طوارئ بيطرية، نفاد الطعام) يجب أن يسترده كاملاً من صاحب الحيوان. دليل عملي لتتبع الأرصدة المتبادلة والمصاريف.",
+    descriptionEn: "When friends trade pet-sitting instead of paying each other, the sitting itself stays unpaid, but any real expense the sitter covers (an emergency vet visit, running out of food) should be reimbursed in full by the pet's owner. A practical guide to tracking the traded favors and the costs.",
+    keywords: ["تبادل رعاية الحيوانات بين الأصدقاء", "من يدفع تكاليف رعاية الحيوان عند السفر", "تعويض مصاريف رعاية القطط والكلاب", "تتبع رصيد تبادل رعاية الحيوانات", "مجموعة رعاية حيوانات متبادلة", "تكاليف الطوارئ البيطرية عند رعاية حيوان صديق"],
+    keywordsEn: ["pet-sitting co-op cost sharing", "who pays for pet-sitting expenses with friends", "reimbursing emergency vet costs for a sitter", "tracking traded pet-sitting favors", "friends trading pet care while traveling", "pet-sitting swap expense tracker"],
+    category: "tips",
+    readTime: 6,
+    publishDate: "2026-10-01",
+    content: `
+## الإجابة المختصرة
+
+عندما يتبادل مجموعة أصدقاء رعاية حيواناتهم الأليفة (كل شخص يرعى حيوان الآخر عند السفر، مقابل أن يرعى الآخر حيوانه لاحقاً)، فالرعاية نفسها **لا تُدفع نقداً** لأنها مبادلة وقت وخدمة بالتساوي، لكن أي مصروف فعلي يدفعه الراعي من جيبه خلال فترة الرعاية (علاج بيطري طارئ، نفاد الطعام) يجب أن يسترده **كاملاً** من صاحب الحيوان، لأن هذا مصروف يخص الحيوان لا خدمة الراعي.
+
+## ليش لا تُدفع أجرة للرعاية المتبادلة؟
+
+نظام "التبادل" (co-op) يقوم على مبدأ المقايضة العادلة:
+
+- **كل شخص يقدّم نفس نوع الخدمة للآخر**: سارة ترعى قطة لينا، ولينا ترعى قطة سارة في مرة قادمة
+- **الدفع النقدي يحوّل العلاقة لخدمة مدفوعة**: يفقد التبادل معناه الأساسي كمساعدة متبادلة بين أصدقاء
+- **التركيز يكون على عدالة توزيع المصاريف الفعلية، لا على "أجرة" الوقت**
+
+## ما الذي يُعتبر مصروفاً يُسترد كاملاً؟
+
+- **نفاد مستلزمات كان يجب أن يوفرها صاحب الحيوان**: طعام، رمل القطط، أدوية منتظمة
+- **علاج بيطري طارئ غير مخطط له**: مرض مفاجئ، إصابة، استشارة بيطرية عاجلة
+- **أي مصروف ضروري لصحة الحيوان أو سلامته لم يكن متوقعاً**
+
+## ما الذي لا يُسترد (يبقى على حساب الراعي نفسه)؟
+
+- **هدايا أو ألعاب إضافية يشتريها الراعي بمبادرته الشخصية**: دللة اختيارية لا ضرورة لها
+- **تجميل أو خدمات رفاهية غير ضرورية**: مثل صالون تجميل حيوانات أفخم من المعتاد دون طلب صاحب الحيوان
+- **وقت الراعي نفسه**: هذا هو جزء المقايضة، لا يُحسب كتكلفة نقدية
+
+## كيف تتبّعون "رصيد" التبادل بين الأصدقاء؟
+
+بدل الاعتماد على الذاكرة لمعرفة من رعى حيوان من ولمدة كم يوم، يُفضَّل سجل واضح:
+
+### مثال عملي
+رعت سارة قطة لينا لمدة 5 أيام خلال سفرها. يُسجَّل هذا كـ **5 أيام رعاية مستحقة لسارة من لينا**، تُستخدم عند سفر سارة لاحقاً.
+
+### ماذا لو اختلف مستوى الرعاية المطلوبة؟
+لو كان حيوان أحدهم يحتاج زيارتين يومياً (كلب يحتاج تمشية صباحية ومسائية) بينما حيوان الآخر يحتاج زيارة واحدة فقط (قطة)، يُحوَّل الرصيد حسب **عدد الزيارات الفعلية**، لا عدد الأيام فقط:
+
+- رعاية كلب بزيارتين يومياً لمدة 3 أيام = 6 زيارات
+- رعاية قطة بزيارة واحدة يومياً لمدة 6 أيام = 6 زيارات
+
+هذا يجعل التبادل عادلاً فعلياً، رغم اختلاف عدد الأيام الظاهر بين الحالتين.
+
+## مثال عملي على استرداد المصاريف
+
+خلال رعاية سارة لقطة لينا، حدث التالي:
+
+- نفد رمل القطط، فاضطرت سارة لشراء كيس جديد بـ 45 ريال
+- شعرت القطة بإسهال خفيف، فأخذتها سارة لعيادة بيطرية بتكلفة 120 ريال
+
+**إجمالي المصروف المستحق لسارة** = 45 + 120 = **165 ريال**، تسترده من لينا فوراً، بشكل منفصل تماماً عن حساب "أيام الرعاية المتبادلة" الذي يبقى بلا تحويل نقدي.
+
+## لماذا يجب فصل حساب المصاريف عن حساب الوقت المتبادل؟
+
+خلط الاثنين يسبب التباساً: لو حاولتم "تعويض" المصاريف بأيام رعاية إضافية بدل النقد، يصعب حساب القيمة العادلة لكل طرف. الأفضل:
+
+- **حساب المصاريف**: نقدي، يُسوَّى فوراً أو خلال أيام قليلة
+- **حساب أيام/زيارات الرعاية**: رصيد منفصل يُستخدم عند الحاجة لاحقاً، بلا مقابل نقدي
+
+## خطوات عملية لتنظيم مجموعة رعاية الحيوانات المتبادلة
+
+### الخطوة 1: اتفقوا على قائمة المصاريف القابلة للاسترداد مسبقاً
+حددوا كتابياً ما يُعتبر "ضرورياً" وما يُعتبر "اختيارياً" قبل أول تبادل فعلي.
+
+### الخطوة 2: سجّلوا كل مصروف بإيصاله فور حدوثه
+لا تنتظروا حتى عودة صاحب الحيوان لتذكر المبلغ من الذاكرة.
+
+### الخطوة 3: احتفظوا بسجل منفصل لرصيد أيام/زيارات الرعاية
+استخدم تطبيق مثل Diviso لإنشاء مجموعة مخصصة لأصدقاء التبادل، تفصل بوضوح بين المصاريف النقدية والرصيد المتبادل.
+
+### الخطوة 4: راجعوا الرصيد دورياً
+تأكدوا أن التبادل متوازن مع مرور الوقت، لا أن يرعى شخص واحد أكثر من غيره باستمرار دون تعويض.
+
+## أخطاء شائعة عند تبادل رعاية الحيوانات
+
+- **محاولة تحويل التبادل لعلاقة مدفوعة بالكامل**: يفقد الفكرة الأساسية للتعاون بين الأصدقاء
+- **عدم استرداد المصاريف الفعلية لأنها "تفاصيل صغيرة"**: تتراكم هذه التفاصيل وتسبب شعوراً بالغبن لاحقاً
+- **الاعتماد على الذاكرة لحساب أيام الرعاية المتبادلة**: يصعب تذكر من رعى حيوان من ولمدة كم بعد أشهر
+- **خلط حساب المصاريف بحساب الوقت المتبادل**: يعقّد تسوية كل منهما بشكل مستقل
+
+## كيف يساعدكم Diviso في تنظيم مجموعة رعاية الحيوانات المتبادلة؟
+
+- ✅ إنشاء مجموعة مخصصة لأصدقاء تبادل الرعاية
+- ✅ تسجيل كل مصروف فعلي بإيصاله لاسترداد سريع من صاحب الحيوان
+- ✅ سجل منفصل وواضح لرصيد أيام أو زيارات الرعاية المتبادلة
+- ✅ تذكيرات تلقائية عند عدم تسوية مصروف لفترة طويلة
+
+## أسئلة شائعة
+
+### هل يُدفع مقابل نقدي لوقت رعاية الحيوان في نظام التبادل؟
+لا، وقت الرعاية نفسه جزء من المقايضة العادلة بين الأصدقاء ولا يُحسب نقداً، أما المصاريف الفعلية التي يدفعها الراعي من جيبه فتُسترد كاملة من صاحب الحيوان.
+
+### ما الفرق بين مصروف يُسترد ومصروف لا يُسترد؟
+المصروف الضروري لصحة الحيوان أو استمرار رعايته الأساسية (طعام نفد، علاج طارئ) يُسترد كاملاً، بينما أي دلال أو رفاهية اختيارية يشتريها الراعي بمبادرته الشخصية تبقى على حسابه هو.
+
+### كيف نحسب الرصيد المتبادل إذا اختلف مستوى الرعاية المطلوبة بين الحيوانات؟
+حوّلوا الرصيد حسب عدد الزيارات الفعلية لا عدد الأيام فقط، فحيوان يحتاج زيارتين يومياً يُحتسب بضعف رصيد حيوان يحتاج زيارة واحدة فقط لنفس عدد الأيام.
+
+## الخلاصة
+
+تبادل رعاية الحيوانات بين الأصدقاء لا يحتاج تعقيداً إذا فصلتم بين حساب المصاريف الفعلية وحساب الوقت المتبادل. سجّلوا كل مصروف بوضوح، واحتفظوا برصيد منفصل لأيام الرعاية.
+
+**جرب Diviso الآن ونظّم مصاريف مجموعة تبادل رعاية حيواناتكم بعدل بين كل الأصدقاء.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When a group of friends trades pet-sitting duties (each person watches another's pet while they travel, in exchange for the same favor later), the sitting itself **isn't paid for in cash**, since it's an equal trade of time and effort, but any real out-of-pocket expense the sitter covers during the stay (an emergency vet visit, running out of food) should be reimbursed **in full** by the pet's owner, since that expense belongs to the pet, not to the sitter's service.
+
+## Why Doesn't Traded Pet-Sitting Involve Payment?
+
+A pet-sitting co-op runs on fair barter:
+
+- **Each person provides the same kind of service to the other**: Sara watches Lina's cat, and Lina watches Sara's cat next time
+- **Cash payment turns the relationship into a paid service**: it loses its basic meaning as mutual help between friends
+- **The focus stays on fairly splitting actual expenses, not "paying" for time**
+
+## What Counts as a Fully Reimbursable Expense?
+
+- **Running out of supplies the owner should have provided**: food, cat litter, regular medication
+- **An unplanned emergency vet visit**: a sudden illness, an injury, an urgent vet consultation
+- **Any necessary expense for the pet's health or safety that wasn't expected**
+
+## What Isn't Reimbursed (Stays on the Sitter's Own Account)?
+
+- **Extra gifts or toys the sitter buys on their own initiative**: optional spoiling that wasn't necessary
+- **Unnecessary pampering or luxury services**: like a fancier pet grooming session than usual without the owner asking for it
+- **The sitter's own time**: that's the part of the trade itself, not something counted as a cash cost
+
+## How Do You Track the "Balance" of Favors Between Friends?
+
+Instead of relying on memory to know who watched whose pet and for how long, a clear log is better:
+
+### A Worked Example
+Sara watched Lina's cat for 5 days during her trip. This is logged as **5 days of sitting owed to Sara from Lina**, to be used when Sara travels later.
+
+### What If the Level of Care Needed Differs?
+If one person's pet needs two visits a day (a dog needing a morning and evening walk) while another's needs only one (a cat), the balance should be converted by **actual number of visits**, not just days:
+
+- Watching a dog with two visits a day for 3 days = 6 visits
+- Watching a cat with one visit a day for 6 days = 6 visits
+
+This makes the trade genuinely fair, even though the number of days looks different between the two cases.
+
+## A Worked Example of Reimbursing Expenses
+
+While Sara was watching Lina's cat, the following happened:
+
+- The cat litter ran out, so Sara had to buy a new bag for 45 SAR
+- The cat had mild diarrhea, so Sara took her to a vet clinic at a cost of 120 SAR
+
+**Total expense owed to Sara** = 45 + 120 = **165 SAR**, reimbursed by Lina right away, kept completely separate from the "traded sitting days" balance, which stays with no cash exchanged.
+
+## Why Should Expenses Be Tracked Separately From Traded Time?
+
+Mixing the two causes confusion: if you try to "compensate" expenses with extra sitting days instead of cash, it becomes hard to calculate a fair value for each side. It's better to:
+
+- **Track expenses**: in cash, settled immediately or within a few days
+- **Track sitting days/visits**: a separate balance used whenever needed later, with no cash involved
+
+## A Practical System for Organizing a Pet-Sitting Co-op
+
+### Step 1: Agree on the List of Reimbursable Expenses in Advance
+Document in writing what counts as "necessary" versus "optional" before the first actual trade happens.
+
+### Step 2: Log Every Expense With Its Receipt As It Happens
+Don't wait until the owner returns to recall the amount from memory.
+
+### Step 3: Keep a Separate Record of the Sitting Days/Visits Balance
+Use an app like Diviso to create a dedicated group for the trading friends, clearly separating cash expenses from the traded balance.
+
+### Step 4: Review the Balance Periodically
+Make sure the trade stays balanced over time, and that one person isn't consistently sitting more than others without being compensated.
+
+## Common Mistakes When Trading Pet-Sitting
+
+- **Trying to turn the trade into a fully paid relationship**: loses the basic idea of mutual help between friends
+- **Not reimbursing actual expenses because they seem like "small details"**: these add up over time and cause resentment later
+- **Relying on memory to calculate traded sitting days**: hard to remember who watched whose pet and for how long months later
+- **Mixing the expense account with the traded-time account**: complicates settling each one independently
+
+## How Diviso Helps Organize a Pet-Sitting Co-op
+
+- ✅ Creates a dedicated group for friends trading pet-sitting duties
+- ✅ Logs every real expense with its receipt for quick reimbursement from the pet's owner
+- ✅ A separate, clear record of the traded sitting days or visits balance
+- ✅ Automatic reminders when an expense goes unsettled for too long
+
+## Frequently Asked Questions
+
+### Is pet-sitting time paid for in cash in a co-op arrangement?
+No, the sitting time itself is part of the fair trade between friends and isn't counted in cash, while actual expenses the sitter pays out of pocket are reimbursed in full by the pet's owner.
+
+### What's the difference between a reimbursable expense and a non-reimbursable one?
+An expense necessary for the pet's health or basic care (food that ran out, an emergency treatment) is fully reimbursed, while any optional spoiling or luxury the sitter chose on their own stays on their own account.
+
+### How do you calculate the traded balance if the level of care needed differs between pets?
+Convert the balance by the actual number of visits, not just days, so a pet needing two visits a day counts for double the balance of a pet needing just one visit a day over the same number of days.
+
+## Conclusion
+
+Trading pet-sitting between friends doesn't need to be complicated if you separate the real-expense account from the traded-time account. Log every expense clearly, and keep a separate balance for sitting days.
+
+**Try Diviso now and organize your pet-sitting co-op's expenses fairly among all your friends.**
+    `
+  },
+  {
     slug: "split-school-van-driver-cost-between-families",
     title: "كيف تقسم العائلات تكلفة سائق أو باص المدرسة الخاص الشهرية؟",
     titleEn: "How Should Families Split a Shared School Van or Driver's Monthly Cost?",

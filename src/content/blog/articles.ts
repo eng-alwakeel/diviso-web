@@ -16,6 +16,244 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-season-ticket-cost-by-games-attended",
+    title: "كيف تقسم مجموعة تكلفة اشتراك موسمي (Season Ticket) حسب عدد المباريات لكل شخص؟",
+    titleEn: "How Should a Group Split a Shared Season Ticket by Games Attended?",
+    description: "عندما يشترك مجموعة أصدقاء في اشتراك موسمي واحد ويتناوبون على حضور المباريات، تُقسم التكلفة حسب عدد المباريات التي حضرها كل شخص فعلياً، مع وزن إضافي للمباريات الكبرى. دليل عملي مع مثال حساب.",
+    descriptionEn: "When a group of friends shares one season ticket and takes turns attending games, the cost should be split by how many games each person actually attends, with extra weight for marquee matches. A practical guide with a worked example.",
+    keywords: ["تقسيم تكلفة اشتراك موسمي بين الأصدقاء", "مشاركة season ticket بين مجموعة", "تقسيم تذاكر الموسم حسب الحضور", "من يدفع أكثر في اشتراك المباريات المشترك", "تقسيم تكلفة مباريات الديربي بين الأصدقاء", "تنظيم اشتراك موسمي جماعي للمباريات"],
+    keywordsEn: ["how to split a season ticket cost with friends", "shared season ticket syndicate split", "splitting games attended in a group season pass", "fair way to split a shared sports season ticket", "weighting marquee games in a ticket split", "organizing a group season ticket arrangement"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-10-02",
+    content: `
+## الإجابة المختصرة
+
+عندما يشترك مجموعة أصدقاء في شراء اشتراك موسمي واحد (season ticket) يغطي عدة مباريات أو فعاليات، ويتناوبون على الحضور بدل أن يحضر الجميع كل مباراة، الطريقة الأعدل لتقسيم التكلفة هي **حسب عدد المباريات التي حضرها كل شخص فعلياً**، لا بالتساوي بين عدد الأعضاء. ولو كانت بعض المباريات "كبرى" (ديربي، نهائي كأس) أهم وأغلى قيمة من غيرها، يُعطى لها وزن أعلى في الحساب.
+
+## ليش التقسيم بالتساوي بين الأعضاء غير عادل هنا؟
+
+- **كل مباراة لها قيمة استخدام منفصلة**: الاشتراك الموسمي يغطي عدة مباريات، فمن يحضر 6 مباريات يستفيد أكثر من من يحضر 4 فقط
+- **المباريات ليست متساوية القيمة بالضرورة**: مباراة ديربي أو نهائي كأس لها طلب وقيمة أعلى من مباراة عادية
+- **التقسيم الأعمى (الاشتراك ÷ عدد الأعضاء) يتجاهل الاستخدام الفعلي**: يظلم من يحضر أكثر ويفيد من يحضر أقل على حسابه
+
+## كيف تحسبون التقسيم حسب الحضور بدقة؟
+
+### الخطوة 1: حدّدوا وزن كل مباراة
+- **مباراة عادية**: وزن 1
+- **مباراة كبرى (ديربي، نهائي، مواجهة قوية)**: وزن 2 (أو أي نسبة تتفق عليها المجموعة مسبقاً)
+
+### الخطوة 2: احسبوا إجمالي "وحدات المباريات" في الاشتراك كله
+اجمعوا أوزان كل المباريات التي يغطيها الاشتراك.
+
+### الخطوة 3: احسبوا وحدات كل شخص حسب المباريات التي حضرها فعلياً
+اجمعوا أوزان المباريات التي حضرها كل شخص بالتحديد.
+
+### الخطوة 4: اقسموا التكلفة الإجمالية على وحدات الاشتراك، ثم اضربوا في وحدات كل شخص
+
+## مثال عملي كامل
+
+اشتراك موسمي يغطي 10 مباريات بتكلفة إجمالية 2,000 ريال، مباراتان منها "ديربي" بوزن مضاعف:
+
+**إجمالي وحدات الاشتراك** = 8 مباريات عادية (وزن 1) + 2 مباريات ديربي (وزن 2) = 8 + 4 = **12 وحدة**
+
+يتناوب صديقان على حضور كل المباريات (لا يحضران معاً):
+
+- **أحمد**: حضر 6 مباريات، شملت المباراتين الديربي كلتيهما
+- **خالد**: حضر 4 مباريات عادية فقط
+
+### حساب وحدات كل شخص
+- أحمد: 4 مباريات عادية (وزن 1 لكل واحدة = 4) + 2 ديربي (وزن 2 لكل واحدة = 4) = **8 وحدات**
+- خالد: 4 مباريات عادية (وزن 1 لكل واحدة) = **4 وحدات**
+
+**التحقق**: 8 + 4 = 12 وحدة، مطابق لإجمالي وحدات الاشتراك.
+
+### حساب التكلفة
+**تكلفة الوحدة الواحدة** = 2,000 ÷ 12 = **166.67 ريال**
+
+- **نصيب أحمد** = 8 × 166.67 = **1,333.33 ريال**
+- **نصيب خالد** = 4 × 166.67 = **666.67 ريال**
+
+**التحقق**: 1,333.33 + 666.67 = 2,000 ريال، مطابق للتكلفة الإجمالية.
+
+## ماذا لو لم يحضر أحد مباراة معينة؟
+
+لو اعتذر الجميع عن حضور مباراة ضمن الاشتراك، تبقى تكلفتها **مصروفاً مشتركاً مهدوراً**، ويُقسَّم على الأعضاء حسب نسبة مساهمتهم الأصلية في شراء الاشتراك (عادة بالتساوي عند الشراء)، لا حسب وحدات الحضور، لأنه لا أحد استفاد منها فعلياً.
+
+## ماذا عن الدفعة الأولى قبل معرفة من سيحضر ماذا؟
+
+غالباً يُدفع ثمن الاشتراك كاملاً مقدماً قبل بدء الموسم، فيصعب معرفة توزيع الحضور الفعلي مسبقاً. الحل العملي:
+
+- **يدفع الأعضاء ثمن الاشتراك بالتساوي كدفعة أولية** عند الشراء
+- **في نهاية الموسم، تُحسب التسوية النهائية** حسب وحدات الحضور الفعلية، ويُعاد الفرق بين من دفع أكثر من استخدامه الفعلي ومن دفع أقل
+
+## ماذا لو أراد أكثر من شخص حضور نفس المباراة الكبرى؟
+
+اتفقوا مسبقاً على نظام عادل، مثل:
+
+- **التناوب على المباريات الكبرى**: كل شخص يحصل على نصيبه من المباريات المهمة بالتناوب
+- **نظام قرعة**: لو تساوى الجميع في الرغبة، تُحسم بقرعة عشوائية معلنة
+
+## خطوات عملية لتنظيم اشتراك موسمي مشترك
+
+### الخطوة 1: اتفقوا على أوزان المباريات قبل بداية الموسم
+وثّقوا أي مباريات تُعتبر "كبرى" ووزنها النسبي، حتى لا يختلف أحد على التصنيف لاحقاً.
+
+### الخطوة 2: سجّلوا من حضر كل مباراة فور حدوثها
+لا تتركوا هذا للذاكرة في نهاية الموسم — استخدم تطبيق مثل Diviso لتسجيل الحضور مباشرة بعد كل مباراة.
+
+### الخطوة 3: صفّوا الحساب في نهاية الموسم حسب وحدات الحضور الفعلية
+احسبوا نصيب كل شخص الفعلي، وقارنوه بما دفعه مقدماً، وسوّوا الفرق.
+
+### الخطوة 4: اتفقوا على سياسة المباريات غير المحضورة والمتزاحمة مسبقاً
+لتجنب أي نقاش محرج عند حدوثها فعلياً خلال الموسم.
+
+## أخطاء شائعة عند تقسيم اشتراك موسمي مشترك
+
+- **التقسيم بالتساوي بين الأعضاء بغض النظر عن الحضور الفعلي**: يظلم من يحضر أكثر
+- **معاملة كل المباريات بنفس القيمة**: يتجاهل الطلب الأعلى على المباريات الكبرى
+- **عدم تسجيل الحضور لحظة حدوثه**: يصعّب التسوية النهائية بدقة في نهاية الموسم
+- **عدم الاتفاق على المباريات غير المحضورة مسبقاً**: يسبب جدالاً حول من يتحمل تكلفتها
+
+## كيف يساعدكم Diviso في تقسيم اشتراك موسمي مشترك؟
+
+- ✅ تسجيل كل مباراة ومن حضرها فور حدوثها
+- ✅ حساب تلقائي للوحدات والتكلفة النهائية حسب الحضور الفعلي ووزن كل مباراة
+- ✅ تتبع الدفعة الأولية مقابل التسوية النهائية في نهاية الموسم
+- ✅ سجل شفاف يوضح نصيب كل شخص بدقة
+
+## أسئلة شائعة
+
+### هل يُقسم الاشتراك الموسمي بالتساوي بين كل الأعضاء؟
+لا، الأعدل تقسيمه حسب عدد المباريات التي حضرها كل شخص فعلياً، مع إعطاء وزن أعلى للمباريات الكبرى إن وُجدت، لا بالتساوي بين عدد الأعضاء بغض النظر عن استخدامهم الفعلي.
+
+### كيف نحسب وزن المباريات الكبرى في التقسيم؟
+تتفق المجموعة مسبقاً على وزن إضافي (مثل الضعف) للمباريات عالية الطلب كالديربي أو النهائيات، فتُحتسب كوحدتين بدل وحدة واحدة عند حساب نصيب من حضرها.
+
+### ماذا يحدث لتكلفة مباراة لم يحضرها أحد من المجموعة؟
+تُعتبر مصروفاً مشتركاً مهدوراً، ويُقسّم على الأعضاء حسب نسبة مساهمتهم الأصلية في شراء الاشتراك، لا حسب وحدات الحضور الفعلية.
+
+## الخلاصة
+
+الاشتراك الموسمي المشترك لا يحتاج جدالاً عند نهاية الموسم إذا اتفقتم على نظام وزن واضح للمباريات وسجّلتم الحضور بدقة من البداية. اتفقوا على الأوزان، سجّلوا كل حضور، وصفّوا الحساب حسب الاستخدام الفعلي.
+
+**جرب Diviso الآن ونظّم تقسيم اشتراككم الموسمي المشترك بعدل بين كل الأصدقاء.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When a group of friends buys one shared season ticket covering several games or events, and they take turns attending instead of everyone going to every game, the fairest way to split the cost is **by the number of games each person actually attends**, not equally between the number of members. If some games are "marquee" matches (a derby, a cup final) worth more than others, they should get a higher weight in the calculation.
+
+## Why Is Splitting Equally Between Members Unfair Here?
+
+- **Each game has its own usage value**: the season ticket covers several games, so whoever attends 6 benefits more than whoever attends only 4
+- **Games aren't necessarily equal in value**: a derby or cup final carries higher demand and value than a regular game
+- **A blind split (ticket cost ÷ number of members) ignores actual usage**: it unfairly benefits whoever attends less at the expense of whoever attends more
+
+## How to Calculate an Attendance-Based Split Precisely
+
+### Step 1: Define Each Game's Weight
+- **A regular game**: weight 1
+- **A marquee game (a derby, a final, a big rivalry match)**: weight 2 (or any ratio the group agrees on in advance)
+
+### Step 2: Calculate the Total "Game Units" in the Whole Package
+Add up the weights of every game the season ticket covers.
+
+### Step 3: Calculate Each Person's Units by the Games They Actually Attended
+Add up the weights of the specific games each person attended.
+
+### Step 4: Divide the Total Cost by the Package's Total Units, Then Multiply by Each Person's Units
+
+## A Complete Worked Example
+
+A season ticket covers 10 games at a total cost of 2,000 SAR, two of which are "derby" games with double weight:
+
+**Total package units** = 8 regular games (weight 1) + 2 derby games (weight 2) = 8 + 4 = **12 units**
+
+Two friends take turns attending every game (never going together):
+
+- **Ahmed**: attended 6 games, including both derby games
+- **Khaled**: attended only 4 regular games
+
+### Calculating Each Person's Units
+- Ahmed: 4 regular games (weight 1 each = 4) + 2 derby games (weight 2 each = 4) = **8 units**
+- Khaled: 4 regular games (weight 1 each) = **4 units**
+
+**Check**: 8 + 4 = 12 units, matching the package's total units.
+
+### Calculating the Cost
+**Cost per unit** = 2,000 ÷ 12 = **166.67 SAR**
+
+- **Ahmed's share** = 8 × 166.67 = **1,333.33 SAR**
+- **Khaled's share** = 4 × 166.67 = **666.67 SAR**
+
+**Check**: 1,333.33 + 666.67 = 2,000 SAR, matching the total cost.
+
+## What If Nobody Attends a Particular Game?
+
+If everyone skips a game covered by the package, its cost stays a **wasted shared expense**, and it's split among the members according to their original contribution ratio when buying the season ticket (usually equal at purchase time), not by attendance units, since no one actually benefited from it.
+
+## What About the Upfront Payment Before Knowing Who Will Attend What?
+
+The season ticket's full price is usually paid upfront before the season starts, so the actual attendance split isn't known in advance. The practical solution:
+
+- **Members pay for the season ticket equally as an initial deposit** at purchase time
+- **At the end of the season, a final settlement is calculated** based on actual attendance units, and the difference is refunded between whoever paid more than their actual usage and whoever paid less
+
+## What If More Than One Person Wants to Attend the Same Marquee Game?
+
+Agree in advance on a fair system, such as:
+
+- **Rotating marquee games**: each person gets their share of the important games on a rotation
+- **A lottery system**: if everyone wants it equally, settle it with an announced random draw
+
+## A Practical System for Organizing a Shared Season Ticket
+
+### Step 1: Agree on Game Weights Before the Season Starts
+Document which games count as "marquee" and their relative weight, so no one disputes the classification later.
+
+### Step 2: Log Who Attended Each Game Right After It Happens
+Don't leave this to memory at the end of the season — use an app like Diviso to log attendance right after each game.
+
+### Step 3: Settle the Account at Season's End by Actual Attendance Units
+Calculate each person's real share, compare it with what they paid upfront, and settle the difference.
+
+### Step 4: Agree on a Policy for Unattended and Contested Games in Advance
+This avoids an awkward discussion when it actually happens during the season.
+
+## Common Mistakes When Splitting a Shared Season Ticket
+
+- **Splitting equally between members regardless of actual attendance**: unfairly penalizes whoever attends more
+- **Treating every game as equally valuable**: ignores the higher demand for marquee games
+- **Not logging attendance as it happens**: makes an accurate final settlement harder at season's end
+- **Not agreeing on unattended or contested games in advance**: causes an argument over who bears the cost
+
+## How Diviso Helps Split a Shared Season Ticket
+
+- ✅ Logs every game and who attended it as it happens
+- ✅ Automatically calculates units and the final cost based on actual attendance and each game's weight
+- ✅ Tracks the initial deposit against the final season-end settlement
+- ✅ A transparent record showing each person's exact share
+
+## Frequently Asked Questions
+
+### Is a shared season ticket split equally between all members?
+No, it's fairer to split it by the number of games each person actually attended, giving a higher weight to marquee games if any, rather than equally between members regardless of their actual usage.
+
+### How do we calculate the weight of marquee games in the split?
+The group agrees in advance on an extra weight (such as double) for high-demand games like derbies or finals, so they count as two units instead of one when calculating the share of whoever attended them.
+
+### What happens to the cost of a game nobody from the group attended?
+It's treated as a wasted shared expense and split among members by their original contribution ratio when buying the season ticket, not by actual attendance units.
+
+## Conclusion
+
+A shared season ticket doesn't need an argument at the end of the season if you agree on a clear game-weighting system and log attendance accurately from the start. Agree on the weights, log every attendance, and settle the account by actual usage.
+
+**Try Diviso now and organize your group's shared season ticket split fairly among all your friends.**
+    `
+  },
+  {
     slug: "pet-sitting-co-op-cost-reimbursement-friends",
     title: "كيف تتعاملون مع تكاليف تبادل رعاية الحيوانات بين الأصدقاء؟",
     titleEn: "How to Handle Costs When Trading Pet-Sitting Duties With Friends",

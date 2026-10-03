@@ -16,6 +16,216 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "honeymoon-fund-menu-split-wedding-gift",
+    title: "كيف تنظّمون صندوق شهر العسل بنظام \"القائمة\" لمنع تكرار تمويل الهدية نفسها؟",
+    titleEn: "How to Set Up a 'Menu-Style' Honeymoon Fund So Guests Don't Double-Fund the Same Gift",
+    description: "بدل طلب مبلغ نقدي عام من الضيوف لشهر العسل، يمكن للعروسين عرض قائمة تجارب محددة بسعر كل واحدة، فيختار كل ضيف تجربة يموّلها كاملة، وتُشطب فوراً من القائمة لتجنب التكرار. دليل عملي مع مثال.",
+    descriptionEn: "Instead of asking wedding guests for a generic cash gift toward the honeymoon, couples can list specific experiences each with its own price tag, so each guest fully funds one item, and it's marked off the list right away to avoid duplicate funding. A practical guide with an example.",
+    keywords: ["صندوق شهر العسل بنظام القائمة", "تقسيم هدية شهر العسل بين الضيوف", "كيف تنظم صندوق هدايا للعروسين", "من يدفع تجربة شهر العسل", "تمويل تجارب شهر العسل من الضيوف", "تجنب تكرار تمويل هدية الزفاف"],
+    keywordsEn: ["how to set up a honeymoon fund registry", "menu-style wedding gift fund", "avoiding duplicate wedding gift contributions", "honeymoon experience registry ideas", "splitting a honeymoon fund among guests", "organizing a wedding cash fund by item"],
+    category: "tips",
+    readTime: 6,
+    publishDate: "2026-10-03",
+    content: `
+## الإجابة المختصرة
+
+بدل أن يطلب العروسان مبلغاً نقدياً عاماً لشهر العسل من الضيوف (وهو غامض ولا يعرف الضيف إن كان مبلغه "كافياً")، يمكنهما عرض **قائمة تجارب محددة** لرحلة شهر العسل، كل تجربة بسعرها الفعلي (عشاء رومانسي، جولة غوص، يوم سبا، تذاكر صعود جبل). كل ضيف يختار تجربة ويموّلها **كاملة**، وتُشطب فوراً من القائمة بمجرد تمويلها، حتى لا يموّلها ضيف آخر بالخطأ مرة ثانية.
+
+## ليش الطلب العام للمال يسبب إحراجاً؟
+
+- **الضيف لا يعرف المبلغ "المناسب"**: هل 200 ريال كافٍ؟ هل يبدو المبلغ قليلاً مقارنة بضيوف آخرين؟
+- **لا يوجد عنصر "هدية ملموسة"**: التحويل النقدي العام يفتقد لإحساس "أنا موّلت هذا الجزء بالتحديد من رحلتهم"
+- **لا طريقة لمعرفة ما تم تمويله فعلاً**: دون تنسيق، قد يتكرر التمويل على نفس البند بينما تبقى بنود أخرى بلا تمويل
+
+## كيف يعمل نظام "القائمة"؟
+
+### الخطوة 1: اعرضوا تجارب محددة بأسعارها الفعلية
+اختار العروسان بنوداً واقعية من خطة الرحلة، كل بند بسعره التقريبي:
+
+- عشاء رومانسي في مطعم مميز: 300 ريال
+- جولة غوص: 500 ريال
+- يوم سبا للزوجين: 400 ريال
+- دخول صالة المطار (lounge): 150 ريال
+- جولة سياحية في المدينة: 250 ريال
+
+### الخطوة 2: كل ضيف يختار تجربة ويموّلها كاملة
+بدل التحويل العشوائي، يختار الضيف من القائمة المتاحة، ويموّل البند المختار بالكامل.
+
+### الخطوة 3: شطب البند فوراً بعد تمويله
+بمجرد تمويل تجربة معينة، تُحذف من القائمة المعروضة للضيوف القادمين، فلا يتكرر تمويلها.
+
+## مثال عملي كامل
+
+إجمالي قائمة التجارب = 300 + 500 + 400 + 150 + 250 = **1,600 ريال**
+
+- **الضيف أ** موّل العشاء الرومانسي بالكامل (300 ريال) → يُشطب من القائمة
+- **الضيفان ب وج** قرروا تمويل جولة الغوص معاً (250 ريال لكل واحد = 500 ريال) → تُشطب من القائمة
+- **الضيفة د** موّلت يوم السبا بالكامل (400 ريال) → يُشطب من القائمة
+
+**المتبقي في القائمة**: دخول صالة المطار (150 ريال) + الجولة السياحية (250 ريال) = **400 ريال** متاحة للضيوف القادمين.
+
+## ماذا لو كان البند غالياً على ضيف واحد؟
+
+هذا بالضبط ما حدث مع جولة الغوص في المثال أعلاه: يمكن لعدة ضيوف تمويل بند واحد معاً، بشرط أن:
+
+- **يُشطب البند من القائمة فور اكتمال تمويله بالكامل**، لا عند أول مساهمة فيه
+- **يُوضَّح للضيوف المتبقين أن البند "شبه مكتمل"** إن كانت المساهمة جزئية، حتى يعرفوا أنه بحاجة لمبلغ أقل لإكماله
+
+## ماذا لو جاء مبلغ أكبر من إجمالي قائمة التجارب؟
+
+- **أضيفوا بنوداً جديدة للقائمة**: تجربة إضافية لم تكن مخططة أصلاً
+- **حوّلوا الفائض لـ"مصروف شهر العسل العام"**: بند مفتوح غير مرتبط بتجربة محددة، يُستخدم بحرية خلال الرحلة
+
+## ماذا لو أراد ضيف تمويل مبلغ لا يطابق أي بند بدقة؟
+
+اسمحوا بالمساهمة الجزئية في أي بند متاح، وحدّثوا القائمة لتظهر "المتبقي" من ذلك البند بدل سعره الكامل، حتى يعرف الضيف التالي المبلغ المطلوب فعلياً لإكماله.
+
+## خطوات عملية لتنظيم صندوق شهر العسل بنظام القائمة
+
+### الخطوة 1: حدّدوا قائمة التجارب وأسعارها قبل إرسال الدعوات
+اجعلوا القائمة واقعية ومرتبطة بخطة رحلة فعلية، لا أرقاماً عشوائية.
+
+### الخطوة 2: شاركوا القائمة مع الضيوف بوضوح
+عبر رابط أو مجموعة مخصصة يسهل الوصول إليها، تُظهر البنود المتاحة فقط.
+
+### الخطوة 3: حدّثوا حالة كل بند فور تمويله
+استخدم تطبيق مثل Diviso لإنشاء قائمة تجارب مرئية تُظهر فوراً ما تم تمويله وما تبقى.
+
+### الخطوة 4: تابعوا الفائض أو البنود الجديدة بعد الزفاف
+راجعوا الحصيلة النهائية وقرروا كيف توزع أي مبلغ إضافي.
+
+## أخطاء شائعة عند تنظيم صندوق شهر العسل
+
+- **طلب مبلغ نقدي عام دون قائمة واضحة**: يسبب إحراجاً للضيف ولا يعطي إحساساً بهدية محددة
+- **عدم تحديث حالة البنود فور تمويلها**: يسبب تمويلاً مكرراً لنفس البند من ضيوف مختلفين
+- **عدم توضيح إمكانية المساهمة الجزئية**: يجعل الضيف ذا الميزانية المحدودة يتجنب المساهمة أصلاً
+- **عدم تحديد وجهة الفائض مسبقاً**: يسبب التباساً حول كيفية التصرف بالمبلغ الزائد
+
+## كيف يساعدكم Diviso في تنظيم صندوق شهر العسل؟
+
+- ✅ إنشاء قائمة تجارب مرئية بأسعارها الفعلية يشاركها العروسان مع الضيوف
+- ✅ تحديث فوري لحالة كل بند (متاح، جزئي، مكتمل) لمنع التكرار
+- ✅ دعم المساهمة الجزئية من أكثر من ضيف على البند الواحد
+- ✅ سجل شفاف لإجمالي ما تم جمعه مقابل إجمالي القائمة
+
+## أسئلة شائعة
+
+### ليش يُفضَّل نظام القائمة على طلب مبلغ نقدي عام؟
+لأنه يمنح الضيف إحساساً بتمويل تجربة محددة وملموسة بدل تحويل مبلغ غامض، ويمنع التكرار غير المقصود لأن كل بند يُشطب فور اكتماله.
+
+### ماذا يحدث إذا موّل عدة ضيوف البند نفسه بالخطأ؟
+إذا تم تحديث القائمة فوراً عند كل تمويل، يصعب تكرار البند لأنه يُشطب من القائمة المعروضة بمجرد اكتماله، لذا التحديث الفوري هو المفتاح لتجنب هذه المشكلة.
+
+### ماذا نفعل بالمبلغ الزائد إذا تجاوز إجمالي قائمة التجارب؟
+يمكن إضافة بنود جديدة للقائمة، أو تحويل الفائض إلى مصروف عام لشهر العسل يُستخدم بحرية دون ربطه بتجربة محددة.
+
+## الخلاصة
+
+صندوق شهر العسل لا يحتاج أن يكون محرجاً أو مكرراً. اعرضوا قائمة تجارب واضحة بأسعارها، حدّثوا حالة كل بند فوراً، وقرروا مسبقاً أين يذهب أي فائض.
+
+**جرب Diviso الآن ونظّم قائمة تجارب شهر عسلكم ليختار ضيوفكم ما يموّلونه بوضوح وبدون تكرار.**
+    `,
+    contentEn: `
+## Quick Answer
+
+Instead of asking wedding guests for a generic cash amount toward the honeymoon (which is vague, and leaves the guest unsure whether their amount is "enough"), couples can list **specific experiences** for the honeymoon trip, each with its real price (a romantic dinner, a diving excursion, a spa day, mountain-top tickets). Each guest picks one experience and funds it **in full**, and it's marked off the list the moment it's funded, so another guest doesn't accidentally fund it again.
+
+## Why Does a Generic Cash Ask Cause Awkwardness?
+
+- **The guest doesn't know the "right" amount**: is 200 SAR enough? Does it look small compared to other guests?
+- **There's no tangible "gift" element**: a generic cash transfer loses the feeling of "I specifically funded this part of their trip"
+- **There's no way to know what's actually been funded**: without coordination, the same item might get funded twice while other items remain unfunded
+
+## How Does the "Menu" System Work?
+
+### Step 1: List Specific Experiences at Their Real Prices
+The couple picks realistic items from their actual trip plan, each with its approximate price:
+
+- A romantic dinner at a nice restaurant: 300 SAR
+- A diving excursion: 500 SAR
+- A couples' spa day: 400 SAR
+- Airport lounge access: 150 SAR
+- A city sightseeing tour: 250 SAR
+
+### Step 2: Each Guest Picks and Fully Funds One Experience
+Instead of a random transfer, the guest chooses from the available list and fully funds that specific item.
+
+### Step 3: Mark the Item Off Right After It's Funded
+As soon as a given experience is funded, it's removed from the list shown to upcoming guests, so it never gets funded twice.
+
+## A Complete Worked Example
+
+Total experience list = 300 + 500 + 400 + 150 + 250 = **1,600 SAR**
+
+- **Guest A** fully funded the romantic dinner (300 SAR) → removed from the list
+- **Guests B and C** decided to jointly fund the diving excursion (250 SAR each = 500 SAR) → removed from the list
+- **Guest D** fully funded the spa day (400 SAR) → removed from the list
+
+**Remaining on the list**: airport lounge access (150 SAR) + the city tour (250 SAR) = **400 SAR** still available for upcoming guests.
+
+## What If an Item Is Too Expensive for One Guest?
+
+This is exactly what happened with the diving excursion in the example above: several guests can jointly fund one item, as long as:
+
+- **The item is removed from the list only once it's fully funded**, not at the first contribution toward it
+- **Remaining guests are shown that the item is "partially funded"** if the contribution is partial, so they know exactly how much is still needed to complete it
+
+## What If More Money Comes In Than the Total Experience List?
+
+- **Add new items to the list**: an extra experience that wasn't originally planned
+- **Turn the surplus into a "general honeymoon spending" item**: an open item not tied to a specific experience, to be used freely during the trip
+
+## What If a Guest Wants to Give an Amount That Doesn't Exactly Match an Item?
+
+Allow partial contributions toward any available item, and update the list to show the **remaining** amount for that item instead of its full price, so the next guest knows exactly how much is still needed to complete it.
+
+## A Practical System for Organizing a Menu-Style Honeymoon Fund
+
+### Step 1: Define the Experience List and Prices Before Sending Invitations
+Make the list realistic and tied to an actual trip plan, not arbitrary numbers.
+
+### Step 2: Share the List Clearly With Guests
+Through a link or a dedicated group that's easy to access, showing only the currently available items.
+
+### Step 3: Update Each Item's Status as Soon as It's Funded
+Use an app like Diviso to create a visual experience list that immediately shows what's funded and what remains.
+
+### Step 4: Decide What Happens to a Surplus or New Items After the Wedding
+Review the final total raised and decide how to allocate any extra amount.
+
+## Common Mistakes When Organizing a Honeymoon Fund
+
+- **Asking for a generic cash amount with no clear list**: causes awkwardness for the guest and gives no sense of a specific gift
+- **Not updating an item's status right after it's funded**: causes the same item to get funded twice by different guests
+- **Not clarifying that partial contributions are allowed**: makes a guest with a limited budget avoid contributing altogether
+- **Not deciding in advance where a surplus goes**: causes confusion over how to handle any extra amount
+
+## How Diviso Helps Organize a Honeymoon Fund
+
+- ✅ Creates a visual experience list at real prices that the couple shares with guests
+- ✅ Instantly updates each item's status (available, partial, fully funded) to prevent duplication
+- ✅ Supports partial contributions from multiple guests toward the same item
+- ✅ A transparent record of the total raised against the total experience list
+
+## Frequently Asked Questions
+
+### Why is the menu system better than asking for a generic cash amount?
+Because it gives the guest the feeling of funding a specific, tangible experience instead of transferring a vague amount, and it prevents accidental duplication since each item is removed from the list the moment it's fully funded.
+
+### What happens if several guests accidentally fund the same item?
+If the list is updated immediately after every contribution, it's hard to duplicate an item since it's removed from the displayed list as soon as it's completed, so immediate updating is the key to avoiding this problem.
+
+### What should we do with extra money that exceeds the total experience list?
+New items can be added to the list, or the surplus can be turned into a general honeymoon spending item to be used freely without being tied to a specific experience.
+
+## Conclusion
+
+A honeymoon fund doesn't need to be awkward or duplicated. List clear experiences with their prices, update each item's status immediately, and decide in advance where any surplus goes.
+
+**Try Diviso now and organize your honeymoon experience list so your guests can clearly pick what to fund, with no duplication.**
+    `
+  },
+  {
     slug: "split-season-ticket-cost-by-games-attended",
     title: "كيف تقسم مجموعة تكلفة اشتراك موسمي (Season Ticket) حسب عدد المباريات لكل شخص؟",
     titleEn: "How Should a Group Split a Shared Season Ticket by Games Attended?",

@@ -16,6 +16,204 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-bnpl-installment-purchase-cost-friends",
+    title: "كيف تقسمون أقساط مشتريات التقسيط (مثل تابي وتمارا) بين الأصدقاء؟",
+    titleEn: "How to Split a Buy-Now-Pay-Later (BNPL) Purchase's Installments With Friends",
+    description: "عندما يشترك أصدقاء في شراء عبر تطبيق تقسيط مثل تابي أو تمارا بحساب شخص واحد، يبقى هو الملزم تعاقدياً أمام مزوّد الخدمة، فيجب تحصيل نصيب كل صديق قبل موعد كل دفعة لا بعده. دليل عملي مع مثال حساب.",
+    descriptionEn: "When friends split a purchase bought through a buy-now-pay-later app like Tabby or Tamara under one person's account, that person stays contractually responsible to the provider, so each friend's share should be collected before every due date, not after. A practical guide with a worked example.",
+    keywords: ["تقسيم أقساط تابي بين الأصدقاء", "تقسيم أقساط تمارا بين مجموعة", "من يدفع إذا تأخر صديق عن قسط الشراء بالتقسيط", "تسوية قسط مبكر مع الأصدقاء", "مخاطر شراء التقسيط الجماعي", "تحصيل نصيب كل صديق قبل موعد القسط"],
+    keywordsEn: ["how to split tabby installments with friends", "splitting a BNPL purchase between friends", "who covers a missed buy-now-pay-later payment", "early payoff of a shared installment purchase", "risks of group buy-now-pay-later purchases", "collecting installment shares before the due date"],
+    category: "tips",
+    readTime: 6,
+    publishDate: "2026-10-04",
+    content: `
+## الإجابة المختصرة
+
+عندما يشترك مجموعة أصدقاء في شراء عبر تطبيق تقسيط مثل تابي أو تمارا، لكن الشراء يتم من حساب شخص واحد فقط، يبقى هذا الشخص **الملزم تعاقدياً بالكامل** أمام مزوّد الخدمة، بغض النظر عن اتفاق المجموعة الداخلي. لذا يجب تحصيل نصيب كل صديق **قبل** موعد استحقاق كل دفعة بأيام، لا بعده، لأن أي تأخير يؤثر على السجل الائتماني لصاحب الحساب وحده، لا على المجموعة.
+
+## ليش يحتاج الشراء الجماعي بالتقسيط نظاماً مختلفاً؟
+
+- **صاحب الحساب يتحمّل المخاطرة الكاملة**: تطبيقات التقسيط تتعامل مع شخص واحد فقط، فهو المسؤول أمام الشركة عن كل دفعة، حتى لو لم يدفعها هو شخصياً من جيبه
+- **التأخر يؤثر على السجل الائتماني الشخصي**: تسجيل تأخر دفعة قد يؤثر على قدرة صاحب الحساب على استخدام خدمات التقسيط مستقبلاً
+- **المجموعة قد لا تشعر بنفس الإلزام**: الأصدقاء الآخرون لا يرون العواقب المباشرة، فيسهل عليهم التأخر دون الشعور بخطورة ذلك
+
+## القاعدة الأساسية: التحصيل قبل الموعد لا بعده
+
+لا تنتظروا موعد استحقاق القسط لتطلبوا نصيب كل صديق. حدّدوا موعداً للتحصيل **قبل** تاريخ الاستحقاق الفعلي بعدة أيام، حتى يتوفر وقت كافٍ لمتابعة أي متأخر قبل أن يتأثر السجل الائتماني لصاحب الحساب.
+
+## مثال عملي كامل
+
+3 أصدقاء اشتروا جهازاً بقيمة 1,200 ريال عبر تطبيق تقسيط، مقسّمة على 4 دفعات متساوية كل أسبوعين:
+
+**قيمة كل دفعة** = 1,200 ÷ 4 = **300 ريال**
+
+بما أن الثلاثة يتشاركون التكلفة بالتساوي:
+
+**نصيب كل صديق من كل دفعة** = 300 ÷ 3 = **100 ريال**
+
+يحصّل صاحب الحساب 100 ريال من كل صديق، **3 أيام قبل** موعد استحقاق كل دفعة، لا في يوم الاستحقاق نفسه.
+
+## ماذا لو أراد أحد الأصدقاء الانسحاب مبكراً؟
+
+لو دفع الثلاثة الدفعة الأولى (100 ريال لكل واحد)، وبعدها أراد أحدهم تسوية نصيبه بالكامل دفعة واحدة بدل الاستمرار شهرياً:
+
+**الدفعات المتبقية** = 3 دفعات (من أصل 4)
+**نصيب الصديق المنسحب من المتبقي** = 3 × 100 = **300 ريال**، يدفعها دفعة واحدة الآن بدل تقسيطها على 3 أشهر قادمة.
+
+لا يحق له خصم أي مبلغ مقابل "السداد المبكر" إلا إذا كان مزوّد الخدمة نفسه يقدّم خصماً على التسوية الكاملة المبكرة للمشترى كله.
+
+## ماذا لو قدّم مزوّد التقسيط خصماً على التسوية الكاملة المبكرة؟
+
+بعض تطبيقات التقسيط تسمح بتسوية كامل المبلغ المتبقي دفعة واحدة، وقد تقدّم خصماً صغيراً كحافز. في هذه الحالة:
+
+**يُوزَّع الخصم على كل من بقي ضمن الشراء بنفس نسبة نصيبه من المبلغ المتبقي**، لا على صاحب الحساب فقط، لأن الخصم نتج عن تسوية مبلغ يخص المجموعة ككل.
+
+## ماذا لو تأخر صديق عن دفع نصيبه؟
+
+- **لا تتركوا صاحب الحساب يتحمّل الدفعة بمفرده دون خطة**: اتفقوا مسبقاً على مَن يُغطي الفرق مؤقتاً إن تأخر أحدهم
+- **فكّروا في هامش احتياطي بسيط**: مثل تحصيل نصيب كل صديق بيومين إضافيين قبل الموعد المعتاد كـ"وسادة أمان"
+- **وثّقوا كل تأخير**: حتى يُحسب بشكل عادل عند أي تسوية لاحقة بين الأصدقاء
+
+## خطوات عملية لتنظيم شراء جماعي بالتقسيط
+
+### الخطوة 1: وثّقوا نسبة كل شخص قبل الشراء
+حددوا من يدفع كم من المبلغ الإجمالي، كتابياً، قبل إتمام عملية الشراء.
+
+### الخطوة 2: حدّدوا موعد تحصيل داخلي قبل كل موعد استحقاق فعلي
+3-5 أيام هامش كافٍ عادة لمتابعة أي متأخر دون التأثير على صاحب الحساب.
+
+### الخطوة 3: سجّلوا كل دفعة فور تحصيلها
+استخدم تطبيق مثل Diviso لتسجيل جدول الدفعات وتذكير كل صديق قبل كل موعد تحصيل داخلي.
+
+### الخطوة 4: اتفقوا مسبقاً على سياسة الانسحاب المبكر والتأخر
+حتى لا يحتاج الأمر لنقاش في لحظة حدوثه فعلياً.
+
+## أخطاء شائعة عند تقسيم أقساط شراء جماعي
+
+- **تحصيل النصيب في يوم الاستحقاق نفسه بدل قبله**: لا يترك وقتاً كافياً لمتابعة أي تأخير قبل أن يؤثر على صاحب الحساب
+- **عدم توثيق نسبة كل صخص قبل الشراء**: يسبب خلافاً حول "من يدفع كم" في كل دفعة
+- **افتراض أن صاحب الحساب يجب أن يتحمّل أي تأخير وحده**: يحمّله مخاطرة غير عادلة دون خطة بديلة
+- **عدم توزيع خصم التسوية المبكرة على الجميع**: يظلم من بقي في الشراء إذا احتفظ صاحب الحساب بالخصم لنفسه فقط
+
+## كيف يساعدكم Diviso في تنظيم شراء جماعي بالتقسيط؟
+
+- ✅ تسجيل جدول الأقساط الكامل ونصيب كل صديق من كل دفعة
+- ✅ تذكيرات تلقائية قبل كل موعد تحصيل داخلي بأيام
+- ✅ حساب سريع لنصيب أي صديق عند الانسحاب المبكر
+- ✅ سجل شفاف لكل دفعة ومن سدّدها وفي أي تاريخ
+
+## أسئلة شائعة
+
+### من يتحمّل المخاطرة في شراء جماعي عبر تطبيق تقسيط؟
+صاحب الحساب الذي تمت عملية الشراء باسمه هو المسؤول الوحيد تعاقدياً أمام مزوّد الخدمة، بغض النظر عن اتفاق المجموعة على تقسيم التكلفة، لذا يجب تحصيل نصيب كل صديق قبل موعد الاستحقاق لا بعده.
+
+### هل يحق لمن ينسحب مبكراً خصم على نصيبه المتبقي؟
+لا، إلا إذا كان مزوّد التقسيط نفسه يقدّم خصماً على التسوية الكاملة المبكرة للمشترى، وفي هذه الحالة يُوزَّع الخصم على كل من بقي في الشراء بنسبة نصيبه من المبلغ المتبقي.
+
+### ماذا نفعل إذا تأخر أحد الأصدقاء عن دفع نصيبه في موعده؟
+يُفضَّل الاتفاق مسبقاً على هامش احتياطي زمني (تحصيل النصيب بأيام قبل الموعد الفعلي) وخطة تغطية مؤقتة، بدل ترك صاحب الحساب يتحمّل المفاجأة وحده عند كل موعد استحقاق.
+
+## الخلاصة
+
+الشراء الجماعي بالتقسيط لا يحتاج أن يكون مصدر قلق لصاحب الحساب. وثّقوا نسبة كل شخص، حصّلوا الأنصبة قبل كل موعد استحقاق بأيام، واتفقوا مسبقاً على سياسة الانسحاب المبكر والتأخر.
+
+**جرب Diviso الآن ونظّم جدول أقساط شرائكم الجماعي بعدل وبدون مخاطرة على أي شخص.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When a group of friends splits a purchase bought through a buy-now-pay-later app like Tabby or Tamara, but the purchase is made under only one person's account, that person remains **fully, contractually responsible** to the provider, regardless of the group's internal agreement. So each friend's share should be collected **before** every installment's due date by a few days, not after, since any delay hits the account holder's own credit record, not the group's.
+
+## Why Does a Group BNPL Purchase Need a Different System?
+
+- **The account holder carries the full contractual risk**: BNPL apps deal with only one person, who is responsible to the provider for every installment, even if they're not the one personally paying it out of pocket
+- **A delay affects a personal credit record**: a recorded late payment can affect the account holder's own ability to use installment services in the future
+- **The group may not feel the same sense of obligation**: the other friends don't see the direct consequences, so it's easy for them to be late without feeling how risky that is
+
+## The Core Rule: Collect Before the Due Date, Not After
+
+Don't wait until the installment's due date to ask each friend for their share. Set an internal collection date **a few days before** the actual due date, so there's enough time to follow up with anyone late before it affects the account holder's credit record.
+
+## A Complete Worked Example
+
+3 friends bought a device worth 1,200 SAR through a BNPL app, split into 4 equal installments every two weeks:
+
+**Each installment's value** = 1,200 ÷ 4 = **300 SAR**
+
+Since the three friends split the cost equally:
+
+**Each friend's share of each installment** = 300 ÷ 3 = **100 SAR**
+
+The account holder collects 100 SAR from each friend **3 days before** each installment's due date, not on the due date itself.
+
+## What If One Friend Wants to Exit Early?
+
+If all three paid the first installment (100 SAR each), and then one of them wants to settle their share in full instead of continuing monthly:
+
+**Remaining installments** = 3 installments (out of 4)
+**The exiting friend's remaining share** = 3 × 100 = **300 SAR**, paid in one lump sum now instead of spread across the next 3 months.
+
+They aren't entitled to any discount for "paying early" unless the provider itself offers a discount for settling the entire purchase early.
+
+## What If the BNPL Provider Offers a Discount for Early Full Settlement?
+
+Some BNPL apps allow settling the entire remaining balance in one payment, sometimes with a small discount as an incentive. In this case:
+
+**The discount should be distributed among everyone still in the purchase, in the same ratio as their share of the remaining balance**, not kept by the account holder alone, since the discount results from settling an amount that belongs to the whole group.
+
+## What If a Friend Is Late on Their Share?
+
+- **Don't leave the account holder covering the payment alone with no plan**: agree in advance on who temporarily covers the gap if someone is late
+- **Consider a simple buffer margin**: such as collecting each friend's share a couple of extra days before the usual internal deadline, as a "safety cushion"
+- **Document every delay**: so it's accounted for fairly in any later settlement between the friends
+
+## A Practical System for Organizing a Group BNPL Purchase
+
+### Step 1: Document Each Person's Ratio Before Buying
+Decide in writing who pays how much of the total amount before the purchase is completed.
+
+### Step 2: Set an Internal Collection Date Before Each Actual Due Date
+3-5 days is usually enough margin to follow up with anyone late without affecting the account holder.
+
+### Step 3: Log Every Payment as Soon as It's Collected
+Use an app like Diviso to log the installment schedule and remind each friend before every internal collection deadline.
+
+### Step 4: Agree in Advance on an Early-Exit and Lateness Policy
+So it doesn't need to be negotiated in the moment it actually happens.
+
+## Common Mistakes When Splitting a Group BNPL Purchase
+
+- **Collecting shares on the actual due date instead of before it**: leaves no time to follow up on any delay before it affects the account holder
+- **Not documenting each person's ratio before the purchase**: causes a dispute over "who pays how much" at every installment
+- **Assuming the account holder should absorb any delay alone**: places an unfair risk on them with no backup plan
+- **Not distributing an early-settlement discount to everyone**: unfairly penalizes those still in the purchase if the account holder keeps the discount for themselves alone
+
+## How Diviso Helps Organize a Group BNPL Purchase
+
+- ✅ Logs the full installment schedule and each friend's share of every payment
+- ✅ Automatic reminders days before each internal collection deadline
+- ✅ Quick calculation of any friend's share when they exit early
+- ✅ A transparent record of every payment, who made it, and when
+
+## Frequently Asked Questions
+
+### Who carries the risk in a group purchase made through a BNPL app?
+The account holder the purchase was made under is the sole contractually responsible party to the provider, regardless of the group's agreement on splitting the cost, so each friend's share should be collected before the due date, not after.
+
+### Is someone who exits early entitled to a discount on their remaining share?
+No, unless the BNPL provider itself offers a discount for settling the entire purchase early, in which case the discount is distributed among everyone still in the purchase, proportional to their share of the remaining balance.
+
+### What should we do if a friend is late paying their share?
+It's best to agree in advance on a time buffer (collecting shares a few days before the actual due date) and a temporary coverage plan, instead of leaving the account holder to absorb the surprise alone at every due date.
+
+## Conclusion
+
+A group BNPL purchase doesn't need to be a source of worry for the account holder. Document each person's ratio, collect shares a few days before every due date, and agree in advance on an early-exit and lateness policy.
+
+**Try Diviso now and organize your group purchase's installment schedule fairly, without putting anyone at risk.**
+    `
+  },
+  {
     slug: "honeymoon-fund-menu-split-wedding-gift",
     title: "كيف تنظّمون صندوق شهر العسل بنظام \"القائمة\" لمنع تكرار تمويل الهدية نفسها؟",
     titleEn: "How to Set Up a 'Menu-Style' Honeymoon Fund So Guests Don't Double-Fund the Same Gift",

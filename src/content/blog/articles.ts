@@ -16,6 +16,232 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-bulk-buying-coop-tiered-pricing-neighbors",
+    title: "كيف يقسم أعضاء جمعية الشراء الجماعي (التموين بالجملة) التكلفة عند اختلاف شريحة السعر؟",
+    titleEn: "How a Bulk-Buying Co-op Should Split Costs When Tiered Pricing Applies to Everyone",
+    description: "في جمعيات الشراء الجماعي، سعر الكيلو ينخفض كلما زادت كمية الطلب الإجمالية لكل الأعضاء، ويُطبَّق السعر النهائي الذي بلغته المجموعة على طلب كل عضو كاملاً، لا على الكمية الإضافية فقط. دليل عملي مع مثال حساب.",
+    descriptionEn: "In bulk-buying co-ops, the per-unit price drops as the group's combined order grows, and the final tier the group reaches applies to every member's entire order, not just the extra quantity. A practical guide with a worked example.",
+    keywords: ["تقسيم تكلفة الشراء الجماعي بين الجيران", "جمعية شراء بالجملة بين العائلات", "كيف تحسب شريحة السعر في الشراء الجماعي", "تقسيم رسوم التوصيل في التموين الجماعي", "من يتحمل فرق الشريحة عند الانسحاب", "تنظيم طلب جماعي بسعر الجملة"],
+    keywordsEn: ["how to split a bulk-buying co-op cost", "group buying tiered pricing explained", "splitting delivery fees in a buying club", "who covers the price-tier gap if someone cancels", "organizing a wholesale group order with neighbors", "bulk order discount calculator for groups"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-10-05",
+    content: `
+## الإجابة المختصرة
+
+في جمعيات الشراء الجماعي (مثل تجميع طلب لحوم أو أرز أو خضار بسعر الجملة بين عدة بيوت)، ينخفض سعر الوحدة كلما زادت **الكمية الإجمالية** التي طلبتها المجموعة كلها معاً. المهم: السعر النهائي الذي تصل إليه المجموعة **يُطبَّق على طلب كل عضو كاملاً**، لا على الكمية الإضافية التي تجاوزت الشريحة السابقة فقط. أما رسوم التوصيل أو الخدمة الثابتة، فتُقسم بالتساوي بين الأعضاء المشاركين بغض النظر عن كمية طلب كل واحد.
+
+## كيف تعمل شرائح السعر في الشراء الجماعي؟
+
+المورّدون بالجملة يقدمون سعراً أقل للكيلو كلما زادت الكمية الإجمالية المطلوبة:
+
+- كمية صغيرة (1-50 كيلو): سعر أعلى للكيلو
+- كمية متوسطة (51-100 كيلو): سعر أقل
+- كمية كبيرة (101 كيلو فأكثر): أقل سعر للكيلو
+
+هذا يعني أن انضمام عضو جديد للمجموعة قد يرفع الكمية الإجمالية لتتجاوز حداً معيناً، فتنخفض تكلفة الكيلو **لكل الأعضاء**، لا للعضو الجديد فقط.
+
+## مثال عملي كامل
+
+مورّد يقدّم الأسعار التالية حسب الكمية الإجمالية:
+
+- 1-50 كيلو: 20 ريال للكيلو
+- 51-100 كيلو: 18 ريال للكيلو
+- 101 كيلو فأكثر: 16 ريال للكيلو
+
+3 بيوت طلبت معاً:
+
+- البيت أ: 40 كيلو
+- البيت ب: 35 كيلو
+- البيت ج: 30 كيلو
+
+**إجمالي الطلب** = 40 + 35 + 30 = **105 كيلو**، وهذا يضع المجموعة في شريحة "101 كيلو فأكثر" بسعر 16 ريال للكيلو.
+
+### الحساب الصحيح
+كل عضو يدفع كميته مضروبة في **السعر النهائي الذي بلغته المجموعة (16 ريال)**، لا السعر الذي كان متوقعاً لو طلب بمفرده:
+
+- البيت أ = 40 × 16 = **640 ريال**
+- البيت ب = 35 × 16 = **560 ريال**
+- البيت ج = 30 × 16 = **480 ريال**
+
+### لماذا هذا أعدل من تطبيق السعر القديم على الكمية الأساسية فقط؟
+لو طُبِّق سعر 20 ريال على أول 50 كيلو من المجموعة، ثم 18 ريال على الـ50 التالية، ثم 16 ريال على الباقي، سيصبح الحساب معقداً جداً ويصعب توزيعه بعدالة على كل عضو، لأن كل عضو ساهم في الوصول للشريحة النهائية بنفس القدر. السعر النهائي الموحّد (16 ريال للجميع) أبسط وأعدل لأن **كل الكميات ساهمت في الوصول لهذا السعر**.
+
+## كيف تُقسم رسوم التوصيل أو الخدمة الثابتة؟
+
+رسوم التوصيل أو تجهيز الطلب (إن وُجدت) لا ترتبط بكمية طلب كل عضو، بل بعدد الأعضاء المشاركين في التوصيل نفسه، فتُقسم **بالتساوي**:
+
+### مثال
+رسوم توصيل ثابتة 90 ريال على 3 بيوت = 30 ريال لكل بيت، بالإضافة لتكلفة كميته.
+
+## ماذا لو انسحب عضو بعد حساب الشريحة لكن قبل تثبيت الطلب؟
+
+هذا الموقف الأكثر حساسية في جمعيات الشراء الجماعي، لأن انسحاب عضو واحد قد يُنزل المجموعة لشريحة سعر أعلى.
+
+### مثال
+لو انسحب البيت ج (30 كيلو) بعد حساب الشريحة، يتبقى 40 + 35 = 75 كيلو، وهذا يُنزل المجموعة لشريحة "51-100 كيلو" بسعر 18 ريال بدل 16 ريال.
+
+### من يتحمل فرق الشريحة؟
+- **الأعدل**: العضو المنسحب يتحمل فرق السعر الناتج عن انسحابه، لا الأعضاء المتبقون
+- **طريقة الحساب**: احسبوا الفرق بين التكلفة بالسعر الجديد (الأعلى) والتكلفة بالسعر القديم (الأقل) لكميات الأعضاء المتبقين، ويدفع المنسحب هذا الفرق تعويضاً لهم
+
+### مثال الحساب
+الأعضاء المتبقون (75 كيلو) بسعر 18 ريال = 1,350 ريال، بدل 75 × 16 = 1,200 ريال لو استمر الطلب الأصلي. الفرق = 150 ريال، يدفعها البيت المنسحب للمجموعة.
+
+## خطوات عملية لتنظيم جمعية شراء جماعي
+
+### الخطوة 1: حددوا شرائح الأسعار من المورّد كتابياً قبل بدء التجميع
+اطلبوا جدول الأسعار الكامل حسب الكمية، لا سعراً تقريبياً واحداً.
+
+### الخطوة 2: حدّدوا موعداً نهائياً لتثبيت الكميات
+بعد هذا الموعد، لا يُسمح بالانسحاب دون تحمّل فرق الشريحة إن حدث.
+
+### الخطوة 3: سجّلوا كمية كل عضو وسعر الشريحة النهائي بوضوح
+استخدم تطبيق مثل Diviso لحساب نصيب كل عضو تلقائياً حسب كميته والسعر النهائي للمجموعة.
+
+### الخطوة 4: افصلوا تكلفة الكمية عن رسوم التوصيل الثابتة
+بندان منفصلان لتجنب أي التباس في الحساب.
+
+## أخطاء شائعة عند تنظيم الشراء الجماعي
+
+- **تطبيق السعر القديم على الكمية الأساسية بدل السعر النهائي الموحّد**: يعقّد الحساب دون داعٍ
+- **تقسيم رسوم التوصيل حسب الكمية بدل بالتساوي**: يظلم من طلب كمية أكبر رغم أن رسوم التوصيل ثابتة لا تتغير بالكمية
+- **عدم تحديد موعد نهائي لتثبيت الكميات**: يجعل كل انسحاب متأخر مفاجأة تهدد شريحة السعر لباقي الأعضاء
+- **عدم تحميل المنسحب فرق الشريحة**: يجعل الأعضاء المتبقين يتحملون تكلفة قرار لم يتخذوه
+
+## كيف يساعدكم Diviso في تنظيم جمعية الشراء الجماعي؟
+
+- ✅ حساب تلقائي لنصيب كل عضو حسب كميته والسعر النهائي للشريحة التي بلغتها المجموعة
+- ✅ فصل تكلفة الكمية عن رسوم التوصيل الثابتة كبندين منفصلين
+- ✅ حساب فرق الشريحة بدقة إذا انسحب أحد الأعضاء قبل تثبيت الطلب
+- ✅ سجل شفاف لكل طلب شهري يسهّل التخطيط للطلبات القادمة
+
+## أسئلة شائعة
+
+### هل يُطبَّق سعر الشريحة النهائي على كمية كل عضو كاملة؟
+نعم، السعر النهائي الذي تصل إليه المجموعة بإجمالي كمياتها يُطبَّق على كمية كل عضو بالكامل، لا على الجزء الذي تجاوز الشريحة السابقة فقط، لأن هذا يبسّط الحساب ويعكس مساهمة الجميع في الوصول لهذا السعر.
+
+### كيف تُقسم رسوم التوصيل في الشراء الجماعي؟
+تُقسم بالتساوي بين كل الأعضاء المشاركين بغض النظر عن كمية طلب كل واحد، لأنها تكلفة ثابتة لا ترتبط بحجم الطلب الفردي.
+
+### من يتحمل فرق السعر إذا انسحب عضو وأنزل المجموعة لشريحة أعلى؟
+العضو المنسحب يتحمل الفرق بين التكلفة بالشريحة الجديدة الأعلى والتكلفة بالشريحة القديمة الأقل لكميات الأعضاء المتبقين، لا الأعضاء المتبقون أنفسهم.
+
+## الخلاصة
+
+جمعية الشراء الجماعي توفّر على الجميع تكلفة كبيرة، لكنها تحتاج نظام قسمة واضحاً يراعي السعر النهائي الموحّد ورسوم التوصيل الثابتة، وسياسة محددة لمن ينسحب بعد تثبيت الشريحة. وثّقوا الأسعار والمواعيد مسبقاً لتجنّب أي خلاف.
+
+**جرب Diviso الآن ونظّم تقسيم تكلفة طلبكم الجماعي بعدل بين كل الأعضاء.**
+    `,
+    contentEn: `
+## Quick Answer
+
+In bulk-buying co-ops (pooling an order for meat, rice, or produce at wholesale prices across several households), the per-unit price drops as the group's **combined quantity** grows. The key rule: the final price tier the group reaches **applies to every member's entire order**, not just the extra quantity that pushed past the previous tier. A flat delivery or service fee, on the other hand, is split equally among participating members regardless of how much each one ordered.
+
+## How Do Price Tiers Work in Bulk Buying?
+
+Wholesale suppliers offer a lower per-unit price as the total requested quantity increases:
+
+- A small quantity (1-50 kg): a higher price per kg
+- A medium quantity (51-100 kg): a lower price
+- A large quantity (101 kg and up): the lowest price per kg
+
+This means a new member joining the group might push the combined quantity past a threshold, lowering the per-kg cost **for everyone**, not just the new member.
+
+## A Complete Worked Example
+
+A supplier offers the following prices by total quantity:
+
+- 1-50 kg: 20 SAR per kg
+- 51-100 kg: 18 SAR per kg
+- 101 kg and up: 16 SAR per kg
+
+3 households order together:
+
+- Household A: 40 kg
+- Household B: 35 kg
+- Household C: 30 kg
+
+**Total order** = 40 + 35 + 30 = **105 kg**, which puts the group in the "101 kg and up" tier at 16 SAR per kg.
+
+### The Correct Calculation
+Each member pays their own quantity multiplied by **the final price the group reached (16 SAR)**, not the price they would have expected ordering alone:
+
+- Household A = 40 × 16 = **640 SAR**
+- Household B = 35 × 16 = **560 SAR**
+- Household C = 30 × 16 = **480 SAR**
+
+### Why Is This Fairer Than Applying the Old Price to the Base Quantity?
+If 20 SAR were applied to the group's first 50 kg, then 18 SAR to the next 50, then 16 SAR to the rest, the calculation would get needlessly complicated and hard to distribute fairly, since every member equally contributed to reaching the final tier. A single unified final price (16 SAR for everyone) is simpler and fairer because **every member's quantity contributed to reaching that price**.
+
+## How Should Delivery or Flat Service Fees Be Split?
+
+Delivery or order-preparation fees (if any) aren't tied to each member's quantity, but to the number of members sharing the delivery itself, so they're split **equally**:
+
+### An Example
+A flat delivery fee of 90 SAR across 3 households = 30 SAR per household, on top of their quantity's cost.
+
+## What If a Member Withdraws After the Tier Is Calculated but Before the Order Is Locked In?
+
+This is the most sensitive situation in bulk-buying co-ops, since one member withdrawing can drop the group into a higher-priced tier.
+
+### An Example
+If Household C (30 kg) withdraws after the tier was calculated, 40 + 35 = 75 kg remain, dropping the group into the "51-100 kg" tier at 18 SAR instead of 16 SAR.
+
+### Who Covers the Tier Difference?
+- **The fairest approach**: the withdrawing member covers the price difference caused by their withdrawal, not the remaining members
+- **How to calculate it**: work out the difference between the cost at the new, higher price and the cost at the old, lower price for the remaining members' quantities, and the withdrawing member pays that difference as compensation to them
+
+### A Worked Calculation
+The remaining members (75 kg) at 18 SAR = 1,350 SAR, instead of 75 × 16 = 1,200 SAR if the original order had held. The difference = 150 SAR, paid by the withdrawing household to the group.
+
+## A Practical System for Organizing a Bulk-Buying Co-op
+
+### Step 1: Get the Supplier's Price Tiers in Writing Before Pooling Orders
+Ask for the full price table by quantity, not a single approximate price.
+
+### Step 2: Set a Final Deadline for Locking In Quantities
+After this deadline, withdrawing isn't allowed without covering any resulting tier difference.
+
+### Step 3: Log Each Member's Quantity and the Group's Final Tier Price Clearly
+Use an app like Diviso to automatically calculate each member's share based on their quantity and the group's final price.
+
+### Step 4: Keep Quantity Cost Separate From the Flat Delivery Fee
+Two separate line items, to avoid any confusion in the calculation.
+
+## Common Mistakes When Organizing a Bulk-Buying Co-op
+
+- **Applying the old price to the base quantity instead of the unified final price**: needlessly complicates the calculation
+- **Splitting delivery fees by quantity instead of equally**: unfairly penalizes whoever ordered more, even though the delivery fee is flat and doesn't change with quantity
+- **Not setting a final deadline for locking in quantities**: turns every late withdrawal into a surprise that threatens the remaining members' price tier
+- **Not charging the withdrawing member for the tier difference**: leaves the remaining members bearing the cost of a decision they didn't make
+
+## How Diviso Helps Organize a Bulk-Buying Co-op
+
+- ✅ Automatically calculates each member's share based on their quantity and the group's final tier price
+- ✅ Separates quantity cost from the flat delivery fee as two distinct line items
+- ✅ Precisely calculates the tier difference if a member withdraws before the order is locked in
+- ✅ A transparent record of every monthly order that makes planning future orders easier
+
+## Frequently Asked Questions
+
+### Does the final tier price apply to each member's entire quantity?
+Yes, the final price the group reaches with its combined quantity applies to each member's full quantity, not just the portion that exceeded the previous tier, since this simplifies the calculation and reflects everyone's contribution to reaching that price.
+
+### How are delivery fees split in a bulk-buying order?
+They're split equally among all participating members regardless of how much each one ordered, since it's a flat cost unrelated to each individual's order size.
+
+### Who covers the price difference if a member withdraws and drops the group into a higher tier?
+The withdrawing member covers the difference between the cost at the new, higher tier and the cost at the old, lower tier for the remaining members' quantities, not the remaining members themselves.
+
+## Conclusion
+
+A bulk-buying co-op saves everyone significant money, but it needs a clear splitting system that accounts for the unified final price and the flat delivery fee, plus a defined policy for anyone who withdraws after the tier is locked in. Document the prices and deadlines in advance to avoid any dispute.
+
+**Try Diviso now and organize your group order's cost split fairly among all members.**
+    `
+  },
+  {
     slug: "split-bnpl-installment-purchase-cost-friends",
     title: "كيف تقسمون أقساط مشتريات التقسيط (مثل تابي وتمارا) بين الأصدقاء؟",
     titleEn: "How to Split a Buy-Now-Pay-Later (BNPL) Purchase's Installments With Friends",

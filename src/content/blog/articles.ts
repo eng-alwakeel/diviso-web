@@ -16,6 +16,210 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "ramadan-iftar-hosting-rotation-cost-equalization",
+    title: "كيف تسوّون التكلفة بعدل عند تناوب العائلات على استضافة إفطار رمضان؟",
+    titleEn: "How to Fairly Settle Costs When Families Take Turns Hosting Ramadan Iftar",
+    description: "عندما تتناوب عدة عائلات على استضافة إفطار رمضان طوال الشهر، التناوب بالتساوي لا يكفي لأن كل مستضيف يصرف مبلغاً مختلفاً. الحل: تسوية نهائية تعيد كل عائلة لحصتها العادلة من إجمالي المصروف. دليل عملي مع مثال حساب.",
+    descriptionEn: "When several families take turns hosting Ramadan iftar all month, an equal rotation of turns isn't enough, since each host spends a different amount. The fix: a final settlement that brings every family back to its fair share of the total spend. A practical guide with a worked example.",
+    keywords: ["تقسيم تكلفة استضافة إفطار رمضان", "تناوب العائلات على الإفطار في رمضان", "كيف نسوي مصاريف الإفطار الجماعي", "من يدفع أكثر في تناوب استضافة الإفطار", "تسوية تكلفة الإفطار بين الأقارب", "تنظيم جدول استضافة رمضان بين العائلات"],
+    keywordsEn: ["how to split ramadan iftar hosting costs", "families taking turns hosting iftar", "fairly settling a rotating group meal cost", "who pays more in an iftar hosting rotation", "equalizing cost between rotating hosts", "organizing a ramadan hosting schedule with relatives"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-10-06",
+    content: `
+## الإجابة المختصرة
+
+عندما تتناوب عدة عائلات على استضافة إفطار رمضان لبقية الأقارب طوال الشهر، **التناوب المتساوي في عدد الليالي لا يضمن عدالة التكلفة**، لأن كل مستضيف يصرف مبلغاً مختلفاً حسب نوع الأطباق وعدد الضيوف. الحل الأعدل هو **تسوية نهائية في ختام الشهر**: يُجمع إجمالي ما صرفه كل مستضيف، ثم يُعاد توزيعه بالتساوي بين كل العائلات المشاركة، بغض النظر عن عدد الليالي التي استضافتها كل واحدة أو مقدار ما صرفته.
+
+## ليش لا يكفي التناوب المتساوي في عدد الليالي؟
+
+- **كل مستضيف يصرف بمقدار مختلف**: عائلة تقدّم أطباقاً بسيطة، وأخرى تقدّم مأدبة أكبر وأغلى
+- **عدد الليالي قد لا يتساوى تماماً بين العائلات**: شهر رمضان 29 أو 30 يوماً، قد لا يُقسَّم بالتساوي التام على عدد العائلات
+- **كل العائلات تستفيد من كل ليلة بالتساوي**: جميعهم يحضرون كل الإفطارات، فالاستفادة الفعلية لا ترتبط بمن استضاف أكثر
+
+## القاعدة الأساسية: الحصة العادلة = إجمالي المصروف ÷ عدد العائلات
+
+بما أن كل العائلات تستفيد من كل ليالي الشهر بالتساوي (الجميع يحضر كل إفطار)، فالعدل الحقيقي ليس في توزيع عدد الليالي، بل في ضمان أن **إجمالي ما يدفعه كل عائلة بنهاية الشهر متساوٍ**، بصرف النظر عن عدد مرات استضافتها أو حجم إنفاقها في كل مرة.
+
+## مثال عملي كامل
+
+4 عائلات تتناوب على استضافة الإفطار طوال شهر رمضان (30 ليلة):
+
+- **العائلة أ**: استضافت 8 ليالٍ، وصرفت إجمالاً 2,800 ريال
+- **العائلة ب**: استضافت 7 ليالٍ، وصرفت إجمالاً 2,100 ريال
+- **العائلة ج**: استضافت 8 ليالٍ، وصرفت إجمالاً 3,200 ريال
+- **العائلة د**: استضافت 7 ليالٍ، وصرفت إجمالاً 1,900 ريال
+
+**إجمالي ما صُرف خلال الشهر** = 2,800 + 2,100 + 3,200 + 1,900 = **10,000 ريال**
+
+**الحصة العادلة لكل عائلة** = 10,000 ÷ 4 = **2,500 ريال**
+
+### حساب التسوية النهائية
+**صافي كل عائلة = ما صرفته فعلياً − حصتها العادلة**
+
+- العائلة أ: 2,800 − 2,500 = **+300** (تستحق 300 ريال من المجموعة لأنها صرفت أكثر من حصتها)
+- العائلة ب: 2,100 − 2,500 = **−400** (عليها 400 ريال للمجموعة لأنها صرفت أقل من حصتها)
+- العائلة ج: 3,200 − 2,500 = **+700** (تستحق 700 ريال)
+- العائلة د: 1,900 − 2,500 = **−600** (عليها 600 ريال)
+
+**التحقق**: المستحقات (300 + 700 = 1,000) تساوي المديونيات (400 + 600 = 1,000)، فالتسوية متوازنة تماماً.
+
+### كيف تتم التسوية الفعلية؟
+تدفع العائلتان ب ود مبلغي 400 و600 ريال إلى صندوق مشترك، ثم يُوزَّع هذا المبلغ (1,000 ريال) على العائلتين أ وج بنسبة 300 إلى 700، أو ببساطة: تحوّل ب مباشرة لـ أ، ود مباشرة لـ ج (أو أي ترتيب تحويل مباشر يحقق نفس النتيجة النهائية).
+
+## لماذا هذا أعدل من تجاهل فروق الإنفاق؟
+
+لو تُرك الأمر دون تسوية، فالعائلة ج (التي استضافت وجبات أفخم) تكون قد تحمّلت 3,200 ريال فعلياً بينما استفادت من كل الشهر بنفس قدر العائلة د التي أنفقت فقط 1,900 ريال رغم استضافتها عدداً مقارباً من الليالي. التسوية النهائية تضمن أن **الاستفادة المتساوية تقابلها مساهمة متساوية**.
+
+## ماذا لو تعذّر على عائلة استضافة ليلتها المحددة؟
+
+- **تبديل الدور مع عائلة أخرى**: الأبسط، دون أي تأثير على حساب التسوية النهائية
+- **تمويل ليلة بديلة (مطعم، كيترينغ) دون استضافة شخصية**: يُحسب المصروف كالمعتاد ضمن إجمالي تلك العائلة
+- **المهم أن يُسجَّل كل مصروف فور حدوثه**: بغض النظر عن طريقة الاستضافة
+
+## خطوات عملية لتنظيم تناوب استضافة رمضان
+
+### الخطوة 1: حدّدوا جدول التناوب قبل بداية الشهر
+وزّعوا الليالي على العائلات بأقرب تقسيم ممكن للتساوي، مع قبول فارق يوم أو يومين كأمر طبيعي.
+
+### الخطوة 2: سجّلوا مصروف كل ليلة فور حدوثها
+استخدم تطبيق مثل Diviso لتسجيل مصروف كل عائلة مستضيفة بإيصالها، بدل الاعتماد على التقدير التقريبي في نهاية الشهر.
+
+### الخطوة 3: اجمعوا إجمالي مصروف كل عائلة في نهاية الشهر
+لا تنتظروا حتى آخر يوم لتبدأوا الجمع — تابعوا الإجمالي التراكمي أسبوعياً لتسهيل التسوية النهائية.
+
+### الخطوة 4: احسبوا التسوية النهائية ونفّذوها مباشرة بعد العيد
+لا تؤجلوا التحويلات المالية لفترة طويلة بعد انتهاء الشهر، لتجنّب نسيان التفاصيل.
+
+## أخطاء شائعة عند تنظيم تناوب الإفطار الجماعي
+
+- **الاعتماد على عدد الليالي فقط دون حساب الإنفاق الفعلي**: يتجاهل الفروقات الحقيقية في التكلفة بين المستضيفين
+- **عدم تسجيل المصروف فور كل ليلة**: يصعّب تذكّر الأرقام الدقيقة في نهاية الشهر
+- **ترك الأمر دون تسوية نهائية بافتراض أن "الكل تعادل مع الوقت"**: فروقات الإنفاق الحقيقية قد تكون كبيرة ولا تتعادل تلقائياً
+- **تأخير التسوية لفترة طويلة بعد رمضان**: يصعّب تذكّر تفاصيل المصاريف ويقلل التزام الجميع بالتسوية
+
+## كيف يساعدكم Diviso في تنظيم تناوب استضافة رمضان؟
+
+- ✅ إنشاء مجموعة عائلية مخصصة لتتبع مصروف كل ليلة استضافة
+- ✅ حساب تلقائي للحصة العادلة وصافي كل عائلة في نهاية الشهر
+- ✅ سجل شفاف يوضح من استضاف كم ليلة وصرف كم
+- ✅ تسوية نهائية واضحة تحدد من يستحق ومن عليه دفع
+
+## أسئلة شائعة
+
+### هل يكفي أن تستضيف كل عائلة نفس عدد الليالي لضمان العدل؟
+لا، لأن كل مستضيف يصرف مبلغاً مختلفاً حسب نوع الأطباق. العدل الحقيقي يتحقق بتسوية نهائية تعيد كل عائلة إلى حصتها المتساوية من إجمالي المصروف الفعلي، بغض النظر عن عدد الليالي.
+
+### كيف نحسب الحصة العادلة لكل عائلة؟
+نجمع إجمالي ما صرفته كل العائلات المستضيفة خلال الشهر، ثم نقسمه على عدد العائلات المشاركة، فتكون هذه الحصة هي ما يجب أن تساهم به كل عائلة بالضبط بنهاية الشهر.
+
+### ماذا لو صرفت عائلة أكثر بكثير من البقية في ليلتها؟
+يُحسب الفرق بين ما صرفته فعلياً وحصتها العادلة، فتستحق استرداد الفرق من العائلات التي صرفت أقل من حصتها، بدل أن تتحمل هي وحدها عبء اختيارها استضافة مأدبة أكبر.
+
+## الخلاصة
+
+تناوب استضافة إفطار رمضان بين العائلات لا يحتاج أن ينتهي بشعور أحدهم بالغبن. سجّلوا كل مصروف بوضوح، واحسبوا تسوية نهائية تعيد كل عائلة لحصتها العادلة من إجمالي الشهر.
+
+**جرب Diviso الآن ونظّم تسوية مصاريف إفطار رمضان بعدل بين كل العائلات المتناوبة.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When several families take turns hosting Ramadan iftar for the rest of the relatives all month, **rotating an equal number of nights doesn't guarantee a fair cost**, since each host spends a different amount depending on the dishes and the number of guests. The fairer solution is a **final settlement at the end of the month**: total up what each host actually spent, then redistribute it equally among all participating families, regardless of how many nights each one hosted or how much each one spent.
+
+## Why Isn't an Equal Number of Hosting Nights Enough?
+
+- **Each host spends a different amount**: one family serves simple dishes, another serves a bigger, pricier spread
+- **The number of nights may not split perfectly evenly between families**: Ramadan is 29 or 30 days, which may not divide exactly evenly across the number of families
+- **Every family benefits equally from every night**: everyone attends every iftar, so the actual benefit has nothing to do with who hosted more
+
+## The Core Rule: Fair Share = Total Spend ÷ Number of Families
+
+Since every family benefits equally from every night of the month (everyone attends every iftar), real fairness isn't about distributing the number of nights — it's about making sure **what each family ends up paying by the end of the month is equal**, regardless of how many times they hosted or how much they spent each time.
+
+## A Complete Worked Example
+
+4 families take turns hosting iftar throughout Ramadan (30 nights):
+
+- **Family A**: hosted 8 nights, spent a total of 2,800 SAR
+- **Family B**: hosted 7 nights, spent a total of 2,100 SAR
+- **Family C**: hosted 8 nights, spent a total of 3,200 SAR
+- **Family D**: hosted 7 nights, spent a total of 1,900 SAR
+
+**Total spent during the month** = 2,800 + 2,100 + 3,200 + 1,900 = **10,000 SAR**
+
+**Each family's fair share** = 10,000 ÷ 4 = **2,500 SAR**
+
+### Calculating the Final Settlement
+**Each family's net = what they actually spent − their fair share**
+
+- Family A: 2,800 − 2,500 = **+300** (owed 300 SAR by the group, since they spent more than their share)
+- Family B: 2,100 − 2,500 = **−400** (owes the group 400 SAR, since they spent less than their share)
+- Family C: 3,200 − 2,500 = **+700** (owed 700 SAR)
+- Family D: 1,900 − 2,500 = **−600** (owes 600 SAR)
+
+**Check**: amounts owed (300 + 700 = 1,000) equal amounts owing (400 + 600 = 1,000), so the settlement balances perfectly.
+
+### How Is the Settlement Actually Carried Out?
+Families B and D pay 400 and 600 SAR into a shared pool, and that amount (1,000 SAR) is then distributed to families A and C in a 300-to-700 ratio, or more simply: B transfers directly to A, and D transfers directly to C (or any direct-transfer arrangement that achieves the same final result).
+
+## Why Is This Fairer Than Ignoring Spending Differences?
+
+If this were left unsettled, Family C (who hosted a fancier meal) would have actually carried 3,200 SAR while benefiting from the whole month exactly as much as Family D, who spent only 1,900 SAR despite hosting a similar number of nights. The final settlement makes sure **equal benefit is matched by equal contribution**.
+
+## What If a Family Can't Host Their Assigned Night?
+
+- **Swap turns with another family**: the simplest option, with no effect on the final settlement calculation
+- **Fund a substitute night (a restaurant, catering) without hosting in person**: the expense is counted as usual within that family's total
+- **The important part is logging every expense as it happens**: regardless of the hosting method used
+
+## A Practical System for Organizing a Ramadan Hosting Rotation
+
+### Step 1: Set the Rotation Schedule Before the Month Starts
+Distribute the nights among families as evenly as possible, accepting a day or two's difference as normal.
+
+### Step 2: Log Each Night's Expense as It Happens
+Use an app like Diviso to log each hosting family's expense with its receipt, instead of relying on a rough estimate at the end of the month.
+
+### Step 3: Total Up Each Family's Spending at Month's End
+Don't wait until the last day to start adding things up — track the running total weekly to make the final settlement easier.
+
+### Step 4: Calculate and Carry Out the Final Settlement Right After Eid
+Don't delay the money transfers for too long after the month ends, to avoid forgetting the details.
+
+## Common Mistakes When Organizing a Group Iftar Rotation
+
+- **Relying only on the number of nights without calculating actual spending**: ignores real cost differences between hosts
+- **Not logging the expense right after each night**: makes it hard to remember exact figures at the end of the month
+- **Leaving it unsettled on the assumption that "it evens out over time"**: real spending differences can be large and don't automatically balance out
+- **Delaying the settlement for a long time after Ramadan**: makes it harder to remember the expense details and lowers everyone's commitment to settling up
+
+## How Diviso Helps Organize a Ramadan Hosting Rotation
+
+- ✅ Creates a dedicated family group to track each hosting night's expense
+- ✅ Automatically calculates the fair share and each family's net at month's end
+- ✅ A transparent record showing who hosted how many nights and spent how much
+- ✅ A clear final settlement showing who's owed and who owes
+
+## Frequently Asked Questions
+
+### Is it enough for every family to host the same number of nights to ensure fairness?
+No, because each host spends a different amount depending on the dishes served. Real fairness comes from a final settlement that brings every family back to an equal share of the total actual spending, regardless of the number of nights.
+
+### How do we calculate each family's fair share?
+Add up the total spent by all hosting families during the month, then divide it by the number of participating families — that figure is exactly what each family should end up contributing by the end of the month.
+
+### What if one family spent much more than the others during their night?
+The difference between what they actually spent and their fair share is calculated, and they're entitled to recover that difference from families who spent less than their share, instead of bearing alone the cost of their choice to host a bigger spread.
+
+## Conclusion
+
+A Ramadan iftar hosting rotation between families doesn't have to end with someone feeling shortchanged. Log every expense clearly, and calculate a final settlement that brings every family back to its fair share of the month's total.
+
+**Try Diviso now and settle your Ramadan iftar rotation's costs fairly among all the participating families.**
+    `
+  },
+  {
     slug: "split-bulk-buying-coop-tiered-pricing-neighbors",
     title: "كيف يقسم أعضاء جمعية الشراء الجماعي (التموين بالجملة) التكلفة عند اختلاف شريحة السعر؟",
     titleEn: "How a Bulk-Buying Co-op Should Split Costs When Tiered Pricing Applies to Everyone",

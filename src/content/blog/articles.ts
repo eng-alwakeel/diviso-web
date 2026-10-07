@@ -16,6 +16,206 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-annual-diwaniya-majlis-rental-new-member",
+    title: "كيف تقسمون تكلفة إيجار الديوانية أو المجلس السنوي عند انضمام عضو جديد في منتصف السنة؟",
+    titleEn: "How to Split an Annual Diwaniya or Majlis Rental When a New Member Joins Mid-Year",
+    description: "عند استئجار ديوانية أو مجلس سنوي بين مجموعة أصدقاء، انضمام عضو جديد في منتصف السنة يطرح سؤالاً: كم يدفع؟ الحل: إعادة حساب الحصة الشهرية لكل الأعضاء بدءاً من شهر انضمامه، دون دفعات تراجعية. دليل عملي بمثال حسابي كامل.",
+    descriptionEn: "When a group of friends rents an annual diwaniya or majlis, a new member joining mid-year raises one question: how much should they pay? The fix: recalculate everyone's monthly share forward from the month they join, with no retroactive back-payments. A practical guide with a full worked example.",
+    keywords: ["تقسيم تكلفة الديوانية السنوية", "اشتراك عضو جديد في المجلس", "كم يدفع العضو الجديد في الديوانية", "تقسيم إيجار المجلس بين الأصدقاء", "حصة الأعضاء في الديوانية الشهرية", "انضمام عضو جديد لمجلس مستأجر"],
+    keywordsEn: ["how to split diwaniya rental costs", "new member joining majlis mid-year", "how much should a new diwaniya member pay", "splitting majlis rent between friends", "monthly diwaniya membership share", "adding a new member to a rented majlis"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-10-07",
+    content: `
+## الإجابة المختصرة
+
+عند استئجار ديوانية أو مجلس سنوي بين مجموعة أصدقاء، لا يُفترض أن يدفع العضو الجديد الذي ينضم في منتصف السنة نفس حصة الأعضاء المؤسسين منذ البداية، ولا أن يُطالَب بدفعات تراجعية عن الشهور التي سبقت انضمامه. القاعدة الأعدل: **إعادة حساب الحصة الشهرية لكل الأعضاء (القدامى والجديد) بدءاً من شهر انضمامه فقط**، بقسمة الإيجار الشهري على العدد الجديد للأعضاء، فيدفع الجديد حصته عن الشهور المتبقية من السنة، ويستفيد الأعضاء القدامى من تخفيض حصتهم الشهرية من نفس الشهر.
+
+## لماذا لا يصح تحميل العضو الجديد كامل حصة الشهور الفائتة؟
+
+- لم يستفد من الديوانية خلال الشهور التي سبقت انضمامه، فلا معنى لمطالبته بدفع عنها
+- تحميله دفعة تراجعية كبيرة قد يُنفّره من الانضمام من الأساس
+- العدل الحقيقي هو أن يدفع كل عضو عن فترة استفادته الفعلية فقط، لا أكثر ولا أقل
+
+## لماذا لا يصح أيضاً استمرار القدامى بدفع نفس حصتهم القديمة؟
+
+- دخول عضو جديد يعني تقاسم الإيجار الثابت على عدد أكبر، فحصة كل عضو يجب أن تنخفض
+- لو استمر القدامى بدفع الحصة القديمة، يكون الفرق "مكسباً" غير مبرر يذهب لصندوق الديوانية دون تفسير واضح
+- الشفافية تتطلب أن يرى كل عضو أثر انضمام عضو جديد على حصته الشهرية فوراً
+
+## القاعدة الأساسية
+
+**الحصة الشهرية الجديدة لكل عضو = الإيجار الشهري ÷ العدد الجديد للأعضاء**، تُطبَّق بدءاً من أول شهر يشارك فيه العضو الجديد، ولا تُطبَّق على أي شهر سابق.
+
+## مثال عملي كامل
+
+6 أصدقاء يستأجرون ديوانية بإيجار سنوي 24,000 ريال، أي 2,000 ريال شهرياً.
+
+**الحصة الشهرية الأصلية لكل عضو** = 2,000 ÷ 6 = **333.33 ريال**
+
+في بداية الشهر السابع من السنة (بقي 6 أشهر على نهاية عقد الإيجار)، ينضم عضو سابع جديد.
+
+**الحصة الشهرية الجديدة لكل عضو (من الشهر 7 فصاعداً)** = 2,000 ÷ 7 = **285.71 ريال**
+
+- **العضو الجديد**: يدفع 285.71 ريال شهرياً عن الأشهر 7 إلى 12 فقط = 285.71 × 6 = **1,714.29 ريال** إجمالي استحقاقه عن باقي السنة
+- **كل عضو من الستة القدامى**: ينخفض دفعه الشهري من 333.33 إلى 285.71 ريال بدءاً من الشهر 7، أي يوفّر 47.62 ريال شهرياً
+
+**لا توجد أي مطالبة للعضو الجديد عن الأشهر 1 إلى 6**، لأنه لم يكن عضواً فيها ولم يستفد منها.
+
+### ماذا عن المصاريف المشتركة الأخرى (مثل الصيانة أو الأثاث)؟
+
+المصاريف غير الإيجار (مثل إصلاح مكيف أو شراء أثاث جديد) تُقسَّم بالتساوي على **عدد الأعضاء وقت حدوث المصروف فقط**، لا على عدد أشهر عضوية كل واحد.
+
+**مثال**: في الشهر التاسع (بعد انضمام العضو السابع)، يحتاج المكيف صيانة بتكلفة 1,800 ريال.
+الحصة = 1,800 ÷ 7 (عدد الأعضاء الحاليين وقت الصرف) = **257.14 ريال** لكل عضو، بما فيهم العضو الذي انضم قبل شهرين فقط.
+
+## ماذا لو انسحب عضو من الديوانية قبل انتهاء السنة؟
+
+- يُعاد حساب الحصة الشهرية بقسمة الإيجار على العدد الجديد (الأقل) للأعضاء، بدءاً من شهر انسحابه
+- العضو المنسحب لا يُطالَب بدفع أي شيء عن الشهور التي تلت انسحابه
+- لا يحق للعضو المنسحب استرداد أي جزء من دفعاته السابقة، لأنه استفاد فعلياً من تلك الشهور
+
+## خطوات عملية لإدارة اشتراكات الديوانية
+
+### الخطوة 1: وثّقوا الإيجار الشهري وعدد الأعضاء الحالي بوضوح منذ البداية
+لتسهيل إعادة الحساب في أي وقت.
+
+### الخطوة 2: عند انضمام أو انسحاب عضو، أعلنوا الحصة الجديدة فوراً لكل الأعضاء
+وليس فقط للعضو الجديد، لأن التغيير يؤثر على الجميع.
+
+### الخطوة 3: سجّلوا تاريخ الانضمام أو الانسحاب بدقة
+لأن الشهر الذي يحدث فيه التغيير هو نقطة التحوّل في الحساب.
+
+### الخطوة 4: فصل سجل الإيجار الشهري عن سجل المصاريف المشتركة الأخرى
+كل منهما له طريقة تقسيم مختلفة كما وضحنا أعلاه.
+
+## أخطاء شائعة عند تقسيم تكلفة الديوانية
+
+- **مطالبة العضو الجديد بدفعات تراجعية عن شهور لم يكن عضواً فيها**
+- **استمرار القدامى بدفع حصتهم القديمة دون تعديل بعد انضمام عضو جديد**
+- **تقسيم مصاريف الصيانة على عدد أشهر العضوية بدل عدد الأعضاء الحاليين وقت الصرف**
+- **عدم توثيق تاريخ دقيق لانضمام أو انسحاب الأعضاء، مما يصعّب الحساب لاحقاً**
+
+## كيف يساعدكم Diviso في إدارة اشتراكات الديوانية؟
+
+- ✅ إنشاء مجموعة ثابتة لتتبع الإيجار الشهري وتعديل الحصة تلقائياً عند تغيّر عدد الأعضاء
+- ✅ تسجيل تاريخ انضمام أو انسحاب كل عضو لحساب دقيق للحصص
+- ✅ فصل واضح بين مصاريف الإيجار الثابتة والمصاريف المشتركة الأخرى
+- ✅ سجل شفاف يرى فيه كل عضو حصته الشهرية الحالية وسبب أي تغيير فيها
+
+## أسئلة شائعة
+
+### كم يدفع العضو الجديد الذي ينضم للديوانية في منتصف السنة؟
+يدفع فقط حصته الشهرية الجديدة (الإيجار الشهري مقسوماً على العدد الجديد للأعضاء) عن الأشهر المتبقية من السنة، دون أي مطالبة بدفعات عن الشهور التي سبقت انضمامه.
+
+### هل يستمر الأعضاء القدامى بدفع نفس حصتهم بعد انضمام عضو جديد؟
+لا، يجب إعادة حساب الحصة الشهرية لجميع الأعضاء بقسمة الإيجار على العدد الجديد الأكبر للأعضاء، فتنخفض حصة كل عضو قديم تلقائياً.
+
+### كيف تُقسَّم مصاريف الصيانة أو الأثاث المشتركة؟
+تُقسَّم بالتساوي على عدد الأعضاء الحاليين في وقت حدوث المصروف فقط، بصرف النظر عن مدة عضوية كل واحد فيهم.
+
+## الخلاصة
+
+انضمام عضو جديد لديوانية أو مجلس مستأجر سنوياً لا يحتاج لتعقيد: أعيدوا حساب الحصة الشهرية للجميع بدءاً من شهر الانضمام فقط، ولا تُحمّلوا العضو الجديد أي شهور لم يستفد منها.
+
+**جرب Diviso الآن وقسّم اشتراكات الديوانية بعدل بين كل الأعضاء القدامى والجدد.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When a group of friends rents an annual diwaniya (a majlis — a regularly used gathering space, common across the Gulf, rented long-term by a fixed group of members) and a new member joins mid-year, they shouldn't pay the same share as a founding member who's been there since day one, nor be billed retroactively for months before they joined. The fairer rule: **recalculate every member's monthly share (old and new) starting only from the month the new member joins**, by dividing the monthly rent by the new, larger member count. The new member pays their share for the remaining months of the year, and existing members immediately benefit from a lower monthly share from that same month.
+
+## Why Shouldn't the New Member Be Billed for Past Months?
+
+- They didn't use the diwaniya during the months before they joined, so there's no basis for charging them
+- A large retroactive bill could discourage them from joining at all
+- True fairness means each member pays only for the period they actually benefited from, no more and no less
+
+## Why Shouldn't Existing Members Keep Paying Their Old Share?
+
+- Adding a new member means splitting the same fixed rent across more people, so each member's share should drop
+- If existing members kept paying the old amount, the difference becomes an unexplained "surplus" sitting in the diwaniya fund with no clear purpose
+- Transparency requires that every member see the effect of a new member joining on their own monthly share immediately
+
+## The Core Rule
+
+**New monthly share per member = Monthly rent ÷ new number of members**, applied starting from the first month the new member participates, and never applied retroactively to any earlier month.
+
+## A Complete Worked Example
+
+6 friends rent a diwaniya for an annual rent of 24,000 SAR, or 2,000 SAR per month.
+
+**Original monthly share per member** = 2,000 ÷ 6 = **333.33 SAR**
+
+At the start of month 7 of the year (6 months left on the lease), a 7th member joins.
+
+**New monthly share per member (from month 7 onward)** = 2,000 ÷ 7 = **285.71 SAR**
+
+- **The new member**: pays 285.71 SAR per month for months 7 through 12 only = 285.71 × 6 = **1,714.29 SAR** total for the rest of the year
+- **Each of the 6 original members**: their monthly payment drops from 333.33 to 285.71 SAR starting month 7, saving 47.62 SAR per month
+
+**There is no charge to the new member for months 1 through 6**, since they weren't a member then and got no benefit from them.
+
+### What About Other Shared Expenses (Like Maintenance or Furniture)?
+
+Non-rent expenses (like an AC repair or buying new furniture) are split equally among the **number of members at the moment the expense happens**, not based on how many months each one has been a member.
+
+**Example**: In month 9 (after the 7th member joined), the AC needs a repair costing 1,800 SAR.
+Share = 1,800 ÷ 7 (the current number of members at the time of the expense) = **257.14 SAR** per member, including the member who joined only two months earlier.
+
+## What If a Member Leaves Before the Year Ends?
+
+- The monthly share is recalculated by dividing the rent by the new, smaller number of members, starting from the month they leave
+- The departing member isn't charged anything for months after they leave
+- A departing member isn't entitled to a refund of any past payments, since they actually benefited from those months
+
+## A Practical System for Managing Diwaniya Memberships
+
+### Step 1: Document the Monthly Rent and Current Member Count Clearly From the Start
+This makes recalculating at any point much easier.
+
+### Step 2: Announce the New Share Immediately to Everyone When a Member Joins or Leaves
+Not just to the new member — the change affects everyone's payment.
+
+### Step 3: Record the Exact Join or Leave Date
+The month in which the change happens is the turning point for the calculation.
+
+### Step 4: Keep the Monthly Rent Ledger Separate From Other Shared Expenses
+Each one is split using a different method, as explained above.
+
+## Common Mistakes When Splitting Diwaniya Costs
+
+- **Billing a new member retroactively for months they weren't a member**
+- **Letting existing members keep paying their old share without adjusting it after a new member joins**
+- **Splitting maintenance expenses based on each member's tenure instead of the current member count at the time of the expense**
+- **Not recording an exact join or leave date, which makes the calculation harder later**
+
+## How Diviso Helps Manage Diwaniya Memberships
+
+- ✅ Creates a standing group that tracks the monthly rent and automatically adjusts each share when the member count changes
+- ✅ Logs each member's join or leave date for an accurate share calculation
+- ✅ Clearly separates fixed rent expenses from other shared costs
+- ✅ A transparent record where every member can see their current monthly share and why it changed
+
+## Frequently Asked Questions
+
+### How much should a new member pay when joining a diwaniya mid-year?
+They pay only their new monthly share (the monthly rent divided by the new number of members) for the months remaining in the year, with no charge for any months before they joined.
+
+### Do existing members keep paying the same share after a new member joins?
+No. Every member's monthly share must be recalculated by dividing the rent by the new, larger member count, which automatically lowers each existing member's share.
+
+### How are shared maintenance or furniture expenses split?
+They're split equally among the number of members at the moment the expense happens, regardless of how long each member has belonged to the group.
+
+## Conclusion
+
+A new member joining an annually-rented diwaniya or majlis doesn't have to be complicated: recalculate everyone's monthly share starting only from the month they join, and never bill a new member for months they didn't benefit from.
+
+**Try Diviso now and split diwaniya membership costs fairly between all your founding and new members.**
+    `
+  },
+  {
     slug: "ramadan-iftar-hosting-rotation-cost-equalization",
     title: "كيف تسوّون التكلفة بعدل عند تناوب العائلات على استضافة إفطار رمضان؟",
     titleEn: "How to Fairly Settle Costs When Families Take Turns Hosting Ramadan Iftar",

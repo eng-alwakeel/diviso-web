@@ -16,6 +16,202 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-family-mobile-plan-bill-data-overage",
+    title: "من يدفع تجاوز استهلاك البيانات في خط الجوال العائلي المشترك؟",
+    titleEn: "How to Split a Family Mobile Plan Bill When One Line Uses More Data",
+    description: "عند مشاركة خطة جوال عائلية بعدة خطوط، تقسيم الفاتورة بالتساوي على كل الخطوط غير عادل إذا تجاوز أحد الخطوط باقة البيانات. الحل: تقسيم تكلفة الباقة الأساسية بالتساوي، وتحميل تكلفة التجاوز فقط على الخط المسبب لها. دليل عملي بمثال حسابي.",
+    descriptionEn: "When a family shares one mobile plan with several lines, splitting the bill equally isn't fair if one line blows through its data allowance. The fix: split the base plan cost equally, but bill any overage charges only to the line that caused them. A practical guide with a worked example.",
+    keywords: ["تقسيم فاتورة خط الجوال العائلي", "من يدفع تجاوز البيانات في الخط المشترك", "تقسيم تكلفة باقة الجوال بين العائلة", "خطة جوال عائلية متعددة الخطوط", "فاتورة الجوال المشترك بين الإخوة", "تجاوز استهلاك البيانات في الباقة العائلية"],
+    keywordsEn: ["how to split a family mobile plan bill", "who pays for data overage on a shared plan", "splitting a multi-line phone plan cost", "family mobile plan multiple lines", "shared phone bill between siblings", "data overage charges on a family plan"],
+    category: "tips",
+    readTime: 7,
+    publishDate: "2026-10-08",
+    content: `
+## الإجابة المختصرة
+
+عند مشاركة خطة جوال عائلية واحدة بعدة خطوط، **تقسيم الفاتورة بالتساوي على كل الخطوط غير عادل إذا تجاوز خط واحد باقة البيانات المسموحة أو استخدم تجواراً مدفوعاً**، لأن بقية الخطوط لا ينبغي أن تتحمل تكلفة استهلاك لم تتسبب فيه. القاعدة الأعدل: **تُقسَّم تكلفة الباقة الأساسية الثابتة بالتساوي بين كل الخطوط، بينما تُحمَّل أي تكلفة تجاوز (بيانات إضافية، تجوال) على الخط المسبب لها فقط**.
+
+## لماذا لا يصح تقسيم كامل الفاتورة بالتساوي دائماً؟
+
+- **الباقة الأساسية خدمة ثابتة يستفيد منها كل خط بالتساوي**: مكالمات ورسائل وحد بيانات أساسي محدد لكل خط
+- **تجاوز الباقة سببه استخدام فردي، لا جماعي**: خط واحد يشاهد فيديوهات كثيرة أو يستخدم تجواراً بالخارج، فتكلفة ذلك لا علاقة لها ببقية الخطوط
+- **تحميل بقية العائلة تكلفة تجاوز لم تتسبب فيه يخلق شعوراً بالظلم** ويثير نقاشات متكررة كل شهر
+
+## القاعدة الأساسية
+
+**تكلفة الباقة الأساسية ÷ عدد الخطوط = حصة كل خط من الجزء الثابت**
+**أي تكلفة تجاوز (بيانات، تجوال، مكالمات دولية) تُضاف بالكامل على فاتورة الخط الذي تسبب بها فقط**
+
+## مثال عملي كامل
+
+عائلة من 5 أفراد تشترك في خطة جوال عائلية واحدة بتكلفة أساسية شهرية 500 ريال (100 ريال لكل خط إذا لم يحدث أي تجاوز).
+
+في شهر معيّن:
+- **الخط الثالث** تجاوز باقة البيانات المسموحة، فاشترى باقة بيانات إضافية بتكلفة **60 ريال**
+- **الخط الخامس** كان في سفر واستخدم تجوالاً دولياً بتكلفة **25 ريال**
+- باقي الخطوط (1، 2، 4) لم تتجاوز الباقة الأساسية
+
+**إجمالي الفاتورة** = 500 (الباقة الأساسية) + 60 (بيانات إضافية) + 25 (تجوال) = **585 ريال**
+
+### حساب حصة كل خط
+- **الحصة الأساسية لكل خط** = 500 ÷ 5 = **100 ريال**
+- **الخط 1**: 100 ريال (بدون تجاوز)
+- **الخط 2**: 100 ريال (بدون تجاوز)
+- **الخط 3**: 100 + 60 = **160 ريال** (الحصة الأساسية + تكلفة تجاوزه الخاص)
+- **الخط 4**: 100 ريال (بدون تجاوز)
+- **الخط 5**: 100 + 25 = **125 ريال** (الحصة الأساسية + تجوال خاص به)
+
+**التحقق**: 100 + 100 + 160 + 100 + 125 = **585 ريال**، يطابق إجمالي الفاتورة تماماً.
+
+## ماذا لو تجاوز أكثر من خط في نفس الشهر؟
+
+نفس المبدأ يتكرر لكل خط على حدة: تُحسب الحصة الأساسية المتساوية أولاً، ثم تُضاف تكلفة أي تجاوز فردي على الخط الذي تسبب به تحديداً، دون أن يؤثر ذلك على حصة الخطوط الأخرى.
+
+## ماذا لو كانت الخطوط بأحجام باقات مختلفة أصلاً؟
+
+بعض الخطط العائلية تسمح لكل خط باختيار حجم بيانات مختلف (مثلاً خط الوالد بباقة أكبر من باقة الابن). في هذه الحالة:
+- **حصة كل خط من التكلفة الأساسية تُحسب بنسبة سعر باقته الفردية**، لا بالتساوي التام
+- **التجاوز لا يزال يُحمَّل بالكامل على الخط المسبب فقط**، بنفس المبدأ
+
+## خطوات عملية لتنظيم فاتورة الجوال العائلي
+
+### الخطوة 1: راجعوا تفاصيل الفاتورة شهرياً قبل التقسيم
+معظم شركات الاتصالات توفر تفصيلاً لكل خط يوضح أي تجاوز أو خدمة إضافية بالضبط.
+
+### الخطوة 2: افصلوا الباقة الأساسية عن أي رسوم تجاوز في سجلكم
+لا تدمجوا الرقمين في مبلغ واحد يُقسَّم بالتساوي، بل سجّلوا كل بند على حدة.
+
+### الخطوة 3: أعلنوا من تسبب بأي تجاوز بشفافية فور وصول الفاتورة
+بدل ترك الأمر دون توضيح حتى يتكرر الخلاف كل شهر.
+
+### الخطوة 4: اتفقوا على حد أعلى للتجاوز المقبول دون نقاش
+مثلاً: تجاوز أقل من 20 ريال يُعتبر ضمن الحصة الأساسية دون حساب منفصل، لتوفير وقت الجميع.
+
+## أخطاء شائعة عند تقسيم فاتورة الجوال العائلي
+
+- **تقسيم إجمالي الفاتورة بالتساوي دون فصل التجاوز عن الباقة الأساسية**
+- **عدم مراجعة تفاصيل الفاتورة شهرياً**، فيصعب معرفة من تسبب بأي تجاوز بعد مرور وقت
+- **تأجيل مناقشة التجاوز حتى يتراكم على عدة أشهر**، مما يجعل التسوية أكثر تعقيداً
+- **معاملة التجاوز كخطأ شخصي يستدعي اللوم بدل تسوية رقمية بسيطة**
+
+## كيف يساعدكم Diviso في تنظيم فاتورة الجوال العائلي؟
+
+- ✅ تسجيل الباقة الأساسية كمصروف ثابت يُقسَّم تلقائياً بالتساوي أو بالنسب المتفق عليها
+- ✅ تسجيل كل تكلفة تجاوز كمصروف مستقل مرتبط بالخط المسبب فقط
+- ✅ سجل شهري واضح يوضح حصة كل خط وسبب أي اختلاف فيها
+- ✅ تسوية سريعة دون الحاجة لنقاش يتكرر كل شهر
+
+## أسئلة شائعة
+
+### هل يجب تقسيم فاتورة الجوال العائلية بالتساوي دائماً؟
+لا، الباقة الأساسية الثابتة تُقسَّم بالتساوي لأن كل خط يستفيد منها بنفس القدر، لكن أي تكلفة تجاوز (بيانات إضافية أو تجوال) يجب أن تُحمَّل فقط على الخط الذي تسبب بها.
+
+### ماذا لو لم يتجاوز أي خط الباقة في شهر معين؟
+في هذه الحالة تكون الفاتورة مطابقة للباقة الأساسية فقط، فيُقسَّم المبلغ بالتساوي (أو بنسبة أسعار الباقات الفردية إن كانت مختلفة) بين كل الخطوط دون أي تعديل إضافي.
+
+### كيف نعرف أي خط تسبب بالتجاوز بالضبط؟
+تفاصيل فاتورة شركة الاتصالات تعرض استهلاك كل خط بشكل منفصل، وفيها يظهر أي خط تجاوز باقته الأساسية ومقدار التكلفة الإضافية المرتبطة به.
+
+## الخلاصة
+
+تقسيم فاتورة الجوال العائلي لا يحتاج لنقاش شهري متكرر: قسّموا الباقة الأساسية بالتساوي، وحمّلوا أي تجاوز على الخط المسبب فقط، وستنتهي المشكلة من جذورها.
+
+**جرب Diviso الآن وسجّل فاتورة الجوال العائلي بعدل بين كل الخطوط.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When a family shares one mobile plan across several lines, **splitting the whole bill equally is unfair if one line goes over its data allowance or racks up paid overage charges**, since the other lines shouldn't have to cover usage they didn't cause. The fairer rule: **split the fixed base plan cost equally across all lines, while charging any overage cost (extra data, roaming) entirely to the line that caused it**.
+
+## Why Isn't Splitting the Whole Bill Equally Always Fair?
+
+- **The base plan is a fixed service every line benefits from equally**: calls, texts, and a set base data allowance per line
+- **Going over the allowance is caused by individual usage, not shared usage**: one line streaming a lot of video or roaming abroad has nothing to do with the other lines
+- **Making the rest of the family cover overage they didn't cause breeds resentment** and triggers the same argument every month
+
+## The Core Rule
+
+**Base plan cost ÷ number of lines = each line's share of the fixed portion**
+**Any overage cost (data, roaming, international calls) is added in full to the bill of the one line that caused it**
+
+## A Complete Worked Example
+
+A family of 5 shares one mobile plan with a fixed base cost of 500 SAR per month (100 SAR per line if no one goes over).
+
+In a given month:
+- **Line 3** exceeded its data allowance and bought an extra data add-on costing **60 SAR**
+- **Line 5** was traveling and used international roaming costing **25 SAR**
+- The remaining lines (1, 2, 4) stayed within the base allowance
+
+**Total bill** = 500 (base plan) + 60 (extra data) + 25 (roaming) = **585 SAR**
+
+### Calculating Each Line's Share
+- **Base share per line** = 500 ÷ 5 = **100 SAR**
+- **Line 1**: 100 SAR (no overage)
+- **Line 2**: 100 SAR (no overage)
+- **Line 3**: 100 + 60 = **160 SAR** (base share + its own overage cost)
+- **Line 4**: 100 SAR (no overage)
+- **Line 5**: 100 + 25 = **125 SAR** (base share + its own roaming cost)
+
+**Check**: 100 + 100 + 160 + 100 + 125 = **585 SAR**, which matches the total bill exactly.
+
+## What If More Than One Line Goes Over in the Same Month?
+
+The same principle repeats for each line separately: calculate the equal base share first, then add any individual overage cost only to the line that caused it, with no effect on the other lines' shares.
+
+## What If the Lines Already Have Different Plan Sizes?
+
+Some family plans let each line pick a different data size (for example, a parent's line on a bigger plan than a child's line). In that case:
+- **Each line's share of the base cost is calculated proportional to its individual plan's price**, not split dead-even
+- **Overage is still charged entirely to the line that caused it**, following the same principle
+
+## A Practical System for Organizing the Family Mobile Bill
+
+### Step 1: Review the Bill's Breakdown Monthly Before Splitting
+Most carriers provide a per-line breakdown showing exactly which line had any overage or extra service.
+
+### Step 2: Keep the Base Plan Separate From Any Overage Charges in Your Record
+Don't lump both numbers into one amount split equally — log each item separately.
+
+### Step 3: Disclose Who Caused Any Overage Transparently as Soon as the Bill Arrives
+Instead of leaving it unexplained until the same dispute repeats every month.
+
+### Step 4: Agree on a Small Overage Threshold That Doesn't Need Discussion
+For example: overage under 20 SAR is treated as part of the base share with no separate calculation, to save everyone's time.
+
+## Common Mistakes When Splitting a Family Mobile Bill
+
+- **Splitting the total bill equally without separating overage from the base plan**
+- **Not reviewing the bill's breakdown monthly**, making it hard to tell who caused an overage after time has passed
+- **Delaying the overage discussion until it piles up across several months**, making the settlement more complicated
+- **Treating overage as a personal fault requiring blame instead of a simple numeric settlement**
+
+## How Diviso Helps Organize the Family Mobile Bill
+
+- ✅ Logs the base plan as a fixed expense split automatically either equally or by agreed proportions
+- ✅ Logs each overage cost as a separate expense tied only to the line that caused it
+- ✅ A clear monthly record showing each line's share and the reason for any difference
+- ✅ A quick settlement without needing the same argument every month
+
+## Frequently Asked Questions
+
+### Should a family mobile plan bill always be split equally?
+No. The fixed base plan is split equally since every line benefits from it the same way, but any overage cost (extra data or roaming) should be charged only to the line that caused it.
+
+### What if no line goes over the allowance in a given month?
+Then the bill matches the base plan exactly, and the amount is split equally (or proportionally to each line's individual plan price, if they differ) among all lines with no further adjustment.
+
+### How do we know exactly which line caused the overage?
+The carrier's bill breakdown shows each line's usage separately, revealing which line exceeded its base allowance and exactly how much extra cost is tied to it.
+
+## Conclusion
+
+Splitting a family mobile bill doesn't need a repeat argument every month: split the base plan equally, charge any overage only to the line that caused it, and the problem disappears at the root.
+
+**Try Diviso now and log your family's mobile plan bill fairly across every line.**
+    `
+  },
+  {
     slug: "split-annual-diwaniya-majlis-rental-new-member",
     title: "كيف تقسمون تكلفة إيجار الديوانية أو المجلس السنوي عند انضمام عضو جديد في منتصف السنة؟",
     titleEn: "How to Split an Annual Diwaniya or Majlis Rental When a New Member Joins Mid-Year",

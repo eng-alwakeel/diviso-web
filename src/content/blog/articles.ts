@@ -16,6 +16,230 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-apartment-building-maintenance-fees-by-unit-size",
+    title: "كيف تُقسَّم رسوم صيانة العمارة بين الشقق؟ حسب المساحة وليس بالتساوي الكامل",
+    titleEn: "How to Split Apartment Building Maintenance Fees Fairly by Unit Size",
+    description: "في عمارة متعددة الشقق، تقسيم رسوم الصيانة بالتساوي الكامل بين كل شقة غير عادل لأن الشقق تختلف في المساحة. الحل: تقسيم التكاليف الثابتة بالتساوي، والتكاليف المرتبطة بالاستخدام (المصعد، المياه، الصيانة) بنسبة مساحة كل شقة. دليل عملي بمثال حسابي.",
+    descriptionEn: "In a multi-unit apartment building, splitting maintenance fees fully equally between every unit isn't fair since units differ in size. The fix: split fixed shared costs equally, and usage-linked costs (elevator, water pump, structural maintenance) proportional to each unit's floor area. A practical guide with a worked example.",
+    keywords: ["تقسيم رسوم صيانة العمارة", "تقسيم تكلفة الصيانة بين الشقق", "رسوم الصيانة حسب مساحة الشقة", "كيف تحسب رسوم صيانة المبنى", "تقسيم تكلفة المصعد بين الشقق", "صيانة العمارة بالتساوي أو بالمساحة"],
+    keywordsEn: ["how to split apartment building maintenance fees", "maintenance fees by unit size", "splitting elevator maintenance cost between units", "building maintenance fee calculation", "HOA fee split by square footage", "apartment maintenance cost per unit"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-10-09",
+    content: `
+## الإجابة المختصرة
+
+في عمارة تضم عدة شقق مختلفة المساحة، **تقسيم رسوم الصيانة الشهرية بالتساوي الكامل على كل شقة غير عادل**، لأن الشقة الأكبر تمثل حصة أكبر من قيمة المبنى واستخدامه الفعلي. القاعدة الأعدل: **تقسيم التكاليف الثابتة (كحارس المبنى وتنظيف المدخل) بالتساوي بين كل الشقق**، بينما تُقسَّم التكاليف المرتبطة بالاستخدام الفعلي (كصيانة المصعد ومضخة المياه وأعمال الصيانة الهيكلية) **بنسبة مساحة كل شقة من إجمالي مساحة المبنى**.
+
+## لماذا لا يصح تقسيم كل التكاليف بالتساوي الكامل؟
+
+- **الشقق الأكبر تمثل حصة أكبر من قيمة المبنى**، فمن المنطقي أن تتحمل حصة أكبر من تكاليف صيانته
+- **الشقق الأكبر غالباً فيها عدد سكان أكبر**، فاستخدامها الفعلي للمصعد والمياه والمرافق المشتركة أكبر
+- **تحميل الشقة الصغيرة نفس حصة الشقة الكبيرة من تكاليف الصيانة الهيكلية يُعد غير منطقي**، لأن الضرر أو الاستهلاك ليس متساوياً فعلياً
+
+## لماذا لا يصح أيضاً تقسيم كل التكاليف بنسبة المساحة فقط؟
+
+- **بعض الخدمات ثابتة بصرف النظر عن حجم الشقة**: عقد حارس المبنى أو تنظيف المدخل تكلفته واحدة سواء كانت الشقة 100 متر أو 300 متر
+- **كل شقة تستفيد من هذه الخدمات الثابتة بنفس القدر تقريباً**: الحارس يحرس كل الشقق بالتساوي، وتنظيف المدخل يخدم كل الساكنين بنفس الدرجة
+
+## القاعدة الأساسية
+
+**التكاليف الثابتة (حارس، تنظيف مشترك) ÷ عدد الشقق = حصة كل شقة من الجزء الثابت**
+**التكاليف المرتبطة بالاستخدام (مصعد، مضخة مياه، صيانة هيكلية) × (مساحة الشقة ÷ إجمالي مساحة المبنى) = حصة كل شقة من الجزء المتغير**
+
+## مثال عملي كامل
+
+عمارة فيها 5 شقق بمساحات مختلفة:
+- **الشقة 1**: 150 متراً
+- **الشقة 2**: 200 متراً
+- **الشقة 3**: 250 متراً
+- **الشقة 4**: 180 متراً
+- **الشقة 5**: 220 متراً
+
+**إجمالي مساحة المبنى** = 150 + 200 + 250 + 180 + 220 = **1,000 متر**
+
+### الجزء الثابت
+عقد حارس المبنى وتنظيف المدخل المشترك = **1,500 ريال شهرياً** إجمالاً
+**حصة كل شقة من الثابت** = 1,500 ÷ 5 = **300 ريال** (نفس المبلغ لكل الشقق)
+
+### الجزء المتغير (المرتبط بالمساحة)
+صيانة المصعد ومضخة المياه وأعمال الصيانة الهيكلية = **3,500 ريال شهرياً** إجمالاً
+**السعر لكل متر** = 3,500 ÷ 1,000 = **3.5 ريال/متر**
+
+- الشقة 1: 150 × 3.5 = **525 ريال**
+- الشقة 2: 200 × 3.5 = **700 ريال**
+- الشقة 3: 250 × 3.5 = **875 ريال**
+- الشقة 4: 180 × 3.5 = **630 ريال**
+- الشقة 5: 220 × 3.5 = **770 ريال**
+
+### الإجمالي النهائي لكل شقة (ثابت + متغير)
+- الشقة 1: 300 + 525 = **825 ريال**
+- الشقة 2: 300 + 700 = **1,000 ريال**
+- الشقة 3: 300 + 875 = **1,175 ريال**
+- الشقة 4: 300 + 630 = **930 ريال**
+- الشقة 5: 300 + 770 = **1,070 ريال**
+
+**التحقق**: 825 + 1,000 + 1,175 + 930 + 1,070 = **5,000 ريال**، يطابق إجمالي التكاليف الثابتة والمتغيرة معاً (1,500 + 3,500).
+
+## ماذا عن إصلاحات مفاجئة أو طارئة؟
+
+- **إذا كان العطل يخص مرفقاً مشتركاً يستفيد منه الجميع بالتساوي** (مثل عطل في الإنارة الخارجية): يُقسَّم بالتساوي على كل الشقق
+- **إذا كان العطل مرتبطاً باستهلاك متفاوت** (مثل إصلاح المصعد بعد ضغط استخدام زائد): يُقسَّم بنسبة المساحة كبقية التكاليف المتغيرة
+- **إذا كان العطل خاصاً بشقة واحدة فقط** (مثل تسريب داخل شقة معينة لا يؤثر على غيرها): تتحمله تلك الشقة وحدها دون مشاركة الباقي
+
+## خطوات عملية لتنظيم رسوم صيانة العمارة
+
+### الخطوة 1: وثّقوا مساحة كل شقة بدقة منذ البداية
+استخدموا المساحة المسجلة في عقد الملكية أو الإيجار لتجنب أي خلاف لاحق.
+
+### الخطوة 2: صنّفوا كل تكلفة شهرية كثابتة أو متغيرة قبل التقسيم
+لا تدمجوا الفاتورتين في مبلغ واحد يُقسَّم بطريقة واحدة فقط.
+
+### الخطوة 3: شاركوا تفاصيل كل فاتورة مع كل الشقق فور وصولها
+الشفافية في عرض الفواتير الأصلية تقلل من التشكيك في طريقة التقسيم.
+
+### الخطوة 4: أعيدوا حساب النسب فقط عند تغيّر مساحة شقة فعلياً (توسعة أو تجزيء)
+لا حاجة لإعادة الحساب شهرياً إذا لم تتغير المساحات.
+
+## أخطاء شائعة عند تقسيم رسوم صيانة العمارة
+
+- **تقسيم كل التكاليف بالتساوي الكامل دون مراعاة فروق المساحة**
+- **تقسيم كل التكاليف بنسبة المساحة فقط، حتى الخدمات الثابتة التي يستفيد منها الجميع بالتساوي**
+- **عدم توثيق مساحة كل شقة بشكل رسمي، مما يفتح الباب لخلافات حول الأرقام**
+- **دمج الإصلاحات الطارئة الخاصة بشقة واحدة مع تكاليف الصيانة المشتركة**
+
+## كيف يساعدكم Diviso في تنظيم رسوم صيانة العمارة؟
+
+- ✅ تسجيل التكاليف الثابتة والمتغيرة بشكل منفصل لكل فاتورة شهرية
+- ✅ حساب تلقائي لحصة كل شقة بناءً على نسبة مساحتها المسجلة
+- ✅ سجل شفاف يوضح لكل ساكن كيف وصل إلى المبلغ المطلوب منه بالضبط
+- ✅ تتبع سهل للإصلاحات الطارئة الخاصة بشقة واحدة بشكل مستقل عن التكاليف المشتركة
+
+## أسئلة شائعة
+
+### هل يجب تقسيم جميع تكاليف صيانة العمارة بنسبة مساحة كل شقة؟
+لا، فقط التكاليف المرتبطة بالاستخدام الفعلي (كالمصعد ومضخة المياه والصيانة الهيكلية) تُقسَّم بنسبة المساحة. التكاليف الثابتة التي يستفيد منها الجميع بالتساوي (كحارس المبنى) تُقسَّم بالتساوي بين كل الشقق.
+
+### كيف نحدد مساحة كل شقة بدقة لتجنب الخلاف؟
+يُفضَّل الاعتماد على المساحة المسجلة رسمياً في صك الملكية أو عقد الإيجار، لا على تقدير تقريبي، لضمان قبول كل الساكنين للأرقام دون جدال.
+
+### ماذا لو احتاجت شقة واحدة فقط لإصلاح خاص بها؟
+في هذه الحالة تتحمل تلك الشقة تكلفة إصلاحها بمفردها، لأن الإصلاحات الخاصة بشقة واحدة لا تُدمَج مع تكاليف الصيانة المشتركة للمبنى.
+
+## الخلاصة
+
+رسوم صيانة العمارة لا يجب أن تكون مصدر خلاف دائم بين الساكنين: اقسموا التكاليف الثابتة بالتساوي، والتكاليف المرتبطة بالاستخدام بنسبة مساحة كل شقة، وستحصلون على تقسيم يقبله الجميع لأنه يعكس الواقع الفعلي.
+
+**جرب Diviso الآن وقسّم رسوم صيانة عمارتك بعدل بين كل الشقق.**
+    `,
+    contentEn: `
+## Quick Answer
+
+In a building with multiple apartment units of different sizes, **splitting the monthly maintenance fee fully equally between every unit isn't fair**, since a bigger unit represents a bigger share of the building's value and actual usage. The fairer rule: **split fixed shared costs (like the building guard's contract and lobby cleaning) equally among all units**, while usage-linked costs (like elevator maintenance, the water pump, and structural repairs) are **split proportional to each unit's floor area as a share of the building's total area**.
+
+## Why Isn't Splitting Everything Fully Equally Fair?
+
+- **Bigger units represent a bigger share of the building's overall value**, so it makes sense for them to carry a bigger share of its maintenance cost
+- **Bigger units usually house more residents**, meaning their actual usage of the elevator, water, and shared facilities is higher
+- **Charging a small unit the same share as a large unit for structural maintenance doesn't make sense**, since the actual wear or benefit isn't equal
+
+## Why Isn't Splitting Everything by Area Alone Fair Either?
+
+- **Some services cost the same regardless of unit size**: the building guard's contract or lobby cleaning costs the same whether a unit is 100 or 300 square meters
+- **Every unit benefits from these fixed services roughly equally**: the guard protects every unit the same way, and lobby cleaning serves every resident to the same degree
+
+## The Core Rule
+
+**Fixed costs (guard, shared cleaning) ÷ number of units = each unit's share of the fixed portion**
+**Usage-linked costs (elevator, water pump, structural maintenance) × (unit's area ÷ building's total area) = each unit's share of the variable portion**
+
+## A Complete Worked Example
+
+A building has 5 units of different sizes:
+- **Unit 1**: 150 square meters
+- **Unit 2**: 200 square meters
+- **Unit 3**: 250 square meters
+- **Unit 4**: 180 square meters
+- **Unit 5**: 220 square meters
+
+**Total building area** = 150 + 200 + 250 + 180 + 220 = **1,000 square meters**
+
+### The Fixed Portion
+The building guard's contract plus shared lobby cleaning = **1,500 SAR per month** total
+**Each unit's share of the fixed cost** = 1,500 ÷ 5 = **300 SAR** (the same amount for every unit)
+
+### The Variable Portion (Linked to Area)
+Elevator maintenance, water pump, and structural repairs = **3,500 SAR per month** total
+**Rate per square meter** = 3,500 ÷ 1,000 = **3.5 SAR/sqm**
+
+- Unit 1: 150 × 3.5 = **525 SAR**
+- Unit 2: 200 × 3.5 = **700 SAR**
+- Unit 3: 250 × 3.5 = **875 SAR**
+- Unit 4: 180 × 3.5 = **630 SAR**
+- Unit 5: 220 × 3.5 = **770 SAR**
+
+### Each Unit's Final Total (Fixed + Variable)
+- Unit 1: 300 + 525 = **825 SAR**
+- Unit 2: 300 + 700 = **1,000 SAR**
+- Unit 3: 300 + 875 = **1,175 SAR**
+- Unit 4: 300 + 630 = **930 SAR**
+- Unit 5: 300 + 770 = **1,070 SAR**
+
+**Check**: 825 + 1,000 + 1,175 + 930 + 1,070 = **5,000 SAR**, which matches the fixed and variable totals combined (1,500 + 3,500).
+
+## What About Sudden or Emergency Repairs?
+
+- **If the breakdown affects a shared facility everyone benefits from equally** (like an outdoor lighting fault): split it equally among all units
+- **If the breakdown is linked to uneven usage** (like an elevator repair after heavy overuse): split it by area proportion, like the rest of the variable costs
+- **If the breakdown is specific to a single unit** (like a leak inside one particular unit that doesn't affect the others): that unit alone bears the cost, with no sharing across the rest
+
+## A Practical System for Organizing Building Maintenance Fees
+
+### Step 1: Document Each Unit's Exact Area From the Start
+Use the area recorded on the ownership deed or lease contract to avoid any later dispute.
+
+### Step 2: Classify Each Monthly Cost as Fixed or Variable Before Splitting
+Don't lump both bills into one amount split just one way.
+
+### Step 3: Share Every Bill's Details With All Units as Soon as It Arrives
+Transparency in showing the original bills reduces doubt about how the split was calculated.
+
+### Step 4: Only Recalculate the Ratios When a Unit's Area Actually Changes
+There's no need to recalculate monthly if the areas haven't changed.
+
+## Common Mistakes When Splitting Apartment Building Maintenance Fees
+
+- **Splitting all costs fully equally without accounting for area differences**
+- **Splitting all costs by area alone, even fixed services everyone benefits from equally**
+- **Not officially documenting each unit's area, which opens the door to disputes over the numbers**
+- **Lumping a single unit's emergency repair in with the building's shared maintenance costs**
+
+## How Diviso Helps Organize Apartment Building Maintenance Fees
+
+- ✅ Logs fixed and variable costs separately for each monthly bill
+- ✅ Automatically calculates each unit's share based on its recorded area percentage
+- ✅ A transparent record showing every resident exactly how their amount was calculated
+- ✅ Easy tracking of a single unit's emergency repairs, kept separate from shared costs
+
+## Frequently Asked Questions
+
+### Should all apartment building maintenance costs be split by each unit's area?
+No. Only costs linked to actual usage (like the elevator, water pump, and structural maintenance) are split by area. Fixed costs everyone benefits from equally (like the building guard) are split equally among all units.
+
+### How do we determine each unit's exact area to avoid disputes?
+It's best to rely on the area officially recorded on the ownership deed or lease contract, not a rough estimate, so every resident accepts the numbers without argument.
+
+### What if only one unit needs a repair specific to it?
+In that case, that unit alone bears the cost of its own repair, since a repair specific to one unit isn't lumped in with the building's shared maintenance costs.
+
+## Conclusion
+
+Apartment building maintenance fees don't have to be a constant source of friction between residents: split fixed costs equally, and usage-linked costs by each unit's area, and you'll get a split everyone accepts because it reflects actual reality.
+
+**Try Diviso now and split your building's maintenance fees fairly across every unit.**
+    `
+  },
+  {
     slug: "split-family-mobile-plan-bill-data-overage",
     title: "من يدفع تجاوز استهلاك البيانات في خط الجوال العائلي المشترك؟",
     titleEn: "How to Split a Family Mobile Plan Bill When One Line Uses More Data",

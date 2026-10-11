@@ -16,6 +16,196 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-trip-costs-friends-different-currencies-exchange-rate",
+    title: "كيف تُقسَّم مصاريف الرحلة بين أصدقاء يدفعون بعملات مختلفة؟",
+    titleEn: "How to Split Trip Costs Fairly When Friends Pay in Different Currencies",
+    description: "عند مشاركة تكلفة رحلة بين أصدقاء من دول مختلفة يدفعون بعملات متفاوتة، الفروقات في سعر الصرف البنكي تخلق خلافاً حول من دفع فعلياً كم. الحل: الاتفاق على سعر صرف مرجعي ثابت لتسجيل كل الحصص، وتحميل أي خسارة ناتجة عن تحويل بنكي فردي على صاحبها فقط. دليل عملي بمثال حسابي.",
+    descriptionEn: "When friends from different countries split a trip's cost but pay in different currencies, bank exchange-rate differences create disputes over who actually paid how much. The fix: agree on one fixed reference exchange rate to record every share, and let any loss from an individual's own bank conversion stay with that person. A practical guide with a worked example.",
+    keywords: ["تقسيم مصاريف السفر بعملات مختلفة", "سعر الصرف في تقسيم تكلفة الرحلة", "دفع حصة الرحلة بعملة مختلفة", "فروقات سعر الصرف بين الأصدقاء", "تحويل عملات في تقسيم مصاريف السفر", "كيف نحسب الحصة عند اختلاف العملة"],
+    keywordsEn: ["splitting trip costs in different currencies", "exchange rate when splitting travel expenses", "paying your share in a different currency", "currency conversion group expense split", "international friends splitting travel costs", "fixed exchange rate expense settlement"],
+    category: "tips",
+    readTime: 7,
+    publishDate: "2026-10-11",
+    content: `
+## الإجابة المختصرة
+
+عند مشاركة تكلفة رحلة بين أصدقاء من دول مختلفة يدفعون بعملات متفاوتة، **الاعتماد على سعر الصرف الفعلي الذي حصل عليه كل شخص من بنكه يخلق خلافاً**، لأن البنوك تطبّق أسعار صرف وعمولات مختلفة في نفس اليوم. الحل الأعدل: **الاتفاق على سعر صرف مرجعي ثابت واحد تُسجَّل به كل حصة في دفتر المصاريف**، بينما يتحمّل كل شخص بمفرده أي فرق ناتج عن سعر أو عمولة تحويله البنكي الخاص.
+
+## لماذا يخلق الاعتماد على السعر البنكي الفعلي خلافاً؟
+
+- **كل بنك يطبّق سعر صرف وعمولة مختلفة**، حتى في نفس اليوم وبين نفس العملتين
+- **سعر الصرف يتغيّر بين لحظة حجز الرحلة ولحظة دفع كل شخص حصته**، فقد يدفع شخصان بالعملة نفسها في توقيتين مختلفين بمبلغ محلي مختلف لنفس القيمة المقصودة
+- **تتبّع "من دفع فعلياً كم بالعملة المحلية" بدل القيمة المقصودة بالعملة الأساسية للرحلة يجعل الحسابات غير قابلة للمقارنة** بين الأعضاء
+
+## القاعدة الأساسية
+
+**تُسجَّل كل حصة في دفتر المصاريف بعملة واحدة مرجعية (عملة الرحلة الأساسية)، باستخدام سعر صرف ثابت متفق عليه مسبقاً، بصرف النظر عن السعر الفعلي الذي طبّقه بنك كل شخص.**
+**أي فرق بين القيمة التي يُفترض أن يحوّلها الشخص بالسعر المرجعي والقيمة التي استلمتها المجموعة فعلياً بسبب عمولة أو سعر بنكه الخاص، يتحمّلها ذلك الشخص بمفرده.**
+
+## مثال عملي كامل
+
+4 أصدقاء يخططون لرحلة تكلفتها الإجمالية **4,000 ريال سعودي**. اثنان منهم يدفعان بالريال السعودي مباشرة، والآخران يعيشان في الولايات المتحدة ويدفعان بالدولار الأمريكي.
+
+**حصة كل شخص** = 4,000 ÷ 4 = **1,000 ريال**
+
+**سعر الصرف المرجعي المتفق عليه** = السعر الرسمي الثابت لربط الريال بالدولار، وهو **3.75 ريال لكل دولار أمريكي** (هذا السعر ثابت رسمياً ولا يتقلب كبقية العملات، ما يجعله مرجعاً عملياً ومستقراً لهذا النوع من الحسابات).
+
+**القيمة المطلوبة بالدولار لكل شخص يدفع بالدولار** = 1,000 ÷ 3.75 = **266.67 دولاراً**
+
+### ماذا يحدث عند التحويل الفعلي؟
+أحد الأصدقاء في أمريكا حوّل 266.67 دولاراً، لكن بنكه طبّق سعر صرف فعلي أقل مع عمولة تحويل، فلم تصل للمجموعة سوى **973.35 ريال** بدل 1,000 ريال كاملة (أي بفارق **26.65 ريال**).
+
+**القاعدة**: يُسجَّل في دفتر المصاريف أن حصته المطلوبة هي 1,000 ريال كاملة كما هو متفق، وعليه إضافة الفارق (26.65 ريال أو ما يعادلها بالدولار) بشكل مستقل لتغطية حصته كاملة، لأن هذا الفارق ناتج عن اختيار بنكه وعمولته الخاصة، لا عن خطأ في حساب المجموعة.
+
+## لماذا لا يصح تحميل المجموعة فرق سعر صرف شخص واحد؟
+
+- **اختيار البنك أو وسيلة التحويل قرار شخصي**، فتحمّل المجموعة لعمولته يُعفيه من مسؤولية هذا القرار دون سبب
+- **كل شخص يملك خيار استخدام وسيلة تحويل أرخص** (كمنصات تحويل بسعر صرف أقرب للسعر الرسمي)، فتحميله مسؤولية فرقه الخاص يشجّع على اختيار أفضل وسيلة تحويل في المستقبل
+
+## متى يصح أن تتقاسم المجموعة فرق سعر الصرف؟
+
+إذا اتفقت المجموعة **مسبقاً وبوضوح** على تقاسم مخاطر تقلب سعر الصرف (مثلاً حين يكون الفارق المتوقع بسيطاً ولا يستدعي حسابات معقدة)، فمن الممكن قبول ذلك كاستثناء متفق عليه. لكن الافتراض الأساسي بلا اتفاق صريح هو أن كل شخص يتحمّل فرق تحويله الخاص.
+
+## ماذا لو كانت العملتان كلاهما تتقلبان (لا ترتبطان بسعر ثابت)؟
+
+في هذه الحالة، يُحدَّد سعر صرف مرجعي واحد **في لحظة تحديد التكلفة الإجمالية للرحلة** (مثل تاريخ الحجز)، ويُثبَّت هذا السعر في دفتر المصاريف طوال فترة التجميع، بدل تحديثه يومياً، لتجنّب نزاع مستمر حول أي سعر هو "الصحيح".
+
+## خطوات عملية لتقسيم مصاريف رحلة متعددة العملات
+
+### الخطوة 1: اتفقوا على العملة الأساسية للرحلة والسعر المرجعي قبل بدء التجميع
+وثّقوا السعر المتفق عليه بوضوح لتجنب أي خلاف لاحق.
+
+### الخطوة 2: سجّلوا حصة كل شخص بالعملة الأساسية فقط
+بصرف النظر عن العملة التي سيدفع بها فعلياً.
+
+### الخطوة 3: اطلبوا من كل شخص التأكد من وصول المبلغ الكامل المطلوب بالعملة الأساسية
+وليس فقط إرسال المبلغ المحوَّل بسعره الفردي دون التحقق من المبلغ المستلم فعلياً.
+
+### الخطوة 4: سجّلوا أي نقص ناتج عن عمولة تحويل كمسؤولية فردية صريحة
+بدل تركه ضمن "الفروقات الصغيرة" التي تتراكم وتصعب تتبعها لاحقاً.
+
+## أخطاء شائعة عند تقسيم مصاريف رحلة بعملات متعددة
+
+- **الاعتماد على السعر البنكي الفعلي لكل شخص دون سعر مرجعي ثابت موحّد**
+- **تحميل المجموعة فرق عمولة التحويل البنكي لشخص واحد دون اتفاق مسبق**
+- **تحديث السعر المرجعي باستمرار بدل تثبيته منذ بداية التجميع**
+- **عدم التحقق من وصول المبلغ الكامل المطلوب فعلياً قبل اعتبار الحصة مدفوعة بالكامل**
+
+## كيف يساعدكم Diviso في تقسيم مصاريف الرحلات متعددة العملات؟
+
+- ✅ تسجيل كل حصة بعملة أساسية موحّدة بصرف النظر عن عملة الدفع الفعلية
+- ✅ تتبّع شفاف لأي نقص ناتج عن فروقات تحويل فردية بشكل مستقل
+- ✅ سجل واحد يسهل مقارنة حصص كل الأعضاء بعملة واحدة
+- ✅ تسوية سريعة دون نزاع متكرر حول "أي سعر صرف هو الصحيح"
+
+## أسئلة شائعة
+
+### ما العملة التي يجب تسجيل الحصص بها عند السفر بمجموعة من دول مختلفة؟
+يُسجَّل كل شيء بعملة أساسية واحدة متفق عليها مسبقاً (غالباً عملة وجهة الرحلة أو عملة أغلبية المجموعة)، باستخدام سعر صرف مرجعي ثابت، بدل تسجيل كل حصة بعملتها المحلية المتقلبة.
+
+### من يتحمّل فرق عمولة التحويل البنكي؟
+يتحمّله الشخص الذي اختار وسيلة التحويل تلك بمفرده، لأنه قرار شخصي بإمكانه تجنّبه باستخدام وسيلة تحويل أقرب للسعر الرسمي، إلا إذا اتفقت المجموعة صراحةً على تقاسم هذا الفرق.
+
+### ماذا لو كانت العملتان كلاهما تتقلبان دون سعر ثابت رسمي؟
+يُحدَّد سعر صرف مرجعي عند لحظة تحديد تكلفة الرحلة الإجمالية، ويُثبَّت طوال فترة تجميع المبالغ، لتجنب نزاع مستمر حول تحديث السعر يومياً.
+
+## الخلاصة
+
+تقسيم مصاريف رحلة بين أصدقاء بعملات مختلفة لا يحتاج لتعقيد: اتفقوا على سعر صرف مرجعي ثابت لتسجيل كل الحصص، واتركوا كل شخص يتحمّل فرق تحويله البنكي الخاص، وستنتهي الخلافات حول "من دفع فعلياً كم".
+
+**جرب Diviso الآن وقسّم مصاريف رحلتكم بعدل بين الأصدقاء بغض النظر عن اختلاف العملات.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When friends from different countries split a trip's cost but each pay in their own currency, **relying on the actual exchange rate each person's bank happened to apply creates disputes**, since banks charge different rates and fees even on the same day. The fairer fix: **agree on one fixed reference exchange rate to record every share in the expense ledger**, while each person individually absorbs any difference caused by their own bank's rate or conversion fee.
+
+## Why Does Relying on the Actual Bank Rate Create Disputes?
+
+- **Every bank applies a different exchange rate and fee**, even on the same day and between the same two currencies
+- **The exchange rate shifts between the moment the trip is booked and the moment each person pays their share**, so two people paying in the same currency at different times may pay different local amounts for the same intended value
+- **Tracking "how much each person actually paid in their local currency" instead of the intended value in the trip's base currency makes the numbers impossible to compare** fairly between members
+
+## The Core Rule
+
+**Every share is recorded in the expense ledger in one reference currency (the trip's base currency), using a fixed exchange rate agreed on in advance, regardless of the actual rate each person's bank applied.**
+**Any gap between the amount a person was supposed to convert at the reference rate and the amount the group actually received, caused by their own bank's fee or rate, is that person's individual responsibility.**
+
+## A Complete Worked Example
+
+4 friends are planning a trip with a total cost of **4,000 SAR**. Two of them pay directly in Saudi riyals, and the other two live in the United States and pay in US dollars.
+
+**Each person's share** = 4,000 ÷ 4 = **1,000 SAR**
+
+**The agreed reference exchange rate** = the official fixed peg rate between the riyal and the dollar, which is **3.75 SAR per US dollar** (this rate is officially fixed and doesn't float like other currency pairs, making it a practical, stable reference for this kind of calculation).
+
+**The dollar amount required from each dollar-paying person** = 1,000 ÷ 3.75 = **$266.67**
+
+### What Happens When the Transfer Actually Goes Through?
+One friend in the US transferred $266.67, but his bank applied a lower effective rate plus a transfer fee, so the group only received **973.35 SAR** instead of the full 1,000 SAR (a shortfall of **26.65 SAR**).
+
+**The rule**: the ledger records his required share as the full 1,000 SAR as agreed, and he must separately add the difference (26.65 SAR or its dollar equivalent) to cover his share in full, since that gap came from his own bank's choice and fee, not from an error in the group's calculation.
+
+## Why Shouldn't the Group Absorb One Person's Exchange Rate Difference?
+
+- **Choosing a bank or transfer method is a personal decision**, so having the group absorb that fee excuses them from the consequences of that choice for no reason
+- **Everyone has the option of using a cheaper transfer method** (like a currency exchange platform closer to the official rate), so making each person responsible for their own gap encourages better choices next time
+
+## When Is It Fair for the Group to Share the Exchange Rate Difference?
+
+If the group agrees **explicitly and in advance** to share exchange rate risk (for example, when the expected gap is small and not worth complicated calculations), accepting that as an agreed-upon exception is fine. But the default assumption, absent an explicit agreement, is that each person bears their own conversion gap.
+
+## What If Both Currencies Float (Neither Is Fixed)?
+
+In that case, set a single reference exchange rate **at the moment the trip's total cost is determined** (such as the booking date), and lock that rate in the ledger for the entire collection period instead of updating it daily, to avoid an ongoing dispute over which rate is "the right one."
+
+## A Practical System for Splitting a Multi-Currency Trip's Costs
+
+### Step 1: Agree on the Trip's Base Currency and Reference Rate Before Collecting Anything
+Document the agreed rate clearly to avoid any later dispute.
+
+### Step 2: Record Each Person's Share in the Base Currency Only
+Regardless of which currency they'll actually pay in.
+
+### Step 3: Have Each Person Confirm the Full Required Amount Actually Arrived in the Base Currency
+Rather than just sending the converted amount at their own rate without verifying what was actually received.
+
+### Step 4: Log Any Shortfall From a Conversion Fee as an Explicit Individual Responsibility
+Instead of leaving it as part of "small differences" that pile up and become hard to track later.
+
+## Common Mistakes When Splitting a Multi-Currency Trip's Costs
+
+- **Relying on each person's actual bank rate instead of one unified fixed reference rate**
+- **Having the group absorb one person's bank conversion fee difference without a prior agreement**
+- **Continuously updating the reference rate instead of locking it in from the start of collection**
+- **Not verifying the full required amount actually arrived before treating a share as fully paid**
+
+## How Diviso Helps Split Multi-Currency Trip Costs
+
+- ✅ Logs every share in one unified base currency, regardless of the actual payment currency
+- ✅ Transparently tracks any shortfall from an individual conversion difference separately
+- ✅ One single record makes it easy to compare every member's share in one currency
+- ✅ Quick settlement without a recurring argument over "which exchange rate is correct"
+
+## Frequently Asked Questions
+
+### Which currency should shares be recorded in when a group travels from different countries?
+Everything is recorded in one agreed-upon base currency (usually the trip destination's currency or the majority of the group's currency), using a fixed reference exchange rate, instead of recording each share in its own fluctuating local currency.
+
+### Who bears the bank conversion fee difference?
+The person who chose that transfer method bears it alone, since it's a personal decision they could have avoided by using a transfer method closer to the official rate, unless the group explicitly agreed to share that difference.
+
+### What if both currencies float with no official fixed rate?
+A reference exchange rate is set at the moment the trip's total cost is determined, and it's locked in for the entire collection period, to avoid an ongoing dispute over updating the rate daily.
+
+## Conclusion
+
+Splitting a trip's costs between friends paying in different currencies doesn't need to be complicated: agree on one fixed reference exchange rate to record every share, and let each person bear their own bank conversion difference, and the disputes over "who actually paid how much" disappear.
+
+**Try Diviso now and split your group trip's costs fairly between friends, no matter which currencies they pay in.**
+    `
+  },
+  {
     slug: "split-group-package-ticket-cost-adults-children",
     title: "كيف تُقسَّم تكلفة باقة التذاكر الجماعية بين الكبار والأطفال بسعر عادل؟",
     titleEn: "How to Split a Group Package Ticket Price Fairly Between Adults and Children",

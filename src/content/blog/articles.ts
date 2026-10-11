@@ -16,6 +16,214 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-group-package-ticket-cost-adults-children",
+    title: "كيف تُقسَّم تكلفة باقة التذاكر الجماعية بين الكبار والأطفال بسعر عادل؟",
+    titleEn: "How to Split a Group Package Ticket Price Fairly Between Adults and Children",
+    description: "عند حجز باقة تذاكر جماعية بسعر مخفض لحديقة ملاهي أو منتزه مائي تضم كباراً وأطفالاً، القسمة بالتساوي بين كل الأفراد غير عادلة لأن تذكرة الكبير أصلاً أغلى من تذكرة الطفل. الحل: توزيع سعر الباقة بنسبة السعر الفردي لكل تذكرة. دليل عملي بمثال حسابي.",
+    descriptionEn: "When a family or group books a discounted package ticket for a water park or entertainment venue that mixes adults and children, splitting the price equally per person isn't fair since an adult ticket already costs more than a child's. The fix: allocate the package price proportional to each person's individual ticket rate. A practical guide with a worked example.",
+    keywords: ["تقسيم تكلفة تذاكر الملاهي الجماعية", "كيف نقسم تذاكر المنتزه المائي بين العائلة", "تذاكر كبار وأطفال بسعر مخفض", "تقسيم تكلفة باقة التذاكر الجماعية", "خصم التذاكر الجماعية بين الكبار والأطفال", "سعر تذكرة الطفل مقابل الكبير في الباقة الجماعية"],
+    keywordsEn: ["how to split group theme park ticket costs", "splitting water park tickets between adults and kids", "group package ticket pricing adult child", "family ticket bundle cost split", "entertainment venue group discount split", "adult vs child ticket price allocation"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-10-10",
+    content: `
+## الإجابة المختصرة
+
+عند حجز باقة تذاكر جماعية مخفضة لمنتزه مائي أو حديقة ملاهي تضم كباراً وأطفالاً، **القسمة بالتساوي على عدد الأفراد غير عادلة**، لأن تذكرة الكبير الفردية أصلاً أغلى من تذكرة الطفل. الطريقة الأعدل: **توزيع سعر الباقة الإجمالي بنسبة السعر الفردي لكل تذكرة**، بحيث يحافظ كل فرد (كبير أو طفل) على نفس نسبته الأصلية من التكلفة، مع استفادة الجميع بالتساوي نسبياً من خصم الحجز الجماعي.
+
+## لماذا لا يصح تقسيم سعر الباقة بالتساوي على كل الأفراد؟
+
+- **تذكرة الكبير أصلاً أغلى من تذكرة الطفل** لأنها غالباً تتيح الوصول لمرافق أو ألعاب أكثر
+- **القسمة بالتساوي تُحمِّل عائلة الطفل مبلغاً أكبر من قيمته الفعلية**، وتُخفِّض نصيب الكبار دون سبب منطقي
+- **من يشتري تذكرة فردية خارج الباقة يدفع فرقاً واضحاً بين فئة الكبار والأطفال**، فتجاهل هذا الفرق عند التقسيم يناقض منطق التسعير الأصلي
+
+## لماذا لا يصح أيضاً الاعتماد على السعر الفردي الأصلي دون مراعاة خصم المجموعة؟
+
+- **سعر الباقة الجماعية أقل من مجموع التذاكر الفردية**، فتحصيل السعر الفردي الكامل من كل شخص يجعل المبلغ المجموع أكبر من ما دُفع فعلياً للمنتزه
+- **خصم الحجز الجماعي حق لكل أفراد المجموعة**، فيجب أن ينعكس على نصيب كل واحد منهم بنفس النسبة
+
+## القاعدة الأساسية
+
+**نصيب كل فرد = (سعر تذكرته الفردية ÷ إجمالي أسعار التذاكر الفردية لكل المجموعة) × السعر الإجمالي المدفوع فعلياً للباقة الجماعية**
+
+## مثال عملي كامل
+
+عائلة تحجز باقة جماعية لمنتزه مائي تضم 4 كبار وطفلين.
+
+**الأسعار الفردية (خارج الباقة الجماعية)**:
+- تذكرة الكبير: **120 ريالاً**
+- تذكرة الطفل: **80 ريالاً**
+
+**إجمالي الأسعار الفردية** = (4 × 120) + (2 × 80) = 480 + 160 = **640 ريالاً**
+
+**السعر الفعلي المدفوع للباقة الجماعية** (بعد خصم الحجز الجماعي) = **540 ريالاً**
+
+### حساب نصيب كل فئة
+- **نصيب كل كبير** = (120 ÷ 640) × 540 = **101.25 ريال**
+- **نصيب كل طفل** = (80 ÷ 640) × 540 = **67.5 ريال**
+
+**التحقق**: (4 × 101.25) + (2 × 67.5) = 405 + 135 = **540 ريالاً**، يطابق السعر الفعلي المدفوع للباقة بالضبط.
+
+### ملاحظة على نسبة الخصم
+540 ÷ 640 = 84.375%، أي أن كل فرد في النهاية يدفع تقريباً 84.375% من سعر تذكرته الفردية الأصلية — الخصم انعكس على الجميع بنفس النسبة، دون كسر فرق السعر الأصلي بين الكبار والأطفال.
+
+## ماذا لو كانت هناك فئات تسعير أخرى (كبار السن، الطلاب)؟
+
+يُطبَّق نفس المبدأ تماماً: يُضاف السعر الفردي لتلك الفئة إلى إجمالي الأسعار الفردية، ثم يُحسب نصيبها من السعر الإجمالي للباقة بنفس النسبة.
+
+## ماذا لو كان أحد الأطفال يدخل مجاناً (حسب السن)؟
+
+في هذه الحالة، لا يُضاف أي سعر فردي لهذا الطفل في المعادلة، ولا يُطالَب بأي نصيب من تكلفة الباقة، لأن حسابه يقتصر على الفئات التي لها سعر تذكرة فعلي فقط.
+
+## ماذا عن الإضافات الاختيارية (كخزانة ملابس أو وجبة مدفوعة)؟
+
+الإضافات التي يستخدمها بعض الأفراد فقط دون غيرهم **لا تُدمَج مع سعر الباقة الأساسية**، بل تُسجَّل كمصروف مستقل يتحمله فقط من استخدمها، لتبقى القسمة الأساسية (الكبار/الأطفال) دقيقة وغير مشوّهة بتكاليف لا يشارك فيها الجميع.
+
+## خطوات عملية لتقسيم تكلفة باقة التذاكر الجماعية
+
+### الخطوة 1: اجمعوا السعر الفردي لكل فئة تذكرة قبل الحجز
+تحقّقوا من السعر المعروض لتذكرة الكبير والطفل بشكل منفصل من موقع المنتزه أو شباك التذاكر.
+
+### الخطوة 2: سجّلوا السعر الإجمالي الفعلي المدفوع للباقة الجماعية
+هذا هو المبلغ الذي سيُوزَّع على الجميع، لا المجموع الفردي الأصلي.
+
+### الخطوة 3: احسبوا نصيب كل فئة بنسبة سعرها الفردي من الإجمالي
+استخدموا القاعدة الأساسية أعلاه لكل فئة تذكرة موجودة في المجموعة.
+
+### الخطوة 4: سجّلوا أي إضافات اختيارية بشكل مستقل فور حدوثها
+لتجنب دمجها بالخطأ مع حساب تكلفة الباقة الأساسية.
+
+## أخطاء شائعة عند تقسيم تكلفة التذاكر الجماعية
+
+- **تقسيم سعر الباقة بالتساوي على عدد الأفراد دون مراعاة فرق سعر الكبير والطفل**
+- **تحصيل السعر الفردي الكامل من كل فئة متجاهلين خصم الحجز الجماعي**
+- **دمج إضافات اختيارية خاصة ببعض الأفراد مع التكلفة الأساسية للباقة**
+- **عدم التحقق من السعر الفردي الرسمي لكل فئة قبل الحساب**، مما يؤدي لأرقام غير دقيقة
+
+## كيف يساعدكم Diviso في تقسيم تكلفة التذاكر الجماعية؟
+
+- ✅ حساب تلقائي لنصيب كل فئة (كبار، أطفال، فئات أخرى) بنسبة سعرها الفردي من إجمالي الباقة
+- ✅ تسجيل الإضافات الاختيارية كمصاريف مستقلة مرتبطة بمن استخدمها فقط
+- ✅ سجل شفاف يوضح كيف وصل كل فرد إلى المبلغ المطلوب منه بالضبط
+- ✅ سهولة تطبيق نفس الطريقة على أي رحلة جماعية مستقبلية بفئات تسعير مختلفة
+
+## أسئلة شائعة
+
+### هل يجب تقسيم خصم الحجز الجماعي بالتساوي بالريال على كل فرد؟
+لا، يجب تقسيمه بنفس نسبة السعر الفردي لكل فئة، بحيث يحافظ كل فرد على نسبته الأصلية من التكلفة مع استفادته من الخصم بنفس النسبة، لا بمبلغ ثابت متساوٍ للجميع.
+
+### ماذا لو دخل أحد الأطفال مجاناً بسبب صغر سنه؟
+لا يُضاف له أي سعر فردي في المعادلة، ولا يُطالَب بأي نصيب من تكلفة الباقة، لأن الحساب يشمل فقط الفئات التي لها سعر تذكرة فعلي.
+
+### كيف نتعامل مع إضافات اختيارية استخدمها بعض الأفراد فقط؟
+تُسجَّل كمصروف منفصل خاص بمن استخدمها فقط، ولا تُدمَج مع حساب تقسيم سعر الباقة الأساسية بين الكبار والأطفال.
+
+## الخلاصة
+
+تقسيم تكلفة باقة تذاكر جماعية بين الكبار والأطفال لا يحتاج إلى تقدير أو تخمين: احسبوا نصيب كل فئة بنسبة سعرها الفردي من السعر الإجمالي الفعلي المدفوع، وستحصلون على تقسيم عادل يحافظ على فرق التسعير الأصلي بين الجميع.
+
+**جرب Diviso الآن وقسّم تكلفة تذاكركم الجماعية بعدل بين الكبار والأطفال.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When a family or group books a discounted package ticket for a water park or theme park that mixes adults and children, **splitting the package price equally per person isn't fair**, since an individual adult ticket already costs more than a child's. The fairer method: **allocate the total package price proportional to each person's individual ticket rate**, so every person (adult or child) keeps their original share of the cost while everyone benefits equally, in percentage terms, from the group booking discount.
+
+## Why Isn't Splitting the Package Price Equally Among Everyone Fair?
+
+- **An adult ticket already costs more than a child's**, usually because it unlocks more rides or facilities
+- **An equal split overcharges the child's family** relative to the ticket's actual value, and undercharges the adults for no logical reason
+- **Anyone buying a ticket individually outside the package pays a clear difference between the adult and child category**, so ignoring that difference when splitting contradicts the venue's own pricing logic
+
+## Why Isn't Relying on the Original Individual Price Alone Fair Either?
+
+- **The group package price is lower than the sum of individual tickets**, so collecting the full individual price from everyone would add up to more than what was actually paid to the venue
+- **The group booking discount belongs to every member of the group**, so it should be reflected in each person's share at the same proportion
+
+## The Core Rule
+
+**Each person's share = (their individual ticket price ÷ the sum of individual prices for the whole group) × the actual total price paid for the group package**
+
+## A Complete Worked Example
+
+A family books a group package for a water park with 4 adults and 2 children.
+
+**Individual prices (outside the group package)**:
+- Adult ticket: **120 SAR**
+- Child ticket: **80 SAR**
+
+**Sum of individual prices** = (4 × 120) + (2 × 80) = 480 + 160 = **640 SAR**
+
+**Actual price paid for the group package** (after the group booking discount) = **540 SAR**
+
+### Calculating Each Category's Share
+- **Each adult's share** = (120 ÷ 640) × 540 = **101.25 SAR**
+- **Each child's share** = (80 ÷ 640) × 540 = **67.5 SAR**
+
+**Check**: (4 × 101.25) + (2 × 67.5) = 405 + 135 = **540 SAR**, which matches the actual amount paid for the package exactly.
+
+### A Note on the Discount Ratio
+540 ÷ 640 = 84.375%, meaning every person ultimately pays roughly 84.375% of their original individual ticket price — the discount is reflected equally for everyone, without breaking the original price difference between adults and children.
+
+## What If There Are Other Pricing Categories (Seniors, Students)?
+
+The exact same principle applies: add that category's individual price to the sum of individual prices, then calculate its share of the total package price at the same proportion.
+
+## What If One Child Enters for Free (Due to Age)?
+
+In that case, no individual price is added for that child in the equation, and they aren't charged any share of the package cost, since the calculation only includes categories that have an actual ticket price.
+
+## What About Optional Add-ons (Like a Locker or a Paid Meal)?
+
+Add-ons used by only some people **shouldn't be blended into the base package price**. Instead, log them as a separate expense charged only to whoever used them, so the main split (adults/children) stays accurate and isn't distorted by costs not everyone shares in.
+
+## A Practical System for Splitting a Group Package Ticket Cost
+
+### Step 1: Collect Each Ticket Category's Individual Price Before Booking
+Check the venue's website or ticket counter for the adult and child prices listed separately.
+
+### Step 2: Record the Actual Total Price Paid for the Group Package
+This is the amount that will be distributed among everyone, not the original individual sum.
+
+### Step 3: Calculate Each Category's Share Proportional to Its Individual Price
+Use the core rule above for every ticket category present in the group.
+
+### Step 4: Log Any Optional Add-ons Separately as They Happen
+To avoid mistakenly blending them into the base package cost calculation.
+
+## Common Mistakes When Splitting a Group Ticket Package Cost
+
+- **Splitting the package price equally per person without accounting for the adult/child price difference**
+- **Charging everyone the full individual price while ignoring the group booking discount**
+- **Blending optional add-ons used by only some people into the base package cost**
+- **Not verifying each category's official individual price before calculating**, leading to inaccurate numbers
+
+## How Diviso Helps Split a Group Ticket Package Cost
+
+- ✅ Automatically calculates each category's (adults, children, other tiers) share proportional to its individual price within the total package
+- ✅ Logs optional add-ons as separate expenses tied only to whoever used them
+- ✅ A transparent record showing exactly how each person's amount was calculated
+- ✅ Easy to reuse the same method for any future group outing with different pricing tiers
+
+## Frequently Asked Questions
+
+### Should the group booking discount be split equally in SAR per person?
+No. It should be split at the same proportion as each category's individual price, so every person keeps their original share of the cost while benefiting from the discount at the same rate, rather than everyone getting an equal fixed amount off.
+
+### What if one child enters free because of their age?
+No individual price is added for them in the equation, and they aren't charged any share of the package cost, since the calculation only covers categories that have an actual ticket price.
+
+### How do we handle optional add-ons that only some people used?
+They're logged as a separate expense charged only to whoever used them, and aren't blended into the calculation that splits the base package price between adults and children.
+
+## Conclusion
+
+Splitting a group package ticket cost between adults and children doesn't require guesswork: calculate each category's share proportional to its individual price out of the actual total paid, and you'll get a fair split that preserves the venue's original price difference between everyone.
+
+**Try Diviso now and split your group's ticket costs fairly between adults and children.**
+    `
+  },
+  {
     slug: "split-apartment-building-maintenance-fees-by-unit-size",
     title: "كيف تُقسَّم رسوم صيانة العمارة بين الشقق؟ حسب المساحة وليس بالتساوي الكامل",
     titleEn: "How to Split Apartment Building Maintenance Fees Fairly by Unit Size",

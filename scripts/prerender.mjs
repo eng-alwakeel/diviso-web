@@ -57,7 +57,11 @@ function formatContent(content) {
     .replace(/(<li>.*<\/li>\n?)+/g, "<ul>$&</ul>")
     .replace(/\n\n/g, "</p><p>")
     .replace(/^(?!<)(.+)$/gm, "<p>$1</p>")
-    .replace(/<p><\/p>/g, "");
+    .replace(/<p><\/p>/g, "")
+    // block elements must not sit inside <p> (the SPA renderer tolerates it; crawlers prefer valid HTML)
+    .replace(/<p>\s*(<(?:h2|h3|ul)>)/g, "$1")
+    .replace(/(<\/(?:h2|h3|ul)>)\s*<\/p>/g, "$1")
+    .replace(/^<\/p>/, "");
 }
 
 // App Store campaign token: max 40 chars, [a-z0-9_].

@@ -126,3 +126,6 @@ verify_jwt = false
 
 [functions.mcp]
 verify_jwt = false
+
+[functions.asc-snapshot]
+verify_jwt = false # protected by x-ops-secret header (OPS_CRON_SECRET); called only by pg_cron

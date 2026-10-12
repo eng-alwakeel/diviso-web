@@ -16,6 +16,194 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "track-wedding-cash-gifts-nuqoot-reciprocate-later",
+    title: "كيف تتبّع \"النقوط\" في الأعراس لتعرف بالضبط كم ترد لكل شخص؟",
+    titleEn: "How to Track Wedding Cash Gifts So You Know Exactly How Much to Give Back",
+    description: "النقوط في الأعراس تحمل توقعاً ضمنياً برد نفس المبلغ عندما يتزوج صاحبها لاحقاً، لكن مرور سنوات بين المناسبتين يجعل تذكر المبلغ الدقيق صعباً. الحل: دفتر مسجَّل بالاسم والمبلغ والمناسبة لكل نقطة، يُربط كل رد بنفس نوع المناسبة لا بالمبلغ الإجمالي. دليل عملي بمثال حسابي.",
+    descriptionEn: "Wedding cash gifts (nuqoot) carry an implicit expectation that you'll give back the same amount when the giver later holds their own wedding, but years passing between the two events make the exact figure hard to remember. The fix: a dated ledger per giver, matching each reciprocation to the same occasion type rather than a lump total. A practical guide with a worked example.",
+    keywords: ["تتبع النقوط في الأعراس", "كم ارد نقطة العرس", "تسجيل فلوس النقوط", "دفتر النقوط العائلي", "رد النقطة في الزواج", "كيف نحسب رد نقطة سابقة"],
+    keywordsEn: ["tracking wedding cash gifts", "how much to give back at a wedding", "wedding gift reciprocation ledger", "nuqoot tracking app", "recording money gifts at weddings", "wedding money gift etiquette"],
+    category: "tips",
+    readTime: 7,
+    publishDate: "2026-10-12",
+    content: `
+## الإجابة المختصرة
+
+"النقوط" هي المال الذي يُقدَّم كهدية في الأعراس في كثير من المجتمعات، وتحمل توقعاً اجتماعياً ضمنياً بأن يُرَدّ على الأقل نفس المبلغ عندما يتزوج مُقدِّم النقطة نفسه أو أحد أبنائه لاحقاً. بما أن سنوات طويلة قد تفصل بين استلام النقطة ومناسبة ردّها، وقد تتكرر أعراس كثيرة بينهما، يصعب تذكر المبلغ الدقيق بلا تسجيل. الحل الأعدل: **دفتر مؤرَّخ يسجّل كل نقطة باسم مقدِّمها ومبلغها ونوع المناسبة**، ويُربط كل رد مستقبلي بنفس نوع المناسبة التي قُدِّمت فيها النقطة الأصلية، لا بمجموع كل ما قدّمه ذلك الشخص عبر السنين.
+
+## لماذا لا تكفي الذاكرة لتتبع النقوط؟
+
+- **قد تمر سنوات بين استلام نقطة ومناسبة ردّها**، فيصعب تذكر المبلغ الدقيق بعد هذا الوقت الطويل
+- **الشخص الواحد قد يقدّم أكثر من نقطة عبر مناسبات مختلفة** (عرس ابنته، ثم عرس ابنه)، فيختلط الحساب إذا لم تُسجَّل كل نقطة بمناسبتها
+- **الاعتماد على التقدير التقريبي يخلق إحراجاً اجتماعياً** إذا رُدَّ مبلغ أقل من المتوقع بسبب النسيان، لا بسبب نية التقصير
+
+## لماذا يُربَط الرد بنوع المناسبة لا بالمجموع الكلي؟
+
+العادة المتبعة في أغلب العائلات أن **كل نقطة تُقابل مناسبة مشابهة لها لاحقاً**، لا أن تُجمَع كل النقوط من شخص واحد في مبلغ واحد يُرَدّ دفعة واحدة. فإذا قدّم شخص نقطة في عرس ابنتك، يُرَدّ له مبلغ مماثل في عرس ابنته هو، بصرف النظر عن أي نقطة أخرى قدّمها في مناسبة مختلفة (كعرس ابنك مثلاً)، لأن كل مناسبة تُعامَل كالتزام مستقل له طرفه المقابل الخاص به.
+
+## القاعدة الأساسية
+
+**لكل نقطة تُستلَم: سجّل اسم مقدِّمها + المبلغ + تاريخها + نوع المناسبة (عرس ابن/عرس ابنة/زواج الشخص نفسه).**
+**عند حلول مناسبة مشابهة لنفس مقدِّم النقطة لاحقاً، يُرَدّ المبلغ المسجَّل لتلك المناسبة المحدَّدة بالضبط، لا مجموع كل ما قدّمه ذلك الشخص عبر كل المناسبات.**
+
+## مثال عملي كامل
+
+عائلة تحتفظ بدفتر نقوط مسجَّل عبر السنين:
+
+- **2018**: استلمت العائلة **400 ريال** من "العم خالد" بمناسبة زواج ابنتها
+- **2020**: استلمت العائلة **600 ريال** من "العم خالد" نفسه، لكن بمناسبة زواج ابنها هذه المرة
+
+**في 2022، تزوجت ابنة العم خالد.** بالرجوع للدفتر:
+- المناسبة المشابهة (زواج ابنة) كانت في 2018 بمبلغ **400 ريال**
+- مناسبة زواج الابن (600 ريال) لا تُحسب هنا لأنها مناسبة من نوع مختلف
+
+**الرد المناسب لزواج ابنة العم خالد** = **400 ريال** (مطابقة لنوع المناسبة الأصلية، لا 600 ولا مجموع الاثنين 1,000)
+
+**لاحقاً عندما يتزوج ابن العم خالد (إن وُجد)**، يُرَدّ له مبلغ مماثل لـ 600 ريال، وهو المبلغ المسجَّل بمناسبة زواج الابن تحديداً.
+
+## ماذا لو لم تتذكروا نوع المناسبة الأصلية بالضبط؟
+
+في هذه الحالة، أقرب تقدير معقول هو الرجوع لآخر نقطة مسجَّلة من نفس الشخص، أو الاتفاق العائلي على اعتماد مبلغ واحد متوسط إذا تعذّر التمييز بين المناسبات القديمة. لكن هذا يُظهر أهمية التسجيل الفوري لكل نقطة بدل الاعتماد على الذاكرة لاحقاً.
+
+## هل يجب تعديل المبلغ المرجوع بسبب التضخم أو مرور الوقت؟
+
+لا توجد قاعدة ثابتة، لكن كثيراً من العائلات تزيد المبلغ المرجوع بشكل رمزي (مثل التقريب للأعلى) إذا مرّت سنوات طويلة، مع بقاء المبلغ الأصلي المسجَّل هو الحد الأدنى المتوقع كأساس للمقارنة.
+
+## خطوات عملية لتنظيم دفتر النقوط العائلي
+
+### الخطوة 1: سجّلوا كل نقطة فور استلامها مباشرة
+لا تنتظروا حتى تنتهي المناسبة أو تمر أيام، لتجنّب نسيان التفاصيل الدقيقة.
+
+### الخطوة 2: دوّنوا نوع المناسبة بوضوح مع كل نقطة
+"عرس ابن"، "عرس ابنة"، أو "زواج الشخص نفسه" — فهذا التصنيف هو مفتاح الرد الصحيح لاحقاً.
+
+### الخطوة 3: راجعوا الدفتر قبل كل مناسبة قادمة تخص نفس الأشخاص
+قبل عرس أي قريب أو صديق سبق وقدّم نقطة، ابحثوا في الدفتر عن المناسبة المشابهة المسجَّلة باسمه.
+
+### الخطوة 4: سجّلوا أيضاً كل نقطة تُقدِّمها العائلة لغيرها
+لتتبع الالتزامات في الاتجاهين، لا فقط ما استُلم.
+
+## أخطاء شائعة عند تتبع النقوط
+
+- **عدم تسجيل النقطة فور استلامها، والاعتماد على الذاكرة لاحقاً**
+- **رد مجموع كل النقوط من شخص واحد دفعة واحدة بدل ربط كل رد بمناسبته المشابهة**
+- **الخلط بين نقوط مناسبات مختلفة من نفس الشخص** (عرس ابن مقابل عرس ابنة)
+- **تسجيل النقطة دون تاريخ أو نوع مناسبة واضح**، مما يصعّب الرجوع إليها بعد سنوات
+
+## كيف يساعدكم Diviso في تتبع النقوط العائلية؟
+
+- ✅ تسجيل كل نقطة بالاسم والمبلغ والتاريخ ونوع المناسبة في مكان واحد
+- ✅ سجل قابل للرجوع إليه بسهولة قبل أي مناسبة قادمة
+- ✅ تتبع مستقل للنقوط المستلمة والمقدَّمة لتوضيح الالتزامات في الاتجاهين
+- ✅ دفتر عائلي يستمر عبر السنين دون اعتماد على ذاكرة فرد واحد فقط
+
+## أسئلة شائعة
+
+### هل يجب رد مجموع كل النقوط التي قدّمها شخص واحد عبر كل المناسبات دفعة واحدة؟
+لا، العادة المتبعة أن تُربَط كل نقطة بمناسبتها المشابهة لاحقاً بشكل مستقل، لا أن تُجمَع كل نقوط شخص واحد في رد واحد شامل.
+
+### ماذا لو لم أتذكر مبلغ نقطة قُدِّمت لي منذ سنوات؟
+هذا يوضح أهمية تسجيل كل نقطة فور استلامها بالاسم والمبلغ والتاريخ ونوع المناسبة، بدل الاعتماد على الذاكرة التي تضعف مع مرور الوقت.
+
+### هل يجب زيادة المبلغ المرجوع لمراعاة التضخم بعد سنوات طويلة؟
+لا توجد قاعدة ملزمة، لكن زيادة رمزية مقبولة عرفياً في بعض العائلات، مع بقاء المبلغ الأصلي المسجَّل هو الأساس المرجعي للمقارنة.
+
+## الخلاصة
+
+تتبع النقوط في الأعراس لا يحتاج للاعتماد على الذاكرة: سجّلوا كل نقطة فور استلامها بالاسم والمبلغ والمناسبة، واربطوا كل رد مستقبلي بنفس نوع المناسبة الأصلية، وستتجنبون أي إحراج أو نسيان لاحقاً.
+
+**جرب Diviso الآن وسجّل نقوط أعراسكم بدقة لترد كل مبلغ في وقته الصحيح.**
+    `,
+    contentEn: `
+## Quick Answer
+
+"Nuqoot" is cash money given as a gift at weddings in many Arab and other cultures, carrying an implicit social expectation that the recipient will give back at least the same amount when the giver later holds their own wedding or their child's. Since years can pass between receiving a gift and the occasion to reciprocate it, with many other weddings happening in between, the exact figure becomes hard to recall without a record. The fairer fix: **a dated ledger logging each gift's giver, amount, and occasion type**, with every future reciprocation matched to the same occasion type as the original gift, not to the total sum that person has ever given over the years.
+
+## Why Isn't Memory Enough to Track These Gifts?
+
+- **Years may pass between receiving a gift and the occasion to reciprocate it**, making the exact amount hard to remember after that much time
+- **The same person may give more than one gift across different occasions** (their daughter's wedding, then their son's), so the math gets confused if each gift isn't logged with its own occasion
+- **Relying on a rough estimate creates social awkwardness** if you give back less than expected simply because you forgot, not because you meant to shortchange anyone
+
+## Why Match the Reciprocation to the Occasion Type Instead of a Lump Total?
+
+The convention followed by most families is that **each gift is matched to a similar future occasion**, rather than lumping everything a single person has given into one total paid back at once. If someone gave a gift at your daughter's wedding, you give back a comparable amount at their own daughter's wedding, regardless of any other gift they gave at a different occasion (like your son's wedding), because each occasion is treated as its own independent obligation with its own matching counterpart.
+
+## The Core Rule
+
+**For every gift received: log the giver's name + the amount + the date + the occasion type (son's wedding / daughter's wedding / the person's own wedding).**
+**When a similar occasion for that same giver comes up later, give back the amount recorded for that specific occasion, not the sum of everything that person has ever given across all occasions.**
+
+## A Complete Worked Example
+
+A family keeps a wedding gift ledger recorded over the years:
+
+- **2018**: the family received **400 SAR** from "Uncle Khaled" on the occasion of their daughter's wedding
+- **2020**: the family received **600 SAR** from the same Uncle Khaled, but this time on the occasion of their son's wedding
+
+**In 2022, Uncle Khaled's own daughter gets married.** Checking the ledger:
+- The matching occasion (a daughter's wedding) was in 2018, for **400 SAR**
+- The son's wedding gift (600 SAR) isn't counted here, since it's a different occasion type
+
+**The appropriate gift back for Uncle Khaled's daughter's wedding** = **400 SAR** (matching the original occasion type, not 600, and not the combined total of 1,000)
+
+**Later, when Uncle Khaled's son gets married** (if he has one), the matching gift back would be the 600 SAR recorded specifically for the son's wedding occasion.
+
+## What If You Don't Remember the Original Occasion Type Exactly?
+
+In that case, the closest reasonable estimate is to use the most recently logged gift from that same person, or for the family to agree on a single averaged amount when older occasions can't be distinguished. But this itself shows why logging every gift immediately matters, rather than relying on memory later.
+
+## Should the Amount Be Adjusted for Inflation or Time Passed?
+
+There's no fixed rule, but many families round the amount up symbolically if many years have passed, while the originally recorded amount remains the baseline reference point for comparison.
+
+## A Practical System for Organizing a Family Wedding Gift Ledger
+
+### Step 1: Log Each Gift Immediately as It's Received
+Don't wait until the occasion ends or days pass, to avoid forgetting the exact details.
+
+### Step 2: Clearly Note the Occasion Type With Each Gift
+"Son's wedding," "daughter's wedding," or "the person's own wedding" — this classification is the key to the correct reciprocation later.
+
+### Step 3: Check the Ledger Before Any Upcoming Occasion Involving the Same People
+Before any relative's or friend's wedding who previously gave a gift, look up the matching occasion recorded under their name.
+
+### Step 4: Also Log Every Gift Your Own Family Gives to Others
+To track obligations in both directions, not just what was received.
+
+## Common Mistakes When Tracking Wedding Cash Gifts
+
+- **Not logging the gift as soon as it's received, and relying on memory later**
+- **Giving back the total sum of everything one person has ever given at once, instead of matching each reciprocation to its similar occasion**
+- **Confusing gifts from different occasions given by the same person** (a son's wedding versus a daughter's wedding)
+- **Logging a gift without a clear date or occasion type**, making it hard to reference years later
+
+## How Diviso Helps Track Family Wedding Gifts
+
+- ✅ Logs every gift's giver, amount, date, and occasion type in one place
+- ✅ An easily searchable record to check before any upcoming occasion
+- ✅ Independent tracking of gifts received and given, clarifying obligations in both directions
+- ✅ A family ledger that persists across years, instead of relying on one person's memory
+
+## Frequently Asked Questions
+
+### Should I give back the total sum of everything one person has ever given me, all at once?
+No. The common convention is to match each gift to its own similar future occasion independently, rather than lumping all of one person's gifts into a single combined repayment.
+
+### What if I don't remember the amount of a gift I received years ago?
+This shows why logging every gift immediately with the name, amount, date, and occasion type matters, rather than relying on memory that fades over time.
+
+### Should the amount given back be increased to account for inflation after many years?
+There's no binding rule, but a symbolic increase is customarily accepted in some families, while the originally recorded amount remains the baseline reference for comparison.
+
+## Conclusion
+
+Tracking wedding cash gifts doesn't have to rely on memory: log every gift as soon as it's received with the name, amount, and occasion, and match every future reciprocation to that same original occasion type, and you'll avoid any awkwardness or forgetting later.
+
+**Try Diviso now and track your family's wedding gifts accurately so you give back the right amount at the right time.**
+    `
+  },
+  {
     slug: "split-trip-costs-friends-different-currencies-exchange-rate",
     title: "كيف تُقسَّم مصاريف الرحلة بين أصدقاء يدفعون بعملات مختلفة؟",
     titleEn: "How to Split Trip Costs Fairly When Friends Pay in Different Currencies",

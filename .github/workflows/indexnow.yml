@@ -1,0 +1,77 @@
+name: IndexNow after deploy
+
+# Pings IndexNow (Bing, Yandex, Seznam, Naver… share submissions) for blog and
+# landing URLs changed by a push to main, after Vercel has served the new
+# prerendered HTML. Replaces the manual curl to the Supabase `indexnow`
+# function. No secrets needed: the key is public at /indexnow-key.txt.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/content/blog/**"
+      - "src/content/seo-pages/**"
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "Space-separated absolute URLs to submit manually"
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Collect changed URLs
+        id: urls
+        run: |
+          set -euo pipefail
+          URLS="${{ github.event.inputs.urls }}"
+          if [ -z "$URLS" ] && git rev-parse HEAD~1 >/dev/null 2>&1; then
+            for slug in $(git diff HEAD~1 HEAD -- src/content/blog/articles.ts \
+                | grep -E '^\+\s+slug:' | sed -E 's/.*slug:\s*"([^"]+)".*/\1/'); do
+              URLS="$URLS https://diviso.app/blog/$slug"
+            done
+            for route in $(git diff HEAD~1 HEAD -- src/content/seo-pages/seoLandingPagesData.ts \
+                | grep -E "^\+\s+route:" | sed -E "s/.*route:\s*['\"]([^'\"]+)['\"].*/\1/"); do
+              URLS="$URLS https://diviso.app$route"
+            done
+            [ -n "$URLS" ] && URLS="$URLS https://diviso.app/blog https://diviso.app/sitemap.xml"
+          fi
+          URLS=$(echo $URLS | xargs -n1 | sort -u | xargs)
+          echo "urls=$URLS" >> "$GITHUB_OUTPUT"
+          echo "URLs: ${URLS:-<none>}"
+
+      - name: Wait for Vercel to serve the new pages
+        if: steps.urls.outputs.urls != ''
+        run: |
+          set -uo pipefail
+          FIRST=$(echo "${{ steps.urls.outputs.urls }}" | xargs -n1 | grep '/blog/' | head -1 || true)
+          [ -z "$FIRST" ] && FIRST=$(echo "${{ steps.urls.outputs.urls }}" | xargs -n1 | head -1)
+          for i in $(seq 1 40); do
+            if curl -fsS "$FIRST" | grep -q "<link rel=\"canonical\" href=\"${FIRST}\""; then
+              echo "Live after $((i*15))s: $FIRST"; exit 0
+            fi
+            sleep 15
+          done
+          echo "::warning::$FIRST not live with its own canonical after 10 min; submitting anyway"
+
+      - name: Submit to IndexNow
+        if: steps.urls.outputs.urls != ''
+        run: |
+          set -euo pipefail
+          KEY=$(curl -fsS https://diviso.app/indexnow-key.txt | tr -d '[:space:]')
+          LIST=$(echo "${{ steps.urls.outputs.urls }}" | xargs -n1 | jq -R . | jq -s .)
+          BODY=$(jq -n --arg key "$KEY" --argjson urls "$LIST" \
+            '{host:"diviso.app", key:$key, keyLocation:"https://diviso.app/indexnow-key.txt", urlList:$urls}')
+          CODE=$(curl -s -o /tmp/resp -w '%{http_code}' -X POST https://api.indexnow.org/indexnow \
+            -H 'Content-Type: application/json; charset=utf-8' -d "$BODY")
+          echo "IndexNow HTTP $CODE"; cat /tmp/resp || true
+          case "$CODE" in 200|202) ;; *) echo "::warning::IndexNow returned $CODE" ;; esac

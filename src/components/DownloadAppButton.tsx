@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Button, ButtonProps } from "@/components/ui/button";
 import { Download } from "lucide-react";
-import { APP_STORE_URL } from "@/lib/appStoreLinks";
+import { appStoreUrl, trackAppStoreClick } from "@/lib/appStoreLinks";
 import { detectPlatform } from "@/lib/platform";
 import { useAnalyticsEvents } from "@/hooks/useAnalyticsEvents";
 
@@ -30,7 +30,8 @@ export const DownloadAppButton: React.FC<DownloadAppButtonProps> = ({
     const platform = detectPlatform();
     trackEvent("download_clicked", { store: platform === "ios" ? "ios" : "download_page", source });
     if (platform === "ios") {
-      window.open(APP_STORE_URL, "_blank", "noopener,noreferrer");
+      trackAppStoreClick(`web_${source}`);
+      window.open(appStoreUrl(`web_${source}`), "_blank", "noopener,noreferrer");
     } else {
       navigate("/download");
     }

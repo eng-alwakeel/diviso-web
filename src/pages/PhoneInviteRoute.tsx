@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { Phone, ArrowRight } from 'lucide-react';
 import { trackAnalyticsEvent } from '@/hooks/useAnalyticsEvents';
-import { APP_STORE_ID, APP_STORE_URL, EXTERNAL_LINK_PROPS } from '@/lib/appStoreLinks';
+import { APP_STORE_ID, EXTERNAL_LINK_PROPS, appStoreUrl, trackAppStoreClick } from '@/lib/appStoreLinks';
 
 // Phone invites are accepted inside the mobile app now — the web page only
 // points the invitee at the App Store (with a smart banner for installed users).
@@ -22,6 +22,7 @@ const PhoneInviteRoute = () => {
   }, [token]);
 
   const handleDownload = () => {
+    trackAppStoreClick("invite_phone");
     trackAnalyticsEvent('download_clicked', { store: 'ios', source: 'phone_invite', token });
   };
 
@@ -40,7 +41,7 @@ const PhoneInviteRoute = () => {
         </CardHeader>
         <CardContent className="space-y-3">
           <Button asChild size="lg" className="w-full gap-2 font-bold">
-            <a href={APP_STORE_URL} {...EXTERNAL_LINK_PROPS} onClick={handleDownload}>
+            <a href={appStoreUrl("invite_phone")} {...EXTERNAL_LINK_PROPS} onClick={handleDownload}>
               حمّل التطبيق من App Store
               <ArrowRight className="w-4 h-4" />
             </a>

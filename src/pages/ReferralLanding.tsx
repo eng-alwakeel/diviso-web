@@ -7,7 +7,7 @@ import { Card } from "@/components/ui/card";
 import { Gift, Sparkles, Users, Wallet, Apple, Smartphone, ArrowRight, Loader2 } from "lucide-react";
 import { useAnalyticsEvents } from "@/hooks/useAnalyticsEvents";
 
-import { ANDROID_AVAILABLE, APP_STORE_URL, APP_STORE_ID, PLAY_STORE_URL, EXTERNAL_LINK_PROPS } from "@/lib/appStoreLinks";
+import { ANDROID_AVAILABLE, APP_STORE_ID, appStoreUrl, trackAppStoreClick, PLAY_STORE_URL, EXTERNAL_LINK_PROPS } from "@/lib/appStoreLinks";
 import { detectPlatform, Platform } from "@/lib/platform";
 const DEEP_LINK_SCHEME = "diviso://referral";
 
@@ -77,7 +77,8 @@ export default function ReferralLanding() {
   const handleDownload = (store: "ios" | "android") => {
     if (store === "android" && !ANDROID_AVAILABLE) return;
     trackEvent("download_clicked", { store, code: referralCode });
-    window.open(store === "ios" ? APP_STORE_URL : PLAY_STORE_URL, "_blank", "noopener,noreferrer");
+    if (store === "ios") trackAppStoreClick("referral");
+    window.open(store === "ios" ? appStoreUrl("referral") : PLAY_STORE_URL, "_blank", "noopener,noreferrer");
   };
 
   const handleOpenInApp = () => {

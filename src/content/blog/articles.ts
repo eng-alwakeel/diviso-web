@@ -16,6 +16,184 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-henna-night-costs-bride-groom-families-guest-count",
+    title: "كيف تُقسَّم تكلفة حفل الحناء بين عائلة العروس وعائلة العريس؟",
+    titleEn: "How Should the Bride's and Groom's Families Split Henna Night Costs?",
+    description: "عند تنظيم حفل حناء مشترك بين عائلة العروس وعائلة العريس، القسمة بالتساوي بين الجانبين غير عادلة إذا اختلف عدد ضيوف كل جانب. الحل: تقسيم التكلفة المشتركة بنسبة عدد الضيوف الذي دعاه كل جانب، لا بالتساوي الكامل. دليل عملي بمثال حسابي.",
+    descriptionEn: "When the bride's and groom's families co-host a henna night, splitting the shared cost equally between both sides isn't fair if one side invites far more guests. The fix: split the shared cost proportional to each side's share of total invited guests, not a flat 50/50. A practical guide with a worked example.",
+    keywords: ["تقسيم تكلفة حفل الحناء", "من يدفع حفل الحناء العروس أم العريس", "توزيع تكلفة الحناء بين العائلتين", "تنظيم حفل حناء مشترك", "تقسيم مصاريف ليلة الحناء", "حفل الحناء بين عائلة العروس والعريس"],
+    keywordsEn: ["splitting henna night costs", "who pays for the henna night bride or groom", "dividing henna party costs between families", "organizing a shared henna night", "henna night expense split", "bride and groom family henna costs"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-10-13",
+    content: `
+## الإجابة المختصرة
+
+عند تنظيم حفل حناء مشترك تحضره عائلة العروس وعائلة العريس معاً، **القسمة بالتساوي الكامل (50/50) بين الجانبين غير عادلة** إذا دعا أحد الجانبين عدداً أكبر من الضيوف. القاعدة الأعدل: **تُقسَّم التكاليف المشتركة (كالقاعة والضيافة والترفيه) بنسبة عدد الضيوف الذي دعاه كل جانب من إجمالي عدد الحضور**، بينما يتحمّل كل جانب بمفرده أي تكلفة خاصة به فقط (كمصففة شعر العروس الخاصة أو ملابس خاصة بأحد الجانبين).
+
+## لماذا لا تصح القسمة بالتساوي الكامل بين الجانبين؟
+
+- **كل ضيف إضافي يزيد التكلفة الفعلية** (الضيافة، المقاعد، أحياناً مساحة القاعة المطلوبة)، فمن دعا ضيوفاً أكثر تسبّب في جزء أكبر من التكلفة الإجمالية
+- **القسمة المتساوية تُحمِّل الجانب الأقل دعوة للضيوف جزءاً من تكلفة ضيوف الجانب الآخر**، وهذا لا يبدو منطقياً لأي من الطرفين عند المناقشة
+- **الاتفاق المسبق على نسبة واضحة يمنع أي خلاف لاحق** عند مراجعة الفاتورة النهائية بعد الحفل
+
+## القاعدة الأساسية
+
+**حصة كل جانب من التكلفة المشتركة = (عدد الضيوف الذي دعاه ذلك الجانب ÷ إجمالي عدد الضيوف المدعوين) × التكلفة المشتركة الإجمالية**
+**أي تكلفة خاصة بجانب واحد فقط (لا يستفيد منها الجانب الآخر) تُحمَّل بالكامل على ذلك الجانب، ولا تدخل ضمن التكلفة المشتركة التي تُقسَّم بالنسبة.**
+
+## مثال عملي كامل (بالنسب بدل الأرقام المالية)
+
+عائلتان تنظّمان حفل حناء مشترك بإجمالي 200 ضيف:
+
+- **عائلة العروس**: دعت 120 ضيفاً، أي **60%** من إجمالي الحضور
+- **عائلة العريس**: دعت 80 ضيفاً، أي **40%** من إجمالي الحضور
+
+**التكاليف المشتركة** (القاعة، الضيافة العامة، الفرقة الموسيقية أو الترفيه المشترك) تُقسَّم بنفس هاتين النسبتين:
+- **عائلة العروس تتحمّل 60%** من إجمالي التكلفة المشتركة
+- **عائلة العريس تتحمّل 40%** من إجمالي التكلفة المشتركة
+
+### ماذا عن التكاليف الخاصة بجانب واحد؟
+لنفترض أن عائلة العروس استعانت بمصففة شعر خاصة لها فقط، وعائلة العريس استأجرت سيارة زفة خاصة بها فقط. هاتان التكلفتان **لا تدخلان ضمن التكلفة المشتركة المقسومة بالنسبة 60/40**، بل تتحمّل كل عائلة تكلفتها الخاصة بالكامل بمفردها.
+
+## ماذا لو تغيّر عدد الضيوف الفعلي عن العدد المخطط له قبل الحفل؟
+
+تُحسَب النسبة النهائية على أساس **عدد الضيوف الذي أكّد الحضور فعلياً قريباً من موعد الحفل**، لا العدد التقديري الأولي، لأن هذا الرقم الفعلي هو ما يحدد التكلفة الحقيقية للضيافة والمقاعد.
+
+## ماذا لو كان أحد الجانبين يفضّل حفلاً أكبر من الآخر؟
+
+إذا رغب جانب واحد في عنصر إضافي يرفع التكلفة الإجمالية (كديكور أفخم أو فرقة أكبر) دون أن يطلبه الجانب الآخر، فمن الأعدل اعتبار الفرق في التكلفة الناتج عن هذا الطلب **تكلفة خاصة بالجانب الذي طلبه**، وليس جزءاً من التكلفة المشتركة المقسومة بالنسبة.
+
+## خطوات عملية لتنظيم تكلفة حفل الحناء بين العائلتين
+
+### الخطوة 1: اتفقا على قائمة ضيوف كل جانب مبكراً
+وحدّدا نسبة كل جانب من إجمالي الحضور بشكل تقريبي قبل البدء في التخطيط المالي.
+
+### الخطوة 2: صنّفا كل بند من بنود التنظيم كـ "مشترك" أو "خاص بجانب واحد" منذ البداية
+هذا التصنيف هو أساس كل الحساب اللاحق.
+
+### الخطوة 3: راجعا قائمة الضيوف النهائية قريباً من موعد الحفل
+لتحديث نسبة التقسيم إذا تغيّر عدد الحضور الفعلي عن التقدير الأولي.
+
+### الخطوة 4: وثّقا كل بند وتكلفته بشكل منفصل فور حسم كل خدمة
+بدل تجميع كل شيء في رقم واحد يصعب تفصيله لاحقاً عند التسوية.
+
+## أخطاء شائعة عند تقسيم تكلفة حفل الحناء
+
+- **القسمة بالتساوي الكامل (50/50) دون مراعاة فرق عدد الضيوف بين الجانبين**
+- **عدم تصنيف البنود الخاصة بجانب واحد بشكل مستقل**، فتُحسب ضمن التكلفة المشتركة بالخطأ
+- **الاعتماد على عدد الضيوف التقديري الأولي بدل العدد الفعلي المؤكد قريباً من الحفل**
+- **تأخير الاتفاق على طريقة التقسيم حتى وصول الفاتورة النهائية**، مما يصعّب النقاش تحت ضغط الوقت
+
+## كيف يساعدكم Diviso في تنظيم تكلفة حفل الحناء بين العائلتين؟
+
+- ✅ تسجيل كل بند كـ "مشترك" أو "خاص بجانب واحد" في مجموعة واحدة منظمة
+- ✅ حساب تلقائي لحصة كل جانب من التكلفة المشتركة بنسبة عدد ضيوفه
+- ✅ سجل شفاف يوضح لكل عائلة كيف وصلت إلى المبلغ المطلوب منها بالضبط
+- ✅ سهولة تحديث النسب إذا تغيّر عدد الضيوف الفعلي قريباً من موعد الحفل
+
+## أسئلة شائعة
+
+### هل يجب أن تدفع كل عائلة نصف تكلفة حفل الحناء بالتساوي؟
+ليس بالضرورة، فالأعدل تقسيم التكاليف المشتركة بنسبة عدد الضيوف الذي دعاه كل جانب من إجمالي الحضور، لا بالتساوي الكامل، إلا إذا تساوى عدد ضيوف الجانبين بالفعل.
+
+### كيف نتعامل مع تكلفة خاصة بجانب واحد فقط (كمصففة شعر العروس)؟
+تتحمّلها تلك العائلة بمفردها بالكامل، ولا تُحسَب ضمن التكلفة المشتركة التي تُقسَّم بنسبة عدد الضيوف بين الجانبين.
+
+### أي عدد ضيوف يُستخدَم في حساب النسبة، التقديري أم الفعلي؟
+يُستخدَم عدد الضيوف الذي أكّد الحضور فعلياً قريباً من موعد الحفل، لأنه الأقرب للتكلفة الحقيقية للضيافة والمقاعد، لا العدد التقديري الأولي.
+
+## الخلاصة
+
+تقسيم تكلفة حفل الحناء بين عائلة العروس وعائلة العريس لا يحتاج لنصف-نصف تلقائي: اتفقا على نسبة كل جانب بناءً على عدد ضيوفه، وصنّفا التكاليف الخاصة من المشتركة منذ البداية، وستتجنبان أي خلاف بعد الحفل.
+
+**جرب Diviso الآن ونظّم تقسيم تكلفة حفل الحناء بعدل بين عائلتي العروس والعريس.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When the bride's and groom's families co-host a shared henna night, **splitting the cost fully equally (50/50) between the two sides isn't fair** if one side invites noticeably more guests than the other. The fairer rule: **split the shared costs (the venue, general catering, and entertainment) proportional to each side's share of the total number of invited guests**, while each side separately covers any cost specific only to itself (like the bride's private hairstylist or an item used only by one side).
+
+## Why Isn't a Flat 50/50 Split Fair Between the Two Sides?
+
+- **Every additional guest raises the actual cost** (catering, seating, sometimes the venue space required), so whichever side invited more guests caused a larger share of the total cost
+- **An equal split makes the side that invited fewer guests cover part of the other side's guests' cost**, which doesn't seem reasonable to either side once discussed
+- **Agreeing on a clear ratio in advance prevents any later dispute** when reviewing the final bill after the event
+
+## The Core Rule
+
+**Each side's share of the shared cost = (the number of guests that side invited ÷ the total number of invited guests) × the total shared cost**
+**Any cost specific to only one side (that the other side doesn't benefit from) is borne entirely by that side and isn't included in the shared cost split by ratio.**
+
+## A Complete Worked Example (Using Ratios Instead of Currency Figures)
+
+Two families organize a shared henna night with 200 total guests:
+
+- **The bride's family**: invited 120 guests, or **60%** of total attendance
+- **The groom's family**: invited 80 guests, or **40%** of total attendance
+
+**The shared costs** (the venue, general catering, and any shared band or entertainment) are split using these exact same ratios:
+- **The bride's family covers 60%** of the total shared cost
+- **The groom's family covers 40%** of the total shared cost
+
+### What About Costs Specific to Only One Side?
+Suppose the bride's family hired a private hairstylist for the bride only, and the groom's family rented a special procession car for its own side only. Neither of these costs **is included in the shared cost split at the 60/40 ratio** — each family covers its own specific cost entirely on its own.
+
+## What If the Actual Guest Count Changes Before the Event?
+
+The final ratio is calculated based on **the number of guests who actually confirmed attendance close to the event date**, not the initial estimated headcount, since that actual figure is what determines the real catering and seating cost.
+
+## What If One Side Wants a Bigger Event Than the Other?
+
+If one side wants an extra element that raises the total cost (like fancier decor or a bigger band) that the other side didn't ask for, it's fairer to treat the resulting cost difference as **a cost specific to the side that requested it**, rather than folding it into the shared cost split by ratio.
+
+## A Practical System for Splitting Henna Night Costs Between Two Families
+
+### Step 1: Agree on Each Side's Guest List Early
+Determine each side's approximate share of total attendance before starting any financial planning.
+
+### Step 2: Classify Every Item as "Shared" or "Specific to One Side" From the Start
+This classification is the basis for every calculation that follows.
+
+### Step 3: Review the Final Guest List Close to the Event Date
+To update the split ratio if the actual attendance changes from the initial estimate.
+
+### Step 4: Log Each Item and Its Cost Separately as Soon as a Service Is Booked
+Instead of lumping everything into one number that's hard to break down later during settlement.
+
+## Common Mistakes When Splitting Henna Night Costs
+
+- **Splitting the cost fully equally (50/50) without accounting for the difference in guest count between the two sides**
+- **Not classifying items specific to one side separately**, so they get mistakenly folded into the shared cost
+- **Relying on the initial estimated guest count instead of the actual confirmed number close to the event**
+- **Delaying the agreement on a split method until the final bill arrives**, making the discussion harder under time pressure
+
+## How Diviso Helps Split Henna Night Costs Between Two Families
+
+- ✅ Logs every item as "shared" or "specific to one side" within one organized group
+- ✅ Automatically calculates each side's share of the shared cost based on its guest ratio
+- ✅ A transparent record showing each family exactly how its required amount was calculated
+- ✅ Easy to update the ratios if the actual guest count changes close to the event date
+
+## Frequently Asked Questions
+
+### Should each family pay exactly half of the henna night cost?
+Not necessarily. It's fairer to split the shared costs proportional to each side's share of total invited guests, rather than a flat 50/50, unless both sides happen to invite the same number of guests.
+
+### How do we handle a cost specific to only one side, like the bride's hairstylist?
+That family covers it entirely on its own, and it isn't included in the shared cost that gets split by each side's guest ratio.
+
+### Which guest count is used to calculate the ratio — estimated or actual?
+The number of guests who actually confirmed attendance close to the event date is used, since it's closest to the real catering and seating cost, not the initial estimated headcount.
+
+## Conclusion
+
+Splitting henna night costs between the bride's and groom's families doesn't have to default to an automatic half-and-half: agree on each side's ratio based on its guest count, and classify shared costs separately from side-specific ones from the start, and you'll avoid any dispute after the event.
+
+**Try Diviso now and organize a fair henna night cost split between the bride's and groom's families.**
+    `
+  },
+  {
     slug: "track-wedding-cash-gifts-nuqoot-reciprocate-later",
     title: "كيف تتبّع \"النقوط\" في الأعراس لتعرف بالضبط كم ترد لكل شخص؟",
     titleEn: "How to Track Wedding Cash Gifts So You Know Exactly How Much to Give Back",

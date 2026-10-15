@@ -90,6 +90,13 @@ const InviteRoute = () => {
     return () => m.remove();
   }, [code]);
 
+  // Campaign link (App Analytics `ct`) — no extra tracking on the page.
+  const appStoreJoinUrl = `${APP_STORE_URL}?ct=join`;
+  // Custom scheme the app already handles (deep_link_service: diviso://i/<token>).
+  // A same-domain universal link can't open the app from this page, so the
+  // scheme is the explicit "open in app" path; the Smart App Banner stays.
+  const openInAppUrl = `diviso://i/${encodeURIComponent(code ?? "")}`;
+
   const handleDownload = () => {
     trackAnalyticsEvent("download_clicked", { store: "ios", source: "invite", token: code });
   };
@@ -195,9 +202,15 @@ const InviteRoute = () => {
         </p>
 
         <Button asChild size="lg" className="w-full gap-2 font-bold">
-          <a href={APP_STORE_URL} {...EXTERNAL_LINK_PROPS} onClick={handleDownload}>
+          <a href={appStoreJoinUrl} {...EXTERNAL_LINK_PROPS} onClick={handleDownload}>
             {t("groups:messages.download_app", { defaultValue: "حمّل التطبيق" })}
             <ArrowRight className="w-4 h-4" />
+          </a>
+        </Button>
+
+        <Button asChild size="lg" variant="outline" className="w-full">
+          <a href={openInAppUrl}>
+            {t("groups:messages.open_in_app", { defaultValue: "افتح في التطبيق" })}
           </a>
         </Button>
 

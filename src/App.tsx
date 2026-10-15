@@ -71,11 +71,15 @@ const queryClient = new QueryClient({
   },
 });
 
-// /join/:referralCode used to render a web signup form — now lands on the
-// referral download page, preserving the code.
+// /join/:code — shareable entry point. Group invite tokens are UUIDs and go
+// to the invite landing (/i/, universal-linked); anything else is a referral
+// code and keeps landing on the referral download page (/j/), as before.
+const INVITE_TOKEN_RE =
+  /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const JoinReferralRedirect: React.FC = () => {
   const { referralCode } = useParams<{ referralCode: string }>();
-  return <Navigate to={`/j/${referralCode ?? ""}`} replace />;
+  const code = referralCode ?? "";
+  return <Navigate to={INVITE_TOKEN_RE.test(code) ? `/i/${code}` : `/j/${code}`} replace />;
 };
 
 // Inner component that uses router hooks

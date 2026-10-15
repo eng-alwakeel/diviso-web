@@ -16,6 +16,176 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "rotating-savings-circle-jameya-member-leaves-early",
+    title: "ماذا يحدث عند انسحاب عضو من \"الجمعية\" الدورية قبل انتهاء كل الأدوار؟",
+    titleEn: "What Happens When a Member Leaves a Rotating Savings Circle (Jam'iyya) Early?",
+    description: "في الجمعية الدورية، يختلف الحق العادل لعضو ينسحب مبكراً حسب استلامه دوره أم لا: من استلم دوره يبقى ملزماً بدفع كل حصصه المتبقية، ومن لم يستلم دوره يُرَدّ له فقط إجمالي ما دفعه دون زيادة. دليل عملي يوضح القاعدتين بمثال محسوب بالحصص.",
+    descriptionEn: "In a rotating savings circle, a member leaving early has a different fair claim depending on whether they already received their payout: one who did still owes every remaining contribution, while one who hasn't gets back only the total they've already paid in. A practical guide with a worked example in shares.",
+    keywords: ["انسحاب عضو من الجمعية", "جمعية التقسيط الدورية بين الموظفين", "ماذا يحدث لو تركت الجمعية", "تنظيم جمعية موظفين بالتناوب", "استرداد المبلغ من الجمعية", "من يستلم دوره في الجمعية أولاً"],
+    keywordsEn: ["member leaving a rotating savings circle", "jameya payout rules", "rotating credit association member exit", "lending circle early withdrawal", "employee savings circle rotation order", "what happens if you leave a jameya early"],
+    category: "guides",
+    readTime: 8,
+    publishDate: "2026-10-15",
+    content: `
+## الإجابة المختصرة
+
+"الجمعية" (أو جمعية التقسيط الدورية) هي اتفاق بين مجموعة من الأشخاص على مساهمة كل واحد منهم **بحصة متساوية** في كل دورة (أسبوعية أو شهرية مثلاً)، تُجمع هذه الحصص ويحصل عليها **عضو واحد فقط** في كل دورة بالتناوب، حتى يستلم كل عضو دوره مرة واحدة على مدار الدورة الكاملة. عند انسحاب عضو قبل انتهاء كل الأدوار، يختلف حقه العادل حسب نقطة واحدة جوهرية: **هل استلم دوره (دفعته الكاملة) فعلاً أم لا؟** من استلم دوره يبقى ملزماً بدفع كل حصصه المتبقية حتى لو انسحب، ومن لم يستلم دوره بعد يُرَدّ له فقط إجمالي ما دفعه حتى لحظة انسحابه، دون أي زيادة.
+
+## لماذا تختلف القاعدة بين من استلم دوره ومن لم يستلمه؟
+
+- **من استلم دوره حصل فعلياً على دفعة كاملة مقدَّماً من بقية الأعضاء**، قبل أن يُنهي هو نفسه دفع كل حصصه عبر الدورات المتبقية، فانسحابه لا يُلغي هذا الدين المتبقي عليه
+- **من لم يستلم دوره بعد لم يحصل على أي دفعة مقدَّمة**، فكل ما فعله هو دفع حصصه فقط، فمن العدل أن يُرَدّ له بالضبط ما دفعه، لا أكثر ولا أقل
+- **لو تُرِك الأمر دون قاعدة واضحة**، قد ينسحب من استلم دوره بعد توقفه عن الدفع، تاركاً بقية الأعضاء يتحملون خسارة حصته المتبقية
+
+## القاعدة الأساسية
+
+**العضو الذي استلم دوره فعلاً**: يبقى ملزماً بدفع حصته في كل دورة متبقية حتى نهاية الدورة الكاملة، بصرف النظر عن انسحابه من الحضور أو التنظيم الفعلي للجمعية.
+**العضو الذي لم يستلم دوره بعد**: يُرَدّ له إجمالي ما دفعه من حصص حتى لحظة انسحابه فقط، ويُعاد ترتيب دوره المتبقي (بإيجاد عضو بديل يتسلم موضعه، أو بإعادة توزيع الأدوار المتبقية بين الأعضاء الباقين).
+
+## مثال عملي كامل (بالحصص لا بالعملة)
+
+جمعية من **6 أعضاء**، تمتد على **6 أدوار متتالية**، يدفع فيها كل عضو **حصة واحدة** في كل دورة. في كل دورة، يحصل العضو المستحق لتلك الدورة على إجمالي الحصص المجمَّعة من كل الأعضاء الستة، أي **6 حصص**. على مدار الدورة الكاملة، كل عضو يدفع 6 حصص (حصة واحدة في كل دورة) ويستلم 6 حصص مرة واحدة فقط — فتتوازن حساباته في النهاية عند الصفر، والفرق الوحيد بين الأعضاء هو **توقيت** استلام دفعتهم الكاملة.
+
+### الحالة الأولى: عضو استلم دوره ثم انسحب
+العضو "أ" استلم دوره الكامل (6 حصص) في **الدورة الثانية**. دفع حصصه في الدورتين 1 و2 (أي حصتان فقط إلى تلك اللحظة)، فيكون قد استلم 6 حصص بينما دفع فقط حصتين — أي أنه **متقدّم بـ4 حصص** على بقية الأعضاء.
+
+لو انسحب "أ" بعد الدورة الرابعة (دفع حصصه في الدورات 1، 2، 3، 4 = 4 حصص إجمالاً)، يكون الفرق المتبقي عليه = 6 (ما استلمه) − 4 (ما دفعه حتى الآن) = **2 حصتين متبقيتين (دورتا 5 و6)**. هاتان الحصتان **يبقى ملزماً بدفعهما** حتى بعد انسحابه، لأنه استلم دفعته الكاملة مقدَّماً.
+
+### الحالة الثانية: عضو لم يستلم دوره بعد وانسحب
+العضو "ب" من المفترض أن يستلم دوره في **الدورة السادسة (الأخيرة)**. انسحب بعد الدورة الثالثة، وقد دفع حصصه في الدورات 1، 2، 3 (أي 3 حصص إجمالاً)، دون أن يستلم أي دفعة بعد.
+
+في هذه الحالة، **يُرَدّ لـ"ب" 3 حصص بالضبط** (ما دفعه فعلياً)، دون أي زيادة، ويُستبدَل موضعه في الدورة السادسة بعضو جديد يلتزم بدفع الحصص المتبقية من تلك اللحظة، أو تُعاد جدولة الأدوار المتبقية بين الأعضاء الحاليين.
+
+## ماذا لو لم يوجد عضو بديل يحل محل من انسحب قبل استلام دوره؟
+
+في هذه الحالة، يمكن للأعضاء الباقين توزيع حصة العضو المنسحب على بقية الدورات، أو تقليص عدد الدورات المتبقية إذا قبل الجميع بذلك، شرط أن يُرَدّ للعضو المنسحب ما دفعه بالكامل أولاً قبل أي إعادة ترتيب.
+
+## خطوات عملية لتنظيم جمعية دورية دون خلافات لاحقة
+
+### الخطوة 1: حدّدوا ترتيب الأدوار وقيمة الحصة قبل بدء أول دورة
+وثّقوا من يستلم في كل دورة بالضبط، لتجنب أي نقاش لاحق حول الترتيب.
+
+### الخطوة 2: سجّلوا كل دفعة فور حدوثها لكل عضو على حدة
+لمعرفة بدقة من استلم دوره فعلاً ومن لا يزال في الانتظار في أي لحظة.
+
+### الخطوة 3: اتفقوا مسبقاً على القاعدتين أعلاه كشرط للانضمام للجمعية
+ليعرف كل عضو منذ البداية ماذا يحدث لو احتاج للانسحاب قبل انتهاء الدورة الكاملة.
+
+### الخطوة 4: حدّدوا آلية إيجاد عضو بديل بسرعة عند أي انسحاب مبكر
+لتقليل الفترة التي يتحمّل فيها الأعضاء الباقون حصة الفراغ الناتج عن الانسحاب.
+
+## أخطاء شائعة عند التعامل مع انسحاب عضو من الجمعية
+
+- **السماح لمن استلم دوره بالانسحاب دون سداد حصصه المتبقية**، مما يحمّل الباقين خسارة مباشرة
+- **رد أكثر مما دفعه العضو الذي لم يستلم دوره بعد**، بدل الالتزام بالمبدأ الأساسي: رد ما دُفع فقط دون زيادة
+- **عدم تسجيل الدفعات بدقة لكل عضو منذ البداية**، مما يصعّب حساب الفرق المستحق عند أي انسحاب
+- **تأخير إيجاد عضو بديل لفترة طويلة**، مما يزيد العبء على الأعضاء الباقين
+
+## كيف يساعدكم Diviso في تنظيم جمعية دورية بين الزملاء أو الأصدقاء؟
+
+- ✅ تسجيل كل دفعة حصة لكل عضو في كل دورة بشكل منظم ومؤرَّخ
+- ✅ تتبّع واضح لمن استلم دوره ومن لا يزال في الانتظار في أي وقت
+- ✅ حساب تلقائي للفرق المستحق عند انسحاب أي عضو، سواء كان ديناً عليه أو مبلغاً يُرَدّ له
+- ✅ سجل شفاف يسهّل إيجاد عضو بديل وتحديث الترتيب المتبقي بسرعة
+
+## أسئلة شائعة
+
+### هل يحق لعضو استلم دوره أن ينسحب من الجمعية دون دفع حصصه المتبقية؟
+لا، لأنه استلم دفعة كاملة مقدَّماً من بقية الأعضاء، فيبقى ملزماً بسداد كل حصصه المتبقية حتى نهاية الدورة الكاملة، بصرف النظر عن انسحابه من التنظيم الفعلي.
+
+### كم يُرَدّ لعضو انسحب قبل استلام دوره؟
+يُرَدّ له إجمالي ما دفعه من حصص حتى لحظة انسحابه فقط، دون أي زيادة أو مكاسب إضافية، لأنه لم يحصل على أي دفعة مقدَّمة بعد.
+
+### ماذا يحدث لدور العضو المنسحب الذي لم يستلم دفعته بعد؟
+يُستبدَل بعضو جديد يلتزم بالحصص المتبقية من تلك الدورة فصاعداً، أو تُعاد جدولة الأدوار المتبقية بين الأعضاء الحاليين باتفاق الجميع.
+
+## الخلاصة
+
+انسحاب عضو من جمعية دورية لا يحتاج لنقاش معقد: اسألوا سؤالاً واحداً فقط — هل استلم دوره أم لا؟ الإجابة تحدد بدقة إن كان ملزماً بالسداد أم يستحق استرداد ما دفعه فقط.
+
+**جرب Diviso الآن ونظّم جمعيتك الدورية بشفافية كاملة بين كل الأعضاء.**
+    `,
+    contentEn: `
+## Quick Answer
+
+A "jam'iyya" (rotating savings circle, also called a lending circle or ROSCA) is an agreement among a group of people to each contribute **an equal share** every round (weekly or monthly, for example), with those shares pooled and given to **exactly one member** per round, taking turns until every member has received their payout once across the full cycle. When a member leaves before all rounds finish, their fair claim depends on one key fact: **have they already received their payout or not?** One who has already received it still owes every remaining contribution even after leaving, while one who hasn't yet receives back only the total they've paid in so far, with no extra.
+
+## Why Does the Rule Differ Based on Whether They've Already Been Paid?
+
+- **Someone who already received their payout effectively got an advance from the rest of the group**, before finishing paying their own share across the remaining rounds, so leaving doesn't erase that outstanding obligation
+- **Someone who hasn't received a payout yet has gotten no advance at all** — all they've done is pay in their shares, so it's fair to give back exactly what they paid, no more and no less
+- **Without a clear rule, someone who already received their payout could stop paying and walk away**, leaving the remaining members to absorb the loss of their unpaid shares
+
+## The Core Rule
+
+**A member who has already received their payout**: remains obligated to pay their share in every remaining round until the full cycle ends, regardless of whether they physically leave the group or its organizing.
+**A member who hasn't received their payout yet**: gets back only the total of the shares they've paid up to the moment they leave, and their remaining turn is reassigned (either a replacement member takes their place, or the remaining rounds are redistributed among the current members).
+
+## A Complete Worked Example (In Shares, Not Currency)
+
+A circle of **6 members** runs over **6 consecutive rounds**, with each member paying **one share** per round. In every round, the member scheduled for that round receives the total shares pooled from all six members — **6 shares**. Across the full cycle, every member pays 6 shares total (one per round) and receives 6 shares exactly once — so everyone's account balances to zero by the end. The only difference between members is the **timing** of when they receive their full payout.
+
+### Case One: A Member Who Already Received Their Payout, Then Leaves
+Member "A" received their full payout (6 shares) in **round 2**. They had paid their shares in rounds 1 and 2 (2 shares total up to that point), meaning they received 6 shares while having paid only 2 — they're **4 shares ahead** of the rest of the group.
+
+If "A" leaves after round 4 (having paid shares in rounds 1, 2, 3, and 4 — 4 shares total), the remaining gap is 6 (received) − 4 (paid so far) = **2 shares still outstanding (rounds 5 and 6)**. "A" **remains obligated to pay these 2 shares** even after leaving, since they received their full payout in advance.
+
+### Case Two: A Member Who Hasn't Received Their Payout Yet, and Leaves
+Member "B" is scheduled to receive their payout in **round 6 (the last round)**. They leave after round 3, having paid their shares in rounds 1, 2, and 3 (3 shares total), without having received any payout yet.
+
+In this case, **"B" gets back exactly 3 shares** (what they actually paid), with no extra, and their slot in round 6 is either filled by a new member who takes over the remaining contributions from that point, or the remaining rounds are rescheduled among the current members.
+
+## What If No Replacement Member Is Available to Take the Spot of Someone Who Left Before Receiving Their Payout?
+
+In that case, the remaining members can distribute the departing member's remaining share obligation across the other rounds, or shorten the remaining number of rounds if everyone agrees, as long as the departing member is fully repaid what they contributed before any rescheduling happens.
+
+## A Practical System for Organizing a Rotating Savings Circle Without Later Disputes
+
+### Step 1: Set the Rotation Order and Share Amount Before the First Round Starts
+Document exactly who receives the payout in each round, to avoid any later argument about the order.
+
+### Step 2: Log Every Payment as It Happens, Per Member
+To know precisely at any moment who has already received their payout and who's still waiting.
+
+### Step 3: Agree on the Two Rules Above as a Condition of Joining
+So every member knows from the start exactly what happens if they need to leave before the full cycle ends.
+
+### Step 4: Set Up a Quick Way to Find a Replacement Member for Any Early Departure
+To minimize how long the remaining members have to absorb the gap left by a departure.
+
+## Common Mistakes When Handling a Member Leaving a Rotating Savings Circle
+
+- **Letting someone who already received their payout leave without settling their remaining shares**, directly costing the rest of the group
+- **Giving back more than what a member who hasn't been paid yet actually contributed**, instead of sticking to the core principle: refund only what was paid, nothing more
+- **Not logging every member's payments accurately from the start**, making it hard to calculate the exact gap owed when someone leaves
+- **Taking too long to find a replacement member**, increasing the burden on the remaining members
+
+## How Diviso Helps Organize a Rotating Savings Circle Between Coworkers or Friends
+
+- ✅ Logs every member's share payment per round, organized and dated
+- ✅ Clear tracking of who has already received their payout and who's still waiting, at any point
+- ✅ Automatic calculation of the exact gap owed when any member leaves, whether it's a debt they owe or an amount owed back to them
+- ✅ A transparent record that makes finding a replacement member and updating the remaining order quick and easy
+
+## Frequently Asked Questions
+
+### Can a member who already received their payout leave the circle without paying their remaining shares?
+No. Since they already received a full payout in advance from the rest of the group, they remain obligated to pay every remaining share until the full cycle ends, regardless of whether they physically leave the group's organizing.
+
+### How much does a member get back if they leave before receiving their payout?
+They get back only the total of the shares they've actually paid up to the moment they leave, with no extra amount or gain, since they haven't received any advance payout yet.
+
+### What happens to the turn of a departing member who hasn't received their payout yet?
+It's filled by a new member who takes over the remaining share contributions from that point onward, or the remaining rounds are rescheduled among the current members by mutual agreement.
+
+## Conclusion
+
+A member leaving a rotating savings circle doesn't need a complicated discussion: ask one single question — have they already received their payout or not? The answer determines exactly whether they still owe payments or are owed a refund of what they paid.
+
+**Try Diviso now and run your rotating savings circle with full transparency between all its members.**
+    `
+  },
+  {
     slug: "split-henna-night-costs-bride-groom-families-guest-count",
     title: "كيف تُقسَّم تكلفة حفل الحناء بين عائلة العروس وعائلة العريس؟",
     titleEn: "How Should the Bride's and Groom's Families Split Henna Night Costs?",

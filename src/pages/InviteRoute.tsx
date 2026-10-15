@@ -90,8 +90,8 @@ const InviteRoute = () => {
     return () => m.remove();
   }, [code]);
 
-  // Campaign link (App Analytics `ct`) — no extra tracking on the page.
-  const appStoreJoinUrl = `${APP_STORE_URL}?ct=join`;
+  // App Analytics campaign link (pt + ct) — no extra tracking on the page.
+  const appStoreJoinUrl = `${APP_STORE_URL}?pt=118372368&ct=join&mt=8`;
   // Custom scheme the app already handles (deep_link_service: diviso://i/<token>).
   // A same-domain universal link can't open the app from this page, so the
   // scheme is the explicit "open in app" path; the Smart App Banner stays.

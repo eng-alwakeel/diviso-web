@@ -16,6 +16,204 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-refund-when-group-booking-cancelled-partial-refund",
+    title: "كيف يُقسَّم المبلغ المسترد عند إلغاء حجز جماعي باسترداد جزئي فقط؟",
+    titleEn: "How to Split a Partial Refund When a Group Booking Gets Cancelled",
+    description: "عند إلغاء حجز جماعي (كقاعة أو شاليه) واسترداد جزء فقط من المبلغ، يجب أن يُوزَّع المسترد بنسبة مساهمة كل شخص الأصلية، لا بالتساوي. وإذا كان الإلغاء بسبب انسحاب شخص واحد، فهو من يتحمّل رسوم الإلغاء وحده. دليل عملي بمثال محسوب بالنسب.",
+    descriptionEn: "When a group booking (like a hall or chalet) is cancelled and only part of the amount is refunded, the refund should be distributed proportional to each person's original contribution, not equally. If the cancellation was forced by one person's withdrawal, that person alone bears the cancellation fee. A practical guide with a ratio-based example.",
+    keywords: ["تقسيم المبلغ المسترد بعد إلغاء الحجز", "استرداد جزئي من حجز جماعي", "من يتحمل رسوم إلغاء الحجز", "توزيع مبلغ الإلغاء بين المشاركين", "انسحاب عضو من حجز جماعي", "رسوم إلغاء القاعة أو الشاليه"],
+    keywordsEn: ["splitting a refund after cancelling a group booking", "partial refund from a cancelled group reservation", "who pays the cancellation fee in a group booking", "distributing a cancellation refund fairly", "member withdrawing from a group reservation", "venue cancellation fee split"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-10-20",
+    content: `
+## الإجابة المختصرة
+
+عند إلغاء حجز جماعي (كقاعة مناسبات أو شاليه) واسترداد جزء فقط من المبلغ المدفوع، **يجب توزيع المسترد بنسبة مساهمة كل شخص الأصلية في الدفع، لا بالتساوي بين كل المشاركين**، لأن المساهمات الأصلية غالباً لم تكن متساوية. أما إذا كان سبب الإلغاء انسحاب شخص واحد من المجموعة أدى لإلغاء الحجز بالكامل، فإن **ذلك الشخص يتحمّل رسوم الإلغاء بمفرده**، ويحصل بقية المشاركين على استرداد كامل مساهمتهم الأصلية.
+
+## لماذا لا يصح توزيع المسترد بالتساوي بين كل المشاركين؟
+
+- **المساهمات الأصلية في الحجز الجماعي غالباً غير متساوية** (بعض المشاركين دفعوا أكثر لتغطية غرف إضافية أو خدمات إضافية خاصة بهم)
+- **توزيع المسترد بالتساوي يُحمِّل من ساهم بأقل مبلغاً أكبر من حصته الفعلية**، ويُعطي من ساهم بأكثر مبلغاً أقل من حقه
+- **نسبة الاسترداد يحددها مزود الخدمة (كنسبة ثابتة من إجمالي المبلغ)، وهذه النسبة يجب أن تُطبَّق على مساهمة كل شخص بعينها**، لا على حصة متساوية مفترضة
+
+## القاعدة الأساسية
+
+**الحالة الأولى (إلغاء بقرار جماعي، دون انسحاب أحد)**: يُحسَب "معدل الاسترداد" = المبلغ المسترد الإجمالي ÷ إجمالي المبلغ المدفوع أصلاً. ثم يُطبَّق هذا المعدل على مساهمة كل شخص: **استرداد كل شخص = مساهمته الأصلية × معدل الاسترداد**.
+
+**الحالة الثانية (انسحاب شخص واحد أدى للإلغاء)**: يحصل بقية المشاركين على **استرداد كامل مساهمتهم الأصلية**، ويتحمّل الشخص المنسحب **رسوم الإلغاء كاملة بمفرده**، فيكون استرداده = مساهمته الأصلية − رسوم الإلغاء بالكامل.
+
+## مثال عملي كامل (بالنسب)
+
+3 أصدقاء يحجزون شاليه معاً، وساهموا بنسب مختلفة من إجمالي تكلفة الحجز:
+- **أحمد**: ساهم بـ**40%** من الإجمالي
+- **خالد**: ساهم بـ**35%** من الإجمالي
+- **سعيد**: ساهم بـ**25%** من الإجمالي
+
+مزوّد الخدمة يطبّق رسوم إلغاء تعادل **20% من الإجمالي**، ويُرجِع **80% من الإجمالي** كاسترداد.
+
+### الحالة الأولى: إلغاء بقرار جماعي
+معدل الاسترداد = 80%، يُطبَّق على مساهمة كل شخص:
+- أحمد: 40% × 80% = **32% من الإجمالي**
+- خالد: 35% × 80% = **28% من الإجمالي**
+- سعيد: 25% × 80% = **20% من الإجمالي**
+
+**التحقق**: 32 + 28 + 20 = **80%**، يطابق إجمالي المبلغ المسترد فعلياً من مزوّد الخدمة.
+
+### الحالة الثانية: انسحاب سعيد وحده أدى للإلغاء
+- أحمد وخالد يحصلان على استرداد كامل مساهمتهما الأصلية: **40% و35%** على التوالي (إجمالي 75%)
+- سعيد يتحمّل رسوم الإلغاء كاملة (20% من الإجمالي) بمفرده، فيكون استرداده = 25% (مساهمته) − 20% (الرسوم) = **5% فقط من الإجمالي**
+
+**التحقق**: 40 + 35 + 5 = **80%**، يطابق أيضاً إجمالي المبلغ المسترد فعلياً، مع اختلاف من يتحمّل الرسوم بين الحالتين.
+
+## ماذا لو تجاوزت رسوم الإلغاء مساهمة الشخص المنسحب؟
+
+في هذه الحالة النادرة، يبقى الشخص المنسحب مديناً للمجموعة بالفرق المتبقي من رسوم الإلغاء بعد خصم كامل مساهمته الأصلية، لأن المبدأ الأساسي يبقى ثابتاً: هو من تسبب بالإلغاء، فيتحمّل رسومه كاملة بصرف النظر عن مقدار مساهمته الأصلية.
+
+## كيف نحدد إن كان الإلغاء "بقرار جماعي" أم "بسبب انسحاب فرد"؟
+
+المعيار العملي هو: **هل كان الحجز سيستمر لو لم ينسحب هذا الشخص؟** إذا كانت الإجابة نعم (أي أن بقية المجموعة كانت تريد المواصلة، ولكن الانسحاب جعل الاستمرار غير ممكن أو غير منطقي)، فالإلغاء بسبب ذلك الفرد. أما إذا قررت المجموعة كلها التراجع عن الحجز معاً لسبب مشترك (كتغيّر الظروف العامة)، فالإلغاء جماعي ويُوزَّع المسترد بالنسبة.
+
+## خطوات عملية للتعامل مع استرداد حجز جماعي ملغى
+
+### الخطوة 1: راجعوا سياسة الإلغاء والاسترداد قبل تأكيد أي حجز جماعي
+لمعرفة نسبة الاسترداد المتوقعة مسبقاً، لا بعد وقوع الإلغاء.
+
+### الخطوة 2: وثّقوا مساهمة كل شخص الأصلية بدقة فور جمعها
+لتسهيل حساب نسبة الاسترداد العادلة لكل شخص عند أي إلغاء لاحق.
+
+### الخطوة 3: حدّدوا بوضوح سبب الإلغاء قبل توزيع المسترد
+هل هو قرار جماعي أم انسحاب فردي؟ هذا التحديد يغيّر طريقة التوزيع بالكامل.
+
+### الخطوة 4: نفّذوا التوزيع فور استلام المبلغ المسترد من مزوّد الخدمة
+لتجنّب تأخير التسوية وتراكم النقاش حولها.
+
+## أخطاء شائعة عند توزيع استرداد حجز جماعي
+
+- **توزيع المسترد بالتساوي على كل المشاركين بصرف النظر عن اختلاف مساهماتهم الأصلية**
+- **تحميل المجموعة بالكامل رسوم إلغاء تسبب بها شخص واحد فقط**
+- **عدم التحقق من إجمالي المسترد قبل التوزيع**، مما يؤدي لأرقام لا تطابق المبلغ الفعلي المستلم
+- **تأخير توزيع المسترد لفترة طويلة**، مما يصعّب تذكر النسب الأصلية لكل مساهم
+
+## كيف يساعدكم Diviso في تقسيم استرداد الحجوزات الجماعية؟
+
+- ✅ تسجيل مساهمة كل شخص الأصلية بدقة منذ لحظة الحجز
+- ✅ حساب تلقائي لنسبة الاسترداد العادلة لكل شخص بناءً على مساهمته الأصلية
+- ✅ تمييز واضح بين حالة الإلغاء الجماعي وحالة الانسحاب الفردي عند التوزيع
+- ✅ سجل شفاف يوضح لكل مشارك كيف وصل إلى المبلغ المسترد له بالضبط
+
+## أسئلة شائعة
+
+### هل يُقسَّم المبلغ المسترد بالتساوي بين كل المشاركين؟
+لا، يُقسَّم بنسبة مساهمة كل شخص الأصلية في الدفع، لأن المساهمات غالباً لم تكن متساوية من البداية.
+
+### من يتحمّل رسوم الإلغاء إذا انسحب شخص واحد فقط من المجموعة؟
+يتحمّلها ذلك الشخص بمفرده، بينما يحصل بقية المشاركين على استرداد كامل مساهمتهم الأصلية دون أي خصم.
+
+### ماذا لو قررت المجموعة كلها الإلغاء معاً دون انسحاب أحد؟
+في هذه الحالة يُوزَّع المبلغ المسترد بنسبة مساهمة كل شخص الأصلية، ويتحمّل الجميع رسوم الإلغاء معاً بنفس النسبة.
+
+## الخلاصة
+
+توزيع استرداد حجز جماعي ملغى لا يحتاج لتعقيد: حدّدوا أولاً إن كان الإلغاء جماعياً أم بسبب انسحاب فرد، ثم وزّعوا المسترد بنسبة المساهمات الأصلية أو حمّلوا المنسحب رسوم إلغائه بمفرده.
+
+**جرب Diviso الآن وقسّم استرداد حجوزاتكم الجماعية بعدل بين كل المشاركين.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When a group booking (like an event hall or a chalet) is cancelled and only part of the paid amount is refunded, **the refund should be distributed proportional to each person's original contribution, not equally among all participants**, since the original contributions were often uneven. But if the cancellation happened because one person's withdrawal forced the whole booking to be cancelled, **that person alone bears the cancellation fee**, while the rest of the group gets back their full original contribution.
+
+## Why Isn't Splitting the Refund Equally Among Everyone Fair?
+
+- **Original contributions to a group booking are often uneven** (some participants paid more to cover extra rooms or extra services specific to them)
+- **Splitting the refund equally overcharges whoever contributed less** relative to their actual share, and undercharges whoever contributed more
+- **The refund rate is set by the service provider (as a fixed percentage of the total amount), and that rate should be applied to each person's specific contribution**, not to an assumed equal share
+
+## The Core Rule
+
+**Case One (a collective decision to cancel, with no one withdrawing)**: calculate the "refund rate" = the total refunded amount ÷ the total amount originally paid. Then apply this rate to each person's contribution: **each person's refund = their original contribution × the refund rate**.
+
+**Case Two (one person's withdrawal forced the cancellation)**: the rest of the participants get **a full refund of their original contribution**, while the withdrawing person **bears the entire cancellation fee alone**, making their refund = their original contribution − the full cancellation fee.
+
+## A Complete Worked Example (Using Ratios)
+
+3 friends book a chalet together, contributing different shares of the total booking cost:
+- **Ahmad**: contributed **40%** of the total
+- **Khalid**: contributed **35%** of the total
+- **Saeed**: contributed **25%** of the total
+
+The service provider applies a cancellation fee equal to **20% of the total**, refunding **80% of the total** back.
+
+### Case One: A Collective Decision to Cancel
+Refund rate = 80%, applied to each person's contribution:
+- Ahmad: 40% × 80% = **32% of the total**
+- Khalid: 35% × 80% = **28% of the total**
+- Saeed: 25% × 80% = **20% of the total**
+
+**Check**: 32 + 28 + 20 = **80%**, matching the total amount actually refunded by the service provider.
+
+### Case Two: Saeed Alone Withdraws, Forcing the Cancellation
+- Ahmad and Khalid get a full refund of their original contributions: **40% and 35%** respectively (75% total)
+- Saeed bears the entire cancellation fee (20% of the total) alone, making his refund = 25% (his contribution) − 20% (the fee) = **only 5% of the total**
+
+**Check**: 40 + 35 + 5 = **80%**, also matching the total amount actually refunded, with the difference being who bears the fee in each case.
+
+## What If the Cancellation Fee Exceeds the Withdrawing Person's Contribution?
+
+In this rare case, the withdrawing person remains in debt to the group for the remaining portion of the cancellation fee after their entire original contribution is deducted, since the core principle stays fixed: they caused the cancellation, so they bear its full fee regardless of how much they originally contributed.
+
+## How Do We Determine If a Cancellation Was "a Collective Decision" or "Caused by One Person's Withdrawal"?
+
+The practical test is: **would the booking have continued if this person hadn't withdrawn?** If the answer is yes (meaning the rest of the group wanted to continue, but the withdrawal made continuing impossible or impractical), then that individual caused the cancellation. If the entire group decided together to back out for a shared reason (like a change in general circumstances), the cancellation is collective and the refund is split by ratio.
+
+## A Practical System for Handling a Cancelled Group Booking's Refund
+
+### Step 1: Review the Cancellation and Refund Policy Before Confirming Any Group Booking
+To know the expected refund rate in advance, not after the cancellation already happened.
+
+### Step 2: Document Each Person's Original Contribution Accurately as It's Collected
+To make calculating each person's fair refund rate easy whenever a later cancellation happens.
+
+### Step 3: Clearly Determine the Cancellation's Cause Before Distributing the Refund
+Was it a collective decision or an individual withdrawal? This determination completely changes how the distribution works.
+
+### Step 4: Carry Out the Distribution as Soon as the Refund Is Received From the Provider
+To avoid delaying the settlement and letting the discussion drag on.
+
+## Common Mistakes When Distributing a Group Booking's Refund
+
+- **Splitting the refund equally among all participants regardless of their different original contributions**
+- **Making the whole group absorb a cancellation fee caused by only one person's withdrawal**
+- **Not verifying the total refunded amount before distributing it**, leading to numbers that don't match what was actually received
+- **Delaying the refund distribution for too long**, making it harder to remember each contributor's original ratio
+
+## How Diviso Helps Split a Group Booking's Cancellation Refund
+
+- ✅ Logs each person's original contribution accurately from the moment of booking
+- ✅ Automatically calculates each person's fair refund rate based on their original contribution
+- ✅ Clearly distinguishes between a collective cancellation and an individual withdrawal when distributing
+- ✅ A transparent record showing every participant exactly how their refunded amount was calculated
+
+## Frequently Asked Questions
+
+### Is a cancellation refund split equally among all participants?
+No. It's split proportional to each person's original contribution to the payment, since contributions were often uneven from the start.
+
+### Who bears the cancellation fee if only one person withdraws from the group?
+That person bears it alone, while the rest of the participants get a full refund of their original contribution with no deduction.
+
+### What if the whole group decides to cancel together, with no one withdrawing?
+In that case, the refunded amount is distributed proportional to each person's original contribution, and everyone shares the cancellation fee at the same rate.
+
+## Conclusion
+
+Distributing a cancelled group booking's refund doesn't have to be complicated: first determine whether the cancellation was collective or caused by one person's withdrawal, then either distribute the refund by original contribution ratios or make the withdrawing person bear their own cancellation fee alone.
+
+**Try Diviso now and split your group booking refunds fairly between every participant.**
+    `
+  },
+  {
     slug: "split-child-extracurricular-activity-cost-coparents-consent",
     title: "من يدفع نشاط الطفل الإضافي إذا سجّله أحد الوالدين المنفصلين دون موافقة الآخر؟",
     titleEn: "Who Pays for a Child's Extracurricular Activity When One Co-Parent Enrolled Them Without the Other's Agreement?",

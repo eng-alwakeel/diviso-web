@@ -16,6 +16,180 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-child-extracurricular-activity-cost-coparents-consent",
+    title: "من يدفع نشاط الطفل الإضافي إذا سجّله أحد الوالدين المنفصلين دون موافقة الآخر؟",
+    titleEn: "Who Pays for a Child's Extracurricular Activity When One Co-Parent Enrolled Them Without the Other's Agreement?",
+    description: "عند انفصال الوالدين، تحديد من يدفع نشاط الطفل الإضافي يعتمد على سؤال واحد: هل اتفقا عليه مسبقاً؟ النشاط المتفق عليه يُقسَّم بالنسبة المعتمدة، والنشاط الذي سجّله أحدهما منفرداً يتحمّله بالكامل حتى موافقة الآخر، دون أثر رجعي. دليل عملي بمثال بالنسب.",
+    descriptionEn: "When parents are separated, deciding who pays for a child's extracurricular activity comes down to one question: did they agree on it in advance? An agreed activity is split at the standard ratio, while one enrolled unilaterally is borne fully by that parent until the other agrees, with no retroactive effect. A practical guide with a ratio-based example.",
+    keywords: ["من يدفع نشاط الطفل بعد الانفصال", "تسجيل الطفل في نشاط بدون موافقة الوالد الآخر", "تقسيم مصاريف الأنشطة بين الوالدين المنفصلين", "موافقة مسبقة على نشاط الطفل", "مصاريف الحضانة الإضافية", "من يتحمل تكلفة هواية الطفل"],
+    keywordsEn: ["who pays for a child's extracurricular activity after divorce", "enrolling a child without the other parent's consent", "splitting child activity costs between separated parents", "prior agreement on a child's activity", "co-parenting discretionary expenses", "who pays for a child's hobby class"],
+    category: "guides",
+    readTime: 7,
+    publishDate: "2026-10-18",
+    content: `
+## الإجابة المختصرة
+
+عندما ينفصل الوالدان ويحتاج الطفل لنشاط إضافي (كدروس رياضة أو هواية)، **تحديد من يدفع يعتمد أولاً على سؤال واحد: هل اتفق الوالدان مسبقاً على هذا النشاط؟** إذا كان الاتفاق مسبقاً، تُقسَّم تكلفته بنفس النسبة المعتمدة بينهما لمصاريف الطفل المعتادة. إذا سجّل أحد الوالدين الطفل في النشاط من جانبه فقط دون التشاور مع الآخر، فإنه يتحمّل تكلفة ذلك النشاط بالكامل بمفرده، إلا إذا وافق الوالد الآخر لاحقاً وبشكل صريح على المشاركة، وتبدأ مشاركته فقط من تاريخ موافقته لا بأثر رجعي.
+
+## لماذا يعتمد التقسيم على الموافقة المسبقة لا على مجرد كونه "لصالح الطفل"؟
+
+- أي نشاط إضافي قد يكون مفيداً للطفل، لكن الفائدة وحدها لا تجعل تكلفته التزاماً مشتركاً تلقائياً، لأن أحد الوالدين قد يرى أن الوقت أو التكلفة غير مناسبة حالياً
+- فرض تكلفة نشاط لم يُتَّفق عليه على الوالد الآخر دون علمه يفتح الباب لخلافات متكررة حول كل قرار فردي يتخذه أحد الطرفين
+- الاتفاق المسبق هو الفيصل العملي الوحيد الذي يمكن تطبيقه بوضوح دون الدخول في نقاش حول "فائدة" كل نشاط على حدة
+
+## القاعدة الأساسية
+
+**نشاط اتفق عليه الوالدان مسبقاً** → يُقسَّم بنفس النسبة المعتمدة بينهما لمصاريف الطفل الأخرى
+**نشاط سجّله أحد الوالدين من جانبه فقط دون موافقة الآخر** → يتحمّله ذلك الوالد بالكامل بمفرده، حتى موافقة الوالد الآخر صريحاً، وتبدأ مشاركته فقط من تاريخ تلك الموافقة، لا بأثر رجعي عن الفترة التي سبقتها
+
+## مثال عملي كامل (بالنسب)
+
+والدان منفصلان متفقان على نسبة تقسيم **65% / 35%** لمصاريف طفلهما المعتادة والمتفق عليها.
+
+### الحالة الأولى: نشاط اتفقا عليه معاً
+اتفق الوالدان على تسجيل الطفل في درس أسبوعي للسباحة. تُقسَّم تكلفة هذا الدرس بنفس النسبة المعتمدة: **65% على الوالد الأول، 35% على الوالد الثاني**، في كل فصل يستمر فيه الدرس.
+
+### الحالة الثانية: نشاط سجّله أحد الوالدين من جانبه فقط
+سجّل الوالد الأول الطفل في نشاط هواية جديد دون التشاور مع الوالد الثاني. في هذه الحالة، **يتحمّل الوالد الأول 100% من تكلفة هذا النشاط بمفرده**، بصرف النظر عن نسبة الـ65/35 المعتمدة للمصاريف الأخرى.
+
+لو وافق الوالد الثاني بعد مرور فصلين على المشاركة في هذا النشاط، تُطبَّق نسبة الـ65/35 **فقط على الفصول القادمة من تاريخ موافقته**، أما الفصلان السابقان فيبقيان بالكامل على الوالد الأول الذي سجّل الطفل من جانبه.
+
+## ماذا عن المصاريف "الضرورية" التي لا تحتمل التأجيل؟
+
+بعض المصاريف ليست اختيارية بطبيعتها (كالزي الموحد المدرسي المطلوب أو أدوات دراسية أساسية)، فهذه **تُقسَّم بنسبة الـ65/35 المعتمدة دون الحاجة لموافقة مسبقة على كل بند على حدة**، لأنها ليست "نشاطاً إضافياً" اختيارياً، بل مصروفاً ضرورياً متوقعاً ضمن تربية الطفل العادية.
+
+## ماذا لو استفاد الوالد الآخر من النشاط بشكل غير مباشر (كاستلام الطفل بعد الدرس)؟
+
+الاستفادة غير المباشرة أو وجود الطفل في حضانة الوالد الآخر وقت النشاط لا تنشئ التزاماً مالياً تلقائياً، لأن معيار المشاركة في التكلفة هو **الموافقة المسبقة على الالتزام المالي**، لا مجرد وجود الطفل في حضانة أيٍّ من الوالدين وقت ممارسة النشاط.
+
+## خطوات عملية لتنظيم مصاريف الأنشطة الإضافية بين الوالدين المنفصلين
+
+### الخطوة 1: اتفقا على قائمة الأنشطة الاختيارية قبل التسجيل في أي منها
+ناقشا كل نشاط جديد واتفقا عليه كتابياً أو عبر رسالة واضحة قبل دفع أي رسوم.
+
+### الخطوة 2: وثّقا نسبة التقسيم المعتمدة لمصاريف الطفل منذ البداية
+لتطبيقها مباشرة على أي نشاط يحصل على اتفاق مسبق، دون نقاش جديد كل مرة.
+
+### الخطوة 3: سجّلا تاريخ أي موافقة لاحقة على نشاط بدأ من جانب واحد
+لتحديد بدقة من أي فصل أو شهر تبدأ المشاركة الفعلية في التكلفة.
+
+### الخطوة 4: فصلا المصاريف الضرورية عن الأنشطة الاختيارية في سجلّكما
+لتطبيق القاعدة الصحيحة على كل بند دون خلط الاثنين.
+
+## أخطاء شائعة عند تقسيم مصاريف الأنشطة الإضافية
+
+- **افتراض أن كل ما هو "لصالح الطفل" يُقسَّم تلقائياً بالنسبة المعتمدة**، حتى دون موافقة مسبقة عليه
+- **مطالبة الوالد الآخر بحصته بأثر رجعي عن فترة لم يوافق عليها أصلاً**
+- **الخلط بين المصاريف الضرورية والأنشطة الاختيارية** عند تطبيق قاعدة الموافقة المسبقة
+- **عدم توثيق تاريخ الموافقة اللاحقة بدقة**، مما يصعّب تحديد نقطة بداية المشاركة في التكلفة
+
+## كيف يساعدكم Diviso في تنظيم مصاريف أنشطة الطفل بين الوالدين المنفصلين؟
+
+- ✅ تسجيل كل نشاط كـ"متفق عليه" أو "من جانب واحد" منذ البداية
+- ✅ حساب تلقائي لحصة كل والد بالنسبة المعتمدة على الأنشطة المتفق عليها فقط
+- ✅ تتبّع تاريخ أي موافقة لاحقة لتحديد نقطة بداية المشاركة بدقة
+- ✅ سجل شفاف يفصل المصاريف الضرورية عن الأنشطة الاختيارية بوضوح
+
+## أسئلة شائعة
+
+### هل يجب على الوالد الآخر دفع حصته من نشاط لم يوافق عليه مسبقاً؟
+لا، الوالد الذي سجّل الطفل من جانبه فقط دون موافقة مسبقة يتحمّل التكلفة بالكامل بمفرده، حتى يوافق الوالد الآخر صريحاً على المشاركة.
+
+### إذا وافق الوالد الآخر لاحقاً، هل يدفع حصته عن الفترة السابقة أيضاً؟
+لا، تبدأ مشاركته فقط من تاريخ موافقته الصريحة فصاعداً، ولا تُطبَّق بأثر رجعي على الفترة التي سبقت تلك الموافقة.
+
+### هل تخضع المصاريف الضرورية (كالزي المدرسي) لقاعدة الموافقة المسبقة نفسها؟
+لا، المصاريف الضرورية غير الاختيارية تُقسَّم مباشرة بالنسبة المعتمدة بين الوالدين، دون الحاجة لموافقة مسبقة على كل بند، لأنها ليست نشاطاً اختيارياً بل جزءاً من التربية المعتادة.
+
+## الخلاصة
+
+تقسيم مصاريف نشاط إضافي لطفل بين والدين منفصلين يعتمد على سؤال واحد واضح: هل كان هناك اتفاق مسبق؟ الإجابة تحدد إن كانت التكلفة مشتركة بالنسبة المعتمدة أم يتحملها الوالد الذي قرر بمفرده.
+
+**جرب Diviso الآن ونظّم مصاريف أنشطة طفلكما بوضوح بين الوالدين.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When separated or divorced parents need to decide who pays for a child's extracurricular activity (like a sport lesson or hobby class), **the deciding factor is one question: did both parents agree on this activity in advance?** If they agreed beforehand, the cost is split using whatever ratio they already use for the child's regular expenses. If one parent enrolled the child on their own without consulting the other, that parent bears the full cost of that activity alone, unless the other parent later explicitly agrees to share it — and their share only starts from the date of that agreement, not retroactively.
+
+## Why Does the Split Depend on Prior Agreement Rather Than Just "Being Good for the Child"?
+
+- Any extracurricular activity might be good for the child, but that benefit alone doesn't automatically make its cost a shared obligation, since one parent may reasonably feel the timing or cost isn't right at the moment
+- Imposing the cost of an activity the other parent never agreed to opens the door to repeated disputes over every individual decision one side makes
+- Prior agreement is the one practical, clear-cut test that can be applied consistently, without arguing over how "beneficial" each specific activity is
+
+## The Core Rule
+
+**An activity both parents agreed to in advance** → split using whatever ratio they already use for the child's other expenses
+**An activity one parent enrolled the child in unilaterally, without the other's agreement** → that parent bears the full cost alone, until the other parent explicitly agrees to share it, with their share starting only from the date of that agreement, never retroactively for the period before it
+
+## A Complete Worked Example (Using Ratios)
+
+Two separated parents use a **65% / 35%** split for their child's regular, agreed-upon expenses.
+
+### Case One: An Activity They Agreed On Together
+Both parents agreed to enroll the child in a weekly swimming lesson. The cost of this lesson is split using the agreed ratio: **65% from Parent One, 35% from Parent Two**, for every term the lesson continues.
+
+### Case Two: An Activity One Parent Enrolled the Child In Unilaterally
+Parent One enrolled the child in a new hobby class without consulting Parent Two. In this case, **Parent One bears 100% of this activity's cost alone**, regardless of the 65/35 ratio used for other expenses.
+
+If Parent Two agrees to share this activity's cost two terms later, the 65/35 ratio applies **only to the upcoming terms from the date of their agreement onward** — the two earlier terms remain entirely Parent One's responsibility, since they enrolled the child unilaterally.
+
+## What About "Necessary" Expenses That Can't Wait for Agreement?
+
+Some expenses aren't discretionary by nature (like a required school uniform or basic school supplies). These are **split using the agreed 65/35 ratio without needing separate prior agreement on each item**, since they aren't an optional "extracurricular activity" — they're a necessary expense expected as part of ordinary parenting.
+
+## What If the Other Parent Indirectly Benefits From the Activity (Like Picking the Child Up Afterward)?
+
+Indirect benefit, or the child simply being in the other parent's custody at the time of the activity, doesn't automatically create a financial obligation. The test for sharing the cost is **prior agreement to the financial commitment**, not merely which parent has the child in their custody when the activity happens.
+
+## A Practical System for Organizing Extracurricular Expenses Between Separated Parents
+
+### Step 1: Agree on the List of Discretionary Activities Before Enrolling in Any of Them
+Discuss every new activity and agree on it in writing or through a clear message before any fee is paid.
+
+### Step 2: Document the Agreed Split Ratio for the Child's Expenses From the Start
+So it can be applied immediately to any activity that gets prior agreement, without renegotiating each time.
+
+### Step 3: Record the Exact Date of Any Later Agreement to a Unilaterally Started Activity
+To precisely determine from which term or month actual cost-sharing begins.
+
+### Step 4: Keep Necessary Expenses Separate From Discretionary Activities in Your Record
+So the right rule is applied to each item without mixing the two up.
+
+## Common Mistakes When Splitting Extracurricular Activity Costs
+
+- **Assuming anything "good for the child" is automatically split at the agreed ratio**, even without prior agreement on it
+- **Asking the other parent to pay their share retroactively for a period they never agreed to**
+- **Mixing up necessary expenses with discretionary activities** when applying the prior-agreement rule
+- **Not precisely recording the date of a later agreement**, making it hard to pin down when cost-sharing actually begins
+
+## How Diviso Helps Organize a Child's Activity Expenses Between Separated Parents
+
+- ✅ Logs every activity as "agreed" or "unilateral" from the start
+- ✅ Automatically calculates each parent's share at the agreed ratio, only for agreed-upon activities
+- ✅ Tracks the date of any later agreement to pinpoint exactly when cost-sharing begins
+- ✅ A transparent record that clearly separates necessary expenses from discretionary activities
+
+## Frequently Asked Questions
+
+### Does the other parent have to pay their share of an activity they never agreed to in advance?
+No. The parent who enrolled the child unilaterally, without prior agreement, bears the full cost alone until the other parent explicitly agrees to share it.
+
+### If the other parent agrees later, do they also pay for the earlier period?
+No. Their share starts only from the date of their explicit agreement onward, and is never applied retroactively to the period before that agreement.
+
+### Does a necessary expense, like a school uniform, follow the same prior-agreement rule?
+No. Necessary, non-discretionary expenses are split directly at the agreed ratio between both parents, without needing prior agreement on each item, since they aren't an optional activity but part of ordinary parenting.
+
+## Conclusion
+
+Splitting the cost of a child's extracurricular activity between separated parents comes down to one clear question: was there prior agreement? The answer determines whether the cost is shared at the agreed ratio or falls entirely on the parent who decided alone.
+
+**Try Diviso now and keep your child's activity expenses clear between both parents.**
+    `
+  },
+  {
     slug: "rotating-savings-circle-jameya-member-leaves-early",
     title: "ماذا يحدث عند انسحاب عضو من \"الجمعية\" الدورية قبل انتهاء كل الأدوار؟",
     titleEn: "What Happens When a Member Leaves a Rotating Savings Circle (Jam'iyya) Early?",

@@ -16,6 +16,196 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-shared-furniture-cost-new-roommate-buy-in",
+    title: "كم يدفع الشريك الجديد الذي ينضم بعد شراء الأثاث المشترك مباشرة؟",
+    titleEn: "How Much Should a New Roommate Pay to Buy Into Furniture the Others Already Bought?",
+    description: "عند انضمام شريك سكن جديد بعد شراء الشركاء الأصليين للأثاث المشترك بفترة قصيرة، لا يصح أن يدخل دون دفع أي شيء ولا أن يدفع مبلغاً عشوائياً. القاعدة الأعدل: يدفع حصته المتساوية من التكلفة الأصلية، ثم يُرَدّ هذا المبلغ على الشركاء القدامى بالتساوي. دليل عملي بمثال بالنسب.",
+    descriptionEn: "When a new roommate joins shortly after the original roommates bought shared furniture, they shouldn't move in paying nothing, nor pay an arbitrary amount. The fairer rule: they pay their equal share of the original cost, which is then refunded to the original roommates equally. A practical guide with a ratio-based example.",
+    keywords: ["كم يدفع الشريك الجديد في الأثاث المشترك", "شراء أثاث مشترك قبل انضمام شريك جديد", "تقسيم تكلفة الأثاث عند دخول شريك سكن جديد", "حصة الشريك الجديد من الأثاث", "استرداد جزء من تكلفة الأثاث للشركاء القدامى", "اشتراك شريك سكن جديد في مصاريف الشقة"],
+    keywordsEn: ["how much should a new roommate pay for furniture", "buying into shared furniture as a new roommate", "splitting furniture cost when a new roommate joins", "new roommate's share of furniture already bought", "refunding original roommates for furniture", "new roommate furniture buy-in"],
+    category: "tips",
+    readTime: 7,
+    publishDate: "2026-10-22",
+    content: `
+## الإجابة المختصرة
+
+عند انضمام شريك سكن جديد بعد أيام أو أسابيع قليلة من شراء الشركاء الأصليين للأثاث المشترك، **لا يُفترض أن يدخل بدون دفع أي شيء، ولا أن يدفع مبلغاً تقديرياً عشوائياً**. القاعدة الأعدل: يدفع الشريك الجديد **حصته المتساوية من التكلفة الإجمالية الأصلية للأثاث** (كما لو كان حاضراً من البداية)، ثم يُعاد توزيع هذا المبلغ على الشركاء الأصليين بالتساوي كتعويض عن دفعهم الزائد في البداية، بحيث ينتهي الجميع (القدامى والجديد) بتحمّل نفس الحصة المتساوية من التكلفة الإجمالية.
+
+## لماذا لا يصح أن يدخل الشريك الجديد بدون دفع أي شيء؟
+
+- **الشركاء الأصليون دفعوا كامل تكلفة الأثاث بافتراض عدد أقل من المقيمين**، فتحمّلوا حصة أكبر من اللازم مقارنة بالعدد النهائي
+- **الشريك الجديد سيستخدم نفس الأثاث بنفس القدر منذ يومه الأول**، فلا مبرر لاستفادته الكاملة دون أي مساهمة في تكلفته
+- **ترك الأمر دون قاعدة واضحة يخلق شعوراً بالظلم لدى من دفع الحصة الأكبر في البداية**
+
+## لماذا لا يصح أيضاً أن يدفع مبلغاً عشوائياً دون أساس واضح؟
+
+مبلغ تقديري غير مرتبط بالتكلفة الفعلية الأصلية يترك الباب مفتوحاً للنقاش والتفاوت بين الحالات، بينما القاعدة المبنية على القسمة المتساوية الفعلية تعطي رقماً واحداً واضحاً لا مجال للجدل حوله.
+
+## القاعدة الأساسية
+
+**حصة الشريك الجديد (مبلغ الدخول) = التكلفة الإجمالية الأصلية للأثاث ÷ العدد الجديد الكامل للشركاء**
+**هذا المبلغ المدفوع من الشريك الجديد يُعاد توزيعه بالتساوي على الشركاء الأصليين**، فيُخفَّض صافي ما دفعه كل واحد منهم إلى نفس الحصة المتساوية الجديدة.
+
+## مثال عملي كامل (بالنسب)
+
+3 شركاء سكن أصليين يشترون أثاثاً مشتركاً، ويتقاسمون التكلفة بالتساوي: كل واحد يدفع **1/3 من الإجمالي، أي 33.33%**.
+
+بعد أسابيع قليلة، ينضم شريك رابع. العدد الجديد الكامل = 4 شركاء.
+
+**حصة الشريك الجديد (مبلغ دخوله)** = 100% ÷ 4 = **25% من التكلفة الإجمالية الأصلية**
+
+### إعادة توزيع مبلغ الدخول على الشركاء القدامى
+المبلغ الذي دفعه الشريك الجديد (25%) يُقسَّم بالتساوي على الشركاء الثلاثة الأصليين كتعويض:
+25% ÷ 3 = **8.33% يُرَدّ لكل شريك أصلي**
+
+**صافي ما يتحمّله كل شريك أصلي بعد الاسترداد** = 33.33% − 8.33% = **25%**
+
+**التحقق**: الآن كل الشركاء الأربعة (القدامى والجديد) يتحمّلون **25% لكل واحد بالضبط**، أي حصة متساوية تماماً بين الجميع، وهذا هو الهدف من القاعدة.
+
+## ماذا لو مرّ وقت طويل نسبياً على شراء الأثاث قبل انضمام الشريك الجديد؟
+
+هذه القاعدة (القسمة على التكلفة الأصلية الكاملة) تناسب الحالات التي ينضم فيها الشريك الجديد بعد فترة قصيرة من الشراء، حيث لا يزال الأثاث شبه جديد. أما إذا مرّ وقت أطول واستُخدم الأثاث فعلياً لفترة معتبرة، فالأعدل الاعتماد على **القيمة الحالية المتبقية للأثاث بعد الاستهلاك**، لا على تكلفته الأصلية كاملة، لأن قيمته الفعلية في تلك اللحظة أصبحت أقل من سعر شرائه.
+
+## ماذا لو كان الشريك الجديد يملك أصلاً قطعة مماثلة لأحد عناصر الأثاث المشترك؟
+
+في هذه الحالة، يُستثنى ذلك العنصر بعينه من إجمالي التكلفة المشتركة قبل حساب مبلغ الدخول، لأن الشريك الجديد لن يستخدم تلك القطعة تحديداً من الأثاث المشترك.
+
+## خطوات عملية لتنظيم دخول شريك سكن جديد على أثاث موجود
+
+### الخطوة 1: وثّقا التكلفة الإجمالية الأصلية لكل قطعة أثاث مشترك منذ البداية
+بالإيصالات إن أمكن، لتسهيل الحساب عند انضمام أي شريك جديد لاحقاً.
+
+### الخطوة 2: حدّدا بوضوح أي قطع لا يستفيد منها الشريك الجديد
+واستثنياها من حساب مبلغ الدخول إن وُجدت.
+
+### الخطوة 3: احسبا مبلغ الدخول وأعيدا توزيعه على الشركاء القدامى فور انضمام أي شريك جديد
+لا تؤجلا هذه الخطوة، لتجنب تراكم النقاش حولها لاحقاً.
+
+### الخطوة 4: اتفقا على نقطة التحوّل بين "التكلفة الأصلية" و"القيمة المتبقية بعد الاستهلاك"
+حدّدا مسبقاً متى يُعتبر الأثاث "جديداً بما يكفي" لتطبيق هذه القاعدة، ومتى يصبح من الأفضل الاعتماد على تقييم الاستهلاك.
+
+## أخطاء شائعة عند تحديد حصة الشريك الجديد من الأثاث
+
+- **السماح للشريك الجديد بالدخول دون أي مساهمة في تكلفة الأثاث المشترك**
+- **تحديد مبلغ دخول عشوائي غير مرتبط بالتكلفة الأصلية الفعلية**
+- **عدم إعادة توزيع مبلغ الدخول على الشركاء القدامى**، فيبقى دفعهم الزائد دون تعويض
+- **استخدام هذه القاعدة بعد مرور وقت طويل جداً على الشراء**، بدل الاعتماد على تقييم الاستهلاك الفعلي
+
+## كيف يساعدكم Diviso في تنظيم دخول شريك سكن جديد على أثاث موجود؟
+
+- ✅ تسجيل التكلفة الإجمالية الأصلية لكل قطعة أثاث مشترك منذ لحظة الشراء
+- ✅ حساب تلقائي لمبلغ دخول الشريك الجديد وإعادة توزيعه على الشركاء القدامى
+- ✅ استثناء سهل لأي عنصر لا يستفيد منه الشريك الجديد من الحساب
+- ✅ سجل شفاف يوضح لكل شريك (قديم أو جديد) كيف وصل إلى حصته بالضبط
+
+## أسئلة شائعة
+
+### هل يدفع الشريك الجديد نفس حصة الشركاء القدامى الأصلية؟
+لا، يدفع حصته الجديدة المحسوبة على العدد الكامل الجديد للشركاء، وهي أقل من حصة القدامى الأصلية، لأن التكلفة الإجمالية الآن تُقسَّم على عدد أكبر.
+
+### ماذا يحدث لمبلغ دخول الشريك الجديد؟
+يُعاد توزيعه بالتساوي على الشركاء الأصليين كتعويض عن دفعهم حصة أكبر في البداية، حتى ينتهي الجميع بحصة متساوية من التكلفة الإجمالية.
+
+### هل تنطبق هذه القاعدة إذا كان الأثاث مستخدماً منذ فترة طويلة؟
+لا، هذه القاعدة تناسب الأثاث الحديث الشراء فقط. إذا مرّ وقت طويل، يُفضَّل الاعتماد على القيمة المتبقية للأثاث بعد الاستهلاك بدل تكلفته الأصلية الكاملة.
+
+## الخلاصة
+
+دخول شريك سكن جديد على أثاث مشترك موجود لا يحتاج لتخمين: احسبا حصته المتساوية من التكلفة الأصلية، وأعيدا توزيع هذا المبلغ على الشركاء القدامى، وستنتهي الجميع بحصة عادلة ومتساوية.
+
+**جرب Diviso الآن ونظّم دخول أي شريك سكن جديد على أثاثكم المشترك بعدل.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When a new roommate joins just days or a few weeks after the original roommates bought shared furniture, **they shouldn't move in paying nothing, nor pay an arbitrary estimated amount**. The fairer rule: the new roommate pays **their equal share of the original total furniture cost** (as if they'd been there from the start), and that payment is then redistributed equally among the original roommates to compensate them for having overpaid initially, so everyone (original roommates and the new one) ends up bearing the same equal share of the total cost.
+
+## Why Shouldn't the New Roommate Move In Paying Nothing?
+
+- **The original roommates paid the full furniture cost assuming a smaller number of residents**, so they each carried a larger share than they would have with the final headcount
+- **The new roommate will use the same furniture just as much from day one**, so there's no justification for them benefiting fully without contributing to its cost
+- **Leaving this without a clear rule creates a sense of unfairness** for whoever paid the larger initial share
+
+## Why Shouldn't They Pay an Arbitrary Amount Either?
+
+An estimated amount not tied to the actual original cost leaves room for argument and inconsistency between cases, while a rule based on actual equal division gives one clear number that isn't up for debate.
+
+## The Core Rule
+
+**The new roommate's share (buy-in amount) = the original total furniture cost ÷ the new total number of roommates**
+**That amount paid by the new roommate is redistributed equally among the original roommates**, lowering each of their net costs down to the same new equal share.
+
+## A Complete Worked Example (Using Ratios)
+
+3 original roommates buy shared furniture, splitting the cost equally: each pays **1/3 of the total, or 33.33%**.
+
+A few weeks later, a fourth roommate joins. The new total number of roommates = 4.
+
+**The new roommate's share (buy-in amount)** = 100% ÷ 4 = **25% of the original total cost**
+
+### Redistributing the Buy-In Amount to the Original Roommates
+The amount the new roommate paid (25%) is split equally among the three original roommates as compensation:
+25% ÷ 3 = **8.33% refunded to each original roommate**
+
+**Each original roommate's net cost after the refund** = 33.33% − 8.33% = **25%**
+
+**Check**: now all four roommates (original and new) each bear exactly **25%** — a perfectly equal share across everyone, which is exactly the goal of this rule.
+
+## What If a Relatively Long Time Passed Before the New Roommate Joined?
+
+This rule (dividing the full original cost) fits cases where the new roommate joins shortly after the purchase, while the furniture is still essentially new. But if a longer time has passed and the furniture has actually been used for a meaningful period, it's fairer to rely on **the furniture's current remaining value after depreciation**, not its full original cost, since its actual worth at that point is now lower than its purchase price.
+
+## What If the New Roommate Already Owns a Similar Item to One of the Shared Furniture Pieces?
+
+In that case, that specific item is excluded from the shared total before calculating the buy-in amount, since the new roommate won't be using that particular piece of shared furniture.
+
+## A Practical System for Organizing a New Roommate's Entry Into Existing Furniture
+
+### Step 1: Document the Original Total Cost of Each Shared Furniture Item From the Start
+With receipts if possible, to make the calculation easy whenever a new roommate joins later.
+
+### Step 2: Clearly Identify Any Items the New Roommate Won't Benefit From
+And exclude them from the buy-in calculation if any exist.
+
+### Step 3: Calculate the Buy-In Amount and Redistribute It to the Original Roommates as Soon as Anyone Joins
+Don't delay this step, to avoid letting the discussion drag on later.
+
+### Step 4: Agree on the Cutoff Between "Original Cost" and "Remaining Value After Depreciation"
+Decide in advance when furniture is considered "new enough" for this rule, and when it's better to rely on a depreciation valuation instead.
+
+## Common Mistakes When Determining a New Roommate's Furniture Share
+
+- **Letting the new roommate move in without any contribution to the shared furniture's cost**
+- **Setting an arbitrary buy-in amount not tied to the actual original cost**
+- **Not redistributing the buy-in amount to the original roommates**, leaving their overpayment uncompensated
+- **Using this rule after too much time has passed since the purchase**, instead of relying on an actual depreciation valuation
+
+## How Diviso Helps Organize a New Roommate's Entry Into Existing Furniture
+
+- ✅ Logs the original total cost of each shared furniture item from the moment of purchase
+- ✅ Automatically calculates the new roommate's buy-in amount and redistributes it to the original roommates
+- ✅ Easily excludes any item the new roommate won't benefit from in the calculation
+- ✅ A transparent record showing every roommate (original or new) exactly how their share was calculated
+
+## Frequently Asked Questions
+
+### Does the new roommate pay the same original share as the existing roommates?
+No. They pay their new share calculated on the full new number of roommates, which is lower than the original roommates' initial share, since the total cost is now divided among more people.
+
+### What happens to the new roommate's buy-in amount?
+It's redistributed equally among the original roommates to compensate them for having paid a larger share initially, until everyone ends up with an equal share of the total cost.
+
+### Does this rule apply if the furniture has already been used for a long time?
+No. This rule fits newly purchased furniture only. If a long time has passed, it's better to rely on the furniture's remaining value after depreciation instead of its full original cost.
+
+## Conclusion
+
+A new roommate joining existing shared furniture doesn't require guesswork: calculate their equal share of the original cost, redistribute that amount to the original roommates, and everyone ends up with a fair, equal share.
+
+**Try Diviso now and organize any new roommate's entry into your shared furniture fairly.**
+    `
+  },
+  {
     slug: "split-refund-when-group-booking-cancelled-partial-refund",
     title: "كيف يُقسَّم المبلغ المسترد عند إلغاء حجز جماعي باسترداد جزئي فقط؟",
     titleEn: "How to Split a Partial Refund When a Group Booking Gets Cancelled",

@@ -16,6 +16,188 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "how-to-split-expenses-with-friends-guide",
+    title: "كيف أقسم المصاريف مع أصدقائي؟ دليل الطرق الثلاث بالأمثلة",
+    titleEn: "How to Split Expenses With Friends: The 3 Methods Explained",
+    description: "توجد 3 طرق أساسية لتقسيم المصاريف مع الأصدقاء بعدل: التقسيم بالتساوي، التقسيم بالنسبة (حصة أو ملكية)، والتقسيم حسب الاستهلاك الفعلي. اختيار الطريقة الصحيحة يعتمد على طبيعة المصروف نفسه. دليل عملي بمثال مقارن وروابط لحالات شائعة.",
+    descriptionEn: "There are 3 core methods for splitting expenses with friends fairly: an equal split, a proportional split (by share or ownership), and a usage-based split. Which one is fair depends on the nature of the expense itself. A practical guide with a comparative example and links to common scenarios.",
+    keywords: ["كيف أقسم المصاريف مع أصدقائي", "طرق تقسيم المصاريف بين الأصدقاء", "تقسيم المصاريف بالتساوي أو بالنسبة", "أفضل طريقة لتقسيم الفلوس مع الأصدقاء", "تقسيم تكلفة مشتركة بين مجموعة", "كيف نحدد طريقة تقسيم المصروف"],
+    keywordsEn: ["how to split expenses with friends", "ways to split costs with a group", "equal split vs proportional split", "best method to split shared expenses", "how to divide a shared cost fairly", "splitting bills with friends methods"],
+    category: "guides",
+    readTime: 9,
+    publishDate: "2026-10-25",
+    content: `
+## الإجابة المختصرة
+
+توجد **3 طرق أساسية** لتقسيم أي مصروف مشترك مع الأصدقاء بعدل: **التقسيم بالتساوي** (كل شخص يدفع نفس المبلغ)، **التقسيم بالنسبة** (كل شخص يدفع حسب حصته أو ملكيته أو عدد ضيوفه)، و**التقسيم حسب الاستهلاك الفعلي** (كل شخص يدفع مقابل ما استخدمه بالضبط). لا توجد طريقة واحدة "صحيحة دائماً" — الطريقة العادلة تعتمد على **طبيعة المصروف نفسه**: هل الجميع استفاد منه بالتساوي؟ هل حصص المشاركين فيه مختلفة أصلاً؟ أم أن الاستخدام الفعلي يختلف من شخص لآخر؟
+
+## الطريقة الأولى: التقسيم بالتساوي
+
+تُستخدم هذه الطريقة عندما **يستفيد كل المشاركين من المصروف بنفس القدر تقريباً**، بصرف النظر عن أي فروقات طفيفة في التفاصيل. مثالها الكلاسيكي: تقسيم فاتورة توصيل طعام طلبه الجميع، أو تقسيم تكلفة حارس حي يحمي كل المنازل بالتساوي.
+
+**أمثلة تفصيلية**:
+- <a href="/blog/split-food-delivery-order-cost-friends">تقسيم فاتورة طلب التوصيل بين الأصدقاء</a>
+- <a href="/blog/split-neighborhood-security-guard-cost">تقسيم تكلفة حارس الحي بين الجيران</a>
+- <a href="/blog/split-eid-al-adha-sacrifice-cost-family">تقسيم تكلفة الأضحية بين الإخوة</a>
+
+## الطريقة الثانية: التقسيم بالنسبة (حصة، ملكية، أو عدد ضيوف)
+
+تُستخدم عندما **تكون حصص المشاركين في المصروف مختلفة أصلاً من البداية** — كاختلاف نسبة الملكية في سيارة مشتركة، أو اختلاف مساحة الشقة في مبنى، أو اختلاف عدد الضيوف الذي دعاه كل جانب في مناسبة مشتركة. هنا، القسمة بالتساوي تكون غير عادلة لأنها تتجاهل هذا الاختلاف الأصلي.
+
+**أمثلة تفصيلية**:
+- <a href="/blog/split-shared-car-ownership-expenses">تقسيم مصاريف سيارة مشتركة بين شريكين بنسبة الملكية</a>
+- <a href="/blog/split-apartment-building-maintenance-fees-by-unit-size">تقسيم رسوم صيانة العمارة حسب مساحة الشقة</a>
+- <a href="/blog/split-airbnb-cost-by-room-type">تقسيم تكلفة شاليه أو إير بي إن بي حسب نوع الغرفة</a>
+- <a href="/blog/split-henna-night-costs-bride-groom-families-guest-count">تقسيم تكلفة حفل الحناء بين عائلتين بنسبة عدد الضيوف</a>
+
+## الطريقة الثالثة: التقسيم حسب الاستهلاك الفعلي
+
+تُستخدم عندما **يختلف الاستخدام الفعلي لكل شخص من نفس الخدمة المشتركة**، كاختلاف استهلاك الكهرباء بين غرف الشقة، أو تجاوز خط جوال واحد لباقة البيانات بينما البقية لم يتجاوزوا. هنا، الأعدل أن يدفع كل شخص مقابل استخدامه الحقيقي، لا حصة متساوية أو نسبة ثابتة لا تعكس الفرق الفعلي.
+
+**أمثلة تفصيلية**:
+- <a href="/blog/split-electricity-water-bills-by-usage">تقسيم فاتورة الكهرباء والماء حسب الاستخدام الفعلي</a>
+- <a href="/blog/split-family-mobile-plan-bill-data-overage">تقسيم فاتورة خط الجوال العائلي عند تجاوز البيانات</a>
+- <a href="/blog/split-carpool-gas-costs">تقسيم تكلفة البنزين في نقل التكافل اليومي بالتكلفة لكل رحلة</a>
+
+## مثال عملي مقارن: رحلة واحدة، ثلاث طرق تقسيم مختلفة
+
+4 أصدقاء في رحلة واحدة، وتضمنت رحلتهم 3 أنواع مصاريف مختلفة تحتاج كل منها طريقة تقسيم مختلفة:
+
+### المصروف الأول: سيارة أجرة مشتركة من المطار
+استفاد الأربعة بالتساوي من نفس الرحلة، فتُقسَّم **بالتساوي**: **25% من التكلفة لكل شخص**.
+
+### المصروف الثاني: غرف الفندق (غرفتان بأسعار مختلفة)
+شخصان حجزا غرفة مزدوجة أرخص، وشخصان حجزا غرفة أكبر بسعر أعلى. تُقسَّم **بالنسبة** حسب سعر كل غرفة، فيدفع نزلاء الغرفة الأكبر حصة أعلى تعكس الفرق الفعلي بين الغرفتين، لا حصة متساوية تتجاهله.
+
+### المصروف الثالث: تجوال بيانات الجوال خلال الرحلة
+واحد فقط من الأربعة استخدم تجواراً دولياً بتكلفة إضافية. يُحسَب هذا المبلغ **حسب الاستهلاك الفعلي**، فيتحمّله ذلك الشخص بمفرده، دون تحميل بقية المجموعة أي جزء منه.
+
+**الخلاصة من المثال**: نفس الرحلة الواحدة تحتاج لثلاث طرق تقسيم مختلفة حسب طبيعة كل مصروف على حدة، لا طريقة واحدة تُطبَّق على كل شيء.
+
+## كيف تختار الطريقة الصحيحة لكل مصروف؟
+
+- **هل استفاد الجميع بنفس القدر تقريباً، بصرف النظر عن التفاصيل الصغيرة؟** → التقسيم بالتساوي
+- **هل حصص المشاركين في هذا المصروف مختلفة أصلاً (ملكية، مساحة، عدد ضيوف)؟** → التقسيم بالنسبة
+- **هل الاستخدام الفعلي لهذه الخدمة يختلف بوضوح من شخص لآخر؟** → التقسيم حسب الاستهلاك
+
+## أخطاء شائعة عند اختيار طريقة التقسيم
+
+- **تطبيق التقسيم بالتساوي على كل شيء بشكل تلقائي**، حتى في حالات تختلف فيها الحصص أو الاستهلاك فعلياً
+- **تجاهل الفروقات الصغيرة بذريعة "لا تستحق الحساب"**، مع تراكمها على مدى فترة طويلة لتصبح فرقاً معتبراً
+- **عدم الاتفاق على طريقة التقسيم مسبقاً**، فيحدث خلاف فقط عند وصول الفاتورة النهائية
+- **استخدام طريقة واحدة لكل مصاريف رحلة أو مناسبة**، رغم اختلاف طبيعة كل مصروف فيها
+
+## كيف يساعدكم Diviso في تطبيق طريقة التقسيم الصحيحة؟
+
+- ✅ دعم التقسيم بالتساوي، بالنسبة، وحسب الاستهلاك الفعلي في نفس المجموعة
+- ✅ إمكانية استخدام طريقة تقسيم مختلفة لكل مصروف داخل نفس الرحلة أو المناسبة
+- ✅ سجل شفاف يوضح لكل شخص كيف وصل إلى المبلغ المطلوب منه بالضبط لكل بند على حدة
+- ✅ تتبّع سهل لكل الحالات الشائعة من فواتير وحجوزات ومصاريف متكررة
+
+## أسئلة شائعة
+
+### ما أسهل طريقة لتقسيم المصاريف مع الأصدقاء؟
+التقسيم بالتساوي هو الأسهل حسابياً، لكنه عادل فقط إذا استفاد الجميع من المصروف بنفس القدر تقريباً. إذا اختلفت الحصص أو الاستخدام الفعلي، طريقة أخرى (بالنسبة أو حسب الاستهلاك) تكون أعدل.
+
+### متى يجب استخدام التقسيم بالنسبة بدل التساوي؟
+عندما تكون حصص المشاركين في المصروف مختلفة أصلاً من البداية، كاختلاف نسبة الملكية أو مساحة السكن أو عدد الضيوف الذي دعاه كل جانب، فتجاهل هذا الاختلاف بالقسمة المتساوية يصبح غير عادل.
+
+### هل يمكن استخدام أكثر من طريقة تقسيم في نفس الرحلة أو المناسبة؟
+نعم، بل هذا هو الوضع الطبيعي في أغلب الحالات: كل مصروف داخل الرحلة أو المناسبة له طبيعته الخاصة، فيُطبَّق عليه طريقة التقسيم الأنسب له بشكل مستقل عن بقية المصاريف.
+
+## الخلاصة
+
+تقسيم المصاريف مع الأصدقاء بعدل لا يحتاج لطريقة واحدة تُطبَّق على كل شيء: حدّدوا طبيعة كل مصروف على حدة، واختاروا بين التقسيم بالتساوي، بالنسبة، أو حسب الاستهلاك الفعلي بما يناسبه.
+
+**جرب Diviso الآن وطبّق طريقة التقسيم الصحيحة لكل مصروف مع أصدقائك بسهولة.**
+    `,
+    contentEn: `
+## Quick Answer
+
+There are **3 core methods** for splitting any shared expense with friends fairly: **an equal split** (everyone pays the same amount), **a proportional split** (everyone pays based on their share, ownership, or guest count), and **a usage-based split** (everyone pays for exactly what they used). There's no single method that's "always correct" — the fair method depends on **the nature of the expense itself**: did everyone benefit equally? Were the participants' stakes already different to begin with? Or does actual usage vary from person to person?
+
+## Method One: The Equal Split
+
+This method is used when **every participant benefits from the expense roughly equally**, regardless of minor differences in the details. The classic example: splitting a food delivery order everyone ordered from, or splitting the cost of a neighborhood guard who protects every home equally.
+
+**Detailed examples**:
+- <a href="/blog/split-food-delivery-order-cost-friends">Splitting a food delivery order cost between friends</a>
+- <a href="/blog/split-neighborhood-security-guard-cost">Splitting a neighborhood security guard's cost between neighbors</a>
+- <a href="/blog/split-eid-al-adha-sacrifice-cost-family">Splitting an Eid al-Adha sacrifice's cost between siblings</a>
+
+## Method Two: The Proportional Split (by Share, Ownership, or Guest Count)
+
+This method is used when **the participants' stakes in the expense were already different from the start** — like differing ownership percentages in a shared car, different unit sizes in a building, or a different number of guests each side invited to a shared event. Here, an equal split is unfair because it ignores that original difference.
+
+**Detailed examples**:
+- <a href="/blog/split-shared-car-ownership-expenses">Splitting a shared car's expenses between two owners by ownership percentage</a>
+- <a href="/blog/split-apartment-building-maintenance-fees-by-unit-size">Splitting apartment building maintenance fees by unit size</a>
+- <a href="/blog/split-airbnb-cost-by-room-type">Splitting a chalet or Airbnb's cost by room type</a>
+- <a href="/blog/split-henna-night-costs-bride-groom-families-guest-count">Splitting henna night costs between two families by guest count</a>
+
+## Method Three: The Usage-Based Split
+
+This method is used when **actual usage of the same shared service clearly differs between people**, like differing electricity usage between rooms in an apartment, or one mobile line going over its data allowance while the rest didn't. Here, it's fairest for each person to pay for their real usage, rather than an equal or fixed-ratio share that doesn't reflect the actual difference.
+
+**Detailed examples**:
+- <a href="/blog/split-electricity-water-bills-by-usage">Splitting electricity and water bills by actual usage</a>
+- <a href="/blog/split-family-mobile-plan-bill-data-overage">Splitting a family mobile plan bill when a line goes over its data</a>
+- <a href="/blog/split-carpool-gas-costs">Splitting daily carpool gas costs by cost-per-trip</a>
+
+## A Comparative Example: One Trip, Three Different Split Methods
+
+4 friends go on one trip together, which includes 3 different types of expenses, each needing a different split method:
+
+### Expense One: A Shared Airport Taxi
+All four benefited equally from the same ride, so it's split **equally**: **25% of the cost per person**.
+
+### Expense Two: Hotel Rooms (Two Rooms at Different Prices)
+Two friends booked a cheaper double room, and two booked a pricier, bigger room. This is split **proportionally** based on each room's price, so the bigger room's occupants pay a higher share reflecting the actual difference between the two rooms, not an equal share that ignores it.
+
+### Expense Three: Mobile Data Roaming During the Trip
+Only one of the four used international roaming at an extra cost. This amount is calculated **by actual usage**, so that person alone bears it, without charging the rest of the group any part of it.
+
+**The takeaway from this example**: the same single trip needs three different split methods depending on each expense's own nature, not one method applied to everything.
+
+## How Do You Choose the Right Method for Each Expense?
+
+- **Did everyone benefit roughly equally, regardless of small details?** → The equal split
+- **Were the participants' stakes in this expense already different (ownership, unit size, guest count)?** → The proportional split
+- **Does actual usage of this service clearly differ from person to person?** → The usage-based split
+
+## Common Mistakes When Choosing a Split Method
+
+- **Automatically applying an equal split to everything**, even in cases where stakes or actual usage genuinely differ
+- **Ignoring small differences as "not worth calculating"**, letting them accumulate over a long period into a meaningful gap
+- **Not agreeing on a split method in advance**, so a dispute only happens once the final bill arrives
+- **Using one single method for an entire trip or event's expenses**, despite each individual expense having its own nature
+
+## How Diviso Helps You Apply the Right Split Method
+
+- ✅ Supports equal, proportional, and usage-based splits within the same group
+- ✅ Lets you use a different split method for each expense within the same trip or event
+- ✅ A transparent record showing every person exactly how their required amount was calculated for each item
+- ✅ Easy tracking for all the common scenarios of bills, bookings, and recurring expenses
+
+## Frequently Asked Questions
+
+### What's the easiest way to split expenses with friends?
+An equal split is the easiest to calculate, but it's only fair if everyone benefited from the expense roughly equally. If stakes or actual usage differ, another method (proportional or usage-based) is fairer.
+
+### When should you use a proportional split instead of an equal one?
+When the participants' stakes in the expense were already different from the start, like differing ownership percentages, living space, or the number of guests each side invited — ignoring that difference with an equal split becomes unfair.
+
+### Can you use more than one split method within the same trip or event?
+Yes, and that's actually the normal situation in most cases: each expense within a trip or event has its own nature, so the most fitting split method is applied to it independently of the other expenses.
+
+## Conclusion
+
+Splitting expenses with friends fairly doesn't require one method applied to everything: determine each expense's nature on its own, and choose between an equal, proportional, or usage-based split as fits it best.
+
+**Try Diviso now and apply the right split method for every expense with your friends, easily.**
+    `
+  },
+  {
     slug: "split-shared-furniture-cost-new-roommate-buy-in",
     title: "كم يدفع الشريك الجديد الذي ينضم بعد شراء الأثاث المشترك مباشرة؟",
     titleEn: "How Much Should a New Roommate Pay to Buy Into Furniture the Others Already Bought?",

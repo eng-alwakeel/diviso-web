@@ -16,6 +16,162 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "how-to-split-rent-with-flatmates-uk",
+    title: "كيف تُقسَّم الإيجار بين السكن المشترك؟ بالتساوي أم حسب حجم الغرفة أم الدخل",
+    titleEn: "How to Split Rent With Flatmates: Equal, by Room Size, or by Income",
+    description: "ثلاث طرق شائعة لتقسيم إيجار شقة مشتركة: بالتساوي، حسب حجم ومزايا كل غرفة، أو حسب دخل كل شخص. الطريقة الأعدل تعتمد على مدى اختلاف الغرف وظروف الساكنين. دليل عملي بمثال محسوب بالنسب.",
+    descriptionEn: "There are three common ways flatmates split rent: equally, by each room's size and features, or by each person's income. Which one is fairest depends on how different the rooms and the flatmates' circumstances actually are. A practical guide with a percentage-based worked example and a UK bills note.",
+    keywords: ["تقسيم إيجار السكن المشترك", "تقسيم الإيجار حسب حجم الغرفة", "تقسيم الإيجار حسب الدخل", "كيف نقسم إيجار الشقة بين الشركاء", "إيجار عادل بين سكن مشترك", "فرق السعر بين غرف الشقة المشتركة"],
+    keywordsEn: ["how to split rent with flatmates", "splitting rent by room size", "splitting rent by income", "fair way to divide rent in a shared house", "flatshare rent calculator method", "council tax flatshare who pays"],
+    category: "guides",
+    readTime: 8,
+    publishDate: "2026-10-27",
+    content: `
+## الإجابة المختصرة
+
+توجد **3 طرق شائعة** لتقسيم إيجار شقة أو منزل مشترك بين عدة سكان: **بالتساوي** (كل شخص يدفع نفس المبلغ)، **حسب حجم ومزايا الغرفة** (من يحصل على غرفة أكبر أو بحمام خاص يدفع أكثر)، أو **حسب دخل كل شخص** (من يكسب أكثر يدفع نسبة أعلى). الطريقة الأعدل تعتمد على مدى اختلاف الغرف فعلياً، ومدى رغبة الساكنين في اعتبار فروقات الدخل بينهم.
+
+## الطريقة الأولى: التقسيم بالتساوي
+
+تناسب الحالات التي تكون فيها **الغرف متقاربة في الحجم والمزايا تقريباً**، فلا يوجد فرق واضح يستدعي معالجة خاصة. هذه الطريقة الأبسط حسابياً، وتصلح أيضاً عندما يرغب الجميع في تجنب أي نقاش حول تقييم الفروقات الدقيقة بين الغرف.
+
+## الطريقة الثانية: التقسيم حسب حجم ومزايا الغرفة
+
+تناسب الحالات التي **تختلف فيها الغرف بوضوح** (مساحة أكبر، حمام خاص، بلكونة، إضاءة طبيعية أفضل). هنا، القسمة بالتساوي تصبح غير عادلة، لأن من يحصل على الغرفة الأصغر أو الأقل مزايا يدفع نفس مبلغ من يحصل على الغرفة الأفضل.
+
+### مثال عملي (بالنسب)
+شقة بـ3 غرف يتقاسمها 3 أشخاص. بعد الاتفاق على تقييم نسبي لكل غرفة بناءً على المساحة والمزايا:
+- **الغرفة الكبرى (بحمام خاص)**: نسبتها = **40%** من الإيجار الإجمالي
+- **الغرفة المتوسطة**: نسبتها = **35%**
+- **الغرفة الأصغر**: نسبتها = **25%**
+
+**التحقق**: 40% + 35% + 25% = **100%** من الإيجار الإجمالي، موزعة بما يعكس الفرق الفعلي بين الغرف.
+
+## الطريقة الثالثة: التقسيم حسب الدخل
+
+طريقة أقل شيوعاً، تُستخدم عندما يرى الساكنون أن **القدرة على الدفع أهم من مساحة الغرفة نفسها**. كل شخص يدفع نسبة من الإيجار تعادل نسبة دخله من إجمالي دخل كل الساكنين مجتمعين.
+
+### مثال عملي (بالنسب)
+3 أشخاص بدخول مختلفة يقتسمون الإيجار بنسبة دخل كل واحد منهم:
+- الشخص الأول: دخله يمثّل **50%** من إجمالي دخل الثلاثة، فيدفع **50%** من الإيجار
+- الشخص الثاني: دخله يمثّل **30%**، فيدفع **30%** من الإيجار
+- الشخص الثالث: دخله يمثّل **20%**، فيدفع **20%** من الإيجار
+
+هذه الطريقة تتطلب **موافقة صريحة ومسبقة من الجميع**، لأنها تعني الكشف عن تفاصيل الدخل الشخصي، وهو أمر لا يرتاح له كل الساكنين.
+
+## كيف تختارون الطريقة الأنسب؟
+
+- **الغرف متقاربة ولا أحد يرى فرقاً يستدعي معالجة خاصة؟** → التقسيم بالتساوي
+- **الغرف مختلفة بوضوح في المساحة أو المزايا؟** → التقسيم حسب حجم الغرفة
+- **يفضّل الجميع اعتبار فروقات الدخل، ولا مانع من مشاركة هذه المعلومة؟** → التقسيم حسب الدخل
+
+## أخطاء شائعة عند تقسيم إيجار السكن المشترك
+
+- **تجاهل فرق واضح بين الغرف وتقسيم الإيجار بالتساوي رغم ذلك**
+- **اعتماد تقسيم حسب الدخل دون موافقة صريحة من الجميع على مبدأ مشاركة هذه المعلومة**
+- **عدم الاتفاق على طريقة التقسيم كتابياً منذ بداية السكن المشترك**
+- **خلط مصاريف أخرى (كالكهرباء أو الإنترنت) مع تقسيم الإيجار نفسه**، رغم أنها غالباً تحتاج طريقة تقسيم مختلفة
+
+## كيف يساعدكم Diviso في تقسيم إيجار السكن المشترك؟
+
+- ✅ حساب تلقائي لحصة كل شخص بأي من الطرق الثلاث (بالتساوي، بالنسبة، أو بالدخل)
+- ✅ تسجيل نسبة كل غرفة أو كل شخص بوضوح منذ بداية السكن المشترك
+- ✅ فصل سجل الإيجار عن باقي المصاريف المشتركة (كهرباء، إنترنت) التي قد تحتاج طريقة تقسيم مختلفة
+- ✅ سجل شفاف يوضح لكل ساكن كيف وصل إلى حصته بالضبط
+
+## أسئلة شائعة
+
+### ما أكثر طريقة شائعة لتقسيم إيجار سكن مشترك؟
+التقسيم بالتساوي هو الأكثر شيوعاً عندما تكون الغرف متقاربة، لكن التقسيم حسب حجم الغرفة يصبح أعدل عندما تختلف الغرف بوضوح في المساحة أو المزايا.
+
+### هل يصح تقسيم الإيجار حسب الدخل دون موافقة الجميع؟
+لا، هذه الطريقة تتطلب موافقة صريحة ومسبقة من كل الساكنين، لأنها تعني مشاركة تفاصيل الدخل الشخصي، وهو أمر حساس لا يناسب كل مجموعة سكن مشترك.
+
+### هل تُحسَب فواتير الكهرباء والإنترنت بنفس طريقة تقسيم الإيجار؟
+ليس بالضرورة، فهذه المصاريف غالباً تحتاج طريقة تقسيم مستقلة (كالتقسيم حسب الاستخدام الفعلي)، ويُفضَّل فصل سجلها عن سجل الإيجار لتجنب الخلط بين القاعدتين.
+
+## الخلاصة
+
+تقسيم إيجار سكن مشترك لا يحتاج لطريقة واحدة تناسب كل الحالات: اختاروا بين التقسيم بالتساوي، حسب حجم الغرفة، أو حسب الدخل بما يعكس فعلاً اختلاف غرفكم وظروفكم.
+
+**جرب Diviso الآن وقسّم إيجار سكنكم المشترك بعدل بأي طريقة تناسبكم.**
+    `,
+    contentEn: `
+## Quick Answer
+
+There are **3 common ways** flatmates split rent on a shared house or flat: **equally** (everyone pays the same amount), **by room size and features** (whoever gets the bigger room or an en-suite bathroom pays more), or **by income** (whoever earns more pays a higher share). Which method is fairest depends on how different the rooms actually are, and whether the flatmates want income differences factored in at all.
+
+## Method One: Splitting Rent Equally
+
+This fits situations where **the rooms are roughly similar in size and features**, so there's no clear difference that needs special handling. It's the simplest method to calculate, and it also works well when everyone would rather avoid a debate over fine differences between rooms.
+
+## Method Two: Splitting Rent by Room Size and Features
+
+This fits situations where **the rooms clearly differ** (bigger floor space, an en-suite bathroom, a balcony, better natural light). Here, an equal split becomes unfair, since whoever gets the smaller or less-equipped room pays the same amount as whoever gets the better room.
+
+### A Worked Example (Using Percentages)
+A 3-bedroom flat shared by 3 flatmates. After agreeing on a relative valuation for each room based on size and features:
+- **The largest room (with an en-suite bathroom)**: valued at **40%** of the total rent
+- **The medium room**: valued at **35%**
+- **The smallest room**: valued at **25%**
+
+**Check**: 40% + 35% + 25% = **100%** of the total rent, distributed to reflect the actual difference between the rooms.
+
+## Method Three: Splitting Rent by Income
+
+A less common method, used when flatmates feel **ability to pay matters more than the room's physical space itself**. Each person pays a percentage of the rent equal to their share of the combined income of everyone living there.
+
+### A Worked Example (Using Percentages)
+3 flatmates with different incomes split the rent proportional to each person's share of their combined income:
+- Flatmate one: their income is **50%** of the combined total, so they pay **50%** of the rent
+- Flatmate two: their income is **30%**, so they pay **30%** of the rent
+- Flatmate three: their income is **20%**, so they pay **20%** of the rent
+
+This method requires **explicit, upfront agreement from everyone**, since it means disclosing personal income details, which not every household is comfortable with.
+
+## A UK Bills Note: Council Tax Isn't Part of the Rent Split
+
+In the UK, council tax is a separate local charge from rent, and it follows its own rules rather than whatever method a household uses to split rent — for example, full-time students are typically exempt, and a single-occupant household may qualify for a discount. Because these rules depend on each flatmate's individual status, council tax should be worked out and tracked on its own, not folded into the rent-splitting calculation above.
+
+## How Do You Choose the Right Method?
+
+- **Are the rooms similar, with no difference worth addressing?** → Split equally
+- **Do the rooms clearly differ in size or features?** → Split by room size
+- **Does everyone want income differences factored in, and are they comfortable sharing that information?** → Split by income
+
+## Common Mistakes When Splitting Shared Housing Rent
+
+- **Ignoring a clear difference between rooms and splitting the rent equally anyway**
+- **Adopting an income-based split without everyone's explicit agreement to share that information**
+- **Not agreeing on the split method in writing from the start of the tenancy**
+- **Mixing other costs (like electricity or internet) into the rent split itself**, even though they usually need a different splitting method
+
+## How Diviso Helps Split Shared Housing Rent
+
+- ✅ Automatically calculates each person's share using any of the three methods (equal, proportional, or by income)
+- ✅ Logs each room's or person's agreed ratio clearly from the start of the tenancy
+- ✅ Keeps the rent record separate from other shared costs (electricity, internet) that often need a different split method
+- ✅ A transparent record showing every flatmate exactly how their share was calculated
+
+## Frequently Asked Questions
+
+### What's the most common way to split rent in a shared house?
+Splitting equally is the most common when the rooms are roughly similar, but splitting by room size becomes fairer once the rooms clearly differ in space or features.
+
+### Is it okay to split rent by income without everyone's agreement?
+No. This method requires explicit, upfront agreement from every flatmate, since it means sharing personal income details, which is sensitive and doesn't suit every shared household.
+
+### Are electricity and internet bills calculated the same way as the rent split?
+Not necessarily. These costs often need their own splitting method (like usage-based splitting), and it's best to keep their record separate from the rent record to avoid mixing up the two rules.
+
+## Conclusion
+
+Splitting rent in a shared house doesn't need one method that fits every situation: choose between an equal split, a room-size split, or an income-based split based on what actually reflects your rooms and circumstances.
+
+**Try Diviso now and split your shared housing rent fairly, using whichever method fits your household.**
+    `
+  },
+  {
     slug: "how-to-split-expenses-with-friends-guide",
     title: "كيف أقسم المصاريف مع أصدقائي؟ دليل الطرق الثلاث بالأمثلة",
     titleEn: "How to Split Expenses With Friends: The 3 Methods Explained",

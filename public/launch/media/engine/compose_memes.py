@@ -107,6 +107,15 @@ body{{background:#0F1311}}
 .c{{margin-top:40px;font:500 38px R;color:#C8F169}}
 .brand{{left:40px;bottom:40px}} .ai{{right:40px;bottom:48px}}
 </style></head><body><div class="pic"></div><div class="box"><div class="q">{text}</div><div class="opts">{''.join(f'<div class="o"><b>{k}</b>{v}</div>' for k,v in spec['opts'])}</div><div class="c">{sub}</div></div>{BRAND}{AI}</body></html>"""
+    if kind == 'screen':
+        ph = int(H*0.56)
+        return base + f"""<style>
+body{{background:radial-gradient(120% 70% at 50% 0%,#22301f 0%,#0F1311 62%)}}
+.t{{position:absolute;left:60px;right:60px;top:{110 if tall else 70}px;text-align:center;color:#fff;font:700 {72 if tall else 64}px R;line-height:1.25}}
+.ph{{position:absolute;left:50%;transform:translateX(-50%);top:{330 if tall else 250}px;height:{ph}px;border-radius:46px;box-shadow:0 20px 60px rgba(0,0,0,.55);border:10px solid #1A201D}}
+.s{{position:absolute;left:60px;right:60px;top:{330+ph+50 if tall else 250+ph+36}px;text-align:center;color:#C8F169;font:500 {42 if tall else 38}px R;line-height:1.45}}
+.brand{{left:50%;transform:translateX(-50%);bottom:{50 if tall else 30}px}}
+</style></head><body><div class="t">{text}</div><img class="ph" src="data:image/png;base64,{base64.b64encode(pathlib.Path(spec['img']).read_bytes()).decode()}"><div class="s">{sub}</div>{BRAND}</body></html>"""
     if kind == 'chat':
         rows = []
         for m in spec['msgs']:

@@ -13461,18 +13461,43 @@ Group expense tracking doesn't have to be a chore. With the right tool and a sim
     readTime: 11,
     publishDate: "2026-03-13",
     content: `
-## مقدمة
+## الإجابة المختصرة
 
-Splitwise تطبيق شهير لكن هناك بدائل أفضل. إليك المقارنة.
+Splitwise تطبيق مشهور لتتبع وتقسيم المصاريف الجماعية، لكن كثيراً من المستخدمين العرب يبحثون عن بديل يدعم اللغة العربية بشكل كامل، ويتعامل بالريال السعودي مباشرة، ويوفر العملات المتعددة دون تعقيد. Diviso أحد أبرز هذه البدائل، مصمم بواجهة عربية أصلية من الأساس، لا كترجمة لاحقة لواجهة إنجليزية.
 
-## أفضل البدائل
+## ما هو أفضل بديل لـ Splitwise بالعربي؟
 
-### 1. Diviso
-بديل مجاني مع ميزات أكثر وتجربة أنظف.
+بالنسبة لمن يبحث عن تجربة عربية كاملة، Diviso يُعتبر من أقوى بدائل Splitwise المتاحة، لأنه بُني بواجهة عربية أصلية (اتجاه RTL طبيعي، لا مجرد انعكاس لتصميم إنجليزي)، ويدعم الريال السعودي كعملة أساسية إلى جانب عملات متعددة أخرى، دون تعقيد في التبديل بينها.
+
+### لماذا يبحث المستخدمون العرب عن بديل لـ Splitwise؟
+
+- **دعم عربي محدود**: واجهة Splitwise الأساسية مبنية بالإنجليزية أولاً، والترجمة العربية فيها ليست دائماً طبيعية في الاستخدام اليومي
+- **التعامل بالريال السعودي أو عملات خليجية أخرى** ليس تجربة أساسية مركزية في تصميم التطبيق
+- **سيناريوهات تقسيم محلية مألوفة** (كالنقوط في الأعراس أو الجمعيات الدورية) لا تجد دائماً قالباً جاهزاً يناسبها
+
+## مزايا محايدة لبديل عربي مثل Diviso
+
+- واجهة عربية كاملة بتصميم RTL أصلي منذ البداية
+- دعم مباشر للريال السعودي كعملة أساسية
+- دعم العملات المتعددة لمن يتعامل مع مجموعات من دول مختلفة
+- فئات مصاريف قابلة للتخصيص تناسب سيناريوهات محلية متعددة
+
+## أسئلة شائعة
+
+### هل يوجد بديل لـ Splitwise يدعم اللغة العربية بالكامل؟
+نعم، تطبيقات مثل Diviso مصممة بواجهة عربية أصلية منذ البداية، لا كترجمة إضافية لواجهة إنجليزية، وهذا يجعل تجربة الاستخدام أكثر طبيعية للمستخدم العربي.
+
+### هل يدعم بديل Splitwise العربي التعامل بالريال السعودي؟
+نعم، التطبيقات المصممة خصيصاً للسوق الخليجي والعربي تدعم الريال السعودي كعملة أساسية مباشرة، دون الحاجة لتحويل يدوي أو إعدادات إضافية معقدة.
+
+### ما الفرق الأساسي بين بديل عربي وتطبيق مترجم فقط؟
+التطبيق المترجم فقط ينقل النصوص للعربية دون تغيير بنية الواجهة نفسها (اتجاه العرض، ترتيب العناصر)، بينما البديل المصمم عربياً من الأساس يبني تجربة RTL طبيعية منذ التصميم الأول.
 
 ## الخلاصة
 
-Diviso هو أفضل بديل لـ Splitwise في 2026.
+إذا كنت تبحث عن بديل لـ Splitwise يفهم احتياجاتك كمستخدم عربي — من واجهة RTL طبيعية إلى دعم الريال السعودي والعملات المتعددة — فإن Diviso خيار يستحق التجربة.
+
+**[جرب Diviso الآن](/auth?mode=signup)** وقسّم مصاريفك مع أصدقائك بواجهة عربية كاملة.
     `,
     contentEn: `
 ## Introduction
@@ -13546,16 +13571,14 @@ Tab focuses specifically on splitting restaurant bills by scanning receipts and 
 
 ## Comparison: Diviso vs. Splitwise
 
-| Feature | Diviso | Splitwise Free | Splitwise Pro ($4.99/mo) |
-|---------|--------|----------------|--------------------------|
-| Unlimited groups | ✅ | ✅ | ✅ |
-| Multi-currency | ✅ Free | ❌ | ✅ |
-| Expense categories | ✅ Free | ❌ | ✅ |
-| Smart settlements | ✅ | ✅ | ✅ |
-| Ad-free | ✅ | ❌ | ✅ |
-| Expense search | ✅ Free | ❌ | ✅ |
-| Modern UI | ✅ | ❌ | ❌ |
-| Receipt photos | ✅ | ❌ | ✅ |
+- **Unlimited groups**: supported on Diviso, Splitwise Free, and Splitwise Pro alike
+- **Multi-currency**: included on Diviso at no extra tier; requires Splitwise Pro
+- **Expense categories**: included on Diviso at no extra tier; requires Splitwise Pro
+- **Smart settlements**: supported on Diviso, Splitwise Free, and Splitwise Pro alike
+- **Ad-free experience**: Diviso and Splitwise Pro are ad-free; Splitwise Free shows ads
+- **Expense search**: included on Diviso at no extra tier; requires Splitwise Pro
+- **Modern UI**: Diviso only — neither Splitwise tier has been modernized
+- **Receipt photos**: included on Diviso at no extra tier; requires Splitwise Pro
 
 ## How to Switch from Splitwise to Diviso
 

@@ -45,20 +45,20 @@ function excelBig(g, t, o = {}) {
 // s01 — أنا كنت ماسك الحسابات (hook)
 registerShot('s01', { draw(g, t, info) {
   room(g, t, { expr: 'thinking', hl: true });
-  cap(g, t, info.dur, 'أنا كنت ماسك الحسابات 🧾', E.H * 0.12, { size: 76 });
+  cap(g, t, info.dur, 'كل شلة فيها واحد…', E.H * 0.1, { size: 70 }); cap(g, t, info.dur, 'شايل همّ الحساب 🧾', E.H * 0.16, { size: 70 });
   brand(g);
 } });
 // s02 — عندنا مخيم.. ونظام القطّة
 registerShot('s02', { draw(g, t, info) {
   fireCircle(g, t, { z: 1.2 + 0.08 * t / info.dur, youExpr: 'joy', fahadExpr: 'joy', majedExpr: 'happy' });
-  cap(g, t, info.dur, 'عندنا مخيم… ونظام قطّة 🏕️', E.H * 0.13);
+  cap(g, t, info.dur, 'عندنا مخيم… والمصاريف بالقطّة 🏕️', E.H * 0.13, { size: 60 });
   brand(g);
 } });
 // s03 — وكل مرة نفس القصة
 registerShot('s03', { draw(g, t, info) {
   fireCircle(g, t, { z: 1.45, fire: 0.6, youExpr: 'neutral', fahadExpr: 'neutral', saudExpr: 'neutral', majedExpr: 'neutral' });
   veil(g, '#000', 0.45);
-  ar(g, 'وكل مرة… نفس القصة 😮‍💨', E.W / 2, E.H * 0.42, { size: 84, a: fadeA(t, info.dur) });
+  ar(g, 'وكل مرة… نفس السالفة 😮‍💨', E.W / 2, E.H * 0.42, { size: 84, a: fadeA(t, info.dur) });
   brand(g);
 } });
 // s04 — ملف إكسل طويل + قروبين
@@ -73,13 +73,13 @@ registerShot('s04', { draw(g, t, info) {
 // s05 — كم علي؟ حوّلت؟ مين باقي ما دفع؟
 registerShot('s05', { draw(g, t, info) {
   backdrop(g, ['#0b1220', '#132018']);
-  chat(g, t, [{ at: 0.05, text: 'كم علي؟ 🤔', name: 'فهد', nameColor: '#e8e2d6', size: 46 }, { at: 0.8, text: 'حوّلت؟ 💸', name: 'سعود', nameColor: '#7fb0ff', size: 46 }, { at: 1.6, text: 'مين باقي ما دفع؟ 😤', name: 'ماجد', nameColor: '#ff8a7a', size: 46 }, { at: 2.3, text: 'لحظة أراجع الإكسل…', me: true }], { title: 'قروب الحساب 🧮' });
+  chat(g, t, [{ at: 0.05, text: 'كم علي؟ 🤔', name: 'فهد', nameColor: '#e8e2d6', size: 46 }, { at: 1.1, text: 'حوّلت؟ 💸', name: 'سعود', nameColor: '#7fb0ff', size: 46 }, { at: 2.15, text: 'مين باقي ما دفع؟ 😤', name: 'ماجد', nameColor: '#ff8a7a', size: 46 }, { at: 2.9, text: 'لحظة أراجع الإكسل…', me: true }], { title: 'قروب الحساب 🧮' });
   brand(g);
 } });
 // s06 — وأنا بالليل.. أطابق الأرقام سطر سطر
 registerShot('s06', { draw(g, t, info) {
   room(g, t, { expr: t > 1.8 ? 'sleepy' : 'thinking', hl: true });
-  cap(g, t, info.dur, 'بالليل… أطابق سطر سطر 🌙', E.H * 0.12);
+  cap(g, t, info.dur, 'بالليل… يطابق سطر سطر 🌙', E.H * 0.12, { size: 66 });
   ar(g, '٢:٠٠ ص', E.W / 2 - 300, E.H * 0.26 + 120, { size: 40, color: '#e8e4da' });
   brand(g);
 } });
@@ -94,8 +94,8 @@ registerShot('s07', { draw(g, t, info) {
     f(-330, FOUNDER, POSES.phone, 'happy', 'phone'); f(-160, FAHAD, POSES.wave, 'joy'); f(-40, KID, POSES.cheer, 'joy'); f(120, KID2, POSES.wave, 'joy'); f(230, SAUD, POSES.stand, 'happy'); f(350, MAJED, POSES.wave, 'joy');
     rr(g, E.W / 2 - 520, GY - 70, 90, 110, 14); g.fillStyle = '#c45a3a'; g.fill(); seg(g, [[E.W / 2 - 495, GY - 70], [E.W / 2 - 495, GY - 110], [E.W / 2 - 455, GY - 110], [E.W / 2 - 455, GY - 70]], 6, '#3a2a22');
   });
-  cap(g, t, info.dur, 'وبالسفر… تطبيق نعتمد عليه ✈️', E.H * 0.12, { size: 66 });
-  ar(g, 'أنا وأصحابي وعوائلنا 👨‍👩‍👧', E.W / 2, E.H * 0.2, { size: 52, a: ease.out(prog(t, 2.2, 2.6)), weight: 600 });
+  cap(g, t, info.dur, 'وبالسفر… تطبيق مريّحنا ✈️', E.H * 0.12, { size: 66 });
+  ar(g, 'إحنا وعوايلنا 👨‍👩‍👧', E.W / 2, E.H * 0.2, { size: 52, a: ease.out(prog(t, 2.9, 3.3)), weight: 600 });
   brand(g);
 } });
 // s08 — وفي يوم.. فتحناه.. ولقيناه قفل
@@ -111,13 +111,13 @@ registerShot('s08', { draw(g, t, info) {
     if (shut) { const q = ease.outBack(prog(t, 2.3, 2.7)); g.save(); g.translate(w / 2, h * 0.62); g.scale(q, q); rr(g, -300, -150, 600, 300, 40); g.fillStyle = '#23262e'; g.fill(); ar(g, '🔒', 0, -70, { size: 80, glowC: 'transparent' }); ar(g, 'هذا التطبيق لم يعد متاحاً', 0, 40, { size: 40, color: '#ffffff', glowC: 'transparent' }); g.restore(); }
   }, { glow: shut ? '#e0332a' : '#4a8fd6' });
   g.restore();
-  cap(g, t, info.dur, shut ? 'ولقيناه… قفل 🔒' : 'وفي يوم… فتحناه', E.H * 0.07, { size: 70, color: shut ? '#ff8a7a' : '#fff6e6' });
+  cap(g, t, info.dur, shut ? 'لقيناه… قفّل 🔒' : 'وفي يوم… فتحناه', E.H * 0.07, { size: 70, color: shut ? '#ff8a7a' : '#fff6e6' });
   brand(g);
 } });
 // s09 — رجعنا للإكسل.. ورجع الصداع
 registerShot('s09', { draw(g, t, info) {
   room(g, t, { expr: 'confused', pose: POSES.facepalm, hl: true, clock: false });
-  cap(g, t, info.dur, 'رجعنا للإكسل… ورجع الصداع 🤕', E.H * 0.12, { size: 66 });
+  cap(g, t, info.dur, 'ورجعنا للإكسل… ورجع الصداع 🤕', E.H * 0.12, { size: 66 });
   brand(g);
 } });
 // s10 — وقتها كنت أدوّر على مشروع ينفع الناس
@@ -125,7 +125,7 @@ registerShot('s10', { draw(g, t, info) {
   const cam = { z: 1.5, y: -60, x: -40 + 20 * t };
   const { GY } = desert(g, t, cam, { night: true });
   layer(g, cam, 1, (g) => drawFigure(g, { x: E.W / 2, y: GY + 40, s: 1.5, facing: 1, outfit: FOUNDER, pose: POSES.think, expr: 'thinking', rim: { color: '#a9b8ff', dir: [1, -0.5], w: 4 } }));
-  cap(g, t, info.dur, 'كنت أدوّر على مشروع… ينفع الناس 🤍', E.H * 0.13, { size: 62 });
+  cap(g, t, info.dur, 'يدوّر على مشروع… يفيد الناس 🤍', E.H * 0.13, { size: 60 });
   brand(g);
 } });
 // s11 — القطّة في كل مكان: المخيم، السفر، السكن، الدوام
@@ -133,7 +133,7 @@ registerShot('s11', { draw(g, t, info) {
   backdrop(g, ['#0b0f1a', '#14202a']);
   const cells = [['🏕️', 'المخيم', 1.5], ['✈️', 'السفر', 2.3], ['🏠', 'السكن', 2.74], ['💼', 'الدوام', 3.36]];
   cells.forEach(([e, n, at], i) => { const p = ease.outBack(prog(t, at, at + 0.3)); if (p <= 0) return; const x = E.W / 2 + (i % 2 ? -230 : 230), y = E.H * 0.38 + Math.floor(i / 2) * 470; g.save(); g.translate(x, y); g.scale(p, p); rr(g, -200, -200, 400, 400, 50); g.fillStyle = '#1b2a22'; g.fill(); g.lineWidth = 5; g.strokeStyle = alpha(LIME, 0.7); g.stroke(); ar(g, e, 0, -40, { size: 130, glowC: 'transparent' }); ar(g, n, 0, 120, { size: 56, color: LIME, glowC: 'transparent' }); g.restore(); });
-  cap(g, t, info.dur, 'وانتبهت: القطّة في كل مكان 👀', E.H * 0.1, { size: 64 });
+  cap(g, t, info.dur, 'وانتبه: القطّة في كل مكان 👀', E.H * 0.1, { size: 64 });
   brand(g);
 } });
 // s12 — فقلت: خلني أسوي التطبيق اللي نحتاجه.. بنفسي
@@ -144,16 +144,16 @@ registerShot('s12', { draw(g, t, info) {
   const on = ease.out(prog(t, 1.2, 1.6));
   glow(g, cx + r * 0.9, cy - r * 1.15, 260 * (0.3 + on), '#ffe28a', 0.25 + 0.5 * on);
   ar(g, '💡', cx + r * 0.9, cy - r * 1.15, { size: 150, glowC: 'transparent', a: 0.4 + 0.6 * on });
-  cap(g, t, info.dur, 'خلني أسويه… بنفسي 💪', E.H * 0.1, { size: 70 });
+  cap(g, t, info.dur, 'قال: أسوّيه… بنفسي 💪', E.H * 0.1, { size: 70 });
   brand(g);
 } });
 // s13 — وسويت ديفيزو (logo reveal)
 registerShot('s13', { draw(g, t, info) {
   backdrop(g, ['#07090f', '#0f1a12']);
-  const p = ease.outBack(prog(t, 0.6, 1.2)), s = 420 * p;
+  const p = ease.outBack(prog(t, 0.15, 0.65)), s = 420 * p;
   glow(g, E.W / 2, E.H * 0.45, 700, LIME, 0.25 * p);
   if (s > 0 && LOGO.naturalWidth) { g.save(); rr(g, E.W / 2 - s / 2, E.H * 0.45 - s / 2, s, s, s * 0.22); g.clip(); g.drawImage(LOGO, E.W / 2 - s / 2, E.H * 0.45 - s / 2, s, s); g.restore(); }
-  ar(g, 'وسويت ديفيزو', E.W / 2, E.H * 0.68, { size: 96, color: LIME, a: ease.out(prog(t, 1.0, 1.4)) });
+  ar(g, 'وسوّى ديفيزو', E.W / 2, E.H * 0.68, { size: 96, color: LIME, a: ease.out(prog(t, 0.4, 0.8)) });
   brand(g);
 } });
 // Diviso-style app screen (same look as the kashta film)
@@ -202,7 +202,7 @@ registerShot('s16', { draw(g, t, info) {
   fireCircle(g, t, { z: 1.2, youPose: POSES.cheer, fahadPose: POSES.cheer, majedPose: POSES.cheer, youExpr: 'joy', fahadExpr: 'joy', saudExpr: 'joy', majedExpr: 'joy' });
   const p = ease.outBack(prog(t, 3.2, 3.6));
   if (p > 0) { g.save(); g.translate(E.W / 2, E.H * 0.33); g.scale(p, p); rr(g, -110, -110, 220, 220, 40); g.fillStyle = '#1f7a3a'; g.fill(); ar(g, 'X', 0, 6, { size: 120, color: '#ffffff', glowC: 'transparent' }); seg(g, [[-130, 130], [130, -130]], 26, '#e0332a'); g.restore(); }
-  cap(g, t, info.dur, t < 3 ? 'اليوم… المخيم والسفرات عليه 🏕️✈️' : 'وأنا؟ ارتحت من الإكسل 😌', E.H * 0.13, { size: 62 });
+  cap(g, t, info.dur, t < 3.3 ? 'اليوم… المخيم والسفرات عليه 🏕️✈️' : 'وصاحبنا؟ ارتاح من الإكسل 😌', E.H * 0.13, { size: 62 });
   brand(g);
 } });
 // s17 — ديفيزو.. انولد من قطّة حقيقية.. عشان قطّتكم
@@ -210,8 +210,8 @@ registerShot('s17', { draw(g, t, info) {
   backdrop(g, ['#07090f', '#0f1a12']);
   glow(g, E.W / 2, E.H * 0.45, 800, LIME, 0.14);
   ar(g, 'ديفيزو', E.W / 2, E.H * 0.33, { size: 130, color: LIME, a: ease.out(prog(t, 0.1, 0.5)) });
-  ar(g, 'انولد من قطّة حقيقية…', E.W / 2, E.H * 0.45, { size: 72, a: ease.out(prog(t, 0.8, 1.2)) });
-  ar(g, 'عشان قطّتكم 💚', E.W / 2, E.H * 0.54, { size: 84, a: ease.out(prog(t, 2.3, 2.7)) });
+  ar(g, 'طلع من قطّة حقيقية…', E.W / 2, E.H * 0.45, { size: 72, a: ease.out(prog(t, 0.8, 1.2)) });
+  ar(g, 'عشان قطّتكم 💚', E.W / 2, E.H * 0.54, { size: 84, a: ease.out(prog(t, 2.6, 3.0)) });
   brand(g);
 } });
 // s18 — CTA

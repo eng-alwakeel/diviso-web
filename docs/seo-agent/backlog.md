@@ -18,12 +18,12 @@ Ordered. Status: todo / published. Slugs are suggestions (kebab-case, English).
 | 13 | restaurant-service-charge-split-uk | (EN-led) Service charge and tips: splitting fairly in UK restaurants | tips | todo |
 | 14 | split-shared-kitchen-groceries-staples | المؤونة المشتركة (رز، زيت، قهوة) في السكن: صندوق شهري أم بالتناوب | tips | todo |
 | 15 | track-money-lent-to-family | تسجيل السلف بين الأهل بدون إحراج | tips | todo |
-| 17 | bill-splitting-apps-arabic-compared | مقارنة محايدة لتطبيقات تقسيم الفاتورة التي تدعم العربية والريال (لاستعلام «تطبيق تقسيم الفاتورة») | comparisons | todo |
 
 ## Published
 | Slug | Angle (AR/EN) | Category | Published |
 |---|---|---|---|
 | how-to-split-expenses-with-friends-guide | دليل شامل: كيف أقسم المصاريف مع أصدقائي (بالتساوي، بالنسبة، بالاستهلاك) — صفحة محورية تربط لكل مقالات السيناريوهات | guides | 2026-10-25 |
 | how-to-split-rent-with-flatmates-uk | (EN-led) How to split rent with flatmates in the UK: equal vs room size vs income, with a worked example | guides | 2026-10-27 |
+| bill-splitting-apps-arabic-compared | مقارنة محايدة لتطبيقات تقسيم الفاتورة التي تدعم العربية والريال (لاستعلام «تطبيق تقسيم الفاتورة») | comparisons | 2026-11-01 |
 
 (full history: see docs/seo-agent/log.md)

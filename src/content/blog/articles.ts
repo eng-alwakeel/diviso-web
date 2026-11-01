@@ -16,6 +16,184 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "bill-splitting-apps-arabic-compared",
+    title: "أي تطبيق تقسيم فاتورة يدعم العربية والريال بشكل كامل؟ مقارنة محايدة",
+    titleEn: "Which Bill-Splitting App Fully Supports Arabic and the Saudi Riyal? A Neutral Comparison",
+    description: "عند البحث عن تطبيق تقسيم فاتورة، أغلب التطبيقات المعروفة بُنيت أساساً باللغة الإنجليزية لسوق غربي. هذه مقارنة محايدة بين أشهر التطبيقات حسب 3 معايير فقط: دعم العربية الأصلي، التعامل المباشر بالريال السعودي، وتوفر تطبيق آيفون مخصص.",
+    descriptionEn: "When searching for a bill-splitting app, most well-known options were built English-first for a Western market. This is a neutral comparison of the most common apps against 3 specific criteria: native Arabic support, direct Saudi Riyal handling, and a dedicated iPhone app.",
+    keywords: ["تطبيق تقسيم الفاتورة", "تطبيق تقسيم فاتورة يدعم العربية", "تطبيق تقسيم مصاريف بالريال السعودي", "مقارنة تطبيقات تقسيم الفاتورة", "تطبيق تقسيم حساب للآيفون", "أفضل تطبيق عربي لتقسيم المصاريف"],
+    keywordsEn: ["bill splitting app arabic support", "expense splitting app saudi riyal", "bill splitting apps compared", "iphone app to split bills", "arabic bill splitting app", "expense tracker app arabic interface"],
+    category: "comparisons",
+    readTime: 8,
+    publishDate: "2026-11-01",
+    content: `
+## الإجابة المختصرة
+
+عند البحث عن "تطبيق تقسيم الفاتورة"، أغلب التطبيقات المعروفة في هذا المجال بُنيت أساساً بواجهة إنجليزية لسوق غربي، وتختلف فيما بينها بوضوح في **3 معايير محددة**: هل تدعم اللغة العربية بواجهة أصلية (لا ترجمة لاحقة فقط)؟ هل تتعامل مع الريال السعودي كعملة أساسية مباشرة؟ وهل توجد لها نسخة مخصصة لآيفون، أم أنها تعتمد على المتصفح فقط؟ هذه المقارنة محايدة، وتعتمد على هذه المعايير الثلاثة فقط دون تقييمات رقمية مفترضة.
+
+## معايير المقارنة الثلاثة
+
+- **دعم العربية الأصلي**: هل الواجهة مصممة من الأساس لتعرض النص من اليمين لليسار (RTL) بشكل طبيعي، أم أنها واجهة إنجليزية مع ترجمة نصية لاحقة فقط؟
+- **التعامل بالريال السعودي**: هل يمكن تسجيل المصاريف بالريال مباشرة كعملة أساسية، أم يتطلب ذلك إعدادات عملة متعددة إضافية؟
+- **تطبيق آيفون مخصص**: هل يوجد تطبيق مستقل على App Store، أم أن الاستخدام يعتمد على صفحة ويب فقط؟
+
+## مقارنة أشهر تطبيقات تقسيم الفاتورة
+
+### Splitwise
+- **دعم العربية**: واجهة إنجليزية أساساً؛ لا تتوفر واجهة عربية أصلية بتصميم RTL كامل
+- **الريال السعودي**: يمكن إضافته كعملة ضمن دعم العملات المتعددة، لكنه ليس العملة الافتراضية المصممة حولها الواجهة
+- **آيفون**: يتوفر تطبيق مخصص على App Store
+
+### Tricount
+- **دعم العربية**: يدعم عدداً من اللغات الأوروبية بشكل أساسي؛ لا يتوفر دعم عربي أصلي
+- **الريال السعودي**: يمكن استخدامه كعملة ضمن التعدد، دون تركيز أساسي عليه
+- **آيفون**: يتوفر تطبيق مخصص على App Store
+
+### Settle Up
+- **دعم العربية**: واجهة إنجليزية أساساً، دون تركيز على السوق العربي
+- **الريال السعودي**: مدعوم ضمن تعدد العملات العام
+- **آيفون**: يتوفر تطبيق مخصص على App Store
+
+### Diviso
+- **دعم العربية**: واجهة عربية أصلية مصممة بـ RTL من الأساس، لا كترجمة لاحقة
+- **الريال السعودي**: مدعوم كعملة أساسية مباشرة، إلى جانب دعم عملات متعددة أخرى
+- **آيفون**: يمكن الوصول إليه عبر المتصفح؛ تطبيق آيفون مستقل غير متوفر حتى الآن
+
+## ماذا يعني "دعم عربي أصلي" بالضبط؟
+
+الفرق الجوهري بين التطبيق المترجم والتطبيق المصمم عربياً من الأساس هو **بنية الواجهة نفسها**، لا فقط النصوص المعروضة. التطبيق المترجم فقط ينقل الكلمات للعربية مع الاحتفاظ باتجاه العرض الإنجليزي (من اليسار لليمين)، بينما التطبيق المصمم عربياً من الأساس يبني كل عنصر في الواجهة (القوائم، الأزرار، ترتيب الحقول) بما يناسب اتجاه القراءة من اليمين لليسار بشكل طبيعي.
+
+## هل "دعم الريال" يعني فقط إضافته كعملة ضمن القائمة؟
+
+ليس بالضرورة. إضافة الريال كخيار ضمن قائمة عملات متعددة طويلة تختلف عن تصميم التطبيق بحيث يكون الريال هو العملة الافتراضية المتوقعة لغالبية المستخدمين، مع عرض الأرقام والتنسيقات بما يناسب الاستخدام المحلي المعتاد.
+
+## خطوات عملية لاختيار تطبيق تقسيم فاتورة يناسبكم
+
+### الخطوة 1: جرّبوا الواجهة بلغتكم المفضلة مباشرة قبل اتخاذ القرار
+افتحوا التطبيق بالعربية وتحققوا إن كانت كل العناصر (لا فقط النصوص) تظهر باتجاه طبيعي.
+
+### الخطوة 2: تحققوا من طريقة عرض العملة الافتراضية
+سجّلوا مصروفاً تجريبياً بالريال وتحققوا من مدى سلاسة هذه الخطوة دون إعدادات إضافية معقدة.
+
+### الخطوة 3: تحققوا من طريقة الوصول على آيفون
+هل التطبيق متوفر كتطبيق مستقل على App Store، أم أن الاستخدام سيكون عبر المتصفح فقط؟ حدّدوا أي الطريقتين تناسب استخدامكم اليومي.
+
+## أخطاء شائعة عند اختيار تطبيق تقسيم فاتورة
+
+- **الافتراض أن وجود خيار "العربية" في قائمة اللغات يعني دعماً عربياً كاملاً**، دون التحقق من اتجاه الواجهة فعلياً
+- **افتراض أن إضافة الريال كعملة ضمن قائمة طويلة يعادل التصميم حوله كعملة أساسية**
+- **عدم التحقق من طريقة الوصول الفعلية على آيفون قبل الاعتماد على تطبيق معين**
+- **مقارنة التطبيقات بناءً على شهرتها فقط، دون التحقق من هذه المعايير الثلاثة تحديداً**
+
+## كيف يساعدكم Diviso في تقسيم الفاتورة بواجهة عربية وريال مباشر؟
+
+- ✅ واجهة عربية أصلية بتصميم RTL كامل منذ الأساس
+- ✅ تسجيل المصاريف بالريال السعودي كعملة أساسية مباشرة
+- ✅ دعم عملات متعددة لمن يتعامل مع مجموعات من دول مختلفة
+- ✅ الوصول المباشر عبر المتصفح دون الحاجة لتثبيت تطبيق منفصل
+
+## أسئلة شائعة
+
+### هل كل تطبيقات تقسيم الفاتورة المشهورة تدعم اللغة العربية؟
+لا، أغلبها بُني أساساً بواجهة إنجليزية ويوفر ترجمة نصية فقط دون تصميم عربي أصلي بواجهة RTL كاملة.
+
+### هل يكفي أن يدعم التطبيق الريال كعملة ضمن قائمة عملات متعددة؟
+ليس بالضرورة كافياً لتجربة استخدام طبيعية، فالفرق الحقيقي هو أن يكون الريال هو العملة الافتراضية المصممة حولها الواجهة والتنسيقات، لا مجرد خيار ضمن قائمة طويلة.
+
+### كيف أتحقق بسرعة من دعم تطبيق معين للعربية بشكل حقيقي؟
+افتحوا التطبيق بالعربية وتحققوا إن كانت كل عناصر الواجهة (لا فقط النصوص) تعرض باتجاه من اليمين لليسار بشكل طبيعي، لا مجرد كلمات عربية داخل تخطيط إنجليزي.
+
+## الخلاصة
+
+اختيار تطبيق تقسيم فاتورة لا يجب أن يعتمد على الشهرة فقط: تحققوا من دعم العربية الأصلي، والتعامل المباشر بالريال، وطريقة الوصول على آيفون، لتجدوا التطبيق الذي يناسب استخدامكم اليومي فعلاً.
+
+**جرب Diviso الآن وقسّم فواتيرك بواجهة عربية أصلية وريال سعودي مباشر.**
+    `,
+    contentEn: `
+## Quick Answer
+
+When searching for a "bill-splitting app," most well-known options in this space were built English-first for a Western market, and they differ clearly on **3 specific criteria**: does the app support Arabic with a genuinely native interface (not just a later text translation)? Does it handle the Saudi Riyal as a primary currency directly? And does it have a dedicated iPhone app, or does it rely on a browser only? This comparison is neutral, and relies only on these three criteria, without invented numeric ratings.
+
+## The Three Comparison Criteria
+
+- **Native Arabic support**: is the interface designed from the ground up to display right-to-left (RTL) text naturally, or is it an English interface with a later text translation layered on top?
+- **Saudi Riyal handling**: can expenses be logged in riyal directly as the primary currency, or does that require additional multi-currency setup?
+- **Dedicated iPhone app**: is there a standalone app on the App Store, or does usage rely on a web page only?
+
+## Comparing the Most Common Bill-Splitting Apps
+
+### Splitwise
+- **Arabic support**: English-first interface; no fully native RTL Arabic interface is available
+- **Saudi Riyal**: can be added as a currency within multi-currency support, but it isn't the default currency the interface is designed around
+- **iPhone**: a dedicated app is available on the App Store
+
+### Tricount
+- **Arabic support**: primarily supports a number of European languages; no native Arabic support is available
+- **Saudi Riyal**: usable as a currency within multi-currency support, without being a primary focus
+- **iPhone**: a dedicated app is available on the App Store
+
+### Settle Up
+- **Arabic support**: English-first interface, without a specific focus on the Arabic-speaking market
+- **Saudi Riyal**: supported within general multi-currency support
+- **iPhone**: a dedicated app is available on the App Store
+
+### Diviso
+- **Arabic support**: a native Arabic interface designed with RTL from the ground up, not a later translation layer
+- **Saudi Riyal**: supported directly as a primary currency, alongside support for several other currencies
+- **iPhone**: accessible through a browser; a standalone iPhone app isn't available yet
+
+## What Does "Native Arabic Support" Actually Mean?
+
+The fundamental difference between a translated app and one designed in Arabic from the start is **the structure of the interface itself**, not just the displayed text. A translated-only app carries the words over into Arabic while keeping the English left-to-right layout, while an app designed in Arabic from the ground up builds every interface element (menus, buttons, field order) to naturally fit a right-to-left reading direction.
+
+## Does "Supporting the Riyal" Just Mean Adding It to a Currency List?
+
+Not necessarily. Adding the riyal as one option within a long multi-currency list is different from designing the app so that the riyal is the default currency most users expect, with numbers and formats displayed the way local usage expects.
+
+## A Practical System for Choosing the Right Bill-Splitting App
+
+### Step 1: Try the Interface in Your Preferred Language Directly Before Deciding
+Open the app in Arabic and check whether every element (not just the text) displays in a natural direction.
+
+### Step 2: Check How the Default Currency Is Actually Displayed
+Log a test expense in riyal and check how smoothly that step goes without extra, complicated setup.
+
+### Step 3: Check How You'll Actually Access It on an iPhone
+Is the app available as a standalone app on the App Store, or will usage be through a browser only? Decide which approach fits your daily use.
+
+## Common Mistakes When Choosing a Bill-Splitting App
+
+- **Assuming that having "Arabic" listed as a language option means full Arabic support**, without checking whether the interface direction is actually native
+- **Assuming that adding the riyal as a currency within a long list is equivalent to designing around it as a primary currency**
+- **Not checking how you'll actually access the app on an iPhone before committing to it**
+- **Comparing apps based on popularity alone**, without checking these three specific criteria
+
+## How Diviso Helps You Split Bills With a Native Arabic Interface and Direct Riyal Support
+
+- ✅ A native Arabic interface designed with full RTL from the ground up
+- ✅ Logs expenses in Saudi Riyal directly as a primary currency
+- ✅ Supports multiple currencies for anyone dealing with groups from different countries
+- ✅ Direct access through a browser without needing to install a separate app
+
+## Frequently Asked Questions
+
+### Do all well-known bill-splitting apps support Arabic?
+No. Most were built English-first and only offer a text translation layer, without a genuinely native Arabic design with a full RTL interface.
+
+### Is it enough for an app to support the riyal as one option in a multi-currency list?
+Not necessarily enough for a natural everyday experience. The real difference is whether the riyal is the default currency the interface and formats are designed around, rather than just an option buried in a long list.
+
+### How can I quickly check whether an app genuinely supports Arabic?
+Open the app in Arabic and check whether every interface element (not just the text) displays in a natural right-to-left direction, rather than just Arabic words sitting inside an English layout.
+
+## Conclusion
+
+Choosing a bill-splitting app shouldn't rely on popularity alone: check for native Arabic support, direct riyal handling, and how you'll actually access it on an iPhone, to find the app that genuinely fits your daily use.
+
+**Try Diviso now and split your bills with a native Arabic interface and direct Saudi Riyal support.**
+    `
+  },
+  {
     slug: "how-to-split-rent-with-flatmates-uk",
     title: "كيف تُقسَّم الإيجار بين السكن المشترك؟ بالتساوي أم حسب حجم الغرفة أم الدخل",
     titleEn: "How to Split Rent With Flatmates: Equal, by Room Size, or by Income",

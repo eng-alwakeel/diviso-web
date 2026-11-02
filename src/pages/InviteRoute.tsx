@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Users, Sparkles, ArrowRight, AlertTriangle } from "lucide-react";
-import { APP_STORE_ID, APP_STORE_URL, EXTERNAL_LINK_PROPS } from "@/lib/appStoreLinks";
+import { APP_STORE_ID, EXTERNAL_LINK_PROPS, appStoreUrl, trackAppStoreClick } from "@/lib/appStoreLinks";
 
 interface InvitePreview {
   is_valid: boolean;
@@ -91,6 +91,7 @@ const InviteRoute = () => {
   }, [code]);
 
   const handleDownload = () => {
+    trackAppStoreClick("invite_link");
     trackAnalyticsEvent("download_clicked", { store: "ios", source: "invite", token: code });
   };
 
@@ -130,7 +131,7 @@ const InviteRoute = () => {
             {t("groups:messages.invalid_invite_link_desc")}
           </p>
           <Button asChild className="w-full">
-            <a href={APP_STORE_URL} {...EXTERNAL_LINK_PROPS} onClick={handleDownload}>
+            <a href={appStoreUrl("invite_link")} {...EXTERNAL_LINK_PROPS} onClick={handleDownload}>
               {t("groups:messages.download_app", { defaultValue: "حمّل التطبيق" })}
             </a>
           </Button>
@@ -195,7 +196,7 @@ const InviteRoute = () => {
         </p>
 
         <Button asChild size="lg" className="w-full gap-2 font-bold">
-          <a href={APP_STORE_URL} {...EXTERNAL_LINK_PROPS} onClick={handleDownload}>
+          <a href={appStoreUrl("invite_link")} {...EXTERNAL_LINK_PROPS} onClick={handleDownload}>
             {t("groups:messages.download_app", { defaultValue: "حمّل التطبيق" })}
             <ArrowRight className="w-4 h-4" />
           </a>

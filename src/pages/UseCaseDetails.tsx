@@ -117,11 +117,6 @@ const UseCaseDetails = () => {
             "price": "0",
             "priceCurrency": "SAR"
           },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "ratingCount": "1250"
-          },
           "featureList": isRTL 
             ? ["تقسيم المصاريف تلقائياً", "دعم عملات متعددة", "تسوية سريعة", "سجل كامل للمصاريف"]
             : ["Automatic expense splitting", "Multi-currency support", "Quick settlement", "Complete expense history"]

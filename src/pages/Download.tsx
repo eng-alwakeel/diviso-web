@@ -8,7 +8,7 @@ import { Card } from "@/components/ui/card";
 import { Apple, Smartphone, Sparkles, Users, Wallet } from "lucide-react";
 import { useAnalyticsEvents } from "@/hooks/useAnalyticsEvents";
 import { QRCodeDisplay } from "@/components/QRCodeDisplay";
-import { ANDROID_AVAILABLE, APP_STORE_URL, PLAY_STORE_URL } from "@/lib/appStoreLinks";
+import { ANDROID_AVAILABLE, PLAY_STORE_URL, appStoreUrl, trackAppStoreClick } from "@/lib/appStoreLinks";
 import { detectPlatform, Platform } from "@/lib/platform";
 
 export default function Download() {
@@ -24,7 +24,8 @@ export default function Download() {
   const handleDownload = (store: "ios" | "android") => {
     if (store === "android" && !ANDROID_AVAILABLE) return;
     trackEvent("download_clicked", { store, source: "download_page" });
-    window.open(store === "ios" ? APP_STORE_URL : PLAY_STORE_URL, "_blank", "noopener,noreferrer");
+    if (store === "ios") trackAppStoreClick("web_download");
+    window.open(store === "ios" ? appStoreUrl("web_download") : PLAY_STORE_URL, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -84,7 +85,7 @@ export default function Download() {
               <p className="text-sm font-medium text-muted-foreground">
                 امسح الرمز بكاميرا جوالك لتحميل التطبيق
               </p>
-              <QRCodeDisplay value={APP_STORE_URL} size={180} showActions={false} />
+              <QRCodeDisplay value={appStoreUrl("web_download_qr")} size={180} showActions={false} />
             </Card>
           )}
         </section>

@@ -85,7 +85,7 @@ const costs = [
   { tier: "5️⃣", label: "خمس نقاط", items: "إنشاء مجموعة، مخطط الرحلة" },
 ];
 
-import { ANDROID_AVAILABLE, APP_STORE_URL, PLAY_STORE_URL, EXTERNAL_LINK_PROPS } from "@/lib/appStoreLinks";
+import { ANDROID_AVAILABLE, PLAY_STORE_URL, EXTERNAL_LINK_PROPS, appStoreUrl, trackAppStoreClick } from "@/lib/appStoreLinks";
 
 const Pricing = () => {
   const [cycle, setCycle] = useState<Cycle>("yearly");
@@ -246,7 +246,7 @@ const Pricing = () => {
                         : { backgroundColor: `${LIME}1a`, color: LIME, border: `1px solid ${LIME}55` }
                     }
                   >
-                    <a href={APP_STORE_URL} {...EXTERNAL_LINK_PROPS}>ابدأ مجاناً</a>
+                    <a href={appStoreUrl("web_pricing")} {...EXTERNAL_LINK_PROPS} onClick={() => trackAppStoreClick("web_pricing")}>ابدأ مجاناً</a>
                   </Button>
                 </div>
               );
@@ -307,7 +307,7 @@ const Pricing = () => {
                       : { backgroundColor: `${LIME}1a`, color: LIME, border: `1px solid ${LIME}55` }
                   }
                 >
-                  <a href={APP_STORE_URL} {...EXTERNAL_LINK_PROPS}>شراء الحزمة</a>
+                  <a href={appStoreUrl("web_pricing")} {...EXTERNAL_LINK_PROPS} onClick={() => trackAppStoreClick("web_pricing")}>شراء الحزمة</a>
                 </Button>
               </div>
             ))}
@@ -391,8 +391,9 @@ const Pricing = () => {
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a
-              href={APP_STORE_URL}
+              href={appStoreUrl("web_pricing_footer")}
               {...EXTERNAL_LINK_PROPS}
+              onClick={() => trackAppStoreClick("web_pricing_footer")}
               className="flex items-center gap-3 px-5 py-3 rounded-xl bg-foreground text-background hover:opacity-90 transition"
               aria-label="Download on the App Store"
             >

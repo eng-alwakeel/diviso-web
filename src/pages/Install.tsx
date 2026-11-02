@@ -21,7 +21,7 @@ const Install = () => {
       <SEO
         title={t("page.seoTitle")}
         description={t("page.seoDescription")}
-        ogImage="https://diviso.app/og/install-1200x630.png"
+        ogImage="https://www.diviso.app/og/install-1200x630.png"
       />
       <Header />
 

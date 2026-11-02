@@ -33,7 +33,7 @@ export default function Download() {
       <SEO
         title="حمّل تطبيق ديفيزو | Download Diviso"
         description="ديفيزو الآن على جوالك — قسّم المصاريف مع أصدقائك وعائلتك بذكاء. حمّل التطبيق من App Store."
-        canonical="https://diviso.app/download"
+        canonical="https://www.diviso.app/download"
       />
       <Header />
 

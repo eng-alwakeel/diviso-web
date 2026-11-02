@@ -85,7 +85,7 @@ const InviteRoute = () => {
     if (!code) return;
     const m = document.createElement("meta");
     m.name = "apple-itunes-app";
-    m.content = `app-id=${APP_STORE_ID}, app-argument=https://diviso.app/i/${code}`;
+    m.content = `app-id=${APP_STORE_ID}, app-argument=https://www.diviso.app/i/${code}`;
     document.head.appendChild(m);
     return () => m.remove();
   }, [code]);

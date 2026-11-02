@@ -31,7 +31,7 @@ const InfluencerPage: React.FC = () => {
       <SEO 
         title="استخدمت تطبيق بسيط للقسمة بين الأصدقاء"
         description="خصوصًا في الشعبنة، ريحنا من اللخبطة. اللي حاب يجرّبه 👇"
-        ogImage="https://diviso.app/og-image.png"
+        ogImage="https://www.diviso.app/og-image.png"
         noIndex={false}
       />
 

@@ -16,7 +16,7 @@ const PhoneInviteRoute = () => {
     if (!token) return;
     const m = document.createElement('meta');
     m.name = 'apple-itunes-app';
-    m.content = `app-id=${APP_STORE_ID}, app-argument=https://diviso.app/invite-phone/${token}`;
+    m.content = `app-id=${APP_STORE_ID}, app-argument=https://www.diviso.app/invite-phone/${token}`;
     document.head.appendChild(m);
     return () => m.remove();
   }, [token]);

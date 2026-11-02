@@ -17,7 +17,7 @@ const Support = () => {
       <SEO
         title="Support"
         description="Get help with Diviso. Contact our support team or browse the FAQ."
-        canonical="https://diviso.app/support"
+        canonical="https://www.diviso.app/support"
       />
       <Header />
       <div className="max-w-3xl mx-auto p-6 space-y-8">

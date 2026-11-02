@@ -32,7 +32,7 @@ const CookiesPolicy = () => {
       <SEO 
         title={t('seo.title')}
         description={t('seo.description')}
-        canonical="https://diviso.app/cookies"
+        canonical="https://www.diviso.app/cookies"
       />
       <Header />
       <div className="max-w-4xl mx-auto p-6 space-y-8">

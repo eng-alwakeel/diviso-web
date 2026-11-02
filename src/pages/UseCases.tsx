@@ -29,7 +29,7 @@ const UseCases = () => {
         "@type": "ListItem",
         "position": index + 1,
         "name": isRTL ? uc.title : uc.titleEn,
-        "url": `https://diviso.app/use-cases/${uc.slug}`
+        "url": `https://www.diviso.app/use-cases/${uc.slug}`
       }))
     };
 
@@ -53,7 +53,7 @@ const UseCases = () => {
           ? 'تعرف على كيفية استخدام Diviso لتقسيم المصاريف في السفر، السكن المشترك، الطلعات، الفعاليات، والكشتات.'
           : 'Learn how to use Diviso for splitting expenses in travel, shared housing, outings, events, and camping trips.'
         }
-        canonical="https://diviso.app/use-cases"
+        canonical="https://www.diviso.app/use-cases"
         keywords={isRTL 
           ? 'حالات استخدام Diviso, تقسيم مصاريف السفر, مصاريف السكن المشترك, تقسيم فاتورة المطعم'
           : 'Diviso use cases, travel expense splitting, shared housing expenses, restaurant bill splitting'

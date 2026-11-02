@@ -86,7 +86,7 @@ export default function ReferralLanding() {
     window.location.href = `${DEEP_LINK_SCHEME}/${referralCode}`;
   };
 
-  const pageUrl = `https://diviso.app/j/${referralCode ?? ""}`;
+  const pageUrl = `https://www.diviso.app/j/${referralCode ?? ""}`;
   const title = `🎁 You've been invited to Diviso — Get 100 points`;
   const description = inviter
     ? `${inviter} invited you to Diviso. Sign up with this link and earn 100 points instantly.`

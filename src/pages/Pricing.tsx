@@ -95,7 +95,7 @@ const Pricing = () => {
       <SEO
         title="باقات Diviso — أسعار وأرصدة النقاط"
         description="اختر الباقة المناسبة لك: ستارتر، برو، أو ماكس. خصم حتى 36% للاشتراك السنوي + حزم نقاط لمرة واحدة."
-        canonical="https://diviso.app/pricing"
+        canonical="https://www.diviso.app/pricing"
       />
       <Header />
 

@@ -2,6 +2,7 @@
 
 One line per article, newest first.
 
+- 2026-11-03 | how-to-split-rent-with-flatmates-uk (title fix, not new) | guides | source: insights.md open item 1 (2026-11-02 refresh) — AR title had a grammar error («كيف تُقسَّم الإيجار») | corrected to «كيف يُقسَّم الإيجار بين شركاء السكن؟ بالتساوي أم حسب حجم الغرفة أم الدخل»; titleEn/description/slug/body unchanged (checked body for the same phrase — not present)
 - 2026-11-01 | bill-splitting-apps-arabic-compared | comparisons | source: insights.md open item 4 / backlog.md row 17 (neutral comparison for «تطبيق تقسيم الفاتورة») | 3-criteria comparison (native Arabic/RTL, direct riyal, dedicated iPhone app) across Splitwise/Tricount/Settle Up/Diviso — no invented star ratings, no prices, no Android/Google Play mentions
 - 2026-10-29 | best-splitwise-alternatives (edit, not new) | comparisons | source: insights.md open item 3 (strengthen existing article for «splitwise alternative arabic») | rewrote the thin AR content: quick answer + requested H2 «ما هو أفضل بديل لـ Splitwise بالعربي؟» + neutral feature list (Arabic UI, riyal, multi-currency) + 3-question Q&A; also fixed the broken EN comparison markdown table (converted to bullets, dropped one price figure) — rest of EN content left as-is
 - 2026-10-27 | how-to-split-rent-with-flatmates-uk | guides | source: insights.md open item 2 (EN-led for «how to split rent with flatmates») | 3 methods (equal / room size / income) with percentage worked examples, UK council tax note (separate from rent split; student exemption)

@@ -12613,11 +12613,10 @@ Splitting restaurant bills doesn't have to be awkward. With Diviso, log, split, 
 
 ## مقارنة تطبيقات مصاريف الرحلة
 
-### Diviso 🏆
+### Diviso
 - **اللغة**: عربي كامل
 - **العملة**: ريال سعودي + 50 عملة
 - **المميز**: مصمم للسعودية، واجهة عربية، دعم فوري
-- **السعر**: مجاني
 
 ### Splitwise
 - **اللغة**: إنجليزي فقط
@@ -12682,11 +12681,10 @@ Whether it's Umrah, a Dubai trip, or camping with friends — organizing expense
 
 ## Comparing Trip Expense Apps
 
-### Diviso 🏆
+### Diviso
 - **Language**: Full Arabic
 - **Currency**: Saudi Riyal + 50 currencies
 - **Highlight**: Designed for Saudi Arabia, Arabic interface, instant support
-- **Price**: Free
 
 ### Splitwise
 - **Language**: English only

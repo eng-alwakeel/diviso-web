@@ -1,4 +1,5 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+import { authorizeServiceCaller } from "../_shared/service_auth.ts";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -12,13 +13,23 @@ Deno.serve(async (req) => {
   }
 
   try {
-    // Require shared cron secret
-    const cronSecret = Deno.env.get("CRON_SECRET");
-    const provided = req.headers.get("x-cron-secret") ||
-      (req.headers.get("Authorization")?.replace(/^Bearer\s+/i, "") ?? "");
-    if (!cronSecret || provided !== cronSecret) {
+    // Caller auth (MSG-079): CRON_SECRET, env service key, a
+    // platform-verified service_role JWT, or an sb_secret_ key.
+    const authz = await authorizeServiceCaller(req, {
+      fn: "daily-engagement-cron",
+      extraSecretEnv: "CRON_SECRET",
+    });
+    if (!authz.ok) {
       return new Response(JSON.stringify({ error: "Unauthorized" }), {
         status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+
+    // Auth-only check without sending anything: {"dry_run": true}
+    const reqBody = await req.json().catch(() => ({}));
+    if (reqBody?.dry_run === true) {
+      return new Response(JSON.stringify({ ok: true, dry_run: true, via: authz.via }), {
+        status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
     }
 

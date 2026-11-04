@@ -113,7 +113,7 @@ const Blog = () => {
           {/* CTA Section */}
           <div className="mt-16 text-center p-8 bg-primary/5 rounded-2xl">
             <h2 className="text-2xl font-bold mb-4">
-              {isRTL ? "جرب Diviso مجاناً" : "Try Diviso for Free"}
+              {isRTL ? "جرب Diviso" : "Try Diviso"}
             </h2>
             <p className="text-muted-foreground mb-6">
               {isRTL 

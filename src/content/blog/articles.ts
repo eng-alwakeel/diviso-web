@@ -11134,7 +11134,7 @@ Shared subscriptions save money, but without a clear system they turn into a mon
 كل شخص يدفع وجبة أو نشاط معين بالتناوب.
 
 ### 5. استخدام تطبيق ذكي
-الطريقة الأفضل - تطبيق يتتبع كل شيء تلقائياً.
+الطريقة الأسهل - تطبيق يتتبع كل شيء تلقائياً.
 
 ## كيف يساعدك Diviso؟
 
@@ -11155,7 +11155,7 @@ Shared subscriptions save money, but without a clear system they turn into a mon
 
 تقسيم المصاريف لا يجب أن يكون معقداً. مع التخطيط المسبق والأداة المناسبة، ستستمتع برحلتك بدون قلق مالي.
 
-**جرب Diviso مجاناً** وابدأ رحلتك القادمة بدون هموم مالية!
+**جرب Diviso** وابدأ رحلتك القادمة بدون هموم مالية!
     `,
     contentEn: `
 ## Introduction
@@ -11183,7 +11183,7 @@ Everyone puts an equal amount in a shared fund and spends from it.
 Each person pays for a meal or activity in turns.
 
 ### 5. Using a Smart App
-The best method - an app that tracks everything automatically.
+The easiest method - an app that tracks everything automatically.
 
 ## How Diviso Helps
 
@@ -11204,7 +11204,7 @@ The best method - an app that tracks everything automatically.
 
 Splitting expenses doesn't have to be complicated. With advance planning and the right tool, you'll enjoy your trip without financial worries.
 
-**Try Diviso for free** and start your next trip worry-free!
+**Try Diviso** and start your next trip worry-free!
     `
   },
   {
@@ -11233,14 +11233,13 @@ Splitting expenses doesn't have to be complicated. With advance planning and the
 
 ## التطبيقات المتاحة
 
-### 1. Diviso ⭐ الأفضل
+### 1. Diviso
 
 | الميزة | التقييم |
 |--------|---------|
 | دعم العربية | ✅ كامل |
 | الريال السعودي | ✅ افتراضي |
 | واجهة سهلة | ✅ ممتازة |
-| مجاني | ✅ نعم |
 
 **المميزات:**
 - مصمم خصيصاً للسوق السعودي
@@ -11256,7 +11255,6 @@ Splitting expenses doesn't have to be complicated. With advance planning and the
 | دعم العربية | ❌ لا |
 | الريال السعودي | ⚠️ جزئي |
 | واجهة سهلة | ✅ جيدة |
-| مجاني | ⚠️ محدود |
 
 ### 3. Tricount
 
@@ -11265,9 +11263,8 @@ Splitting expenses doesn't have to be complicated. With advance planning and the
 | دعم العربية | ❌ لا |
 | الريال السعودي | ✅ نعم |
 | واجهة سهلة | ✅ جيدة |
-| مجاني | ✅ نعم |
 
-## لماذا Diviso الأفضل للسعودية؟
+## لماذا Diviso يناسب السعودية؟
 
 1. **اللغة**: التطبيق الوحيد بواجهة عربية كاملة
 2. **العملة**: الريال السعودي افتراضياً
@@ -11295,14 +11292,13 @@ Looking for the best expense splitting app in Saudi Arabia? In this article, we 
 
 ## Available Apps
 
-### 1. Diviso ⭐ The Best
+### 1. Diviso
 
 | Feature | Rating |
 |---------|--------|
 | Arabic Support | ✅ Full |
 | Saudi Riyal | ✅ Default |
 | Easy Interface | ✅ Excellent |
-| Free | ✅ Yes |
 
 **Features:**
 - Designed specifically for the Saudi market
@@ -11318,7 +11314,6 @@ Looking for the best expense splitting app in Saudi Arabia? In this article, we 
 | Arabic Support | ❌ No |
 | Saudi Riyal | ⚠️ Partial |
 | Easy Interface | ✅ Good |
-| Free | ⚠️ Limited |
 
 ### 3. Tricount
 
@@ -11327,9 +11322,8 @@ Looking for the best expense splitting app in Saudi Arabia? In this article, we 
 | Arabic Support | ❌ No |
 | Saudi Riyal | ✅ Yes |
 | Easy Interface | ✅ Good |
-| Free | ✅ Yes |
 
-## Why Diviso is Best for Saudi Arabia?
+## Why Diviso Fits Saudi Arabia?
 
 1. **Language**: The only app with a complete Arabic interface
 2. **Currency**: Saudi Riyal by default
@@ -12531,7 +12525,7 @@ Don't let old debts affect your relationships. Record them in Diviso, settle wit
 
 تقسيم حساب المطعم ما يحتاج يكون محرج. مع Diviso، سجل وقسم وسوِّ الحساب بثواني.
 
-**جرب Diviso مجاناً** — خلك ذكي وقسّم بذكاء!
+**جرب Diviso** — خلك ذكي وقسّم بذكاء!
     `,
     contentEn: `
 ## The Problem Everyone Knows
@@ -12584,7 +12578,7 @@ Agree on the splitting method **before** ordering. No awkwardness that way.
 
 Splitting restaurant bills doesn't have to be awkward. With Diviso, log, split, and settle in seconds.
 
-**Try Diviso free** — be smart, split smart!
+**Try Diviso** — be smart, split smart!
     `
   },
   {
@@ -12937,7 +12931,7 @@ Calculating monthly expenses isn't hard — it just needs simple commitment. Sta
 
 ## المقارنة الشاملة
 
-### 1. Diviso ⭐⭐⭐⭐⭐ الأفضل عربياً
+### 1. Diviso — مصمم للمستخدم العربي
 
 **المميزات:**
 - واجهة عربية 100% مع دعم RTL كامل
@@ -13001,7 +12995,6 @@ Calculating monthly expenses isn't hard — it just needs simple commitment. Sta
 | الميزة | Diviso | Splitwise | Tricount |
 |--------|--------|-----------|----------|
 | العربية | ✅ | ❌ | ❌ |
-| مجاني | ✅ | ⚠️ | ✅ |
 | الريال SAR | ✅ | ⚠️ | ✅ |
 | تقسيم ذكي | ✅ | ✅ | ⚠️ |
 | تذكيرات | ✅ | ✅ | ❌ |
@@ -13010,7 +13003,7 @@ Calculating monthly expenses isn't hard — it just needs simple commitment. Sta
 
 ## التوصية النهائية
 
-**إذا كنت في السعودية أو الخليج**: Diviso هو الخيار الأمثل — عربي، مجاني، ومصمم لاحتياجاتك.
+**إذا كنت في السعودية أو الخليج**: Diviso يناسبك — عربي، ومصمم لاحتياجاتك.
 
 **إذا كنت تسافر مع أجانب**: Splitwise خيار جيد لأنهم يعرفونه.
 
@@ -13020,7 +13013,7 @@ Calculating monthly expenses isn't hard — it just needs simple commitment. Sta
 
 أفضل تطبيق تقسيم فلوس هو اللي يستخدمه كل أعضاء المجموعة. Diviso يسهّل هالشيء بواجهته العربية وسهولة دعوة الأصدقاء.
 
-**جرب Diviso اليوم** — مجاناً وبدون تسجيل معقد!
+**جرب Diviso اليوم**!
     `,
     contentEn: `
 ## Why Do You Need a Money Splitting App?
@@ -13037,7 +13030,7 @@ Every time you go out with friends or travel with family, splitting expenses bec
 
 ## Comprehensive Comparison
 
-### 1. Diviso ⭐⭐⭐⭐⭐ Best for Arabic Users
+### 1. Diviso — Built for Arabic Users
 
 **Pros:**
 - 100% Arabic interface with full RTL support
@@ -13101,7 +13094,6 @@ Every time you go out with friends or travel with family, splitting expenses bec
 | Feature | Diviso | Splitwise | Tricount |
 |---------|--------|-----------|----------|
 | Arabic | ✅ | ❌ | ❌ |
-| Free | ✅ | ⚠️ | ✅ |
 | SAR | ✅ | ⚠️ | ✅ |
 | Smart Split | ✅ | ✅ | ⚠️ |
 | Reminders | ✅ | ✅ | ❌ |
@@ -13110,7 +13102,7 @@ Every time you go out with friends or travel with family, splitting expenses bec
 
 ## Final Recommendation
 
-**If you're in Saudi Arabia or the Gulf**: Diviso is the best choice — Arabic, free, designed for your needs.
+**If you're in Saudi Arabia or the Gulf**: Diviso fits you — Arabic, and designed for your needs.
 
 **If traveling with international friends**: Splitwise is good since they know it.
 
@@ -13120,7 +13112,7 @@ Every time you go out with friends or travel with family, splitting expenses bec
 
 The best money splitting app is the one all group members actually use. Diviso makes this easy with its Arabic interface and simple friend invitations.
 
-**Try Diviso today** — free and no complicated registration!
+**Try Diviso today**!
     `
   },
   {
@@ -13195,7 +13187,7 @@ The best money splitting app is the one all group members actually use. Diviso m
 
 رمضان شهر العبادة والكرم، مو شهر القلق المالي. مع التنظيم الصح وتطبيق Diviso، استمتع بالشهر الكريم وخلِّ التطبيق يحسب.
 
-**سجل في Diviso مجاناً** واستعد لرمضان!
+**سجل في Diviso** واستعد لرمضان!
     `,
     contentEn: `
 ## Ramadan = Lots of Group Expenses
@@ -13258,7 +13250,7 @@ Clothes, sweets, decorations — some are shared.
 
 Ramadan is a month of worship and generosity, not financial stress. With proper organization and Diviso, enjoy the holy month and let the app calculate.
 
-**Sign up for Diviso free** and get ready for Ramadan!
+**Sign up for Diviso** and get ready for Ramadan!
     `
   },
   // ===== NEW SEO-TARGETED ENGLISH ARTICLES =====
@@ -13371,7 +13363,7 @@ Use a persistent group that carries balances forward. Over time, the rotating pa
 
 The key to splitting expenses without awkwardness is transparency and consistency. Pick a method that works for your group, use a tool like [Diviso](/split-expenses) to track everything, and settle up regularly.
 
-**[Try Diviso free](/auth?mode=signup)** — split your next expense in under 30 seconds.
+**[Try Diviso](/auth?mode=signup)** — split your next expense in under 30 seconds.
     `
   },
   {
@@ -13393,14 +13385,14 @@ The key to splitting expenses without awkwardness is transparency and consistenc
 ## التطبيقات
 
 ### 1. Diviso
-تطبيق مجاني وسريع لتقسيم المصاريف مع دعم عملات متعددة.
+تطبيق سريع لتقسيم المصاريف.
 
 ### 2. Splitwise
 تطبيق شهير لكن بعض الميزات خلف الدفع.
 
 ## الخلاصة
 
-Diviso يقدم أفضل تجربة مجانية لتقسيم الفواتير.
+Diviso يقدم تجربة سهلة لتقسيم الفواتير.
     `,
     contentEn: `
 ## Introduction
@@ -13422,10 +13414,10 @@ Before diving into specific apps, here's what matters most:
 
 ## The Top Bill Splitting Apps of 2026
 
-### 1. Diviso — Best Overall
+### 1. Diviso
 **Rating: 4.8/5**
 
-[Diviso](/split-expenses) stands out with its clean design, fast expense entry, and genuinely free core experience. It handles unlimited groups and expenses without a paywall, supports multiple currencies, and offers smart settlement optimization.
+[Diviso](/split-expenses) stands out with its clean design, fast expense entry, and smart settlement optimization.
 
 **Pros:**
 - ✅ Free unlimited groups and expenses
@@ -13494,8 +13486,6 @@ Open-source expense sharing app with decent features but less polish.
 
 | Feature | Diviso | Splitwise | Tricount | Settle Up |
 |---------|--------|-----------|----------|-----------|
-| Free unlimited groups | ✅ | ✅ | ✅ | ✅ |
-| Free multi-currency | ✅ | ❌ (Pro) | ✅ | ✅ |
 | Smart settlements | ✅ | ✅ | ❌ | ✅ |
 | Expense categories | ✅ | ❌ (Pro) | ❌ | ✅ |
 | Receipt scanning | ✅ | ❌ (Pro) | ❌ | ❌ |
@@ -13505,9 +13495,9 @@ Open-source expense sharing app with decent features but less polish.
 
 ## Our Verdict
 
-For most users, **[Diviso](/split-expenses)** offers the best balance of features, usability, and value. It does everything Splitwise does — and more — without charging for essential features. If you're starting fresh or considering switching from another app, Diviso is the clear choice in 2026.
+For most users, **[Diviso](/split-expenses)** offers a clear balance of features and usability. If you're starting fresh or considering switching from another app, Diviso is worth a try in 2026.
 
-**[Try Diviso free](/auth?mode=signup)** — no credit card required.
+**[Try Diviso](/auth?mode=signup)**.
     `
   },
   {
@@ -13624,7 +13614,7 @@ Example: In a group of 5, instead of 10 possible transfers, Diviso might reduce 
 
 Group expense tracking doesn't have to be a chore. With the right tool and a simple system, you can keep finances transparent, avoid conflicts, and settle up with minimal friction.
 
-**[Start tracking with Diviso](/auth?mode=signup)** — it's free and takes 30 seconds to set up.
+**[Start tracking with Diviso](/auth?mode=signup)** — it takes 30 seconds to set up.
     `
   },
   {
@@ -13696,20 +13686,16 @@ The most common reasons users look for alternatives:
 
 ## The Best Splitwise Alternatives
 
-### 1. Diviso — Best Overall Alternative
-**Why switch**: Everything Splitwise does, but free, faster, and cleaner.
+### 1. Diviso
+**Why switch**: A faster, cleaner way to split, with a full Arabic experience.
 
 [Diviso](/splitwise-alternative) was built by people who loved the concept of Splitwise but wanted a better execution. Here's what makes it stand out:
 
-- **Free multi-currency support** — Splitwise charges for this
-- **Free expense categories** — Organize spending without paying
 - **Modern, clean interface** — Designed for speed and clarity
 - **Smart settlement optimization** — Fewer transfers to settle up
-- **No disruptive ads** — Clean experience throughout
 - **Real-time syncing** — Everyone sees updates instantly
 
-**Price**: Free (optional premium for power features)
-**Best for**: Anyone who wants a full-featured expense splitter without a subscription.
+**Best for**: Anyone who wants a clear, simple expense splitter.
 
 ### 2. Tricount
 **Why consider**: Ultra-simple interface for basic needs.
@@ -13753,7 +13739,6 @@ Tab focuses specifically on splitting restaurant bills by scanning receipts and 
 - **Multi-currency**: included on Diviso at no extra tier; requires Splitwise Pro
 - **Expense categories**: included on Diviso at no extra tier; requires Splitwise Pro
 - **Smart settlements**: supported on Diviso, Splitwise Free, and Splitwise Pro alike
-- **Ad-free experience**: Diviso and Splitwise Pro are ad-free; Splitwise Free shows ads
 - **Expense search**: included on Diviso at no extra tier; requires Splitwise Pro
 - **Modern UI**: Diviso only — neither Splitwise tier has been modernized
 - **Receipt photos**: included on Diviso at no extra tier; requires Splitwise Pro
@@ -13762,7 +13747,7 @@ Tab focuses specifically on splitting restaurant bills by scanning receipts and 
 
 Making the switch is straightforward:
 
-1. **[Sign up for Diviso](/auth?mode=signup)** — Free, takes 30 seconds
+1. **[Sign up for Diviso](/auth?mode=signup)** — takes 30 seconds
 2. **Create your groups** — Recreate your active Splitwise groups
 3. **Invite members** — Send invite links to your group members
 4. **Start logging** — Begin tracking new expenses in Diviso
@@ -13770,9 +13755,9 @@ Making the switch is straightforward:
 
 ## Conclusion
 
-Splitwise deserves credit for pioneering the expense-splitting category, but in 2026, better options exist. [Diviso](/splitwise-alternative) offers a more modern, faster, and genuinely free alternative that doesn't gate essential features behind a subscription.
+Splitwise deserves credit for pioneering the expense-splitting category. [Diviso](/splitwise-alternative) offers a modern, fast alternative with a full Arabic experience.
 
-**[Try Diviso free](/auth?mode=signup)** — the best Splitwise alternative for 2026.
+**[Try Diviso](/auth?mode=signup)**.
     `
   },
   {
@@ -13898,7 +13883,7 @@ This process takes 10 minutes instead of the usual hours of spreadsheet wranglin
 - 🤝 **Be generous**: Don't nickel-and-dime on small amounts — it's not worth the friction
 - 📱 **Everyone uses the app**: Make sure all group members have access
 
-## Why Diviso Is the Best Travel Expense Splitter
+## Why Diviso Works for Travel Expenses
 
 [Diviso](/travel-expense-splitter) was designed with group travel in mind:
 
@@ -13913,7 +13898,7 @@ This process takes 10 minutes instead of the usual hours of spreadsheet wranglin
 
 Splitting travel expenses doesn't have to be awkward or stressful. With the right preparation, a simple logging habit, and a good app, you can handle the money side of group travel in minutes instead of hours.
 
-**[Try Diviso for your next trip](/auth?mode=signup)** — it's free and takes 30 seconds to set up.
+**[Try Diviso for your next trip](/auth?mode=signup)** — it takes 30 seconds to set up.
     `
   },
 ];

@@ -1,0 +1,177 @@
+{
+ "title": "Bill Freeze",
+ "duration": 22.44,
+ "shots": [
+  {
+   "id": "s01",
+   "start": 0,
+   "end": 1.33,
+   "line": "تعرف هاللحظة؟",
+   "scene": "",
+   "in": {
+    "type": "cut",
+    "dur": 0.25
+   },
+   "sfx": [
+    {
+     "at": 0.1,
+     "name": "pop",
+     "gain": -14
+    }
+   ],
+   "notes": "",
+   "amb": {
+    "name": "murmur",
+    "gain": -26
+   }
+  },
+  {
+   "id": "s02",
+   "start": 1.33,
+   "end": 3.89,
+   "line": "الطلعة خلصت.. والفاتورة وصلت.",
+   "scene": "",
+   "in": {
+    "type": "cut",
+    "dur": 0.25
+   },
+   "sfx": [
+    {
+     "at": 1.1,
+     "name": "hit",
+     "gain": -10
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s03",
+   "start": 3.89,
+   "end": 5.55,
+   "line": "فجأة.. الوقت وقف.",
+   "scene": "",
+   "in": {
+    "type": "flash",
+    "dur": 0.25
+   },
+   "sfx": [
+    {
+     "at": 0.0,
+     "name": "impact",
+     "gain": -6
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s04",
+   "start": 5.55,
+   "end": 7.68,
+   "line": "فهد.. صار عنده مكالمة مهمة.",
+   "scene": "",
+   "in": {
+    "type": "cut",
+    "dur": 0.25
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s05",
+   "start": 7.68,
+   "end": 10.25,
+   "line": "سعود.. تذكّر إن محفظته في السيارة.",
+   "scene": "",
+   "in": {
+    "type": "cut",
+    "dur": 0.25
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s06",
+   "start": 10.25,
+   "end": 13.08,
+   "line": "وماجد.. يقرأ المنيو كأنه بيختبر فيه.",
+   "scene": "",
+   "in": {
+    "type": "cut",
+    "dur": 0.25
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s07",
+   "start": 13.08,
+   "end": 15.7,
+   "line": "وأنت؟ كالعادة.. طلّعت البطاقة.",
+   "scene": "",
+   "in": {
+    "type": "cut",
+    "dur": 0.25
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s08",
+   "start": 15.7,
+   "end": 18.36,
+   "line": "خلاص.. هالمرة الحساب على ديفيزو.",
+   "scene": "",
+   "in": {
+    "type": "flash",
+    "dur": 0.25
+   },
+   "sfx": [
+    {
+     "at": 0.3,
+     "name": "pop",
+     "gain": -12
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "id": "s09",
+   "start": 18.36,
+   "end": 22.44,
+   "line": "سوّ مجموعة، ارمِ الرابط بالقروب، وكل واحد يعرف اللي عليه.",
+   "scene": "",
+   "in": {
+    "type": "cut",
+    "dur": 0.25
+   },
+   "sfx": [
+    {
+     "at": 0.2,
+     "name": "swish",
+     "gain": -10
+    }
+   ],
+   "notes": ""
+  }
+ ],
+ "music": [
+  {
+   "start": 0,
+   "end": 3.89,
+   "mood": "hopeful",
+   "intensity": 0.4
+  },
+  {
+   "start": 3.89,
+   "end": 15.7,
+   "mood": "mystery",
+   "intensity": 0.5
+  },
+  {
+   "start": 15.7,
+   "end": 22.44,
+   "mood": "wonder",
+   "intensity": 0.7
+  }
+ ]
+}

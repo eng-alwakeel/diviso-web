@@ -1,4 +1,13 @@
 {
+  "table_invite": {
+    "title": "Invite to a game table",
+    "pitch": "A table in Diviso keeps the Takleer and Baloot score for your group, and everyone sees it on their phone.",
+    "open_in_app": "Get the Diviso app, then open this same link or scan the QR on your phone to join the table.",
+    "download": "Get the app on the App Store",
+    "invalid": "This table link isn't valid",
+    "invalid_desc": "Check the link with whoever invited you.",
+    "back_home": "Back to home"
+  },
   "title": "Groups",
   "my_groups": "My Groups",
   "create": "Create Group",

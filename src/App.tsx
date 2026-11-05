@@ -24,6 +24,7 @@ import EmailVerify from "./pages/EmailVerify";
 import { AdminProtectedRoute } from "./components/AdminProtectedRoute";
 import InviteRoute from "./pages/InviteRoute";
 import PhoneInviteRoute from "./pages/PhoneInviteRoute";
+import TableInviteRoute from "./pages/TableInviteRoute";
 import NotFound from "./pages/NotFound";
 
 // Lazy load heavy components
@@ -120,6 +121,7 @@ const AppRoutes: React.FC = () => {
             <Route path="/invite-phone/:token" element={<PhoneInviteRoute />} />
             <Route path="/join/:referralCode" element={<JoinReferralRedirect />} />
             <Route path="/j/:referralCode" element={<LazyReferralLanding />} />
+            <Route path="/t/:code" element={<TableInviteRoute />} />
             <Route path="/privacy" element={<LazyPrivacyPolicy />} />
             <Route path="/support" element={<LazySupport />} />
             <Route path="/refund-policy" element={<LazyRefundPolicy />} />

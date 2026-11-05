@@ -11,7 +11,6 @@ Ordered. Status: todo / published. Slugs are suggestions (kebab-case, English).
 | 6 | split-group-flight-booking-one-card | شخص حجز طيران المجموعة ببطاقته: كيف تُسترد الحصص والرسوم | guides | todo |
 | 7 | split-graduation-party-cost-families | حفلة تخرج مشتركة بين عدة عائلات | guides | todo |
 | 8 | split-house-cleaner-cost-roommates | عاملة التنظيف في الشقة المشتركة: تقسيم حسب الغرف | tips | todo |
-| 9 | splitwise-vs-tricount-vs-diviso | مقارنة محايدة: Splitwise vs Tricount vs Diviso (ميزات، العربية، العملات) | comparisons | todo |
 | 10 | tricount-alternative-arabic | بديل Tricount يدعم العربية والريال | comparisons | todo |
 | 11 | split-council-tax-flatmates-uk | (EN-led) How to split council tax with flatmates (incl. student exemption) | guides | todo |
 | 12 | split-energy-bill-flatmates-uk | (EN-led) Splitting gas & electricity with flatmates when one works from home | guides | todo |
@@ -25,5 +24,6 @@ Ordered. Status: todo / published. Slugs are suggestions (kebab-case, English).
 | how-to-split-expenses-with-friends-guide | دليل شامل: كيف أقسم المصاريف مع أصدقائي (بالتساوي، بالنسبة، بالاستهلاك) — صفحة محورية تربط لكل مقالات السيناريوهات | guides | 2026-10-25 |
 | how-to-split-rent-with-flatmates-uk | (EN-led) How to split rent with flatmates in the UK: equal vs room size vs income, with a worked example | guides | 2026-10-27 |
 | bill-splitting-apps-arabic-compared | مقارنة محايدة لتطبيقات تقسيم الفاتورة التي تدعم العربية والريال (لاستعلام «تطبيق تقسيم الفاتورة») | comparisons | 2026-11-01 |
+| splitwise-vs-tricount-vs-diviso | مقارنة محايدة: Splitwise vs Tricount vs Diviso (نوع المجموعة، التسوية، العملات، العربية) | comparisons | 2026-11-05 |
 
 (full history: see docs/seo-agent/log.md)

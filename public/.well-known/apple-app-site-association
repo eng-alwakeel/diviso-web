@@ -5,7 +5,8 @@
         "appIDs": ["8976FU8472.io.diviso.app"],
         "components": [
           { "/": "/i/*", "comment": "Group invite tokens" },
-          { "/": "/j/*", "comment": "Referral codes" }
+          { "/": "/j/*", "comment": "Referral codes" },
+          { "/": "/t/*", "comment": "Game table invites (1.0.21)" }
         ]
       }
     ]

@@ -61,7 +61,7 @@ const PrivacyPolicy = () => {
       icon: <Megaphone className="h-4 w-4 text-primary" />,
       title: "الإعلانات",
       content:
-        "نستخدم Google AdMob بمعرفات مجهولة فقط. يمكنك تعطيل الإعلانات المخصصة من الإعدادات.",
+        "نستخدم Google AdMob بمعرفات مجهولة فقط. يمكنك تعطيل الإعلانات المخصصة من الإعدادات. ونستخدم أداة القياس من TikTok لمعرفة إذا جاء تحميل التطبيق من إعلاناتنا. ترسل الأداة أحداثاً عامة (مثل «إنشاء حساب» و«أول مجموعة») بدون اسمك أو بريدك أو مبالغك. المعرّف الإعلاني (IDFA) يُستخدم فقط إذا وافقت على طلب «السماح بالتتبع». تقدر توقف القياس من الإعدادات ← «مشاركة بيانات القياس مع شركاء الإعلان».",
     },
     {
       icon: <ExternalLink className="h-4 w-4 text-primary" />,
@@ -70,6 +70,7 @@ const PrivacyPolicy = () => {
         <ul className="list-disc pr-4 space-y-1">
           <li>Supabase — المصادقة والخادم والقاعدة البيانات</li>
           <li>Google AdMob — الإعلانات</li>
+          <li>TikTok — قياس الإعلانات</li>
           <li>Firebase Cloud Messaging — إشعارات الدفع</li>
           <li>Google Places — البحث عن المواقع</li>
           <li>Google Gemini — الاقتراحات الذكية</li>
@@ -173,7 +174,7 @@ const PrivacyPolicy = () => {
       icon: <Megaphone className="h-4 w-4 text-primary" />,
       title: "Advertising",
       content:
-        "We use Google AdMob with anonymized identifiers only. You can disable personalized ads in Settings.",
+        "We use Google AdMob with anonymized identifiers only. You can disable personalized ads in Settings. We also use the TikTok measurement tool to learn whether an app install came from our ads. It sends generic events (such as \"account created\" and \"first group\") without your name, email, or amounts. The advertising identifier (IDFA) is used only if you allow tracking when asked. You can turn measurement off in Settings → \"Share measurement data with ad partners\".",
     },
     {
       icon: <ExternalLink className="h-4 w-4 text-primary" />,
@@ -182,6 +183,7 @@ const PrivacyPolicy = () => {
         <ul className="list-disc pl-4 space-y-1">
           <li>Supabase — Authentication, backend, and database</li>
           <li>Google AdMob — Advertising</li>
+          <li>TikTok — Ad measurement</li>
           <li>Firebase Cloud Messaging — Push notifications</li>
           <li>Google Places — Location search</li>
           <li>Google Gemini — Smart suggestions</li>
@@ -273,7 +275,7 @@ const PrivacyPolicy = () => {
             سياسة الخصوصية
           </p>
           <p className="text-sm text-muted-foreground">
-            Last updated: June 2026 | آخر تحديث: يونيو 2026
+            Last updated: November 2026 | آخر تحديث: نوفمبر 2026
           </p>
         </div>
 

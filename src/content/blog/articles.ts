@@ -16,6 +16,144 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "tricount-alternative-arabic",
+    title: "تبحث عن بديل لـ Tricount يدعم العربية والريال؟ إليك ما يجب التحقق منه",
+    titleEn: "Looking for a Tricount Alternative That Supports Arabic and the Riyal? Here's What to Check",
+    description: "Tricount مصمم أساساً حول مناسبة واحدة محددة (رحلة، مناسبة) تُسوّى بالكامل عند انتهائها، لكنه لا يوفر واجهة عربية أصلية ولا يتعامل مع الريال كعملة أساسية. دليل عملي لاختيار بديل يحافظ على نفس آلية العمل مع واجهة عربية RTL وريال مباشر.",
+    descriptionEn: "Tricount is built around a single, defined event (a trip, an occasion) that gets fully settled once it ends, but it doesn't offer a native Arabic interface or handle the riyal as a primary currency. A practical guide to choosing an alternative that keeps the same workflow with a native Arabic RTL interface and the riyal directly.",
+    keywords: ["بديل tricount يدعم العربية", "بديل tricount بالريال", "تطبيق عربي بديل tricount", "tricount alternative arabic", "تطبيق تقسيم مصاريف الرحلة بالعربي", "بديل لتطبيق تريكاونت"],
+    keywordsEn: ["tricount alternative arabic", "tricount alternative saudi riyal", "arabic app like tricount", "tricount alternative for trips arabic", "app similar to tricount arabic interface"],
+    category: "comparisons",
+    readTime: 8,
+    publishDate: "2026-11-08",
+    content: `
+## الإجابة المختصرة
+
+Tricount تطبيق مصمم أساساً حول **مناسبة واحدة محددة بتاريخ بداية ونهاية** (رحلة، مناسبة قصيرة): يُضاف فيه المشاركون، تُسجَّل المصاريف خلال فترة المناسبة، ثم تُحسب تسوية نهائية عند إغلاقها. لكنه لا يوفر واجهة عربية أصلية بتصميم RTL، ولا يتعامل مع الريال السعودي كعملة أساسية مباشرة — فقط كخيار ضمن قائمة عملات متعددة. من يبحث عن بديل يحافظ على نفس آلية "المناسبة الواحدة" مع واجهة عربية والريال مباشرة، عليه التحقق من 3 نقاط محددة قبل الانتقال.
+
+## لماذا يبحث مستخدمو Tricount عن بديل عربي؟
+
+من يخطط لرحلة مع مجموعة ناطقة بالعربية يواجه عادة مشكلتين عمليتين في Tricount: الأولى أن الواجهة إنجليزية أو بلغات أوروبية فقط، فيضطر بعض أعضاء المجموعة لاستخدام تطبيق بلغة غير مريحة لهم. الثانية أن تسجيل المصاريف بالريال يتطلب إضافته كعملة ضمن إعدادات متعددة، بدلاً من أن يكون العملة الافتراضية المتوقعة منذ البداية.
+
+## المعايير الثلاثة لاختيار بديل عربي لـ Tricount
+
+### المعيار الأول: الحفاظ على نفس آلية "المناسبة الواحدة"
+البديل الجيد يجب أن يسمح بإنشاء مجموعة لمناسبة محددة، تسجيل المصاريف خلالها بسهولة، ثم تسوية نهائية واضحة عند انتهائها — دون أن يفرض عليكم نمط "المجموعة الدائمة" إن لم تكونوا بحاجة له.
+
+### المعيار الثاني: واجهة عربية أصلية بتصميم RTL كامل
+ليس كافياً أن تظهر بعض الكلمات بالعربية؛ الفرق الحقيقي أن تُبنى كل عناصر الواجهة (القوائم، ترتيب الحقول، الأزرار) من الأساس لتناسب اتجاه القراءة من اليمين لليسار.
+
+### المعيار الثالث: الريال كعملة أساسية مباشرة
+تسجيل المصروف بالريال يجب أن يكون الخيار الافتراضي المباشر، لا خطوة إضافية ضمن قائمة عملات طويلة مصممة حول عملة أخرى.
+
+## كيف يغطي Diviso هذه الاحتياجات الثلاثة؟
+
+- ✅ يدعم إنشاء مجموعة لمناسبة واحدة محددة (رحلة، مناسبة) مع تسوية واضحة عند انتهائها، تماماً مثل آلية Tricount
+- ✅ واجهة عربية أصلية مصممة بـ RTL كامل من الأساس، إلى جانب إمكانية الاستخدام بالإنجليزية
+- ✅ الريال السعودي كعملة أساسية مباشرة، مع دعم عملات أخرى لمن يحتاجها في رحلات دولية
+
+## خطوات عملية للانتقال من Tricount إلى بديل عربي
+
+### الخطوة 1: ابدأوا مجموعة جديدة للمناسبة القادمة
+بدلاً من محاولة نقل سجل تاريخي من Tricount، ابدأوا بمجموعة جديدة في البديل العربي من أول مناسبة قادمة، لتجربة الواجهة والعملة مباشرة في استخدام حقيقي.
+
+### الخطوة 2: أضيفوا المشاركين وتحققوا من ظهور الواجهة بالعربية لكل عضو
+تأكدوا أن كل فرد في المجموعة يرى الواجهة باللغة التي تناسبه (عربية أو إنجليزية) دون إعداد معقد.
+
+### الخطوة 3: سجّلوا أول مصروف بالريال وتحققوا من مدى مباشرة الخطوة
+إن احتجتم تحويل عملة إضافية لرحلة خارج السعودية، تحققوا من سهولة إضافتها دون التأثير على العملة الأساسية.
+
+### الخطوة 4: عند انتهاء المناسبة، راجعوا التسوية النهائية
+تحققوا أن التسوية تعرض بوضوح من يدين لمن، بأقل عدد ممكن من التحويلات.
+
+## أخطاء شائعة عند البحث عن بديل لـ Tricount
+
+- **افتراض أن أي تطبيق يدعم "لغة عربية" في الإعدادات يعني واجهة عربية أصلية كاملة**
+- **توقع نقل تلقائي للسجل التاريخي من Tricount دون التحقق من ذلك فعلياً أولاً**
+- **اختيار بديل مصمم أساساً حول "مجموعة دائمة" بينما حاجتكم الفعلية مناسبة واحدة محددة**
+
+## أسئلة شائعة
+
+### هل يوجد بديل عربي يطابق Tricount تماماً في آلية العمل؟
+التشابه الأقرب هو في دعم إنشاء مجموعة لمناسبة واحدة محددة مع تسوية نهائية عند انتهائها؛ أما تفاصيل الواجهة والميزات فتختلف من تطبيق لآخر، لذا يُفضَّل تجربة الاستخدام الفعلي قبل الاعتماد الكامل.
+
+### هل يمكن نقل بيانات رحلة سابقة من Tricount مباشرة؟
+الأضمن هو بدء مجموعة جديدة للمناسبة القادمة بدلاً من افتراض وجود نقل تلقائي للبيانات القديمة، للتأكد من دقة الأرقام منذ البداية.
+
+### هل يدعم البديل العربي عدة عملات لرحلة خارج السعودية؟
+نعم، يمكن اعتماد الريال كعملة أساسية مباشرة مع إمكانية إضافة عملات أخرى عند الحاجة لرحلات دولية.
+
+## الخلاصة
+
+من يبحث عن بديل لـ Tricount يحافظ على نفس آلية "مناسبة واحدة، تسوية نهائية" مع واجهة عربية أصلية وريال مباشر، يجب أن يتحقق من هذه المعايير الثلاثة تحديداً قبل الانتقال، لا الاعتماد على الشهرة وحدها.
+
+**جرب Diviso الآن وقسّم مصاريف رحلتك أو مناسبتك القادمة بواجهة عربية أصلية وريال سعودي مباشر.**
+    `,
+    contentEn: `
+## Quick Answer
+
+Tricount is an app built primarily around **a single, defined event with a start and end date** (a trip, a short occasion): participants are added, expenses are logged during the event, then a final settlement is calculated once it's closed. But it doesn't offer a native Arabic RTL interface, and it doesn't handle the Saudi Riyal as a primary currency directly — only as one option within a multi-currency list. Anyone looking for an alternative that keeps the same "single event" workflow with a native Arabic interface and the riyal directly should check 3 specific points before switching.
+
+## Why Do Tricount Users Look for an Arabic Alternative?
+
+Anyone planning a trip with an Arabic-speaking group typically runs into two practical issues with Tricount: first, the interface is English or limited to a few European languages, forcing some group members to use an app in a language that isn't comfortable for them. Second, logging expenses in riyal requires adding it as a currency within multi-currency settings, rather than it being the expected default currency from the start.
+
+## The Three Criteria for Choosing an Arabic Alternative to Tricount
+
+### Criterion 1: Keeping the Same "Single Event" Workflow
+A good alternative should let you create a group for a specific event, log expenses easily during it, then get a clear final settlement once it ends — without forcing an "ongoing group" pattern on you if that's not what you need.
+
+### Criterion 2: A Native Arabic Interface With Full RTL Design
+It isn't enough for some words to appear in Arabic; the real difference is whether every interface element (menus, field order, buttons) is built from the ground up to fit a right-to-left reading direction.
+
+### Criterion 3: The Riyal as a Direct Primary Currency
+Logging an expense in riyal should be the direct default option, not an extra step within a long currency list built around a different currency.
+
+## How Diviso Covers These Three Needs
+
+- ✅ Supports creating a group for a single, defined event (a trip, an occasion) with a clear settlement once it ends, much like Tricount's workflow
+- ✅ A native Arabic interface built with full RTL from the ground up, alongside the option to use it in English
+- ✅ The Saudi Riyal as a direct primary currency, with support for other currencies for international trips when needed
+
+## A Practical Path for Switching From Tricount to an Arabic Alternative
+
+### Step 1: Start a New Group for Your Next Event
+Rather than trying to migrate a historical record from Tricount, start a fresh group in the Arabic alternative for your next upcoming event, to test the interface and currency directly in real use.
+
+### Step 2: Add Participants and Check That the Interface Displays in Arabic for Each Member
+Make sure every person in the group sees the interface in the language that suits them (Arabic or English) without complicated setup.
+
+### Step 3: Log Your First Expense in Riyal and Check How Direct the Step Is
+If you need an additional currency for a trip outside Saudi Arabia, check how easily it can be added without affecting the primary currency.
+
+### Step 4: Review the Final Settlement When the Event Ends
+Check that the settlement clearly shows who owes whom, with as few transfers as possible.
+
+## Common Mistakes When Looking for a Tricount Alternative
+
+- **Assuming any app that lists "Arabic" as a language option means a fully native Arabic interface**
+- **Expecting an automatic transfer of your historical record from Tricount without actually checking that first**
+- **Choosing an alternative built primarily around an "ongoing group" when your actual need is a single, defined event**
+
+## Frequently Asked Questions
+
+### Is there an Arabic alternative that matches Tricount's workflow exactly?
+The closest similarity is in supporting a group for a single, defined event with a final settlement once it ends; interface details and features vary between apps, so it's best to try actual usage before fully committing.
+
+### Can a previous trip's data be transferred directly from Tricount?
+The safer approach is to start a new group for your next event rather than assuming an automatic transfer of old data exists, to make sure the numbers are accurate from the start.
+
+### Does the Arabic alternative support multiple currencies for a trip outside Saudi Arabia?
+Yes, the riyal can be set as the direct primary currency while still allowing other currencies to be added when needed for international trips.
+
+## Conclusion
+
+Anyone looking for a Tricount alternative that keeps the same "single event, final settlement" workflow with a native Arabic interface and the riyal directly should check these three specific criteria before switching, rather than relying on popularity alone.
+
+**Try Diviso now and split your next trip or event's expenses with a native Arabic interface and direct Saudi Riyal support.**
+    `
+  },
+  {
     slug: "splitwise-vs-tricount-vs-diviso",
     title: "Splitwise أم Tricount أم Diviso؟ مقارنة محايدة حسب طبيعة استخدامك",
     titleEn: "Splitwise vs Tricount vs Diviso: A Neutral Comparison by How You Actually Use It",

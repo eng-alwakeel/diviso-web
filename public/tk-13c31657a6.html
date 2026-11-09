@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#12160D">
+<title>حاسبة تكلير</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: the paper sheet they already use (rows = rounds, columns = players) with first/last always on top; round entry below */
+:root{
+  --bg:#F3F5EC; --card:#FFFFFF; --ink:#1B2113; --muted:#5E6852; --line:#DCE2CF;
+  --lime:#C8F169; --lime-ink:#2F4A06; --chip:#EDF1E2; --win:#2F7D32; --lose:#B3261E; --last-bg:#FBE3E0;
+  --font:"Readex Pro",system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#12160D; --card:#1C2215; --ink:#EEF3E2; --muted:#A3AE92; --line:#2E3624;
+  --lime:#C8F169; --lime-ink:#1B2A05; --chip:#262E1C; --win:#8FD694; --lose:#FF8A80; --last-bg:#3A1F1C; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12160D; --card:#1C2215; --ink:#EEF3E2; --muted:#A3AE92; --line:#2E3624;
+  --lime:#C8F169; --lime-ink:#1B2A05; --chip:#262E1C; --win:#8FD694; --lose:#FF8A80; --last-bg:#3A1F1C; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);margin:0;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:16px 40px}
+.app{max-width:560px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+h1{font-size:22px;margin:0;text-wrap:balance}
+h2{font-size:15px;margin:0;color:var(--muted);font-weight:600;letter-spacing:.02em}
+h3{font-size:14px;margin:0;font-weight:600}
+.games{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px}
+.game{flex:0 0 auto;padding:7px 12px;border-radius:999px;background:var(--chip);color:var(--muted);font-size:13px;border:1px solid var(--line)}
+.game.on{background:var(--lime);color:var(--lime-ink);border-color:var(--lime);font-weight:600}
+.game small{opacity:.7;margin-inline-start:4px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.spacer{flex:1}
+label.inline{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted)}
+input[type=number],input[type=text],select{font:inherit;font-size:15px;padding:8px 10px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);min-width:0}
+input[type=number]{width:78px;font-variant-numeric:tabular-nums;text-align:center}
+button{font:inherit;border-radius:12px;border:1px solid var(--line);background:var(--chip);color:var(--ink);padding:9px 14px;cursor:pointer}
+button.primary{background:var(--lime);color:var(--lime-ink);border-color:var(--lime);font-weight:700}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+button:disabled{opacity:.45;cursor:not-allowed}
+
+/* first / last strip */
+.ends{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.end{border-radius:14px;padding:12px;display:flex;flex-direction:column;gap:2px}
+.end.first{background:var(--lime);color:var(--lime-ink)}
+.end.last{background:var(--last-bg);color:var(--ink)}
+.end small{font-size:12px;opacity:.8}
+.end b{font-size:19px}
+.end span{font-variant-numeric:tabular-nums;font-size:14px}
+.winner{background:var(--lime);color:var(--lime-ink);border-radius:16px;padding:14px;font-weight:700;font-size:17px;text-align:center}
+
+/* the sheet */
+.sheet-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:max-content;min-width:100%;font-variant-numeric:tabular-nums;font-size:14px}
+th,td{padding:8px 10px;text-align:center;border-bottom:1px solid var(--line);white-space:nowrap}
+thead th{background:var(--chip);font-weight:600;position:sticky;top:0}
+th.rn,td.rn{position:sticky;right:0;background:var(--card);color:var(--muted);font-weight:500;border-left:1px solid var(--line)}
+thead th.rn{background:var(--chip)}
+td.zero{color:var(--muted)}
+td.dbl{font-weight:700}
+td.dbl::after{content:attr(data-m);font-size:10px;color:var(--muted);margin-inline-start:2px}
+td.inv{color:var(--lose);font-weight:700}
+td.inv::after{content:" غلط";font-size:10px}
+.warn-line{color:var(--lose);font-weight:600}
+td.ends-cell{font-size:12px;color:var(--muted);text-align:start}
+tfoot td{font-weight:700;background:var(--chip);border-bottom:0}
+tfoot tr.rank td{font-weight:500;font-size:12px;background:var(--card)}
+td.is-first{background:color-mix(in srgb,var(--lime) 45%,transparent)}
+td.is-last{background:var(--last-bg)}
+
+.step{display:flex;flex-direction:column;gap:8px;padding-top:10px;border-top:1px dashed var(--line)}
+.step:first-of-type{border-top:0;padding-top:0}
+.link{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center}
+.others{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.o{display:flex;align-items:center;justify-content:space-between;gap:6px;background:var(--chip);border-radius:12px;padding:6px 8px}
+.o span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:500}
+.o input{width:64px}
+.tag{font-size:12px;padding:3px 8px;border-radius:99px;background:var(--chip);color:var(--muted);white-space:nowrap}
+.result{border-radius:12px;padding:10px 12px;background:var(--chip);font-size:14px;line-height:1.7}
+.ok{color:var(--win)} .bad{color:var(--lose)}
+.muted{color:var(--muted);font-size:12px}
+@media (max-width:360px){.others{grid-template-columns:1fr}}
+.players{display:flex;flex-direction:column;gap:6px}
+.players .pl{display:flex;gap:6px;align-items:center}
+.players input{flex:1}
+.players button{padding:6px 10px}
+details summary{cursor:pointer;font-size:13px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="app" dir="rtl" lang="ar">
+  <div class="row"><h1>حاسبة تكلير</h1><span class="spacer"></span><button id="newGame">لعبة جديدة</button></div>
+
+  <div id="winnerBox" class="winner" hidden></div>
+
+  <div class="ends" aria-live="polite">
+    <div class="end first"><small>الأول</small><b id="firstName">—</b><span id="firstPts"></span></div>
+    <div class="end last"><small>الأخير</small><b id="lastName">—</b><span id="lastPts"></span></div>
+  </div>
+
+  <section class="card" aria-labelledby="sheetH">
+    <div class="row">
+      <h2 id="sheetH">الجدول</h2><span class="spacer"></span>
+      <label class="inline" for="target">الهدف <input id="target" type="number" min="100" step="50" value="500"></label>
+    </div>
+    <div class="sheet-wrap"><table id="sheet"></table></div>
+    <p class="muted" style="margin:0">الدبل يضاعف الجولة مهما كان الفائز: دبل واحد ×2، ودبلين ×3. الفائز ياخذ رقمه مضروب، واللي يخسر صفر. والتكلير أقل من 43 ينحسب غلط: اللي قاله ياخذ صفر، والباقين أرقامهم بدون مضاعفة.</p>
+    <p class="muted" style="margin:0">كل صف جولة، وكل عمود لاعب. الرقم الغامق مع ×2 أو ×3 يعني دبل. وآخر عمود يبيّن الأول والأخير بعد كل جولة.</p>
+    <details id="plDetails">
+      <summary>اللاعبين (تعديل الأسماء، إضافة، حذف)</summary>
+      <div id="players" class="players" style="margin-top:8px"></div>
+      <p class="muted" style="margin:6px 0 0">الحذف متاح قبل أول جولة بس. اللي ينضاف أثناء اللعب يبدأ من صفر.</p>
+    </details>
+    <div class="row">
+      <input id="newName" type="text" placeholder="اسم لاعب جديد" aria-label="اسم لاعب جديد" style="flex:1">
+      <button id="addPlayer">+ لاعب</button>
+    </div>
+  </section>
+
+  <section class="card" aria-labelledby="roundH">
+    <div class="row"><h2 id="roundH">سجّل الجولة <span id="roundNo"></span></h2></div>
+    <div class="step"><h3>١. مين قال تكلير؟</h3><div id="declarer"></div></div>
+    <div class="step">
+      <div class="row"><h3>٢. الدبل (اختياري)</h3><span class="spacer"></span><button id="addChallenger">+ متحدّي</button></div>
+      <div id="chain" style="display:flex;flex-direction:column;gap:8px"></div>
+    </div>
+    <div class="step">
+      <h3>٣. باقي اللاعبين: رقم كل واحد</h3>
+      <div id="others" class="others"></div>
+      <p class="muted" style="margin:0">أقل من 30 ينحسب صفر. الأعلى 52.</p>
+    </div>
+    <div id="resolve" class="result" aria-live="polite"></div>
+    <div class="row"><button class="primary" id="saveRound">أضف الصف للجدول</button><span class="spacer"></span><button id="undo">احذف آخر صف</button></div>
+  </section>
+</div>
+
+<script>
+(function(){
+const MAXP=12;
+const KEY="diviso_tickler_v1";
+const fresh=()=>({players:[1,2,3,4].map(i=>({id:i,name:"لاعب "+i})),nextId:5,rounds:[],target:500});
+let saved=null;try{saved=JSON.parse(localStorage.getItem(KEY)||"null");}catch(e){saved=null;}
+if(!saved||!Array.isArray(saved.players)||saved.players.length<2||!Array.isArray(saved.rounds))saved=fresh();
+let players=saved.players;
+let nextId=saved.nextId||players.reduce((m,p)=>Math.max(m,p.id),0)+1;
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+const $=s=>document.querySelector(s);
+const nameOf=id=>(players.find(x=>x.id===id)||{}).name||"؟";
+const target=()=>Math.max(100,parseInt($("#target").value)||500);
+const handPts=v=>(v>=30&&v<=52)?v:0;
+
+function resolveChain(c){
+  let holder=0,wins=0;const steps=[];
+  for(let i=1;i<c.length;i++){const beat=c[i].v>c[holder].v;steps.push({i,beat,against:holder});if(beat){holder=i;wins++;}}
+  return {winner:c[holder].p,value:c[holder].v,mult:c.length,steps};
+}
+const MIN_TICKLER=43;
+function roundPoints(r){
+  const pts={};players.forEach(p=>pts[p.id]=0);
+  const inChain=new Set(r.chain.map(x=>x.p));
+  for(const k in r.hands){const id=Number(k);if(!inChain.has(id)&&id in pts)pts[id]=handPts(r.hands[k]);}
+  if(r.chain[0].v<MIN_TICKLER){
+    // wrong tickler: caller gets 0, anyone who doubled just keeps his own number, no multiplier
+    r.chain.slice(1).forEach(c=>{pts[c.p]=handPts(c.v);});
+    return {pts,res:{invalid:true,winner:null,mult:1,steps:[]}};
+  }
+  const res=resolveChain(r.chain);pts[res.winner]=res.value*res.mult;
+  return {pts,res};
+}
+let rounds=saved.rounds;
+let decl={p:players[0].id,v:""},challengers=[],hands={};
+
+function ranking(cum){return [...players].sort((a,b)=>(cum[b.id]||0)-(cum[a.id]||0));}
+
+function persist(){try{localStorage.setItem(KEY,JSON.stringify({players,nextId,rounds,target:target()}));}catch(e){}}
+function renderSheet(){
+  persist();
+  const cum={};players.forEach(p=>cum[p.id]=0);
+  let body="";
+  rounds.forEach((r,i)=>{
+    const {pts,res}=roundPoints(r);
+    players.forEach(p=>cum[p.id]+=pts[p.id]);
+    const rk=ranking(cum),f=rk[0],l=rk[rk.length-1];
+    const cells=players.map(p=>{
+      const v=pts[p.id],isW=!res.invalid&&p.id===res.winner&&res.mult>1,isInv=res.invalid&&p.id===r.chain[0].p;
+      return `<td class="${v===0?"zero":""}${isW?" dbl":""}${isInv?" inv":""}"${isW?` data-m="×${res.mult}"`:""}>${v}</td>`;
+    }).join("");
+    body+=`<tr><td class="rn">${i+1}</td>${cells}<td class="ends-cell">↑ ${esc(f.name)} · ↓ ${esc(l.name)}</td></tr>`;
+  });
+  const rk=ranking(cum),first=rk[0],last=rk[rk.length-1];
+  const head=`<thead><tr><th class="rn">#</th>${players.map(p=>`<th>${esc(p.name)}</th>`).join("")}<th>الأول · الأخير</th></tr></thead>`;
+  const pos={};rk.forEach((p,i)=>pos[p.id]=i+1);
+  const foot=`<tfoot><tr><td class="rn">المجموع</td>${players.map(p=>`<td class="${p.id===first.id&&rounds.length?"is-first":""}${p.id===last.id&&rounds.length?" is-last":""}">${cum[p.id]}</td>`).join("")}<td></td></tr>
+    <tr class="rank"><td class="rn">الترتيب</td>${players.map(p=>`<td>${pos[p.id]}</td>`).join("")}<td></td></tr></tfoot>`;
+  $("#sheet").innerHTML=head+`<tbody>${body||`<tr><td class="rn">—</td><td colspan="${players.length+1}" class="muted">ما فيه جولات للحين.</td></tr>`}</tbody>`+foot;
+
+  $("#firstName").textContent=rounds.length?first.name:"—";
+  $("#firstPts").textContent=rounds.length?`${cum[first.id]} نقطة`:"";
+  $("#lastName").textContent=rounds.length?last.name:"—";
+  $("#lastPts").textContent=rounds.length?`${cum[last.id]} نقطة`:"";
+
+  const tg=target(),over=players.filter(p=>cum[p.id]>=tg).sort((a,b)=>cum[b.id]-cum[a.id]);
+  const box=$("#winnerBox");
+  if(over.length){const tie=over.filter(p=>cum[p.id]===cum[over[0].id]);
+    box.textContent=tie.length>1?`تعادل فوق ${tg}: ${tie.map(p=>p.name).join(" و")} · جولة فاصلة`:`🏆 الفائز: ${over[0].name} بـ ${cum[over[0].id]} من ${tg} · والأخير ${last.name}`;
+    box.hidden=false;} else box.hidden=true;
+  $("#roundNo").textContent=rounds.length+1;
+  $("#addPlayer").disabled=players.length>=MAXP;
+}
+
+const opts=sel=>players.map(p=>`<option value="${p.id}"${p.id===sel?" selected":""}>${esc(p.name)}</option>`).join("");
+function renderDeclarer(){
+  $("#declarer").innerHTML=`<div class="link"><span class="tag">قال تكلير</span><select id="dp" aria-label="اللاعب">${opts(decl.p)}</select><input type="number" id="dv" min="0" max="52" placeholder="رقمه" value="${decl.v}" aria-label="رقمه"></div>`;
+  $("#dp").onchange=e=>{decl.p=Number(e.target.value);renderOthers();renderResolve();};
+  $("#dv").oninput=e=>{decl.v=e.target.value;renderResolve();};
+}
+function renderChain(){
+  $("#chain").innerHTML=challengers.length?challengers.map((c,i)=>`
+    <div class="link"><span class="tag">دبل ${i+1}</span><select id="cp_${i}" aria-label="المتحدّي">${opts(c.p)}</select><input type="number" id="cv_${i}" min="30" max="52" placeholder="رقمه" value="${c.v}" aria-label="رقمه"></div>`).join("")
+    :`<span class="muted">ما أحد دبّل. لو أحد دبّل اضغط «+ متحدّي».</span>`;
+  challengers.forEach((c,i)=>{
+    $("#cp_"+i).onchange=e=>{c.p=Number(e.target.value);renderOthers();renderResolve();};
+    $("#cv_"+i).oninput=e=>{c.v=e.target.value;renderResolve();};
+  });
+  $("#addChallenger").disabled=challengers.length+1>=players.length;
+}
+function chainIds(){return new Set([decl.p,...challengers.map(c=>c.p)]);}
+function renderOthers(){
+  const ids=chainIds();
+  $("#others").innerHTML=players.filter(p=>!ids.has(p.id)).map(p=>`
+    <label class="o" for="h_${p.id}"><span>${esc(p.name)}</span><input type="number" id="h_${p.id}" min="0" max="52" placeholder="0" value="${hands[p.id]??""}"></label>`).join("");
+  players.forEach(p=>{const el=$("#h_"+p.id);if(el)el.oninput=e=>{hands[p.id]=e.target.value;renderResolve();};});
+}
+function current(){
+  const chain=[{p:decl.p,v:Number(decl.v)},...challengers.map(c=>({p:c.p,v:Number(c.v)}))];
+  const ids=new Set(chain.map(c=>c.p));
+  if(ids.size!==chain.length)return {err:"كل لاعب يدخل الدبل مرة وحدة."};
+  if(decl.v===""||!Number.isInteger(chain[0].v)||chain[0].v<0||chain[0].v>52)return {err:"أدخل رقم اللي قال تكلير (من 0 لين 52)."};
+  if(chain.slice(1).some(c=>!Number.isInteger(c.v)||c.v<30||c.v>52))return {err:"اللي دبّل: رقم من 30 لين 52."};
+  const h={};
+  for(const p of players){if(ids.has(p.id))continue;const raw=hands[p.id];const v=raw===undefined||raw===""?0:Number(raw);
+    if(!Number.isFinite(v)||v<0||v>52)return {err:`رقم ${nameOf(p.id)} لازم يكون من 0 لين 52.`};h[p.id]=v;}
+  return {round:{chain,hands:h}};
+}
+function renderResolve(){
+  const c=current(),el=$("#resolve");
+  if(c.err){el.innerHTML=`<span class="muted">${esc(c.err)}</span>`;return;}
+  const {pts,res}=roundPoints(c.round),r=c.round;
+  if(res.invalid){
+    el.innerHTML=`<div class="warn-line">⚠️ تكلير غلط: ${esc(nameOf(r.chain[0].p))} قال تكلير بـ${r.chain[0].v}، والحد الأدنى ${MIN_TICKLER}. ياخذ صفر، واللي دبّل ياخذ رقمه عادي بدون مضاعفة، والباقين أرقامهم.</div><div>الصف اللي بينضاف: ${players.map(p=>`${esc(p.name)} <b>${pts[p.id]}</b>`).join(" · ")}</div>`;
+    return;
+  }
+  const lines=res.steps.map(s=>{const a=r.chain[s.i],b=r.chain[s.against];
+    return s.beat?`<div class="ok">${esc(nameOf(a.p))} (${a.v}) غلب ${esc(nameOf(b.p))} (${b.v})</div>`
+      :`<div class="bad">${esc(nameOf(a.p))} (${a.v}) ما غلب ${esc(nameOf(b.p))} (${b.v})${a.v===b.v?" · تعادل = خسارة للمتحدّي":""}</div>`;}).join("");
+  el.innerHTML=`${lines}<div>الصف اللي بينضاف: ${players.map(p=>`${esc(p.name)} <b>${pts[p.id]}</b>`).join(" · ")}</div>`;
+}
+function resetRound(){decl={p:players[0].id,v:""};challengers=[];hands={};renderDeclarer();renderChain();renderOthers();renderResolve();}
+function renderAll(){renderSheet();renderDeclarer();renderChain();renderOthers();renderResolve();}
+
+$("#saveRound").onclick=()=>{const c=current();if(c.err)return;rounds.push(c.round);resetRound();renderSheet();};
+$("#undo").onclick=()=>{rounds.pop();renderSheet();};
+$("#target").oninput=renderSheet;
+$("#addChallenger").onclick=()=>{const ids=chainIds();const free=players.find(p=>!ids.has(p.id));if(!free)return;challengers.push({p:free.id,v:""});renderChain();renderOthers();renderResolve();};
+$("#addPlayer").onclick=()=>{const n=$("#newName").value.trim();if(!n||players.length>=MAXP)return;players.push({id:nextId++,name:n});$("#newName").value="";renderAll();};
+function renderPlayers(){
+  $("#players").innerHTML=players.map(p=>`<div class="pl"><input type="text" id="pn_${p.id}" value="${esc(p.name)}" aria-label="اسم اللاعب"><button id="pr_${p.id}" ${rounds.length||players.length<=2?"disabled":""} aria-label="حذف ${esc(p.name)}">✕</button></div>`).join("");
+  players.forEach(p=>{
+    $("#pn_"+p.id).onchange=e=>{const n=e.target.value.trim();if(n){p.name=n;}renderSheet();renderDeclarer();renderChain();renderOthers();renderResolve();renderPlayers();};
+    $("#pr_"+p.id).onclick=()=>{if(rounds.length||players.length<=2)return;players=players.filter(x=>x.id!==p.id);resetRound();renderAll();};
+  });
+}
+const _renderAll=renderAll;renderAll=function(){_renderAll();renderPlayers();};
+$("#target").value=saved.target||500;
+let armed=null;
+$("#newGame").onclick=e=>{const b=e.currentTarget;
+  if(!armed){b.textContent="متأكد؟ اضغط مرة ثانية";armed=setTimeout(()=>{armed=null;b.textContent="لعبة جديدة";},3000);return;}
+  clearTimeout(armed);armed=null;b.textContent="لعبة جديدة";
+  rounds.length=0;resetRound();renderAll();};
+renderAll();
+})();
+</script>
+</body>
+</html>

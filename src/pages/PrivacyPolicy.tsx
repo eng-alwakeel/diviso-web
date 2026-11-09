@@ -258,7 +258,7 @@ const PrivacyPolicy = () => {
       <SEO
         title="Privacy Policy"
         description="Diviso Privacy Policy. Learn how we collect, use, and protect your data."
-        canonical="https://diviso.app/privacy"
+        canonical="https://www.diviso.app/privacy"
       />
       <Header />
       <div className="max-w-4xl mx-auto p-6 space-y-8">

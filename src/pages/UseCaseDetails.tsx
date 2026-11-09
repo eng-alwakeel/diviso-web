@@ -58,19 +58,19 @@ const UseCaseDetails = () => {
           "author": {
             "@type": "Organization",
             "name": "Diviso",
-            "url": "https://diviso.app"
+            "url": "https://www.diviso.app"
           },
           "publisher": {
             "@type": "Organization",
             "name": "Diviso",
             "logo": {
               "@type": "ImageObject",
-              "url": "https://diviso.app/og-image.png"
+              "url": "https://www.diviso.app/og-image.png"
             }
           },
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": `https://diviso.app/use-cases/${useCase.slug}`
+            "@id": `https://www.diviso.app/use-cases/${useCase.slug}`
           },
           "speakable": {
             "@type": "SpeakableSpecification",
@@ -117,11 +117,6 @@ const UseCaseDetails = () => {
             "price": "0",
             "priceCurrency": "SAR"
           },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "ratingCount": "1250"
-          },
           "featureList": isRTL 
             ? ["تقسيم المصاريف تلقائياً", "دعم عملات متعددة", "تسوية سريعة", "سجل كامل للمصاريف"]
             : ["Automatic expense splitting", "Multi-currency support", "Quick settlement", "Complete expense history"]
@@ -156,14 +151,14 @@ const UseCaseDetails = () => {
       <SEO
         title={isRTL ? useCase.title : useCase.titleEn}
         description={isRTL ? useCase.intro : useCase.introEn}
-        canonical={`https://diviso.app/use-cases/${useCase.slug}`}
+        canonical={`https://www.diviso.app/use-cases/${useCase.slug}`}
         keywords={(isRTL ? useCase.keywords : useCase.keywordsEn).join(', ')}
         lang={isRTL ? 'ar' : 'en'}
         ogType="article"
         breadcrumbs={[
-          { name: isRTL ? 'الرئيسية' : 'Home', url: 'https://diviso.app' },
-          { name: isRTL ? 'حالات الاستخدام' : 'Use Cases', url: 'https://diviso.app/use-cases' },
-          { name: isRTL ? useCase.title : useCase.titleEn, url: `https://diviso.app/use-cases/${useCase.slug}` }
+          { name: isRTL ? 'الرئيسية' : 'Home', url: 'https://www.diviso.app' },
+          { name: isRTL ? 'حالات الاستخدام' : 'Use Cases', url: 'https://www.diviso.app/use-cases' },
+          { name: isRTL ? useCase.title : useCase.titleEn, url: `https://www.diviso.app/use-cases/${useCase.slug}` }
         ]}
       />
       <Header />

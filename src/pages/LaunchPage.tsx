@@ -209,7 +209,7 @@ const LaunchPage: React.FC = () => {
           return CAMPAIGN_TITLES[scenarioKey].replace('Diviso | ', '');
         })()}
         description="قسّم مصاريف السفر، الطلعات، والسكن مع أصحابك بسهولة وبدون إحراج."
-        ogImage="https://diviso.app/og/launch-1200x630.png"
+        ogImage="https://www.diviso.app/og/launch-1200x630.png"
         noIndex={false}
       />
 

@@ -92,7 +92,7 @@ const Index = () => {
       <SEO 
         title={t('seo.title')}
         description={t('seo.description')}
-        canonical="https://diviso.app/"
+        canonical="https://www.diviso.app/"
       />
       <Header />
       <HeroSection />

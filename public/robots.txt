@@ -108,4 +108,4 @@ Disallow: /payment-*
 Disallow: /offerwall
 
 # Sitemap
-Sitemap: https://diviso.app/sitemap.xml
+Sitemap: https://www.diviso.app/sitemap.xml

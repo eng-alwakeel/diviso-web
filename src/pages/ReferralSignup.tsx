@@ -252,7 +252,7 @@ export default function ReferralSignup() {
       <SEO 
         title="انضم عبر الإحالة"
         description="انضم إلى Diviso عبر رابط الإحالة واحصل على 7 أيام مجانية من الباقة المميزة. سجّل الآن وابدأ في تقسيم المصاريف بذكاء."
-        canonical={`https://diviso.app/referral-signup/${referralCode}`}
+        canonical={`https://www.diviso.app/referral-signup/${referralCode}`}
         noIndex={true}
       />
       <Card className="w-full max-w-md">

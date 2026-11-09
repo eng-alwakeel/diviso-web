@@ -626,7 +626,7 @@ const Auth = () => {
         title={t('auth:title.login')}
         description={t('auth:slogan')}
         noIndex={true}
-        canonical="https://diviso.app/auth"
+        canonical="https://www.diviso.app/auth"
       />
       <AppHeader minimal />
       <div className="auth-container">

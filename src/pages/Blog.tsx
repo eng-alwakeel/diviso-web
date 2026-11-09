@@ -47,7 +47,7 @@ const Blog = () => {
     updateOGMeta('og:title', pageTitle);
     updateOGMeta('og:description', pageDescription);
     updateOGMeta('og:type', 'website');
-    updateOGMeta('og:url', 'https://diviso.app/blog');
+    updateOGMeta('og:url', 'https://www.diviso.app/blog');
 
     // Add structured data
     const existingScript = document.querySelector('script[data-blog-schema]');
@@ -61,18 +61,18 @@ const Blog = () => {
       "@type": "Blog",
       "name": "Diviso Blog",
       "description": pageDescription,
-      "url": "https://diviso.app/blog",
+      "url": "https://www.diviso.app/blog",
       "publisher": {
         "@type": "Organization",
         "name": "Diviso",
-        "url": "https://diviso.app"
+        "url": "https://www.diviso.app"
       },
       "blogPost": blogArticles.map(article => ({
         "@type": "BlogPosting",
         "headline": isRTL ? article.title : article.titleEn,
         "description": isRTL ? article.description : article.descriptionEn,
         "datePublished": article.publishDate,
-        "url": `https://diviso.app/blog/${article.slug}`
+        "url": `https://www.diviso.app/blog/${article.slug}`
       }))
     });
     document.head.appendChild(script);

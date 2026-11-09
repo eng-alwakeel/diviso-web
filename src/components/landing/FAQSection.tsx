@@ -14,10 +14,10 @@ const faqItems = [
     aEn: "Create a group, add your friends, and log expenses. The app automatically calculates who owes whom and sends settlement reminders.",
   },
   {
-    q: "هل تطبيق Diviso مجاني؟",
+    q: "كيف أبدأ بـ Diviso؟",
     qEn: "Is Diviso free?",
-    a: "نعم! Diviso مجاني بالكامل مع ميزات أساسية قوية. الخطة المدفوعة تضيف مزايا متقدمة مثل التقارير المفصلة ومجموعات غير محدودة.",
-    aEn: "Yes! Diviso is completely free with powerful basic features. The paid plan adds advanced features like detailed reports and unlimited groups.",
+    a: "حمّل التطبيق من App Store، وكل حساب جديد ياخذ نقاط بداية يجرّب فيها التطبيق كامل. بعض العمليات تستهلك نقاط، والاشتراك اختياري ويشيل الإعلانات ويضيف مزايا إضافية.",
+    aEn: "Diviso is free to download, and every new account gets starter credits to try it fully. Some actions use credits, and an optional subscription removes ads and adds extra features.",
   },
   {
     q: "هل يدعم Diviso الريال السعودي والعملات الأخرى؟",

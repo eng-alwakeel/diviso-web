@@ -4,10 +4,10 @@
   
   <!-- الصفحة الرئيسية -->
   <url>
-    <loc>https://www.diviso.app/</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/?lang=en" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.diviso.app/" />
+    <loc>https://diviso.app/</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diviso.app/" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -15,9 +15,9 @@
   
   <!-- صفحة الأسعار -->
   <url>
-    <loc>https://www.diviso.app/pricing</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/pricing" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/pricing?lang=en" />
+    <loc>https://diviso.app/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/pricing" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/pricing?lang=en" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -25,9 +25,9 @@
   
   <!-- صفحة كيف يعمل التطبيق -->
   <url>
-    <loc>https://www.diviso.app/how-it-works</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/how-it-works" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/how-it-works?lang=en" />
+    <loc>https://diviso.app/how-it-works</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/how-it-works" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/how-it-works?lang=en" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -35,9 +35,9 @@
 
   <!-- صفحة الأسئلة الشائعة -->
   <url>
-    <loc>https://www.diviso.app/faq</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/faq" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/faq?lang=en" />
+    <loc>https://diviso.app/faq</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/faq" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/faq?lang=en" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -45,25 +45,25 @@
 
   <!-- صفحات قانونية -->
   <url>
-    <loc>https://www.diviso.app/privacy-policy</loc>
+    <loc>https://diviso.app/privacy-policy</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/terms</loc>
+    <loc>https://diviso.app/terms</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/refund-policy</loc>
+    <loc>https://diviso.app/refund-policy</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/cookies</loc>
+    <loc>https://diviso.app/cookies</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
@@ -71,45 +71,45 @@
 
   <!-- صفحات حالات الاستخدام -->
   <url>
-    <loc>https://www.diviso.app/use-cases</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/use-cases" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/use-cases?lang=en" />
+    <loc>https://diviso.app/use-cases</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/use-cases" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/use-cases?lang=en" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/use-cases/travel</loc>
+    <loc>https://diviso.app/use-cases/travel</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/use-cases/shared-housing</loc>
+    <loc>https://diviso.app/use-cases/shared-housing</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/use-cases/friends-expenses</loc>
+    <loc>https://diviso.app/use-cases/friends-expenses</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/use-cases/events</loc>
+    <loc>https://diviso.app/use-cases/events</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/use-cases/group-trips</loc>
+    <loc>https://diviso.app/use-cases/group-trips</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/use-cases/awkward-money-situations</loc>
+    <loc>https://diviso.app/use-cases/awkward-money-situations</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -117,55 +117,55 @@
 
   <!-- صفحات Landing Pages للحملات -->
   <url>
-    <loc>https://www.diviso.app/lp/travel</loc>
+    <loc>https://diviso.app/lp/travel</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/lp/friends</loc>
+    <loc>https://diviso.app/lp/friends</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/lp/shared-housing</loc>
+    <loc>https://diviso.app/lp/shared-housing</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/lp/activities</loc>
+    <loc>https://diviso.app/lp/activities</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/lp/groups</loc>
+    <loc>https://diviso.app/lp/groups</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/lp/who-paid-more</loc>
+    <loc>https://diviso.app/lp/who-paid-more</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/lp/awkward-money</loc>
+    <loc>https://diviso.app/lp/awkward-money</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/lp/how-it-works-lp</loc>
+    <loc>https://diviso.app/lp/how-it-works-lp</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/lp/vs-notes-whatsapp</loc>
+    <loc>https://diviso.app/lp/vs-notes-whatsapp</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -173,19 +173,19 @@
 
   <!-- صفحات أخرى -->
   <url>
-    <loc>https://www.diviso.app/launch</loc>
+    <loc>https://diviso.app/launch</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/changelog</loc>
+    <loc>https://diviso.app/changelog</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/founding</loc>
+    <loc>https://diviso.app/founding</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -193,9 +193,9 @@
 
   <!-- المدونة -->
   <url>
-    <loc>https://www.diviso.app/blog</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/blog" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/blog?lang=en" />
+    <loc>https://diviso.app/blog</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/blog" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/blog?lang=en" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -203,49 +203,49 @@
 
   <!-- مقالات المدونة الموجودة -->
   <url>
-    <loc>https://www.diviso.app/blog/travel-expenses-guide</loc>
+    <loc>https://diviso.app/blog/travel-expenses-guide</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/blog/best-splitting-apps-saudi</loc>
+    <loc>https://diviso.app/blog/best-splitting-apps-saudi</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/blog/shared-housing-expenses</loc>
+    <loc>https://diviso.app/blog/shared-housing-expenses</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/blog/camping-budget-guide</loc>
+    <loc>https://diviso.app/blog/camping-budget-guide</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/blog/restaurant-bill-etiquette</loc>
+    <loc>https://diviso.app/blog/restaurant-bill-etiquette</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/blog/wedding-costs-splitting</loc>
+    <loc>https://diviso.app/blog/wedding-costs-splitting</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/blog/umrah-trip-budget</loc>
+    <loc>https://diviso.app/blog/umrah-trip-budget</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/blog/weekly-hangouts-expenses</loc>
+    <loc>https://diviso.app/blog/weekly-hangouts-expenses</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -253,41 +253,41 @@
 
   <!-- مقالات جديدة - كلمات بحث عالية -->
   <url>
-    <loc>https://www.diviso.app/blog/split-restaurant-bill</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/blog/split-restaurant-bill" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/blog/split-restaurant-bill?lang=en" />
+    <loc>https://diviso.app/blog/split-restaurant-bill</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/blog/split-restaurant-bill" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/blog/split-restaurant-bill?lang=en" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/blog/trip-expenses-app</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/blog/trip-expenses-app" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/blog/trip-expenses-app?lang=en" />
+    <loc>https://diviso.app/blog/trip-expenses-app</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/blog/trip-expenses-app" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/blog/trip-expenses-app?lang=en" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/blog/monthly-expense-calculator</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/blog/monthly-expense-calculator" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/blog/monthly-expense-calculator?lang=en" />
+    <loc>https://diviso.app/blog/monthly-expense-calculator</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/blog/monthly-expense-calculator" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/blog/monthly-expense-calculator?lang=en" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/blog/best-money-splitting-app-2026</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/blog/best-money-splitting-app-2026" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/blog/best-money-splitting-app-2026?lang=en" />
+    <loc>https://diviso.app/blog/best-money-splitting-app-2026</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/blog/best-money-splitting-app-2026" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/blog/best-money-splitting-app-2026?lang=en" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/blog/ramadan-group-expenses</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/blog/ramadan-group-expenses" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/blog/ramadan-group-expenses?lang=en" />
+    <loc>https://diviso.app/blog/ramadan-group-expenses</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/blog/ramadan-group-expenses" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/blog/ramadan-group-expenses?lang=en" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -295,44 +295,44 @@
 
   <!-- SEO Landing Pages — Root-level English -->
   <url>
-    <loc>https://www.diviso.app/split-expenses</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/split-expenses" />
+    <loc>https://diviso.app/split-expenses</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/split-expenses" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/split-bills</loc>
+    <loc>https://diviso.app/split-bills</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/travel-expense-splitter</loc>
+    <loc>https://diviso.app/travel-expense-splitter</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/roommate-expense-tracker</loc>
+    <loc>https://diviso.app/roommate-expense-tracker</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/group-expense-tracker</loc>
+    <loc>https://diviso.app/group-expense-tracker</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/split-dinner-bill</loc>
+    <loc>https://diviso.app/split-dinner-bill</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/splitwise-alternative</loc>
+    <loc>https://diviso.app/splitwise-alternative</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -340,36 +340,36 @@
 
   <!-- New English SEO Blog Articles -->
   <url>
-    <loc>https://www.diviso.app/blog/how-to-split-expenses-with-friends</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/blog/how-to-split-expenses-with-friends" />
+    <loc>https://diviso.app/blog/how-to-split-expenses-with-friends</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/blog/how-to-split-expenses-with-friends" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/blog/best-apps-to-split-bills</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/blog/best-apps-to-split-bills" />
+    <loc>https://diviso.app/blog/best-apps-to-split-bills</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/blog/best-apps-to-split-bills" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/blog/how-to-track-group-expenses</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/blog/how-to-track-group-expenses" />
+    <loc>https://diviso.app/blog/how-to-track-group-expenses</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/blog/how-to-track-group-expenses" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/blog/best-splitwise-alternatives</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/blog/best-splitwise-alternatives" />
+    <loc>https://diviso.app/blog/best-splitwise-alternatives</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/blog/best-splitwise-alternatives" />
     <lastmod>2026-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/blog/how-to-split-travel-expenses</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/blog/how-to-split-travel-expenses" />
+    <loc>https://diviso.app/blog/how-to-split-travel-expenses</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/blog/how-to-split-travel-expenses" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -379,18 +379,18 @@
 
   <!-- 1. Split Expenses with Friends -->
   <url>
-    <loc>https://www.diviso.app/en/split-expenses-with-friends</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/en/split-expenses-with-friends" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/ar/%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81-%D8%A8%D9%8A%D9%86-%D8%A7%D9%84%D8%A3%D8%B5%D8%AF%D9%82%D8%A7%D8%A1" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.diviso.app/en/split-expenses-with-friends" />
+    <loc>https://diviso.app/en/split-expenses-with-friends</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/en/split-expenses-with-friends" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/ar/%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81-%D8%A8%D9%8A%D9%86-%D8%A7%D9%84%D8%A3%D8%B5%D8%AF%D9%82%D8%A7%D8%A1" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diviso.app/en/split-expenses-with-friends" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/ar/%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81-%D8%A8%D9%8A%D9%86-%D8%A7%D9%84%D8%A3%D8%B5%D8%AF%D9%82%D8%A7%D8%A1</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/ar/%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81-%D8%A8%D9%8A%D9%86-%D8%A7%D9%84%D8%A3%D8%B5%D8%AF%D9%82%D8%A7%D8%A1" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/en/split-expenses-with-friends" />
+    <loc>https://diviso.app/ar/%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81-%D8%A8%D9%8A%D9%86-%D8%A7%D9%84%D8%A3%D8%B5%D8%AF%D9%82%D8%A7%D8%A1</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/ar/%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81-%D8%A8%D9%8A%D9%86-%D8%A7%D9%84%D8%A3%D8%B5%D8%AF%D9%82%D8%A7%D8%A1" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/en/split-expenses-with-friends" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -398,18 +398,18 @@
 
   <!-- 2. Group Travel Expense Tracker -->
   <url>
-    <loc>https://www.diviso.app/en/group-travel-expense-tracker</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/en/group-travel-expense-tracker" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/ar/%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%AA%D9%83%D8%A7%D9%84%D9%8A%D9%81-%D8%A7%D9%84%D8%B1%D8%AD%D9%84%D8%A7%D8%AA" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.diviso.app/en/group-travel-expense-tracker" />
+    <loc>https://diviso.app/en/group-travel-expense-tracker</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/en/group-travel-expense-tracker" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/ar/%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%AA%D9%83%D8%A7%D9%84%D9%8A%D9%81-%D8%A7%D9%84%D8%B1%D8%AD%D9%84%D8%A7%D8%AA" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diviso.app/en/group-travel-expense-tracker" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/ar/%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%AA%D9%83%D8%A7%D9%84%D9%8A%D9%81-%D8%A7%D9%84%D8%B1%D8%AD%D9%84%D8%A7%D8%AA</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/ar/%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%AA%D9%83%D8%A7%D9%84%D9%8A%D9%81-%D8%A7%D9%84%D8%B1%D8%AD%D9%84%D8%A7%D8%AA" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/en/group-travel-expense-tracker" />
+    <loc>https://diviso.app/ar/%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%AA%D9%83%D8%A7%D9%84%D9%8A%D9%81-%D8%A7%D9%84%D8%B1%D8%AD%D9%84%D8%A7%D8%AA</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/ar/%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%AA%D9%83%D8%A7%D9%84%D9%8A%D9%81-%D8%A7%D9%84%D8%B1%D8%AD%D9%84%D8%A7%D8%AA" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/en/group-travel-expense-tracker" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -417,18 +417,18 @@
 
   <!-- 3. Split Bills Roommates -->
   <url>
-    <loc>https://www.diviso.app/en/split-bills-roommates</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/en/split-bills-roommates" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/ar/%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D9%81%D9%88%D8%A7%D8%AA%D9%8A%D8%B1-%D8%A8%D9%8A%D9%86-%D8%A7%D9%84%D8%B3%D9%83%D9%86" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.diviso.app/en/split-bills-roommates" />
+    <loc>https://diviso.app/en/split-bills-roommates</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/en/split-bills-roommates" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/ar/%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D9%81%D9%88%D8%A7%D8%AA%D9%8A%D8%B1-%D8%A8%D9%8A%D9%86-%D8%A7%D9%84%D8%B3%D9%83%D9%86" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diviso.app/en/split-bills-roommates" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/ar/%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D9%81%D9%88%D8%A7%D8%AA%D9%8A%D8%B1-%D8%A8%D9%8A%D9%86-%D8%A7%D9%84%D8%B3%D9%83%D9%86</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/ar/%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D9%81%D9%88%D8%A7%D8%AA%D9%8A%D8%B1-%D8%A8%D9%8A%D9%86-%D8%A7%D9%84%D8%B3%D9%83%D9%86" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/en/split-bills-roommates" />
+    <loc>https://diviso.app/ar/%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D9%81%D9%88%D8%A7%D8%AA%D9%8A%D8%B1-%D8%A8%D9%8A%D9%86-%D8%A7%D9%84%D8%B3%D9%83%D9%86</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/ar/%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%A7%D9%84%D9%81%D9%88%D8%A7%D8%AA%D9%8A%D8%B1-%D8%A8%D9%8A%D9%86-%D8%A7%D9%84%D8%B3%D9%83%D9%86" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/en/split-bills-roommates" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -436,18 +436,18 @@
 
   <!-- 4. Shared Expense Tracker -->
   <url>
-    <loc>https://www.diviso.app/en/shared-expense-tracker</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/en/shared-expense-tracker" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/ar/%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81-%D8%A7%D9%84%D9%85%D8%B4%D8%AA%D8%B1%D9%83%D8%A9" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.diviso.app/en/shared-expense-tracker" />
+    <loc>https://diviso.app/en/shared-expense-tracker</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/en/shared-expense-tracker" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/ar/%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81-%D8%A7%D9%84%D9%85%D8%B4%D8%AA%D8%B1%D9%83%D8%A9" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diviso.app/en/shared-expense-tracker" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/ar/%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81-%D8%A7%D9%84%D9%85%D8%B4%D8%AA%D8%B1%D9%83%D8%A9</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/ar/%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81-%D8%A7%D9%84%D9%85%D8%B4%D8%AA%D8%B1%D9%83%D8%A9" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/en/shared-expense-tracker" />
+    <loc>https://diviso.app/ar/%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81-%D8%A7%D9%84%D9%85%D8%B4%D8%AA%D8%B1%D9%83%D8%A9</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/ar/%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81-%D8%A7%D9%84%D9%85%D8%B4%D8%AA%D8%B1%D9%83%D8%A9" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/en/shared-expense-tracker" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -455,18 +455,18 @@
 
   <!-- 5. Group Budget Planner -->
   <url>
-    <loc>https://www.diviso.app/en/group-budget-planner</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/en/group-budget-planner" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/ar/%D8%A5%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%8A%D8%B2%D8%A7%D9%86%D9%8A%D8%A9-%D9%84%D9%84%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.diviso.app/en/group-budget-planner" />
+    <loc>https://diviso.app/en/group-budget-planner</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/en/group-budget-planner" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/ar/%D8%A5%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%8A%D8%B2%D8%A7%D9%86%D9%8A%D8%A9-%D9%84%D9%84%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diviso.app/en/group-budget-planner" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/ar/%D8%A5%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%8A%D8%B2%D8%A7%D9%86%D9%8A%D8%A9-%D9%84%D9%84%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/ar/%D8%A5%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%8A%D8%B2%D8%A7%D9%86%D9%8A%D8%A9-%D9%84%D9%84%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/en/group-budget-planner" />
+    <loc>https://diviso.app/ar/%D8%A5%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%8A%D8%B2%D8%A7%D9%86%D9%8A%D8%A9-%D9%84%D9%84%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/ar/%D8%A5%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%8A%D8%B2%D8%A7%D9%86%D9%8A%D8%A9-%D9%84%D9%84%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/en/group-budget-planner" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -474,18 +474,18 @@
 
   <!-- 6. How to Split Bills -->
   <url>
-    <loc>https://www.diviso.app/en/how-to-split-bills</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/en/how-to-split-bills" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/ar/%D9%83%D9%8A%D9%81-%D8%AA%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.diviso.app/en/how-to-split-bills" />
+    <loc>https://diviso.app/en/how-to-split-bills</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/en/how-to-split-bills" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/ar/%D9%83%D9%8A%D9%81-%D8%AA%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diviso.app/en/how-to-split-bills" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/ar/%D9%83%D9%8A%D9%81-%D8%AA%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/ar/%D9%83%D9%8A%D9%81-%D8%AA%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/en/how-to-split-bills" />
+    <loc>https://diviso.app/ar/%D9%83%D9%8A%D9%81-%D8%AA%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/ar/%D9%83%D9%8A%D9%81-%D8%AA%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/en/how-to-split-bills" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -493,18 +493,18 @@
 
   <!-- 7. How to Manage Group Expenses -->
   <url>
-    <loc>https://www.diviso.app/en/how-to-manage-group-expenses</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/en/how-to-manage-group-expenses" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/ar/%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81-%D8%A7%D9%84%D8%AC%D9%85%D8%A7%D8%B9%D9%8A%D8%A9" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.diviso.app/en/how-to-manage-group-expenses" />
+    <loc>https://diviso.app/en/how-to-manage-group-expenses</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/en/how-to-manage-group-expenses" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/ar/%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81-%D8%A7%D9%84%D8%AC%D9%85%D8%A7%D8%B9%D9%8A%D8%A9" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diviso.app/en/how-to-manage-group-expenses" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/ar/%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81-%D8%A7%D9%84%D8%AC%D9%85%D8%A7%D8%B9%D9%8A%D8%A9</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/ar/%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81-%D8%A7%D9%84%D8%AC%D9%85%D8%A7%D8%B9%D9%8A%D8%A9" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/en/how-to-manage-group-expenses" />
+    <loc>https://diviso.app/ar/%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81-%D8%A7%D9%84%D8%AC%D9%85%D8%A7%D8%B9%D9%8A%D8%A9</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/ar/%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81-%D8%A7%D9%84%D8%AC%D9%85%D8%A7%D8%B9%D9%8A%D8%A9" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/en/how-to-manage-group-expenses" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -512,18 +512,18 @@
 
   <!-- 8. Settle Expenses Easily -->
   <url>
-    <loc>https://www.diviso.app/en/settle-expenses-easily</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/en/settle-expenses-easily" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/ar/%D8%AA%D8%B3%D9%88%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81-%D8%A8%D8%B3%D9%87%D9%88%D9%84%D8%A9" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.diviso.app/en/settle-expenses-easily" />
+    <loc>https://diviso.app/en/settle-expenses-easily</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/en/settle-expenses-easily" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/ar/%D8%AA%D8%B3%D9%88%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81-%D8%A8%D8%B3%D9%87%D9%88%D9%84%D8%A9" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diviso.app/en/settle-expenses-easily" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/ar/%D8%AA%D8%B3%D9%88%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81-%D8%A8%D8%B3%D9%87%D9%88%D9%84%D8%A9</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/ar/%D8%AA%D8%B3%D9%88%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81-%D8%A8%D8%B3%D9%87%D9%88%D9%84%D8%A9" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/en/settle-expenses-easily" />
+    <loc>https://diviso.app/ar/%D8%AA%D8%B3%D9%88%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81-%D8%A8%D8%B3%D9%87%D9%88%D9%84%D8%A9</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/ar/%D8%AA%D8%B3%D9%88%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%A7%D8%B1%D9%8A%D9%81-%D8%A8%D8%B3%D9%87%D9%88%D9%84%D8%A9" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/en/settle-expenses-easily" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -531,8 +531,8 @@
 
   <!-- 9. Splitwise Alternative (EN only) -->
   <url>
-    <loc>https://www.diviso.app/en/splitwise-alternative</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/en/splitwise-alternative" />
+    <loc>https://diviso.app/en/splitwise-alternative</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/en/splitwise-alternative" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -540,8 +540,8 @@
 
   <!-- 10. Best Expense Sharing App (EN only) -->
   <url>
-    <loc>https://www.diviso.app/en/best-expense-sharing-app</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/en/best-expense-sharing-app" />
+    <loc>https://diviso.app/en/best-expense-sharing-app</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/en/best-expense-sharing-app" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -549,18 +549,18 @@
 
   <!-- 11. Avoid Financial Conflicts -->
   <url>
-    <loc>https://www.diviso.app/en/avoid-financial-conflicts-friends</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/en/avoid-financial-conflicts-friends" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/ar/%D8%AA%D8%AC%D9%86%D8%A8-%D8%A7%D9%84%D8%AE%D9%84%D8%A7%D9%81%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%D8%A9-%D8%A8%D9%8A%D9%86-%D8%A7%D9%84%D8%A3%D8%B5%D8%AF%D9%82%D8%A7%D8%A1" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.diviso.app/en/avoid-financial-conflicts-friends" />
+    <loc>https://diviso.app/en/avoid-financial-conflicts-friends</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/en/avoid-financial-conflicts-friends" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/ar/%D8%AA%D8%AC%D9%86%D8%A8-%D8%A7%D9%84%D8%AE%D9%84%D8%A7%D9%81%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%D8%A9-%D8%A8%D9%8A%D9%86-%D8%A7%D9%84%D8%A3%D8%B5%D8%AF%D9%82%D8%A7%D8%A1" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diviso.app/en/avoid-financial-conflicts-friends" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/ar/%D8%AA%D8%AC%D9%86%D8%A8-%D8%A7%D9%84%D8%AE%D9%84%D8%A7%D9%81%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%D8%A9-%D8%A8%D9%8A%D9%86-%D8%A7%D9%84%D8%A3%D8%B5%D8%AF%D9%82%D8%A7%D8%A1</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/ar/%D8%AA%D8%AC%D9%86%D8%A8-%D8%A7%D9%84%D8%AE%D9%84%D8%A7%D9%81%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%D8%A9-%D8%A8%D9%8A%D9%86-%D8%A7%D9%84%D8%A3%D8%B5%D8%AF%D9%82%D8%A7%D8%A1" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/en/avoid-financial-conflicts-friends" />
+    <loc>https://diviso.app/ar/%D8%AA%D8%AC%D9%86%D8%A8-%D8%A7%D9%84%D8%AE%D9%84%D8%A7%D9%81%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%D8%A9-%D8%A8%D9%8A%D9%86-%D8%A7%D9%84%D8%A3%D8%B5%D8%AF%D9%82%D8%A7%D8%A1</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/ar/%D8%AA%D8%AC%D9%86%D8%A8-%D8%A7%D9%84%D8%AE%D9%84%D8%A7%D9%81%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%D8%A9-%D8%A8%D9%8A%D9%86-%D8%A7%D9%84%D8%A3%D8%B5%D8%AF%D9%82%D8%A7%D8%A1" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/en/avoid-financial-conflicts-friends" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -568,417 +568,431 @@
 
   <!-- 12. Split Trip Costs Best Way -->
   <url>
-    <loc>https://www.diviso.app/en/split-trip-costs-best-way</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/en/split-trip-costs-best-way" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/ar/%D8%A3%D9%81%D8%B6%D9%84-%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D9%84%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%AA%D9%83%D8%A7%D9%84%D9%8A%D9%81-%D8%A7%D9%84%D8%B1%D8%AD%D9%84%D8%A9" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.diviso.app/en/split-trip-costs-best-way" />
+    <loc>https://diviso.app/en/split-trip-costs-best-way</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/en/split-trip-costs-best-way" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/ar/%D8%A3%D9%81%D8%B6%D9%84-%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D9%84%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%AA%D9%83%D8%A7%D9%84%D9%8A%D9%81-%D8%A7%D9%84%D8%B1%D8%AD%D9%84%D8%A9" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://diviso.app/en/split-trip-costs-best-way" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.diviso.app/ar/%D8%A3%D9%81%D8%B6%D9%84-%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D9%84%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%AA%D9%83%D8%A7%D9%84%D9%8A%D9%81-%D8%A7%D9%84%D8%B1%D8%AD%D9%84%D8%A9</loc>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.diviso.app/ar/%D8%A3%D9%81%D8%B6%D9%84-%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D9%84%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%AA%D9%83%D8%A7%D9%84%D9%8A%D9%81-%D8%A7%D9%84%D8%B1%D8%AD%D9%84%D8%A9" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.diviso.app/en/split-trip-costs-best-way" />
+    <loc>https://diviso.app/ar/%D8%A3%D9%81%D8%B6%D9%84-%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D9%84%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%AA%D9%83%D8%A7%D9%84%D9%8A%D9%81-%D8%A7%D9%84%D8%B1%D8%AD%D9%84%D8%A9</loc>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://diviso.app/ar/%D8%A3%D9%81%D8%B6%D9%84-%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D9%84%D8%AA%D9%82%D8%B3%D9%8A%D9%85-%D8%AA%D9%83%D8%A7%D9%84%D9%8A%D9%81-%D8%A7%D9%84%D8%B1%D8%AD%D9%84%D8%A9" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://diviso.app/en/split-trip-costs-best-way" />
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/download</loc>
+    <loc>https://diviso.app/download</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-streaming-subscription-costs</loc>
+    <loc>https://diviso.app/blog/split-streaming-subscription-costs</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-padel-court-booking-costs</loc>
+    <loc>https://diviso.app/blog/split-padel-court-booking-costs</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-chalet-istirahah-rental-costs</loc>
+    <loc>https://diviso.app/blog/split-chalet-istirahah-rental-costs</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-carpool-gas-costs</loc>
+    <loc>https://diviso.app/blog/split-carpool-gas-costs</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/collect-money-for-group-gift</loc>
+    <loc>https://diviso.app/blog/collect-money-for-group-gift</loc>
     <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/minimum-transactions-to-settle-group-debts</loc>
+    <loc>https://diviso.app/blog/minimum-transactions-to-settle-group-debts</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-uber-careem-fare-multiple-stops</loc>
+    <loc>https://diviso.app/blog/split-uber-careem-fare-multiple-stops</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/prorated-rent-roommate-moves-out-mid-month</loc>
+    <loc>https://diviso.app/blog/prorated-rent-roommate-moves-out-mid-month</loc>
     <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-bachelor-bachelorette-party-costs</loc>
+    <loc>https://diviso.app/blog/split-bachelor-bachelorette-party-costs</loc>
     <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-airbnb-cost-by-room-type</loc>
+    <loc>https://diviso.app/blog/split-airbnb-cost-by-room-type</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-electricity-water-bills-by-usage</loc>
+    <loc>https://diviso.app/blog/split-electricity-water-bills-by-usage</loc>
     <lastmod>2026-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-eid-al-adha-sacrifice-cost-family</loc>
+    <loc>https://diviso.app/blog/split-eid-al-adha-sacrifice-cost-family</loc>
     <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-food-delivery-order-cost-friends</loc>
+    <loc>https://diviso.app/blog/split-food-delivery-order-cost-friends</loc>
     <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-home-dinner-party-potluck-costs</loc>
+    <loc>https://diviso.app/blog/split-home-dinner-party-potluck-costs</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-moving-costs-with-roommates</loc>
+    <loc>https://diviso.app/blog/split-moving-costs-with-roommates</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-grocery-costco-run-roommates</loc>
+    <loc>https://diviso.app/blog/split-grocery-costco-run-roommates</loc>
     <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-road-trip-rental-car-costs</loc>
+    <loc>https://diviso.app/blog/split-road-trip-rental-car-costs</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/organize-office-coffee-snack-fund</loc>
+    <loc>https://diviso.app/blog/organize-office-coffee-snack-fund</loc>
     <lastmod>2026-09-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-child-expenses-co-parents</loc>
+    <loc>https://diviso.app/blog/split-child-expenses-co-parents</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-shared-pet-ownership-expenses</loc>
+    <loc>https://diviso.app/blog/split-shared-pet-ownership-expenses</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/organize-fantasy-league-money-pool</loc>
+    <loc>https://diviso.app/blog/organize-fantasy-league-money-pool</loc>
     <lastmod>2026-09-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-cost-watching-match-private-room</loc>
+    <loc>https://diviso.app/blog/split-cost-watching-match-private-room</loc>
     <lastmod>2026-09-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-group-photoshoot-cost-by-family</loc>
+    <loc>https://diviso.app/blog/split-group-photoshoot-cost-by-family</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-concert-tickets-cost-group-purchase</loc>
+    <loc>https://diviso.app/blog/split-concert-tickets-cost-group-purchase</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-shared-car-ownership-expenses</loc>
+    <loc>https://diviso.app/blog/split-shared-car-ownership-expenses</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-parents-monthly-expenses-siblings</loc>
+    <loc>https://diviso.app/blog/split-parents-monthly-expenses-siblings</loc>
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-shared-furniture-cost-roommate-moving-out</loc>
+    <loc>https://diviso.app/blog/split-shared-furniture-cost-roommate-moving-out</loc>
     <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/joint-household-budget-pot-for-couples</loc>
+    <loc>https://diviso.app/blog/joint-household-budget-pot-for-couples</loc>
     <lastmod>2026-09-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-coworking-space-rent-freelancers</loc>
+    <loc>https://diviso.app/blog/split-coworking-space-rent-freelancers</loc>
     <lastmod>2026-09-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-nanny-share-cost-between-families</loc>
+    <loc>https://diviso.app/blog/split-nanny-share-cost-between-families</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-security-deposit-refund-roommates</loc>
+    <loc>https://diviso.app/blog/split-security-deposit-refund-roommates</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-group-umrah-hajj-package-cost-by-room-occupancy</loc>
+    <loc>https://diviso.app/blog/split-group-umrah-hajj-package-cost-by-room-occupancy</loc>
     <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-inherited-property-expenses-heirs</loc>
+    <loc>https://diviso.app/blog/split-inherited-property-expenses-heirs</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-neighborhood-security-guard-cost</loc>
+    <loc>https://diviso.app/blog/split-neighborhood-security-guard-cost</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-family-eidiya-pool-nieces-nephews</loc>
+    <loc>https://diviso.app/blog/split-family-eidiya-pool-nieces-nephews</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-school-van-driver-cost-between-families</loc>
+    <loc>https://diviso.app/blog/split-school-van-driver-cost-between-families</loc>
     <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/pet-sitting-co-op-cost-reimbursement-friends</loc>
+    <loc>https://diviso.app/blog/pet-sitting-co-op-cost-reimbursement-friends</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-season-ticket-cost-by-games-attended</loc>
+    <loc>https://diviso.app/blog/split-season-ticket-cost-by-games-attended</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/honeymoon-fund-menu-split-wedding-gift</loc>
+    <loc>https://diviso.app/blog/honeymoon-fund-menu-split-wedding-gift</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-bnpl-installment-purchase-cost-friends</loc>
+    <loc>https://diviso.app/blog/split-bnpl-installment-purchase-cost-friends</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-bulk-buying-coop-tiered-pricing-neighbors</loc>
+    <loc>https://diviso.app/blog/split-bulk-buying-coop-tiered-pricing-neighbors</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/ramadan-iftar-hosting-rotation-cost-equalization</loc>
+    <loc>https://diviso.app/blog/ramadan-iftar-hosting-rotation-cost-equalization</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-annual-diwaniya-majlis-rental-new-member</loc>
+    <loc>https://diviso.app/blog/split-annual-diwaniya-majlis-rental-new-member</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-family-mobile-plan-bill-data-overage</loc>
+    <loc>https://diviso.app/blog/split-family-mobile-plan-bill-data-overage</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-apartment-building-maintenance-fees-by-unit-size</loc>
+    <loc>https://diviso.app/blog/split-apartment-building-maintenance-fees-by-unit-size</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-group-package-ticket-cost-adults-children</loc>
+    <loc>https://diviso.app/blog/split-group-package-ticket-cost-adults-children</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-trip-costs-friends-different-currencies-exchange-rate</loc>
+    <loc>https://diviso.app/blog/split-trip-costs-friends-different-currencies-exchange-rate</loc>
     <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/track-wedding-cash-gifts-nuqoot-reciprocate-later</loc>
+    <loc>https://diviso.app/blog/track-wedding-cash-gifts-nuqoot-reciprocate-later</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-henna-night-costs-bride-groom-families-guest-count</loc>
+    <loc>https://diviso.app/blog/split-henna-night-costs-bride-groom-families-guest-count</loc>
     <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/rotating-savings-circle-jameya-member-leaves-early</loc>
+    <loc>https://diviso.app/blog/rotating-savings-circle-jameya-member-leaves-early</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-child-extracurricular-activity-cost-coparents-consent</loc>
+    <loc>https://diviso.app/blog/split-child-extracurricular-activity-cost-coparents-consent</loc>
     <lastmod>2026-10-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-refund-when-group-booking-cancelled-partial-refund</loc>
+    <loc>https://diviso.app/blog/split-refund-when-group-booking-cancelled-partial-refund</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/split-shared-furniture-cost-new-roommate-buy-in</loc>
+    <loc>https://diviso.app/blog/split-shared-furniture-cost-new-roommate-buy-in</loc>
     <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/how-to-split-expenses-with-friends-guide</loc>
+    <loc>https://diviso.app/blog/how-to-split-expenses-with-friends-guide</loc>
     <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/how-to-split-rent-with-flatmates-uk</loc>
-    <lastmod>2026-10-27</lastmod>
+    <loc>https://diviso.app/blog/how-to-split-rent-with-flatmates-uk</loc>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.diviso.app/blog/bill-splitting-apps-arabic-compared</loc>
+    <loc>https://diviso.app/blog/bill-splitting-apps-arabic-compared</loc>
     <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://diviso.app/blog/splitwise-vs-tricount-vs-diviso</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://diviso.app/blog/tricount-alternative-arabic</loc>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

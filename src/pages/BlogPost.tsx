@@ -136,7 +136,7 @@ const BlogPost = () => {
               onClick={() => trackAppStoreClick(`blog_${article.slug}`)}
               className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
             >
-              {isRTL ? "ابدأ مجاناً" : "Start for Free"}
+              {isRTL ? "ابدأ الآن" : "Start now"}
             </a>
           </div>
 

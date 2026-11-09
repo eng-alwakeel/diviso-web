@@ -16,6 +16,282 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "tricount-alternative-arabic",
+    title: "تبحث عن بديل لـ Tricount يدعم العربية والريال؟ إليك ما يجب التحقق منه",
+    titleEn: "Looking for a Tricount Alternative That Supports Arabic and the Riyal? Here's What to Check",
+    description: "Tricount مصمم أساساً حول مناسبة واحدة محددة (رحلة، مناسبة) تُسوّى بالكامل عند انتهائها، لكنه لا يوفر واجهة عربية أصلية ولا يتعامل مع الريال كعملة أساسية. دليل عملي لاختيار بديل يحافظ على نفس آلية العمل مع واجهة عربية RTL وريال مباشر.",
+    descriptionEn: "Tricount is built around a single, defined event (a trip, an occasion) that gets fully settled once it ends, but it doesn't offer a native Arabic interface or handle the riyal as a primary currency. A practical guide to choosing an alternative that keeps the same workflow with a native Arabic RTL interface and the riyal directly.",
+    keywords: ["بديل tricount يدعم العربية", "بديل tricount بالريال", "تطبيق عربي بديل tricount", "tricount alternative arabic", "تطبيق تقسيم مصاريف الرحلة بالعربي", "بديل لتطبيق تريكاونت"],
+    keywordsEn: ["tricount alternative arabic", "tricount alternative saudi riyal", "arabic app like tricount", "tricount alternative for trips arabic", "app similar to tricount arabic interface"],
+    category: "comparisons",
+    readTime: 8,
+    publishDate: "2026-11-08",
+    content: `
+## الإجابة المختصرة
+
+Tricount تطبيق مصمم أساساً حول **مناسبة واحدة محددة بتاريخ بداية ونهاية** (رحلة، مناسبة قصيرة): يُضاف فيه المشاركون، تُسجَّل المصاريف خلال فترة المناسبة، ثم تُحسب تسوية نهائية عند إغلاقها. لكنه لا يوفر واجهة عربية أصلية بتصميم RTL، ولا يتعامل مع الريال السعودي كعملة أساسية مباشرة — فقط كخيار ضمن قائمة عملات متعددة. من يبحث عن بديل يحافظ على نفس آلية "المناسبة الواحدة" مع واجهة عربية والريال مباشرة، عليه التحقق من 3 نقاط محددة قبل الانتقال.
+
+## لماذا يبحث مستخدمو Tricount عن بديل عربي؟
+
+من يخطط لرحلة مع مجموعة ناطقة بالعربية يواجه عادة مشكلتين عمليتين في Tricount: الأولى أن الواجهة إنجليزية أو بلغات أوروبية فقط، فيضطر بعض أعضاء المجموعة لاستخدام تطبيق بلغة غير مريحة لهم. الثانية أن تسجيل المصاريف بالريال يتطلب إضافته كعملة ضمن إعدادات متعددة، بدلاً من أن يكون العملة الافتراضية المتوقعة منذ البداية.
+
+## المعايير الثلاثة لاختيار بديل عربي لـ Tricount
+
+### المعيار الأول: الحفاظ على نفس آلية "المناسبة الواحدة"
+البديل الجيد يجب أن يسمح بإنشاء مجموعة لمناسبة محددة، تسجيل المصاريف خلالها بسهولة، ثم تسوية نهائية واضحة عند انتهائها — دون أن يفرض عليكم نمط "المجموعة الدائمة" إن لم تكونوا بحاجة له.
+
+### المعيار الثاني: واجهة عربية أصلية بتصميم RTL كامل
+ليس كافياً أن تظهر بعض الكلمات بالعربية؛ الفرق الحقيقي أن تُبنى كل عناصر الواجهة (القوائم، ترتيب الحقول، الأزرار) من الأساس لتناسب اتجاه القراءة من اليمين لليسار.
+
+### المعيار الثالث: الريال كعملة أساسية مباشرة
+تسجيل المصروف بالريال يجب أن يكون الخيار الافتراضي المباشر، لا خطوة إضافية ضمن قائمة عملات طويلة مصممة حول عملة أخرى.
+
+## كيف يغطي Diviso هذه الاحتياجات الثلاثة؟
+
+- ✅ يدعم إنشاء مجموعة لمناسبة واحدة محددة (رحلة، مناسبة) مع تسوية واضحة عند انتهائها، تماماً مثل آلية Tricount
+- ✅ واجهة عربية أصلية مصممة بـ RTL كامل من الأساس، إلى جانب إمكانية الاستخدام بالإنجليزية
+- ✅ الريال السعودي كعملة أساسية مباشرة، مع دعم عملات أخرى لمن يحتاجها في رحلات دولية
+
+## خطوات عملية للانتقال من Tricount إلى بديل عربي
+
+### الخطوة 1: ابدأوا مجموعة جديدة للمناسبة القادمة
+بدلاً من محاولة نقل سجل تاريخي من Tricount، ابدأوا بمجموعة جديدة في البديل العربي من أول مناسبة قادمة، لتجربة الواجهة والعملة مباشرة في استخدام حقيقي.
+
+### الخطوة 2: أضيفوا المشاركين وتحققوا من ظهور الواجهة بالعربية لكل عضو
+تأكدوا أن كل فرد في المجموعة يرى الواجهة باللغة التي تناسبه (عربية أو إنجليزية) دون إعداد معقد.
+
+### الخطوة 3: سجّلوا أول مصروف بالريال وتحققوا من مدى مباشرة الخطوة
+إن احتجتم تحويل عملة إضافية لرحلة خارج السعودية، تحققوا من سهولة إضافتها دون التأثير على العملة الأساسية.
+
+### الخطوة 4: عند انتهاء المناسبة، راجعوا التسوية النهائية
+تحققوا أن التسوية تعرض بوضوح من يدين لمن، بأقل عدد ممكن من التحويلات.
+
+## أخطاء شائعة عند البحث عن بديل لـ Tricount
+
+- **افتراض أن أي تطبيق يدعم "لغة عربية" في الإعدادات يعني واجهة عربية أصلية كاملة**
+- **توقع نقل تلقائي للسجل التاريخي من Tricount دون التحقق من ذلك فعلياً أولاً**
+- **اختيار بديل مصمم أساساً حول "مجموعة دائمة" بينما حاجتكم الفعلية مناسبة واحدة محددة**
+
+## أسئلة شائعة
+
+### هل يوجد بديل عربي يطابق Tricount تماماً في آلية العمل؟
+التشابه الأقرب هو في دعم إنشاء مجموعة لمناسبة واحدة محددة مع تسوية نهائية عند انتهائها؛ أما تفاصيل الواجهة والميزات فتختلف من تطبيق لآخر، لذا يُفضَّل تجربة الاستخدام الفعلي قبل الاعتماد الكامل.
+
+### هل يمكن نقل بيانات رحلة سابقة من Tricount مباشرة؟
+الأضمن هو بدء مجموعة جديدة للمناسبة القادمة بدلاً من افتراض وجود نقل تلقائي للبيانات القديمة، للتأكد من دقة الأرقام منذ البداية.
+
+### هل يدعم البديل العربي عدة عملات لرحلة خارج السعودية؟
+نعم، يمكن اعتماد الريال كعملة أساسية مباشرة مع إمكانية إضافة عملات أخرى عند الحاجة لرحلات دولية.
+
+## الخلاصة
+
+من يبحث عن بديل لـ Tricount يحافظ على نفس آلية "مناسبة واحدة، تسوية نهائية" مع واجهة عربية أصلية وريال مباشر، يجب أن يتحقق من هذه المعايير الثلاثة تحديداً قبل الانتقال، لا الاعتماد على الشهرة وحدها.
+
+**جرب Diviso الآن وقسّم مصاريف رحلتك أو مناسبتك القادمة بواجهة عربية أصلية وريال سعودي مباشر.**
+    `,
+    contentEn: `
+## Quick Answer
+
+Tricount is an app built primarily around **a single, defined event with a start and end date** (a trip, a short occasion): participants are added, expenses are logged during the event, then a final settlement is calculated once it's closed. But it doesn't offer a native Arabic RTL interface, and it doesn't handle the Saudi Riyal as a primary currency directly — only as one option within a multi-currency list. Anyone looking for an alternative that keeps the same "single event" workflow with a native Arabic interface and the riyal directly should check 3 specific points before switching.
+
+## Why Do Tricount Users Look for an Arabic Alternative?
+
+Anyone planning a trip with an Arabic-speaking group typically runs into two practical issues with Tricount: first, the interface is English or limited to a few European languages, forcing some group members to use an app in a language that isn't comfortable for them. Second, logging expenses in riyal requires adding it as a currency within multi-currency settings, rather than it being the expected default currency from the start.
+
+## The Three Criteria for Choosing an Arabic Alternative to Tricount
+
+### Criterion 1: Keeping the Same "Single Event" Workflow
+A good alternative should let you create a group for a specific event, log expenses easily during it, then get a clear final settlement once it ends — without forcing an "ongoing group" pattern on you if that's not what you need.
+
+### Criterion 2: A Native Arabic Interface With Full RTL Design
+It isn't enough for some words to appear in Arabic; the real difference is whether every interface element (menus, field order, buttons) is built from the ground up to fit a right-to-left reading direction.
+
+### Criterion 3: The Riyal as a Direct Primary Currency
+Logging an expense in riyal should be the direct default option, not an extra step within a long currency list built around a different currency.
+
+## How Diviso Covers These Three Needs
+
+- ✅ Supports creating a group for a single, defined event (a trip, an occasion) with a clear settlement once it ends, much like Tricount's workflow
+- ✅ A native Arabic interface built with full RTL from the ground up, alongside the option to use it in English
+- ✅ The Saudi Riyal as a direct primary currency, with support for other currencies for international trips when needed
+
+## A Practical Path for Switching From Tricount to an Arabic Alternative
+
+### Step 1: Start a New Group for Your Next Event
+Rather than trying to migrate a historical record from Tricount, start a fresh group in the Arabic alternative for your next upcoming event, to test the interface and currency directly in real use.
+
+### Step 2: Add Participants and Check That the Interface Displays in Arabic for Each Member
+Make sure every person in the group sees the interface in the language that suits them (Arabic or English) without complicated setup.
+
+### Step 3: Log Your First Expense in Riyal and Check How Direct the Step Is
+If you need an additional currency for a trip outside Saudi Arabia, check how easily it can be added without affecting the primary currency.
+
+### Step 4: Review the Final Settlement When the Event Ends
+Check that the settlement clearly shows who owes whom, with as few transfers as possible.
+
+## Common Mistakes When Looking for a Tricount Alternative
+
+- **Assuming any app that lists "Arabic" as a language option means a fully native Arabic interface**
+- **Expecting an automatic transfer of your historical record from Tricount without actually checking that first**
+- **Choosing an alternative built primarily around an "ongoing group" when your actual need is a single, defined event**
+
+## Frequently Asked Questions
+
+### Is there an Arabic alternative that matches Tricount's workflow exactly?
+The closest similarity is in supporting a group for a single, defined event with a final settlement once it ends; interface details and features vary between apps, so it's best to try actual usage before fully committing.
+
+### Can a previous trip's data be transferred directly from Tricount?
+The safer approach is to start a new group for your next event rather than assuming an automatic transfer of old data exists, to make sure the numbers are accurate from the start.
+
+### Does the Arabic alternative support multiple currencies for a trip outside Saudi Arabia?
+Yes, the riyal can be set as the direct primary currency while still allowing other currencies to be added when needed for international trips.
+
+## Conclusion
+
+Anyone looking for a Tricount alternative that keeps the same "single event, final settlement" workflow with a native Arabic interface and the riyal directly should check these three specific criteria before switching, rather than relying on popularity alone.
+
+**Try Diviso now and split your next trip or event's expenses with a native Arabic interface and direct Saudi Riyal support.**
+    `
+  },
+  {
+    slug: "splitwise-vs-tricount-vs-diviso",
+    title: "Splitwise أم Tricount أم Diviso؟ مقارنة محايدة حسب طبيعة استخدامك",
+    titleEn: "Splitwise vs Tricount vs Diviso: A Neutral Comparison by How You Actually Use It",
+    description: "لا يوجد تطبيق واحد \"هو الأفضل\" بين Splitwise و Tricount و Diviso — كل تطبيق صُمم حول طريقة استخدام مختلفة. مقارنة محايدة تركز على فرق التصميم الجوهري: مجموعة دائمة تتراكم أرصدتها بمرور الوقت، أم مناسبة واحدة تُسوّى دفعة واحدة عند انتهائها.",
+    descriptionEn: "There isn't one app that's simply \"the best\" among Splitwise, Tricount, and Diviso — each was designed around a different usage pattern. A neutral comparison focused on the core design difference: an ongoing group whose balances build up over time, versus a single event settled all at once when it ends.",
+    keywords: ["splitwise مقابل tricount", "مقارنة splitwise و tricount و diviso", "سبليتويز مقابل تريكاونت", "بديل splitwise للعربية", "tricount مقابل diviso", "أي تطبيق تقسيم مصاريف أفضل لمجموعتي"],
+    keywordsEn: ["splitwise vs tricount", "splitwise vs tricount vs diviso", "tricount vs diviso", "splitwise alternative arabic", "which expense splitting app for groups", "compare bill splitting apps"],
+    category: "comparisons",
+    readTime: 9,
+    publishDate: "2026-11-05",
+    content: `
+## الإجابة المختصرة
+
+لا يوجد تطبيق واحد "هو الأفضل" بين Splitwise و Tricount و Diviso بشكل مطلق؛ الفرق الحقيقي بينها هو **طبيعة الاستخدام المصمَّمة حوله كل تطبيق**. Splitwise مبني حول مجموعات دائمة تتراكم أرصدتها على مدى أسابيع أو أشهر (رفقاء سكن، عائلة). Tricount مبني حول مناسبة واحدة محددة بتاريخ بداية وتاريخ نهاية تُسوّى بالكامل عند انتهائها (رحلة، مناسبة). Diviso يجمع بين الاستخدامين بواجهة عربية أصلية مع تسوية مبسّطة. هذه مقارنة محايدة حسب 4 معايير فقط: طبيعة المجموعة، آلية التسوية، دعم العملات، ودعم اللغة العربية.
+
+## المعيار الأول: طبيعة المجموعة التي صُمم التطبيق حولها
+
+### Splitwise
+مصمم أساساً حول **مجموعة مستمرة** يتكرر فيها تسجيل المصاريف على مدى طويل: رفقاء سكن يسجلون الإيجار والفواتير شهرياً، أو عائلة تتابع مصاريف مشتركة باستمرار. الأرصدة تتراكم بين الأعضاء دون حاجة لتسوية فورية بعد كل مصروف.
+
+### Tricount
+مصمم أساساً حول **مناسبة واحدة محددة زمنياً**: رحلة بتاريخ بداية ونهاية، أو مناسبة قصيرة. التركيز على إضافة المشاركين، تسجيل المصاريف خلال فترة المناسبة، ثم تسوية كاملة عند انتهائها.
+
+### Diviso
+يدعم كلا النمطين (المجموعة المستمرة والمناسبة الواحدة) ضمن واجهة واحدة، مع التركيز على السهولة في كل الحالتين دون الحاجة لإعداد منفصل لكل نوع مجموعة.
+
+## المعيار الثاني: آلية تسوية الديون بين الأعضاء
+
+- **Splitwise**: يعرض رصيداً إجمالياً بين كل شخصين، ويُراكم هذا الرصيد مع كل مصروف جديد حتى تُسجَّل تسوية يدوية.
+- **Tricount**: يحسب التسوية النهائية لحظة إغلاق المناسبة، مع تبسيط عدد التحويلات المطلوبة بين المشاركين.
+- **Diviso**: يعرض الرصيد المحدث بعد كل مصروف مباشرة، مع إمكانية تسجيل تسوية في أي وقت دون انتظار إغلاق رسمي للمجموعة.
+
+## المعيار الثالث: دعم العملات المتعددة
+
+الثلاثة تدعم التعامل مع أكثر من عملة لمجموعات تضم أعضاء من دول مختلفة، لكن الفرق في العملة الافتراضية: في Splitwise و Tricount تُضاف عملات أخرى ضمن قائمة متعددة حول عملة أساسية غالباً غير الريال، بينما في Diviso يمكن اعتماد الريال السعودي كعملة أساسية مباشرة إلى جانب دعم عملات أخرى لمن يحتاجها.
+
+## المعيار الرابع: دعم اللغة العربية والواجهة
+
+- **Splitwise**: واجهة إنجليزية أساساً، دون تصميم عربي أصلي بـ RTL كامل.
+- **Tricount**: يدعم عدداً من اللغات الأوروبية بشكل أساسي، دون دعم عربي أصلي.
+- **Diviso**: واجهة عربية أصلية مصممة بـ RTL من الأساس، إلى جانب إمكانية الاستخدام بالإنجليزية.
+
+## Splitwise مقابل Tricount: السؤال الأكثر شيوعاً
+
+الفرق الجوهري هنا ليس في الميزات بقدر ما هو في **افتراض نوع المجموعة**: من يبحث عن تطبيق لرفقاء سكن دائمين يسجلون فواتير متكررة شهرياً يجد Splitwise أقرب لطبيعة استخدامه، بينما من يخطط لرحلة واحدة بتاريخ نهاية واضح يجد Tricount أقرب لتدفق العمل الذي يحتاجه (إنشاء المناسبة، التسجيل خلالها، التسوية النهائية).
+
+## أين يناسب Diviso كل الحالتين؟
+
+بما أن Diviso لا يفرض تصنيفاً مسبقاً بين "مجموعة دائمة" و"مناسبة واحدة"، يمكن استخدامه لكلا النمطين بواجهة واحدة، مع ميزة إضافية هي دعم العربية الأصلي والريال السعودي كعملة مباشرة، وهو ما لا يتوفر أصلاً في التطبيقين الآخرين.
+
+## أي تطبيق يناسب كل حالة؟
+
+- **رفقاء سكن أو عائلة بمصاريف متكررة شهرياً**: Splitwise أو Diviso، حسب الحاجة للواجهة العربية.
+- **رحلة أو مناسبة واحدة بتاريخ بداية ونهاية واضحين**: Tricount أو Diviso.
+- **من يحتاج واجهة عربية أصلية بالريال مباشرة في كل الحالات**: Diviso.
+
+## أسئلة شائعة
+
+### هل Diviso بديل مباشر لـ Splitwise؟
+يمكن استخدامه كبديل لمن يبحث عن نفس فكرة تتبع الأرصدة بين مجموعة مستمرة، مع إضافة واجهة عربية أصلية والريال كعملة مباشرة، وهما ميزتان غير متوفرتين في Splitwise.
+
+### هل Tricount يدعم اللغة العربية؟
+لا يوفر Tricount واجهة عربية أصلية؛ يدعم بشكل أساسي عدداً من اللغات الأوروبية.
+
+### أي تطبيق أنسب لمجموعة رحلة واحدة قصيرة؟
+Tricount مصمم أساساً حول هذا النوع من الاستخدام (مناسبة واحدة بتاريخ بداية ونهاية)، ويمكن لـ Diviso تغطية نفس الحالة أيضاً مع واجهة عربية أصلية.
+
+## الخلاصة
+
+لا يوجد فائز مطلق بين Splitwise و Tricount و Diviso؛ الاختيار يعتمد على طبيعة مجموعتك (دائمة أم لمناسبة واحدة) ولغتك المفضلة وعملتك الأساسية. من يحتاج الجمع بين الاستخدامين بواجهة عربية أصلية والريال مباشرة يجد في Diviso خياراً يغطي الحالتين معاً.
+
+**جرب Diviso الآن وقسّم مصاريفك سواء كانت لمجموعة دائمة أو لمناسبة واحدة، بواجهة عربية أصلية وريال سعودي مباشر.**
+    `,
+    contentEn: `
+## Quick Answer
+
+There isn't one app that's simply "the best" among Splitwise, Tricount, and Diviso across the board; the real difference is **the usage pattern each app was designed around**. Splitwise is built around ongoing groups whose balances accumulate over weeks or months (roommates, family). Tricount is built around a single event with a start and end date that gets fully settled once it's over (a trip, an occasion). Diviso combines both patterns with a native Arabic interface and simplified settling. This is a neutral comparison across 4 specific criteria: group type, settlement mechanics, currency support, and Arabic-language support.
+
+## Criterion 1: What Kind of Group Was the App Designed Around?
+
+### Splitwise
+Built primarily around an **ongoing group** where expenses are logged repeatedly over a long period: roommates logging rent and bills monthly, or a family tracking shared expenses continuously. Balances accumulate between members without needing an immediate settlement after every expense.
+
+### Tricount
+Built primarily around a **single, time-bound event**: a trip with a start and end date, or a short occasion. The focus is on adding participants, logging expenses during the event, then fully settling once it ends.
+
+### Diviso
+Supports both patterns (ongoing group and single event) within one interface, focusing on simplicity in either case without requiring separate setup for each group type.
+
+## Criterion 2: How Debts Get Settled Between Members
+
+- **Splitwise**: shows a running balance between each pair of people, which accumulates with every new expense until a manual settlement is logged.
+- **Tricount**: calculates the final settlement the moment the event is closed, simplifying the number of transfers participants need to make.
+- **Diviso**: shows the updated balance right after every expense, with the option to log a settlement at any time without waiting for a formal group closure.
+
+## Criterion 3: Multi-Currency Support
+
+All three support handling more than one currency for groups with members from different countries, but the difference is in the default currency: in Splitwise and Tricount, other currencies are added within a multi-currency list built around a primary currency that usually isn't the riyal, while in Diviso the Saudi Riyal can be set as the primary currency directly, alongside support for other currencies when needed.
+
+## Criterion 4: Arabic-Language and Interface Support
+
+- **Splitwise**: English-first interface, without a fully native Arabic RTL design.
+- **Tricount**: primarily supports a number of European languages, without native Arabic support.
+- **Diviso**: a native Arabic interface designed with RTL from the ground up, alongside the option to use it in English.
+
+## Splitwise vs Tricount: The Most Common Question
+
+The core difference here isn't really about features — it's about **what kind of group the app assumes**. Someone looking for an app for permanent roommates logging recurring monthly bills will find Splitwise closer to their actual usage, while someone planning a single trip with a clear end date will find Tricount's workflow (create the event, log expenses during it, final settlement) closer to what they need.
+
+## Where Diviso Fits Both Cases
+
+Since Diviso doesn't force a choice upfront between an "ongoing group" and a "single event," it can be used for either pattern within one interface, with the added benefit of a native Arabic interface and the Saudi Riyal as a direct primary currency — something neither of the other two apps offers.
+
+## Which App Fits Which Case?
+
+- **Roommates or family with recurring monthly expenses**: Splitwise or Diviso, depending on the need for an Arabic interface.
+- **A single trip or event with a clear start and end date**: Tricount or Diviso.
+- **Anyone who needs a native Arabic interface with the riyal directly, in every case**: Diviso.
+
+## Frequently Asked Questions
+
+### Is Diviso a direct alternative to Splitwise?
+It can be used as an alternative for anyone looking for the same balance-tracking concept across an ongoing group, with the addition of a native Arabic interface and the riyal as a direct currency — two things Splitwise doesn't offer.
+
+### Does Tricount support Arabic?
+No, Tricount doesn't offer a native Arabic interface; it primarily supports a number of European languages.
+
+### Which app is best for a single short trip group?
+Tricount is built primarily around this exact use case (a single event with a start and end date), and Diviso can cover the same case too, with a native Arabic interface.
+
+## Conclusion
+
+There's no absolute winner among Splitwise, Tricount, and Diviso; the right choice depends on your group's nature (ongoing or single-event), your preferred language, and your primary currency. Anyone who needs both usage patterns covered with a native Arabic interface and the riyal directly will find Diviso an option that handles both cases at once.
+
+**Try Diviso now and split expenses whether it's for an ongoing group or a single event, with a native Arabic interface and direct Saudi Riyal support.**
+    `
+  },
+  {
     slug: "bill-splitting-apps-arabic-compared",
     title: "أي تطبيق تقسيم فاتورة يدعم العربية والريال بشكل كامل؟ مقارنة محايدة",
     titleEn: "Which Bill-Splitting App Fully Supports Arabic and the Saudi Riyal? A Neutral Comparison",
@@ -195,7 +471,7 @@ Choosing a bill-splitting app shouldn't rely on popularity alone: check for nati
   },
   {
     slug: "how-to-split-rent-with-flatmates-uk",
-    title: "كيف تُقسَّم الإيجار بين السكن المشترك؟ بالتساوي أم حسب حجم الغرفة أم الدخل",
+    title: "كيف يُقسَّم الإيجار بين شركاء السكن؟ بالتساوي أم حسب حجم الغرفة أم الدخل",
     titleEn: "How to Split Rent With Flatmates: Equal, by Room Size, or by Income",
     description: "ثلاث طرق شائعة لتقسيم إيجار شقة مشتركة: بالتساوي، حسب حجم ومزايا كل غرفة، أو حسب دخل كل شخص. الطريقة الأعدل تعتمد على مدى اختلاف الغرف وظروف الساكنين. دليل عملي بمثال محسوب بالنسب.",
     descriptionEn: "There are three common ways flatmates split rent: equally, by each room's size and features, or by each person's income. Which one is fairest depends on how different the rooms and the flatmates' circumstances actually are. A practical guide with a percentage-based worked example and a UK bills note.",
@@ -11134,7 +11410,7 @@ Shared subscriptions save money, but without a clear system they turn into a mon
 كل شخص يدفع وجبة أو نشاط معين بالتناوب.
 
 ### 5. استخدام تطبيق ذكي
-الطريقة الأفضل - تطبيق يتتبع كل شيء تلقائياً.
+الطريقة الأسهل - تطبيق يتتبع كل شيء تلقائياً.
 
 ## كيف يساعدك Diviso؟
 
@@ -11155,7 +11431,7 @@ Shared subscriptions save money, but without a clear system they turn into a mon
 
 تقسيم المصاريف لا يجب أن يكون معقداً. مع التخطيط المسبق والأداة المناسبة، ستستمتع برحلتك بدون قلق مالي.
 
-**جرب Diviso مجاناً** وابدأ رحلتك القادمة بدون هموم مالية!
+**جرب Diviso** وابدأ رحلتك القادمة بدون هموم مالية!
     `,
     contentEn: `
 ## Introduction
@@ -11183,7 +11459,7 @@ Everyone puts an equal amount in a shared fund and spends from it.
 Each person pays for a meal or activity in turns.
 
 ### 5. Using a Smart App
-The best method - an app that tracks everything automatically.
+The easiest method - an app that tracks everything automatically.
 
 ## How Diviso Helps
 
@@ -11204,7 +11480,7 @@ The best method - an app that tracks everything automatically.
 
 Splitting expenses doesn't have to be complicated. With advance planning and the right tool, you'll enjoy your trip without financial worries.
 
-**Try Diviso for free** and start your next trip worry-free!
+**Try Diviso** and start your next trip worry-free!
     `
   },
   {
@@ -11233,14 +11509,13 @@ Splitting expenses doesn't have to be complicated. With advance planning and the
 
 ## التطبيقات المتاحة
 
-### 1. Diviso ⭐ الأفضل
+### 1. Diviso
 
 | الميزة | التقييم |
 |--------|---------|
 | دعم العربية | ✅ كامل |
 | الريال السعودي | ✅ افتراضي |
 | واجهة سهلة | ✅ ممتازة |
-| مجاني | ✅ نعم |
 
 **المميزات:**
 - مصمم خصيصاً للسوق السعودي
@@ -11256,7 +11531,6 @@ Splitting expenses doesn't have to be complicated. With advance planning and the
 | دعم العربية | ❌ لا |
 | الريال السعودي | ⚠️ جزئي |
 | واجهة سهلة | ✅ جيدة |
-| مجاني | ⚠️ محدود |
 
 ### 3. Tricount
 
@@ -11265,9 +11539,8 @@ Splitting expenses doesn't have to be complicated. With advance planning and the
 | دعم العربية | ❌ لا |
 | الريال السعودي | ✅ نعم |
 | واجهة سهلة | ✅ جيدة |
-| مجاني | ✅ نعم |
 
-## لماذا Diviso الأفضل للسعودية؟
+## لماذا Diviso يناسب السعودية؟
 
 1. **اللغة**: التطبيق الوحيد بواجهة عربية كاملة
 2. **العملة**: الريال السعودي افتراضياً
@@ -11295,14 +11568,13 @@ Looking for the best expense splitting app in Saudi Arabia? In this article, we 
 
 ## Available Apps
 
-### 1. Diviso ⭐ The Best
+### 1. Diviso
 
 | Feature | Rating |
 |---------|--------|
 | Arabic Support | ✅ Full |
 | Saudi Riyal | ✅ Default |
 | Easy Interface | ✅ Excellent |
-| Free | ✅ Yes |
 
 **Features:**
 - Designed specifically for the Saudi market
@@ -11318,7 +11590,6 @@ Looking for the best expense splitting app in Saudi Arabia? In this article, we 
 | Arabic Support | ❌ No |
 | Saudi Riyal | ⚠️ Partial |
 | Easy Interface | ✅ Good |
-| Free | ⚠️ Limited |
 
 ### 3. Tricount
 
@@ -11327,9 +11598,8 @@ Looking for the best expense splitting app in Saudi Arabia? In this article, we 
 | Arabic Support | ❌ No |
 | Saudi Riyal | ✅ Yes |
 | Easy Interface | ✅ Good |
-| Free | ✅ Yes |
 
-## Why Diviso is Best for Saudi Arabia?
+## Why Diviso Fits Saudi Arabia?
 
 1. **Language**: The only app with a complete Arabic interface
 2. **Currency**: Saudi Riyal by default
@@ -12531,7 +12801,7 @@ Don't let old debts affect your relationships. Record them in Diviso, settle wit
 
 تقسيم حساب المطعم ما يحتاج يكون محرج. مع Diviso، سجل وقسم وسوِّ الحساب بثواني.
 
-**جرب Diviso مجاناً** — خلك ذكي وقسّم بذكاء!
+**جرب Diviso** — خلك ذكي وقسّم بذكاء!
     `,
     contentEn: `
 ## The Problem Everyone Knows
@@ -12584,7 +12854,7 @@ Agree on the splitting method **before** ordering. No awkwardness that way.
 
 Splitting restaurant bills doesn't have to be awkward. With Diviso, log, split, and settle in seconds.
 
-**Try Diviso free** — be smart, split smart!
+**Try Diviso** — be smart, split smart!
     `
   },
   {
@@ -12619,11 +12889,10 @@ Splitting restaurant bills doesn't have to be awkward. With Diviso, log, split, 
 
 ## مقارنة تطبيقات مصاريف الرحلة
 
-### Diviso 🏆
+### Diviso
 - **اللغة**: عربي كامل
 - **العملة**: ريال سعودي + 50 عملة
 - **المميز**: مصمم للسعودية، واجهة عربية، دعم فوري
-- **السعر**: مجاني
 
 ### Splitwise
 - **اللغة**: إنجليزي فقط
@@ -12688,11 +12957,10 @@ Whether it's Umrah, a Dubai trip, or camping with friends — organizing expense
 
 ## Comparing Trip Expense Apps
 
-### Diviso 🏆
+### Diviso
 - **Language**: Full Arabic
 - **Currency**: Saudi Riyal + 50 currencies
 - **Highlight**: Designed for Saudi Arabia, Arabic interface, instant support
-- **Price**: Free
 
 ### Splitwise
 - **Language**: English only
@@ -12937,7 +13205,7 @@ Calculating monthly expenses isn't hard — it just needs simple commitment. Sta
 
 ## المقارنة الشاملة
 
-### 1. Diviso ⭐⭐⭐⭐⭐ الأفضل عربياً
+### 1. Diviso — مصمم للمستخدم العربي
 
 **المميزات:**
 - واجهة عربية 100% مع دعم RTL كامل
@@ -13001,7 +13269,6 @@ Calculating monthly expenses isn't hard — it just needs simple commitment. Sta
 | الميزة | Diviso | Splitwise | Tricount |
 |--------|--------|-----------|----------|
 | العربية | ✅ | ❌ | ❌ |
-| مجاني | ✅ | ⚠️ | ✅ |
 | الريال SAR | ✅ | ⚠️ | ✅ |
 | تقسيم ذكي | ✅ | ✅ | ⚠️ |
 | تذكيرات | ✅ | ✅ | ❌ |
@@ -13010,7 +13277,7 @@ Calculating monthly expenses isn't hard — it just needs simple commitment. Sta
 
 ## التوصية النهائية
 
-**إذا كنت في السعودية أو الخليج**: Diviso هو الخيار الأمثل — عربي، مجاني، ومصمم لاحتياجاتك.
+**إذا كنت في السعودية أو الخليج**: Diviso يناسبك — عربي، ومصمم لاحتياجاتك.
 
 **إذا كنت تسافر مع أجانب**: Splitwise خيار جيد لأنهم يعرفونه.
 
@@ -13020,7 +13287,7 @@ Calculating monthly expenses isn't hard — it just needs simple commitment. Sta
 
 أفضل تطبيق تقسيم فلوس هو اللي يستخدمه كل أعضاء المجموعة. Diviso يسهّل هالشيء بواجهته العربية وسهولة دعوة الأصدقاء.
 
-**جرب Diviso اليوم** — مجاناً وبدون تسجيل معقد!
+**جرب Diviso اليوم**!
     `,
     contentEn: `
 ## Why Do You Need a Money Splitting App?
@@ -13037,7 +13304,7 @@ Every time you go out with friends or travel with family, splitting expenses bec
 
 ## Comprehensive Comparison
 
-### 1. Diviso ⭐⭐⭐⭐⭐ Best for Arabic Users
+### 1. Diviso — Built for Arabic Users
 
 **Pros:**
 - 100% Arabic interface with full RTL support
@@ -13101,7 +13368,6 @@ Every time you go out with friends or travel with family, splitting expenses bec
 | Feature | Diviso | Splitwise | Tricount |
 |---------|--------|-----------|----------|
 | Arabic | ✅ | ❌ | ❌ |
-| Free | ✅ | ⚠️ | ✅ |
 | SAR | ✅ | ⚠️ | ✅ |
 | Smart Split | ✅ | ✅ | ⚠️ |
 | Reminders | ✅ | ✅ | ❌ |
@@ -13110,7 +13376,7 @@ Every time you go out with friends or travel with family, splitting expenses bec
 
 ## Final Recommendation
 
-**If you're in Saudi Arabia or the Gulf**: Diviso is the best choice — Arabic, free, designed for your needs.
+**If you're in Saudi Arabia or the Gulf**: Diviso fits you — Arabic, and designed for your needs.
 
 **If traveling with international friends**: Splitwise is good since they know it.
 
@@ -13120,7 +13386,7 @@ Every time you go out with friends or travel with family, splitting expenses bec
 
 The best money splitting app is the one all group members actually use. Diviso makes this easy with its Arabic interface and simple friend invitations.
 
-**Try Diviso today** — free and no complicated registration!
+**Try Diviso today**!
     `
   },
   {
@@ -13195,7 +13461,7 @@ The best money splitting app is the one all group members actually use. Diviso m
 
 رمضان شهر العبادة والكرم، مو شهر القلق المالي. مع التنظيم الصح وتطبيق Diviso، استمتع بالشهر الكريم وخلِّ التطبيق يحسب.
 
-**سجل في Diviso مجاناً** واستعد لرمضان!
+**سجل في Diviso** واستعد لرمضان!
     `,
     contentEn: `
 ## Ramadan = Lots of Group Expenses
@@ -13258,7 +13524,7 @@ Clothes, sweets, decorations — some are shared.
 
 Ramadan is a month of worship and generosity, not financial stress. With proper organization and Diviso, enjoy the holy month and let the app calculate.
 
-**Sign up for Diviso free** and get ready for Ramadan!
+**Sign up for Diviso** and get ready for Ramadan!
     `
   },
   // ===== NEW SEO-TARGETED ENGLISH ARTICLES =====
@@ -13371,7 +13637,7 @@ Use a persistent group that carries balances forward. Over time, the rotating pa
 
 The key to splitting expenses without awkwardness is transparency and consistency. Pick a method that works for your group, use a tool like [Diviso](/split-expenses) to track everything, and settle up regularly.
 
-**[Try Diviso free](/auth?mode=signup)** — split your next expense in under 30 seconds.
+**[Try Diviso](/auth?mode=signup)** — split your next expense in under 30 seconds.
     `
   },
   {
@@ -13393,14 +13659,14 @@ The key to splitting expenses without awkwardness is transparency and consistenc
 ## التطبيقات
 
 ### 1. Diviso
-تطبيق مجاني وسريع لتقسيم المصاريف مع دعم عملات متعددة.
+تطبيق سريع لتقسيم المصاريف.
 
 ### 2. Splitwise
 تطبيق شهير لكن بعض الميزات خلف الدفع.
 
 ## الخلاصة
 
-Diviso يقدم أفضل تجربة مجانية لتقسيم الفواتير.
+Diviso يقدم تجربة سهلة لتقسيم الفواتير.
     `,
     contentEn: `
 ## Introduction
@@ -13422,10 +13688,10 @@ Before diving into specific apps, here's what matters most:
 
 ## The Top Bill Splitting Apps of 2026
 
-### 1. Diviso — Best Overall
+### 1. Diviso
 **Rating: 4.8/5**
 
-[Diviso](/split-expenses) stands out with its clean design, fast expense entry, and genuinely free core experience. It handles unlimited groups and expenses without a paywall, supports multiple currencies, and offers smart settlement optimization.
+[Diviso](/split-expenses) stands out with its clean design, fast expense entry, and smart settlement optimization.
 
 **Pros:**
 - ✅ Free unlimited groups and expenses
@@ -13494,8 +13760,6 @@ Open-source expense sharing app with decent features but less polish.
 
 | Feature | Diviso | Splitwise | Tricount | Settle Up |
 |---------|--------|-----------|----------|-----------|
-| Free unlimited groups | ✅ | ✅ | ✅ | ✅ |
-| Free multi-currency | ✅ | ❌ (Pro) | ✅ | ✅ |
 | Smart settlements | ✅ | ✅ | ❌ | ✅ |
 | Expense categories | ✅ | ❌ (Pro) | ❌ | ✅ |
 | Receipt scanning | ✅ | ❌ (Pro) | ❌ | ❌ |
@@ -13505,9 +13769,9 @@ Open-source expense sharing app with decent features but less polish.
 
 ## Our Verdict
 
-For most users, **[Diviso](/split-expenses)** offers the best balance of features, usability, and value. It does everything Splitwise does — and more — without charging for essential features. If you're starting fresh or considering switching from another app, Diviso is the clear choice in 2026.
+For most users, **[Diviso](/split-expenses)** offers a clear balance of features and usability. If you're starting fresh or considering switching from another app, Diviso is worth a try in 2026.
 
-**[Try Diviso free](/auth?mode=signup)** — no credit card required.
+**[Try Diviso](/auth?mode=signup)**.
     `
   },
   {
@@ -13624,7 +13888,7 @@ Example: In a group of 5, instead of 10 possible transfers, Diviso might reduce 
 
 Group expense tracking doesn't have to be a chore. With the right tool and a simple system, you can keep finances transparent, avoid conflicts, and settle up with minimal friction.
 
-**[Start tracking with Diviso](/auth?mode=signup)** — it's free and takes 30 seconds to set up.
+**[Start tracking with Diviso](/auth?mode=signup)** — it takes 30 seconds to set up.
     `
   },
   {
@@ -13696,20 +13960,16 @@ The most common reasons users look for alternatives:
 
 ## The Best Splitwise Alternatives
 
-### 1. Diviso — Best Overall Alternative
-**Why switch**: Everything Splitwise does, but free, faster, and cleaner.
+### 1. Diviso
+**Why switch**: A faster, cleaner way to split, with a full Arabic experience.
 
 [Diviso](/splitwise-alternative) was built by people who loved the concept of Splitwise but wanted a better execution. Here's what makes it stand out:
 
-- **Free multi-currency support** — Splitwise charges for this
-- **Free expense categories** — Organize spending without paying
 - **Modern, clean interface** — Designed for speed and clarity
 - **Smart settlement optimization** — Fewer transfers to settle up
-- **No disruptive ads** — Clean experience throughout
 - **Real-time syncing** — Everyone sees updates instantly
 
-**Price**: Free (optional premium for power features)
-**Best for**: Anyone who wants a full-featured expense splitter without a subscription.
+**Best for**: Anyone who wants a clear, simple expense splitter.
 
 ### 2. Tricount
 **Why consider**: Ultra-simple interface for basic needs.
@@ -13753,7 +14013,6 @@ Tab focuses specifically on splitting restaurant bills by scanning receipts and 
 - **Multi-currency**: included on Diviso at no extra tier; requires Splitwise Pro
 - **Expense categories**: included on Diviso at no extra tier; requires Splitwise Pro
 - **Smart settlements**: supported on Diviso, Splitwise Free, and Splitwise Pro alike
-- **Ad-free experience**: Diviso and Splitwise Pro are ad-free; Splitwise Free shows ads
 - **Expense search**: included on Diviso at no extra tier; requires Splitwise Pro
 - **Modern UI**: Diviso only — neither Splitwise tier has been modernized
 - **Receipt photos**: included on Diviso at no extra tier; requires Splitwise Pro
@@ -13762,7 +14021,7 @@ Tab focuses specifically on splitting restaurant bills by scanning receipts and 
 
 Making the switch is straightforward:
 
-1. **[Sign up for Diviso](/auth?mode=signup)** — Free, takes 30 seconds
+1. **[Sign up for Diviso](/auth?mode=signup)** — takes 30 seconds
 2. **Create your groups** — Recreate your active Splitwise groups
 3. **Invite members** — Send invite links to your group members
 4. **Start logging** — Begin tracking new expenses in Diviso
@@ -13770,9 +14029,9 @@ Making the switch is straightforward:
 
 ## Conclusion
 
-Splitwise deserves credit for pioneering the expense-splitting category, but in 2026, better options exist. [Diviso](/splitwise-alternative) offers a more modern, faster, and genuinely free alternative that doesn't gate essential features behind a subscription.
+Splitwise deserves credit for pioneering the expense-splitting category. [Diviso](/splitwise-alternative) offers a modern, fast alternative with a full Arabic experience.
 
-**[Try Diviso free](/auth?mode=signup)** — the best Splitwise alternative for 2026.
+**[Try Diviso](/auth?mode=signup)**.
     `
   },
   {
@@ -13898,7 +14157,7 @@ This process takes 10 minutes instead of the usual hours of spreadsheet wranglin
 - 🤝 **Be generous**: Don't nickel-and-dime on small amounts — it's not worth the friction
 - 📱 **Everyone uses the app**: Make sure all group members have access
 
-## Why Diviso Is the Best Travel Expense Splitter
+## Why Diviso Works for Travel Expenses
 
 [Diviso](/travel-expense-splitter) was designed with group travel in mind:
 
@@ -13913,7 +14172,7 @@ This process takes 10 minutes instead of the usual hours of spreadsheet wranglin
 
 Splitting travel expenses doesn't have to be awkward or stressful. With the right preparation, a simple logging habit, and a good app, you can handle the money side of group travel in minutes instead of hours.
 
-**[Try Diviso for your next trip](/auth?mode=signup)** — it's free and takes 30 seconds to set up.
+**[Try Diviso for your next trip](/auth?mode=signup)** — it takes 30 seconds to set up.
     `
   },
 ];

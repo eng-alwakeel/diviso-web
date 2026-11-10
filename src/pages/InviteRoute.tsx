@@ -6,7 +6,7 @@ import { trackAnalyticsEvent } from "@/hooks/useAnalyticsEvents";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
-import { Users, Sparkles, ArrowRight, AlertTriangle } from "lucide-react";
+import { Users, Sparkles, ArrowRight, AlertTriangle, Receipt, Scale, HandCoins } from "lucide-react";
 import { APP_STORE_ID, EXTERNAL_LINK_PROPS, appStoreUrl, trackAppStoreClick } from "@/lib/appStoreLinks";
 
 interface InvitePreview {
@@ -93,6 +93,23 @@ const InviteRoute = () => {
   const handleDownload = () => {
     trackAppStoreClick("invite_link");
     trackAnalyticsEvent("download_clicked", { store: "ios", source: "invite", token: code });
+  };
+
+  // ORD-015: primary CTA. Copies the invite link (no amounts, no personal
+  // data) inside the tap gesture so the app can pick it up after install,
+  // then the anchor itself opens the App Store. Never blocks navigation.
+  const handleJoinWithApple = () => {
+    handleDownload();
+    const link = `https://diviso.app/i/${code}`;
+    const done = (copied: boolean) =>
+      trackAnalyticsEvent("invite_join_apple_clicked", { token: code, copied });
+    try {
+      const p = navigator.clipboard?.writeText(link);
+      if (p) p.then(() => done(true), () => done(false));
+      else done(false);
+    } catch {
+      done(false);
+    }
   };
 
   // ---------- Renders ----------
@@ -189,18 +206,33 @@ const InviteRoute = () => {
           })}
         </p>
 
-        <p className="text-sm text-muted-foreground">
-          {t("groups:messages.accept_in_app", {
-            defaultValue: "حمّل تطبيق ديفيزو وافتح رابط الدعوة من جوالك للانضمام للمجموعة.",
-          })}
-        </p>
+        {/* ORD-015: the app's value, shown before any sign-up. No amounts. */}
+        <ul className="text-start space-y-2.5 rounded-2xl bg-muted/50 p-4">
+          {[
+            { Icon: Receipt, key: "invite_value_log", def: "كل واحد يسجّل مصروفه بثواني" },
+            { Icon: Scale, key: "invite_value_balance", def: "يبيّن مين له ومين عليه بدون حسبة" },
+            { Icon: HandCoins, key: "invite_value_settle", def: "تسوية بأقل عدد تحويلات" },
+          ].map(({ Icon, key, def }) => (
+            <li key={key} className="flex items-center gap-2.5 text-sm text-foreground">
+              <Icon className="w-4 h-4 shrink-0 text-primary" aria-hidden />
+              <span>{t(`groups:messages.${key}`, { defaultValue: def })}</span>
+            </li>
+          ))}
+        </ul>
 
-        <Button asChild size="lg" className="w-full gap-2 font-bold">
-          <a href={appStoreUrl("invite_link")} {...EXTERNAL_LINK_PROPS} onClick={handleDownload}>
-            {t("groups:messages.download_app", { defaultValue: "حمّل التطبيق" })}
-            <ArrowRight className="w-4 h-4" />
-          </a>
-        </Button>
+        <div className="space-y-2">
+          <Button asChild size="lg" className="w-full gap-2 font-bold">
+            <a href={appStoreUrl("invite_link")} {...EXTERNAL_LINK_PROPS} onClick={handleJoinWithApple}>
+              {t("groups:messages.join_with_apple", { defaultValue: "انضم بحساب Apple" })}
+              <ArrowRight className="w-4 h-4 rtl:rotate-180" />
+            </a>
+          </Button>
+          <p className="text-xs text-muted-foreground">
+            {t("groups:messages.accept_in_app", {
+              defaultValue: "حمّل تطبيق ديفيزو وافتح رابط الدعوة من جوالك للانضمام للمجموعة.",
+            })}
+          </p>
+        </div>
 
         <p className="text-[11px] text-muted-foreground/80">
           Diviso · {t("groups:messages.split_fairly", { defaultValue: "قسّم بذكاء" })}

@@ -331,7 +331,7 @@ There's no absolute winner among Splitwise, Tricount, and Diviso; the right choi
 ### Diviso
 - **دعم العربية**: واجهة عربية أصلية مصممة بـ RTL من الأساس، لا كترجمة لاحقة
 - **الريال السعودي**: مدعوم كعملة أساسية مباشرة، إلى جانب دعم عملات متعددة أخرى
-- **آيفون**: يمكن الوصول إليه عبر المتصفح؛ تطبيق آيفون مستقل غير متوفر حتى الآن
+- **آيفون**: ديفيزو متوفر على [App Store](https://apps.apple.com/app/id6761329043) لأجهزة iPhone وiPad
 
 ## ماذا يعني "دعم عربي أصلي" بالضبط؟
 
@@ -364,7 +364,7 @@ There's no absolute winner among Splitwise, Tricount, and Diviso; the right choi
 - ✅ واجهة عربية أصلية بتصميم RTL كامل منذ الأساس
 - ✅ تسجيل المصاريف بالريال السعودي كعملة أساسية مباشرة
 - ✅ دعم عملات متعددة لمن يتعامل مع مجموعات من دول مختلفة
-- ✅ الوصول المباشر عبر المتصفح دون الحاجة لتثبيت تطبيق منفصل
+- ✅ متوفر على [App Store](https://apps.apple.com/app/id6761329043) لأجهزة iPhone وiPad، وعبر المتصفح
 
 ## أسئلة شائعة
 
@@ -414,7 +414,7 @@ When searching for a "bill-splitting app," most well-known options in this space
 ### Diviso
 - **Arabic support**: a native Arabic interface designed with RTL from the ground up, not a later translation layer
 - **Saudi Riyal**: supported directly as a primary currency, alongside support for several other currencies
-- **iPhone**: accessible through a browser; a standalone iPhone app isn't available yet
+- **iPhone**: Diviso is available on the [App Store](https://apps.apple.com/app/id6761329043) for iPhone and iPad
 
 ## What Does "Native Arabic Support" Actually Mean?
 
@@ -447,7 +447,7 @@ Is the app available as a standalone app on the App Store, or will usage be thro
 - ✅ A native Arabic interface designed with full RTL from the ground up
 - ✅ Logs expenses in Saudi Riyal directly as a primary currency
 - ✅ Supports multiple currencies for anyone dealing with groups from different countries
-- ✅ Direct access through a browser without needing to install a separate app
+- ✅ Available on the [App Store](https://apps.apple.com/app/id6761329043) for iPhone and iPad, and in the browser
 
 ## Frequently Asked Questions
 
@@ -13206,10 +13206,10 @@ Calculating monthly expenses isn't hard — it just needs simple commitment. Sta
 - تقارير مفصلة بالرسوم البيانية
 - دعوة الأصدقاء برابط أو QR
 - يعمل بدون إنترنت (PWA)
+- ديفيزو متوفر على [App Store](https://apps.apple.com/app/id6761329043) لأجهزة iPhone وiPad
 
 **العيوب:**
 - جديد نسبياً في السوق
-- تطبيق ويب (PWA) وليس تطبيق أصلي بعد
 
 **السعر:** مجاني مع خطة Pro بميزات إضافية
 
@@ -13300,10 +13300,10 @@ Every time you go out with friends or travel with family, splitting expenses bec
 - Detailed reports with charts
 - Invite friends via link or QR
 - Works offline (PWA)
+- Diviso is available on the [App Store](https://apps.apple.com/app/id6761329043) for iPhone and iPad
 
 **Cons:**
 - Relatively new in the market
-- Web app (PWA) not native app yet
 
 **Price:** Free with Pro plan for extra features
 
@@ -13679,10 +13679,10 @@ Before diving into specific apps, here's what matters most:
 - ✅ Clean, modern interface
 - ✅ Real-time balance updates
 - ✅ Smart settlement minimization
+- ✅ Available on the [App Store](https://apps.apple.com/app/id6761329043) for iPhone and iPad
 
 **Cons:**
 - ❌ Newer app — smaller user base than Splitwise
-- ❌ No native app yet (PWA works great though)
 
 **Best for**: Anyone who wants a fast, free, and feature-rich splitting experience.
 

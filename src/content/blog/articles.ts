@@ -13205,7 +13205,6 @@ Calculating monthly expenses isn't hard — it just needs simple commitment. Sta
 - إشعارات ذكية للتسوية
 - تقارير مفصلة بالرسوم البيانية
 - دعوة الأصدقاء برابط أو QR
-- يعمل بدون إنترنت (PWA)
 - ديفيزو متوفر على [App Store](https://apps.apple.com/app/id6761329043) لأجهزة iPhone وiPad
 
 **العيوب:**
@@ -13299,7 +13298,6 @@ Every time you go out with friends or travel with family, splitting expenses bec
 - Smart settlement notifications
 - Detailed reports with charts
 - Invite friends via link or QR
-- Works offline (PWA)
 - Diviso is available on the [App Store](https://apps.apple.com/app/id6761329043) for iPhone and iPad
 
 **Cons:**
@@ -13693,7 +13691,7 @@ The pioneer of expense splitting. Splitwise has a large user base and solid func
 
 **Pros:**
 - ✅ Large user base
-- ✅ Available on iOS (App Store) and web — Android coming soon
+- ✅ Available on iOS (App Store) and web
 - ✅ Good group management
 
 **Cons:**

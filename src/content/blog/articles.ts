@@ -314,13 +314,13 @@ There's no absolute winner among Splitwise, Tricount, and Diviso; the right choi
 ## مقارنة أشهر تطبيقات تقسيم الفاتورة
 
 ### Splitwise
-- **دعم العربية**: واجهة إنجليزية أساساً؛ لا تتوفر واجهة عربية أصلية بتصميم RTL كامل
-- **الريال السعودي**: يمكن إضافته كعملة ضمن دعم العملات المتعددة، لكنه ليس العملة الافتراضية المصممة حولها الواجهة
+- **دعم العربية**: لمعرفة اللغات المتاحة، راجع صفحة التطبيق في متجر التطبيقات
+- **الريال السعودي**: يمكن إضافته كعملة ضمن دعم العملات المتعددة
 - **آيفون**: يتوفر تطبيق مخصص على App Store
 
 ### Tricount
-- **دعم العربية**: يدعم عدداً من اللغات الأوروبية بشكل أساسي؛ لا يتوفر دعم عربي أصلي
-- **الريال السعودي**: يمكن استخدامه كعملة ضمن التعدد، دون تركيز أساسي عليه
+- **دعم العربية**: لمعرفة اللغات المتاحة، راجع صفحة التطبيق في متجر التطبيقات
+- **الريال السعودي**: يمكن استخدامه كعملة ضمن تعدد العملات
 - **آيفون**: يتوفر تطبيق مخصص على App Store
 
 ### Settle Up
@@ -397,13 +397,13 @@ When searching for a "bill-splitting app," most well-known options in this space
 ## Comparing the Most Common Bill-Splitting Apps
 
 ### Splitwise
-- **Arabic support**: English-first interface; no fully native RTL Arabic interface is available
-- **Saudi Riyal**: can be added as a currency within multi-currency support, but it isn't the default currency the interface is designed around
+- **Arabic support**: check the app's App Store page for its available languages
+- **Saudi Riyal**: can be added as a currency within multi-currency support
 - **iPhone**: a dedicated app is available on the App Store
 
 ### Tricount
-- **Arabic support**: primarily supports a number of European languages; no native Arabic support is available
-- **Saudi Riyal**: usable as a currency within multi-currency support, without being a primary focus
+- **Arabic support**: check the app's App Store page for its available languages
+- **Saudi Riyal**: usable as a currency within multi-currency support
 - **iPhone**: a dedicated app is available on the App Store
 
 ### Settle Up
@@ -11526,21 +11526,19 @@ Splitting expenses doesn't have to be complicated. With advance planning and the
 
 | الميزة | التقييم |
 |--------|---------|
-| دعم العربية | ❌ لا |
-| الريال السعودي | ⚠️ جزئي |
 | واجهة سهلة | ✅ جيدة |
 
 ### 3. Tricount
 
 | الميزة | التقييم |
 |--------|---------|
-| دعم العربية | ❌ لا |
-| الريال السعودي | ✅ نعم |
 | واجهة سهلة | ✅ جيدة |
+
+لمعرفة اللغات والعملات المتاحة في Splitwise و Tricount، راجع صفحتهما في متجر التطبيقات.
 
 ## لماذا Diviso يناسب السعودية؟
 
-1. **اللغة**: التطبيق الوحيد بواجهة عربية كاملة
+1. **اللغة**: واجهة عربية كاملة
 2. **العملة**: الريال السعودي افتراضياً
 3. **الثقافة**: مصمم لفهم احتياجات المستخدم السعودي
 4. **الدعم**: فريق دعم عربي
@@ -11585,21 +11583,19 @@ Looking for the best expense splitting app in Saudi Arabia? In this article, we 
 
 | Feature | Rating |
 |---------|--------|
-| Arabic Support | ❌ No |
-| Saudi Riyal | ⚠️ Partial |
 | Easy Interface | ✅ Good |
 
 ### 3. Tricount
 
 | Feature | Rating |
 |---------|--------|
-| Arabic Support | ❌ No |
-| Saudi Riyal | ✅ Yes |
 | Easy Interface | ✅ Good |
+
+To see the languages and currencies available in Splitwise and Tricount, check their App Store pages.
 
 ## Why Diviso Fits Saudi Arabia?
 
-1. **Language**: The only app with a complete Arabic interface
+1. **Language**: A complete Arabic interface
 2. **Currency**: Saudi Riyal by default
 3. **Culture**: Designed to understand Saudi user needs
 4. **Support**: Arabic support team
@@ -12893,8 +12889,6 @@ Splitting restaurant bills doesn't have to be awkward. With Diviso, log, split, 
 - **المميز**: مصمم للسعودية، واجهة عربية، دعم فوري
 
 ### Splitwise
-- **اللغة**: إنجليزي فقط
-- **العملة**: دولار افتراضياً
 - **المميز**: شهرة عالمية
 - **السعر**: مدفوع للميزات الكاملة
 
@@ -12961,8 +12955,6 @@ Whether it's Umrah, a Dubai trip, or camping with friends — organizing expense
 - **Highlight**: Designed for Saudi Arabia, Arabic interface, instant support
 
 ### Splitwise
-- **Language**: English only
-- **Currency**: USD default
 - **Highlight**: Global popularity
 - **Price**: Paid for full features
 
@@ -13229,8 +13221,6 @@ Calculating monthly expenses isn't hard — it just needs simple commitment. Sta
 - تكامل مع PayPal وVenmo
 
 **العيوب:**
-- لا يدعم العربية
-- الريال السعودي مو افتراضي
 - النسخة المجانية محدودة جداً
 - الإعلانات مزعجة
 
@@ -13244,7 +13234,6 @@ Calculating monthly expenses isn't hard — it just needs simple commitment. Sta
 - بدون تسجيل
 
 **العيوب:**
-- لا يدعم العربية
 - ميزات محدودة
 - بدون إشعارات ذكية
 
@@ -13266,8 +13255,6 @@ Calculating monthly expenses isn't hard — it just needs simple commitment. Sta
 
 | الميزة | Diviso | Splitwise | Tricount |
 |--------|--------|-----------|----------|
-| العربية | ✅ | ❌ | ❌ |
-| الريال SAR | ✅ | ⚠️ | ✅ |
 | تقسيم ذكي | ✅ | ✅ | ⚠️ |
 | تذكيرات | ✅ | ✅ | ❌ |
 | تقارير | ✅ | ✅ | ⚠️ |
@@ -13328,8 +13315,6 @@ Every time you go out with friends or travel with family, splitting expenses bec
 - PayPal and Venmo integration
 
 **Cons:**
-- No Arabic support
-- SAR not default currency
 - Very limited free version
 - Annoying ads
 
@@ -13343,7 +13328,6 @@ Every time you go out with friends or travel with family, splitting expenses bec
 - No registration required
 
 **Cons:**
-- No Arabic support
 - Limited features
 - No smart notifications
 
@@ -13365,8 +13349,6 @@ Every time you go out with friends or travel with family, splitting expenses bec
 
 | Feature | Diviso | Splitwise | Tricount |
 |---------|--------|-----------|----------|
-| Arabic | ✅ | ❌ | ❌ |
-| SAR | ✅ | ⚠️ | ✅ |
 | Smart Split | ✅ | ✅ | ⚠️ |
 | Reminders | ✅ | ✅ | ❌ |
 | Reports | ✅ | ✅ | ⚠️ |
@@ -13911,8 +13893,6 @@ Splitwise تطبيق مشهور لتتبع وتقسيم المصاريف الج�
 
 ### لماذا يبحث المستخدمون العرب عن بديل لـ Splitwise؟
 
-- **دعم عربي محدود**: واجهة Splitwise الأساسية مبنية بالإنجليزية أولاً، والترجمة العربية فيها ليست دائماً طبيعية في الاستخدام اليومي
-- **التعامل بالريال السعودي أو عملات خليجية أخرى** ليس تجربة أساسية مركزية في تصميم التطبيق
 - **سيناريوهات تقسيم محلية مألوفة** (كالنقوط في الأعراس أو الجمعيات الدورية) لا تجد دائماً قالباً جاهزاً يناسبها
 
 ## مزايا محايدة لبديل عربي مثل Diviso

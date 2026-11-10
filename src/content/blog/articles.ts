@@ -225,7 +225,7 @@ Tricount مصمم أساساً حول هذا النوع من الاستخدام 
 
 لا يوجد فائز مطلق بين Splitwise و Tricount و Diviso؛ الاختيار يعتمد على طبيعة مجموعتك (دائمة أم لمناسبة واحدة) ولغتك المفضلة وعملتك الأساسية. من يحتاج الجمع بين الاستخدامين بواجهة عربية أصلية والريال مباشرة يجد في Diviso خياراً يغطي الحالتين معاً.
 
-**جرب Diviso الآن وقسّم مصاريفك سواء كانت لمجموعة دائمة أو لمناسبة واحدة، بواجهة عربية أصلية وريال سعودي مباشر.**
+**سوّ مجموعتك في Diviso الآن وأضف أول مصروف.**
     `,
     contentEn: `
 ## Quick Answer
@@ -288,7 +288,7 @@ Tricount is built primarily around this exact use case (a single event with a st
 
 There's no absolute winner among Splitwise, Tricount, and Diviso; the right choice depends on your group's nature (ongoing or single-event), your preferred language, and your primary currency. Anyone who needs both usage patterns covered with a native Arabic interface and the riyal directly will find Diviso an option that handles both cases at once.
 
-**Try Diviso now and split expenses whether it's for an ongoing group or a single event, with a native Arabic interface and direct Saudi Riyal support.**
+**Create your group in Diviso now and add your first expense.**
     `
   },
   {

@@ -354,7 +354,21 @@
     "join_error": "خطأ في الانضمام للمجموعة",
     "join_error_desc": "تحقق من صلاحية رابط الدعوة. إذا كان لديك رابط إحالة (/join/...)، فهو مخصص للأشخاص الجدد فقط.",
     "download_app": "حمّل التطبيق",
-    "continue_in_browser": "المتابعة عبر المتصفح"
+    "continue_in_browser": "المتابعة عبر المتصفح",
+    "inviter_invited_you": "{{name}} دعاك",
+    "member_count_zero": "بدون أعضاء",
+    "member_count_one": "عضو واحد",
+    "member_count_two": "عضوين",
+    "member_count_few": "{{count}} أعضاء",
+    "member_count_many": "{{count}} عضو",
+    "member_count_other": "{{count}} عضو",
+    "invite_pitch": "قسّموا المصاريف بدون تعقيد، وكل واحد يعرف كم له وكم عليه.",
+    "invite_value_log": "كل واحد يسجّل مصروفه بثواني",
+    "invite_value_balance": "يبيّن مين له ومين عليه بدون حسبة",
+    "invite_value_settle": "تسوية بأقل عدد تحويلات",
+    "join_with_apple": "انضم بحساب Apple",
+    "accept_in_app": "حمّل تطبيق ديفيزو وافتح رابط الدعوة من جوالك للانضمام للمجموعة.",
+    "split_fairly": "قسّم بذكاء"
   },
 
   "status": {

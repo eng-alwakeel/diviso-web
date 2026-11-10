@@ -13350,7 +13350,6 @@ Every time you go out with friends or travel with family, splitting expenses bec
 | Smart Split | ✅ | ✅ | ⚠️ |
 | Reminders | ✅ | ✅ | ❌ |
 | Reports | ✅ | ✅ | ⚠️ |
-| Offline | ✅ | ❌ | ❌ |
 
 ## Final Recommendation
 
@@ -14138,7 +14137,6 @@ This process takes 10 minutes instead of the usual hours of spreadsheet wranglin
 [Diviso](/travel-expense-splitter) was designed with group travel in mind:
 
 - **Multi-currency support** — Log expenses in any currency
-- **Offline mode** — Works without WiFi
 - **Smart settlements** — Minimum transfers to settle all debts
 - **Trip timeline** — See every expense chronologically
 - **Category tracking** — Breakdown by flights, hotels, food, activities

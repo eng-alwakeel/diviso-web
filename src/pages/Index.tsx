@@ -10,9 +10,7 @@ import { useGoogleOneTap } from "@/hooks/useGoogleOneTap";
 // Lazy load below-the-fold components for faster FCP
 const AnimatedHowItWorks = lazy(() => import("@/components/landing/AnimatedHowItWorks").then(m => ({ default: m.AnimatedHowItWorks })));
 const FeaturesSection = lazy(() => import("@/components/FeaturesSection").then(m => ({ default: m.FeaturesSection })));
-const TestimonialsSection = lazy(() => import("@/components/landing/TestimonialsSection").then(m => ({ default: m.TestimonialsSection })));
 const QuickStartSection = lazy(() => import("@/components/landing/QuickStartSection").then(m => ({ default: m.QuickStartSection })));
-const PricingSection = lazy(() => import("@/components/PricingSection").then(m => ({ default: m.PricingSection })));
 const FAQSection = lazy(() => import("@/components/landing/FAQSection").then(m => ({ default: m.FAQSection })));
 
 // Import non-lazy for above-the-fold
@@ -109,9 +107,7 @@ const Index = () => {
       <Suspense fallback={<BelowFoldSkeleton />}>
         <AnimatedHowItWorks />
         <FeaturesSection />
-        <TestimonialsSection />
         <QuickStartSection />
-        <PricingSection />
         <FAQSection />
       </Suspense>
       <Footer />

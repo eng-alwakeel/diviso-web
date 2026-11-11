@@ -1,14 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { 
-  Users, 
-  Calculator, 
-  Brain, 
-  PieChart, 
-  Camera,
-  MessageCircle,
-  Gem,
-  Shield
-} from "lucide-react";
+import { Users, Calculator, MessageCircle, Shield, UserCheck, CheckCircle2, Scale, Wallet } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 export const FeaturesSection = () => {
@@ -26,17 +17,17 @@ export const FeaturesSection = () => {
       description: t('features.smartSplit.description')
     },
     {
-      icon: Brain,
+      icon: UserCheck,
       title: t('features.ai.title'),
       description: t('features.ai.description')
     },
     {
-      icon: Camera,
+      icon: CheckCircle2,
       title: t('features.receiptScan.title'),
       description: t('features.receiptScan.description')
     },
     {
-      icon: PieChart,
+      icon: Scale,
       title: t('features.reports.title'),
       description: t('features.reports.description')
     },
@@ -46,7 +37,7 @@ export const FeaturesSection = () => {
       description: t('features.chat.description')
     },
     {
-      icon: Gem,
+      icon: Wallet,
       title: t('features.referral.title'),
       description: t('features.referral.description')
     },

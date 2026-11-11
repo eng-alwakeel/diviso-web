@@ -1,28 +1,14 @@
 import { Button } from "@/components/ui/button";
-import { ChevronDown, ShieldCheck } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import { useGoogleAnalytics } from "@/hooks/useGoogleAnalytics";
-import { useFoundingProgram } from "@/hooks/useFoundingProgram";
-import { useFoundingUser } from "@/hooks/useFoundingUser";
-import { supabase } from "@/integrations/supabase/client";
 
 export const HeroSection = () => {
   const { t, i18n } = useTranslation('landing');
   const { trackClickCTA } = useGoogleAnalytics();
-  const { remaining, isClosed } = useFoundingProgram();
   const isRTL = i18n.language === 'ar';
   const [showScrollArrow, setShowScrollArrow] = useState(true);
-  const [userId, setUserId] = useState<string | undefined>();
-
-  useEffect(() => {
-    supabase.auth.getSession().then(({ data }) => setUserId(data.session?.user?.id));
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_, session) => setUserId(session?.user?.id));
-    return () => subscription.unsubscribe();
-  }, []);
-
-  const { isFoundingUser } = useFoundingUser(userId);
-
   useEffect(() => {
     const handleScroll = () => {
       setShowScrollArrow(window.scrollY < 100);
@@ -65,30 +51,6 @@ export const HeroSection = () => {
             {t('hero.valueDesc')}
           </p>
 
-          {/* Founding Program Banner */}
-          {!isClosed && (
-            <div className="mb-4 bg-gradient-to-r from-amber-500/20 via-amber-400/10 to-amber-500/20 border border-amber-400/30 rounded-xl px-5 py-4 backdrop-blur-sm max-w-md mx-auto space-y-1.5">
-              <p className="text-base font-bold text-amber-200 leading-snug">
-                {isFoundingUser
-                  ? (isRTL ? '👑 أنت من أوائل المستخدمين في Diviso' : '👑 You are one of Diviso\'s founding users')
-                  : (isRTL ? '👑 احجز مكانك ضمن أول 1000 مستخدم في Diviso' : '👑 Reserve your spot among Diviso\'s first 1,000 users')
-                }
-              </p>
-              <p className="text-sm text-amber-300/80">
-                {isRTL 
-                  ? 'واحصل على مزايا حصرية كمستخدم مؤسس'
-                  : 'Get exclusive perks as a founding user'
-                }
-              </p>
-              <p className="text-xs text-amber-200/70">
-                {isRTL 
-                  ? <>⏳ متبقي <span className="font-bold text-amber-200">{remaining}</span> من 1000 مقعد</>
-                  : <>⏳ <span className="font-bold text-amber-200">{remaining}</span> of 1,000 spots remaining</>
-                }
-              </p>
-            </div>
-          )}
-
           {/* CTA Button */}
           <div className="mb-8">
             <Button 
@@ -104,15 +66,6 @@ export const HeroSection = () => {
             </Button>
           </div>
 
-          {/* Security Badge */}
-          <div className="flex items-center justify-center gap-2">
-            <div className="flex items-center gap-1.5 bg-green-500/20 backdrop-blur-sm px-3 py-1.5 rounded-full border border-green-500/30">
-              <ShieldCheck className="w-4 h-4 text-green-400" />
-              <span className="text-xs font-medium text-green-300">
-                {isRTL ? 'آمن 100%' : '100% Secure'}
-              </span>
-            </div>
-          </div>
         </div>
       </div>
 

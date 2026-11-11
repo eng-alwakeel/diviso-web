@@ -51,10 +51,10 @@ export const landingPagesData: LandingPageData[] = [
     exampleBeforeEn: 'Ahmed paid for the hotel, Saad paid for food, Khalid paid for transport... who pays who?',
     exampleAfter: 'Diviso يقول: أحمد له 450 ر.س، سعد عليه 200 ر.س، خالد عليه 250 ر.س',
     exampleAfterEn: 'Diviso says: Ahmed is owed 450 SAR, Saad owes 200 SAR, Khalid owes 250 SAR',
-    ctaText: 'سجّل الآن - مجاناً',
-    ctaTextEn: 'Sign Up Now - Free',
-    ctaSubtext: 'آمن ومجاني - بدون بطاقة ائتمان',
-    ctaSubtextEn: 'Safe and free - no credit card required'
+    ctaText: 'سجّل الآن',
+    ctaTextEn: 'Sign Up Now',
+    ctaSubtext: 'حمّل من App Store',
+    ctaSubtextEn: 'Download on the App Store'
   },
   {
     slug: 'friends',
@@ -80,10 +80,10 @@ export const landingPagesData: LandingPageData[] = [
     exampleBeforeEn: 'Mohammed always pays at restaurants... and can\'t ask for his money back',
     exampleAfter: 'الكل يشوف الأرقام بوضوح، ولا أحد يحتاج يطلب شي',
     exampleAfterEn: 'Everyone sees the numbers clearly, no one needs to ask for anything',
-    ctaText: 'سجّل الآن - مجاناً',
-    ctaTextEn: 'Sign Up Now - Free',
-    ctaSubtext: 'آمن ومجاني - بدون بطاقة ائتمان',
-    ctaSubtextEn: 'Safe and free - no credit card required'
+    ctaText: 'سجّل الآن',
+    ctaTextEn: 'Sign Up Now',
+    ctaSubtext: 'حمّل من App Store',
+    ctaSubtextEn: 'Download on the App Store'
   },
   {
     slug: 'shared-housing',
@@ -109,10 +109,10 @@ export const landingPagesData: LandingPageData[] = [
     exampleBeforeEn: 'Fahad paid electricity for 3 months straight... and others say "we\'ll transfer it"',
     exampleAfter: 'كل شخص يشوف رصيده الشهري ويعرف متى يسدد',
     exampleAfterEn: 'Everyone sees their monthly balance and knows when to pay',
-    ctaText: 'سجّل الآن - مجاناً',
-    ctaTextEn: 'Sign Up Now - Free',
-    ctaSubtext: 'آمن ومجاني - بدون بطاقة ائتمان',
-    ctaSubtextEn: 'Safe and free - no credit card required'
+    ctaText: 'سجّل الآن',
+    ctaTextEn: 'Sign Up Now',
+    ctaSubtext: 'حمّل من App Store',
+    ctaSubtextEn: 'Download on the App Store'
   },
   // Behavioral Use Cases
   {
@@ -139,10 +139,10 @@ export const landingPagesData: LandingPageData[] = [
     exampleBeforeEn: 'Camp with 20 people... receipts got lost and no one knows how much we spent',
     exampleAfter: 'كل المصاريف مسجلة، والتقسيم جاهز بضغطة زر',
     exampleAfterEn: 'All expenses recorded, and the split is ready with one click',
-    ctaText: 'سجّل الآن - مجاناً',
-    ctaTextEn: 'Sign Up Now - Free',
-    ctaSubtext: 'آمن ومجاني - بدون بطاقة ائتمان',
-    ctaSubtextEn: 'Safe and free - no credit card required'
+    ctaText: 'سجّل الآن',
+    ctaTextEn: 'Sign Up Now',
+    ctaSubtext: 'حمّل من App Store',
+    ctaSubtextEn: 'Download on the App Store'
   },
   {
     slug: 'groups',
@@ -168,10 +168,10 @@ export const landingPagesData: LandingPageData[] = [
     exampleBeforeEn: 'Trip with 15 people... in the end everyone says "I paid more"',
     exampleAfter: 'الأرقام واضحة للجميع، لا مجال للجدل',
     exampleAfterEn: 'Numbers are clear for everyone, no room for debate',
-    ctaText: 'سجّل الآن - مجاناً',
-    ctaTextEn: 'Sign Up Now - Free',
-    ctaSubtext: 'آمن ومجاني - بدون بطاقة ائتمان',
-    ctaSubtextEn: 'Safe and free - no credit card required'
+    ctaText: 'سجّل الآن',
+    ctaTextEn: 'Sign Up Now',
+    ctaSubtext: 'حمّل من App Store',
+    ctaSubtextEn: 'Download on the App Store'
   },
   {
     slug: 'who-paid-more',
@@ -197,10 +197,10 @@ export const landingPagesData: LandingPageData[] = [
     exampleBeforeEn: '"I always pay for food!" - "And I pay for gas!"',
     exampleAfter: 'التقرير يقول: سعيد دفع 2,340 ر.س، محمد دفع 1,890 ر.س',
     exampleAfterEn: 'Report says: Saeed paid 2,340 SAR, Mohammed paid 1,890 SAR',
-    ctaText: 'سجّل الآن - مجاناً',
-    ctaTextEn: 'Sign Up Now - Free',
-    ctaSubtext: 'آمن ومجاني - بدون بطاقة ائتمان',
-    ctaSubtextEn: 'Safe and free - no credit card required'
+    ctaText: 'سجّل الآن',
+    ctaTextEn: 'Sign Up Now',
+    ctaSubtext: 'حمّل من App Store',
+    ctaSubtextEn: 'Download on the App Store'
   },
   // Pain-Driven
   {
@@ -214,12 +214,10 @@ export const landingPagesData: LandingPageData[] = [
     solutionTitle: 'الحل مع Diviso',
     solutionTitleEn: 'The Solution with Diviso',
     solutionPoints: [
-      'التطبيق يُذكّر الجميع تلقائياً',
       'لا تحتاج تطلب من أحد',
       'كل شخص يشوف رصيده ويسدد'
     ],
     solutionPointsEn: [
-      'The app reminds everyone automatically',
       'You don\'t need to ask anyone',
       'Everyone sees their balance and pays'
     ],
@@ -227,10 +225,10 @@ export const landingPagesData: LandingPageData[] = [
     exampleBeforeEn: 'Paid 500 SAR for dinner... 3 weeks passed and no one paid me back',
     exampleAfter: 'الكل يشوف إنه عليهم 100 ريال لك، ويسددون بدون ما تتكلم',
     exampleAfterEn: 'Everyone sees they owe you 100 SAR, and pays without you saying a word',
-    ctaText: 'سجّل الآن - مجاناً',
-    ctaTextEn: 'Sign Up Now - Free',
-    ctaSubtext: 'آمن ومجاني - بدون بطاقة ائتمان',
-    ctaSubtextEn: 'Safe and free - no credit card required'
+    ctaText: 'سجّل الآن',
+    ctaTextEn: 'Sign Up Now',
+    ctaSubtext: 'حمّل من App Store',
+    ctaSubtextEn: 'Download on the App Store'
   },
   // Educational
   {
@@ -259,8 +257,8 @@ export const landingPagesData: LandingPageData[] = [
     exampleAfterEn: 'One app, everything recorded, and calculations are automatic',
     ctaText: 'جرّب الآن',
     ctaTextEn: 'Try Now',
-    ctaSubtext: 'مجاني بالكامل - سجّل في 30 ثانية',
-    ctaSubtextEn: 'Completely free - sign up in 30 seconds'
+    ctaSubtext: 'حمّل من App Store',
+    ctaSubtextEn: 'Download on the App Store'
   },
   {
     slug: 'vs-notes-whatsapp',
@@ -273,12 +271,10 @@ export const landingPagesData: LandingPageData[] = [
     solutionTitle: 'مميزات Diviso',
     solutionTitleEn: 'Diviso Features',
     solutionPoints: [
-      'كل شي محفوظ في السحابة - ما يضيع',
       'الحسابات تلقائية - ما في أخطاء',
       'الكل يشوف نفس الأرقام - ما في جدال'
     ],
     solutionPointsEn: [
-      'Everything saved in the cloud - never lost',
       'Calculations are automatic - no errors',
       'Everyone sees the same numbers - no debate'
     ],
@@ -288,8 +284,8 @@ export const landingPagesData: LandingPageData[] = [
     exampleAfterEn: 'Everyone opens Diviso and sees their current balance instantly',
     ctaText: 'جرّب الفرق',
     ctaTextEn: 'Try the Difference',
-    ctaSubtext: 'مجاني بالكامل - بدون بطاقة ائتمان',
-    ctaSubtextEn: 'Completely free - no credit card required'
+    ctaSubtext: 'حمّل من App Store',
+    ctaSubtextEn: 'Download on the App Store'
   }
 ];
 

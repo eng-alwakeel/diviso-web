@@ -264,8 +264,8 @@ export const landingPagesData: LandingPageData[] = [
   },
   {
     slug: 'vs-notes-whatsapp',
-    heroTitle: 'ليش Diviso أفضل من الواتساب والنوتة؟',
-    heroTitleEn: 'Why is Diviso better than WhatsApp and notes?',
+    heroTitle: 'Diviso مقابل الواتساب والنوتة',
+    heroTitleEn: 'Diviso vs. WhatsApp and notes',
     problemTitle: 'الطرق القديمة',
     problemTitleEn: 'Old Methods',
     problemDescription: 'الواتساب: الرسائل تضيع. النوتة: تنسى تحدّثها. الورقة: تضيع أو تتلف.',

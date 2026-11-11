@@ -79,7 +79,6 @@ export const useCases: UseCase[] = [
     ],
     faqs: [
       { question: 'هل يحتاج الجميع حساب في Diviso؟', answer: 'لا، يمكنك إضافة أعضاء بدون حساب ومشاركة رابط المجموعة معهم.' },
-      { question: 'هل يدعم Diviso عملات متعددة؟', answer: 'نعم، يدعم Diviso أكثر من 30 عملة مع تحويل تلقائي.' },
       { question: 'ماذا لو دفع شخص واحد كل المصاريف؟', answer: 'سيظهر الرصيد المستحق له من كل عضو تلقائيًا.' },
       { question: 'ما أفضل طريقة لتقسيم تكاليف الرحلة الجماعية؟', answer: 'أفضل طريقة هي استخدام تطبيق يسجل كل مصروف فور حدوثه ويقسمه تلقائياً بين المسافرين. Diviso يتيح لكل شخص إضافة المصاريف ويحسب الفرق بدقة.' },
       { question: 'كيف نعرف مين دفع أكثر في الرحلة؟', answer: 'كل مصروف يُسجّل مع اسم الدافع تلقائياً. التطبيق يحسب إجمالي ما دفعه كل شخص ويعرض الفرق من شاشة الرصيد بضغطة واحدة.' },
@@ -88,7 +87,6 @@ export const useCases: UseCase[] = [
     ],
     faqsEn: [
       { question: 'Does everyone need a Diviso account?', answer: 'No, you can add members without an account and share the group link with them.' },
-      { question: 'Does Diviso support multiple currencies?', answer: 'Yes, Diviso supports over 30 currencies with automatic conversion.' },
       { question: 'What if one person paid all expenses?', answer: 'The amount owed to them from each member will be shown automatically.' },
       { question: 'What is the best way to split group trip costs?', answer: 'The best way is to use an app that records each expense as it happens and splits it automatically. Diviso lets everyone add expenses and calculates the difference accurately.' },
       { question: 'How do we know who paid more on the trip?', answer: 'Each expense is recorded with the payer\'s name automatically. The app calculates totals and shows the difference from the balance screen with one tap.' },

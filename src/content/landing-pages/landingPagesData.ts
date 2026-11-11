@@ -51,10 +51,10 @@ export const landingPagesData: LandingPageData[] = [
     exampleBeforeEn: 'Ahmed paid for the hotel, Saad paid for food, Khalid paid for transport... who pays who?',
     exampleAfter: 'Diviso يقول: أحمد له 450 ر.س، سعد عليه 200 ر.س، خالد عليه 250 ر.س',
     exampleAfterEn: 'Diviso says: Ahmed is owed 450 SAR, Saad owes 200 SAR, Khalid owes 250 SAR',
-    ctaText: 'سجّل الآن - مجاناً',
-    ctaTextEn: 'Sign Up Now - Free',
-    ctaSubtext: 'آمن ومجاني - بدون بطاقة ائتمان',
-    ctaSubtextEn: 'Safe and free - no credit card required'
+    ctaText: 'سجّل الآن',
+    ctaTextEn: 'Sign Up Now',
+    ctaSubtext: 'حمّل من App Store',
+    ctaSubtextEn: 'Download on the App Store'
   },
   {
     slug: 'friends',
@@ -80,10 +80,10 @@ export const landingPagesData: LandingPageData[] = [
     exampleBeforeEn: 'Mohammed always pays at restaurants... and can\'t ask for his money back',
     exampleAfter: 'الكل يشوف الأرقام بوضوح، ولا أحد يحتاج يطلب شي',
     exampleAfterEn: 'Everyone sees the numbers clearly, no one needs to ask for anything',
-    ctaText: 'سجّل الآن - مجاناً',
-    ctaTextEn: 'Sign Up Now - Free',
-    ctaSubtext: 'آمن ومجاني - بدون بطاقة ائتمان',
-    ctaSubtextEn: 'Safe and free - no credit card required'
+    ctaText: 'سجّل الآن',
+    ctaTextEn: 'Sign Up Now',
+    ctaSubtext: 'حمّل من App Store',
+    ctaSubtextEn: 'Download on the App Store'
   },
   {
     slug: 'shared-housing',
@@ -107,12 +107,12 @@ export const landingPagesData: LandingPageData[] = [
     ],
     exampleBefore: 'فهد دفع الكهرباء 3 شهور متتالية... والباقين "بنحولها لك"',
     exampleBeforeEn: 'Fahad paid electricity for 3 months straight... and others say "we\'ll transfer it"',
-    exampleAfter: 'كل شخص يشوف رصيده الشهري ويعرف متى يسدد',
-    exampleAfterEn: 'Everyone sees their monthly balance and knows when to pay',
-    ctaText: 'سجّل الآن - مجاناً',
-    ctaTextEn: 'Sign Up Now - Free',
-    ctaSubtext: 'آمن ومجاني - بدون بطاقة ائتمان',
-    ctaSubtextEn: 'Safe and free - no credit card required'
+    exampleAfter: 'كل شخص يشوف رصيده ويعرف كم عليه ولمين',
+    exampleAfterEn: 'Everyone sees their balance and knows how much they owe and to whom',
+    ctaText: 'سجّل الآن',
+    ctaTextEn: 'Sign Up Now',
+    ctaSubtext: 'حمّل من App Store',
+    ctaSubtextEn: 'Download on the App Store'
   },
   // Behavioral Use Cases
   {
@@ -126,23 +126,23 @@ export const landingPagesData: LandingPageData[] = [
     solutionTitle: 'الحل مع Diviso',
     solutionTitleEn: 'The Solution with Diviso',
     solutionPoints: [
-      'سجّل مصاريف النشاط لحظياً',
-      'شوف الإجمالي في أي وقت',
+      'سجّل مصاريف النشاط أول بأول',
+      'شوف كم لك وكم عليك في أي وقت',
       'قسّم على المشاركين بعدالة'
     ],
     solutionPointsEn: [
-      'Record activity expenses in real-time',
-      'See the total at any time',
+      'Record activity expenses as they happen',
+      'See what you\'re owed and what you owe at any time',
       'Split fairly among participants'
     ],
     exampleBefore: 'مخيم 20 شخص... ضاعت الفواتير وما أحد يعرف كم صرفنا',
     exampleBeforeEn: 'Camp with 20 people... receipts got lost and no one knows how much we spent',
-    exampleAfter: 'كل المصاريف مسجلة، والتقسيم جاهز بضغطة زر',
-    exampleAfterEn: 'All expenses recorded, and the split is ready with one click',
-    ctaText: 'سجّل الآن - مجاناً',
-    ctaTextEn: 'Sign Up Now - Free',
-    ctaSubtext: 'آمن ومجاني - بدون بطاقة ائتمان',
-    ctaSubtextEn: 'Safe and free - no credit card required'
+    exampleAfter: 'كل المصاريف مسجلة، والأرصدة واضحة: مين يحوّل لمين',
+    exampleAfterEn: 'All expenses recorded, and balances show who pays whom',
+    ctaText: 'سجّل الآن',
+    ctaTextEn: 'Sign Up Now',
+    ctaSubtext: 'حمّل من App Store',
+    ctaSubtextEn: 'Download on the App Store'
   },
   {
     slug: 'groups',
@@ -168,10 +168,10 @@ export const landingPagesData: LandingPageData[] = [
     exampleBeforeEn: 'Trip with 15 people... in the end everyone says "I paid more"',
     exampleAfter: 'الأرقام واضحة للجميع، لا مجال للجدل',
     exampleAfterEn: 'Numbers are clear for everyone, no room for debate',
-    ctaText: 'سجّل الآن - مجاناً',
-    ctaTextEn: 'Sign Up Now - Free',
-    ctaSubtext: 'آمن ومجاني - بدون بطاقة ائتمان',
-    ctaSubtextEn: 'Safe and free - no credit card required'
+    ctaText: 'سجّل الآن',
+    ctaTextEn: 'Sign Up Now',
+    ctaSubtext: 'حمّل من App Store',
+    ctaSubtextEn: 'Download on the App Store'
   },
   {
     slug: 'who-paid-more',
@@ -184,23 +184,23 @@ export const landingPagesData: LandingPageData[] = [
     solutionTitle: 'الحل مع Diviso',
     solutionTitleEn: 'The Solution with Diviso',
     solutionPoints: [
-      'كل مصروف مسجّل بالتاريخ والمبلغ',
-      'تقرير واضح لكل شخص',
+      'كل مصروف مسجّل بالمبلغ ومين دفعه',
+      'صفحة لكل عضو',
       'الأرقام تتكلم بدل الجدال'
     ],
     solutionPointsEn: [
-      'Every expense recorded with date and amount',
-      'Clear report for each person',
+      'Every expense recorded with the amount and who paid',
+      'A page for each member',
       'Numbers speak instead of arguments'
     ],
     exampleBefore: '"أنا دايم أدفع للأكل!" - "وأنا أدفع للبنزين!"',
     exampleBeforeEn: '"I always pay for food!" - "And I pay for gas!"',
-    exampleAfter: 'التقرير يقول: سعيد دفع 2,340 ر.س، محمد دفع 1,890 ر.س',
-    exampleAfterEn: 'Report says: Saeed paid 2,340 SAR, Mohammed paid 1,890 SAR',
-    ctaText: 'سجّل الآن - مجاناً',
-    ctaTextEn: 'Sign Up Now - Free',
-    ctaSubtext: 'آمن ومجاني - بدون بطاقة ائتمان',
-    ctaSubtextEn: 'Safe and free - no credit card required'
+    exampleAfter: 'الأرصدة تقول: سعيد له 225 ر.س، ومحمد عليه 225 ر.س',
+    exampleAfterEn: 'Balances say: Saeed is owed 225 SAR, Mohammed owes 225 SAR',
+    ctaText: 'سجّل الآن',
+    ctaTextEn: 'Sign Up Now',
+    ctaSubtext: 'حمّل من App Store',
+    ctaSubtextEn: 'Download on the App Store'
   },
   // Pain-Driven
   {
@@ -214,12 +214,10 @@ export const landingPagesData: LandingPageData[] = [
     solutionTitle: 'الحل مع Diviso',
     solutionTitleEn: 'The Solution with Diviso',
     solutionPoints: [
-      'التطبيق يُذكّر الجميع تلقائياً',
       'لا تحتاج تطلب من أحد',
       'كل شخص يشوف رصيده ويسدد'
     ],
     solutionPointsEn: [
-      'The app reminds everyone automatically',
       'You don\'t need to ask anyone',
       'Everyone sees their balance and pays'
     ],
@@ -227,10 +225,10 @@ export const landingPagesData: LandingPageData[] = [
     exampleBeforeEn: 'Paid 500 SAR for dinner... 3 weeks passed and no one paid me back',
     exampleAfter: 'الكل يشوف إنه عليهم 100 ريال لك، ويسددون بدون ما تتكلم',
     exampleAfterEn: 'Everyone sees they owe you 100 SAR, and pays without you saying a word',
-    ctaText: 'سجّل الآن - مجاناً',
-    ctaTextEn: 'Sign Up Now - Free',
-    ctaSubtext: 'آمن ومجاني - بدون بطاقة ائتمان',
-    ctaSubtextEn: 'Safe and free - no credit card required'
+    ctaText: 'سجّل الآن',
+    ctaTextEn: 'Sign Up Now',
+    ctaSubtext: 'حمّل من App Store',
+    ctaSubtextEn: 'Download on the App Store'
   },
   // Educational
   {
@@ -245,12 +243,12 @@ export const landingPagesData: LandingPageData[] = [
     solutionTitleEn: 'Just 3 Steps',
     solutionPoints: [
       'أنشئ قروب وأضف أصدقاءك',
-      'سجّل أي مصروف بضغطة واحدة',
+      'سجّل أي مصروف: المبلغ ومين دفعه',
       'شوف من عليه كم - بالأرقام'
     ],
     solutionPointsEn: [
       'Create a group and add your friends',
-      'Record any expense with one tap',
+      'Record any expense: the amount and who paid',
       'See who owes what - in numbers'
     ],
     exampleBefore: 'ورقة وقلم، واتساب، نوتة الجوال... كلها طرق قديمة وتضيع',
@@ -259,13 +257,13 @@ export const landingPagesData: LandingPageData[] = [
     exampleAfterEn: 'One app, everything recorded, and calculations are automatic',
     ctaText: 'جرّب الآن',
     ctaTextEn: 'Try Now',
-    ctaSubtext: 'مجاني بالكامل - سجّل في 30 ثانية',
-    ctaSubtextEn: 'Completely free - sign up in 30 seconds'
+    ctaSubtext: 'حمّل من App Store',
+    ctaSubtextEn: 'Download on the App Store'
   },
   {
     slug: 'vs-notes-whatsapp',
-    heroTitle: 'ليش Diviso أفضل من الواتساب والنوتة؟',
-    heroTitleEn: 'Why is Diviso better than WhatsApp and notes?',
+    heroTitle: 'Diviso مقابل الواتساب والنوتة',
+    heroTitleEn: 'Diviso vs. WhatsApp and notes',
     problemTitle: 'الطرق القديمة',
     problemTitleEn: 'Old Methods',
     problemDescription: 'الواتساب: الرسائل تضيع. النوتة: تنسى تحدّثها. الورقة: تضيع أو تتلف.',
@@ -273,23 +271,21 @@ export const landingPagesData: LandingPageData[] = [
     solutionTitle: 'مميزات Diviso',
     solutionTitleEn: 'Diviso Features',
     solutionPoints: [
-      'كل شي محفوظ في السحابة - ما يضيع',
       'الحسابات تلقائية - ما في أخطاء',
       'الكل يشوف نفس الأرقام - ما في جدال'
     ],
     solutionPointsEn: [
-      'Everything saved in the cloud - never lost',
       'Calculations are automatic - no errors',
       'Everyone sees the same numbers - no debate'
     ],
     exampleBefore: 'رسالة في واتساب: "أحمد عليه 200، سعد عليه 150..." - مين يتذكر هذا بعد أسبوع؟',
     exampleBeforeEn: 'WhatsApp message: "Ahmed owes 200, Saad owes 150..." - who remembers this after a week?',
-    exampleAfter: 'كل شخص يفتح Diviso ويشوف رصيده الحالي فوراً',
-    exampleAfterEn: 'Everyone opens Diviso and sees their current balance instantly',
+    exampleAfter: 'كل شخص يفتح Diviso ويشوف رصيده الحالي',
+    exampleAfterEn: 'Everyone opens Diviso and sees their current balance',
     ctaText: 'جرّب الفرق',
     ctaTextEn: 'Try the Difference',
-    ctaSubtext: 'مجاني بالكامل - بدون بطاقة ائتمان',
-    ctaSubtextEn: 'Completely free - no credit card required'
+    ctaSubtext: 'حمّل من App Store',
+    ctaSubtextEn: 'Download on the App Store'
   }
 ];
 

@@ -19,8 +19,8 @@ export const blogArticles: BlogArticle[] = [
     slug: "tricount-alternative-arabic",
     title: "تبحث عن بديل لـ Tricount يدعم العربية والريال؟ إليك ما يجب التحقق منه",
     titleEn: "Looking for a Tricount Alternative That Supports Arabic and the Riyal? Here's What to Check",
-    description: "Tricount مصمم أساساً حول مناسبة واحدة محددة (رحلة، مناسبة) تُسوّى بالكامل عند انتهائها، لكنه لا يوفر واجهة عربية أصلية ولا يتعامل مع الريال كعملة أساسية. دليل عملي لاختيار بديل يحافظ على نفس آلية العمل مع واجهة عربية RTL وريال مباشر.",
-    descriptionEn: "Tricount is built around a single, defined event (a trip, an occasion) that gets fully settled once it ends, but it doesn't offer a native Arabic interface or handle the riyal as a primary currency. A practical guide to choosing an alternative that keeps the same workflow with a native Arabic RTL interface and the riyal directly.",
+    description: "Tricount مصمم أساساً حول مناسبة واحدة محددة (رحلة، مناسبة) تُسوّى بالكامل عند انتهائها. دليل عملي لاختيار بديل يحافظ على نفس آلية العمل مع واجهة عربية RTL والريال السعودي.",
+    descriptionEn: "Tricount is built around a single, defined event (a trip, an occasion) that gets fully settled once it ends. A practical guide to choosing an alternative that keeps the same workflow with a native Arabic RTL interface and the riyal directly.",
     keywords: ["بديل tricount يدعم العربية", "بديل tricount بالريال", "تطبيق عربي بديل tricount", "tricount alternative arabic", "تطبيق تقسيم مصاريف الرحلة بالعربي", "بديل لتطبيق تريكاونت"],
     keywordsEn: ["tricount alternative arabic", "tricount alternative saudi riyal", "arabic app like tricount", "tricount alternative for trips arabic", "app similar to tricount arabic interface"],
     category: "comparisons",
@@ -29,11 +29,11 @@ export const blogArticles: BlogArticle[] = [
     content: `
 ## الإجابة المختصرة
 
-Tricount تطبيق مصمم أساساً حول **مناسبة واحدة محددة بتاريخ بداية ونهاية** (رحلة، مناسبة قصيرة): يُضاف فيه المشاركون، تُسجَّل المصاريف خلال فترة المناسبة، ثم تُحسب تسوية نهائية عند إغلاقها. لكنه لا يوفر واجهة عربية أصلية بتصميم RTL، ولا يتعامل مع الريال السعودي كعملة أساسية مباشرة — فقط كخيار ضمن قائمة عملات متعددة. من يبحث عن بديل يحافظ على نفس آلية "المناسبة الواحدة" مع واجهة عربية والريال مباشرة، عليه التحقق من 3 نقاط محددة قبل الانتقال.
+Tricount تطبيق مصمم أساساً حول **مناسبة واحدة محددة بتاريخ بداية ونهاية** (رحلة، مناسبة قصيرة): يُضاف فيه المشاركون، تُسجَّل المصاريف خلال فترة المناسبة، ثم تُحسب تسوية نهائية عند إغلاقها. من يبحث عن بديل يحافظ على نفس آلية "المناسبة الواحدة" مع واجهة عربية والريال مباشرة، عليه التحقق من 3 نقاط محددة قبل الانتقال.
 
-## لماذا يبحث مستخدمو Tricount عن بديل عربي؟
+## لماذا يبحث بعض المستخدمين عن بديل عربي؟
 
-من يخطط لرحلة مع مجموعة ناطقة بالعربية يواجه عادة مشكلتين عمليتين في Tricount: الأولى أن الواجهة إنجليزية أو بلغات أوروبية فقط، فيضطر بعض أعضاء المجموعة لاستخدام تطبيق بلغة غير مريحة لهم. الثانية أن تسجيل المصاريف بالريال يتطلب إضافته كعملة ضمن إعدادات متعددة، بدلاً من أن يكون العملة الافتراضية المتوقعة منذ البداية.
+من يخطط لرحلة مع مجموعة ناطقة بالعربية يهتم عادة بأمرين: واجهة عربية مريحة لكل أعضاء المجموعة، وتسجيل المصاريف بالريال من أول خطوة.
 
 ## المعايير الثلاثة لاختيار بديل عربي لـ Tricount
 
@@ -50,7 +50,7 @@ Tricount تطبيق مصمم أساساً حول **مناسبة واحدة مح�
 
 - ✅ يدعم إنشاء مجموعة لمناسبة واحدة محددة (رحلة، مناسبة) مع تسوية واضحة عند انتهائها، تماماً مثل آلية Tricount
 - ✅ واجهة عربية أصلية مصممة بـ RTL كامل من الأساس، إلى جانب إمكانية الاستخدام بالإنجليزية
-- ✅ الريال السعودي كعملة أساسية مباشرة، مع دعم عملات أخرى لمن يحتاجها في رحلات دولية
+- ✅ الريال السعودي
 
 ## خطوات عملية للانتقال من Tricount إلى بديل عربي
 
@@ -80,9 +80,6 @@ Tricount تطبيق مصمم أساساً حول **مناسبة واحدة مح�
 ### هل يمكن نقل بيانات رحلة سابقة من Tricount مباشرة؟
 الأضمن هو بدء مجموعة جديدة للمناسبة القادمة بدلاً من افتراض وجود نقل تلقائي للبيانات القديمة، للتأكد من دقة الأرقام منذ البداية.
 
-### هل يدعم البديل العربي عدة عملات لرحلة خارج السعودية؟
-نعم، يمكن اعتماد الريال كعملة أساسية مباشرة مع إمكانية إضافة عملات أخرى عند الحاجة لرحلات دولية.
-
 ## الخلاصة
 
 من يبحث عن بديل لـ Tricount يحافظ على نفس آلية "مناسبة واحدة، تسوية نهائية" مع واجهة عربية أصلية وريال مباشر، يجب أن يتحقق من هذه المعايير الثلاثة تحديداً قبل الانتقال، لا الاعتماد على الشهرة وحدها.
@@ -92,11 +89,11 @@ Tricount تطبيق مصمم أساساً حول **مناسبة واحدة مح�
     contentEn: `
 ## Quick Answer
 
-Tricount is an app built primarily around **a single, defined event with a start and end date** (a trip, a short occasion): participants are added, expenses are logged during the event, then a final settlement is calculated once it's closed. But it doesn't offer a native Arabic RTL interface, and it doesn't handle the Saudi Riyal as a primary currency directly — only as one option within a multi-currency list. Anyone looking for an alternative that keeps the same "single event" workflow with a native Arabic interface and the riyal directly should check 3 specific points before switching.
+Tricount is an app built primarily around **a single, defined event with a start and end date** (a trip, a short occasion): participants are added, expenses are logged during the event, then a final settlement is calculated once it's closed. Anyone looking for an alternative that keeps the same "single event" workflow with a native Arabic interface and the riyal directly should check 3 specific points before switching.
 
-## Why Do Tricount Users Look for an Arabic Alternative?
+## Why Do Some Users Look for an Arabic Alternative?
 
-Anyone planning a trip with an Arabic-speaking group typically runs into two practical issues with Tricount: first, the interface is English or limited to a few European languages, forcing some group members to use an app in a language that isn't comfortable for them. Second, logging expenses in riyal requires adding it as a currency within multi-currency settings, rather than it being the expected default currency from the start.
+Anyone planning a trip with an Arabic-speaking group usually cares about two things: an Arabic interface that's comfortable for every member, and logging expenses in riyal from the very first step.
 
 ## The Three Criteria for Choosing an Arabic Alternative to Tricount
 
@@ -113,7 +110,7 @@ Logging an expense in riyal should be the direct default option, not an extra st
 
 - ✅ Supports creating a group for a single, defined event (a trip, an occasion) with a clear settlement once it ends, much like Tricount's workflow
 - ✅ A native Arabic interface built with full RTL from the ground up, alongside the option to use it in English
-- ✅ The Saudi Riyal as a direct primary currency, with support for other currencies for international trips when needed
+- ✅ Saudi riyal
 
 ## A Practical Path for Switching From Tricount to an Arabic Alternative
 
@@ -143,9 +140,6 @@ The closest similarity is in supporting a group for a single, defined event with
 ### Can a previous trip's data be transferred directly from Tricount?
 The safer approach is to start a new group for your next event rather than assuming an automatic transfer of old data exists, to make sure the numbers are accurate from the start.
 
-### Does the Arabic alternative support multiple currencies for a trip outside Saudi Arabia?
-Yes, the riyal can be set as the direct primary currency while still allowing other currencies to be added when needed for international trips.
-
 ## Conclusion
 
 Anyone looking for a Tricount alternative that keeps the same "single event, final settlement" workflow with a native Arabic interface and the riyal directly should check these three specific criteria before switching, rather than relying on popularity alone.
@@ -167,7 +161,7 @@ Anyone looking for a Tricount alternative that keeps the same "single event, fin
     content: `
 ## الإجابة المختصرة
 
-لا يوجد تطبيق واحد "هو الأفضل" بين Splitwise و Tricount و Diviso بشكل مطلق؛ الفرق الحقيقي بينها هو **طبيعة الاستخدام المصمَّمة حوله كل تطبيق**. Splitwise مبني حول مجموعات دائمة تتراكم أرصدتها على مدى أسابيع أو أشهر (رفقاء سكن، عائلة). Tricount مبني حول مناسبة واحدة محددة بتاريخ بداية وتاريخ نهاية تُسوّى بالكامل عند انتهائها (رحلة، مناسبة). Diviso يجمع بين الاستخدامين بواجهة عربية أصلية مع تسوية مبسّطة. هذه مقارنة محايدة حسب 4 معايير فقط: طبيعة المجموعة، آلية التسوية، دعم العملات، ودعم اللغة العربية.
+لا يوجد تطبيق واحد "هو الأفضل" بين Splitwise و Tricount و Diviso بشكل مطلق؛ الفرق الحقيقي بينها هو **طبيعة الاستخدام المصمَّمة حوله كل تطبيق**. Splitwise مبني حول مجموعات دائمة تتراكم أرصدتها على مدى أسابيع أو أشهر (رفقاء سكن، عائلة). Tricount مبني حول مناسبة واحدة محددة بتاريخ بداية وتاريخ نهاية تُسوّى بالكامل عند انتهائها (رحلة، مناسبة). Diviso يجمع بين الاستخدامين بواجهة عربية أصلية مع أرصدة واضحة توضح مين يحوّل لمين. هذه مقارنة محايدة حسب 4 معايير فقط: طبيعة المجموعة، آلية التسوية، دعم العملات، ودعم اللغة العربية.
 
 ## المعيار الأول: طبيعة المجموعة التي صُمم التطبيق حولها
 
@@ -184,17 +178,16 @@ Anyone looking for a Tricount alternative that keeps the same "single event, fin
 
 - **Splitwise**: يعرض رصيداً إجمالياً بين كل شخصين، ويُراكم هذا الرصيد مع كل مصروف جديد حتى تُسجَّل تسوية يدوية.
 - **Tricount**: يحسب التسوية النهائية لحظة إغلاق المناسبة، مع تبسيط عدد التحويلات المطلوبة بين المشاركين.
-- **Diviso**: يعرض الرصيد المحدث بعد كل مصروف مباشرة، مع إمكانية تسجيل تسوية في أي وقت دون انتظار إغلاق رسمي للمجموعة.
+- **Diviso**: يعرض الرصيد المحدث بعد كل مصروف، مع إمكانية تسجيل تسوية في أي وقت دون انتظار إغلاق رسمي للمجموعة.
 
 ## المعيار الثالث: دعم العملات المتعددة
 
-الثلاثة تدعم التعامل مع أكثر من عملة لمجموعات تضم أعضاء من دول مختلفة، لكن الفرق في العملة الافتراضية: في Splitwise و Tricount تُضاف عملات أخرى ضمن قائمة متعددة حول عملة أساسية غالباً غير الريال، بينما في Diviso يمكن اعتماد الريال السعودي كعملة أساسية مباشرة إلى جانب دعم عملات أخرى لمن يحتاجها.
+Splitwise و Tricount يدعمان التعامل مع أكثر من عملة لمجموعات تضم أعضاء من دول مختلفة. Diviso يعتمد الريال السعودي.
 
-## المعيار الرابع: دعم اللغة العربية والواجهة
+## المعيار الرابع: اللغة والواجهة
 
-- **Splitwise**: واجهة إنجليزية أساساً، دون تصميم عربي أصلي بـ RTL كامل.
-- **Tricount**: يدعم عدداً من اللغات الأوروبية بشكل أساسي، دون دعم عربي أصلي.
 - **Diviso**: واجهة عربية أصلية مصممة بـ RTL من الأساس، إلى جانب إمكانية الاستخدام بالإنجليزية.
+- لمعرفة اللغات المتاحة في Splitwise و Tricount، راجع صفحتهما في متجر التطبيقات.
 
 ## Splitwise مقابل Tricount: السؤال الأكثر شيوعاً
 
@@ -202,21 +195,21 @@ Anyone looking for a Tricount alternative that keeps the same "single event, fin
 
 ## أين يناسب Diviso كل الحالتين؟
 
-بما أن Diviso لا يفرض تصنيفاً مسبقاً بين "مجموعة دائمة" و"مناسبة واحدة"، يمكن استخدامه لكلا النمطين بواجهة واحدة، مع ميزة إضافية هي دعم العربية الأصلي والريال السعودي كعملة مباشرة، وهو ما لا يتوفر أصلاً في التطبيقين الآخرين.
+بما أن Diviso لا يفرض تصنيفاً مسبقاً بين "مجموعة دائمة" و"مناسبة واحدة"، يمكن استخدامه لكلا النمطين بواجهة واحدة، بواجهة عربية أصلية والريال السعودي.
 
 ## أي تطبيق يناسب كل حالة؟
 
-- **رفقاء سكن أو عائلة بمصاريف متكررة شهرياً**: Splitwise أو Diviso، حسب الحاجة للواجهة العربية.
+- **رفقاء سكن أو عائلة بمصاريف متكررة شهرياً**: Splitwise أو Diviso.
 - **رحلة أو مناسبة واحدة بتاريخ بداية ونهاية واضحين**: Tricount أو Diviso.
 - **من يحتاج واجهة عربية أصلية بالريال مباشرة في كل الحالات**: Diviso.
 
 ## أسئلة شائعة
 
 ### هل Diviso بديل مباشر لـ Splitwise؟
-يمكن استخدامه كبديل لمن يبحث عن نفس فكرة تتبع الأرصدة بين مجموعة مستمرة، مع إضافة واجهة عربية أصلية والريال كعملة مباشرة، وهما ميزتان غير متوفرتين في Splitwise.
+يمكن استخدامه كبديل لمن يبحث عن نفس فكرة تتبع الأرصدة بين مجموعة مستمرة، بواجهة عربية أصلية والريال السعودي.
 
-### هل Tricount يدعم اللغة العربية؟
-لا يوفر Tricount واجهة عربية أصلية؛ يدعم بشكل أساسي عدداً من اللغات الأوروبية.
+### هل Diviso يدعم اللغة العربية؟
+نعم، Diviso مبني بالعربية من الأساس بتصميم RTL كامل، ويمكن استخدامه بالإنجليزية أيضاً.
 
 ### أي تطبيق أنسب لمجموعة رحلة واحدة قصيرة؟
 Tricount مصمم أساساً حول هذا النوع من الاستخدام (مناسبة واحدة بتاريخ بداية ونهاية)، ويمكن لـ Diviso تغطية نفس الحالة أيضاً مع واجهة عربية أصلية.
@@ -230,7 +223,7 @@ Tricount مصمم أساساً حول هذا النوع من الاستخدام 
     contentEn: `
 ## Quick Answer
 
-There isn't one app that's simply "the best" among Splitwise, Tricount, and Diviso across the board; the real difference is **the usage pattern each app was designed around**. Splitwise is built around ongoing groups whose balances accumulate over weeks or months (roommates, family). Tricount is built around a single event with a start and end date that gets fully settled once it's over (a trip, an occasion). Diviso combines both patterns with a native Arabic interface and simplified settling. This is a neutral comparison across 4 specific criteria: group type, settlement mechanics, currency support, and Arabic-language support.
+There isn't one app that's simply "the best" among Splitwise, Tricount, and Diviso across the board; the real difference is **the usage pattern each app was designed around**. Splitwise is built around ongoing groups whose balances accumulate over weeks or months (roommates, family). Tricount is built around a single event with a start and end date that gets fully settled once it's over (a trip, an occasion). Diviso combines both patterns with a native Arabic interface and clear balances showing who pays whom. This is a neutral comparison across 4 specific criteria: group type, settlement mechanics, currency support, and Arabic-language support.
 
 ## Criterion 1: What Kind of Group Was the App Designed Around?
 
@@ -247,17 +240,16 @@ Supports both patterns (ongoing group and single event) within one interface, fo
 
 - **Splitwise**: shows a running balance between each pair of people, which accumulates with every new expense until a manual settlement is logged.
 - **Tricount**: calculates the final settlement the moment the event is closed, simplifying the number of transfers participants need to make.
-- **Diviso**: shows the updated balance right after every expense, with the option to log a settlement at any time without waiting for a formal group closure.
+- **Diviso**: shows the updated balance after every expense, with the option to log a settlement at any time without waiting for a formal group closure.
 
 ## Criterion 3: Multi-Currency Support
 
-All three support handling more than one currency for groups with members from different countries, but the difference is in the default currency: in Splitwise and Tricount, other currencies are added within a multi-currency list built around a primary currency that usually isn't the riyal, while in Diviso the Saudi Riyal can be set as the primary currency directly, alongside support for other currencies when needed.
+Splitwise and Tricount support handling more than one currency for groups with members from different countries. Diviso uses the Saudi riyal.
 
-## Criterion 4: Arabic-Language and Interface Support
+## Criterion 4: Language and Interface
 
-- **Splitwise**: English-first interface, without a fully native Arabic RTL design.
-- **Tricount**: primarily supports a number of European languages, without native Arabic support.
 - **Diviso**: a native Arabic interface designed with RTL from the ground up, alongside the option to use it in English.
+- For the languages available in Splitwise and Tricount, check their App Store pages.
 
 ## Splitwise vs Tricount: The Most Common Question
 
@@ -265,21 +257,21 @@ The core difference here isn't really about features — it's about **what kind 
 
 ## Where Diviso Fits Both Cases
 
-Since Diviso doesn't force a choice upfront between an "ongoing group" and a "single event," it can be used for either pattern within one interface, with the added benefit of a native Arabic interface and the Saudi Riyal as a direct primary currency — something neither of the other two apps offers.
+Since Diviso doesn't force a choice upfront between an "ongoing group" and a "single event," it can be used for either pattern within one interface, with a native Arabic interface and the Saudi riyal.
 
 ## Which App Fits Which Case?
 
-- **Roommates or family with recurring monthly expenses**: Splitwise or Diviso, depending on the need for an Arabic interface.
+- **Roommates or family with recurring monthly expenses**: Splitwise or Diviso.
 - **A single trip or event with a clear start and end date**: Tricount or Diviso.
 - **Anyone who needs a native Arabic interface with the riyal directly, in every case**: Diviso.
 
 ## Frequently Asked Questions
 
 ### Is Diviso a direct alternative to Splitwise?
-It can be used as an alternative for anyone looking for the same balance-tracking concept across an ongoing group, with the addition of a native Arabic interface and the riyal as a direct currency — two things Splitwise doesn't offer.
+It can be used as an alternative for anyone looking for the same balance-tracking concept across an ongoing group, with a native Arabic interface and the Saudi riyal.
 
-### Does Tricount support Arabic?
-No, Tricount doesn't offer a native Arabic interface; it primarily supports a number of European languages.
+### Does Diviso support Arabic?
+Yes, Diviso is built Arabic-first with a full RTL design, and it can be used in English too.
 
 ### Which app is best for a single short trip group?
 Tricount is built primarily around this exact use case (a single event with a start and end date), and Diviso can cover the same case too, with a native Arabic interface.
@@ -297,7 +289,7 @@ There's no absolute winner among Splitwise, Tricount, and Diviso; the right choi
     titleEn: "Which Bill-Splitting App Fully Supports Arabic and the Saudi Riyal? A Neutral Comparison",
     description: "عند البحث عن تطبيق تقسيم فاتورة، أغلب التطبيقات المعروفة بُنيت أساساً باللغة الإنجليزية لسوق غربي. هذه مقارنة محايدة بين أشهر التطبيقات حسب 3 معايير فقط: دعم العربية الأصلي، التعامل المباشر بالريال السعودي، وتوفر تطبيق آيفون مخصص.",
     descriptionEn: "When searching for a bill-splitting app, most well-known options were built English-first for a Western market. This is a neutral comparison of the most common apps against 3 specific criteria: native Arabic support, direct Saudi Riyal handling, and a dedicated iPhone app.",
-    keywords: ["تطبيق تقسيم الفاتورة", "تطبيق تقسيم فاتورة يدعم العربية", "تطبيق تقسيم مصاريف بالريال السعودي", "مقارنة تطبيقات تقسيم الفاتورة", "تطبيق تقسيم حساب للآيفون", "أفضل تطبيق عربي لتقسيم المصاريف"],
+    keywords: ["تطبيق تقسيم الفاتورة", "تطبيق تقسيم فاتورة يدعم العربية", "تطبيق تقسيم مصاريف بالريال السعودي", "مقارنة تطبيقات تقسيم الفاتورة", "تطبيق تقسيم حساب للآيفون"],
     keywordsEn: ["bill splitting app arabic support", "expense splitting app saudi riyal", "bill splitting apps compared", "iphone app to split bills", "arabic bill splitting app", "expense tracker app arabic interface"],
     category: "comparisons",
     readTime: 8,
@@ -316,13 +308,13 @@ There's no absolute winner among Splitwise, Tricount, and Diviso; the right choi
 ## مقارنة أشهر تطبيقات تقسيم الفاتورة
 
 ### Splitwise
-- **دعم العربية**: واجهة إنجليزية أساساً؛ لا تتوفر واجهة عربية أصلية بتصميم RTL كامل
-- **الريال السعودي**: يمكن إضافته كعملة ضمن دعم العملات المتعددة، لكنه ليس العملة الافتراضية المصممة حولها الواجهة
+- **دعم العربية**: لمعرفة اللغات المتاحة، راجع صفحة التطبيق في متجر التطبيقات
+- **الريال السعودي**: يمكن إضافته كعملة ضمن دعم العملات المتعددة
 - **آيفون**: يتوفر تطبيق مخصص على App Store
 
 ### Tricount
-- **دعم العربية**: يدعم عدداً من اللغات الأوروبية بشكل أساسي؛ لا يتوفر دعم عربي أصلي
-- **الريال السعودي**: يمكن استخدامه كعملة ضمن التعدد، دون تركيز أساسي عليه
+- **دعم العربية**: لمعرفة اللغات المتاحة، راجع صفحة التطبيق في متجر التطبيقات
+- **الريال السعودي**: يمكن استخدامه كعملة ضمن تعدد العملات
 - **آيفون**: يتوفر تطبيق مخصص على App Store
 
 ### Settle Up
@@ -332,8 +324,8 @@ There's no absolute winner among Splitwise, Tricount, and Diviso; the right choi
 
 ### Diviso
 - **دعم العربية**: واجهة عربية أصلية مصممة بـ RTL من الأساس، لا كترجمة لاحقة
-- **الريال السعودي**: مدعوم كعملة أساسية مباشرة، إلى جانب دعم عملات متعددة أخرى
-- **آيفون**: يمكن الوصول إليه عبر المتصفح؛ تطبيق آيفون مستقل غير متوفر حتى الآن
+- **الريال السعودي**: مدعوم
+- **آيفون**: ديفيزو متوفر على [App Store](https://apps.apple.com/app/id6761329043) لأجهزة iPhone وiPad
 
 ## ماذا يعني "دعم عربي أصلي" بالضبط؟
 
@@ -364,9 +356,8 @@ There's no absolute winner among Splitwise, Tricount, and Diviso; the right choi
 ## كيف يساعدكم Diviso في تقسيم الفاتورة بواجهة عربية وريال مباشر؟
 
 - ✅ واجهة عربية أصلية بتصميم RTL كامل منذ الأساس
-- ✅ تسجيل المصاريف بالريال السعودي كعملة أساسية مباشرة
-- ✅ دعم عملات متعددة لمن يتعامل مع مجموعات من دول مختلفة
-- ✅ الوصول المباشر عبر المتصفح دون الحاجة لتثبيت تطبيق منفصل
+- ✅ تسجيل المصاريف بالريال السعودي
+- ✅ متوفر على [App Store](https://apps.apple.com/app/id6761329043) لأجهزة iPhone وiPad، وعبر المتصفح
 
 ## أسئلة شائعة
 
@@ -399,13 +390,13 @@ When searching for a "bill-splitting app," most well-known options in this space
 ## Comparing the Most Common Bill-Splitting Apps
 
 ### Splitwise
-- **Arabic support**: English-first interface; no fully native RTL Arabic interface is available
-- **Saudi Riyal**: can be added as a currency within multi-currency support, but it isn't the default currency the interface is designed around
+- **Arabic support**: check the app's App Store page for its available languages
+- **Saudi Riyal**: can be added as a currency within multi-currency support
 - **iPhone**: a dedicated app is available on the App Store
 
 ### Tricount
-- **Arabic support**: primarily supports a number of European languages; no native Arabic support is available
-- **Saudi Riyal**: usable as a currency within multi-currency support, without being a primary focus
+- **Arabic support**: check the app's App Store page for its available languages
+- **Saudi Riyal**: usable as a currency within multi-currency support
 - **iPhone**: a dedicated app is available on the App Store
 
 ### Settle Up
@@ -415,8 +406,8 @@ When searching for a "bill-splitting app," most well-known options in this space
 
 ### Diviso
 - **Arabic support**: a native Arabic interface designed with RTL from the ground up, not a later translation layer
-- **Saudi Riyal**: supported directly as a primary currency, alongside support for several other currencies
-- **iPhone**: accessible through a browser; a standalone iPhone app isn't available yet
+- **Saudi Riyal**: supported
+- **iPhone**: Diviso is available on the [App Store](https://apps.apple.com/app/id6761329043) for iPhone and iPad
 
 ## What Does "Native Arabic Support" Actually Mean?
 
@@ -447,9 +438,8 @@ Is the app available as a standalone app on the App Store, or will usage be thro
 ## How Diviso Helps You Split Bills With a Native Arabic Interface and Direct Riyal Support
 
 - ✅ A native Arabic interface designed with full RTL from the ground up
-- ✅ Logs expenses in Saudi Riyal directly as a primary currency
-- ✅ Supports multiple currencies for anyone dealing with groups from different countries
-- ✅ Direct access through a browser without needing to install a separate app
+- ✅ Logs expenses in Saudi riyal
+- ✅ Available on the [App Store](https://apps.apple.com/app/id6761329043) for iPhone and iPad, and on the web
 
 ## Frequently Asked Questions
 
@@ -528,9 +518,8 @@ Choosing a bill-splitting app shouldn't rely on popularity alone: check for nati
 
 ## كيف يساعدكم Diviso في تقسيم إيجار السكن المشترك؟
 
-- ✅ حساب تلقائي لحصة كل شخص بأي من الطرق الثلاث (بالتساوي، بالنسبة، أو بالدخل)
+- ✅ قسمة الإيجار بالتساوي أو بالنسب التي تتفقون عليها
 - ✅ تسجيل نسبة كل غرفة أو كل شخص بوضوح منذ بداية السكن المشترك
-- ✅ فصل سجل الإيجار عن باقي المصاريف المشتركة (كهرباء، إنترنت) التي قد تحتاج طريقة تقسيم مختلفة
 - ✅ سجل شفاف يوضح لكل ساكن كيف وصل إلى حصته بالضبط
 
 ## أسئلة شائعة
@@ -602,9 +591,8 @@ In the UK, council tax is a separate local charge from rent, and it follows its 
 
 ## How Diviso Helps Split Shared Housing Rent
 
-- ✅ Automatically calculates each person's share using any of the three methods (equal, proportional, or by income)
+- ✅ Splits the rent equally or by the percentages you agree on
 - ✅ Logs each room's or person's agreed ratio clearly from the start of the tenancy
-- ✅ Keeps the rent record separate from other shared costs (electricity, internet) that often need a different split method
 - ✅ A transparent record showing every flatmate exactly how their share was calculated
 
 ## Frequently Asked Questions
@@ -699,10 +687,9 @@ Splitting rent in a shared house doesn't need one method that fits every situati
 
 ## كيف يساعدكم Diviso في تطبيق طريقة التقسيم الصحيحة؟
 
-- ✅ دعم التقسيم بالتساوي، بالنسبة، وحسب الاستهلاك الفعلي في نفس المجموعة
+- ✅ قسمة كل مصروف بالتساوي أو بالنسب، مع اختيار المشاركين فيه
 - ✅ إمكانية استخدام طريقة تقسيم مختلفة لكل مصروف داخل نفس الرحلة أو المناسبة
 - ✅ سجل شفاف يوضح لكل شخص كيف وصل إلى المبلغ المطلوب منه بالضبط لكل بند على حدة
-- ✅ تتبّع سهل لكل الحالات الشائعة من فواتير وحجوزات ومصاريف متكررة
 
 ## أسئلة شائعة
 
@@ -784,10 +771,9 @@ Only one of the four used international roaming at an extra cost. This amount is
 
 ## How Diviso Helps You Apply the Right Split Method
 
-- ✅ Supports equal, proportional, and usage-based splits within the same group
+- ✅ Splits each expense equally or by percentages, with the participants you choose
 - ✅ Lets you use a different split method for each expense within the same trip or event
 - ✅ A transparent record showing every person exactly how their required amount was calculated for each item
-- ✅ Easy tracking for all the common scenarios of bills, bookings, and recurring expenses
 
 ## Frequently Asked Questions
 
@@ -886,7 +872,6 @@ Splitting expenses with friends fairly doesn't require one method applied to eve
 ## كيف يساعدكم Diviso في تنظيم دخول شريك سكن جديد على أثاث موجود؟
 
 - ✅ تسجيل التكلفة الإجمالية الأصلية لكل قطعة أثاث مشترك منذ لحظة الشراء
-- ✅ حساب تلقائي لمبلغ دخول الشريك الجديد وإعادة توزيعه على الشركاء القدامى
 - ✅ استثناء سهل لأي عنصر لا يستفيد منه الشريك الجديد من الحساب
 - ✅ سجل شفاف يوضح لكل شريك (قديم أو جديد) كيف وصل إلى حصته بالضبط
 
@@ -975,7 +960,6 @@ Decide in advance when furniture is considered "new enough" for this rule, and w
 ## How Diviso Helps Organize a New Roommate's Entry Into Existing Furniture
 
 - ✅ Logs the original total cost of each shared furniture item from the moment of purchase
-- ✅ Automatically calculates the new roommate's buy-in amount and redistributes it to the original roommates
 - ✅ Easily excludes any item the new roommate won't benefit from in the calculation
 - ✅ A transparent record showing every roommate (original or new) exactly how their share was calculated
 
@@ -1080,8 +1064,7 @@ A new roommate joining existing shared furniture doesn't require guesswork: calc
 ## كيف يساعدكم Diviso في تقسيم استرداد الحجوزات الجماعية؟
 
 - ✅ تسجيل مساهمة كل شخص الأصلية بدقة منذ لحظة الحجز
-- ✅ حساب تلقائي لنسبة الاسترداد العادلة لكل شخص بناءً على مساهمته الأصلية
-- ✅ تمييز واضح بين حالة الإلغاء الجماعي وحالة الانسحاب الفردي عند التوزيع
+- ✅ تسجيل الدفع وتأكيد الاستلام عند رد كل مبلغ
 - ✅ سجل شفاف يوضح لكل مشارك كيف وصل إلى المبلغ المسترد له بالضبط
 
 ## أسئلة شائعة
@@ -1173,8 +1156,7 @@ To avoid delaying the settlement and letting the discussion drag on.
 ## How Diviso Helps Split a Group Booking's Cancellation Refund
 
 - ✅ Logs each person's original contribution accurately from the moment of booking
-- ✅ Automatically calculates each person's fair refund rate based on their original contribution
-- ✅ Clearly distinguishes between a collective cancellation and an individual withdrawal when distributing
+- ✅ Record each payment back and confirm receipt
 - ✅ A transparent record showing every participant exactly how their refunded amount was calculated
 
 ## Frequently Asked Questions
@@ -1265,10 +1247,8 @@ Distributing a cancelled group booking's refund doesn't have to be complicated: 
 
 ## كيف يساعدكم Diviso في تنظيم مصاريف أنشطة الطفل بين الوالدين المنفصلين؟
 
-- ✅ تسجيل كل نشاط كـ"متفق عليه" أو "من جانب واحد" منذ البداية
-- ✅ حساب تلقائي لحصة كل والد بالنسبة المعتمدة على الأنشطة المتفق عليها فقط
-- ✅ تتبّع تاريخ أي موافقة لاحقة لتحديد نقطة بداية المشاركة بدقة
-- ✅ سجل شفاف يفصل المصاريف الضرورية عن الأنشطة الاختيارية بوضوح
+- ✅ قسمة كل نشاط متفق عليه بالنسبة المعتمدة بين الوالدين
+- ✅ أرصدة واضحة: كم لك وكم عليك، ومين يحوّل لمين
 
 ## أسئلة شائعة
 
@@ -1346,10 +1326,8 @@ So the right rule is applied to each item without mixing the two up.
 
 ## How Diviso Helps Organize a Child's Activity Expenses Between Separated Parents
 
-- ✅ Logs every activity as "agreed" or "unilateral" from the start
-- ✅ Automatically calculates each parent's share at the agreed ratio, only for agreed-upon activities
-- ✅ Tracks the date of any later agreement to pinpoint exactly when cost-sharing begins
-- ✅ A transparent record that clearly separates necessary expenses from discretionary activities
+- ✅ Splits each agreed-upon activity at the agreed ratio between both parents
+- ✅ Clear balances: who owes whom
 
 ## Frequently Asked Questions
 
@@ -1437,10 +1415,8 @@ Splitting the cost of a child's extracurricular activity between separated paren
 
 ## كيف يساعدكم Diviso في تنظيم جمعية دورية بين الزملاء أو الأصدقاء؟
 
-- ✅ تسجيل كل دفعة حصة لكل عضو في كل دورة بشكل منظم ومؤرَّخ
-- ✅ تتبّع واضح لمن استلم دوره ومن لا يزال في الانتظار في أي وقت
-- ✅ حساب تلقائي للفرق المستحق عند انسحاب أي عضو، سواء كان ديناً عليه أو مبلغاً يُرَدّ له
-- ✅ سجل شفاف يسهّل إيجاد عضو بديل وتحديث الترتيب المتبقي بسرعة
+- ✅ تسجيل دفعة كل عضو في كل دورة، مع تأكيد الاستلام
+- ✅ أرصدة واضحة: كم لك وكم عليك، ومين يحوّل لمين
 
 ## أسئلة شائعة
 
@@ -1516,10 +1492,8 @@ To minimize how long the remaining members have to absorb the gap left by a depa
 
 ## How Diviso Helps Organize a Rotating Savings Circle Between Coworkers or Friends
 
-- ✅ Logs every member's share payment per round, organized and dated
-- ✅ Clear tracking of who has already received their payout and who's still waiting, at any point
-- ✅ Automatic calculation of the exact gap owed when any member leaves, whether it's a debt they owe or an amount owed back to them
-- ✅ A transparent record that makes finding a replacement member and updating the remaining order quick and easy
+- ✅ Logs every member's share payment per round, with receipt confirmed
+- ✅ Clear balances: who owes whom
 
 ## Frequently Asked Questions
 
@@ -1611,10 +1585,9 @@ A member leaving a rotating savings circle doesn't need a complicated discussion
 
 ## كيف يساعدكم Diviso في تنظيم تكلفة حفل الحناء بين العائلتين؟
 
-- ✅ تسجيل كل بند كـ "مشترك" أو "خاص بجانب واحد" في مجموعة واحدة منظمة
-- ✅ حساب تلقائي لحصة كل جانب من التكلفة المشتركة بنسبة عدد ضيوفه
+- ✅ اختيار المشاركين في كل بند: مشترك بين العائلتين أو خاص بجانب واحد
+- ✅ قسمة التكلفة المشتركة بالنسب المتفق عليها حسب عدد ضيوف كل جانب
 - ✅ سجل شفاف يوضح لكل عائلة كيف وصلت إلى المبلغ المطلوب منها بالضبط
-- ✅ سهولة تحديث النسب إذا تغيّر عدد الضيوف الفعلي قريباً من موعد الحفل
 
 ## أسئلة شائعة
 
@@ -1694,10 +1667,9 @@ Instead of lumping everything into one number that's hard to break down later du
 
 ## How Diviso Helps Split Henna Night Costs Between Two Families
 
-- ✅ Logs every item as "shared" or "specific to one side" within one organized group
-- ✅ Automatically calculates each side's share of the shared cost based on its guest ratio
+- ✅ Choose the participants for each item: shared by both families or specific to one side
+- ✅ Splits the shared cost by the agreed percentages, based on each side's guest count
 - ✅ A transparent record showing each family exactly how its required amount was calculated
-- ✅ Easy to update the ratios if the actual guest count changes close to the event date
 
 ## Frequently Asked Questions
 
@@ -1794,10 +1766,8 @@ Splitting henna night costs between the bride's and groom's families doesn't hav
 
 ## كيف يساعدكم Diviso في تتبع النقوط العائلية؟
 
-- ✅ تسجيل كل نقطة بالاسم والمبلغ والتاريخ ونوع المناسبة في مكان واحد
-- ✅ سجل قابل للرجوع إليه بسهولة قبل أي مناسبة قادمة
-- ✅ تتبع مستقل للنقوط المستلمة والمقدَّمة لتوضيح الالتزامات في الاتجاهين
-- ✅ دفتر عائلي يستمر عبر السنين دون اعتماد على ذاكرة فرد واحد فقط
+- ✅ تسجيل كل نقطة بمبلغها ومن قدّمها في مكان واحد
+- ✅ أرصدة واضحة: كم لك وكم عليك
 
 ## أسئلة شائعة
 
@@ -1882,10 +1852,8 @@ To track obligations in both directions, not just what was received.
 
 ## How Diviso Helps Track Family Wedding Gifts
 
-- ✅ Logs every gift's giver, amount, date, and occasion type in one place
-- ✅ An easily searchable record to check before any upcoming occasion
-- ✅ Independent tracking of gifts received and given, clarifying obligations in both directions
-- ✅ A family ledger that persists across years, instead of relying on one person's memory
+- ✅ Logs every gift's amount and who gave it in one place
+- ✅ Clear balances: how much you're owed and how much you owe
 
 ## Frequently Asked Questions
 
@@ -1981,13 +1949,6 @@ Tracking wedding cash gifts doesn't have to rely on memory: log every gift as so
 - **تحديث السعر المرجعي باستمرار بدل تثبيته منذ بداية التجميع**
 - **عدم التحقق من وصول المبلغ الكامل المطلوب فعلياً قبل اعتبار الحصة مدفوعة بالكامل**
 
-## كيف يساعدكم Diviso في تقسيم مصاريف الرحلات متعددة العملات؟
-
-- ✅ تسجيل كل حصة بعملة أساسية موحّدة بصرف النظر عن عملة الدفع الفعلية
-- ✅ تتبّع شفاف لأي نقص ناتج عن فروقات تحويل فردية بشكل مستقل
-- ✅ سجل واحد يسهل مقارنة حصص كل الأعضاء بعملة واحدة
-- ✅ تسوية سريعة دون نزاع متكرر حول "أي سعر صرف هو الصحيح"
-
 ## أسئلة شائعة
 
 ### ما العملة التي يجب تسجيل الحصص بها عند السفر بمجموعة من دول مختلفة؟
@@ -2003,7 +1964,7 @@ Tracking wedding cash gifts doesn't have to rely on memory: log every gift as so
 
 تقسيم مصاريف رحلة بين أصدقاء بعملات مختلفة لا يحتاج لتعقيد: اتفقوا على سعر صرف مرجعي ثابت لتسجيل كل الحصص، واتركوا كل شخص يتحمّل فرق تحويله البنكي الخاص، وستنتهي الخلافات حول "من دفع فعلياً كم".
 
-**جرب Diviso الآن وقسّم مصاريف رحلتكم بعدل بين الأصدقاء بغض النظر عن اختلاف العملات.**
+**جرب Diviso الآن وقسّم مصاريف رحلتكم بعدل بين الأصدقاء.**
     `,
     contentEn: `
 ## Quick Answer
@@ -2070,13 +2031,6 @@ Instead of leaving it as part of "small differences" that pile up and become har
 - **Continuously updating the reference rate instead of locking it in from the start of collection**
 - **Not verifying the full required amount actually arrived before treating a share as fully paid**
 
-## How Diviso Helps Split Multi-Currency Trip Costs
-
-- ✅ Logs every share in one unified base currency, regardless of the actual payment currency
-- ✅ Transparently tracks any shortfall from an individual conversion difference separately
-- ✅ One single record makes it easy to compare every member's share in one currency
-- ✅ Quick settlement without a recurring argument over "which exchange rate is correct"
-
 ## Frequently Asked Questions
 
 ### Which currency should shares be recorded in when a group travels from different countries?
@@ -2092,7 +2046,7 @@ A reference exchange rate is set at the moment the trip's total cost is determin
 
 Splitting a trip's costs between friends paying in different currencies doesn't need to be complicated: agree on one fixed reference exchange rate to record every share, and let each person bear their own bank conversion difference, and the disputes over "who actually paid how much" disappear.
 
-**Try Diviso now and split your group trip's costs fairly between friends, no matter which currencies they pay in.**
+**Try Diviso now and split your group trip's costs fairly between friends.**
     `
   },
   {
@@ -2182,10 +2136,9 @@ Splitting a trip's costs between friends paying in different currencies doesn't 
 
 ## كيف يساعدكم Diviso في تقسيم تكلفة التذاكر الجماعية؟
 
-- ✅ حساب تلقائي لنصيب كل فئة (كبار، أطفال، فئات أخرى) بنسبة سعرها الفردي من إجمالي الباقة
+- ✅ قسمة الباقة بالنسب التي تتفقون عليها حسب سعر كل فئة (كبار، أطفال)
 - ✅ تسجيل الإضافات الاختيارية كمصاريف مستقلة مرتبطة بمن استخدمها فقط
 - ✅ سجل شفاف يوضح كيف وصل كل فرد إلى المبلغ المطلوب منه بالضبط
-- ✅ سهولة تطبيق نفس الطريقة على أي رحلة جماعية مستقبلية بفئات تسعير مختلفة
 
 ## أسئلة شائعة
 
@@ -2280,10 +2233,9 @@ To avoid mistakenly blending them into the base package cost calculation.
 
 ## How Diviso Helps Split a Group Ticket Package Cost
 
-- ✅ Automatically calculates each category's (adults, children, other tiers) share proportional to its individual price within the total package
+- ✅ Splits the package by the percentages you agree on, based on each category's price (adults, children)
 - ✅ Logs optional add-ons as separate expenses tied only to whoever used them
 - ✅ A transparent record showing exactly how each person's amount was calculated
-- ✅ Easy to reuse the same method for any future group outing with different pricing tiers
 
 ## Frequently Asked Questions
 
@@ -2399,7 +2351,7 @@ Splitting a group package ticket cost between adults and children doesn't requir
 ## كيف يساعدكم Diviso في تنظيم رسوم صيانة العمارة؟
 
 - ✅ تسجيل التكاليف الثابتة والمتغيرة بشكل منفصل لكل فاتورة شهرية
-- ✅ حساب تلقائي لحصة كل شقة بناءً على نسبة مساحتها المسجلة
+- ✅ قسمة كل فاتورة بالنسب المتفق عليها حسب مساحة كل شقة
 - ✅ سجل شفاف يوضح لكل ساكن كيف وصل إلى المبلغ المطلوب منه بالضبط
 - ✅ تتبع سهل للإصلاحات الطارئة الخاصة بشقة واحدة بشكل مستقل عن التكاليف المشتركة
 
@@ -2505,7 +2457,7 @@ There's no need to recalculate monthly if the areas haven't changed.
 ## How Diviso Helps Organize Apartment Building Maintenance Fees
 
 - ✅ Logs fixed and variable costs separately for each monthly bill
-- ✅ Automatically calculates each unit's share based on its recorded area percentage
+- ✅ Splits each bill by the agreed percentages, based on each unit's area
 - ✅ A transparent record showing every resident exactly how their amount was calculated
 - ✅ Easy tracking of a single unit's emergency repairs, kept separate from shared costs
 
@@ -2608,9 +2560,9 @@ Apartment building maintenance fees don't have to be a constant source of fricti
 
 ## كيف يساعدكم Diviso في تنظيم فاتورة الجوال العائلي؟
 
-- ✅ تسجيل الباقة الأساسية كمصروف ثابت يُقسَّم تلقائياً بالتساوي أو بالنسب المتفق عليها
+- ✅ تسجيل الباقة الأساسية كمصروف يُقسَّم بالتساوي أو بالنسب المتفق عليها
 - ✅ تسجيل كل تكلفة تجاوز كمصروف مستقل مرتبط بالخط المسبب فقط
-- ✅ سجل شهري واضح يوضح حصة كل خط وسبب أي اختلاف فيها
+- ✅ أرصدة واضحة توضح حصة كل خط
 - ✅ تسوية سريعة دون الحاجة لنقاش يتكرر كل شهر
 
 ## أسئلة شائعة
@@ -2700,9 +2652,9 @@ For example: overage under 20 SAR is treated as part of the base share with no s
 
 ## How Diviso Helps Organize the Family Mobile Bill
 
-- ✅ Logs the base plan as a fixed expense split automatically either equally or by agreed proportions
+- ✅ Logs the base plan as an expense split equally or by agreed percentages
 - ✅ Logs each overage cost as a separate expense tied only to the line that caused it
-- ✅ A clear monthly record showing each line's share and the reason for any difference
+- ✅ Clear balances showing each line's share
 - ✅ A quick settlement without needing the same argument every month
 
 ## Frequently Asked Questions
@@ -2806,10 +2758,8 @@ Splitting a family mobile bill doesn't need a repeat argument every month: split
 
 ## كيف يساعدكم Diviso في إدارة اشتراكات الديوانية؟
 
-- ✅ إنشاء مجموعة ثابتة لتتبع الإيجار الشهري وتعديل الحصة تلقائياً عند تغيّر عدد الأعضاء
-- ✅ تسجيل تاريخ انضمام أو انسحاب كل عضو لحساب دقيق للحصص
-- ✅ فصل واضح بين مصاريف الإيجار الثابتة والمصاريف المشتركة الأخرى
-- ✅ سجل شفاف يرى فيه كل عضو حصته الشهرية الحالية وسبب أي تغيير فيها
+- ✅ إنشاء مجموعة للديوانية ودعوة الأعضاء برابط واحد
+- ✅ صفحة لكل عضو توضح رصيده: كم له وكم عليه
 
 ## أسئلة شائعة
 
@@ -2900,10 +2850,8 @@ Each one is split using a different method, as explained above.
 
 ## How Diviso Helps Manage Diwaniya Memberships
 
-- ✅ Creates a standing group that tracks the monthly rent and automatically adjusts each share when the member count changes
-- ✅ Logs each member's join or leave date for an accurate share calculation
-- ✅ Clearly separates fixed rent expenses from other shared costs
-- ✅ A transparent record where every member can see their current monthly share and why it changed
+- ✅ Creates a group for the diwaniya and invites members with one link
+- ✅ A page per member showing their balance: what they're owed and what they owe
 
 ## Frequently Asked Questions
 
@@ -2991,7 +2939,7 @@ A new member joining an annually-rented diwaniya or majlis doesn't have to be co
 وزّعوا الليالي على العائلات بأقرب تقسيم ممكن للتساوي، مع قبول فارق يوم أو يومين كأمر طبيعي.
 
 ### الخطوة 2: سجّلوا مصروف كل ليلة فور حدوثها
-استخدم تطبيق مثل Diviso لتسجيل مصروف كل عائلة مستضيفة بإيصالها، بدل الاعتماد على التقدير التقريبي في نهاية الشهر.
+استخدم تطبيق مثل Diviso لتسجيل مصروف كل عائلة مستضيفة، بدل الاعتماد على التقدير التقريبي في نهاية الشهر.
 
 ### الخطوة 3: اجمعوا إجمالي مصروف كل عائلة في نهاية الشهر
 لا تنتظروا حتى آخر يوم لتبدأوا الجمع — تابعوا الإجمالي التراكمي أسبوعياً لتسهيل التسوية النهائية.
@@ -3087,7 +3035,7 @@ If this were left unsettled, Family C (who hosted a fancier meal) would have act
 Distribute the nights among families as evenly as possible, accepting a day or two's difference as normal.
 
 ### Step 2: Log Each Night's Expense as It Happens
-Use an app like Diviso to log each hosting family's expense with its receipt, instead of relying on a rough estimate at the end of the month.
+Use an app like Diviso to log each hosting family's expense, instead of relying on a rough estimate at the end of the month.
 
 ### Step 3: Total Up Each Family's Spending at Month's End
 Don't wait until the last day to start adding things up — track the running total weekly to make the final settlement easier.
@@ -3209,7 +3157,7 @@ A Ramadan iftar hosting rotation between families doesn't have to end with someo
 بعد هذا الموعد، لا يُسمح بالانسحاب دون تحمّل فرق الشريحة إن حدث.
 
 ### الخطوة 3: سجّلوا كمية كل عضو وسعر الشريحة النهائي بوضوح
-استخدم تطبيق مثل Diviso لحساب نصيب كل عضو تلقائياً حسب كميته والسعر النهائي للمجموعة.
+استخدم تطبيق مثل Diviso لتسجيل الطلب وقسمته بالنسب حسب كمية كل عضو والسعر النهائي للمجموعة.
 
 ### الخطوة 4: افصلوا تكلفة الكمية عن رسوم التوصيل الثابتة
 بندان منفصلان لتجنب أي التباس في الحساب.
@@ -3223,10 +3171,9 @@ A Ramadan iftar hosting rotation between families doesn't have to end with someo
 
 ## كيف يساعدكم Diviso في تنظيم جمعية الشراء الجماعي؟
 
-- ✅ حساب تلقائي لنصيب كل عضو حسب كميته والسعر النهائي للشريحة التي بلغتها المجموعة
+- ✅ قسمة الطلب بالنسب حسب كمية كل عضو والسعر النهائي للشريحة التي بلغتها المجموعة
 - ✅ فصل تكلفة الكمية عن رسوم التوصيل الثابتة كبندين منفصلين
-- ✅ حساب فرق الشريحة بدقة إذا انسحب أحد الأعضاء قبل تثبيت الطلب
-- ✅ سجل شفاف لكل طلب شهري يسهّل التخطيط للطلبات القادمة
+- ✅ أرصدة واضحة: كم لك وكم عليك، ومين يحوّل لمين
 
 ## أسئلة شائعة
 
@@ -3316,7 +3263,7 @@ Ask for the full price table by quantity, not a single approximate price.
 After this deadline, withdrawing isn't allowed without covering any resulting tier difference.
 
 ### Step 3: Log Each Member's Quantity and the Group's Final Tier Price Clearly
-Use an app like Diviso to automatically calculate each member's share based on their quantity and the group's final price.
+Use an app like Diviso to log the order and split it by percentages based on each member's quantity and the group's final price.
 
 ### Step 4: Keep Quantity Cost Separate From the Flat Delivery Fee
 Two separate line items, to avoid any confusion in the calculation.
@@ -3330,10 +3277,9 @@ Two separate line items, to avoid any confusion in the calculation.
 
 ## How Diviso Helps Organize a Bulk-Buying Co-op
 
-- ✅ Automatically calculates each member's share based on their quantity and the group's final tier price
+- ✅ Splits the order by percentages based on each member's quantity and the group's final tier price
 - ✅ Separates quantity cost from the flat delivery fee as two distinct line items
-- ✅ Precisely calculates the tier difference if a member withdraws before the order is locked in
-- ✅ A transparent record of every monthly order that makes planning future orders easier
+- ✅ Clear balances: who owes whom
 
 ## Frequently Asked Questions
 
@@ -3421,7 +3367,7 @@ A bulk-buying co-op saves everyone significant money, but it needs a clear split
 3-5 أيام هامش كافٍ عادة لمتابعة أي متأخر دون التأثير على صاحب الحساب.
 
 ### الخطوة 3: سجّلوا كل دفعة فور تحصيلها
-استخدم تطبيق مثل Diviso لتسجيل جدول الدفعات وتذكير كل صديق قبل كل موعد تحصيل داخلي.
+استخدم تطبيق مثل Diviso لتسجيل كل دفعة ومن دفعها، حتى تبقى الأرصدة واضحة.
 
 ### الخطوة 4: اتفقوا مسبقاً على سياسة الانسحاب المبكر والتأخر
 حتى لا يحتاج الأمر لنقاش في لحظة حدوثه فعلياً.
@@ -3435,10 +3381,8 @@ A bulk-buying co-op saves everyone significant money, but it needs a clear split
 
 ## كيف يساعدكم Diviso في تنظيم شراء جماعي بالتقسيط؟
 
-- ✅ تسجيل جدول الأقساط الكامل ونصيب كل صديق من كل دفعة
-- ✅ تذكيرات تلقائية قبل كل موعد تحصيل داخلي بأيام
-- ✅ حساب سريع لنصيب أي صديق عند الانسحاب المبكر
-- ✅ سجل شفاف لكل دفعة ومن سدّدها وفي أي تاريخ
+- ✅ تسجيل كل دفعة ونصيب كل صديق منها
+- ✅ تسجيل الدفع وتأكيد الاستلام لكل دفعة ومن سدّدها
 
 ## أسئلة شائعة
 
@@ -3455,7 +3399,7 @@ A bulk-buying co-op saves everyone significant money, but it needs a clear split
 
 الشراء الجماعي بالتقسيط لا يحتاج أن يكون مصدر قلق لصاحب الحساب. وثّقوا نسبة كل شخص، حصّلوا الأنصبة قبل كل موعد استحقاق بأيام، واتفقوا مسبقاً على سياسة الانسحاب المبكر والتأخر.
 
-**جرب Diviso الآن ونظّم جدول أقساط شرائكم الجماعي بعدل وبدون مخاطرة على أي شخص.**
+**جرب Diviso الآن ونظّم أقساط شرائكم الجماعي بعدل وبدون مخاطرة على أي شخص.**
     `,
     contentEn: `
 ## Quick Answer
@@ -3514,7 +3458,7 @@ Decide in writing who pays how much of the total amount before the purchase is c
 3-5 days is usually enough margin to follow up with anyone late without affecting the account holder.
 
 ### Step 3: Log Every Payment as Soon as It's Collected
-Use an app like Diviso to log the installment schedule and remind each friend before every internal collection deadline.
+Use an app like Diviso to log each payment and who paid it, so balances stay clear.
 
 ### Step 4: Agree in Advance on an Early-Exit and Lateness Policy
 So it doesn't need to be negotiated in the moment it actually happens.
@@ -3528,10 +3472,8 @@ So it doesn't need to be negotiated in the moment it actually happens.
 
 ## How Diviso Helps Organize a Group BNPL Purchase
 
-- ✅ Logs the full installment schedule and each friend's share of every payment
-- ✅ Automatic reminders days before each internal collection deadline
-- ✅ Quick calculation of any friend's share when they exit early
-- ✅ A transparent record of every payment, who made it, and when
+- ✅ Logs each payment and each friend's share of it
+- ✅ Record each payment and who made it, and confirm receipt
 
 ## Frequently Asked Questions
 
@@ -3548,7 +3490,7 @@ It's best to agree in advance on a time buffer (collecting shares a few days bef
 
 A group BNPL purchase doesn't need to be a source of worry for the account holder. Document each person's ratio, collect shares a few days before every due date, and agree in advance on an early-exit and lateness policy.
 
-**Try Diviso now and organize your group purchase's installment schedule fairly, without putting anyone at risk.**
+**Try Diviso now and organize your group purchase's installments fairly, without putting anyone at risk.**
     `
   },
   {
@@ -3625,7 +3567,7 @@ A group BNPL purchase doesn't need to be a source of worry for the account holde
 عبر رابط أو مجموعة مخصصة يسهل الوصول إليها، تُظهر البنود المتاحة فقط.
 
 ### الخطوة 3: حدّثوا حالة كل بند فور تمويله
-استخدم تطبيق مثل Diviso لإنشاء قائمة تجارب مرئية تُظهر فوراً ما تم تمويله وما تبقى.
+استخدم مجموعة في تطبيق مثل Diviso يدخلها الضيوف برابط واحد، وسجّلوا فيها كل مساهمة ومن دفعها.
 
 ### الخطوة 4: تابعوا الفائض أو البنود الجديدة بعد الزفاف
 راجعوا الحصيلة النهائية وقرروا كيف توزع أي مبلغ إضافي.
@@ -3639,10 +3581,8 @@ A group BNPL purchase doesn't need to be a source of worry for the account holde
 
 ## كيف يساعدكم Diviso في تنظيم صندوق شهر العسل؟
 
-- ✅ إنشاء قائمة تجارب مرئية بأسعارها الفعلية يشاركها العروسان مع الضيوف
-- ✅ تحديث فوري لحالة كل بند (متاح، جزئي، مكتمل) لمنع التكرار
-- ✅ دعم المساهمة الجزئية من أكثر من ضيف على البند الواحد
-- ✅ سجل شفاف لإجمالي ما تم جمعه مقابل إجمالي القائمة
+- ✅ مجموعة يدعو لها العروسان الضيوف برابط واحد
+- ✅ تسجيل كل مساهمة ومن دفعها، مع تأكيد الاستلام
 
 ## أسئلة شائعة
 
@@ -3659,7 +3599,7 @@ A group BNPL purchase doesn't need to be a source of worry for the account holde
 
 صندوق شهر العسل لا يحتاج أن يكون محرجاً أو مكرراً. اعرضوا قائمة تجارب واضحة بأسعارها، حدّثوا حالة كل بند فوراً، وقرروا مسبقاً أين يذهب أي فائض.
 
-**جرب Diviso الآن ونظّم قائمة تجارب شهر عسلكم ليختار ضيوفكم ما يموّلونه بوضوح وبدون تكرار.**
+**جرب Diviso الآن وسجّلوا مساهمات ضيوفكم في صندوق شهر العسل بوضوح.**
     `,
     contentEn: `
 ## Quick Answer
@@ -3724,7 +3664,7 @@ Make the list realistic and tied to an actual trip plan, not arbitrary numbers.
 Through a link or a dedicated group that's easy to access, showing only the currently available items.
 
 ### Step 3: Update Each Item's Status as Soon as It's Funded
-Use an app like Diviso to create a visual experience list that immediately shows what's funded and what remains.
+Use a group in an app like Diviso that guests join with one link, and log every contribution and who paid it.
 
 ### Step 4: Decide What Happens to a Surplus or New Items After the Wedding
 Review the final total raised and decide how to allocate any extra amount.
@@ -3738,10 +3678,8 @@ Review the final total raised and decide how to allocate any extra amount.
 
 ## How Diviso Helps Organize a Honeymoon Fund
 
-- ✅ Creates a visual experience list at real prices that the couple shares with guests
-- ✅ Instantly updates each item's status (available, partial, fully funded) to prevent duplication
-- ✅ Supports partial contributions from multiple guests toward the same item
-- ✅ A transparent record of the total raised against the total experience list
+- ✅ A group the couple invites guests to with one link
+- ✅ Logs every contribution and who paid it, with receipt confirmed
 
 ## Frequently Asked Questions
 
@@ -3758,7 +3696,7 @@ New items can be added to the list, or the surplus can be turned into a general 
 
 A honeymoon fund doesn't need to be awkward or duplicated. List clear experiences with their prices, update each item's status immediately, and decide in advance where any surplus goes.
 
-**Try Diviso now and organize your honeymoon experience list so your guests can clearly pick what to fund, with no duplication.**
+**Try Diviso now and log your guests' honeymoon fund contributions clearly.**
     `
   },
   {
@@ -3846,7 +3784,7 @@ A honeymoon fund doesn't need to be awkward or duplicated. List clear experience
 وثّقوا أي مباريات تُعتبر "كبرى" ووزنها النسبي، حتى لا يختلف أحد على التصنيف لاحقاً.
 
 ### الخطوة 2: سجّلوا من حضر كل مباراة فور حدوثها
-لا تتركوا هذا للذاكرة في نهاية الموسم — استخدم تطبيق مثل Diviso لتسجيل الحضور مباشرة بعد كل مباراة.
+لا تتركوا هذا للذاكرة في نهاية الموسم — دوّنوه مباشرة بعد كل مباراة، وسجّلوا الدفعة الأولية في تطبيق مثل Diviso مع من دفعها.
 
 ### الخطوة 3: صفّوا الحساب في نهاية الموسم حسب وحدات الحضور الفعلية
 احسبوا نصيب كل شخص الفعلي، وقارنوه بما دفعه مقدماً، وسوّوا الفرق.
@@ -3863,8 +3801,7 @@ A honeymoon fund doesn't need to be awkward or duplicated. List clear experience
 
 ## كيف يساعدكم Diviso في تقسيم اشتراك موسمي مشترك؟
 
-- ✅ تسجيل كل مباراة ومن حضرها فور حدوثها
-- ✅ حساب تلقائي للوحدات والتكلفة النهائية حسب الحضور الفعلي ووزن كل مباراة
+- ✅ قسمة تكلفة الاشتراك بالنسب التي تحسبونها حسب الحضور ووزن كل مباراة
 - ✅ تتبع الدفعة الأولية مقابل التسوية النهائية في نهاية الموسم
 - ✅ سجل شفاف يوضح نصيب كل شخص بدقة
 
@@ -3959,7 +3896,7 @@ Agree in advance on a fair system, such as:
 Document which games count as "marquee" and their relative weight, so no one disputes the classification later.
 
 ### Step 2: Log Who Attended Each Game Right After It Happens
-Don't leave this to memory at the end of the season — use an app like Diviso to log attendance right after each game.
+Don't leave this to memory at the end of the season — note it right after each game, and log the upfront payment and who paid it in an app like Diviso.
 
 ### Step 3: Settle the Account at Season's End by Actual Attendance Units
 Calculate each person's real share, compare it with what they paid upfront, and settle the difference.
@@ -3976,8 +3913,7 @@ This avoids an awkward discussion when it actually happens during the season.
 
 ## How Diviso Helps Split a Shared Season Ticket
 
-- ✅ Logs every game and who attended it as it happens
-- ✅ Automatically calculates units and the final cost based on actual attendance and each game's weight
+- ✅ Splits the ticket cost by the percentages you work out from attendance and each game's weight
 - ✅ Tracks the initial deposit against the final season-end settlement
 - ✅ A transparent record showing each person's exact share
 
@@ -4075,7 +4011,7 @@ A shared season ticket doesn't need an argument at the end of the season if you 
 لا تنتظروا حتى عودة صاحب الحيوان لتذكر المبلغ من الذاكرة.
 
 ### الخطوة 3: احتفظوا بسجل منفصل لرصيد أيام/زيارات الرعاية
-استخدم تطبيق مثل Diviso لإنشاء مجموعة مخصصة لأصدقاء التبادل، تفصل بوضوح بين المصاريف النقدية والرصيد المتبادل.
+استخدم تطبيق مثل Diviso لإنشاء مجموعة مخصصة لأصدقاء التبادل وتسجيل المصاريف النقدية فيها، واحتفظوا برصيد أيام الرعاية في ملاحظة منفصلة.
 
 ### الخطوة 4: راجعوا الرصيد دورياً
 تأكدوا أن التبادل متوازن مع مرور الوقت، لا أن يرعى شخص واحد أكثر من غيره باستمرار دون تعويض.
@@ -4090,9 +4026,8 @@ A shared season ticket doesn't need an argument at the end of the season if you 
 ## كيف يساعدكم Diviso في تنظيم مجموعة رعاية الحيوانات المتبادلة؟
 
 - ✅ إنشاء مجموعة مخصصة لأصدقاء تبادل الرعاية
-- ✅ تسجيل كل مصروف فعلي بإيصاله لاسترداد سريع من صاحب الحيوان
-- ✅ سجل منفصل وواضح لرصيد أيام أو زيارات الرعاية المتبادلة
-- ✅ تذكيرات تلقائية عند عدم تسوية مصروف لفترة طويلة
+- ✅ تسجيل كل مصروف فعلي لاسترداد سريع من صاحب الحيوان
+- ✅ تسجيل الدفع وتأكيد الاستلام
 
 ## أسئلة شائعة
 
@@ -4176,7 +4111,7 @@ Document in writing what counts as "necessary" versus "optional" before the firs
 Don't wait until the owner returns to recall the amount from memory.
 
 ### Step 3: Keep a Separate Record of the Sitting Days/Visits Balance
-Use an app like Diviso to create a dedicated group for the trading friends, clearly separating cash expenses from the traded balance.
+Use an app like Diviso to create a dedicated group for the trading friends and log the cash expenses there, and keep the sitting-days balance in a separate note.
 
 ### Step 4: Review the Balance Periodically
 Make sure the trade stays balanced over time, and that one person isn't consistently sitting more than others without being compensated.
@@ -4191,9 +4126,8 @@ Make sure the trade stays balanced over time, and that one person isn't consiste
 ## How Diviso Helps Organize a Pet-Sitting Co-op
 
 - ✅ Creates a dedicated group for friends trading pet-sitting duties
-- ✅ Logs every real expense with its receipt for quick reimbursement from the pet's owner
-- ✅ A separate, clear record of the traded sitting days or visits balance
-- ✅ Automatic reminders when an expense goes unsettled for too long
+- ✅ Logs every real expense for quick reimbursement from the pet's owner
+- ✅ Records each payment and confirms receipt
 
 ## Frequently Asked Questions
 
@@ -4283,7 +4217,7 @@ Trading pet-sitting between friends doesn't need to be complicated if you separa
 هل يُخصم شيء عند غياب طويل؟ حددوا القاعدة قبل حدوث أي غياب فعلي.
 
 ### الخطوة 3: سجّلوا الفاتورة الشهرية في مجموعة مخصصة
-استخدم تطبيق مثل Diviso لإنشاء مجموعة بين العائلات المشتركة، وتحديد نصيب كل عائلة حسب عدد أطفالها تلقائياً.
+استخدم تطبيق مثل Diviso لإنشاء مجموعة بين العائلات المشتركة، وقسمة الفاتورة بالنسب حسب عدد أطفال كل عائلة.
 
 ### الخطوة 4: أعيدوا الحساب فوراً عند تغيّر عدد الأطفال
 انضمام أو انسحاب أي عائلة يجب أن يُحدَّث في الحساب الشهري التالي مباشرة.
@@ -4297,9 +4231,8 @@ Trading pet-sitting between friends doesn't need to be complicated if you separa
 
 ## كيف يساعدكم Diviso في تنظيم تكلفة توصيل المدرسة المشترك؟
 
-- ✅ حساب تلقائي لتكلفة المقعد الواحد وتوزيعها حسب عدد أطفال كل عائلة
-- ✅ إعادة حساب سريعة عند انضمام أو انسحاب عائلة
-- ✅ فصل بدل المسار الإضافي عن التكلفة الأساسية المشتركة
+- ✅ قسمة الفاتورة الشهرية بالنسب حسب عدد أطفال كل عائلة
+- ✅ تسجيل بدل المسار الإضافي كمصروف منفصل على العائلة المعنية فقط
 - ✅ سجل شفاف يوضح نصيب كل عائلة والدفعات الشهرية
 
 ## أسئلة شائعة
@@ -4378,7 +4311,7 @@ Establish these two figures clearly before each school term starts.
 Is anything discounted for a long absence? Decide the rule before any actual absence happens.
 
 ### Step 3: Log the Monthly Bill in a Dedicated Group
-Use an app like Diviso to create a group between the sharing families, automatically calculating each family's share based on their number of children.
+Use an app like Diviso to create a group between the sharing families and split the bill by percentages based on each family's number of children.
 
 ### Step 4: Recalculate Immediately When the Number of Children Changes
 A family joining or withdrawing should be reflected in the very next monthly calculation.
@@ -4392,9 +4325,8 @@ A family joining or withdrawing should be reflected in the very next monthly cal
 
 ## How Diviso Helps Organize a Shared School Run's Cost
 
-- ✅ Automatically calculates the cost per seat and distributes it by each family's number of children
-- ✅ Quick recalculation when a family joins or withdraws
-- ✅ Separates an extra-route allowance from the shared base cost
+- ✅ Splits the monthly bill by percentages based on each family's number of children
+- ✅ Logs an extra-route allowance as a separate expense charged only to the family that requested it
 - ✅ A transparent record showing each family's share and monthly payments
 
 ## Frequently Asked Questions
@@ -4510,8 +4442,7 @@ Organizing a shared school run between families doesn't need a recurring monthly
 ## كيف يساعدكم Diviso في تنظيم صندوق العيدية العائلي؟
 
 - ✅ إنشاء مجموعة عائلية مخصصة لصندوق العيدية منفصلة عن الحسابات الأخرى
-- ✅ حساب تلقائي لمساهمة كل شخص حسب نسبة الدخل
-- ✅ تسجيل فئات العمر ومبالغها لتحديث سهل كل عام
+- ✅ قسمة الصندوق بالنسب المتفق عليها حسب دخل كل شخص
 - ✅ سجل شفاف يوضح من ساهم بكم دون التأثير على عدالة التوزيع
 
 ## أسئلة شائعة
@@ -4615,8 +4546,7 @@ As children's ages change and new babies join the family, update the list annual
 ## How Diviso Helps Organize a Family Eidiya Fund
 
 - ✅ Creates a dedicated family group for the Eidiya fund, separate from other accounts
-- ✅ Automatically calculates each person's contribution by income ratio
-- ✅ Logs age tiers and their amounts for easy updates each year
+- ✅ Splits the fund by the agreed percentages based on each person's income
 - ✅ A transparent record showing who contributed what, without affecting the fairness of the payout
 
 ## Frequently Asked Questions
@@ -4726,7 +4656,6 @@ Eidiya doesn't need to become a source of awkward comparison between family memb
 - ✅ إنشاء مجموعة مخصصة لسكان الحي منفصلة عن الحسابات الشخصية
 - ✅ تسجيل الاشتراك الشهري الأساسي وأي تغطية إضافية كبنود منفصلة
 - ✅ سجل شفاف يوضح من دفع نصيبه كل شهر
-- ✅ تذكيرات تلقائية للمتأخرين قبل تصعيد الأمر
 
 ## أسئلة شائعة
 
@@ -4823,7 +4752,6 @@ If new residents join, or a home's situation changes (becomes vacant or gets reo
 - ✅ Creates a dedicated group for the neighborhood's residents, separate from personal accounts
 - ✅ Logs the base monthly subscription and any extra coverage as separate line items
 - ✅ A transparent record showing who paid their share each month
-- ✅ Automatic reminders for late payers before escalating
 
 ## Frequently Asked Questions
 
@@ -4943,9 +4871,8 @@ Organizing a neighborhood security subscription doesn't need to be a recurring d
 
 ## كيف يساعدكم Diviso في إدارة مصاريف العقار الموروث؟
 
-- ✅ تسجيل نسبة إرث كل وارث واستخدامها تلقائياً في كل حساب
-- ✅ تتبع مصاريف العقار وإيراداته منفصلة عن الحسابات الشخصية
-- ✅ احتساب القيمة الإيجارية العادلة لأي سكن مجاني كبند واضح
+- ✅ قسمة كل مصروف بالنسب حسب نصيب كل وارث في الإرث
+- ✅ تسجيل مصاريف العقار في مجموعة منفصلة عن الحسابات الشخصية
 - ✅ سجل شفاف يسهّل التسوية الدورية بين كل الورثة
 
 ## أسئلة شائعة
@@ -5054,9 +4981,8 @@ Don't let expenses and income pile up for years without settling, to avoid a com
 
 ## How Diviso Helps Manage a Jointly Inherited Property's Expenses
 
-- ✅ Logs each heir's inheritance share and applies it automatically to every calculation
-- ✅ Tracks the property's expenses and income separately from personal accounts
-- ✅ Calculates the fair market rent value of any rent-free occupancy as a clear line item
+- ✅ Splits each expense by percentages matching each heir's inheritance share
+- ✅ Logs the property's expenses in a group separate from personal accounts
 - ✅ A transparent record that makes periodic settlement easy for all heirs
 
 ## Frequently Asked Questions
@@ -5168,7 +5094,7 @@ Managing a jointly inherited property doesn't have to become a family dispute if
 حددوا كيف تُوزَّع الزيادة إذا تغيّرت فئة الغرفة، قبل أن يحدث الانسحاب فعلياً لا بعده.
 
 ### الخطوة 4: سجّلوا جدول كل دفعة لكل شخص بسعره الخاص
-استخدم تطبيق مثل Diviso لتسجيل سعر فئة كل شخص وجدول أقساطه بشكل منفصل ودقيق.
+استخدم تطبيق مثل Diviso لتسجيل كل دفعة ومن دفعها، حتى يبقى واضحاً كم دفع كل شخص وكم باقي عليه.
 
 ## أخطاء شائعة عند تقسيم تكلفة العمرة أو الحج الجماعي
 
@@ -5179,10 +5105,9 @@ Managing a jointly inherited property doesn't have to become a family dispute if
 
 ## كيف يساعدكم Diviso في تنظيم عمرة أو حج جماعي؟
 
-- ✅ تسجيل سعر فئة الغرفة الخاصة بكل شخص بشكل منفصل
-- ✅ جدولة الدفعات (العربون والأقساط) تلقائياً حسب سعر كل فرد
-- ✅ إعادة حساب سريعة عند تغيّر تصنيف الغرفة بسبب انسحاب أحد الأعضاء
-- ✅ سجل شفاف يوضح من دفع كم ومتى موعد دفعته القادمة
+- ✅ تسجيل تكلفة كل غرفة كمصروف منفصل واختيار المشاركين فيه
+- ✅ تسجيل الدفع وتأكيد الاستلام
+- ✅ سجل شفاف يوضح من دفع كم، وكم باقي على كل شخص
 
 ## أسئلة شائعة
 
@@ -5281,7 +5206,7 @@ Agree on who's sharing with whom, since this determines each person's final pric
 Decide how any price increase from a changed room tier will be distributed, before a withdrawal actually happens, not after.
 
 ### Step 4: Log Each Person's Payment Schedule at Their Own Price
-Use an app like Diviso to log each person's tier price and their installment schedule separately and precisely.
+Use an app like Diviso to log every payment and who made it, so it stays clear how much each person has paid and how much they still owe.
 
 ## Common Mistakes When Splitting a Group Umrah or Hajj Cost
 
@@ -5292,10 +5217,9 @@ Use an app like Diviso to log each person's tier price and their installment sch
 
 ## How Diviso Helps Organize a Group Umrah or Hajj Trip
 
-- ✅ Logs each person's room-tier price separately
-- ✅ Automatically schedules installment payments (deposit and subsequent payments) based on each person's own price
-- ✅ Quick recalculation when a room's tier changes due to a member withdrawing
-- ✅ A transparent record showing who paid what and when their next payment is due
+- ✅ Logs each room's cost as a separate expense with its own participants
+- ✅ Records each payment and confirms receipt
+- ✅ A transparent record showing who paid what and how much each person still owes
 
 ## Frequently Asked Questions
 
@@ -5409,8 +5333,7 @@ Organizing a group Umrah or Hajj trip doesn't need to be complicated once everyo
 ## كيف يساعدكم Diviso في تقسيم استرداد التأمين؟
 
 - ✅ تسجيل مساهمة كل شريك الأصلية في التأمين منذ بداية العقد
-- ✅ تصنيف الخصومات كعامة (تُقسّم على الجميع) أو خاصة (تُخصم من شخص واحد)
-- ✅ حساب تلقائي لصافي استرداد كل شخص عند الإخلاء
+- ✅ تسجيل كل خصم كمصروف واختيار من يتحمله: الجميع أو شخص واحد
 - ✅ سجل شفاف يوثّق كل خصم وسببه لتجنب أي خلاف لاحق
 
 ## أسئلة شائعة
@@ -5513,8 +5436,7 @@ Use an app like Diviso to document each person's original contribution and the d
 ## How Diviso Helps Split a Security Deposit Refund
 
 - ✅ Logs each roommate's original deposit contribution from the start of the lease
-- ✅ Classifies deductions as general (split among everyone) or specific (deducted from one person)
-- ✅ Automatically calculates each person's net refund at move-out
+- ✅ Logs each deduction as an expense and lets you choose who bears it: everyone or one person
 - ✅ A transparent record documenting every deduction and its cause to avoid later disputes
 
 ## Frequently Asked Questions
@@ -5625,10 +5547,9 @@ A deposit refund doesn't need to turn into a dispute at move-out. Document each 
 ## كيف يساعدكم Diviso في تقسيم راتب المربية المشتركة؟
 
 - ✅ إنشاء مجموعة مخصصة بين العائلات لتتبع راتب المربية فقط
-- ✅ حساب تلقائي للنصيب حسب نظام الوزن المتفق عليه
+- ✅ قسمة الراتب بالنسب المتفق عليها بين العائلات
 - ✅ تسجيل الساعات الإضافية كبند منفصل خاص بالعائلة الطالبة لها
 - ✅ سجل شفاف يوضح نصيب كل عائلة شهرياً
-- ✅ إعادة حساب سهلة عند انضمام أو انسحاب عائلة
 
 ## أسئلة شائعة
 
@@ -5726,10 +5647,9 @@ A new child joining, a child graduating out of care, or a new family joining —
 ## How Diviso Helps Split a Shared Nanny's Salary
 
 - ✅ Creates a dedicated group between families to track only the nanny's salary
-- ✅ Automatic calculation of each family's share based on the agreed weight system
+- ✅ Splits the salary by the percentages the families agree on
 - ✅ Logs extra hours as a separate line item charged to the requesting family
 - ✅ A transparent record showing each family's monthly share
-- ✅ Easy recalculation when a family joins or leaves the arrangement
 
 ## Frequently Asked Questions
 
@@ -5826,10 +5746,9 @@ A nanny share saves families significant money, but it needs a splitting system 
 
 ## كيف يساعدكم Diviso في تقسيم إيجار مساحة العمل المشتركة؟
 
-- ✅ تسجيل الإيجار الشهري وتقسيمه تلقائياً حسب نسبة أيام حضور كل عضو
+- ✅ تسجيل الإيجار الشهري وقسمته بالنسب التي تتفقون عليها حسب أيام الحضور
 - ✅ فصل التكاليف الثابتة (إنترنت، تنظيف) كبند منفصل يُقسّم بالتساوي
-- ✅ سجل شفاف يوضح جدول حضور كل عضو ونصيبه المحسوب
-- ✅ تعديل سهل للنسب عند انضمام عضو جديد أو تغيّر جدول أحدهم
+- ✅ سجل شفاف يوضح نصيب كل عضو وما دفعه
 
 ## أسئلة شائعة
 
@@ -5914,10 +5833,9 @@ These costs benefit every member equally on the days they're present, regardless
 
 ## How Diviso Helps Split Shared Workspace Rent
 
-- ✅ Logs the monthly rent and automatically splits it by each member's attendance ratio
+- ✅ Logs the monthly rent and splits it by the percentages you agree on from attendance days
 - ✅ Separates fixed costs (internet, cleaning) as a distinct line item split equally
-- ✅ A transparent record showing each member's attendance schedule and calculated share
-- ✅ Easy to adjust ratios when a new member joins or someone's schedule changes
+- ✅ A transparent record showing each member's share and what they've paid
 
 ## Frequently Asked Questions
 
@@ -5971,7 +5889,7 @@ A shared workspace doesn't need a monthly argument over who pays what. Agree on 
 - **تمويل بنسبة الدخل**: أعدل إذا تفاوت الدخل بشكل كبير، بنفس منطق **نصيب الطرف = (دخله ÷ مجموع دخل الطرفين) × إجمالي الميزانية**
 
 ### الخطوة 3: حوّلوا نصيبكما إلى الصندوق في بداية كل شهر
-سواء كان حساباً بنكياً مشتركاً أو مجموعة مخصصة في تطبيق مثل Diviso، يحوّل كل طرف نصيبه فور بداية الشهر، قبل أي إنفاق.
+يحوّل كل طرف نصيبه إلى حساب بنكي مشترك فور بداية الشهر، قبل أي إنفاق، ويمكن تسجيل كل تحويل في مجموعة مخصصة على تطبيق مثل Diviso.
 
 ### الخطوة 4: ادفعوا كل مصروف مشترك من الصندوق مباشرة
 لا حاجة لتسوية لاحقة — البقالة، الفواتير، الاشتراكات، كلها تُدفع من رصيد الصندوق مباشرة.
@@ -6020,11 +5938,9 @@ A shared workspace doesn't need a monthly argument over who pays what. Agree on 
 
 ## كيف يساعدكما Diviso في إدارة الصندوق المشترك؟
 
-- ✅ إنشاء مجموعة مخصصة للميزانية المشتركة منفصلة عن المصاريف الشخصية
-- ✅ تمويل شهري بنسبة الدخل أو أي نسبة متفق عليها
-- ✅ تسجيل كل مصروف يُدفع من الصندوق بإيصاله
-- ✅ ملخص شهري واضح للفائض أو العجز جاهز للترحيل أو التوزيع
-- ✅ تعديل سهل للنسبة عند تغيّر دخل أحد الطرفين
+- ✅ إنشاء مجموعة مخصصة لمصاريف البيت المشتركة منفصلة عن المصاريف الشخصية
+- ✅ قسمة كل مصروف بالتساوي أو بالنسب المتفق عليها، مثل نسبة الدخل
+- ✅ تسجيل كل مصروف يُدفع من الصندوق
 
 ## أسئلة شائعة
 
@@ -6041,7 +5957,7 @@ A shared workspace doesn't need a monthly argument over who pays what. Agree on 
 
 إدارة ميزانية البيت لا تحتاج تسوية كل فاتورة على حدة. أنشئا صندوقاً مشتركاً بنسبة تمويل عادلة، ادفعا كل مصروف مشترك منه مباشرة، وراجعا الفائض أو العجز شهرياً.
 
-**جرب Diviso الآن ونظّما ميزانية بيتكما المشتركة بعدل وبساطة.**
+**جرب Diviso الآن وسجّلا مصاريف بيتكما المشتركة بعدل وبساطة.**
     `,
     contentEn: `
 ## Quick Answer
@@ -6066,7 +5982,7 @@ Gather every recurring household line item: rent or housing installment, electri
 - **Income-proportional funding**: fairer when incomes differ significantly, using the same logic as **partner's share = (their income ÷ combined income) × total budget**
 
 ### Step 3: Transfer Your Share Into the Pot at the Start of Each Month
-Whether it's a shared bank account or a dedicated group in an app like Diviso, each partner transfers their share right at the start of the month, before any spending happens.
+Each partner transfers their share into a shared bank account right at the start of the month, before any spending happens, and each transfer can be logged in a dedicated group in an app like Diviso.
 
 ### Step 4: Pay Every Joint Expense Directly From the Pot
 No later settlement needed — groceries, bills, subscriptions are all paid straight from the pot's balance.
@@ -6115,11 +6031,9 @@ Revisit the contribution ratio whenever either partner's income changes signific
 
 ## How Diviso Helps Manage the Joint Pot
 
-- ✅ Creates a dedicated group for the shared budget, separate from personal expenses
-- ✅ Monthly funding by income ratio or any other agreed percentage
-- ✅ Logs every expense paid from the pot with its receipt
-- ✅ A clear monthly summary of any surplus or deficit, ready to roll over or redistribute
-- ✅ Easy to adjust the ratio when either partner's income changes
+- ✅ Creates a dedicated group for shared household expenses, separate from personal expenses
+- ✅ Splits each expense equally or by an agreed percentage, such as income ratio
+- ✅ Logs every expense paid from the pot
 
 ## Frequently Asked Questions
 
@@ -6136,7 +6050,7 @@ It can be rolled over into next month to reduce the funding amount needed, or re
 
 Managing a household budget doesn't require settling every bill separately. Set up a shared pot with a fair funding ratio, pay every joint expense directly from it, and review the surplus or deficit every month.
 
-**Try Diviso now and organize your shared household budget fairly and simply.**
+**Try Diviso now and log your shared household expenses fairly and simply.**
     `
   },
   {
@@ -6212,8 +6126,7 @@ Managing a household budget doesn't require settling every bill separately. Set 
 
 ## كيف يساعدكم Diviso في تسوية الأثاث المشترك؟
 
-- ✅ تسجيل الأثاث المشترك مع تاريخ الشراء ونسبة مساهمة كل شخص
-- ✅ حساب واضح للقيمة الحالية عند الحاجة للتسوية
+- ✅ تسجيل ثمن الأثاث المشترك ومن دفعه وبأي نسبة
 - ✅ سجل شفاف يوضح من دفع كم عند الشراء الأصلي
 - ✅ فصل تسوية الأثاث عن باقي مصاريف الانتقال أو السكن المشترك
 
@@ -6296,8 +6209,7 @@ If neither person wants to keep the item, sell it (to another friend or via a re
 
 ## How Diviso Helps Settle Shared Furniture
 
-- ✅ Logs shared furniture with its purchase date and each person's contribution percentage
-- ✅ A clear calculation of current value whenever a settlement is needed
+- ✅ Logs shared furniture's price, who paid it, and each person's percentage
 - ✅ A transparent record showing who paid what at the original purchase
 - ✅ Keeps furniture settlement separate from other moving or shared-housing expenses
 
@@ -6403,9 +6315,7 @@ Settling shared furniture when a roommate moves out doesn't need to involve gues
 
 - ✅ إنشاء مجموعة عائلية مخصصة لتتبع مصاريف الوالدين فقط
 - ✅ تقسيم مخصص بنسبة الدخل أو أي نسبة متفق عليها بين الإخوة
-- ✅ صندوق طوارئ منفصل بمساهمات شهرية ثابتة
 - ✅ سجل شفاف يراه كل الإخوة بدل الاعتماد على رسائل متفرقة
-- ✅ تعديل سهل للنسب عند تغيّر دخل أحد الإخوة
 
 ## أسئلة شائعة
 
@@ -6497,9 +6407,7 @@ This agreement should be **explicit and written down**, not an implicit assumpti
 
 - ✅ Creates a dedicated family group to track only parents' expenses
 - ✅ Custom splitting by income ratio or any other ratio the siblings agree on
-- ✅ A separate emergency fund with fixed monthly contributions
 - ✅ A transparent record all siblings can see instead of relying on scattered messages
-- ✅ Easy to adjust ratios when a sibling's income changes
 
 ## Frequently Asked Questions
 
@@ -6611,10 +6519,9 @@ Splitting parents' expenses between siblings doesn't have to be a source of fami
 
 ## كيف يساعدك Diviso في تقسيم مصاريف السيارة المشتركة؟
 
-- ✅ تسجيل التكاليف الثابتة وتقسيمها تلقائياً حسب نسبة الملكية
+- ✅ تسجيل التكاليف الثابتة وقسمتها بالنسب حسب حصة كل شريك في الملكية
 - ✅ تسجيل نفقات الوقود والصيانة وتقسيمها حسب نسبة استخدام كل شريك
-- ✅ متابعة صندوق الطوارئ المشترك بشفافية
-- ✅ سجل كامل لكل التكاليف يسهّل حساب عائد البيع لاحقاً
+- ✅ سجل كامل لكل التكاليف ومن دفع كل مبلغ
 
 ## أسئلة شائعة
 
@@ -6714,10 +6621,9 @@ The net sale proceeds (sale price minus any remaining loan balance) are split ac
 
 ## How Diviso Helps Split Shared Car Expenses
 
-- ✅ Logs fixed costs and automatically splits them by ownership percentage
+- ✅ Logs fixed costs and splits them by percentages matching each partner's ownership share
 - ✅ Logs fuel and maintenance expenses and splits them by each partner's usage share
-- ✅ Tracks the shared emergency fund transparently
-- ✅ A complete record of every cost that makes calculating resale proceeds easy later
+- ✅ A complete record of every cost and who paid it
 
 ## Frequently Asked Questions
 
@@ -6818,8 +6724,7 @@ A co-owned car needs a dual-split system: ownership percentage for fixed costs, 
 
 - ✅ تسجيل كل تذكرة بسعرها الفعلي حسب فئة المقعد
 - ✅ تتبع من دفع نصيبه قبل موعد الشراء الفعلي
-- ✅ تذكيرات تلقائية للمتأخرين قبل الموعد النهائي
-- ✅ توثيق واضح لسياسة الانسحاب المتفق عليها
+- ✅ محادثة داخل المجموعة لتثبيت سياسة الانسحاب المتفق عليها
 - ✅ سجل شفاف يوضح من اشترى ومن سدّد نصيبه
 
 ## أسئلة شائعة
@@ -6909,8 +6814,7 @@ Write it out in a group message before the purchase, so everyone knows the rule 
 
 - ✅ Logs each ticket at its actual price based on seat tier
 - ✅ Tracks who has paid their share before the actual purchase date
-- ✅ Automatic reminders for latecomers before the deadline
-- ✅ Clear documentation of the agreed cancellation policy
+- ✅ In-group chat to pin down the agreed cancellation policy
 - ✅ A transparent record showing who bought and who has settled their share
 
 ## Frequently Asked Questions
@@ -7015,9 +6919,7 @@ Buying tickets as a group doesn't need to be complicated if the rules are set in
 
 - ✅ تسجيل تكلفة الباقة الأساسية مقسّمة على عدد الوحدات العائلية
 - ✅ فصل الإضافات الفردية (طباعة، ألبومات) عن التكلفة المشتركة
-- ✅ إعادة حساب النصيب تلقائياً عند تغيّر عدد الوحدات المشاركة
 - ✅ تتبع من دفع العربون ومن عليه نصيبه المتبقي
-- ✅ سجل واضح يوضح تعريف كل وحدة ونصيبها المتفق عليه
 
 ## أسئلة شائعة
 
@@ -7109,9 +7011,7 @@ Don't wait until the photographer delivers the photos — collect at least the d
 
 - ✅ Logs the base package cost split by the number of family units
 - ✅ Separates individual add-ons (prints, albums) from the shared cost
-- ✅ Automatically recalculates each share when the number of participating units changes
 - ✅ Tracks who has paid the deposit and who still owes their remaining share
-- ✅ A clear record documenting each unit's definition and agreed share
 
 ## Frequently Asked Questions
 
@@ -7210,8 +7110,7 @@ Splitting a group photoshoot's cost fairly depends on the number of family units
 ## كيف يساعدك Diviso في تقسيم تكلفة مشاهدة المباراة؟
 
 - ✅ تسجيل رسم الحجز الثابت كمصروف يُقسّم بالتساوي على الحاضرين
-- ✅ تسجيل طلب كل شخص كمصروف فردي منفصل تلقائياً
-- ✅ تتبع سهل لمن وصل للحد الأدنى المطلوب ومن لم يصل بعد
+- ✅ تسجيل طلب كل شخص كمصروف فردي منفصل
 - ✅ تقسيم الأصناف المشتركة على الطاولة بالتساوي
 - ✅ سجل واضح للفاتورة الكاملة يسهّل التسوية بعد المباراة
 
@@ -7230,7 +7129,7 @@ Splitting a group photoshoot's cost fairly depends on the number of family units
 
 مشاهدة المباراة الجماعية بغرفة خاصة لا تحتاج حسابات معقدة. اعرفوا شروط المكان مسبقاً، قسّموا رسم الحجز بالتساوي، ودعوا كل شخص يدفع طلبه الفعلي.
 
-**جرب Diviso الآن وقسّم تكلفة مشاهدة المباراة القادمة بعدل وسرعة.**
+**جرب Diviso الآن وقسّم تكلفة مشاهدة المباراة القادمة بعدل ووضوح.**
     `,
     contentEn: `
 ## Quick Answer
@@ -7300,8 +7199,7 @@ Confirm everyone has reached the required minimum before requesting the final bi
 ## How Diviso Helps Split the Cost of Watching a Match
 
 - ✅ Logs the fixed booking fee as an expense split equally among attendees
-- ✅ Logs each person's order automatically as a separate individual expense
-- ✅ Easily tracks who has and hasn't reached the required minimum
+- ✅ Logs each person's order as a separate individual expense
 - ✅ Splits shared table items equally among everyone
 - ✅ A clear record of the full bill that makes settling up after the match easy
 
@@ -7320,7 +7218,7 @@ Add the shared items' cost to the fixed booking fee if there is one, then split 
 
 Watching a match together in a private room doesn't need complicated math. Learn the venue's terms in advance, split the booking fee equally, and let each person pay for what they actually ordered.
 
-**Try Diviso now and split the cost of your next match-watching gathering fairly and quickly.**
+**Try Diviso now and split the cost of your next match-watching gathering fairly and clearly.**
     `
   },
   {
@@ -7406,9 +7304,8 @@ Watching a match together in a private room doesn't need complicated math. Learn
 
 - ✅ إنشاء مجموعة مخصصة لتتبع اشتراكات جميع المشاركين
 - ✅ تتبع من دفع ومن لم يدفع بعد قبل بداية الموسم
-- ✅ تسجيل هيكل التوزيع المتفق عليه كمرجع واضح للجميع
-- ✅ توزيع الجوائز النهائية بمبالغ مخصصة حسب الترتيب
-- ✅ سجل شفاف يوثّق كل موسم منفصل إذا تكررت المسابقة سنوياً
+- ✅ محادثة داخل المجموعة لتثبيت هيكل التوزيع المتفق عليه
+- ✅ تسجيل دفع الجوائز للفائزين وتأكيد استلامها
 
 ## أسئلة شائعة
 
@@ -7499,9 +7396,8 @@ As soon as the season ends, review the standings and transfer the prizes accordi
 
 - ✅ Creates a dedicated group to track all participants' buy-ins
 - ✅ Tracks who has and hasn't paid before the season starts
-- ✅ Logs the agreed payout structure as a clear reference for everyone
-- ✅ Distributes final prizes as custom amounts based on the standings
-- ✅ A transparent record documenting each season separately if the competition repeats yearly
+- ✅ In-group chat to pin down the agreed payout structure
+- ✅ Records prize payments to the winners and confirms receipt
 
 ## Frequently Asked Questions
 
@@ -7581,7 +7477,7 @@ A fantasy league money pool needs clear rules from day one: a fixed buy-in, an a
 حددا: نسبة تقسيم المصاريف المتكررة، مبلغ مساهمة صندوق الطوارئ، وجدول الحضانة إن وجد.
 
 ### الخطوة 2: افتحا مجموعة مخصصة لمصاريف الحيوان
-استخدم تطبيق مثل Diviso لإنشاء مجموعة بينكما، تفصل المصاريف المتكررة عن صندوق الطوارئ.
+استخدم تطبيق مثل Diviso لإنشاء مجموعة بينكما، وسجّلا فيها كل مصروف ومن دفعه.
 
 ### الخطوة 3: سجّلا كل فاتورة بيطرية بإيصالها
 حتى الفحوصات الروتينية الصغيرة، لتجنب فقدان السجل مع الوقت.
@@ -7598,10 +7494,9 @@ A fantasy league money pool needs clear rules from day one: a fixed buy-in, an a
 
 ## كيف يساعدكما Diviso في تنظيم مصاريف الحيوان المشترك؟
 
-- ✅ مجموعة مخصصة تفصل المصاريف المتكررة عن صندوق الطوارئ
-- ✅ تتبع رصيد صندوق الطوارئ المتراكم بشفافية لكلا الطرفين
-- ✅ تسجيل كل فاتورة بيطرية بإيصالها كدليل موثّق
-- ✅ تعديل سهل لنسبة التقسيم عند تغيّر جدول الحضانة
+- ✅ مجموعة مخصصة لمصاريف الحيوان بينكما
+- ✅ تسجيل كل فاتورة بيطرية
+- ✅ قسمة كل مصروف بالتساوي أو بالنسب حسب وقت الحضانة
 - ✅ سجل تراكمي يوضح كل مصروف منذ بداية الملكية المشتركة
 
 ## أسئلة شائعة
@@ -7670,7 +7565,7 @@ Agree in advance on a backup rule: the difference gets split using the same rati
 Define: the recurring cost split ratio, the emergency fund contribution amount, and the custody schedule if there is one.
 
 ### Step 2: Open a Dedicated Group for Pet Expenses
-Use an app like Diviso to create a group between the two of you that separates recurring costs from the emergency fund.
+Use an app like Diviso to create a group between the two of you and log every expense and who paid it.
 
 ### Step 3: Log Every Vet Bill With Its Receipt
 Even small routine checkups, to avoid losing track of the record over time.
@@ -7687,10 +7582,9 @@ Confirm the accumulated amount is still sufficient, and adjust the monthly contr
 
 ## How Diviso Helps Organize Shared Pet Expenses
 
-- ✅ A dedicated group that separates recurring costs from the emergency fund
-- ✅ Transparently tracks the emergency fund's accumulated balance for both parties
-- ✅ Logs every vet bill with its receipt as documented proof
-- ✅ Easy to adjust the split ratio when the custody schedule changes
+- ✅ A dedicated group for the pet's expenses between the two of you
+- ✅ Logs every vet bill
+- ✅ Splits each expense equally or by percentages based on custody time
 - ✅ A running record showing every expense since joint ownership began
 
 ## Frequently Asked Questions
@@ -7768,7 +7662,7 @@ Jointly owning a pet shouldn't turn into a financial dispute during a crisis. Sp
 اتفقا على قائمة واضحة (مدرسة، طبي، أنشطة) لتجنب الجدال عند كل مصروف جديد.
 
 ### الخطوة 3: استخدما أداة محايدة لتسجيل المصاريف
-بدل الاعتماد على رسائل نصية متفرقة يصعب تتبعها، استخدم تطبيق مثل Diviso لإنشاء مجموعة مخصصة بينكما لتسجيل كل مصروف بإيصاله.
+بدل الاعتماد على رسائل نصية متفرقة يصعب تتبعها، استخدم تطبيق مثل Diviso لإنشاء مجموعة مخصصة بينكما لتسجيل كل مصروف.
 
 ### الخطوة 4: سدّدا الأنصبة بانتظام
 لا تتركا المصاريف تتراكم لأشهر — التسوية الدورية (شهرياً مثلاً) تقلل الاحتكاك.
@@ -7787,9 +7681,8 @@ Jointly owning a pet shouldn't turn into a financial dispute during a crisis. Sp
 
 - ✅ إنشاء مجموعة محايدة مخصصة بين الوالدين لتتبع مصاريف الأطفال فقط
 - ✅ تقسيم مخصص بنسبة الدخل أو أي نسبة أخرى متفق عليها
-- ✅ تسجيل كل مصروف بإيصاله كدليل موثّق
+- ✅ تسجيل كل مصروف
 - ✅ سجل شفاف يراه الطرفان بدلاً من التفاوض عبر الرسائل
-- ✅ تعديل سهل للنسبة عند تغيّر الظروف المالية
 
 ## أسئلة شائعة
 
@@ -7854,7 +7747,7 @@ Decide: income-proportional, 50/50, or another agreed ratio? Documenting it prev
 Agree on a clear list (school, medical, activities) to avoid arguing over every new expense.
 
 ### Step 3: Use a Neutral Tool to Log Expenses
-Instead of relying on scattered text messages that are hard to track, use an app like Diviso to create a dedicated group between the two of you to log every expense with its receipt.
+Instead of relying on scattered text messages that are hard to track, use an app like Diviso to create a dedicated group between the two of you to log every expense.
 
 ### Step 4: Settle Shares Regularly
 Don't let expenses pile up for months — periodic settlement (monthly, for example) reduces friction.
@@ -7873,9 +7766,8 @@ If either parent's income changes significantly, recalculate the percentage usin
 
 - ✅ Creates a neutral, dedicated group between parents to track only children's expenses
 - ✅ Custom splitting by income ratio or any other agreed percentage
-- ✅ Logs every expense with its receipt as documented proof
+- ✅ Logs every expense
 - ✅ A transparent record both parents can see, instead of negotiating over messages
-- ✅ Easy to adjust the ratio when financial circumstances change
 
 ## Frequently Asked Questions
 
@@ -7950,7 +7842,7 @@ Splitting children's expenses between separated parents shouldn't be a recurring
 شخص واحد يتولى الشراء الفعلي، لكن التحصيل يُفضّل أن يكون عبر تطبيق بدل جمع النقد يدوياً.
 
 ### الخطوة 3: سجّلوا كل عملية شراء بإيصالها
-استخدم تطبيق مثل Diviso لتسجيل المشتريات الشهرية وتتبع الرصيد المتبقي بشفافية للجميع.
+استخدم تطبيق مثل Diviso لتسجيل كل عملية شراء ومن دفعها، فتكون الأرصدة واضحة للجميع.
 
 ### الخطوة 4: راجعوا المساهمة كل ربع سنة
 إذا زاد عدد المشاركين أو تغيّر الاستهلاك، عدّلوا المبلغ الشهري ليبقى كافياً بدون فائض كبير.
@@ -7964,11 +7856,10 @@ Splitting children's expenses between separated parents shouldn't be a recurring
 
 ## كيف يساعدك Diviso في إدارة صندوق المكتب؟
 
-- ✅ تسجيل المساهمة الشهرية الثابتة لكل مشارك تلقائياً
-- ✅ تتبع الرصيد المتبقي ونقله للشهر التالي بدقة
-- ✅ تسجيل كل عملية شراء بإيصالها كمصروف موثّق
-- ✅ تعديل مساهمة الأعضاء الجدد بالتناسب حسب تاريخ انضمامهم
-- ✅ تقرير شهري واضح يوضح الوارد والمصروف لكل الأعضاء
+- ✅ دعوة الزملاء المشاركين برابط واحد
+- ✅ تسجيل الدفع وتأكيد الاستلام لكل مساهمة
+- ✅ تسجيل كل عملية شراء كمصروف
+- ✅ أرصدة واضحة: كم لك وكم عليك، ومين يحوّل لمين
 
 ## أسئلة شائعة
 
@@ -8031,7 +7922,7 @@ Ask: how much do we need monthly to cover expected consumption? Then divide it b
 One person handles the actual buying, but collection should go through an app rather than gathering cash manually.
 
 ### Step 3: Log Every Purchase With Its Receipt
-Use an app like Diviso to log the monthly purchases and track the remaining balance transparently for everyone.
+Use an app like Diviso to log every purchase and who paid it, so balances stay clear for everyone.
 
 ### Step 4: Review the Contribution Every Quarter
 If the number of participants or consumption changes, adjust the monthly amount to stay sufficient without a large surplus.
@@ -8045,11 +7936,10 @@ If the number of participants or consumption changes, adjust the monthly amount 
 
 ## How Diviso Helps Manage an Office Fund
 
-- ✅ Automatically logs each participant's fixed monthly contribution
-- ✅ Accurately tracks the remaining balance and carries it over to the next month
-- ✅ Logs every purchase with its receipt as a documented expense
-- ✅ Prorates new members' contributions based on their join date
-- ✅ A clear monthly report showing income and spending for all members
+- ✅ Invite participating coworkers with one link
+- ✅ Record each contribution and confirm receipt
+- ✅ Logs every purchase as an expense
+- ✅ Clear balances: who owes whom
 
 ## Frequently Asked Questions
 
@@ -8135,7 +8025,7 @@ A shared office coffee fund doesn't need complexity or precise tracking of every
 حددوا من سيحجز باسمه، واتفقوا على تحصيل التكلفة الكاملة من الجميع قبل الحجز أو فوراً بعده.
 
 ### الخطوة 2: سجّلوا كل مصروف فور حدوثه
-البنزين، الرسوم، المواقف — سجّلوها لحظياً في تطبيق مثل Diviso بدل جمع الفواتير للنهاية.
+البنزين، الرسوم، المواقف — سجّلوها فور حدوثها في تطبيق مثل Diviso بدل جمع الفواتير للنهاية.
 
 ### الخطوة 3: افصلوا الوديعة المستردة عن باقي التكلفة
 تتبعوها كبند منفصل حتى تعرفوا بالضبط كم يجب أن يُرد وكيف يُوزّع.
@@ -8153,9 +8043,7 @@ A shared office coffee fund doesn't need complexity or precise tracking of every
 ## كيف يساعدك Diviso في تقسيم تكلفة الرحلة البرية؟
 
 - ✅ تسجيل إيجار السيارة والبنزين والرسوم كبنود منفصلة أو مجمعة حسب رغبتكم
-- ✅ فصل الوديعة المستردة عن التكلفة النهائية للرحلة
 - ✅ تجميع تكلفة أكثر من سيارة وتقسيمها بالتساوي على كل المسافرين
-- ✅ تعديل النصيب تلقائياً عند اختلاف عدد أيام حضور كل شخص
 - ✅ سجل واضح يوضح من دفع الحجز الأولي ومن عليه نصيبه
 
 ## أسئلة شائعة
@@ -8230,7 +8118,7 @@ If someone joins the trip for just one day out of three, their share can be adju
 Decide who will book under their name, and agree to collect the full cost from everyone before or immediately after booking.
 
 ### Step 2: Log Every Expense as It Happens
-Fuel, tolls, parking — log them instantly in an app like Diviso instead of collecting receipts until the end.
+Fuel, tolls, parking — log them right away in an app like Diviso instead of collecting receipts until the end.
 
 ### Step 3: Separate the Refundable Deposit From the Rest of the Cost
 Track it as a distinct line item so you know exactly how much should come back and how to redistribute it.
@@ -8248,9 +8136,7 @@ Don't delay the final settlement more than a week after the trip ends.
 ## How Diviso Helps Split Road Trip Costs
 
 - ✅ Logs the rental fee, fuel, and tolls as separate or combined line items, however you prefer
-- ✅ Keeps the refundable deposit separate from the trip's final cost
 - ✅ Pools the cost of more than one car and splits it equally among all travelers
-- ✅ Automatically adjusts shares when travelers' lengths of participation differ
 - ✅ A clear record of who paid the initial booking and who still owes their share
 
 ## Frequently Asked Questions
@@ -8360,7 +8246,7 @@ Splitting the cost of a road trip in a rented car should be based on who benefit
 - ✅ تسجيل الأصناف الشخصية كمصروف فردي محمّل على شخص واحد فقط
 - ✅ حساب تلقائي دقيق لنصيب كل شخص من الفاتورة المجمّعة
 - ✅ سجل تراكمي لكل رحلات التسوق الجماعي مع نفس المجموعة
-- ✅ تسوية سريعة بعد كل رحلة بدل تراكم عدة فواتير
+- ✅ تسجيل الدفع وتأكيد الاستلام بعد كل رحلة بدل تراكم عدة فواتير
 
 ## أسئلة شائعة
 
@@ -8457,7 +8343,7 @@ If the household's needs change, adjust the item categorization based on actual 
 - ✅ Logs personal items as an individual expense billed to just one person
 - ✅ Accurate automatic calculation of each person's share of the combined bill
 - ✅ A running record of every shared shopping trip with the same group
-- ✅ Quick settlement after each trip instead of letting several receipts pile up
+- ✅ Record each payment and confirm receipt after every trip instead of letting several receipts pile up
 
 ## Frequently Asked Questions
 
@@ -8547,7 +8433,7 @@ Shared grocery shopping doesn't need to be complicated if you separate shared it
 قارنوا بين شركات النقل للحصول على أفضل سعر قبل توزيع التكلفة.
 
 ### الخطوة 3: سجّلوا التكلفة النهائية فوراً
-استخدم تطبيق مثل Diviso لتسجيل تكلفة النقل بمبالغ مخصصة لكل شخص حسب النسبة المتفق عليها.
+استخدم تطبيق مثل Diviso لتسجيل تكلفة النقل وقسمتها بالنسب المتفق عليها.
 
 ### الخطوة 4: افصلوا تكلفة الأثاث المشترك عن العفش الشخصي
 سجّلوهما كبندين منفصلين لتجنب الخلط عند الحساب.
@@ -8561,7 +8447,7 @@ Shared grocery shopping doesn't need to be complicated if you separate shared it
 
 ## كيف يساعدك Diviso في تقسيم تكلفة النقل؟
 
-- ✅ تسجيل تكلفة النقل بمبالغ مخصصة لكل شخص حسب نسبة حجم عفشه
+- ✅ تسجيل تكلفة النقل وقسمتها بالنسب التي تتفقون عليها حسب حجم عفش كل شخص
 - ✅ فصل تكلفة الأثاث المشترك عن العفش الشخصي كبندين منفصلين
 - ✅ حساب تلقائي دقيق يضمن مطابقة المجموع للتكلفة الإجمالية
 - ✅ سجل واضح يوضح من دفع حجز الشاحنة ومن عليه نصيبه
@@ -8643,7 +8529,7 @@ Before booking the truck, agree roughly on each person's percentage contribution
 Compare moving companies to get the best price before distributing the cost.
 
 ### Step 3: Log the Final Cost Immediately
-Use an app like Diviso to log the moving cost with custom amounts per person based on the agreed percentages.
+Use an app like Diviso to log the moving cost and split it by the agreed percentages.
 
 ### Step 4: Separate Shared Furniture Costs From Personal Belongings
 Log them as two separate line items to avoid confusion when calculating.
@@ -8657,7 +8543,7 @@ Log them as two separate line items to avoid confusion when calculating.
 
 ## How Diviso Helps Split Moving Costs
 
-- ✅ Logs the moving cost with custom amounts per person based on their belongings volume percentage
+- ✅ Logs the moving cost and splits it by the percentages you agree on, based on each person's belongings
 - ✅ Separates shared furniture costs from personal belongings as distinct line items
 - ✅ Automatic, accurate calculation that ensures the total matches the actual cost
 - ✅ A clear record of who paid the truck booking and who still owes their share
@@ -8741,10 +8627,10 @@ Moving in together shouldn't create a financial dispute over differing amounts o
 اتفقوا: هل هو عشاء يطبخه شخص واحد ويُقسّم البقالة، أم Potluck كامل، أم مزيج بينهما؟
 
 ### الخطوة 2: أنشئوا مجموعة تنسيق قبل الموعد
-استخدم تطبيق مثل Diviso لتسجيل من سيحضر أي صنف، وتتبع أي مصاريف مشتركة إضافية.
+استخدم تطبيق مثل Diviso لإنشاء مجموعة للعشاء، والتنسيق في محادثة المجموعة، وتسجيل أي مصاريف مشتركة إضافية.
 
 ### الخطوة 3: سجّلوا فاتورة البقالة فور الشراء
-صوّروا الإيصال وسجّلوه في التطبيق لحساب نصيب كل ضيف بدقة.
+سجّلوا المبلغ ومن دفعه في التطبيق لحساب نصيب كل ضيف بدقة.
 
 ### الخطوة 4: حصّلوا الفلوس بعد العشاء مباشرة
 لا تؤجلوا التحصيل — كل ما تأخرتم، زاد احتمال النسيان.
@@ -8759,9 +8645,9 @@ Moving in together shouldn't create a financial dispute over differing amounts o
 ## كيف يساعدك Diviso في تنظيم العشاء الجماعي؟
 
 - ✅ تسجيل فاتورة البقالة وتقسيمها على الضيوف تلقائياً باستثناء المضيف
-- ✅ تنسيق من يحضر أي صنف في عشاء الـPotluck
+- ✅ محادثة داخل المجموعة لتنسيق من يحضر أي صنف في عشاء الـPotluck
 - ✅ تسجيل المصاريف المشتركة الإضافية (ثلج، أكواب) كبند منفصل
-- ✅ تحصيل سريع فور انتهاء العشاء بدل الانتظار
+- ✅ تسجيل الدفع وتأكيد الاستلام بعد العشاء مباشرة بدل الانتظار
 - ✅ سجل تراكمي لعشوات المجموعة المتكررة بنظام التناوب
 
 ## أسئلة شائعة
@@ -8830,10 +8716,10 @@ Some gatherings combine both approaches: the host cooks the main dish and covers
 Agree on: a dinner cooked by one person with a grocery split, a full potluck, or a mix of both.
 
 ### Step 2: Create a Coordination Group Before the Date
-Use an app like Diviso to log who's bringing which dish and track any additional shared expenses.
+Use an app like Diviso to create a group for the dinner, coordinate in the group chat, and log any additional shared expenses.
 
 ### Step 3: Log the Grocery Bill Right After Purchasing
-Photograph the receipt and log it in the app to calculate each guest's exact share.
+Log the amount and who paid it in the app to calculate each guest's exact share.
 
 ### Step 4: Collect the Money Right After Dinner
 Don't delay collection — the longer you wait, the more likely it is to be forgotten.
@@ -8848,9 +8734,9 @@ Don't delay collection — the longer you wait, the more likely it is to be forg
 ## How Diviso Helps Organize a Group Dinner
 
 - ✅ Logs the grocery bill and automatically splits it among guests, excluding the host
-- ✅ Coordinates who's bringing which dish for a potluck
+- ✅ In-group chat to coordinate who's bringing which dish for a potluck
 - ✅ Logs shared extras (ice, cups) as a separate line item
-- ✅ Quick collection right after the dinner instead of waiting
+- ✅ Record each payment and confirm receipt right after the dinner instead of waiting
 - ✅ A running record of recurring group dinners on a rotating host system
 
 ## Frequently Asked Questions
@@ -8954,7 +8840,7 @@ A group dinner at home doesn't need to be complicated. Decide the format upfront
 تحتوي على تفصيل الأصناف والرسوم، وتُستخدم كمرجع عند الحساب.
 
 ### الخطوة 3: سجّلوا المصروف فوراً في تطبيق تقسيم
-استخدم تطبيق مثل Diviso لتسجيل كل صنف بمبلغه الفعلي، وتوزيع الرسوم المشتركة تلقائياً.
+استخدم تطبيق مثل Diviso لتسجيل طلب كل شخص كمصروف يخصه، والرسوم المشتركة كمصروف يُقسّم بالتساوي.
 
 ### الخطوة 4: لا تؤجلوا التسوية
 اطلبات التوصيل تتكرر كثيراً بين نفس المجموعة، فالتسوية الفورية تمنع تراكم عدة طلبات في حساب واحد معقد.
@@ -8968,10 +8854,9 @@ A group dinner at home doesn't need to be complicated. Decide the format upfront
 
 ## كيف يساعدك Diviso في تقسيم طلبات التوصيل؟
 
-- ✅ تسجيل كل صنف بمبلغه الفعلي لكل شخص
+- ✅ تسجيل طلب كل شخص كمصروف باختيار المشارك فيه
 - ✅ توزيع تلقائي للرسوم المشتركة (توصيل، خدمة، بقشيش) بالتساوي
-- ✅ توزيع خصم الكوبون بنسبة عادلة حسب قيمة كل طلب
-- ✅ تتبع فوري لمن دفع فاتورة التطبيق ومن عليه نصيبه
+- ✅ أرصدة واضحة: من دفع فاتورة التطبيق ومن عليه نصيبه
 - ✅ سجل تراكمي لكل طلبات التوصيل الجماعية مع نفس المجموعة
 
 ## أسئلة شائعة
@@ -8989,7 +8874,7 @@ A group dinner at home doesn't need to be complicated. Decide the format upfront
 
 طلب التوصيل الجماعي ما يحتاج يكون معقداً. كل شخص يدفع طلبه، وتُقسّم الرسوم بالتساوي، ويُوزّع الخصم بنسبة عادلة. سجّلوا كل شيء فور وصول الفاتورة ولا تتركوا الحسابات تتراكم.
 
-**جرب Diviso الآن وقسّم فاتورة طلب التوصيل القادم بعدل وسرعة.**
+**جرب Diviso الآن وقسّم فاتورة طلب التوصيل القادم بعدل.**
     `,
     contentEn: `
 ## Quick Answer
@@ -9063,7 +8948,7 @@ Easier than combining several separate orders, and it guarantees a single delive
 It shows the item and fee breakdown, and serves as your reference for the calculation.
 
 ### Step 3: Log the Expense Immediately in a Splitting App
-Use an app like Diviso to log each item at its actual price and automatically distribute the shared fees.
+Use an app like Diviso to log each person's order as their own expense, and the shared fees as an expense split equally.
 
 ### Step 4: Don't Delay Settlement
 Delivery orders repeat often within the same group, so settling immediately prevents multiple orders from piling up into one confusing tab.
@@ -9077,10 +8962,9 @@ Delivery orders repeat often within the same group, so settling immediately prev
 
 ## How Diviso Helps Split Delivery Orders
 
-- ✅ Logs each item at its actual price per person
+- ✅ Logs each person's order as an expense, choosing who it belongs to
 - ✅ Automatically distributes shared fees (delivery, service, tip) equally
-- ✅ Distributes a promo code discount proportionally based on each order's value
-- ✅ Instantly tracks who paid the app bill and who still owes their share
+- ✅ Clear balances: who paid the app bill and who still owes their share
 - ✅ A running record of all group delivery orders with the same crew
 
 ## Frequently Asked Questions
@@ -9098,7 +8982,7 @@ Add the shared item's price to the rest of the extra costs (delivery and service
 
 A group food delivery order doesn't have to be complicated. Everyone pays for their own items, the fees get split equally, and the discount gets distributed proportionally. Log everything as soon as the bill arrives and don't let the tabs pile up.
 
-**Try Diviso now and split your next delivery order fairly and quickly.**
+**Try Diviso now and split your next delivery order fairly.**
     `
   },
   {
@@ -9175,11 +9059,10 @@ A group food delivery order doesn't have to be complicated. Everyone pays for th
 
 ## كيف يساعدك Diviso في تنظيم أضحية العائلة؟
 
-- ✅ إنشاء مجموعة سنوية ثابتة لأضحية العائلة يمكن إعادة استخدامها كل عام
+- ✅ مجموعة لأضحية العائلة تدعون لها الجميع برابط واحد
 - ✅ تسجيل نصيب كل شخص حسب نوع مشاركته (سبع كامل، نصف سبع، غنم منفصلة)
 - ✅ تتبع من دفع نصيبه قبل موعد الحجز
-- ✅ تعديل النصيب تلقائياً عند تغيّر السعر النهائي
-- ✅ سجل واضح يوثّق من شارك وبأي حصة كل عام
+- ✅ سجل واضح يوثّق من شارك وبأي حصة
 
 ## أسئلة شائعة
 
@@ -9194,7 +9077,7 @@ A group food delivery order doesn't have to be complicated. Everyone pays for th
 
 ## الخلاصة
 
-تقسيم تكلفة الأضحية بين العائلة أسهل بكثير مع فهم نظام الأسباع وتنظيم واضح للتحصيل. حددوا نوع الأضحية مبكراً، وثّقوا الحصص، ودعوا التطبيق يتابع من دفع كل عام.
+تقسيم تكلفة الأضحية بين العائلة أسهل بكثير مع فهم نظام الأسباع وتنظيم واضح للتحصيل. حددوا نوع الأضحية مبكراً، وثّقوا الحصص، ودعوا التطبيق يتابع من دفع.
 
 **جرب Diviso الآن ونظّم جمع فلوس الأضحية مع عائلتك بسهولة.**
     `,
@@ -9261,11 +9144,10 @@ If the final price differs from the initial estimate (higher or lower), adjust e
 
 ## How Diviso Helps Organize a Family Udhiyah
 
-- ✅ Creates a recurring yearly group for the family sacrifice that can be reused every year
+- ✅ A group for the family sacrifice that everyone joins with one link
 - ✅ Logs each person's share based on their participation type (full share, half share, separate sheep)
 - ✅ Tracks who has paid their share before the booking deadline
-- ✅ Automatically adjusts shares when the final price changes
-- ✅ A clear record documenting who participated and with what share each year
+- ✅ A clear record documenting who participated and with what share
 
 ## Frequently Asked Questions
 
@@ -9280,7 +9162,7 @@ It's best to start about a month before Eid, since booking early secures better 
 
 ## Conclusion
 
-Splitting the cost of the Eid al-Adha sacrifice among family becomes much easier once you understand the seven-share system and set up a clear collection process. Decide the type of sacrifice early, document the shares, and let the app track who has paid each year.
+Splitting the cost of the Eid al-Adha sacrifice among family becomes much easier once you understand the seven-share system and set up a clear collection process. Decide the type of sacrifice early, document the shares, and let the app track who has paid.
 
 **Try Diviso now and organize your family's udhiyah collection with ease.**
     `
@@ -9360,8 +9242,8 @@ Splitting the cost of the Eid al-Adha sacrifice among family becomes much easier
 ### الخطوة 2: سجّلوا جدول الحضور التقريبي لكل شخص
 لا يحتاج دقة زائدة — تقدير عام لساعات الوجود في المنزل كافٍ لمعظم الحالات.
 
-### الخطوة 3: سجّلوا كل فاتورة بمبالغ مخصصة
-استخدم تطبيق مثل Diviso لتسجيل فاتورة الكهرباء بنصيب مختلف لكل شخص بدل القسمة التلقائية المتساوية.
+### الخطوة 3: سجّلوا كل فاتورة بالنسب المتفق عليها
+استخدم تطبيق مثل Diviso لتسجيل فاتورة الكهرباء وقسمتها بالنسب المتفق عليها بدل القسمة المتساوية.
 
 ### الخطوة 4: راجعوا النسب كل بضعة أشهر
 إذا تغيّر جدول أحد الشركاء (بدأ العمل من المنزل مثلاً)، عدّلوا النسب المتفق عليها.
@@ -9376,10 +9258,8 @@ Splitting the cost of the Eid al-Adha sacrifice among family becomes much easier
 ## كيف يساعدك Diviso في هذا الموقف؟
 
 - ✅ تسجيل كل فاتورة (كهرباء، ماء، إنترنت) كبند منفصل بطريقة تقسيم مختلفة لكل واحدة
-- ✅ حفظ نسب التقسيم المتفق عليها لإعادة استخدامها كل شهر تلقائياً
-- ✅ تعديل سريع للنسب عند تغيّر ظروف أحد الشركاء
 - ✅ سجل شهري واضح يوضح كيف حُسب نصيب كل شخص
-- ✅ تنبيهات تلقائية عند وصول موعد فاتورة جديدة
+- ✅ تسجيل الدفع وتأكيد الاستلام لكل فاتورة
 
 ## أسئلة شائعة
 
@@ -9462,8 +9342,8 @@ Decide: will you use a sub-meter, an approximate hours indicator, or a simple eq
 ### Step 2: Log Each Person's Approximate Presence Schedule
 No need for excessive precision — a general estimate of hours at home is enough for most cases.
 
-### Step 3: Log Each Bill With Custom Amounts
-Use an app like Diviso to log the electricity bill with a different share for each person instead of an automatic equal split.
+### Step 3: Log Each Bill With the Agreed Percentages
+Use an app like Diviso to log the electricity bill and split it by the agreed percentages instead of an equal split.
 
 ### Step 4: Review the Ratios Every Few Months
 If someone's schedule changes (say, they start working from home), adjust the agreed-upon ratios.
@@ -9478,10 +9358,8 @@ If someone's schedule changes (say, they start working from home), adjust the ag
 ## How Diviso Helps in This Situation
 
 - ✅ Logs each bill (electricity, water, internet) as a separate line item with its own splitting method
-- ✅ Saves the agreed-upon split ratios to reuse automatically every month
-- ✅ Quickly adjusts ratios when a roommate's circumstances change
 - ✅ A clear monthly record showing how each person's share was calculated
-- ✅ Automatic reminders when a new bill is due
+- ✅ Record each payment and confirm receipt for every bill
 
 ## Frequently Asked Questions
 
@@ -9565,8 +9443,8 @@ Shared utility bills shouldn't be a recurring monthly source of conflict. Agree 
 ### الخطوة 1: اتفقوا على الأوزان قبل الحجز
 ناقشوا توزيع الغرف والأوزان المناسبة قبل تأكيد الحجز، لتجنب أي خلاف لاحق.
 
-### الخطوة 2: سجّلوا نصيب كل شخص كمبلغ مخصص
-استخدم تطبيق مثل Diviso لتسجيل مصروف الإقامة بمبالغ فردية مختلفة لكل نزيل بدل القسمة التلقائية المتساوية.
+### الخطوة 2: سجّلوا نصيب كل شخص كنسبة متفق عليها
+استخدم تطبيق مثل Diviso لتسجيل مصروف الإقامة وقسمته بالنسب المتفق عليها حسب غرفة كل نزيل بدل القسمة المتساوية.
 
 ### الخطوة 3: افصلوا مصاريف الإقامة عن باقي مصاريف الرحلة
 سجّلوا الطعام والأنشطة كمصاريف منفصلة تُقسّم بالتساوي، حتى لا تختلط بحساب الغرف.
@@ -9583,11 +9461,10 @@ Shared utility bills shouldn't be a recurring monthly source of conflict. Agree 
 
 ## كيف يساعدك Diviso في هذا الموقف؟
 
-- ✅ تسجيل مصروف الإقامة بمبالغ مخصصة لكل شخص حسب غرفته
+- ✅ تسجيل مصروف الإقامة وقسمته بالنسب المتفق عليها حسب غرفة كل شخص
 - ✅ فصل تكلفة الغرف عن باقي مصاريف الرحلة المشتركة
 - ✅ حساب تلقائي دقيق يضمن مطابقة المجموع للتكلفة الإجمالية
-- ✅ سجل واضح يوضح الوزن والنصيب المتفق عليه لكل شخص
-- ✅ سهولة تعديل الأوزان إذا تغيّر توزيع الغرف قبل الرحلة
+- ✅ سجل واضح يوضح النصيب المتفق عليه لكل شخص
 
 ## أسئلة شائعة
 
@@ -9659,8 +9536,8 @@ Food, transportation, and group activities should be split equally among everyon
 ### Step 1: Agree on the Weights Before Booking
 Discuss the room assignments and appropriate weights before confirming the booking, to avoid any dispute later.
 
-### Step 2: Log Each Person's Share as a Custom Amount
-Use an app like Diviso to log the accommodation expense with different individual amounts per guest instead of an automatic equal split.
+### Step 2: Log Each Person's Share as an Agreed Percentage
+Use an app like Diviso to log the accommodation expense and split it by the agreed percentages based on each guest's room instead of an equal split.
 
 ### Step 3: Separate Accommodation Costs From the Rest of the Trip's Expenses
 Log food and activities as separate expenses split equally, so they don't get mixed up with the room calculation.
@@ -9677,11 +9554,10 @@ Make sure everyone agrees on the weights and final shares before the first payme
 
 ## How Diviso Helps in This Situation
 
-- ✅ Logs the accommodation expense with custom amounts per person based on their room
+- ✅ Logs the accommodation expense and splits it by agreed percentages based on each person's room
 - ✅ Keeps room costs separate from the rest of the trip's shared expenses
 - ✅ Automatic, accurate calculation that ensures the total matches the actual cost
-- ✅ A clear record of the agreed weight and share for each person
-- ✅ Easy to adjust weights if the room assignment changes before the trip
+- ✅ A clear record of the agreed share for each person
 
 ## Frequently Asked Questions
 
@@ -9782,10 +9658,8 @@ Splitting shared accommodation costs fairly means accounting for the difference 
 
 ## كيف يساعدك Diviso في تنظيم رحلة توديع العزوبية؟
 
-- ✅ استثناء صاحب المناسبة تلقائياً من قسمة التكلفة
-- ✅ تتبع الدفعة المقدمة (العربون) بشكل منفصل عن التسوية النهائية
-- ✅ تسجيل كل مصروف إضافي فوراً أثناء الرحلة
-- ✅ تعديل نصيب الجميع تلقائياً عند تغيّر عدد الحاضرين
+- ✅ استثناء صاحب المناسبة من قسمة التكلفة باختيار المشاركين في كل مصروف
+- ✅ تسجيل كل مصروف إضافي أثناء الرحلة
 - ✅ سجل واضح يوضح من دفع ومن عليه نصيبه بعد الرحلة
 
 ## أسئلة شائعة
@@ -9875,10 +9749,8 @@ Review the difference between what was collected upfront and the actual cost, an
 
 ## How Diviso Helps Organize a Bachelor or Bachelorette Trip
 
-- ✅ Automatically excludes the guest of honor from the cost split
-- ✅ Tracks the upfront deposit separately from the final settlement
-- ✅ Logs every extra expense instantly during the trip
-- ✅ Automatically adjusts everyone's share when the number of attendees changes
+- ✅ Excludes the guest of honor from the cost split by choosing who's in each expense
+- ✅ Logs every extra expense during the trip
 - ✅ A clear record of who has paid and who still owes after the trip
 
 ## Frequently Asked Questions
@@ -9966,7 +9838,7 @@ A bachelor or bachelorette trip is a happy occasion, and it shouldn't turn into 
 حددوا التاريخ بالضبط (وليس "منتصف الشهر تقريباً") لتجنب الخلاف على عدد الأيام.
 
 ### الخطوة 2: سجّلوا الحساب فوراً
-استخدم تطبيق مثل Diviso لتسجيل النصيب المعدّل لكل شخص بمبلغ مخصص بدل الاعتماد على الحساب الذهني.
+استخدم تطبيق مثل Diviso لتسجيل الإيجار وقسمته بالنسب التي حسبتموها لكل شخص بدل الاعتماد على الحساب الذهني.
 
 ### الخطوة 3: وثّقوا الاتفاق كتابياً
 رسالة واتساب بسيطة تحدد "فهد يدفع 500 ريال عن أيام 1-15" تكفي لتوثيق الاتفاق ومنع الجدال لاحقاً.
@@ -9983,11 +9855,9 @@ A bachelor or bachelorette trip is a happy occasion, and it shouldn't turn into 
 
 ## كيف يساعدك Diviso في هذا الموقف؟
 
-- ✅ تسجيل مصروف الإيجار بمبالغ مخصصة لكل شريك حسب عدد أيامه الفعلية
-- ✅ تعديل تلقائي لنصيب الباقين عند إضافة أو حذف عضو من المجموعة
-- ✅ سجل واضح لتاريخ الانضمام والمغادرة لكل شخص
-- ✅ فصل بند التأمين عن حساب الإيجار الشهري
-- ✅ تقارير شهرية توضح كيف تغيّر التقسيم من شهر لآخر
+- ✅ تسجيل مصروف الإيجار وقسمته بالنسب التي تحسبونها حسب عدد أيام كل شريك
+- ✅ أرصدة واضحة: كم لك وكم عليك، ومين يحوّل لمين
+- ✅ تسجيل الدفع وتأكيد الاستلام
 
 ## أسئلة شائعة
 
@@ -10002,7 +9872,7 @@ A bachelor or bachelorette trip is a happy occasion, and it shouldn't turn into 
 
 ## الخلاصة
 
-انتقال أحد شركاء السكن في منتصف الشهر لا يجب أن يخلق خلافاً مالياً. احسبوا النصيب بالتناسب مع عدد الأيام الفعلية، وثّقوا الاتفاق كتابياً، ودعوا التطبيق يعدّل الحسابات تلقائياً بدل الحساب اليدوي.
+انتقال أحد شركاء السكن في منتصف الشهر لا يجب أن يخلق خلافاً مالياً. احسبوا النصيب بالتناسب مع عدد الأيام الفعلية، وثّقوا الاتفاق كتابياً، ودعوا التطبيق يحسب الأرصدة بدل الحساب اليدوي.
 
 **جرب Diviso الآن واحسب نصيب الإيجار بالتناسب بدقة تامة.**
     `,
@@ -10062,7 +9932,7 @@ The deposit paid upfront is refunded to the departing roommate after confirming 
 Pin down the exact date (not "roughly mid-month") to avoid disagreement over the number of days.
 
 ### Step 2: Log the Calculation Immediately
-Use an app like Diviso to log each person's adjusted share as a custom amount instead of relying on mental math.
+Use an app like Diviso to log the rent and split it by the percentages you calculated for each person instead of relying on mental math.
 
 ### Step 3: Document the Agreement in Writing
 A simple message stating "Fahad pays 500 SAR for days 1-15" is enough to document the agreement and prevent later disputes.
@@ -10079,11 +9949,9 @@ Confirm the new split (without the departed roommate, or with the replacement) i
 
 ## How Diviso Helps in This Situation
 
-- ✅ Logs the rent expense with custom amounts per roommate based on their actual number of days
-- ✅ Automatically adjusts the remaining roommates' shares when a member is added or removed from the group
-- ✅ A clear record of each person's move-in and move-out date
-- ✅ Keeps the deposit as a separate line item from the monthly rent calculation
-- ✅ Monthly reports showing how the split changed from one month to the next
+- ✅ Logs the rent expense and splits it by the percentages you calculate from each roommate's days
+- ✅ Clear balances: who owes whom
+- ✅ Record each payment and confirm receipt
 
 ## Frequently Asked Questions
 
@@ -10098,7 +9966,7 @@ No, the deposit is a completely separate line item refunded to the departing roo
 
 ## Conclusion
 
-A roommate moving out mid-month shouldn't create a financial dispute. Calculate the share proportionally to the actual number of days, document the agreement in writing, and let the app adjust the numbers automatically instead of doing the math by hand.
+A roommate moving out mid-month shouldn't create a financial dispute. Calculate the share proportionally to the actual number of days, document the agreement in writing, and let the app work out the balances instead of doing the math by hand.
 
 **Try Diviso now and calculate prorated rent shares with complete accuracy.**
     `
@@ -10166,7 +10034,7 @@ A roommate moving out mid-month shouldn't create a financial dispute. Calculate 
 تطبيقات الأوبر وكريم تعرض المسافة والأجرة الإجمالية في نهاية الرحلة — احتفظوا بها للرجوع إليها عند الحساب.
 
 ### الخطوة 3: سجّلوا المصروف فوراً
-استخدم تطبيق مثل Diviso لتسجيل أجرة الرحلة وتقسيمها بمبالغ مخصصة لكل شخص بدلاً من القسمة المتساوية التلقائية.
+استخدم تطبيق مثل Diviso لتسجيل أجرة الرحلة وتقسيمها بالنسب المتفق عليها بدلاً من القسمة المتساوية.
 
 ### الخطوة 4: حوّلوا الفلوس بنفس الوقت
 لا تتركوا الرحلات تتراكم كديون متفرقة — سوّوا الحساب بعد كل رحلة أو في نهاية الليلة.
@@ -10180,8 +10048,8 @@ A roommate moving out mid-month shouldn't create a financial dispute. Calculate 
 
 ## كيف يساعدك Diviso في تقسيم رحلات الأوبر؟
 
-- ✅ تسجيل أجرة الرحلة كمصروف فوري بمبالغ مخصصة لكل راكب
-- ✅ دعم التقسيم غير المتساوي حسب المسافة أو نقطة النزول
+- ✅ تسجيل أجرة الرحلة ومن دفعها
+- ✅ قسمة الأجرة بالنسب التي تتفقون عليها حسب المسافة أو نقطة النزول
 - ✅ تجميع كل رحلات الليلة في مجموعة واحدة وتسويتها دفعة واحدة
 - ✅ سجل واضح يوضح من دفع الرحلة الفعلية ومن عليه نصيبه
 
@@ -10254,7 +10122,7 @@ Decide in advance: equal split or distance-based split, especially if the drop-o
 Uber and Careem show the distance and total fare at the end of the trip — save it for reference when calculating the split.
 
 ### Step 3: Log the Expense Immediately
-Use an app like Diviso to log the ride fare and split it with custom amounts per person instead of an automatic equal split.
+Use an app like Diviso to log the ride fare and split it by the agreed percentages instead of an equal split.
 
 ### Step 4: Settle Up Around the Same Time
 Don't let multiple rides pile up as scattered debts — settle the bill after each ride or at the end of the night.
@@ -10268,8 +10136,8 @@ Don't let multiple rides pile up as scattered debts — settle the bill after ea
 
 ## How Diviso Helps Split Uber and Careem Rides
 
-- ✅ Logs the ride fare instantly with custom amounts per rider
-- ✅ Supports uneven splits based on distance or drop-off point
+- ✅ Logs the ride fare and who paid it
+- ✅ Splits the fare by the percentages you agree on, based on distance or drop-off point
 - ✅ Groups all of a night's rides together and settles them in one go
 - ✅ A clear record of who paid for the actual ride and who still owes their share
 
@@ -10362,12 +10230,10 @@ Splitting an Uber or Careem fare fairly means thinking about drop-off points, no
 - **تجاهل الحلقات المقفلة**: تحويلات فعلية لديون تُلغي بعضها رياضياً
 - **عدم توثيق من دفع فعلاً**: يصعب التحقق لاحقاً من اكتمال التسوية
 
-## كيف يحسب Diviso أقل عدد تحويلات تلقائياً؟
+## كيف يساعدك Diviso في تسوية ديون المجموعة؟
 
 - ✅ يحسب الرصيد الصافي لكل عضو في المجموعة تلقائياً
-- ✅ يطابق الأرصدة الموجبة والسالبة لأقل عدد تحويلات ممكن
 - ✅ يعرض لكل شخص بالضبط لمن يحوّل وكم المبلغ
-- ✅ يحدّث التسوية فوراً عند إضافة أي مصروف جديد
 - ✅ يوثّق كل تحويلة مؤكدة من الطرفين لتجنب الجدال
 
 ## أسئلة شائعة
@@ -10383,9 +10249,9 @@ Splitting an Uber or Careem fare fairly means thinking about drop-off points, no
 
 ## الخلاصة
 
-تسوية مصاريف المجموعة لا يجب أن تعني عشرات التحويلات المتبادلة. احسبوا الرصيد الصافي لكل شخص، طابقوا الديون والمستحقات، واتركوا التطبيق يقلل عدد التحويلات إلى أدنى حد ممكن.
+تسوية مصاريف المجموعة لا يجب أن تعني عشرات التحويلات المتبادلة. احسبوا الرصيد الصافي لكل شخص، طابقوا الديون والمستحقات، واتركوا التطبيق يوضح لكل شخص لمن يحوّل وكم.
 
-**جرب Diviso الآن وسوِّ حسابات مجموعتك بأقل عدد تحويلات ممكن.**
+**جرب Diviso الآن واعرف بوضوح مين يحوّل لمين في مجموعتك.**
     `,
     contentEn: `
 ## Quick Answer
@@ -10447,12 +10313,10 @@ In most cases, the minimum possible number of transactions equals (the number of
 - **Ignoring closed loops**: making real transfers for debts that mathematically cancel out
 - **Not documenting who actually paid**: makes it hard to verify the settlement is complete later
 
-## How Diviso Calculates the Minimum Number of Transactions Automatically
+## How Diviso Helps Settle a Group's Debts
 
 - ✅ Automatically calculates every group member's net balance
-- ✅ Matches positive and negative balances to reach the minimum number of transfers
 - ✅ Shows each person exactly who to pay and how much
-- ✅ Updates the settlement instantly whenever a new expense is added
 - ✅ Records each transfer as confirmed by both sides to avoid disputes
 
 ## Frequently Asked Questions
@@ -10468,9 +10332,9 @@ Subtract their total share of all group expenses from the total amount they actu
 
 ## Conclusion
 
-Settling a group's expenses shouldn't mean dozens of back-and-forth transfers. Calculate each person's net balance, match debts against credits, and let the app reduce the number of transfers to the absolute minimum.
+Settling a group's expenses shouldn't mean dozens of back-and-forth transfers. Calculate each person's net balance, match debts against credits, and let the app show each person who to pay and how much.
 
-**Try Diviso now and settle your group's expenses with the fewest transfers possible.**
+**Try Diviso now and see clearly who pays whom in your group.**
     `
   },
   {
@@ -10522,7 +10386,7 @@ Settling a group's expenses shouldn't mean dozens of back-and-forth transfers. C
 اطلبوا التحويل قبل موعد الشراء بيومين على الأقل، حتى يتسع الوقت لمتابعة المتأخرين بدون ضغط اللحظة الأخيرة.
 
 ### الخطوة 4: تابعوا من دفع ومن لم يدفع بشفافية
-بدل الرسائل الفردية المحرجة، خلّوا التطبيق يعرض للجميع (أو للمسؤول فقط) حالة كل شخص، فتصير المتابعة تلقائية لا شخصية.
+بدل الرسائل الفردية المحرجة، سجّلوا كل دفعة في التطبيق مع تأكيد الاستلام، فتكون الأرصدة واضحة للجميع والمتابعة غير شخصية.
 
 ### الخطوة 5: اشتروا الهدية وسجّلوا الفرق
 بعد الشراء، سجّلوا السعر الفعلي. لو زاد أو نقص عن المتوقع، وزّعوا الفرق أو ردّوه بشفافية.
@@ -10544,10 +10408,9 @@ Settling a group's expenses shouldn't mean dozens of back-and-forth transfers. C
 ## كيف يساعدك Diviso في تنظيم جمع فلوس الهدية؟
 
 - ✅ إنشاء مجموعة مؤقتة مخصصة لكل مناسبة هدية
-- ✅ عرض نصيب الفرد المقترح تلقائياً بناءً على الميزانية وعدد المشاركين
+- ✅ دعوة المشاركين برابط واحد
 - ✅ تتبع من دفع ومن لم يدفع بعد دون رسائل شخصية محرجة
-- ✅ تعديل النصيب تلقائياً إذا انضم أو انسحب أحد المشاركين
-- ✅ إغلاق المجموعة بعد الشراء وتوثيق التكلفة النهائية
+- ✅ تسجيل الدفع وتأكيد الاستلام لكل مساهمة
 
 ## أسئلة شائعة
 
@@ -10604,7 +10467,7 @@ Instead of scattered WhatsApp messages that are hard to track, use an app like D
 Ask for transfers at least two days before the purchase date, so there's time to follow up on stragglers without last-minute pressure.
 
 ### Step 4: Track Who's Paid Transparently
-Instead of awkward individual messages, let the app show everyone (or just the organizer) each person's status, so follow-up becomes automatic instead of personal.
+Instead of awkward individual messages, record each payment in the app and confirm receipt, so balances are clear to everyone and follow-up isn't personal.
 
 ### Step 5: Buy the Gift and Log the Actual Cost
 After purchasing, record the real price. If it came in higher or lower than expected, distribute or refund the difference transparently.
@@ -10626,10 +10489,9 @@ After purchasing, record the real price. If it came in higher or lower than expe
 ## How Diviso Helps Organize a Group Gift Collection
 
 - ✅ Creates a temporary group dedicated to each gift occasion
-- ✅ Automatically shows the suggested per-person share based on the budget and number of contributors
+- ✅ Invite contributors with one link
 - ✅ Tracks who has and hasn't paid without awkward personal messages
-- ✅ Automatically recalculates the share if someone joins or drops out
-- ✅ Closes the group after the purchase and logs the final cost
+- ✅ Record each contribution and confirm receipt
 
 ## Frequently Asked Questions
 
@@ -10707,8 +10569,8 @@ Collecting money for a group gift shouldn't be a source of awkwardness or a burd
 ### الخطوة 1: احسبوا التكلفة الأسبوعية الفعلية
 استخدموا معدل استهلاك السيارة الحقيقي (تقدر تشوفه من عداد السيارة أو تطبيق الوقود) بدل التخمين.
 
-### الخطوة 2: سجّلوا التوصيل كمصروف متكرر
-استخدم تطبيق مثل Diviso لتسجيل مصروف البنزين الأسبوعي كمصروف متكرر بين أعضاء مجموعة التوصيل، بدل ما تعتمدون على الذاكرة.
+### الخطوة 2: سجّلوا البنزين كل أسبوع
+استخدم تطبيق مثل Diviso لتسجيل مصروف البنزين كل أسبوع بين أعضاء مجموعة التوصيل، بدل ما تعتمدون على الذاكرة.
 
 ### الخطوة 3: اتفقوا على التعامل مع الغياب
 حددوا مسبقاً: هل الغائب يدفع نصيبه كامل، أم يُخصم يوم الغياب من حسابه؟
@@ -10725,9 +10587,8 @@ Collecting money for a group gift shouldn't be a source of awkwardness or a burd
 
 ## كيف يساعدك Diviso في تنظيم توصيل الزملاء؟
 
-- ✅ تسجيل تكلفة البنزين كمصروف أسبوعي متكرر
+- ✅ تسجيل تكلفة البنزين كل أسبوع ومن دفعها
 - ✅ تقسيم دقيق على عدد ركاب كل رحلة بمن فيهم السائق
-- ✅ تذكير تلقائي بموعد التحصيل الأسبوعي أو الشهري
 - ✅ سجل واضح يوضح من دفع نصيبه ومن لم يدفع بعد
 - ✅ مجموعة منفصلة لكل خط توصيل (عمل، جامعة)
 
@@ -10744,7 +10605,7 @@ Collecting money for a group gift shouldn't be a source of awkwardness or a burd
 
 ## الخلاصة
 
-توصيل الزملاء اليومي يوفر فلوس ووقت، لكنه يحتاج نظام واضح لحساب البنزين حتى لا يتحول لمصدر إحراج يومي. احسبوا التكلفة الفعلية، سجّلوها كمصروف متكرر، أو اعتمدوا نظام التناوب لتجنّبوا الحسابات نهائياً.
+توصيل الزملاء اليومي يوفر فلوس ووقت، لكنه يحتاج نظام واضح لحساب البنزين حتى لا يتحول لمصدر إحراج يومي. احسبوا التكلفة الفعلية، سجّلوها كل أسبوع، أو اعتمدوا نظام التناوب لتجنّبوا الحسابات نهائياً.
 
 **جرب Diviso الآن ونظّم تكلفة التوصيل اليومي مع زملائك بدون صداع.**
     `,
@@ -10795,8 +10656,8 @@ Each person drives their own car for a full week, taking turns. The result: ever
 ### Step 1: Calculate the Real Weekly Cost
 Use the car's actual fuel consumption rate (check the car's display or a fuel-tracking app) instead of guessing.
 
-### Step 2: Log the Commute as a Recurring Expense
-Use an app like Diviso to log the weekly gas cost as a recurring expense among the carpool group instead of relying on memory.
+### Step 2: Log the Gas Cost Every Week
+Use an app like Diviso to log the gas cost every week among the carpool group instead of relying on memory.
 
 ### Step 3: Agree on How to Handle Absences
 Decide in advance: does an absent person still pay their full share, or is that day deducted from their total?
@@ -10813,9 +10674,8 @@ Fuel prices and consumption rates can change, so revisit the calculation periodi
 
 ## How Diviso Helps Organize Coworker Carpooling
 
-- ✅ Logs the gas cost as a recurring weekly expense
+- ✅ Logs the gas cost every week and who paid it
 - ✅ Splits it precisely by the number of riders in each trip, including the driver
-- ✅ Automatic reminders when the weekly or monthly collection is due
 - ✅ A clear record of who has and hasn't paid their share
 - ✅ A separate group for each commute route (work, university)
 
@@ -10832,7 +10692,7 @@ A driving rotation — each person drives their own car for a week at a time —
 
 ## Conclusion
 
-A daily coworker carpool saves money and time, but it needs a clear system for calculating gas costs so it doesn't turn into a daily source of awkwardness. Calculate the real cost, log it as a recurring expense, or switch to a driving rotation to avoid the math altogether.
+A daily coworker carpool saves money and time, but it needs a clear system for calculating gas costs so it doesn't turn into a daily source of awkwardness. Calculate the real cost, log it every week, or switch to a driving rotation to avoid the math altogether.
 
 **Try Diviso now and organize your daily carpool costs with zero hassle.**
     `
@@ -10908,9 +10768,7 @@ A daily coworker carpool saves money and time, but it needs a clear system for c
 ## كيف يساعدك Diviso في تنظيم حجز الشاليه؟
 
 - ✅ تسجيل الإيجار والتأمين كبندين منفصلين واضحين
-- ✅ تقسيم مخصص حسب عدد الليالي لكل شخص وليس بالتساوي فقط
-- ✅ تصنيف المصاريف الإضافية (طعام، فحم، تنظيف) لكل رحلة
-- ✅ حساب تلقائي لإعادة توزيع التأمين بعد استرداده
+- ✅ قسمة الإيجار بالنسب حسب عدد ليالي كل شخص وليس بالتساوي فقط
 - ✅ سجل واضح يوضح من دفع ومن باقي عليه مبلغ
 
 ## أسئلة شائعة
@@ -10990,9 +10848,7 @@ Those staying both nights pay 360 SAR, and those staying one night pay just 180 
 ## How Diviso Helps Organize a Chalet Booking
 
 - ✅ Logs the rental and the deposit as two clear, separate line items
-- ✅ Custom splitting by number of nights per person, not just an equal split
-- ✅ Categorizes extra expenses (food, charcoal, cleaning) per trip
-- ✅ Automatically recalculates the redistribution once the deposit is refunded
+- ✅ Splits the rental by percentages based on each person's nights, not just equally
 - ✅ A clear record of who paid and who still owes
 
 ## Frequently Asked Questions
@@ -11067,11 +10923,11 @@ A chalet or istirahah rental usually gets messed up by poor deposit tracking and
 ### الخطوة 1: حددوا المجموعة الثابتة
 اتفقوا من البداية على عدد اللاعبين الأساسيين اللي يتقاسمون التكلفة كل أسبوع.
 
-### الخطوة 2: سجّلوا الحجز كمصروف متكرر
-بدل تسجيل المصروف يدوياً كل أسبوع، استخدم تطبيق مثل Diviso لتسجيل حجز الملعب كمصروف أسبوعي متكرر يُذكّر الجميع تلقائياً.
+### الخطوة 2: سجّلوا الحجز كل أسبوع
+استخدم تطبيق مثل Diviso لتسجيل حجز الملعب كل أسبوع ومن دفعه، فتبقى الأرصدة واضحة للجميع.
 
 ### الخطوة 3: اتفقوا على سياسة الغياب مسبقاً
-سواء دفع كامل، إعفاء بإشعار، أو بديل يدفع — اكتبوها في وصف المجموعة حتى ما ينساها أحد.
+سواء دفع كامل، إعفاء بإشعار، أو بديل يدفع — اكتبوها في محادثة المجموعة حتى ما ينساها أحد.
 
 ### الخطوة 4: راجعوا الأرصدة شهرياً
 تأكدوا إن كل الأعضاء دافعين نصيبهم أولاً بأول، ولا تخلّوا المتأخرات تتراكم لشهرين أو ثلاثة.
@@ -11085,11 +10941,10 @@ A chalet or istirahah rental usually gets messed up by poor deposit tracking and
 
 ## كيف يساعدك Diviso في تنظيم حجز الملعب؟
 
-- ✅ تسجيل حجز الملعب كمصروف أسبوعي متكرر تلقائياً
+- ✅ تسجيل حجز الملعب كل أسبوع ومن دفعه
 - ✅ حساب نصيب كل عضو ثابت بدقة دون الحاجة لإعادة القسمة يدوياً
 - ✅ تتبع من دفع ومن لم يدفع بعد لكل أسبوع
-- ✅ تذكيرات تلقائية قبل موعد التحصيل
-- ✅ سجل واضح يوضح تاريخ كل حجز ومن شارك فيه
+- ✅ سجل واضح يوضح كل حجز ومن شارك فيه
 
 ## أسئلة شائعة
 
@@ -11104,7 +10959,7 @@ A chalet or istirahah rental usually gets messed up by poor deposit tracking and
 
 ## الخلاصة
 
-حجز الملعب الأسبوعي يستمر بدون مشاكل لما تتفقون على قاعدة واضحة لتقسيم التكلفة وسياسة ثابتة للغياب من أول يوم. سجّلوه كمصروف متكرر في تطبيق يتابع الأرصدة تلقائياً، وخلّوا كل تركيزكم على اللعب لا على الحسابات.
+حجز الملعب الأسبوعي يستمر بدون مشاكل لما تتفقون على قاعدة واضحة لتقسيم التكلفة وسياسة ثابتة للغياب من أول يوم. سجّلوه كل أسبوع في تطبيق يوضح الأرصدة، وخلّوا كل تركيزكم على اللعب لا على الحسابات.
 
 **جرب Diviso الآن ونظّم حجز ملعبكم الأسبوعي بدون صداع الحسابات.**
     `,
@@ -11151,11 +11006,11 @@ Pick one policy and set it in stone from day one to avoid a weekly argument.
 ### Step 1: Define the Regular Group
 Agree upfront on the core group of players who share the cost every week.
 
-### Step 2: Log the Booking as a Recurring Expense
-Instead of manually re-adding the expense every week, use an app like Diviso to log the court booking as a recurring weekly expense that automatically reminds everyone.
+### Step 2: Log the Booking Every Week
+Use an app like Diviso to log the court booking every week and who paid it, so balances stay clear for everyone.
 
 ### Step 3: Agree on the No-Show Policy in Advance
-Whether it's full payment, notice-based exemption, or substitute-pays — write it into the group description so nobody forgets it.
+Whether it's full payment, notice-based exemption, or substitute-pays — write it in the group chat so nobody forgets it.
 
 ### Step 4: Review Balances Monthly
 Make sure every member is paying their share on time, and don't let unpaid balances pile up for two or three months.
@@ -11169,11 +11024,10 @@ Make sure every member is paying their share on time, and don't let unpaid balan
 
 ## How Diviso Helps Organize Your Court Booking
 
-- ✅ Logs the court booking as an automatic recurring weekly expense
+- ✅ Logs the court booking every week and who paid it
 - ✅ Calculates each regular member's share precisely without manual re-splitting
 - ✅ Tracks who has and hasn't paid for each week
-- ✅ Automatic reminders before the collection is due
-- ✅ A clear record of every booking date and who was included
+- ✅ A clear record of every booking and who was included
 
 ## Frequently Asked Questions
 
@@ -11188,7 +11042,7 @@ Collect the guest's share for that single session only, and you can slightly red
 
 ## Conclusion
 
-A weekly court booking runs smoothly once your group agrees on a clear cost-splitting rule and a fixed no-show policy from day one. Log it as a recurring expense in an app that tracks balances automatically, and keep your focus on the game instead of the math.
+A weekly court booking runs smoothly once your group agrees on a clear cost-splitting rule and a fixed no-show policy from day one. Log it every week in an app that shows clear balances, and keep your focus on the game instead of the math.
 
 **Try Diviso now and run your weekly court booking without the payment headaches.**
     `
@@ -11207,7 +11061,7 @@ A weekly court booking runs smoothly once your group agrees on a clear cost-spli
     content: `
 ## الإجابة المختصرة
 
-أفضل طريقة لتقسيم اشتراكات نتفلكس وسبوتيفاي وغيرها من الاشتراكات المشتركة هي قسمة تكلفة الاشتراك الشهري على عدد المستخدمين الفعليين، ثم تحصيل نصيب كل شخص في نفس تاريخ التجديد كل شهر عبر تطبيق يسجّل المصروف كمصروف متكرر تلقائياً. هذا يمنع نسيان الدفع، ويوقف الجدال المتكرر حول "مين دفع الشهر هذا؟".
+أفضل طريقة لتقسيم اشتراكات نتفلكس وسبوتيفاي وغيرها من الاشتراكات المشتركة هي قسمة تكلفة الاشتراك الشهري على عدد المستخدمين الفعليين، ثم تحصيل نصيب كل شخص في نفس تاريخ التجديد كل شهر وتسجيله في تطبيق يوضح من دفع ومن عليه. هذا يمنع نسيان الدفع، ويوقف الجدال المتكرر حول "مين دفع الشهر هذا؟".
 
 ## ليش تقسيم الاشتراكات صعب أكثر من مصاريف الطلعة العادية؟
 
@@ -11247,8 +11101,8 @@ A weekly court booking runs smoothly once your group agrees on a clear cost-spli
 ### الخطوة 1: اتفقوا على المسؤول عن الدفع
 شخص واحد يدفع فاتورة الاشتراك كل شهر من بطاقته، والباقون يحوّلون له نصيبهم.
 
-### الخطوة 2: سجّلوا الاشتراك كمصروف متكرر
-بدل ما تسجّل المصروف يدوياً كل شهر، استخدم تطبيق مثل Diviso لتسجيل الاشتراك كمصروف متكرر يذكّر الجميع تلقائياً في نفس تاريخ التجديد.
+### الخطوة 2: سجّلوا الاشتراك كل شهر
+استخدم تطبيق مثل Diviso لتسجيل الاشتراك كل شهر في تاريخ التجديد ومن دفعه، وتسجيل تحويل كل شخص لنصيبه.
 
 ### الخطوة 3: حدّدوا طريقة القسمة من البداية
 متساوية بين الجميع، أو حسب عدد الشاشات/الحسابات الفعلية لكل شخص.
@@ -11265,8 +11119,7 @@ A weekly court booking runs smoothly once your group agrees on a clear cost-spli
 
 ## كيف يساعدك Diviso في تتبع الاشتراكات المشتركة؟
 
-- ✅ تسجيل الاشتراك كمصروف شهري متكرر بضغطة واحدة
-- ✅ تذكير تلقائي لكل عضو في تاريخ التجديد
+- ✅ تسجيل الاشتراك كل شهر ومن دفعه
 - ✅ حساب نصيب كل شخص تلقائياً حتى لو كان الاستخدام غير متساوٍ
 - ✅ سجل واضح يوضح من دفع ومن عليه مبلغ
 - ✅ مجموعة منفصلة لكل نوع اشتراك (ترفيه، رياضة، تخزين)
@@ -11280,18 +11133,18 @@ A weekly court booking runs smoothly once your group agrees on a clear cost-spli
 لا بالضرورة. يمكنكم قسمة التكلفة حسب عدد الشاشات أو الحسابات الفرعية التي يستخدمها كل شخص بدلاً من التقسيم المتساوي البحت.
 
 ### كيف أتجنب نسيان تحصيل نصيب الاشتراك كل شهر؟
-سجّل الاشتراك كمصروف متكرر في تطبيق تقسيم مصاريف مثل Diviso، وسيُذكّر جميع الأعضاء تلقائياً في نفس تاريخ التجديد كل شهر.
+اتفقوا على تاريخ التجديد كموعد ثابت للتحويل، وسجّلوا الاشتراك كل شهر في تطبيق تقسيم مصاريف مثل Diviso، فيكون واضحاً للجميع من دفع ومن عليه.
 
 ## الخلاصة
 
-الاشتراكات المشتركة توفر فلوس، لكنها تحتاج نظام واضح حتى لا تتحول إلى مصدر إزعاج شهري. اتفقوا على طريقة القسمة، سجّلوا الاشتراك كمصروف متكرر، وخلّوا التطبيق يذكّر الجميع بدل ما تصير أنت المسؤول عن المطالبة كل شهر.
+الاشتراكات المشتركة توفر فلوس، لكنها تحتاج نظام واضح حتى لا تتحول إلى مصدر إزعاج شهري. اتفقوا على طريقة القسمة، سجّلوا الاشتراك كل شهر، وخلّوا التطبيق يوضح من دفع ومن عليه بدل ما تصير أنت المسؤول عن المطالبة كل شهر.
 
-**جرب Diviso الآن وسجّل اشتراكاتك المشتركة كمصاريف متكررة بدون نسيان.**
+**جرب Diviso الآن وسجّل اشتراكاتك المشتركة بوضوح: من دفع ومن عليه.**
     `,
     contentEn: `
 ## Quick Answer
 
-The fairest way to split Netflix, Spotify, and other shared subscriptions is to divide the monthly subscription cost by the number of actual users, then collect each person's share on the same renewal date every month using an app that logs the subscription as a recurring expense. This removes the guesswork and stops the monthly "wait, did I already pay for this?" awkwardness.
+The fairest way to split Netflix, Spotify, and other shared subscriptions is to divide the monthly subscription cost by the number of actual users, then collect each person's share on the same renewal date every month and log it in an app that shows who paid and who owes. This removes the guesswork and stops the monthly "wait, did I already pay for this?" awkwardness.
 
 ## Why Splitting Subscriptions Is Harder Than a One-Time Bill
 
@@ -11331,8 +11184,8 @@ If usage isn't equal (say, one person uses two of the four available screens), y
 ### Step 1: Agree on Who Pays the Provider
 One person's card is charged by Netflix or Spotify each month, and everyone else transfers their share to that person.
 
-### Step 2: Log the Subscription as a Recurring Expense
-Instead of manually re-adding the expense every month, use an app like Diviso to log the subscription once as a recurring expense that automatically reminds everyone on the same renewal date.
+### Step 2: Log the Subscription Every Month
+Use an app like Diviso to log the subscription every month on the renewal date along with who paid it, and record each person's transfer of their share.
 
 ### Step 3: Decide the Split Method Upfront
 Equal split among everyone, or proportional based on the number of screens or sub-accounts each person actually uses.
@@ -11349,8 +11202,7 @@ Confirm everyone still paying is still using the service, and remove anyone who 
 
 ## How Diviso Helps Track Shared Subscriptions
 
-- ✅ Log a subscription as a recurring monthly expense in one tap
-- ✅ Automatic reminders for every member on the renewal date
+- ✅ Log the subscription every month and who paid it
 - ✅ Calculates each person's share automatically, even with uneven usage
 - ✅ A clear record of who paid and who still owes
 - ✅ Separate groups for each subscription type (entertainment, fitness, storage)
@@ -11364,13 +11216,13 @@ Your monthly share is 65 ÷ 4 = 16.25 SAR, unless you've agreed on an uneven spl
 Not necessarily. You can split the cost proportionally by the number of screens or sub-accounts each person uses instead of a strictly equal split.
 
 ### How do I stop forgetting to collect the subscription payment every month?
-Log the subscription as a recurring expense in a splitting app like Diviso — it automatically reminds every member on the same renewal date each month, so no one has to chase payments manually.
+Agree on the renewal date as a fixed transfer day, and log the subscription every month in a splitting app like Diviso, so everyone can see who paid and who still owes.
 
 ## Conclusion
 
-Shared subscriptions save money, but without a clear system they turn into a monthly annoyance. Agree on a split method, log the subscription as a recurring expense, and let the app handle the reminders instead of you being the one who has to ask for money every month.
+Shared subscriptions save money, but without a clear system they turn into a monthly annoyance. Agree on a split method, log the subscription every month, and let the app show who paid and who owes instead of you being the one who has to ask for money every month.
 
-**Try Diviso now and log your shared subscriptions as recurring expenses so nobody forgets to pay.**
+**Try Diviso now and log your shared subscriptions clearly: who paid and who owes.**
     `
   },
   {
@@ -11414,10 +11266,8 @@ Shared subscriptions save money, but without a clear system they turn into a mon
 
 ## كيف يساعدك Diviso؟
 
-- ✅ تسجيل المصاريف فوراً
+- ✅ تسجيل كل مصروف ومين دفعه
 - ✅ حساب تلقائي لنصيب كل شخص
-- ✅ إشعارات للتذكير بالتسوية
-- ✅ تقارير مفصلة
 - ✅ دعم كامل للعربية والريال السعودي
 
 ## نصائح ذهبية
@@ -11463,10 +11313,8 @@ The easiest method - an app that tracks everything automatically.
 
 ## How Diviso Helps
 
-- ✅ Record expenses instantly
+- ✅ Record each expense and who paid it
 - ✅ Automatic calculation of each person's share
-- ✅ Settlement reminder notifications
-- ✅ Detailed reports
 - ✅ Full support for Arabic and Saudi Riyal
 
 ## Golden Tips
@@ -11489,8 +11337,8 @@ Splitting expenses doesn't have to be complicated. With advance planning and the
     titleEn: "Best Bill Splitting Apps in Saudi Arabia 2026",
     description: "مقارنة شاملة بين أفضل تطبيقات تقسيم المصاريف المتاحة في المملكة العربية السعودية",
     descriptionEn: "Comprehensive comparison of the best expense splitting apps available in Saudi Arabia",
-    keywords: ["تطبيقات تقسيم الفاتورة", "أفضل تطبيق حساب المصاريف", "تطبيقات السعودية", "Splitwise بديل"],
-    keywordsEn: ["bill splitting apps comparison", "best expense calculator app 2026", "Splitwise alternative free", "best app to split bills with friends", "expense sharing app review"],
+    keywords: ["تطبيقات تقسيم الفاتورة", "تطبيقات السعودية", "Splitwise بديل"],
+    keywordsEn: ["bill splitting apps comparison", "expense sharing app review"],
     category: "comparisons",
     readTime: 6,
     publishDate: "2026-01-05",
@@ -11509,47 +11357,41 @@ Splitting expenses doesn't have to be complicated. With advance planning and the
 
 ## التطبيقات المتاحة
 
-### 1. Diviso
+### Diviso
 
 | الميزة | التقييم |
 |--------|---------|
 | دعم العربية | ✅ كامل |
 | الريال السعودي | ✅ افتراضي |
-| واجهة سهلة | ✅ ممتازة |
+| واجهة سهلة | ✅ |
 
 **المميزات:**
 - مصمم خصيصاً للسوق السعودي
 - واجهة عربية 100%
-- تكامل مع طرق الدفع المحلية
-- إشعارات ذكية
-- تقارير مفصلة
 
-### 2. Splitwise
+### Splitwise
 
 | الميزة | التقييم |
 |--------|---------|
-| دعم العربية | ❌ لا |
-| الريال السعودي | ⚠️ جزئي |
 | واجهة سهلة | ✅ جيدة |
 
-### 3. Tricount
+### Tricount
 
 | الميزة | التقييم |
 |--------|---------|
-| دعم العربية | ❌ لا |
-| الريال السعودي | ✅ نعم |
 | واجهة سهلة | ✅ جيدة |
+
+لمعرفة اللغات والعملات المتاحة في Splitwise و Tricount، راجع صفحتهما في متجر التطبيقات.
 
 ## لماذا Diviso يناسب السعودية؟
 
-1. **اللغة**: التطبيق الوحيد بواجهة عربية كاملة
+1. **اللغة**: واجهة عربية كاملة
 2. **العملة**: الريال السعودي افتراضياً
 3. **الثقافة**: مصمم لفهم احتياجات المستخدم السعودي
-4. **الدعم**: فريق دعم عربي
 
 ## الخلاصة
 
-إذا كنت في السعودية، Diviso هو الخيار الأمثل لتقسيم المصاريف مع أصدقائك وعائلتك.
+إذا كنت في السعودية، Diviso يتيح لك تقسيم المصاريف مع أصدقائك وعائلتك بالعربية والريال السعودي.
 
 **حمّل Diviso الآن** وجرب الفرق!
     `,
@@ -11568,47 +11410,41 @@ Looking for the best expense splitting app in Saudi Arabia? In this article, we 
 
 ## Available Apps
 
-### 1. Diviso
+### Diviso
 
 | Feature | Rating |
 |---------|--------|
 | Arabic Support | ✅ Full |
 | Saudi Riyal | ✅ Default |
-| Easy Interface | ✅ Excellent |
+| Easy Interface | ✅ |
 
 **Features:**
 - Designed specifically for the Saudi market
 - 100% Arabic interface
-- Integration with local payment methods
-- Smart notifications
-- Detailed reports
 
-### 2. Splitwise
+### Splitwise
 
 | Feature | Rating |
 |---------|--------|
-| Arabic Support | ❌ No |
-| Saudi Riyal | ⚠️ Partial |
 | Easy Interface | ✅ Good |
 
-### 3. Tricount
+### Tricount
 
 | Feature | Rating |
 |---------|--------|
-| Arabic Support | ❌ No |
-| Saudi Riyal | ✅ Yes |
 | Easy Interface | ✅ Good |
+
+To see the languages and currencies available in Splitwise and Tricount, check their App Store pages.
 
 ## Why Diviso Fits Saudi Arabia?
 
-1. **Language**: The only app with a complete Arabic interface
+1. **Language**: A complete Arabic interface
 2. **Currency**: Saudi Riyal by default
 3. **Culture**: Designed to understand Saudi user needs
-4. **Support**: Arabic support team
 
 ## Conclusion
 
-If you're in Saudi Arabia, Diviso is the optimal choice for splitting expenses with friends and family.
+If you're in Saudi Arabia, Diviso lets you split expenses with friends and family in Arabic and Saudi Riyal.
 
 **Download Diviso now** and experience the difference!
     `
@@ -11673,9 +11509,8 @@ If you're in Saudi Arabia, Diviso is the optimal choice for splitting expenses w
 ## كيف يساعدك Diviso؟
 
 - إنشاء مجموعة للسكن المشترك
-- تسجيل المصاريف المتكررة تلقائياً
-- تذكيرات بمواعيد الدفع
-- تقارير شهرية واضحة
+- قسمة الإيجار والفواتير بالتساوي أو بالنسب
+- أرصدة واضحة: كم لك وكم عليك، ومين يحوّل لمين
 
 ## الخلاصة
 
@@ -11732,9 +11567,8 @@ Room with two people = double a single-person room.
 ## How Diviso Helps
 
 - Create a shared housing group
-- Automatically record recurring expenses
-- Payment due reminders
-- Clear monthly reports
+- Split rent and bills equally or by percentages
+- Clear balances: who owes whom
 
 ## Conclusion
 
@@ -11825,7 +11659,6 @@ Successful shared housing needs good organization. With Diviso, you'll never wor
 ## كيف يساعدك Diviso؟
 
 - إنشاء مجموعة خاصة بالرحلة
-- تصنيف المصاريف (طعام، وقود، معدات)
 - حساب تلقائي لنصيب كل شخص
 - تسجيل من دفع ماذا
 - تسوية سهلة بعد الرحلة
@@ -11907,7 +11740,6 @@ Camping is one of the best activities in Saudi Arabia, especially in winter. Goo
 ## How Diviso Helps
 
 - Create a trip-specific group
-- Categorize expenses (food, fuel, equipment)
 - Automatic calculation of each person's share
 - Record who paid what
 - Easy settlement after the trip
@@ -11972,10 +11804,8 @@ Good financial planning = enjoyable trip. Use Diviso and enjoy your camping with
 
 ## كيف يحل Diviso هذه المشكلة؟
 
-- ✅ سجل الفاتورة بضغطة زر
-- ✅ قسّم بالتساوي أو حسب الطلب
-- ✅ احسب البقشيش تلقائياً
-- ✅ أرسل طلب الدفع للأصدقاء
+- ✅ سجّل الفاتورة ومين دفعها
+- ✅ قسّم بالتساوي أو بالنسب
 - ✅ تتبع من دفع ومن لم يدفع
 
 ## نصيحة أخيرة
@@ -12026,10 +11856,8 @@ The tip is added before splitting, not after.
 
 ## How Diviso Solves This Problem
 
-- ✅ Record the bill with one click
-- ✅ Split equally or by order
-- ✅ Calculate tip automatically
-- ✅ Send payment requests to friends
+- ✅ Record the bill and who paid it
+- ✅ Split equally or by percentages
 - ✅ Track who paid and who didn't
 
 ## Final Tip
@@ -12102,12 +11930,10 @@ Don't let money ruin your friendships. Use Diviso and keep the bill transparent 
 
 ## كيف يساعدك Diviso؟
 
-- 📋 إنشاء ميزانية شاملة للعرس
 - 👨‍👩‍👧‍👦 مجموعة خاصة لكل عائلة
 - 💰 تتبع المصاريف الفعلية
-- 📊 مقارنة الميزانية بالمصاريف
-- 🎁 تسجيل الهدايا والمساهمات
-- 📱 مشاركة التقارير مع العائلة
+- ⚖️ قسمة كل مصروف بالتساوي أو بالنسب
+- 💳 أرصدة واضحة: كم لك وكم عليك، ومين يحوّل لمين
 
 ## خطوات عملية
 
@@ -12184,12 +12010,10 @@ Marriage is one of the most important occasions in our lives, but it's also one 
 
 ## How Diviso Helps
 
-- 📋 Create a comprehensive wedding budget
 - 👨‍👩‍👧‍👦 Separate group for each family
 - 💰 Track actual expenses
-- 📊 Compare budget vs expenses
-- 🎁 Record gifts and contributions
-- 📱 Share reports with family
+- ⚖️ Split each expense equally or by percentages
+- 💳 Clear balances: who owes whom
 
 ## Practical Steps
 
@@ -12290,9 +12114,8 @@ Good financial planning for the wedding = comfortable start to married life. Don
 ## كيف يساعدك Diviso؟
 
 - 👨‍👩‍👧‍👦 إنشاء مجموعة للعائلة
-- 💵 تسجيل كل مصروف فوراً
-- 📊 تصنيف المصاريف (سكن، طعام، تسوق)
-- 📱 مشاركة التقارير مع الجميع
+- 💵 تسجيل كل مصروف ومين دفعه
+- 📊 ميزانية الرحلة لمتابعة الصرف
 - ⚖️ حساب نصيب كل شخص بدقة
 - 💳 تسوية سهلة بعد الرحلة
 
@@ -12383,9 +12206,8 @@ The Umrah trip is one of the most beautiful spiritual journeys, and good financi
 ## How Diviso Helps
 
 - 👨‍👩‍👧‍👦 Create a family group
-- 💵 Record every expense instantly
-- 📊 Categorize expenses (accommodation, food, shopping)
-- 📱 Share reports with everyone
+- 💵 Record every expense and who paid it
+- 📊 A trip budget to keep spending in view
 - ⚖️ Calculate each person's share accurately
 - 💳 Easy settlement after the trip
 
@@ -12482,8 +12304,8 @@ The Umrah trip should be a spiritual experience, not financial stress. Plan well
 
 ### إنشاء مجموعة الشلة
 1. أنشئ مجموعة باسم الشلة
-2. أضف جميع الأصدقاء
-3. حدد العملة (ريال سعودي)
+2. ادعُ جميع الأصدقاء برابط واحد
+3. المبالغ بالريال السعودي
 
 ### تسجيل المصاريف
 1. بعد كل طلعة، سجل المصروف
@@ -12493,7 +12315,7 @@ The Umrah trip should be a spiritual experience, not financial stress. Plan well
 ### تتبع الأرصدة
 - شوف من عليه فلوس
 - شوف من له فلوس
-- سوِّ الحسابات بضغطة
+- سجّل الدفع وأكّد الاستلام
 
 ## نصائح ذهبية
 
@@ -12584,8 +12406,8 @@ Everyone transfers a fixed amount monthly, hangouts are paid from it.
 
 ### Creating the Friend Group
 1. Create a group with your crew's name
-2. Add all friends
-3. Set currency (Saudi Riyal)
+2. Invite all friends with one link
+3. Amounts are in Saudi Riyal
 
 ### Recording Expenses
 1. After each hangout, record the expense
@@ -12595,7 +12417,7 @@ Everyone transfers a fixed amount monthly, hangouts are paid from it.
 ### Tracking Balances
 - See who owes money
 - See who is owed money
-- Settle with one click
+- Record a payment and confirm receipt
 
 ## Golden Tips
 
@@ -12633,10 +12455,10 @@ Friendship is more important than money. Use Diviso and make your hangouts enjoy
     slug: "manage-existing-debts",
     title: "عندك ديون مع أصدقائك؟ كيف تسجلها في Diviso",
     titleEn: "Have Debts with Friends? How to Record Them in Diviso",
-    description: "تعرف على ميزة الأرصدة السابقة في Diviso لتسجيل الديون القديمة بين الأصدقاء وبدء صفحة جديدة منظمة",
-    descriptionEn: "Learn about Diviso's Legacy Balances feature to record old debts between friends and start a fresh organized page",
-    keywords: ["أرصدة سابقة", "ديون الأصدقاء", "تسجيل ديون قديمة", "إدارة الديون", "تسوية الحسابات"],
-    keywordsEn: ["legacy balances app", "record old debts between friends", "debt management app", "settle old accounts", "track who owes you money"],
+    description: "تعرف كيف تسجل الديون القديمة بين الأصدقاء في Diviso كمصروف بمبلغه ومين دفعه، وتبدأ صفحة جديدة منظمة",
+    descriptionEn: "Learn how to record old debts between friends in Diviso as an expense with its amount and who paid, and start a fresh organized page",
+    keywords: ["ديون الأصدقاء", "تسجيل ديون قديمة", "إدارة الديون", "تسوية الحسابات"],
+    keywordsEn: ["record old debts between friends", "debt management app", "settle old accounts", "track who owes you money"],
     category: "guides",
     readTime: 6,
     publishDate: "2026-03-03",
@@ -12645,98 +12467,84 @@ Friendship is more important than money. Use Diviso and make your hangouts enjoy
 
 كلنا مررنا بهالموقف — أصدقاء يتبادلون الدفع في الطلعات والرحلات بدون تسجيل، وبعد فترة ما أحد يتذكر المبالغ بالضبط. النتيجة؟ إحراج، خلافات، أو حتى خسارة صداقات.
 
-## الحل: ميزة الأرصدة السابقة في Diviso
+## الحل: سجّل الدين القديم كمصروف في Diviso
 
 Diviso يتيح لك تسجيل أي دين قديم بين الأصدقاء حتى لو حصل قبل ما تستخدم التطبيق.
 
-### كيف تضيف رصيد سابق؟
+### كيف تسجل الدين القديم؟
 
 1. **ادخل المجموعة** أو أنشئ مجموعة جديدة
-2. **روح لتبويب التسويات**
-3. **اضغط "إضافة رصيد سابق"**
-4. **حدد الدائن والمدين والمبلغ**
-5. **أضف ملاحظة** (اختياري) — مثلاً: "فلوس عشا الأسبوع الماضي"
+2. **أضف مصروف** بمبلغ الدين
+3. **حدد مين دفع** (صاحب الدين)
+4. **اختر المشارك في المصروف** (الشخص اللي عليه الدين)
 
-الرصيد يُضاف فوراً لحسابات المجموعة ويظهر كبطاقة خاصة في الدردشة.
+بعدها يظهر الدين في الأرصدة: كم لك وكم عليك، ومين يحوّل لمين.
 
 ## ميزات إضافية تساعدك
 
-### إنهاء الرحلة وإغلاق المجموعة
 
-بعد ما تنتهي من تسجيل كل شيء، المشرف يقدر:
-- **ينهي الرحلة** — تتوقف إضافة المصاريف ويبقى فقط التسوية والدردشة
-- **يغلق المجموعة نهائياً** — تصير أرشيف
 
 ### تأكيد التسويات المزدوج
 
-لما عضو يسجل إنه دفع لشخص آخر، المستلم يتلقى إشعار لتأكيد الاستلام. كذا ما في مجال للخلاف.
+لما عضو يسجل إنه دفع لشخص آخر، المستلم يؤكد الاستلام من التطبيق. كذا ما في مجال للخلاف.
 
-### طلب السداد عبر واتساب
 
-من شاشة التسويات، اضغط "طلب سداد" وبيفتح واتساب برسالة جاهزة فيها المبلغ ورابط المجموعة.
 
 ## أمثلة عملية
 
 ### مثال 1: شلة السفر
-محمد دفع عن أحمد 300 ريال في رحلة سابقة. يفتح Diviso، يضيف رصيد سابق: أحمد يدين لمحمد 300 ريال. خلاص، مسجل رسمياً.
+محمد دفع عن أحمد 300 ريال في رحلة سابقة. يفتح Diviso، يضيف مصروف بـ 300 ريال دفعه محمد والمشارك فيه أحمد. خلاص، تظهر في الأرصدة إن أحمد عليه 300 ريال لمحمد.
 
 ### مثال 2: شركاء السكن
-سارة وفاطمة ساكنين مع بعض من 6 شهور. سارة دافعة فواتير كثير. تسجل الفرق كرصيد سابق وتبدأ من اليوم بسجل نظيف.
+سارة وفاطمة ساكنين مع بعض من 6 شهور. سارة دافعة فواتير كثير. تسجل الفرق كمصروف دفعته هي والمشاركة فيه فاطمة، وتبدأ من اليوم بسجل نظيف.
 
 ## الخلاصة
 
-لا تخلي الديون القديمة تأثر على علاقاتك. سجلها في Diviso، سوِّها بضغطة زر، وابدأ صفحة جديدة.
+لا تخلي الديون القديمة تأثر على علاقاتك. سجلها في Diviso، سجّل الدفع وأكّد الاستلام، وابدأ صفحة جديدة.
 
-**جرب Diviso الآن** وسجل أرصدتك السابقة!
+**جرب Diviso الآن** وسجل ديونك القديمة!
     `,
     contentEn: `
 ## The Problem: Old Debts Without Records
 
 We've all been there — friends paying for each other during outings and trips without keeping track, and after a while nobody remembers the exact amounts. The result? Awkwardness, disputes, or even lost friendships.
 
-## The Solution: Legacy Balances in Diviso
+## The Solution: Record the Old Debt as an Expense in Diviso
 
 Diviso lets you record any old debt between friends, even if it happened before you started using the app.
 
-### How to Add a Legacy Balance
+### How to Record an Old Debt
 
 1. **Enter the group** or create a new one
-2. **Go to the Settlements tab**
-3. **Tap "Add Previous Balance"**
-4. **Select the creditor, debtor, and amount**
-5. **Add a note** (optional) — e.g., "Last week's dinner money"
+2. **Add an expense** for the debt amount
+3. **Select who paid** (the person who is owed)
+4. **Choose the participant** (the person who owes)
 
-The balance is added immediately to group accounts and appears as a special card in chat.
+The debt then shows in the balances: who owes whom and how much.
 
 ## Additional Features That Help
 
-### Finishing Trips and Closing Groups
 
-After recording everything, the admin can:
-- **Finish the trip** — stops expense additions, only settlements and chat remain
-- **Permanently close the group** — becomes an archive
 
 ### Dual Settlement Confirmation
 
-When a member records that they paid someone, the recipient gets a notification to confirm receipt. This eliminates any room for disputes.
+When a member records that they paid someone, the recipient confirms receipt in the app. This eliminates any room for disputes.
 
-### WhatsApp Payment Request
 
-From the Settlements screen, tap "Request Payment" and WhatsApp opens with a pre-formatted message containing the amount and group link.
 
 ## Practical Examples
 
 ### Example 1: Travel Group
-Mohammed paid 300 SAR for Ahmed on a previous trip. He opens Diviso, adds a legacy balance: Ahmed owes Mohammed 300 SAR. Done, officially recorded.
+Mohammed paid 300 SAR for Ahmed on a previous trip. He opens Diviso and adds a 300 SAR expense paid by Mohammed, with Ahmed as the only participant. Done: the balances show Ahmed owes Mohammed 300 SAR.
 
 ### Example 2: Roommates
-Sara and Fatima have been roommates for 6 months. Sara paid many bills. She records the difference as a legacy balance and starts fresh from today.
+Sara and Fatima have been roommates for 6 months. Sara paid many bills. She records the difference as an expense she paid, with Fatima as the participant, and starts fresh from today.
 
 ## Conclusion
 
-Don't let old debts affect your relationships. Record them in Diviso, settle with one tap, and start a new page.
+Don't let old debts affect your relationships. Record them in Diviso, record the payment and confirm receipt, and start a new page.
 
-**Try Diviso now** and record your legacy balances!
+**Try Diviso now** and record your old debts!
     `
   },
   {
@@ -12780,17 +12588,16 @@ Don't let old debts affect your relationships. Record them in Diviso, settle wit
 كل شخص يحول مبلغ ثابت شهرياً لصندوق الطلعات.
 
 ### 6. شخص يدفع والباقي يحولون
-أسهل طريقة: واحد يدفع الكل ويسجلها في Diviso، والتطبيق يحسب نصيب كل شخص.
+واحد يدفع الكل ويسجلها في Diviso، والتطبيق يحسب نصيب كل شخص.
 
 ### 7. التقسيم الذكي بالتطبيق
-سجل المصروف في Diviso واختر طريقة التقسيم: متساوي، بالنسبة، أو مخصص.
+سجل المصروف في Diviso واختر طريقة التقسيم: متساوي أو بالنسبة.
 
 ## كيف Diviso يحل المشكلة نهائياً؟
 
-- ✅ سجل المصروف بثانيتين
+- ✅ سجل المصروف ومين دفعه
 - ✅ اختر طريقة التقسيم المناسبة
-- ✅ كل شخص يشوف نصيبه فوراً
-- ✅ تذكيرات أوتوماتيكية للتسوية
+- ✅ كل شخص يشوف كم له وكم عليه
 - ✅ بالعربي وبالريال السعودي
 
 ## نصيحة ذهبية
@@ -12799,7 +12606,7 @@ Don't let old debts affect your relationships. Record them in Diviso, settle wit
 
 ## الخلاصة
 
-تقسيم حساب المطعم ما يحتاج يكون محرج. مع Diviso، سجل وقسم وسوِّ الحساب بثواني.
+تقسيم حساب المطعم ما يحتاج يكون محرج. مع Diviso، سجل وقسم وسوِّ الحساب بوضوح.
 
 **جرب Diviso** — خلك ذكي وقسّم بذكاء!
     `,
@@ -12833,17 +12640,16 @@ Whoever ordered more pays a higher percentage. Diviso calculates automatically.
 Everyone contributes a fixed monthly amount for group outings.
 
 ### 6. One Pays, Others Transfer
-Easiest: one person pays everything, logs it in Diviso, and the app calculates each share.
+One person pays everything, logs it in Diviso, and the app calculates each share.
 
 ### 7. Smart App Splitting
-Log the expense in Diviso and choose: equal, proportional, or custom split.
+Log the expense in Diviso and choose: equal or proportional split.
 
 ## How Diviso Solves This Permanently
 
-- ✅ Log expenses in 2 seconds
+- ✅ Log each expense and who paid
 - ✅ Choose the right splitting method
-- ✅ Everyone sees their share instantly
-- ✅ Automatic settlement reminders
+- ✅ Everyone sees what they owe or are owed
 - ✅ Full Arabic & Saudi Riyal support
 
 ## Golden Tip
@@ -12852,19 +12658,19 @@ Agree on the splitting method **before** ordering. No awkwardness that way.
 
 ## Conclusion
 
-Splitting restaurant bills doesn't have to be awkward. With Diviso, log, split, and settle in seconds.
+Splitting restaurant bills doesn't have to be awkward. With Diviso, log, split, and settle clearly.
 
 **Try Diviso** — be smart, split smart!
     `
   },
   {
     slug: "trip-expenses-app",
-    title: "أفضل تطبيق مصاريف الرحلة 2026: نظّم رحلتك بدون فوضى",
-    titleEn: "Best Trip Expenses App 2026: Organize Your Trip Without Chaos",
+    title: "تطبيق مصاريف الرحلة 2026: نظّم رحلتك بدون فوضى",
+    titleEn: "Trip Expenses App 2026: Organize Your Trip Without Chaos",
     description: "تبحث عن تطبيق مصاريف الرحلة؟ اكتشف كيف تنظم مصاريف رحلتك مع الأصدقاء وتتابع كل ريال بسهولة.",
     descriptionEn: "Looking for a trip expenses app? Discover how to organize your travel expenses with friends and track every riyal easily.",
     keywords: ["تطبيق مصاريف الرحلة", "تطبيق مصاريف السفر", "حساب مصاريف الرحلة", "تقسيم مصاريف الرحلة", "ميزانية الرحلة", "مصاريف السفر مع الأصدقاء"],
-    keywordsEn: ["best trip expenses app 2026", "travel expense tracker for groups", "trip cost calculator app", "split travel costs with friends", "travel budget tracker app free"],
+    keywordsEn: ["travel expense tracker for groups", "trip cost calculator app", "split travel costs with friends"],
     category: "guides",
     readTime: 8,
     publishDate: "2026-03-08",
@@ -12882,7 +12688,7 @@ Splitting restaurant bills doesn't have to be awkward. With Diviso, log, split, 
 - **ضياع الفواتير**: ما تقدر تتذكر كل شيء
 
 ### الحل مع التطبيق:
-- ✅ كل مصروف مسجل لحظياً
+- ✅ كل مصروف مسجل ومعروف مين دفعه
 - ✅ الكل يشوف الحسابات
 - ✅ التسوية واضحة ودقيقة
 - ✅ ما فيه مجال للنسيان
@@ -12891,12 +12697,10 @@ Splitting restaurant bills doesn't have to be awkward. With Diviso, log, split, 
 
 ### Diviso
 - **اللغة**: عربي كامل
-- **العملة**: ريال سعودي + 50 عملة
-- **المميز**: مصمم للسعودية، واجهة عربية، دعم فوري
+- **العملة**: ريال سعودي
+- **المميز**: مصمم للسعودية، واجهة عربية
 
 ### Splitwise
-- **اللغة**: إنجليزي فقط
-- **العملة**: دولار افتراضياً
 - **المميز**: شهرة عالمية
 - **السعر**: مدفوع للميزات الكاملة
 
@@ -12909,18 +12713,17 @@ Splitting restaurant bills doesn't have to be awkward. With Diviso, log, split, 
 
 ### قبل الرحلة
 1. أنشئ مجموعة بالتطبيق
-2. أضف أعضاء الرحلة عبر رابط أو QR
-3. حدد العملة وطريقة التقسيم
+2. أضف أعضاء الرحلة عبر رابط
+3. حدد طريقة التقسيم
 
 ### أثناء الرحلة
 1. أي شخص يدفع يسجل المصروف فوراً
-2. الكل يشوف التحديثات لحظياً
-3. التطبيق يحسب الأرصدة تلقائياً
+2. التطبيق يحسب الأرصدة تلقائياً
 
 ### بعد الرحلة
-1. راجع ملخص المصاريف
+1. راجع المصاريف والأرصدة
 2. شوف من يدين لمن
-3. سوِّ الحسابات بضغطة واحدة
+3. سجّل الدفع وأكّد الاستلام
 
 ## 5 نصائح لرحلة بدون مشاكل مالية
 
@@ -12950,7 +12753,7 @@ Whether it's Umrah, a Dubai trip, or camping with friends — organizing expense
 - **Lost receipts**: Can't remember everything
 
 ### Solution With an App:
-- ✅ Every expense logged instantly
+- ✅ Every expense logged with who paid it
 - ✅ Everyone sees the accounts
 - ✅ Settlement is clear and accurate
 - ✅ No room for forgetting
@@ -12959,12 +12762,10 @@ Whether it's Umrah, a Dubai trip, or camping with friends — organizing expense
 
 ### Diviso
 - **Language**: Full Arabic
-- **Currency**: Saudi Riyal + 50 currencies
-- **Highlight**: Designed for Saudi Arabia, Arabic interface, instant support
+- **Currency**: Saudi Riyal
+- **Highlight**: Designed for Saudi Arabia, Arabic interface
 
 ### Splitwise
-- **Language**: English only
-- **Currency**: USD default
 - **Highlight**: Global popularity
 - **Price**: Paid for full features
 
@@ -12977,18 +12778,17 @@ Whether it's Umrah, a Dubai trip, or camping with friends — organizing expense
 
 ### Before the Trip
 1. Create a group in the app
-2. Add trip members via link or QR
-3. Set currency and splitting method
+2. Add trip members via link
+3. Set splitting method
 
 ### During the Trip
 1. Whoever pays logs the expense instantly
-2. Everyone sees live updates
-3. App calculates balances automatically
+2. App calculates balances automatically
 
 ### After the Trip
-1. Review expense summary
+1. Review expenses and balances
 2. See who owes whom
-3. Settle accounts with one tap
+3. Record payments and confirm receipt
 
 ## 5 Tips for a Financially Smooth Trip
 
@@ -13009,10 +12809,10 @@ The right trip expenses app transforms your trip from financial chaos to total o
     slug: "monthly-expense-calculator",
     title: "كيف أحسب مصاريفي الشهرية؟ دليل عملي خطوة بخطوة",
     titleEn: "How to Calculate Monthly Expenses: A Step-by-Step Guide",
-    description: "تعلم كيف تحسب مصاريفك الشهرية وتنظم ميزانيتك بطريقة بسيطة. دليل شامل مع أدوات مجانية لتتبع النفقات.",
-    descriptionEn: "Learn how to calculate your monthly expenses and organize your budget simply. Comprehensive guide with free tracking tools.",
+    description: "تعلم كيف تحسب مصاريفك الشهرية وتنظم ميزانيتك بطريقة بسيطة. دليل شامل مع أدوات لتتبع النفقات.",
+    descriptionEn: "Learn how to calculate your monthly expenses and organize your budget simply. Comprehensive guide with tracking tools.",
     keywords: ["كيف احسب مصاريفي الشهرية", "حساب المصاريف", "ميزانية شهرية", "تتبع المصاريف", "إدارة المصاريف الشخصية", "تطبيق حساب مصاريف"],
-    keywordsEn: ["how to calculate monthly expenses", "monthly budget calculator", "expense tracking app free", "personal finance tracker", "budget calculator for beginners"],
+    keywordsEn: ["how to calculate monthly expenses", "monthly budget calculator","personal finance tracker", "budget calculator for beginners"],
     category: "tips",
     readTime: 9,
     publishDate: "2026-03-05",
@@ -13073,9 +12873,8 @@ The right trip expenses app transforms your trip from financial chaos to total o
 المصاريف المشتركة (الثلث اللي مع ناس) هي الأصعب في التتبع. Diviso يساعدك:
 
 - ✅ تتبع كل مصروف مشترك
-- ✅ تعرف بالضبط كم تصرف مع الأصدقاء
+- ✅ تعرف بالضبط كم لك وكم عليك
 - ✅ تسوي حسابات واضحة
-- ✅ تقارير شهرية تبين أنماط صرفك
 
 ## أدوات مفيدة لحساب المصاريف
 
@@ -13154,9 +12953,8 @@ Record **every** expense no matter how small. Daily coffee at 15 SAR = 450 SAR m
 Shared expenses (the third that involves others) are hardest to track. Diviso helps you:
 
 - ✅ Track every shared expense
-- ✅ Know exactly how much you spend with friends
+- ✅ Know exactly what you owe and are owed
 - ✅ Clear settlements
-- ✅ Monthly reports showing spending patterns
 
 ## Useful Expense Tracking Tools
 
@@ -13181,12 +12979,12 @@ Calculating monthly expenses isn't hard — it just needs simple commitment. Sta
   },
   {
     slug: "best-money-splitting-app-2026",
-    title: "أفضل تطبيق تقسيم فلوس 2026: مقارنة شاملة",
-    titleEn: "Best Money Splitting App 2026: Comprehensive Comparison",
+    title: "تطبيقات تقسيم الفلوس 2026: مقارنة شاملة",
+    titleEn: "Money Splitting Apps 2026: Comprehensive Comparison",
     description: "مقارنة بين أفضل تطبيقات تقسيم الفلوس والمصاريف في 2026. اكتشف أي تطبيق يناسبك ويناسب أصدقائك.",
     descriptionEn: "Comparison of the best money splitting apps in 2026. Discover which app suits you and your friends.",
-    keywords: ["أفضل تطبيق تقسيم فلوس", "تطبيق تقسيم المصاريف", "أفضل تطبيق حساب المصاريف", "بديل Splitwise عربي", "تطبيق تقسيم الحساب", "تقسيم الفلوس بين الأصدقاء"],
-    keywordsEn: ["best money splitting app 2026", "best expense splitting app", "Splitwise alternative free 2026", "bill splitting app comparison", "best app to split expenses with friends"],
+    keywords: ["تطبيق تقسيم المصاريف", "بديل Splitwise عربي", "تطبيق تقسيم الحساب", "تقسيم الفلوس بين الأصدقاء"],
+    keywordsEn: ["bill splitting app comparison"],
     category: "comparisons",
     readTime: 10,
     publishDate: "2026-03-01",
@@ -13205,25 +13003,19 @@ Calculating monthly expenses isn't hard — it just needs simple commitment. Sta
 
 ## المقارنة الشاملة
 
-### 1. Diviso — مصمم للمستخدم العربي
+### Diviso — مصمم للمستخدم العربي
 
 **المميزات:**
 - واجهة عربية 100% مع دعم RTL كامل
-- ريال سعودي + 50 عملة أخرى
-- تقسيم ذكي (متساوي، نسبي، مخصص)
-- مجموعات غير محدودة في النسخة المجانية
-- إشعارات ذكية للتسوية
-- تقارير مفصلة بالرسوم البيانية
-- دعوة الأصدقاء برابط أو QR
-- يعمل بدون إنترنت (PWA)
+- ريال سعودي
+- تقسيم ذكي (متساوي، نسبي)
+- دعوة الأصدقاء برابط
+- ديفيزو متوفر على [App Store](https://apps.apple.com/app/id6761329043) لأجهزة iPhone وiPad
 
 **العيوب:**
 - جديد نسبياً في السوق
-- تطبيق ويب (PWA) وليس تطبيق أصلي بعد
 
-**السعر:** مجاني مع خطة Pro بميزات إضافية
-
-### 2. Splitwise ⭐⭐⭐⭐
+### Splitwise ⭐⭐⭐⭐
 
 **المميزات:**
 - الأشهر عالمياً
@@ -13231,14 +13023,12 @@ Calculating monthly expenses isn't hard — it just needs simple commitment. Sta
 - تكامل مع PayPal وVenmo
 
 **العيوب:**
-- لا يدعم العربية
-- الريال السعودي مو افتراضي
 - النسخة المجانية محدودة جداً
 - الإعلانات مزعجة
 
 **السعر:** $4.99/شهر للنسخة الكاملة
 
-### 3. Tricount ⭐⭐⭐
+### Tricount ⭐⭐⭐
 
 **المميزات:**
 - بسيط ومباشر
@@ -13246,13 +13036,12 @@ Calculating monthly expenses isn't hard — it just needs simple commitment. Sta
 - بدون تسجيل
 
 **العيوب:**
-- لا يدعم العربية
 - ميزات محدودة
 - بدون إشعارات ذكية
 
 **السعر:** مجاني
 
-### 4. ملاحظات الجوال / Excel ⭐⭐
+### ملاحظات الجوال / Excel ⭐⭐
 
 **المميزات:**
 - مرونة كاملة
@@ -13268,12 +13057,9 @@ Calculating monthly expenses isn't hard — it just needs simple commitment. Sta
 
 | الميزة | Diviso | Splitwise | Tricount |
 |--------|--------|-----------|----------|
-| العربية | ✅ | ❌ | ❌ |
-| الريال SAR | ✅ | ⚠️ | ✅ |
 | تقسيم ذكي | ✅ | ✅ | ⚠️ |
-| تذكيرات | ✅ | ✅ | ❌ |
-| تقارير | ✅ | ✅ | ⚠️ |
-| بدون نت | ✅ | ❌ | ❌ |
+| تذكيرات | — | ✅ | ❌ |
+| تقارير | — | ✅ | ⚠️ |
 
 ## التوصية النهائية
 
@@ -13304,25 +13090,19 @@ Every time you go out with friends or travel with family, splitting expenses bec
 
 ## Comprehensive Comparison
 
-### 1. Diviso — Built for Arabic Users
+### Diviso — Built for Arabic Users
 
 **Pros:**
 - 100% Arabic interface with full RTL support
-- Saudi Riyal + 50 other currencies
-- Smart splitting (equal, proportional, custom)
-- Unlimited groups in free version
-- Smart settlement notifications
-- Detailed reports with charts
-- Invite friends via link or QR
-- Works offline (PWA)
+- Saudi Riyal
+- Smart splitting (equal, proportional)
+- Invite friends via link
+- Diviso is available on the [App Store](https://apps.apple.com/app/id6761329043) for iPhone and iPad
 
 **Cons:**
 - Relatively new in the market
-- Web app (PWA) not native app yet
 
-**Price:** Free with Pro plan for extra features
-
-### 2. Splitwise ⭐⭐⭐⭐
+### Splitwise ⭐⭐⭐⭐
 
 **Pros:**
 - Most popular globally
@@ -13330,14 +13110,12 @@ Every time you go out with friends or travel with family, splitting expenses bec
 - PayPal and Venmo integration
 
 **Cons:**
-- No Arabic support
-- SAR not default currency
 - Very limited free version
 - Annoying ads
 
 **Price:** $4.99/month for full version
 
-### 3. Tricount ⭐⭐⭐
+### Tricount ⭐⭐⭐
 
 **Pros:**
 - Simple and direct
@@ -13345,13 +13123,12 @@ Every time you go out with friends or travel with family, splitting expenses bec
 - No registration required
 
 **Cons:**
-- No Arabic support
 - Limited features
 - No smart notifications
 
 **Price:** Free
 
-### 4. Phone Notes / Excel ⭐⭐
+### Phone Notes / Excel ⭐⭐
 
 **Pros:**
 - Full flexibility
@@ -13367,12 +13144,9 @@ Every time you go out with friends or travel with family, splitting expenses bec
 
 | Feature | Diviso | Splitwise | Tricount |
 |---------|--------|-----------|----------|
-| Arabic | ✅ | ❌ | ❌ |
-| SAR | ✅ | ⚠️ | ✅ |
 | Smart Split | ✅ | ✅ | ⚠️ |
-| Reminders | ✅ | ✅ | ❌ |
-| Reports | ✅ | ✅ | ⚠️ |
-| Offline | ✅ | ❌ | ❌ |
+| Reminders | — | ✅ | ❌ |
+| Reports | — | ✅ | ⚠️ |
 
 ## Final Recommendation
 
@@ -13426,13 +13200,13 @@ The best money splitting app is the one all group members actually use. Diviso m
 
 ### أسبوع قبل رمضان
 1. أنشئ مجموعة "رمضان" في Diviso
-2. أضف كل الأصدقاء
+2. ادعُ كل الأصدقاء برابط واحد
 3. اتفقوا على الميزانية التقريبية
 4. حددوا جدول العزومات
 
 ### خلال رمضان
 1. سجل كل مصروف فوراً
-2. صنّف المصاريف (إفطار، هدايا، صدقة)
+2. حدد مين دفع ومين شارك في كل مصروف
 3. تابع الأرصدة أسبوعياً
 4. سوّ حسابات مرحلية
 
@@ -13452,10 +13226,8 @@ The best money splitting app is the one all group members actually use. Diviso m
 ## كيف Diviso يخلي رمضانك أسهل؟
 
 - ✅ مجموعة خاصة لرمضان
-- ✅ تصنيف المصاريف (إفطار/هدايا/صدقة)
-- ✅ متابعة لحظية — الكل يشوف
+- ✅ أرصدة واضحة — الكل يشوف كم له وكم عليه
 - ✅ تسوية سهلة بعد العيد
-- ✅ تقرير شامل لمصاريف الشهر
 
 ## الخلاصة
 
@@ -13489,13 +13261,13 @@ Clothes, sweets, decorations — some are shared.
 
 ### Week Before Ramadan
 1. Create a "Ramadan" group in Diviso
-2. Add all friends
+2. Invite all friends with one link
 3. Agree on approximate budget
 4. Set dinner hosting schedule
 
 ### During Ramadan
 1. Log every expense immediately
-2. Categorize (iftar, gifts, charity)
+2. Set who paid and who's included in each expense
 3. Review balances weekly
 4. Do interim settlements
 
@@ -13515,10 +13287,8 @@ Clothes, sweets, decorations — some are shared.
 ## How Diviso Makes Your Ramadan Easier
 
 - ✅ Dedicated Ramadan group
-- ✅ Expense categorization (iftar/gifts/charity)
-- ✅ Real-time tracking — everyone sees
+- ✅ Clear balances — everyone sees what they owe and are owed
 - ✅ Easy settlement after Eid
-- ✅ Comprehensive monthly expense report
 
 ## Conclusion
 
@@ -13607,10 +13377,10 @@ The modern solution: everyone logs expenses in an app, and the app calculates wh
 
 [Diviso](/split-expenses) is designed specifically for group expense management. Here's how it works:
 
-1. **Create a group** — Add your friends by name, phone, or invite link
-2. **Log expenses as they happen** — "Ahmed paid $120 for dinner" takes 5 seconds to add
-3. **See real-time balances** — Everyone knows exactly who owes what at any moment
-4. **Settle up with minimal transfers** — Diviso's algorithm minimizes the number of payments needed
+1. **Create a group** — Invite your friends with one link
+2. **Log expenses as they happen** — "Ahmed paid 120 SAR for dinner": add the amount and who paid
+3. **See clear balances** — Everyone knows exactly who owes what
+4. **Settle up** — Record a payment and the recipient confirms receipt
 
 Unlike spreadsheets or group chats, Diviso gives everyone visibility and removes the burden of tracking from any single person.
 
@@ -13625,10 +13395,10 @@ Unlike spreadsheets or group chats, Diviso gives everyone visibility and removes
 ## Tips for Different Scenarios
 
 ### Group Trips
-Create a dedicated trip group in Diviso. Assign one person per major expense (hotel, car rental, restaurants) and log everything in real-time. At the end of the trip, settle up with one round of transfers.
+Create a dedicated trip group in Diviso. Assign one person per major expense (hotel, car rental, restaurants) and log everything as it happens. At the end of the trip, check who pays whom and settle up.
 
 ### Roommates
-Set up recurring expenses for rent and utilities. Log shared groceries and household items as they happen. Review balances monthly.
+Log rent and utilities each month, and log shared groceries and household items as they happen. Review balances monthly.
 
 ### Regular Friend Meetups
 Use a persistent group that carries balances forward. Over time, the rotating payments and shared expenses balance out naturally.
@@ -13637,7 +13407,7 @@ Use a persistent group that carries balances forward. Over time, the rotating pa
 
 The key to splitting expenses without awkwardness is transparency and consistency. Pick a method that works for your group, use a tool like [Diviso](/split-expenses) to track everything, and settle up regularly.
 
-**[Try Diviso](/auth?mode=signup)** — split your next expense in under 30 seconds.
+**[Try Diviso](/auth?mode=signup)** — split your next expense with your group.
     `
   },
   {
@@ -13645,9 +13415,9 @@ The key to splitting expenses without awkwardness is transparency and consistenc
     title: "أفضل تطبيقات تقسيم الفاتورة",
     titleEn: "Best Apps to Split Bills in 2026 — Honest Comparison",
     description: "مقارنة شاملة بين أفضل تطبيقات تقسيم الفواتير",
-    descriptionEn: "We compared the top bill splitting apps of 2026 — features, pricing, and user experience. Here's which one actually works best.",
-    keywords: ["تطبيقات تقسيم الفاتورة", "أفضل تطبيق تقسيم"],
-    keywordsEn: ["best apps to split bills", "bill splitting app comparison", "best expense splitting app 2026", "splitwise vs diviso", "top bill splitter apps", "free bill splitting app"],
+    descriptionEn: "We compared the top bill splitting apps of 2026 — features, pricing, and user experience.",
+    keywords: ["تطبيقات تقسيم الفاتورة"],
+    keywordsEn: ["best apps to split bills", "bill splitting app comparison","splitwise vs diviso", "top bill splitter apps"],
     category: "comparisons",
     readTime: 12,
     publishDate: "2026-03-13",
@@ -13658,10 +13428,10 @@ The key to splitting expenses without awkwardness is transparency and consistenc
 
 ## التطبيقات
 
-### 1. Diviso
-تطبيق سريع لتقسيم المصاريف.
+### Diviso
+تطبيق لتقسيم المصاريف بالتساوي أو بالنسب.
 
-### 2. Splitwise
+### Splitwise
 تطبيق شهير لكن بعض الميزات خلف الدفع.
 
 ## الخلاصة
@@ -13688,32 +13458,25 @@ Before diving into specific apps, here's what matters most:
 
 ## The Top Bill Splitting Apps of 2026
 
-### 1. Diviso
-**Rating: 4.8/5**
+### Diviso
 
-[Diviso](/split-expenses) stands out with its clean design, fast expense entry, and smart settlement optimization.
+[Diviso](/split-expenses) lets you add expenses, split them equally or by percentage, and see who pays whom.
 
 **Pros:**
-- ✅ Free unlimited groups and expenses
-- ✅ Multi-currency support included free
 - ✅ Clean, modern interface
-- ✅ Real-time balance updates
-- ✅ Smart settlement minimization
+- ✅ Available on the [App Store](https://apps.apple.com/app/id6761329043) for iPhone and iPad
 
 **Cons:**
 - ❌ Newer app — smaller user base than Splitwise
-- ❌ No native app yet (PWA works great though)
 
-**Best for**: Anyone who wants a fast, free, and feature-rich splitting experience.
-
-### 2. Splitwise
+### Splitwise
 **Rating: 4.2/5**
 
 The pioneer of expense splitting. Splitwise has a large user base and solid functionality, but many essential features now require a Pro subscription ($4.99/month).
 
 **Pros:**
 - ✅ Large user base
-- ✅ Available on iOS (App Store) and web — Android coming soon
+- ✅ Available on iOS (App Store) and web
 - ✅ Good group management
 
 **Cons:**
@@ -13724,7 +13487,7 @@ The pioneer of expense splitting. Splitwise has a large user base and solid func
 
 **Best for**: Users already invested in the Splitwise ecosystem.
 
-### 3. Tricount
+### Tricount
 **Rating: 4.0/5**
 
 A simple option for basic expense splitting. Good for occasional use but lacks advanced features.
@@ -13740,7 +13503,7 @@ A simple option for basic expense splitting. Good for occasional use but lacks a
 
 **Best for**: Occasional, simple splits with small groups.
 
-### 4. Settle Up
+### Settle Up
 **Rating: 3.8/5**
 
 Open-source expense sharing app with decent features but less polish.
@@ -13760,16 +13523,13 @@ Open-source expense sharing app with decent features but less polish.
 
 | Feature | Diviso | Splitwise | Tricount | Settle Up |
 |---------|--------|-----------|----------|-----------|
-| Smart settlements | ✅ | ✅ | ❌ | ✅ |
-| Expense categories | ✅ | ❌ (Pro) | ❌ | ✅ |
-| Receipt scanning | ✅ | ❌ (Pro) | ❌ | ❌ |
-| Clean modern UI | ✅ | ❌ | ✅ | ❌ |
-| Real-time sync | ✅ | ✅ | ✅ | ✅ |
-| No ads | ✅ | ❌ | ✅ | ✅ |
+| Smart settlements | — | ✅ | ❌ | ✅ |
+| Expense categories | — | ❌ (Pro) | ❌ | ✅ |
+| Real-time sync | — | ✅ | ✅ | ✅ |
 
 ## Our Verdict
 
-For most users, **[Diviso](/split-expenses)** offers a clear balance of features and usability. If you're starting fresh or considering switching from another app, Diviso is worth a try in 2026.
+If you're starting fresh or considering switching from another app, **[Diviso](/split-expenses)** is worth a try in 2026.
 
 **[Try Diviso](/auth?mode=signup)**.
     `
@@ -13823,17 +13583,16 @@ Without proper tracking:
 Forget spreadsheets. Use a purpose-built app like [Diviso](/group-expense-tracker) that everyone in the group can access. Key requirements:
 
 - Everyone can add expenses (not just one person)
-- Real-time balance visibility
+- Clear balances: who owes whom
 - Support for different split types
-- Works on all devices
 
 ### Step 2: Create Your Group
-Set up a group with all members. In Diviso, this takes about 30 seconds:
+Set up a group with all members. In Diviso:
 
 1. Open the app
 2. Tap "Create Group"
 3. Name it (e.g., "Bali Trip 2026" or "Apartment 4B")
-4. Invite members via link or phone
+4. Invite members via link
 
 ### Step 3: Log Expenses as They Happen
 This is the critical habit. Every time someone pays for something shared, log it immediately. Don't save it for later — you'll forget details.
@@ -13842,7 +13601,6 @@ In Diviso:
 - Tap the "+" button
 - Enter amount and description
 - Select who paid and who benefits
-- Done in under 10 seconds
 
 ### Step 4: Review Balances Regularly
 Check group balances at natural checkpoints:
@@ -13854,9 +13612,7 @@ Check group balances at natural checkpoints:
 This catches any missing expenses early.
 
 ### Step 5: Settle Up Efficiently
-When it's time to settle, use the app's smart settlement feature. Instead of everyone paying everyone, the algorithm calculates the minimum number of transfers needed.
-
-Example: In a group of 5, instead of 10 possible transfers, Diviso might reduce it to just 3.
+When it's time to settle, check who pays whom in the app.
 
 ## Best Practices for Group Expense Tracking
 
@@ -13878,17 +13634,14 @@ Example: In a group of 5, instead of 10 possible transfers, Diviso might reduce 
 
 [Diviso](/group-expense-tracker) is built specifically for group expense management:
 
-- **Instant expense logging** — 5-second entries from your phone
-- **Real-time balances** — Everyone sees who owes what, always
-- **Smart settlements** — Minimum transfers to settle all debts
-- **Multi-currency** — Perfect for international groups
-- **Expense categories** — See where the money goes
+- **Expense logging** — Add the amount and who paid
+- **Balances** — Everyone sees who owes what
 
 ## Conclusion
 
 Group expense tracking doesn't have to be a chore. With the right tool and a simple system, you can keep finances transparent, avoid conflicts, and settle up with minimal friction.
 
-**[Start tracking with Diviso](/auth?mode=signup)** — it takes 30 seconds to set up.
+**[Start tracking with Diviso](/auth?mode=signup)** — create your group and invite everyone with one link.
     `
   },
   {
@@ -13898,31 +13651,27 @@ Group expense tracking doesn't have to be a chore. With the right tool and a sim
     description: "أفضل البدائل لتطبيق Splitwise مع مقارنة شاملة",
     descriptionEn: "Looking for Splitwise alternatives? We compared the best options — free and paid — to help you find the right expense splitting app for your needs.",
     keywords: ["بدائل Splitwise", "بديل سبليتوايز"],
-    keywordsEn: ["best splitwise alternatives", "splitwise alternative free", "apps like splitwise", "splitwise competitor", "splitwise replacement 2026", "better than splitwise"],
+    keywordsEn: ["best splitwise alternatives", "apps like splitwise", "splitwise competitor", "splitwise replacement 2026"],
     category: "comparisons",
     readTime: 11,
     publishDate: "2026-03-13",
     content: `
 ## الإجابة المختصرة
 
-Splitwise تطبيق مشهور لتتبع وتقسيم المصاريف الجماعية، لكن كثيراً من المستخدمين العرب يبحثون عن بديل يدعم اللغة العربية بشكل كامل، ويتعامل بالريال السعودي مباشرة، ويوفر العملات المتعددة دون تعقيد. Diviso أحد أبرز هذه البدائل، مصمم بواجهة عربية أصلية من الأساس، لا كترجمة لاحقة لواجهة إنجليزية.
+Splitwise تطبيق مشهور لتتبع وتقسيم المصاريف الجماعية، لكن كثيراً من المستخدمين العرب يبحثون عن بديل يدعم اللغة العربية بشكل كامل، ويتعامل بالريال السعودي مباشرة. Diviso أحد هذه البدائل، مصمم بواجهة عربية أصلية من الأساس، لا كترجمة لاحقة لواجهة إنجليزية.
 
-## ما هو أفضل بديل لـ Splitwise بالعربي؟
+## ما هو بديل Splitwise بالعربي؟
 
-بالنسبة لمن يبحث عن تجربة عربية كاملة، Diviso يُعتبر من أقوى بدائل Splitwise المتاحة، لأنه بُني بواجهة عربية أصلية (اتجاه RTL طبيعي، لا مجرد انعكاس لتصميم إنجليزي)، ويدعم الريال السعودي كعملة أساسية إلى جانب عملات متعددة أخرى، دون تعقيد في التبديل بينها.
+بالنسبة لمن يبحث عن تجربة عربية كاملة، Diviso أحد بدائل Splitwise المتاحة، لأنه بُني بواجهة عربية أصلية (اتجاه RTL طبيعي، لا مجرد انعكاس لتصميم إنجليزي)، ويدعم الريال السعودي.
 
 ### لماذا يبحث المستخدمون العرب عن بديل لـ Splitwise؟
 
-- **دعم عربي محدود**: واجهة Splitwise الأساسية مبنية بالإنجليزية أولاً، والترجمة العربية فيها ليست دائماً طبيعية في الاستخدام اليومي
-- **التعامل بالريال السعودي أو عملات خليجية أخرى** ليس تجربة أساسية مركزية في تصميم التطبيق
 - **سيناريوهات تقسيم محلية مألوفة** (كالنقوط في الأعراس أو الجمعيات الدورية) لا تجد دائماً قالباً جاهزاً يناسبها
 
 ## مزايا محايدة لبديل عربي مثل Diviso
 
 - واجهة عربية كاملة بتصميم RTL أصلي منذ البداية
-- دعم مباشر للريال السعودي كعملة أساسية
-- دعم العملات المتعددة لمن يتعامل مع مجموعات من دول مختلفة
-- فئات مصاريف قابلة للتخصيص تناسب سيناريوهات محلية متعددة
+- دعم مباشر للريال السعودي
 
 ## أسئلة شائعة
 
@@ -13930,14 +13679,14 @@ Splitwise تطبيق مشهور لتتبع وتقسيم المصاريف الج�
 نعم، تطبيقات مثل Diviso مصممة بواجهة عربية أصلية منذ البداية، لا كترجمة إضافية لواجهة إنجليزية، وهذا يجعل تجربة الاستخدام أكثر طبيعية للمستخدم العربي.
 
 ### هل يدعم بديل Splitwise العربي التعامل بالريال السعودي؟
-نعم، التطبيقات المصممة خصيصاً للسوق الخليجي والعربي تدعم الريال السعودي كعملة أساسية مباشرة، دون الحاجة لتحويل يدوي أو إعدادات إضافية معقدة.
+نعم، التطبيقات المصممة خصيصاً للسوق الخليجي والعربي تدعم الريال السعودي مباشرة، دون الحاجة لتحويل يدوي أو إعدادات إضافية معقدة.
 
 ### ما الفرق الأساسي بين بديل عربي وتطبيق مترجم فقط؟
 التطبيق المترجم فقط ينقل النصوص للعربية دون تغيير بنية الواجهة نفسها (اتجاه العرض، ترتيب العناصر)، بينما البديل المصمم عربياً من الأساس يبني تجربة RTL طبيعية منذ التصميم الأول.
 
 ## الخلاصة
 
-إذا كنت تبحث عن بديل لـ Splitwise يفهم احتياجاتك كمستخدم عربي — من واجهة RTL طبيعية إلى دعم الريال السعودي والعملات المتعددة — فإن Diviso خيار يستحق التجربة.
+إذا كنت تبحث عن بديل لـ Splitwise يفهم احتياجاتك كمستخدم عربي — من واجهة RTL طبيعية إلى دعم الريال السعودي — فإن Diviso خيار يستحق التجربة.
 
 **[جرب Diviso الآن](/auth?mode=signup)** وقسّم مصاريفك مع أصدقائك بواجهة عربية كاملة.
     `,
@@ -13960,18 +13709,14 @@ The most common reasons users look for alternatives:
 
 ## The Best Splitwise Alternatives
 
-### 1. Diviso
-**Why switch**: A faster, cleaner way to split, with a full Arabic experience.
+### Diviso
+**Why switch**: A full Arabic experience.
 
-[Diviso](/splitwise-alternative) was built by people who loved the concept of Splitwise but wanted a better execution. Here's what makes it stand out:
+[Diviso](/splitwise-alternative) offers:
 
 - **Modern, clean interface** — Designed for speed and clarity
-- **Smart settlement optimization** — Fewer transfers to settle up
-- **Real-time syncing** — Everyone sees updates instantly
 
-**Best for**: Anyone who wants a clear, simple expense splitter.
-
-### 2. Tricount
+### Tricount
 **Why consider**: Ultra-simple interface for basic needs.
 
 Tricount strips expense splitting down to the basics. If you only need occasional, simple splits, it gets the job done.
@@ -13983,7 +13728,7 @@ Tricount strips expense splitting down to the basics. If you only need occasiona
 **Price**: Free with optional Pro
 **Best for**: Very casual users who split expenses rarely.
 
-### 3. Settle Up
+### Settle Up
 **Why consider**: Open-source and privacy-focused.
 
 Settle Up is an open-source alternative that appeals to privacy-conscious users.
@@ -13995,7 +13740,7 @@ Settle Up is an open-source alternative that appeals to privacy-conscious users.
 **Price**: Free
 **Best for**: Users who prioritize open-source software.
 
-### 4. Tab
+### Tab
 **Why consider**: Quick restaurant bill splitting.
 
 Tab focuses specifically on splitting restaurant bills by scanning receipts and assigning items.
@@ -14007,21 +13752,11 @@ Tab focuses specifically on splitting restaurant bills by scanning receipts and 
 **Price**: Free
 **Best for**: Only splitting restaurant checks.
 
-## Comparison: Diviso vs. Splitwise
-
-- **Unlimited groups**: supported on Diviso, Splitwise Free, and Splitwise Pro alike
-- **Multi-currency**: included on Diviso at no extra tier; requires Splitwise Pro
-- **Expense categories**: included on Diviso at no extra tier; requires Splitwise Pro
-- **Smart settlements**: supported on Diviso, Splitwise Free, and Splitwise Pro alike
-- **Expense search**: included on Diviso at no extra tier; requires Splitwise Pro
-- **Modern UI**: Diviso only — neither Splitwise tier has been modernized
-- **Receipt photos**: included on Diviso at no extra tier; requires Splitwise Pro
-
 ## How to Switch from Splitwise to Diviso
 
 Making the switch is straightforward:
 
-1. **[Sign up for Diviso](/auth?mode=signup)** — takes 30 seconds
+1. **[Sign up for Diviso](/auth?mode=signup)**
 2. **Create your groups** — Recreate your active Splitwise groups
 3. **Invite members** — Send invite links to your group members
 4. **Start logging** — Begin tracking new expenses in Diviso
@@ -14029,7 +13764,7 @@ Making the switch is straightforward:
 
 ## Conclusion
 
-Splitwise deserves credit for pioneering the expense-splitting category. [Diviso](/splitwise-alternative) offers a modern, fast alternative with a full Arabic experience.
+Splitwise deserves credit for pioneering the expense-splitting category. [Diviso](/splitwise-alternative) offers a modern alternative with a full Arabic experience.
 
 **[Try Diviso](/auth?mode=signup)**.
     `
@@ -14087,7 +13822,7 @@ Before the trip, have a quick group conversation about:
 - When you'll settle up
 
 ### 2. Create a Trip Group
-Open [Diviso](/travel-expense-splitter) and create a group for the trip. Add all travelers. This takes 30 seconds and saves hours of post-trip accounting.
+Open [Diviso](/travel-expense-splitter) and create a group for the trip. Invite all travelers with one link. A few minutes now saves hours of post-trip accounting.
 
 ### 3. Assign Roles
 Designate who's booking what:
@@ -14098,9 +13833,9 @@ Designate who's booking what:
 
 This prevents duplicate bookings and ensures all major expenses are covered.
 
-## During the Trip: The 10-Second Rule
+## During the Trip: Log It Right Away
 
-Every time someone pays for something shared, log it in Diviso within 10 seconds. This is the single most important habit:
+Every time someone pays for something shared, log it in Diviso right away. This is the single most important habit:
 
 1. Open the app
 2. Enter amount and description
@@ -14119,19 +13854,14 @@ Person A has a single room ($150/night), Persons B and C share a double ($100/ni
 ### Scenario 2: Group Dinners with Different Orders
 Everyone eats at the same restaurant but orders at different price points.
 
-**Solution**: Either split equally (if the difference is small) or log per-person amounts. In Diviso, you can assign custom amounts to each participant.
+**Solution**: Either split equally (if the difference is small) or log per-person amounts.
 
 ### Scenario 3: Some People Skip an Activity
 4 out of 6 people go snorkeling ($50/person).
 
 **Solution**: When logging, only include the 4 people who participated.
 
-### Scenario 4: International Currency
-Your trip spans multiple countries with different currencies.
-
-**Solution**: Log expenses in the local currency. [Diviso](/travel-expense-splitter) handles conversion automatically with up-to-date exchange rates.
-
-### Scenario 5: Tips and Small Cash Expenses
+### Scenario 4: Tips and Small Cash Expenses
 Taxis, tips, market purchases — all cash.
 
 **Solution**: Log them immediately via phone. Even $5 expenses add up over a week-long trip.
@@ -14140,18 +13870,17 @@ Taxis, tips, market purchases — all cash.
 
 At the end of the trip:
 
-1. **Review all expenses** — Check the timeline in Diviso for completeness
+1. **Review all expenses** — Check the group's expenses in Diviso for completeness
 2. **Verify balances** — Everyone should confirm their balance looks right
-3. **Use smart settlements** — Diviso calculates the minimum transfers needed
+3. **Check who pays whom** — Diviso shows who pays whom
 4. **Transfer the money** — Bank transfer, Venmo, whatever works for your group
-5. **Mark as settled** — Close the balances in the app
+5. **Record the payment** — The recipient confirms receipt in the app
 
 This process takes 10 minutes instead of the usual hours of spreadsheet wrangling.
 
 ## Pro Tips from Experienced Group Travelers
 
-- 🎒 **Log immediately**: The 10-second rule prevents 90% of expense tracking problems
-- 💱 **Don't convert manually**: Let the app handle exchange rates
+- 🎒 **Log immediately**: Logging right away prevents 90% of expense tracking problems
 - 🧾 **Photo receipts**: For big expenses, snap a photo as backup
 - 📊 **Review daily**: A 2-minute daily check catches everything
 - 🤝 **Be generous**: Don't nickel-and-dime on small amounts — it's not worth the friction
@@ -14161,18 +13890,13 @@ This process takes 10 minutes instead of the usual hours of spreadsheet wranglin
 
 [Diviso](/travel-expense-splitter) was designed with group travel in mind:
 
-- **Multi-currency support** — Log expenses in any currency
-- **Offline mode** — Works without WiFi
-- **Smart settlements** — Minimum transfers to settle all debts
-- **Trip timeline** — See every expense chronologically
-- **Category tracking** — Breakdown by flights, hotels, food, activities
-- **Real-time syncing** — Everyone sees expenses as they're added
+- **Trip budget, clear balances, and in-group chat** — Everything the trip needs in one group
 
 ## Conclusion
 
 Splitting travel expenses doesn't have to be awkward or stressful. With the right preparation, a simple logging habit, and a good app, you can handle the money side of group travel in minutes instead of hours.
 
-**[Try Diviso for your next trip](/auth?mode=signup)** — it takes 30 seconds to set up.
+**[Try Diviso for your next trip](/auth?mode=signup)**
     `
   },
 ];

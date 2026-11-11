@@ -39,8 +39,8 @@ export const useCases: UseCase[] = [
     titleEn: 'Travel Expenses with Friends',
     question: 'كيف تقسم مصاريف السفر بين الأصدقاء بدون إحراج؟',
     questionEn: 'How to split travel expenses between friends without awkwardness?',
-    intro: 'Diviso يساعد على تقسيم مصاريف السفر تلقائيًا بين المسافرين. يُستخدم لتتبع من دفع ماذا ومعرفة المبالغ المستحقة لكل شخص فورًا.',
-    introEn: 'Diviso helps automatically split travel expenses between travelers. It is used to track who paid what and instantly know the amounts owed to each person.',
+    intro: 'Diviso يساعد على تقسيم مصاريف السفر تلقائيًا بين المسافرين. يُستخدم لتتبع من دفع ماذا ومعرفة المبالغ المستحقة لكل شخص.',
+    introEn: 'Diviso helps automatically split travel expenses between travelers. It is used to track who paid what and know the amounts owed to each person.',
     problems: [
       'تعدد الدافعين خلال الرحلة',
       'نسيان المصاريف الصغيرة',
@@ -56,39 +56,39 @@ export const useCases: UseCase[] = [
     solutions: [
       'إضافة المصروف فور حدوثه',
       'تقسيم تلقائي بين جميع المسافرين',
-      'معرفة الرصيد لكل شخص لحظيًا',
+      'معرفة الرصيد لكل شخص بوضوح',
       'تسوية سهلة في نهاية الرحلة'
     ],
     solutionsEn: [
       'Add expenses as they happen',
       'Automatic split between all travelers',
-      'Know each person\'s balance instantly',
+      'Know each person\'s balance clearly',
       'Easy settlement at trip end'
     ],
     steps: [
       { title: 'أنشئ مجموعة', description: 'أنشئ مجموعة جديدة باسم رحلتك' },
       { title: 'أضف الأعضاء', description: 'أضف جميع المسافرين للمجموعة' },
       { title: 'سجل المصروف', description: 'سجل كل مصروف مع تحديد من دفع' },
-      { title: 'شاهد النتيجة', description: 'تعرف على من يدين لمن فورًا' }
+      { title: 'شاهد النتيجة', description: 'تعرف على من يدين لمن' }
     ],
     stepsEn: [
       { title: 'Create a group', description: 'Create a new group with your trip name' },
       { title: 'Add members', description: 'Add all travelers to the group' },
       { title: 'Record expense', description: 'Record each expense with who paid' },
-      { title: 'See the result', description: 'Know who owes whom instantly' }
+      { title: 'See the result', description: 'Know who owes whom' }
     ],
     faqs: [
       { question: 'ماذا لو دفع شخص واحد كل المصاريف؟', answer: 'سيظهر الرصيد المستحق له من كل عضو تلقائيًا.' },
       { question: 'ما أفضل طريقة لتقسيم تكاليف الرحلة الجماعية؟', answer: 'أفضل طريقة هي استخدام تطبيق يسجل كل مصروف فور حدوثه ويقسمه تلقائياً بين المسافرين. Diviso يتيح لكل شخص إضافة المصاريف ويحسب الفرق بدقة.' },
-      { question: 'كيف نعرف مين دفع أكثر في الرحلة؟', answer: 'كل مصروف يُسجّل مع اسم الدافع تلقائياً. التطبيق يحسب إجمالي ما دفعه كل شخص ويعرض الفرق من شاشة الرصيد بضغطة واحدة.' },
-      { question: 'هل في تطبيق يحسب مصاريف السفر تلقائياً؟', answer: 'نعم، Diviso يحسب مصاريف السفر تلقائياً. تضيف المصروف ويقسمه التطبيق بين الأعضاء ويعرض من يدين لمن فوراً.' },
+      { question: 'كيف نعرف مين دفع أكثر في الرحلة؟', answer: 'كل مصروف يُسجّل مع اسم الدافع تلقائياً. التطبيق يعرض رصيد كل شخص: كم له وكم عليه، ومين يحوّل لمين.' },
+      { question: 'هل في تطبيق يحسب مصاريف السفر تلقائياً؟', answer: 'نعم، Diviso يحسب مصاريف السفر تلقائياً. تضيف المصروف ويقسمه التطبيق بين الأعضاء ويعرض من يدين لمن.' },
       { question: 'كيف نتجنب الخلافات المالية بعد السفر؟', answer: 'سجّل كل مصروف أثناء الرحلة بدلاً من الانتظار للنهاية. السجل الواضح يمنع النسيان والخلافات.' }
     ],
     faqsEn: [
       { question: 'What if one person paid all expenses?', answer: 'The amount owed to them from each member will be shown automatically.' },
       { question: 'What is the best way to split group trip costs?', answer: 'The best way is to use an app that records each expense as it happens and splits it automatically. Diviso lets everyone add expenses and calculates the difference accurately.' },
-      { question: 'How do we know who paid more on the trip?', answer: 'Each expense is recorded with the payer\'s name automatically. The app calculates totals and shows the difference from the balance screen with one tap.' },
-      { question: 'Is there an app that calculates travel expenses automatically?', answer: 'Yes, Diviso calculates travel expenses automatically. Add the expense and the app splits it between members and shows who owes whom instantly.' },
+      { question: 'How do we know who paid more on the trip?', answer: 'Each expense is recorded with the payer\'s name automatically. The app shows each person\'s balance: what they are owed, what they owe, and who pays whom.' },
+      { question: 'Is there an app that calculates travel expenses automatically?', answer: 'Yes, Diviso calculates travel expenses automatically. Add the expense and the app splits it between members and shows who owes whom.' },
       { question: 'How to avoid financial disputes after traveling?', answer: 'Record each expense during the trip instead of waiting until the end. The clear record prevents forgetting and disputes.' }
     ],
     keywords: ['تقسيم مصاريف السفر', 'مصاريف الرحلات', 'حساب تكاليف السفر', 'تقسيم فاتورة السفر', 'كيف نقسم مصاريف السفر', 'تطبيق مصاريف السفر'],
@@ -117,12 +117,12 @@ export const useCases: UseCase[] = [
     ],
     solutions: [
       'تقسيم بالتساوي أو بالنسبة',
-      'سجل شهري واضح',
+      'أرصدة واضحة: كم لك وكم عليك',
       'تسوية دورية سهلة'
     ],
     solutionsEn: [
       'Split equally or by percentage',
-      'Clear monthly record',
+      'Clear balances: what you\'re owed and what you owe',
       'Easy periodic settlement'
     ],
     steps: [
@@ -143,7 +143,7 @@ export const useCases: UseCase[] = [
       { question: 'كيف نحسب فواتير الكهرباء والماء بين الساكنين؟', answer: 'أضف فاتورة الكهرباء أو الماء كمصروف وحدد طريقة التقسيم. يمكنك تقسيمها بالتساوي أو بالنسبة.' },
       { question: 'ما الحل لو أحد الساكنين ما يدفع؟', answer: 'السجل الواضح في Diviso يُظهر المبالغ المستحقة بدقة.' },
       { question: 'هل يوجد تطبيق لإدارة مصاريف الشقة؟', answer: 'Diviso مصمم لإدارة مصاريف السكن المشترك. يتتبع الإيجار والفواتير والمشتريات ويحسب حصة كل ساكن تلقائياً.' },
-      { question: 'كيف نضمن العدالة في المصاريف المشتركة؟', answer: 'التسجيل الفوري للمصاريف والتقسيم التلقائي يضمن العدالة. كل شخص يشوف ما دفعه وما عليه بوضوح تام.' }
+      { question: 'كيف نضمن العدالة في المصاريف المشتركة؟', answer: 'تسجيل المصاريف أول بأول والتقسيم التلقائي يضمن العدالة. كل شخص يشوف ما دفعه وما عليه بوضوح تام.' }
     ],
     faqsEn: [
       { question: 'Can rent be split in different ratios?', answer: 'Yes, you can set a custom ratio for each member based on room size.' },
@@ -151,7 +151,7 @@ export const useCases: UseCase[] = [
       { question: 'How to calculate electricity and water bills between roommates?', answer: 'Add the electricity or water bill as an expense and choose the split method. You can split equally or by percentage.' },
       { question: 'What if one of the roommates doesn\'t pay?', answer: 'The clear record in Diviso shows amounts owed accurately.' },
       { question: 'Is there an app to manage apartment expenses?', answer: 'Diviso is designed to manage shared housing expenses. It tracks rent, bills, and purchases and calculates each roommate\'s share automatically.' },
-      { question: 'How to ensure fairness in shared expenses?', answer: 'Immediate recording of expenses and automatic splitting ensures fairness. Everyone sees clearly what they paid and what they owe.' }
+      { question: 'How to ensure fairness in shared expenses?', answer: 'Recording expenses as they happen and automatic splitting ensures fairness. Everyone sees clearly what they paid and what they owe.' }
     ],
     keywords: ['مصاريف السكن المشترك', 'تقسيم الإيجار', 'شركاء السكن', 'فواتير الشقة', 'تطبيق مصاريف الشقة', 'حساب فواتير السكن'],
     keywordsEn: ['shared housing expenses', 'split rent', 'roommate expenses', 'apartment bills', 'apartment expense app', 'housing bills calculator']
@@ -181,13 +181,13 @@ export const useCases: UseCase[] = [
       'تسجيل سريع للفاتورة',
       'تقسيم بالتساوي أو بالنسبة',
       'سجل واضح لكل الطلعات',
-      'تسوية عند الوصول لمبلغ معين'
+      'تسجيل الدفع وتأكيد الاستلام'
     ],
     solutionsEn: [
       'Quick bill recording',
       'Split equally or by percentage',
       'Clear record of all outings',
-      'Settle when reaching a certain amount'
+      'Record a payment and confirm receipt'
     ],
     steps: [
       { title: 'أنشئ مجموعة الشلة', description: 'أنشئ مجموعة لأصدقائك المقربين' },
@@ -265,14 +265,14 @@ export const useCases: UseCase[] = [
       { question: 'هل يمكن تحديد حصص مختلفة للمنظمين؟', answer: 'نعم، يمكنك تعيين نسب مخصصة لكل عضو.' },
       { question: 'ما أفضل حل لإدارة مصاريف الأنشطة الجماعية؟', answer: 'استخدم مجموعة مشتركة في Diviso لكل نشاط.' },
       { question: 'كيف نتابع المصاريف في مجموعة كبيرة؟', answer: 'كل مصروف يُسجّل مع الدافع والمشاركين، والتطبيق يتتبع كل شيء تلقائياً.' },
-      { question: 'هل في طريقة سهلة لتقسيم التكاليف؟', answer: 'نعم، أضف المصروف واختر التقسيم بالتساوي أو بنسب مخصصة. التطبيق يحسب حصة كل شخص في ثوانٍ.' },
+      { question: 'هل في طريقة سهلة لتقسيم التكاليف؟', answer: 'نعم، أضف المصروف واختر التقسيم بالتساوي أو بنسب مخصصة. التطبيق يحسب حصة كل شخص.' },
       { question: 'كيف نغلق الحسابات بدون نقاشات؟', answer: 'السجل الكامل للمصاريف يُظهر كل التفاصيل بوضوح، وكل شخص يشوف ما دفعه وما عليه.' }
     ],
     faqsEn: [
       { question: 'Can organizers have different shares?', answer: 'Yes, you can assign custom ratios to each member.' },
       { question: 'What is the best solution for managing group activity expenses?', answer: 'Use a shared group in Diviso for each activity.' },
       { question: 'How to track expenses in a large group?', answer: 'Each expense is recorded with the payer and participants, and the app tracks everything automatically.' },
-      { question: 'Is there an easy way to split costs?', answer: 'Yes, add the expense and choose equal split or custom ratios. The app calculates each person\'s share in seconds.' },
+      { question: 'Is there an easy way to split costs?', answer: 'Yes, add the expense and choose equal split or custom ratios. The app calculates each person\'s share.' },
       { question: 'How to close accounts without arguments?', answer: 'The complete expense record shows all details clearly, and everyone sees what they paid and what they owe.' }
     ],
     keywords: ['تقسيم تكاليف الفعاليات', 'مصاريف الحفلات', 'تنظيم الفعاليات', 'ميزانية الفعالية', 'إدارة مصاريف الأنشطة', 'تقسيم التكاليف'],
@@ -391,12 +391,12 @@ export const useCases: UseCase[] = [
   {
     slug: 'existing-group-debts',
     icon: 'HandCoins',
-    title: 'مجموعة بدأت خارج Diviso — أرصدة سابقة',
-    titleEn: 'Groups Started Outside Diviso — Legacy Balances',
-    question: 'عندكم ديون قديمة بين الأصدقاء؟ كيف تسجلونها في Diviso؟',
-    questionEn: 'Have existing debts between friends? How to record them in Diviso?',
-    intro: 'Diviso يتيح لك تسجيل الأرصدة والديون السابقة التي تراكمت قبل استخدام التطبيق. ابدأ صفحة جديدة مع أصدقائك بسجل واضح ومنظم.',
-    introEn: 'Diviso lets you record pre-existing balances and debts from before using the app. Start fresh with friends with a clear, organized record.',
+    title: 'ديون قديمة بين الأصدقاء — كيف تبدأون صفحة جديدة',
+    titleEn: 'Old Debts Between Friends — Starting Fresh',
+    question: 'عندكم ديون قديمة بين الأصدقاء؟ كيف تسوّونها وتبدأون بحسابات واضحة؟',
+    questionEn: 'Have old debts between friends? How to settle them and start with clear balances?',
+    intro: 'اتفقوا على الديون القديمة بين الأصدقاء وسوّوها قبل ما تبدأون مجموعة جديدة. بعدها Diviso يوضح الأرصدة: كم لك وكم عليك، ومين يحوّل لمين، وكل دفعة تتسجل والمستلم يأكد استلامها.',
+    introEn: 'Agree on old debts between friends and settle them before you start a new group. From then on, Diviso shows clear balances — how much you\'re owed, how much you owe, and who pays whom — and every payment is recorded and confirmed by the receiver.',
     problems: [
       'ديون متراكمة غير موثقة بين الأصدقاء',
       'نسيان المبالغ الحقيقية المستحقة',
@@ -412,41 +412,41 @@ export const useCases: UseCase[] = [
       'Awkwardness when reminding others of old debts'
     ],
     solutions: [
-      'إضافة أرصدة سابقة من تبويب التسويات',
-      'تحديد الدائن والمدين والمبلغ بدقة',
-      'ظهور الأرصدة كبطاقات خاصة في الدردشة',
-      'دمج الأرصدة القديمة مع المصاريف الجديدة تلقائياً'
+      'اتفقوا على الديون القديمة وسوّوها قبل بداية المجموعة',
+      'أرصدة واضحة: كم لك وكم عليك، ومين يحوّل لمين',
+      'تسجيل الدفع وتأكيد الاستلام',
+      'كل مصروف جديد يتسجل مع مين دفع ومين يشارك فيه'
     ],
     solutionsEn: [
-      'Add legacy balances from the Settlements tab',
-      'Specify creditor, debtor, and amount precisely',
-      'Balances appear as special cards in chat',
-      'Old balances merge automatically with new expenses'
+      'Agree on old debts and settle them before starting the group',
+      'Clear balances: how much you\'re owed, how much you owe, and who pays whom',
+      'Record a payment and confirm receipt',
+      'Every new expense recorded with who paid and who shares it'
     ],
     steps: [
-      { title: 'أنشئ المجموعة', description: 'أنشئ مجموعة وأضف جميع الأصدقاء المعنيين' },
-      { title: 'أضف الأرصدة السابقة', description: 'من التسويات، سجل كل دين قديم مع تحديد الدائن والمدين' },
-      { title: 'راجع الأرصدة', description: 'تأكد من صحة المبالغ مع الجميع' },
+      { title: 'أنشئ المجموعة', description: 'أنشئ مجموعة وادعُ الأصدقاء برابط واحد' },
+      { title: 'سوّوا الديون القديمة', description: 'اتفقوا على المبالغ القديمة وسدّدوها قبل ما تبدأون' },
+      { title: 'سجّلوا المصاريف الجديدة', description: 'كل مصروف مع مين دفع ومين يشارك، والأرصدة توضح مين يحوّل لمين' },
       { title: 'ابدأ التسوية', description: 'سجّل الدفعات وأكّد الاستلام' }
     ],
     stepsEn: [
-      { title: 'Create the group', description: 'Create a group and add all relevant friends' },
-      { title: 'Add legacy balances', description: 'From Settlements, record each old debt with creditor and debtor' },
-      { title: 'Review balances', description: 'Verify amounts with everyone' },
+      { title: 'Create the group', description: 'Create a group and invite friends with one link' },
+      { title: 'Settle old debts', description: 'Agree on the old amounts and pay them off before you start' },
+      { title: 'Record new expenses', description: 'Add each expense with who paid and who shares it; balances show who pays whom' },
       { title: 'Start settling', description: 'Record payments and confirm receipt' }
     ],
     faqs: [
-      { question: 'هل الأرصدة السابقة تؤثر على حسابات المجموعة؟', answer: 'نعم، تُضاف مباشرة لأرصدة الأعضاء وتُحسب ضمن التسويات النهائية تماماً كالمصاريف العادية.' },
-      { question: 'هل يمكنني إضافة أكثر من رصيد سابق؟', answer: 'نعم، يمكنك إضافة أي عدد من الأرصدة السابقة بين أعضاء مختلفين.' },
-      { question: 'هل يشوف الأعضاء الأرصدة السابقة؟', answer: 'نعم، تظهر كبطاقة خاصة في الدردشة.' }
+      { question: 'كيف نتعامل مع الديون القديمة قبل ما نبدأ؟', answer: 'اجلسوا واتفقوا على المبالغ، وسوّوها بالطريقة اللي تناسبكم قبل ما تبدأون المجموعة. بعدها كل مصروف جديد يتسجل في Diviso بوضوح.' },
+      { question: 'كيف نعرف مين عليه كم بعد ما نبدأ؟', answer: 'الأرصدة في Diviso توضح كم لك وكم عليك، ومين يحوّل لمين.' },
+      { question: 'كيف نتأكد إن الدفعة وصلت؟', answer: 'سجّل الدفع في Diviso، والمستلم يأكد الاستلام.' }
     ],
     faqsEn: [
-      { question: 'Do legacy balances affect group accounts?', answer: 'Yes, they are added directly to member balances and counted in final settlements just like regular expenses.' },
-      { question: 'Can I add multiple legacy balances?', answer: 'Yes, you can add any number of legacy balances between different members.' },
-      { question: 'Do members see legacy balances?', answer: 'Yes, they appear as a special card in chat.' }
+      { question: 'How should we handle old debts before we start?', answer: 'Sit down, agree on the amounts, and settle them however suits you before starting the group. After that, every new expense is recorded clearly in Diviso.' },
+      { question: 'How do we know who owes how much once we start?', answer: 'Balances in Diviso show how much you\'re owed, how much you owe, and who pays whom.' },
+      { question: 'How do we confirm a payment was received?', answer: 'Record the payment in Diviso, and the receiver confirms receipt.' }
     ],
-    keywords: ['أرصدة سابقة', 'ديون قديمة', 'ديون قبل التطبيق', 'تسجيل ديون الأصدقاء', 'مجموعة قبل diviso', 'إضافة رصيد سابق'],
-    keywordsEn: ['legacy balances', 'old debts', 'pre-existing debts', 'record friend debts', 'group before diviso', 'add previous balance']
+    keywords: ['ديون قديمة', 'تسوية الديون القديمة', 'ديون الأصدقاء', 'تسوية ديون الأصدقاء', 'مين يحوّل لمين', 'تسجيل الدفع'],
+    keywordsEn: ['old debts', 'settle old debts', 'friend debts', 'settle debts between friends', 'who owes whom', 'record payment']
   }
 ];
 

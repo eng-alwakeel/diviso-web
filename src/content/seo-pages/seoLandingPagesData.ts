@@ -1071,11 +1071,10 @@ export const seoLandingPages: SEOLandingPageData[] = [
     heroSubtitle: 'Diviso is an expense-splitting app for groups: add shared expenses, split them between members, and settle up.',
     bodyContent: [
       'Splitwise changed how people split expenses, and many people now look for apps like Splitwise.',
-      'Diviso lets you create a group, add shared expenses, split them between members, and settle up. Each group has its own currency.',
+      'Diviso lets you create a group, add shared expenses, split them between members, and settle up.',
     ],
     features: [
       { icon: '🎨', title: 'Modern Design', description: 'Clean, uncluttered interface built for mobile-first usage.' },
-      { icon: '🌐', title: 'Group Currency', description: 'Set the currency for each group.' },
       { icon: '📱', title: 'Works Everywhere', description: 'Available on the App Store for iPhone and iPad, and on the web.' },
     ],
     useCases: [

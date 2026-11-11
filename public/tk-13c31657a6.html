@@ -89,7 +89,7 @@ td.is-last{background:var(--last-bg)}
 .players .pl{display:flex;gap:6px;align-items:center}
 .players input{flex:1}
 .players button{padding:6px 10px}
-details summary{cursor:pointer;font-size:13px;color:var(--muted)}
+[hidden]{display:none!important}
 </style>
 </head>
 <body>
@@ -103,7 +103,18 @@ details summary{cursor:pointer;font-size:13px;color:var(--muted)}
     <div class="end last"><small>الأخير</small><b id="lastName">—</b><span id="lastPts"></span></div>
   </div>
 
-  <section class="card" aria-labelledby="sheetH">
+  <section class="card" aria-labelledby="plH">
+    <div class="row"><h2 id="plH">اللاعبين</h2><span class="spacer"></span><span class="muted" id="plCount"></span></div>
+    <div id="players" class="players"></div>
+    <div class="row">
+      <input id="newName" type="text" placeholder="اكتب اسم اللاعب" aria-label="اسم لاعب جديد" enterkeyhint="done" autocomplete="off" style="flex:1">
+      <button id="addPlayer" class="primary">+ لاعب</button>
+    </div>
+    <p class="muted" style="margin:0">اكتب الاسم واضغط «+ لاعب». تقدر تعدّل أي اسم بالضغط عليه. الحذف قبل أول جولة بس، واللي ينضاف أثناء اللعب يبدأ من صفر.</p>
+    <p id="needPlayers" class="muted" style="margin:0;color:var(--lose)">أضف لاعبين على الأقل عشان تبدأ.</p>
+  </section>
+
+  <section class="card" id="sheetCard" aria-labelledby="sheetH">
     <div class="row">
       <h2 id="sheetH">الجدول</h2><span class="spacer"></span>
       <label class="inline" for="target">الهدف <input id="target" type="number" min="100" step="50" value="500"></label>
@@ -111,18 +122,9 @@ details summary{cursor:pointer;font-size:13px;color:var(--muted)}
     <div class="sheet-wrap"><table id="sheet"></table></div>
     <p class="muted" style="margin:0">الدبل يضاعف الجولة مهما كان الفائز: دبل واحد ×2، ودبلين ×3. الفائز ياخذ رقمه مضروب، واللي يخسر صفر. والتكلير أقل من 43 ينحسب غلط: اللي قاله ياخذ صفر، والباقين أرقامهم بدون مضاعفة.</p>
     <p class="muted" style="margin:0">كل صف جولة، وكل عمود لاعب. الرقم الغامق مع ×2 أو ×3 يعني دبل. وآخر عمود يبيّن الأول والأخير بعد كل جولة.</p>
-    <details id="plDetails">
-      <summary>اللاعبين (تعديل الأسماء، إضافة، حذف)</summary>
-      <div id="players" class="players" style="margin-top:8px"></div>
-      <p class="muted" style="margin:6px 0 0">الحذف متاح قبل أول جولة بس. اللي ينضاف أثناء اللعب يبدأ من صفر.</p>
-    </details>
-    <div class="row">
-      <input id="newName" type="text" placeholder="اسم لاعب جديد" aria-label="اسم لاعب جديد" style="flex:1">
-      <button id="addPlayer">+ لاعب</button>
-    </div>
   </section>
 
-  <section class="card" aria-labelledby="roundH">
+  <section class="card" id="roundCard" aria-labelledby="roundH">
     <div class="row"><h2 id="roundH">سجّل الجولة <span id="roundNo"></span></h2></div>
     <div class="step"><h3>١. مين قال تكلير؟</h3><div id="declarer"></div></div>
     <div class="step">
@@ -142,10 +144,10 @@ details summary{cursor:pointer;font-size:13px;color:var(--muted)}
 <script>
 (function(){
 const MAXP=12;
-const KEY="diviso_tickler_v1";
-const fresh=()=>({players:[1,2,3,4].map(i=>({id:i,name:"لاعب "+i})),nextId:5,rounds:[],target:500});
-let saved=null;try{saved=JSON.parse(localStorage.getItem(KEY)||"null");}catch(e){saved=null;}
-if(!saved||!Array.isArray(saved.players)||saved.players.length<2||!Array.isArray(saved.rounds))saved=fresh();
+const KEY="diviso_tickler_v2";
+const fresh=()=>({players:[],nextId:1,rounds:[],target:500});
+let saved=null;try{saved=JSON.parse(localStorage.getItem(KEY)||"null");if(!saved){const v1=JSON.parse(localStorage.getItem("diviso_tickler_v1")||"null");if(v1&&Array.isArray(v1.rounds)&&v1.rounds.length)saved=v1;}}catch(e){saved=null;}
+if(!saved||!Array.isArray(saved.players)||!Array.isArray(saved.rounds))saved=fresh();
 let players=saved.players;
 let nextId=saved.nextId||players.reduce((m,p)=>Math.max(m,p.id),0)+1;
 function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
@@ -173,7 +175,7 @@ function roundPoints(r){
   return {pts,res};
 }
 let rounds=saved.rounds;
-let decl={p:players[0].id,v:""},challengers=[],hands={};
+let decl={p:players[0]?.id,v:""},challengers=[],hands={};
 
 function ranking(cum){return [...players].sort((a,b)=>(cum[b.id]||0)-(cum[a.id]||0));}
 
@@ -260,20 +262,26 @@ function renderResolve(){
       :`<div class="bad">${esc(nameOf(a.p))} (${a.v}) ما غلب ${esc(nameOf(b.p))} (${b.v})${a.v===b.v?" · تعادل = خسارة للمتحدّي":""}</div>`;}).join("");
   el.innerHTML=`${lines}<div>الصف اللي بينضاف: ${players.map(p=>`${esc(p.name)} <b>${pts[p.id]}</b>`).join(" · ")}</div>`;
 }
-function resetRound(){decl={p:players[0].id,v:""};challengers=[];hands={};renderDeclarer();renderChain();renderOthers();renderResolve();}
+function resetRound(){decl={p:players[0]?.id,v:""};challengers=[];hands={};renderDeclarer();renderChain();renderOthers();renderResolve();}
 function renderAll(){renderSheet();renderDeclarer();renderChain();renderOthers();renderResolve();}
 
 $("#saveRound").onclick=()=>{const c=current();if(c.err)return;rounds.push(c.round);resetRound();renderSheet();};
 $("#undo").onclick=()=>{rounds.pop();renderSheet();};
 $("#target").oninput=renderSheet;
 $("#addChallenger").onclick=()=>{const ids=chainIds();const free=players.find(p=>!ids.has(p.id));if(!free)return;challengers.push({p:free.id,v:""});renderChain();renderOthers();renderResolve();};
-$("#addPlayer").onclick=()=>{const n=$("#newName").value.trim();if(!n||players.length>=MAXP)return;players.push({id:nextId++,name:n});$("#newName").value="";renderAll();};
+function addPlayer(){const inp=$("#newName"),n=inp.value.trim();if(!n||players.length>=MAXP)return;players.push({id:nextId++,name:n});inp.value="";if(decl.p==null||!players.some(p=>p.id===decl.p))decl.p=players[0].id;renderAll();inp.focus();}
+$("#addPlayer").onclick=addPlayer;
+$("#newName").onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();addPlayer();}};
 function renderPlayers(){
-  $("#players").innerHTML=players.map(p=>`<div class="pl"><input type="text" id="pn_${p.id}" value="${esc(p.name)}" aria-label="اسم اللاعب"><button id="pr_${p.id}" ${rounds.length||players.length<=2?"disabled":""} aria-label="حذف ${esc(p.name)}">✕</button></div>`).join("");
+  $("#players").innerHTML=players.map(p=>`<div class="pl"><input type="text" id="pn_${p.id}" value="${esc(p.name)}" aria-label="اسم اللاعب" autocomplete="off"><button id="pr_${p.id}" ${rounds.length?"disabled":""} aria-label="حذف ${esc(p.name)}">✕</button></div>`).join("");
   players.forEach(p=>{
-    $("#pn_"+p.id).onchange=e=>{const n=e.target.value.trim();if(n){p.name=n;}renderSheet();renderDeclarer();renderChain();renderOthers();renderResolve();renderPlayers();};
-    $("#pr_"+p.id).onclick=()=>{if(rounds.length||players.length<=2)return;players=players.filter(x=>x.id!==p.id);resetRound();renderAll();};
+    $("#pn_"+p.id).oninput=e=>{const n=e.target.value.trim();if(n){p.name=n;renderSheet();renderDeclarer();renderChain();renderOthers();renderResolve();}};
+    $("#pn_"+p.id).onchange=e=>{if(!e.target.value.trim())e.target.value=p.name;};
+    $("#pr_"+p.id).onclick=()=>{if(rounds.length)return;players=players.filter(x=>x.id!==p.id);resetRound();renderAll();};
   });
+  const ok=players.length>=2;
+  $("#needPlayers").hidden=ok;$("#sheetCard").hidden=!ok;$("#roundCard").hidden=!ok;
+  $("#plCount").textContent=players.length?`${players.length} من ${MAXP}`:"";
 }
 const _renderAll=renderAll;renderAll=function(){_renderAll();renderPlayers();};
 $("#target").value=saved.target||500;

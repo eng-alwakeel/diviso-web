@@ -16,6 +16,154 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "bill-split-calculation-worked-examples",
+    title: "كيف تحسب تقسيم الفاتورة يدوياً؟ 3 طرق بمعادلات وأمثلة رقمية",
+    titleEn: "How to Calculate a Bill Split Manually: 3 Methods With Formulas and Worked Examples",
+    description: "تقسيم الفاتورة يدوياً يعتمد على 3 معادلات أساسية: التقسيم بالتساوي، التقسيم حسب نصيب كل شخص من الطلبات، والتقسيم مع إضافة الضريبة ورسوم الخدمة بالتناسب لا بالتساوي. دليل عملي بثلاث أمثلة رقمية خطوة بخطوة.",
+    descriptionEn: "Manually splitting a bill comes down to 3 core formulas: an equal split, a per-order proportional split, and a split that adds VAT and a service charge proportionally rather than equally. A practical guide with three step-by-step worked examples.",
+    keywords: ["كيف تحسب تقسيم الفاتورة", "معادلة تقسيم الفاتورة", "تقسيم الفاتورة مع الضريبة والخدمة", "طريقة حساب تقسيم الحساب بين الأصدقاء", "تقسيم الفاتورة يدوياً", "حساب نصيب كل شخص من الفاتورة"],
+    keywordsEn: ["how to calculate bill split", "bill splitting formula", "split bill with tax and service charge", "how to calculate each person's share of a bill", "manual bill split calculation", "proportional bill splitting method"],
+    category: "guides",
+    readTime: 9,
+    publishDate: "2026-11-12",
+    content: `
+## الإجابة المختصرة
+
+حساب تقسيم الفاتورة يدوياً يعتمد على **3 معادلات أساسية** فقط: التقسيم بالتساوي (الإجمالي ÷ عدد الأشخاص)، التقسيم حسب نصيب كل شخص من الطلبات الفعلية (حصة كل بند كنسبة من الإجمالي)، والتقسيم مع إضافة الضريبة ورسوم الخدمة — والخطأ الأكثر شيوعاً هنا هو توزيعها بالتساوي بدلاً من توزيعها **بالتناسب** مع نصيب كل شخص من الطلبات الأصلية. فيما يلي الثلاث معادلات بأمثلة رقمية كاملة.
+
+## الطريقة الأولى: التقسيم بالتساوي
+
+**المعادلة:** نصيب الفرد = إجمالي الفاتورة ÷ عدد الأشخاص.
+
+هذه أبسط طريقة، وتُستخدم عادة عندما تكون الطلبات متقاربة في القيمة أو عندما لا يريد أحد حساب كل بند بدقة.
+
+### مثال رقمي
+مجموعة من 4 أشخاص تطلب فاتورة إجمالها يمثّل **100% من قيمة المصروف**. بالتقسيم بالتساوي، يدفع كل شخص **25% من الإجمالي**، بغض النظر عن قيمة ما طلبه كل فرد.
+
+## الطريقة الثانية: التقسيم حسب نصيب كل شخص من الطلبات (بالبند)
+
+**المعادلة:** نصيب الشخص = (قيمة بنوده الخاصة ÷ إجمالي الفاتورة) × 100.
+
+هذه الطريقة أعدل عندما تختلف الطلبات بوضوح بين الأعضاء، لكنها تتطلب معرفة قيمة كل بند على حدة قبل التقسيم.
+
+### مثال رقمي
+نفس المجموعة من 4 أشخاص، لكن طلباتهم تختلف: الشخص الأول بنسبة **40% من إجمالي الطلبات**، الثاني **30%**، الثالث **20%**، والرابع **10%**. هنا يدفع كل شخص النسبة المطابقة لقيمة طلبه فقط، لا حصة متساوية تتجاهل الفرق الفعلي بين الطلبات.
+
+## الطريقة الثالثة: التقسيم مع الضريبة ورسوم الخدمة
+
+**المعادلة:** يُحسب إجمالي الضريبة ورسوم الخدمة كنسبة من إجمالي الطلبات، ثم يُوزَّع هذا المبلغ الإضافي على كل شخص **بنفس نسبة طلبه الأصلية**، لا بالتساوي بين الجميع.
+
+### لماذا لا تُقسَّم الضريبة والخدمة بالتساوي؟
+لأنها مرتبطة أصلاً بقيمة الطلبات: من طلب أكثر، تكون ضريبته ورسوم خدمته أعلى أيضاً. تقسيمها بالتساوي يعني أن من طلب أقل يدفع جزءاً من ضريبة وخدمة طلبات غيره.
+
+### مثال رقمي خطوة بخطوة
+بالاستمرار على المثال السابق (النسب 40%، 30%، 20%، 10% من إجمالي الطلبات):
+
+- **الخطوة 1**: ضريبة القيمة المضافة في السعودية نسبة ثابتة قدرها 15% تُضاف على إجمالي الطلبات.
+- **الخطوة 2**: افترضوا رسم خدمة اختياري بنسبة 10% من إجمالي الطلبات (يختلف هذا الرقم من مطعم لآخر، فتحققوا من رقمه الفعلي في كل فاتورة).
+- **الخطوة 3**: إجمالي الإضافات (ضريبة + خدمة) يساوي 25% من إجمالي الطلبات في هذا المثال.
+- **الخطوة 4**: يُوزَّع هذا المبلغ الإضافي بنفس نسب الطلبات الأصلية: الشخص الأول يتحمل 40% من الإضافات، الثاني 30%، الثالث 20%، والرابع 10% — تماماً كنسبة طلب كل واحد منهم.
+
+## أخطاء شائعة عند حساب تقسيم الفاتورة يدوياً
+
+- **توزيع الضريبة ورسوم الخدمة بالتساوي** بدلاً من توزيعها بنفس نسبة الطلبات الفعلية
+- **تجاهل رسم الخدمة الاختياري** عند الحساب، وهو ما يسبب اختلاف المبلغ النهائي عن المتوقع
+- **الاعتماد على تقدير تقريبي للنسب** بدلاً من حساب قيمة كل بند بدقة قبل القسمة
+- **عدم الاتفاق على طريقة التقسيم (بالتساوي أم بالبند) قبل تقديم الطلبات**
+
+## كيف يسهّل Diviso هذا الحساب؟
+
+- ✅ تسجيل كل بند بنصيبه الفعلي بدلاً من الحساب اليدوي
+- ✅ عرض نصيب كل شخص بوضوح بعد حساب الإضافات
+- ✅ واجهة عربية أصلية وريال سعودي
+
+## أسئلة شائعة
+
+### هل تُحسب الضريبة ورسوم الخدمة على نصيب كل شخص أم على الإجمالي أولاً؟
+تُحسب كنسبة من إجمالي الطلبات أولاً، ثم يُوزَّع مبلغها الإضافي على كل شخص بنفس نسبة طلبه الأصلية، لا بالتساوي.
+
+### ما الفرق بين التقسيم بالتساوي والتقسيم بالبند؟
+التقسيم بالتساوي يقسّم الإجمالي على عدد الأشخاص بغض النظر عن طلب كل واحد، بينما التقسيم بالبند يحسب نصيب كل شخص حسب قيمة طلباته الفعلية فقط.
+
+### هل رسم الخدمة ثابت في كل المطاعم؟
+لا، يختلف رسم الخدمة الاختياري من مطعم لآخر، فتحققوا من النسبة الفعلية المكتوبة في كل فاتورة قبل الحساب.
+
+## الخلاصة
+
+تقسيم الفاتورة يدوياً يعتمد على 3 معادلات واضحة: التساوي، التقسيم بالبند، وتوزيع الضريبة والخدمة بالتناسب مع الطلبات. معرفة أي معادلة تناسب مجموعتكم توفر عليكم حسابات متكررة ونقاشاً عند كل فاتورة.
+
+**سوّ مجموعتك في Diviso الآن وأضف أول مصروف.**
+    `,
+    contentEn: `
+## The Short Answer
+
+Manually calculating a bill split comes down to **3 core formulas**: an equal split (total ÷ number of people), a per-order proportional split (each person's share of the actual items as a percentage of the total), and a split that adds VAT and a service charge — and the most common mistake here is splitting those two equally instead of **proportionally** to each person's original order. Below are all three formulas with full numeric worked examples.
+
+## Method 1: The Equal Split
+
+**Formula:** Each person's share = total bill ÷ number of people.
+
+This is the simplest method, typically used when orders are similar in value or when nobody wants to calculate each item precisely.
+
+### Worked Example
+A group of 4 people orders a bill whose total represents **100% of the expense**. Splitting it equally, each person pays **25% of the total**, regardless of what each individual actually ordered.
+
+## Method 2: The Per-Order Proportional Split
+
+**Formula:** A person's share = (value of their own items ÷ total bill) × 100.
+
+This method is fairer when orders clearly differ between members, but it requires knowing the value of each item before splitting.
+
+### Worked Example
+The same group of 4 people, but their orders differ: the first person's order is **40% of the total order value**, the second's is **30%**, the third's is **20%**, and the fourth's is **10%**. Here, each person pays exactly the percentage matching their own order, not an equal share that ignores the actual difference between orders.
+
+## Method 3: Splitting With VAT and a Service Charge
+
+**Formula:** Total VAT and service charge is calculated as a percentage of the order subtotal, then that added amount is distributed to each person **in the same ratio as their original order** — not equally across everyone.
+
+### Why Shouldn't Tax and Service Be Split Equally?
+Because they're inherently tied to the value of what was ordered: whoever ordered more also generates more tax and service charge. Splitting them equally means whoever ordered less ends up covering part of someone else's tax and service.
+
+### Step-by-Step Worked Example
+Continuing the previous example (ratios of 40%, 30%, 20%, 10% of the order subtotal):
+
+- **Step 1**: Saudi Arabia's VAT is a fixed rate of 15%, added on top of the order subtotal.
+- **Step 2**: Assume an optional service charge of 10% of the order subtotal (this figure varies by restaurant, so check the actual rate on each bill).
+- **Step 3**: Total additions (VAT + service) equal 25% of the order subtotal in this example.
+- **Step 4**: That added amount is distributed using the same original order ratios: the first person covers 40% of the additions, the second 30%, the third 20%, and the fourth 10% — exactly matching each person's order share.
+
+## Common Mistakes When Calculating a Bill Split Manually
+
+- **Splitting VAT and the service charge equally** instead of in the same ratio as actual orders
+- **Ignoring the optional service charge** in the calculation, which makes the final amount differ from what was expected
+- **Relying on a rough percentage estimate** instead of calculating each item's exact value before dividing
+- **Not agreeing on the splitting method (equal vs. per-order) before placing orders**
+
+## How Diviso Makes This Calculation Easier
+
+- ✅ Logs each item with its actual share instead of manual calculation
+- ✅ Clearly shows each person's share after additions are calculated
+- ✅ A native Arabic interface and Saudi Riyal
+
+## Frequently Asked Questions
+
+### Is VAT and the service charge calculated on each person's share, or on the total first?
+It's calculated as a percentage of the order subtotal first, then that added amount is distributed to each person in the same ratio as their original order, not equally.
+
+### What's the difference between an equal split and a per-order split?
+An equal split divides the total by the number of people regardless of what each person ordered, while a per-order split calculates each person's share based solely on the actual value of what they ordered.
+
+### Is the service charge the same at every restaurant?
+No, the optional service charge varies by restaurant, so check the actual rate printed on each bill before calculating.
+
+## Conclusion
+
+Manually splitting a bill comes down to 3 clear formulas: equal, per-order, and distributing tax and service proportionally to orders. Knowing which formula fits your group saves you repeated calculations and arguments over every bill.
+
+**Create your group in Diviso now and add your first expense.**
+    `
+  },
+  {
     slug: "tricount-alternative-arabic",
     title: "تبحث عن بديل لـ Tricount يدعم العربية والريال؟ إليك ما يجب التحقق منه",
     titleEn: "Looking for a Tricount Alternative That Supports Arabic and the Riyal? Here's What to Check",

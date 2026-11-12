@@ -16,8 +16,6 @@ Ordered. Status: todo / published. Slugs are suggestions (kebab-case, English).
 | 13 | restaurant-service-charge-split-uk | (EN-led) Service charge and tips: splitting fairly in UK restaurants | tips | todo |
 | 14 | split-shared-kitchen-groceries-staples | المؤونة المشتركة (رز، زيت، قهوة) في السكن: صندوق شهري أم بالتناوب | tips | todo |
 | 15 | track-money-lent-to-family | تسجيل السلف بين الأهل بدون إحراج | tips | todo |
-| 18 | bill-split-calculation-worked-examples | كيف تحسب تقسيم الفاتورة يدوياً: ثلاثة أمثلة بجدول (بالتساوي، حسب الطلب، مع الضريبة والخدمة) | guides | todo |
-
 ## Published
 | Slug | Angle (AR/EN) | Category | Published |
 |---|---|---|---|
@@ -26,5 +24,6 @@ Ordered. Status: todo / published. Slugs are suggestions (kebab-case, English).
 | bill-splitting-apps-arabic-compared | مقارنة محايدة لتطبيقات تقسيم الفاتورة التي تدعم العربية والريال (لاستعلام «تطبيق تقسيم الفاتورة») | comparisons | 2026-11-01 |
 | splitwise-vs-tricount-vs-diviso | مقارنة محايدة: Splitwise vs Tricount vs Diviso (نوع المجموعة، التسوية، العملات، العربية) | comparisons | 2026-11-05 |
 | tricount-alternative-arabic | بديل Tricount يدعم العربية والريال | comparisons | 2026-11-08 |
+| bill-split-calculation-worked-examples | كيف تحسب تقسيم الفاتورة يدوياً: 3 معادلات بأمثلة رقمية (بالتساوي، بالبند، مع الضريبة والخدمة) | guides | 2026-11-12 |
 
 (full history: see docs/seo-agent/log.md)

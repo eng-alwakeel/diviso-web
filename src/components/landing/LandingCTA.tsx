@@ -33,7 +33,7 @@ const LandingCTA: React.FC<LandingCTAProps> = ({ ctaText, subtext, isRTL }) => {
 
         {/* Motivational Text */}
         <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-          {isRTL ? 'جرب Diviso مجاناً الآن' : 'Try Diviso Free Now'}
+          {isRTL ? 'جرّب Diviso الآن' : 'Try Diviso Now'}
         </h2>
 
         {/* CTA Button */}

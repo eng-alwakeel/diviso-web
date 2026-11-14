@@ -246,7 +246,7 @@ const Pricing = () => {
                         : { backgroundColor: `${LIME}1a`, color: LIME, border: `1px solid ${LIME}55` }
                     }
                   >
-                    <a href={appStoreUrl("web_pricing")} {...EXTERNAL_LINK_PROPS} onClick={() => trackAppStoreClick("web_pricing")}>ابدأ مجاناً</a>
+                    <a href={appStoreUrl("web_pricing")} {...EXTERNAL_LINK_PROPS} onClick={() => trackAppStoreClick("web_pricing")}>ابدأ الآن</a>
                   </Button>
                 </div>
               );
@@ -386,7 +386,7 @@ const Pricing = () => {
           <h3 className="text-xl font-bold mb-2">حمّل التطبيق وابدأ الآن</h3>
           <p className="text-muted-foreground text-sm mb-6">
             {ANDROID_AVAILABLE
-              ? "متاح على iPhone و Android — مجاناً."
+              ? "متاح على iPhone وiPad."
               : "متاح على iPhone — نسخة أندرويد قريباً."}
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">

@@ -25,7 +25,7 @@ const HowItWorks = () => {
       number: 1,
       icon: UserPlus,
       title: 'إنشاء حساب',
-      description: 'سجّل حسابك مجاناً خلال ثوانٍ باستخدام بريدك الإلكتروني أو رقم هاتفك.',
+      description: 'سجّل حسابك خلال ثوانٍ باستخدام بريدك الإلكتروني أو رقم هاتفك.',
       color: 'from-primary/20 to-primary/5',
       iconBg: 'bg-primary/20 text-primary'
     },
@@ -66,7 +66,7 @@ const HowItWorks = () => {
       number: 1,
       icon: UserPlus,
       title: 'Create Account',
-      description: 'Sign up for free in seconds using your email or phone number.',
+      description: 'Sign up in seconds using your email or phone number.',
       color: 'from-primary/20 to-primary/5',
       iconBg: 'bg-primary/20 text-primary'
     },
@@ -244,7 +244,7 @@ const HowItWorks = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
                   <Link to="/download" className="gap-2">
-                    {isRTL ? 'ابدأ مجاناً' : 'Start Free'}
+                    {isRTL ? 'ابدأ الآن' : 'Start Now'}
                     <ArrowIcon className="w-4 h-4" />
                   </Link>
                 </Button>

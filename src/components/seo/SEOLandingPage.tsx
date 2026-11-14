@@ -70,7 +70,7 @@ const SEOLandingPage: React.FC<Props> = ({ data }) => {
               </Link>
             )}
             <Button onClick={handleCTA} size="sm" className="bg-primary hover:bg-primary/90">
-              {isArabic ? 'ابدأ مجاناً' : 'Get Started Free'}
+              {isArabic ? 'ابدأ الآن' : 'Get Started'}
             </Button>
           </div>
         </div>

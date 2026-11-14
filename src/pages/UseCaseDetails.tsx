@@ -282,7 +282,7 @@ const UseCaseDetails = () => {
         <section className="py-12">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-2xl font-bold text-foreground mb-4">
-              {isRTL ? 'جرب Diviso الآن مجانًا' : 'Try Diviso Now for Free'}
+              {isRTL ? 'جرّب Diviso الآن' : 'Try Diviso Now'}
             </h2>
             <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
               {isRTL 
@@ -293,7 +293,7 @@ const UseCaseDetails = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="rounded-full px-8">
                 <Link to="/download">
-                  {isRTL ? 'ابدأ مجانًا' : 'Start for Free'}
+                  {isRTL ? 'ابدأ الآن' : 'Start Now'}
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="rounded-full px-8">

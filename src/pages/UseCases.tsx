@@ -93,7 +93,7 @@ const UseCases = () => {
         <section className="py-16 bg-muted/50">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-2xl font-bold text-foreground mb-4">
-              {isRTL ? 'جرب Diviso مجانًا الآن' : 'Try Diviso for Free Now'}
+              {isRTL ? 'جرّب Diviso الآن' : 'Try Diviso Now'}
             </h2>
             <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
               {isRTL 

@@ -241,7 +241,7 @@ const LaunchPage: React.FC = () => {
             className="w-full h-14 text-lg font-bold gap-2 rounded-xl shadow-lg hover:shadow-xl transition-all"
           >
             <Sparkles className="h-5 w-5" />
-            سجّل الآن مجانًا
+            سجّل الآن
           </Button>
           {!isClosed && (
             <p className="text-xs text-center text-muted-foreground">

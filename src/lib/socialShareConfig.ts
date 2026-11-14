@@ -144,7 +144,7 @@ export const getDefaultMessage = (referralCode: string, platform?: SocialPlatfor
     whatsapp: `🎉 انضم إلى Diviso معي!\n\nقسّم بذكاء، سافر براحة 🚀\n\n✨ استخدم كود الإحالة: ${referralCode}\n📱 واحصل على 7 أيام مجانية!`,
     telegram: `🎉 انضم إلى Diviso معي!\n\nقسّم بذكاء، سافر براحة 🚀\n\nاستخدم كود: ${referralCode} واحصل على 7 أيام مجانية!`,
     twitter: `🚀 جرّب Diviso - قسّم مصاريفك بذكاء!\n\nكود الإحالة: ${referralCode}\n✨ 7 أيام مجانية`,
-    facebook: `انضم إلى Diviso - التطبيق الأذكى لتقسيم المصاريف! استخدم كود الإحالة: ${referralCode}`,
+    facebook: `انضم إلى Diviso - تطبيق تقسيم المصاريف للأصدقاء والعائلة! استخدم كود الإحالة: ${referralCode}`,
     snapchat: `جرّب Diviso! استخدم كود: ${referralCode} 🎉`,
     instagram: `🎉 انضم إلى Diviso\n\nقسّم بذكاء، سافر براحة\nكود: ${referralCode}\n✨ 7 أيام مجانية!`,
   };

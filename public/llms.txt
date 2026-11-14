@@ -1,19 +1,21 @@
 # Diviso
 
-> Diviso is a smart bill-splitting and shared-expense app for friends, family, roommates, and travel groups. Bilingual (Arabic + English), free Splitwise alternative with AI-assisted tracking, multi-currency support, and PWA offline mode.
+> Diviso is a bill-splitting and shared-expense app for friends, family, roommates, and travel groups. Fully bilingual (Arabic + English), with amounts in Saudi riyals (SAR).
 
-Diviso helps groups log expenses, see who owes whom, and settle up without awkwardness — over the web, as a PWA, or via WhatsApp share links. Built by Takamul Al-Bina Est. in Saudi Arabia.
+Diviso helps groups log expenses, see who owes whom and who pays whom, record payments, and confirm receipt. Create a group and invite everyone with one invite link. Split equally or by agreed shares, choose who takes part in each expense, and let the group admin approve expenses. Groups also get a trip budget and an in-group chat. Diviso does not move money and never asks for bank details.
+
+Diviso is on the App Store for iPhone and iPad. Download it and start your group right away, with optional in-app plans for extra features. Built by Takamul Al-Bina Est. in Saudi Arabia.
 
 ## Pages
 
 - [Home](/): Overview of Diviso and what it does.
 - [How it works](/how-it-works): 3-step explainer for splitting expenses with a group.
-- [Pricing](/pricing): Free plan plus premium subscription tiers.
+- [Pricing](/pricing): Optional in-app plans for extra features.
 - [FAQ](/faq): Common questions about features, pricing, and privacy.
 - [Use cases](/use-cases): Travel, roommates, family, coworkers, dining out.
 - [Blog](/blog): Guides and tips on group expenses and travel budgeting.
 - [Changelog](/changelog): Latest product updates.
-- [Install Diviso](/install): How to install the PWA on iOS and Android.
+- [Install Diviso](/install): How to get Diviso.
 - [Privacy policy](/privacy-policy): How user data is handled.
 - [Terms](/terms): Terms of service.
 - [Refund policy](/refund-policy): Subscription refund rules.

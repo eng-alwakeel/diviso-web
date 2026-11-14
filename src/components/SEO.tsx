@@ -27,7 +27,7 @@ interface SEOProps {
 }
 
 const defaultSEO = {
-  title: 'Diviso | Split Expenses Smartly — Best Bill Splitting App',
+  title: 'Diviso — Split Expenses with Friends and Family',
   description: 'Split expenses with friends & family. Track group bills, travel & restaurant costs effortlessly. Free Splitwise alternative with AI.',
   ogImage: 'https://www.diviso.app/og-image.png',
   siteUrl: 'https://www.diviso.app',

@@ -37,7 +37,7 @@
     "steps": {
       "register": {
         "title": "Create Account",
-        "description": "Sign up for free in less than a minute"
+        "description": "Create your account in less than a minute"
       },
       "number": {
         "title": "Get Your Number",
@@ -79,7 +79,7 @@
     }
   },
   "cta": {
-    "title": "Join Now for Free",
+    "title": "Join Now",
     "subtitle": "Don't miss your chance to get exclusive lifetime benefits",
     "button": "Sign Up Now 🚀",
     "spotsLeft": "Only {{count}} spots left!",

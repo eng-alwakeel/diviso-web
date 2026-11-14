@@ -278,7 +278,7 @@ export const seoLandingPages: SEOLandingPageData[] = [
     faqs: [
       { question: 'What apps are like Splitwise?', answer: 'Diviso is one Splitwise alternative: groups can add shared expenses, split them between members, and settle up.' },
       { question: 'Can I import data from Splitwise?', answer: 'There is no direct import from Splitwise.' },
-      { question: 'Is Diviso available on iOS and Android?', answer: 'Diviso is available on the App Store for iPhone and iPad, and on the web.' },
+      { question: 'Is Diviso available on iPhone?', answer: 'Diviso is available on the App Store for iPhone and iPad.' },
       { question: 'Does Diviso move money?', answer: 'No. Diviso does not transfer money or ask for bank details. It records who paid and who owes whom.' },
     ],
     ctaText: 'Download on the App Store',

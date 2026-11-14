@@ -2,9 +2,10 @@ import { useTranslation, Trans } from "react-i18next";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Share, Plus, MoreVertical, Download } from "lucide-react";
 import { useMemo } from "react";
+import { ANDROID_AVAILABLE } from "@/lib/appStoreLinks";
 
 function getDefaultTab(): "ios" | "android" {
-  if (typeof navigator === "undefined") return "ios";
+  if (!ANDROID_AVAILABLE || typeof navigator === "undefined") return "ios";
   return /iPad|iPhone|iPod/.test(navigator.userAgent) ? "ios" : "android";
 }
 
@@ -19,14 +20,17 @@ export function InstallSteps() {
       </h2>
 
       <Tabs defaultValue={defaultTab} className="w-full">
-        <TabsList className="w-full justify-center mb-4">
-          <TabsTrigger value="ios" className="flex-1">
-            🍎 {t("steps.iosTab")}
-          </TabsTrigger>
-          <TabsTrigger value="android" className="flex-1">
-            🤖 {t("steps.androidTab")}
-          </TabsTrigger>
-        </TabsList>
+        {/* Android tab stays hidden until Google Play is live (ANDROID_AVAILABLE). */}
+        {ANDROID_AVAILABLE && (
+          <TabsList className="w-full justify-center mb-4">
+            <TabsTrigger value="ios" className="flex-1">
+              🍎 {t("steps.iosTab")}
+            </TabsTrigger>
+            <TabsTrigger value="android" className="flex-1">
+              🤖 {t("steps.androidTab")}
+            </TabsTrigger>
+          </TabsList>
+        )}
 
         <TabsContent value="ios">
           <div className="unified-card p-5 space-y-5">
@@ -77,6 +81,7 @@ export function InstallSteps() {
           </div>
         </TabsContent>
 
+        {ANDROID_AVAILABLE && (
         <TabsContent value="android">
           <div className="unified-card p-5 space-y-5">
             <p className="text-sm font-semibold text-foreground mb-2">{t("steps.androidTitle")}</p>
@@ -117,6 +122,7 @@ export function InstallSteps() {
             </div>
           </div>
         </TabsContent>
+        )}
       </Tabs>
     </section>
   );

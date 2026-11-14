@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Diviso</title>
+<style>
+:root{--bg:#F3F5EC;--card:#fff;--ink:#1B2113;--muted:#5E6852;--lime:#C8F169;--lime-ink:#2F4A06}
+@media (prefers-color-scheme:dark){:root{--bg:#12160D;--card:#1C2215;--ink:#EEF3E2;--muted:#A3AE92}}
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;padding:16px;box-sizing:border-box}
+.card{max-width:420px;width:100%;background:var(--card);border-radius:18px;padding:32px 24px;text-align:center;line-height:1.8}
+h1{font-size:21px;margin:0 0 10px}
+p{margin:0;color:var(--muted);font-size:16px}
+a{display:inline-block;margin-top:22px;background:var(--lime);color:var(--lime-ink);padding:10px 18px;border-radius:12px;text-decoration:none;font-weight:600}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1 id="t">تم إلغاء اشتراكك</h1>
+  <p id="m">ما راح توصلك رسائل منا بالإيميل.</p>
+  <a href="https://www.diviso.app/">diviso.app</a>
+</div>
+<script>
+(function(){
+  var s=new URLSearchParams(location.search).get("s");
+  var M={
+    invalid:["الرابط غير صالح","الرابط هذا ناقص أو منتهي. لو تبي توقف رسائلنا، رد على الإيميل وبنوقفها."],
+    error:["صار خطأ","ما قدرنا نسجّل طلبك الحين. جرّب بعد شوي، أو رد على الإيميل وبنوقفها."]
+  };
+  if(M[s]){document.getElementById("t").textContent=M[s][0];document.getElementById("m").textContent=M[s][1];}
+})();
+</script>
+</body>
+</html>

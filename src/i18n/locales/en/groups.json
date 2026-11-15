@@ -372,7 +372,7 @@
     "registered_desc": "They receive an instant in-app notification",
     "new_friends": "New Friends",
     "new_friends_desc": "You can send an invite via SMS or WhatsApp from your phone",
-    "free_message": "Invites are sent from your personal number - more reliable and free!",
+    "free_message": "Invites are sent from your personal number - more reliable!",
     "web_notice": "Real contacts only appear in the mobile app. Use mock numbers for testing.",
     "notification_sent": "Invite sent!",
     "notification_sent_to": "Internal notification sent to {{name}}",

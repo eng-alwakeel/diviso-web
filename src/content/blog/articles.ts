@@ -16,6 +16,164 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "ask-friend-to-pay-back-money-politely",
+    title: "كيف تطالب صديقك بفلوسك بدون إحراج؟ 5 عبارات جاهزة وتوقيت مناسب",
+    titleEn: "How to Ask a Friend to Pay You Back Without Awkwardness: 5 Ready Scripts and the Right Timing",
+    description: "أفضل طريقة لطلب فلوسك من صديقك تجمع بين توقيت مناسب (قريب من وقت المصروف، أو قبل مناسبة جديدة) وعبارة محددة تذكر المبلغ والسياق بدلاً من تذكير عام. دليل بـ5 عبارات جاهزة حسب الموقف.",
+    descriptionEn: "The best way to ask a friend to pay you back combines the right timing (close to when the expense happened, or before a new occasion) with a specific script naming the amount and context, instead of a vague reminder. A guide with 5 ready scripts for different situations.",
+    keywords: ["كيف تطالب صديقك بفلوسك", "تذكير صديق بالدين بدون إحراج", "عبارات لتذكير صديقك بالفلوس", "متى تطلب فلوسك من صديقك", "كيف اطلب حقي من صاحبي بأدب", "تسجيل الدين مع الأصدقاء"],
+    keywordsEn: ["how to ask a friend to pay you back", "polite way to remind a friend about money owed", "scripts to ask a friend for money back", "when to ask a friend to pay back a loan", "reminder message for money a friend owes you", "how to avoid awkwardness asking for money back"],
+    category: "tips",
+    readTime: 8,
+    publishDate: "2026-11-15",
+    content: `
+## الإجابة المختصرة
+
+أفضل طريقة لطلب فلوسك من صديقك بدون إحراج تجمع بين **توقيتين محددين** (قريب من وقت المصروف نفسه، أو قبل مناسبة جديدة تحتاج دفعة إضافية) و**عبارة واضحة تذكر المبلغ والسياق بالتحديد**، بدلاً من تذكير عام يترك الباب مفتوحاً للتأجيل. الإحراج يحصل عادة بسبب غياب هذين العنصرين معاً، لا بسبب طلب الفلوس نفسه.
+
+## لماذا يصعب طلب الفلوس من الأصدقاء؟
+
+- **عدم وجود مبلغ محدد مسجل**: لو المبلغ غير واضح من البداية، يصعب طلبه بثقة لاحقاً
+- **الخوف من إفساد العلاقة**: كثيرون يفضّلون السكوت على خسارة مبلغ بدلاً من المخاطرة بصداقة
+- **الانتظار فترة طويلة قبل الطلب**: كل أسبوع يمر يجعل التذكير يبدو أصعب وأكثر إحراجاً
+
+## التوقيت المناسب: متى تطلب فلوسك؟
+
+### خلال 24 إلى 48 ساعة من المصروف نفسه
+التذكير القريب من وقت المصروف يبدو جزءاً طبيعياً من تسوية الحساب، لا "طلباً" منفصلاً يحتاج مناسبة خاصة.
+
+### قبل مناسبة جديدة تحتاج دفعة إضافية
+لو هناك طلعة أو مناسبة قادمة، التذكير بالمبلغ القديم في سياق التحضير للجديد يبدو عملياً، لا شخصياً.
+
+### تذكير لطيف دوري لمبلغ متراكم من عدة مرات
+لو تراكمت عدة مبالغ صغيرة على مدى فترة، حدد موعداً شهرياً ثابتاً (مثل أول كل شهر) لتسوية الكل دفعة واحدة، بدلاً من تذكير متكرر بعد كل مصروف منفرد.
+
+## 5 عبارات جاهزة حسب الموقف
+
+### 1. تذكير سريع بعد المصروف مباشرة
+"يعطيك العافية على اللي دفعته اليوم، بالنسبة لنصيبي من [البند]، أرسل لك المبلغ الآن."
+
+### 2. تذكير بعد مرور وقت
+"تذكرت إني ما سويت تحويل نصيبي من [المناسبة] اللي راحت، خله ببالي أسويه اليوم."
+
+### 3. تذكير قبل مناسبة جديدة
+"قبل ما نرتب لـ[المناسبة الجديدة]، خلني أسوّي حساب [المصروف القديم] الأول عشان نبدأ بصفحة واضحة."
+
+### 4. تذكير لمبلغ متراكم من عدة مرات
+"جمعت حساب كل المرات اللي سويناها الفترة اللي راحت، خلنا نسوي تحويل واحد يسهّل علينا الاثنين."
+
+### 5. تذكير مباشر لكن بأدب لمن تأخر طويلاً
+"ودّي أذكّرك بنصيبي من [البند]، ما شفت إشعار التحويل بعد، خله ببالك وقت ما يصير عندك مجال."
+
+## لماذا يساعد تسجيل المبلغ وقت المصروف نفسه؟
+
+غياب التسجيل الفوري هو السبب الأكبر للخلاف حول المبلغ الدقيق لاحقاً: من دفع، وكم كان نصيب كل شخص بالضبط. على سبيل المثال، لو دفع شخص فاتورة كاملة ونصيب كل واحد من الأربعة كان **25% من الإجمالي**، فإن تسجيل هذه النسبة لحظة الدفع يمنع أي نقاش لاحق عن المبلغ الصحيح.
+
+## أخطاء شائعة عند طلب الفلوس من صديق
+
+- **الانتظار طويلاً قبل التذكير الأول**، مما يجعل كل تذكير لاحق يبدو أصعب
+- **تذكير عام بدون ذكر مبلغ أو سياق محدد**، مما يسهّل تأجيله من الطرف الآخر
+- **تكرار التذكير بنفس الصيغة كل مرة**، مما يبدو ضغطاً متكرراً بدلاً من رسالة واضحة
+- **عدم وجود سجل واضح للمبلغ**، فيصبح الطلب نفسه موضع شك بدلاً من مجرد تسوية حساب
+
+## كيف يساعد Diviso في هذا الموقف؟
+
+- ✅ تسجيل المصروف فور حدوثه، بالمبلغ ومن دفعه ونصيب كل شخص
+- ✅ عرض رصيد واضح يوضح من يدين لمن، بدون الحاجة لتذكّر المبالغ من الذاكرة
+- ✅ واجهة عربية أصلية وريال سعودي
+
+## أسئلة شائعة
+
+### متى الوقت الأنسب لتذكير صديقي بالفلوس؟
+الأفضل خلال 24 إلى 48 ساعة من المصروف نفسه، أو قبل مناسبة جديدة تحتاج دفعة إضافية، لأن التذكير في هذين السياقين يبدو تسوية حساب طبيعية لا طلباً منفصلاً.
+
+### هل أذكر المبلغ بالضبط أم أترك الأمر عاماً؟
+اذكر المبلغ أو النسبة والسياق بالتحديد (أي مصروف ومتى)، لأن التذكير العام يسهّل تأجيله من الطرف الآخر مقارنة برسالة محددة.
+
+### ماذا أفعل إذا تجاهل صديقي التذكير المتكرر؟
+انتقل لتذكير مباشر لكن بأدب يذكر المبلغ بوضوح دون تكرار الصيغة نفسها عدة مرات، مع إبقاء سجل واضح للمبلغ يسهّل المتابعة.
+
+## الخلاصة
+
+طلب فلوسك من صديق لا يحتاج أن يكون محرجاً: اختر التوقيت المناسب (قريباً من المصروف أو قبل مناسبة جديدة)، استخدم عبارة محددة تذكر المبلغ والسياق، واحتفظ بسجل واضح يمنع أي نقاش لاحق عن المبلغ الصحيح.
+
+**سجّل كل مصروف ومين دفعه في Diviso، وخلّ الرصيد يذكّر صاحبك بدالك.**
+    `,
+    contentEn: `
+## The Short Answer
+
+The best way to ask a friend to pay you back without awkwardness combines **two specific timings** (close to when the expense itself happened, or right before a new occasion that needs another payment) with **a clear script that names the amount and context specifically**, instead of a vague reminder that leaves room to put it off. The awkwardness usually comes from missing both of these elements together, not from asking for the money itself.
+
+## Why Is It Hard to Ask Friends for Money Back?
+
+- **No specific amount was ever recorded**: if the amount wasn't clear from the start, it's harder to ask for it confidently later
+- **Fear of damaging the friendship**: many people would rather stay quiet about a lost amount than risk the relationship
+- **Waiting too long before asking**: every week that passes makes the reminder feel harder and more awkward
+
+## The Right Timing: When Should You Ask for Your Money Back?
+
+### Within 24 to 48 Hours of the Expense Itself
+A reminder close to when the expense happened feels like a natural part of settling up, not a separate "request" that needs a special occasion.
+
+### Before a New Occasion That Needs an Additional Payment
+If there's an upcoming outing or event, mentioning the old amount as part of preparing for the new one feels practical, not personal.
+
+### A Periodic Gentle Reminder for an Amount That's Built Up Over Several Times
+If several small amounts have built up over a period, set a fixed monthly date (like the start of each month) to settle everything at once, rather than reminding after every single expense.
+
+## 5 Ready Scripts for Different Situations
+
+### 1. A Quick Reminder Right After the Expense
+"Thanks for covering that today — for my share of [the item], I'll send it over now."
+
+### 2. A Reminder After Some Time Has Passed
+"Just remembered I never transferred my share from [the occasion] — noting it down to sort out today."
+
+### 3. A Reminder Before a New Occasion
+"Before we plan [the new occasion], let me settle [the old expense] first so we start with a clean slate."
+
+### 4. A Reminder for an Amount That's Built Up Over Several Times
+"I added up everything from the last few times we did this — let's do one transfer to make it easier for both of us."
+
+### 5. A Direct But Polite Reminder for Someone Who's Taken a While
+"Just a reminder about my share of [the item] — I haven't seen a transfer yet, whenever works for you."
+
+## Why Does Logging the Amount at the Time of the Expense Help?
+
+The lack of an immediate record is the biggest cause of later disagreement over the exact amount: who paid, and exactly what each person's share was. For example, if one person covered a full bill and each of the four people's share was **25% of the total**, logging that percentage at the moment of payment prevents any later argument over the correct amount.
+
+## Common Mistakes When Asking a Friend for Money Back
+
+- **Waiting too long before the first reminder**, which makes every later reminder feel harder
+- **Sending a vague reminder with no specific amount or context**, making it easier for the other person to put off
+- **Repeating the exact same wording every time**, which starts to feel like repeated pressure instead of a clear message
+- **Having no clear record of the amount**, which turns the request itself into something to question rather than a simple settle-up
+
+## How Diviso Helps With This
+
+- ✅ Logs the expense the moment it happens, with the amount, who paid, and each person's share
+- ✅ Shows a clear balance of who owes whom, without needing to recall amounts from memory
+- ✅ A native Arabic interface and Saudi Riyal
+
+## Frequently Asked Questions
+
+### When's the best time to remind a friend about money they owe me?
+Ideally within 24 to 48 hours of the expense itself, or right before a new occasion that needs another payment, since a reminder in either context feels like a natural settle-up rather than a separate request.
+
+### Should I mention the exact amount, or keep it general?
+Mention the exact amount (or share) and the specific context (which expense and when), since a vague reminder makes it easier for the other person to put off compared to a specific message.
+
+### What if my friend keeps ignoring repeated reminders?
+Move to a direct but polite reminder that clearly states the amount, without repeating the same wording multiple times, while keeping a clear record of the amount to make following up easier.
+
+## Conclusion
+
+Asking a friend to pay you back doesn't have to be awkward: pick the right timing (close to the expense or before a new occasion), use a specific script that names the amount and context, and keep a clear record that prevents any later argument over the correct amount.
+
+**Log every expense and who paid it in Diviso, and let the balance do the reminding for you.**
+    `
+  },
+  {
     slug: "bill-split-calculation-worked-examples",
     title: "كيف تحسب تقسيم الفاتورة يدوياً؟ 3 طرق بمعادلات وأمثلة رقمية",
     titleEn: "How to Calculate a Bill Split Manually: 3 Methods With Formulas and Worked Examples",

@@ -3,7 +3,6 @@ Ordered. Status: todo / published. Slugs are suggestions (kebab-case, English).
 
 | # | Slug (suggested) | Angle (AR/EN) | Category | Status |
 |---|---|---|---|---|
-| 1 | ask-friend-to-pay-back-money-politely | كيف تطالب صديقك بفلوسك بدون إحراج — scripts + timing | tips | todo |
 | 2 | split-rent-by-room-size-formula | تقسيم الإيجار حسب مساحة الغرفة والمزايا (حمام خاص، بلكونة) بمعادلة | guides | todo |
 | 3 | split-birthday-dinner-who-pays-for-birthday-person | عشاء عيد الميلاد: من يدفع حصة صاحب المناسبة؟ | tips | todo |
 | 4 | split-hotel-room-different-nights | تقسيم غرفة فندق عندما يبقى كل شخص عدد ليالي مختلف | guides | todo |
@@ -25,5 +24,6 @@ Ordered. Status: todo / published. Slugs are suggestions (kebab-case, English).
 | splitwise-vs-tricount-vs-diviso | مقارنة محايدة: Splitwise vs Tricount vs Diviso (نوع المجموعة، التسوية، العملات، العربية) | comparisons | 2026-11-05 |
 | tricount-alternative-arabic | بديل Tricount يدعم العربية والريال | comparisons | 2026-11-08 |
 | bill-split-calculation-worked-examples | كيف تحسب تقسيم الفاتورة يدوياً: 3 معادلات بأمثلة رقمية (بالتساوي، بالبند، مع الضريبة والخدمة) | guides | 2026-11-12 |
+| ask-friend-to-pay-back-money-politely | كيف تطالب صديقك بفلوسك بدون إحراج — 5 عبارات جاهزة وتوقيت مناسب | tips | 2026-11-15 |
 
 (full history: see docs/seo-agent/log.md)

@@ -47,16 +47,9 @@ serve(async (req) => {
 
     // Clean up user data in the correct order (due to foreign key constraints)
     
-    // 1. Delete user-owned records first
-    await supabaseAdmin.from('notifications').delete().eq('user_id', user.id);
-    await supabaseAdmin.from('user_settings').delete().eq('user_id', user.id);
-    await supabaseAdmin.from('user_subscriptions').delete().eq('user_id', user.id);
-    await supabaseAdmin.from('user_referral_codes').delete().eq('user_id', user.id);
-    await supabaseAdmin.from('referrals').delete().eq('inviter_id', user.id);
-    await supabaseAdmin.from('referral_rewards').delete().eq('user_id', user.id);
-    await supabaseAdmin.from('receipt_ocr').delete().eq('created_by', user.id);
-
-    // 2. Leave groups (but don't delete if user is owner - that would break data integrity)
+    // 1. Refuse BEFORE touching anything while the user owns groups (MSG-133):
+    //    the old order deleted settings/subscriptions/referrals first and then
+    //    returned 400, leaving a half-deleted account.
     const { data: ownedGroups } = await supabaseAdmin
       .from('groups')
       .select('id')
@@ -74,6 +67,15 @@ serve(async (req) => {
         }
       );
     }
+
+    // 2. Delete user-owned records
+    await supabaseAdmin.from('notifications').delete().eq('user_id', user.id);
+    await supabaseAdmin.from('user_settings').delete().eq('user_id', user.id);
+    await supabaseAdmin.from('user_subscriptions').delete().eq('user_id', user.id);
+    await supabaseAdmin.from('user_referral_codes').delete().eq('user_id', user.id);
+    await supabaseAdmin.from('referrals').delete().eq('inviter_id', user.id);
+    await supabaseAdmin.from('referral_rewards').delete().eq('user_id', user.id);
+    await supabaseAdmin.from('receipt_ocr').delete().eq('created_by', user.id);
 
     // Remove from groups as member
     await supabaseAdmin.from('group_members').delete().eq('user_id', user.id);

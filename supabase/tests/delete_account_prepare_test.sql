@@ -72,6 +72,43 @@ select pg_temp.ok((public.delete_account_prepare('00000000-0000-0000-0000-000000
                    = '{"mode":"soft","transferred_groups":1,"deleted_groups":0}'::jsonb), 'C: soft, transferred');
 select pg_temp.ok((select owner_id from public.groups where id='00000000-0000-0000-0000-00000000000a') = '00000000-0000-0000-0000-0000000000b1', 'C: g1 → Bader');
 
+
+-- ── G: plain member, nothing shared → hard; the group itself untouched ──
+insert into auth.users(id) values ('00000000-0000-0000-0000-0000000000a7');
+insert into public.profiles(id, name) values ('00000000-0000-0000-0000-0000000000a7','Ghada');
+insert into public.group_members(group_id, user_id, role, joined_at, status) values
+ ('00000000-0000-0000-0000-00000000000a','00000000-0000-0000-0000-0000000000a7','member', now(),'active');
+select pg_temp.ok((public.delete_account_prepare('00000000-0000-0000-0000-0000000000a7')
+                   = '{"mode":"hard","transferred_groups":0,"deleted_groups":0}'::jsonb), 'G: plain member → hard, no transfer');
+select pg_temp.ok(not exists (select 1 from public.profiles where id='00000000-0000-0000-0000-0000000000a7'), 'G: profile deleted');
+select pg_temp.ok(exists (select 1 from public.groups where id='00000000-0000-0000-0000-00000000000a'), 'G: group untouched');
+
+-- ── F: failure in the middle → NOTHING changed (one transaction) ─────────
+insert into auth.users(id) values ('00000000-0000-0000-0000-0000000000f6');
+insert into public.profiles(id, name, phone) values ('00000000-0000-0000-0000-0000000000f6','Fahad','0599');
+insert into public.groups(id, name, owner_id) values ('00000000-0000-0000-0000-00000000000f','g3','00000000-0000-0000-0000-0000000000f6');
+insert into public.group_members(group_id, user_id, role, joined_at, status) values
+ ('00000000-0000-0000-0000-00000000000f','00000000-0000-0000-0000-0000000000f6','owner', now()-interval '3 days','active'),
+ ('00000000-0000-0000-0000-00000000000f','00000000-0000-0000-0000-0000000000b1','member', now()-interval '1 day','active');
+insert into public.expenses(id, group_id, created_by, payer_id, amount) values
+ ('00000000-0000-0000-0000-0000000000f7','00000000-0000-0000-0000-00000000000f','00000000-0000-0000-0000-0000000000f6','00000000-0000-0000-0000-0000000000f6', 20);
+insert into public.notifications(user_id) values ('00000000-0000-0000-0000-0000000000f6');
+-- Make the last step (anonymising the profile) blow up.
+create function pg_temp.boom() returns trigger language plpgsql as $$ begin raise exception 'boom'; end $$;
+create trigger t_boom before update on public.profiles
+  for each row when (new.name = 'مستخدم محذوف' and old.id = '00000000-0000-0000-0000-0000000000f6') execute function pg_temp.boom();
+do $$ begin
+  perform public.delete_account_prepare('00000000-0000-0000-0000-0000000000f6');
+  raise exception 'FAIL F: expected an error';
+exception when others then
+  if sqlerrm like 'FAIL%' then raise; end if;
+  if sqlerrm <> 'boom' then raise exception 'FAIL F: got %', sqlerrm; end if;
+end $$;
+drop trigger t_boom on public.profiles;
+select pg_temp.ok((select owner_id from public.groups where id='00000000-0000-0000-0000-00000000000f') = '00000000-0000-0000-0000-0000000000f6', 'F: ownership NOT transferred after the failure');
+select pg_temp.ok(exists (select 1 from public.notifications where user_id='00000000-0000-0000-0000-0000000000f6'), 'F: notifications NOT deleted');
+select pg_temp.ok((select name from public.profiles where id='00000000-0000-0000-0000-0000000000f6') = 'Fahad', 'F: profile NOT anonymised');
+
 -- ── grants ───────────────────────────────────────────────────────────────
 select pg_temp.ok(not has_function_privilege('anon', 'public.delete_account_prepare(uuid)', 'execute'), 'anon cannot execute');
 select pg_temp.ok(not has_function_privilege('authenticated', 'public.delete_account_prepare(uuid)', 'execute'), 'authenticated cannot execute');

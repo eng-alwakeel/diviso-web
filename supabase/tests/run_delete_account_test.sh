@@ -10,11 +10,24 @@ pg_ctl -D "$DIR/data" -o "-p $PORT -k $DIR -c listen_addresses=''" -l "$DIR/log"
 PSQL=(psql -h "$DIR" -p "$PORT" -U postgres -d postgres -v ON_ERROR_STOP=1 -q)
 "${PSQL[@]}" <<'SQL'
 create role anon nologin; create role authenticated nologin; create role service_role nologin;
-create schema auth; create table auth.users (id uuid primary key);
+create schema auth;
+-- auth.users / auth.identities: the GoTrue columns that hold personal
+-- identifiers, with GoTrue's uniqueness rules (MSG-137 §3 a/b).
+create table auth.users (id uuid primary key, email text, phone text unique,
+  email_change text, phone_change text, encrypted_password text,
+  raw_user_meta_data jsonb default '{}'::jsonb, raw_app_meta_data jsonb default '{}'::jsonb,
+  deleted_at timestamptz);
+create unique index users_email_partial_key on auth.users (email);
+create table auth.identities (id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references auth.users(id) on delete cascade,
+  provider text not null, provider_id text not null, identity_data jsonb not null default '{}'::jsonb,
+  unique (provider_id, provider));
 create type member_role as enum ('owner','admin','member');
 create table public.profiles (id uuid primary key references auth.users(id) on delete cascade,
   name text, display_name text, phone text, avatar_url text, bio text, city text,
   banned_by uuid references auth.users(id), updated_at timestamptz default now());
+-- production: idx_profiles_phone (diviso-web 20250816112559).
+create unique index idx_profiles_phone on public.profiles (phone) where phone is not null;
 create table public.groups (id uuid primary key, name text, owner_id uuid not null references public.profiles(id) on delete restrict,
   created_at timestamptz default now());
 create table public.group_members (id uuid primary key default gen_random_uuid(),

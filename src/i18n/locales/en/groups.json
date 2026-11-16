@@ -354,7 +354,17 @@
     "join_error": "Error joining group",
     "join_error_desc": "Check the invite link validity. If you have a referral link (/join/...), it's for new users only.",
     "download_app": "Download the app",
-    "continue_in_browser": "Continue in browser"
+    "continue_in_browser": "Continue in browser",
+    "inviter_invited_you": "{{name}} invited you",
+    "member_count_one": "{{count}} member",
+    "member_count_other": "{{count}} members",
+    "invite_pitch": "Split expenses without the hassle — everyone knows what they owe and what they're owed.",
+    "invite_value_log": "Everyone logs their expense in seconds",
+    "invite_value_balance": "See who owes whom, no maths needed",
+    "invite_value_settle": "Settle up in the fewest transfers",
+    "join_with_apple": "Join with Apple",
+    "accept_in_app": "Download Diviso and open the invite link on your phone to join the group.",
+    "split_fairly": "Split smart"
   },
 
   "status": {

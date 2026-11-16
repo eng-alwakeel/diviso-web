@@ -15,6 +15,8 @@ Ordered. Status: todo / published. Slugs are suggestions (kebab-case, English).
 | 13 | restaurant-service-charge-split-uk | (EN-led) Service charge and tips: splitting fairly in UK restaurants | tips | todo |
 | 14 | split-shared-kitchen-groceries-staples | المؤونة المشتركة (رز، زيت، قهوة) في السكن: صندوق شهري أم بالتناوب | tips | todo |
 | 15 | track-money-lent-to-family | تسجيل السلف بين الأهل بدون إحراج | tips | todo |
+| 19 | split-shared-drinking-water-gallons-roommates | قوارير الماء (5 جالون) في السكن المشترك: صندوق شهري أم بالدور؟ | tips | todo |
+| 20 | split-shared-online-grocery-cart-roommates | سلة طلبات واحدة للسكن المشترك: التقسيم حسب الطلب ورسوم التوصيل | tips | todo |
 ## Published
 | Slug | Angle (AR/EN) | Category | Published |
 |---|---|---|---|

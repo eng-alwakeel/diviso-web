@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>حاسبة بلوت مجانية حسب لائحة هيئة الترفيه | ديفيزو</title>
+<meta name="description" content="حاسبة بلوت مجانية بدون تسجيل: احسب الصكة لنا ولهم، حكم وصن، دبل وثري وفور وقهوة، والمشاريع والكبوت، حسب اللائحة الرسمية للبلوت. الهدف 152.">
+<link rel="canonical" href="https://www.diviso.app/baloot-calculator">
+<meta property="og:type" content="website">
+<meta property="og:title" content="حاسبة بلوت مجانية حسب لائحة هيئة الترفيه | ديفيزو">
+<meta property="og:description" content="حاسبة بلوت مجانية بدون تسجيل: احسب الصكة لنا ولهم، حكم وصن، دبل وثري وفور وقهوة، والمشاريع والكبوت، حسب اللائحة الرسمية للبلوت. الهدف 152.">
+<meta property="og:url" content="https://www.diviso.app/baloot-calculator">
+<meta property="og:locale" content="ar_SA">
+<meta name="theme-color" content="#12160D">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebApplication", "name": "حاسبة بلوت", "url": "https://www.diviso.app/baloot-calculator", "applicationCategory": "GameApplication", "operatingSystem": "Any (web browser)", "inLanguage": "ar", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "SAR"}, "publisher": {"@type": "Organization", "name": "Diviso", "url": "https://www.diviso.app/"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "هل حاسبة البلوت مجانية؟", "acceptedAnswer": {"@type": "Answer", "text": "إيه، الحاسبة مجانية بالكامل وتشتغل من المتصفح بدون تسجيل وبدون تحميل."}}, {"@type": "Question", "name": "على أي قوانين تحسب؟", "acceptedAnswer": {"@type": "Answer", "text": "على «اللائحة العامة للعبة البلوت» من الهيئة العامة للترفيه: أبناط الجولة 16 في الحكم و26 في الصن، والصكة تخلص عند 152."}}, {"@type": "Question", "name": "كيف تحسب الدبل والمشاريع؟", "acceptedAnswer": {"@type": "Answer", "text": "المشاريع تتضاعف في الدبل بس، وما تتضاعف في الثري والفور. والبلوت 2 دائماً وما يتضاعف. والتعادل في الدبل خسارة على المدبّل."}}, {"@type": "Question", "name": "متى يحق الدبل في الصن؟", "acceptedAnswer": {"@type": "Answer", "text": "لما يكون الفريق اللي يدبّل عنده 100 أو أقل، والمشتري فوق 100، حسب اللائحة."}}, {"@type": "Question", "name": "تنحفظ الصكة لو قفلت الصفحة؟", "acceptedAnswer": {"@type": "Answer", "text": "إيه، الجولات تنحفظ في جهازك، وتقدر تكمل من نفس المكان أو تبدأ صكة جديدة."}}]}]</script>
+<style>
+/* Layout: same sheet as تكلير (rows = صكات الجولة, columns = لنا/لهم), round helper below, rule table for review at the end */
+:root{
+  --bg:#F3F5EC; --card:#FFFFFF; --ink:#1B2113; --muted:#5E6852; --line:#DCE2CF;
+  --lime:#C8F169; --lime-ink:#2F4A06; --chip:#EDF1E2; --win:#2F7D32; --lose:#B3261E; --warn:#8A5A00; --warn-bg:#FFF4D6;
+  --font:"Readex Pro",system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#12160D; --card:#1C2215; --ink:#EEF3E2; --muted:#A3AE92; --line:#2E3624;
+  --lime:#C8F169; --lime-ink:#1B2A05; --chip:#262E1C; --win:#8FD694; --lose:#FF8A80; --warn:#F2C46B; --warn-bg:#2E2614; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12160D; --card:#1C2215; --ink:#EEF3E2; --muted:#A3AE92; --line:#2E3624;
+  --lime:#C8F169; --lime-ink:#1B2A05; --chip:#262E1C; --win:#8FD694; --lose:#FF8A80; --warn:#F2C46B; --warn-bg:#2E2614; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);margin:0;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:16px 40px}
+.app{max-width:520px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+h1{font-size:22px;margin:0}
+h2{font-size:15px;margin:0;color:var(--muted);font-weight:600}
+h3{font-size:14px;margin:0;font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.spacer{flex:1}
+button{font:inherit;border-radius:12px;border:1px solid var(--line);background:var(--chip);color:var(--ink);padding:8px 12px;cursor:pointer}
+button.primary{background:var(--lime);color:var(--lime-ink);border-color:var(--lime);font-weight:700}
+button[aria-pressed=true]{background:var(--ink);color:var(--card);border-color:var(--ink)}
+button:focus-visible,input:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+input[type=number]{font:inherit;font-size:16px;width:80px;padding:8px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);text-align:center;font-variant-numeric:tabular-nums}
+.score{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.team{border-radius:14px;padding:12px;background:var(--chip);display:flex;flex-direction:column;align-items:center;gap:2px}
+.team.lead{background:var(--lime);color:var(--lime-ink)}
+.team b{font-size:30px;font-variant-numeric:tabular-nums}
+.team small{font-size:12px;opacity:.8}
+.winner{background:var(--lime);color:var(--lime-ink);border-radius:16px;padding:14px;font-weight:700;text-align:center}
+.seg{display:flex;gap:6px;flex-wrap:wrap}
+.teamcol{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tc{border:1px solid var(--line);border-radius:12px;padding:10px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.proj{display:flex;flex-wrap:wrap;gap:6px}
+.proj button{padding:5px 9px;font-size:13px}
+.result{border-radius:12px;padding:10px 12px;background:var(--chip);font-size:14px;line-height:1.7}
+.sheet-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums;font-size:14px}
+th,td{padding:7px 10px;text-align:center;border-bottom:1px solid var(--line);white-space:nowrap}
+thead th{background:var(--chip)}
+td.k{color:var(--muted);font-size:12px;text-align:start}
+tfoot td{font-weight:700;background:var(--chip)}
+.note{background:var(--warn-bg);border-radius:14px;padding:12px 14px;font-size:13px;line-height:1.7}
+.note b{color:var(--warn)}
+.note table{background:var(--card);border-radius:8px;margin-top:6px}
+.muted{color:var(--muted);font-size:12px}
+@media (max-width:380px){.teamcol{grid-template-columns:1fr}}
+.cta{border-color:var(--lime)}
+.ctabtn{display:block;text-align:center;background:var(--lime);color:var(--lime-ink);font-weight:700;padding:12px;border-radius:12px;text-decoration:none}
+.links{display:flex;gap:8px;flex-wrap:wrap}
+.links a{color:var(--ink);background:var(--chip);border:1px solid var(--line);padding:6px 10px;border-radius:10px;text-decoration:none;font-size:13px}
+footer{max-width:520px;margin:18px auto 0;font-size:12px;color:var(--muted);text-align:center;line-height:1.8}
+footer a{color:var(--muted)}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+
+<div class="app" dir="rtl" lang="ar">
+  <div class="row"><h1>حاسبة بلوت</h1><span class="spacer"></span><button id="newGame">صكة جديدة</button></div>
+
+  <p class="muted" style="margin:0;font-size:13px">حاسبة بلوت مجانية بدون تسجيل، تحسب الصكة حسب لائحة هيئة الترفيه. الهدف 152.</p>
+  <div id="winnerBox" class="winner" hidden></div>
+  <div class="score">
+    <div class="team" id="usBox"><small>لنا</small><b id="usTot">0</b></div>
+    <div class="team" id="themBox"><small>لهم</small><b id="themTot">0</b></div>
+  </div>
+
+  <section class="card" aria-labelledby="rH">
+    <h2 id="rH">سجّل الجولة <span id="rNo"></span></h2>
+
+    <div class="row"><h3>النوع</h3><span class="spacer"></span>
+      <div class="seg"><button id="tHokm" aria-pressed="true">حكم</button><button id="tSun" aria-pressed="false">صن</button></div></div>
+    <div class="row"><h3>المشتري</h3><span class="spacer"></span>
+      <div class="seg"><button id="bUs" aria-pressed="true">لنا</button><button id="bThem" aria-pressed="false">لهم</button></div></div>
+    <div class="row"><h3>المضاعفة</h3><span class="spacer"></span>
+      <div class="seg" id="mults"></div></div>
+    <p class="muted" id="sunHint" style="margin:0" hidden>الدبل في الصن يحق للخصم بس لما يكون عنده 100 أو أقل والمشتري فوق 100.</p>
+
+    <div class="teamcol">
+      <div class="tc"><h3>لنا</h3>
+        <label class="row" for="usAb"><span class="muted">أبناط الأكل</span><span class="spacer"></span><input id="usAb" type="number" min="0"></label>
+        <div class="proj" id="usProj"></div><div class="muted" id="usProjSum"></div></div>
+      <div class="tc"><h3>لهم</h3>
+        <label class="row" for="themAb"><span class="muted">أبناط الأكل</span><span class="spacer"></span><input id="themAb" type="number" min="0"></label>
+        <div class="proj" id="themProj"></div><div class="muted" id="themProjSum"></div></div>
+    </div>
+    <div class="row"><button id="kabootUs">كبوت لنا</button><button id="kabootThem">كبوت لهم</button><span class="spacer"></span><span class="muted">تكتب أبناط فريق واحد، والثاني يتعبّى تلقائياً</span></div>
+
+    <div id="resolve" class="result" aria-live="polite"></div>
+    <div class="row"><button class="primary" id="save">أضف للجدول</button><span class="spacer"></span><button id="undo">احذف آخر صف</button></div>
+  </section>
+
+  <section class="card"><h2>الجدول</h2>
+    <div class="sheet-wrap"><table id="sheet"></table></div>
+  </section>
+
+  <aside class="note">
+    <b>المرجع: «اللائحة العامة للعبة البلوت» (الهيئة العامة للترفيه).</b> القيم والقواعد المطبّقة:
+    <div class="sheet-wrap"><table>
+      <thead><tr><th>البند</th><th>حكم</th><th>صن</th></tr></thead>
+      <tbody>
+        <tr><td>أبناط الجولة</td><td>16</td><td>26</td></tr>
+        <tr><td>سرا / خمسين / مية</td><td>2 / 5 / 10</td><td>4 / 10 / 20</td></tr>
+        <tr><td>أربعمية</td><td>—</td><td>40</td></tr>
+        <tr><td>بلوت</td><td>2 (ما يتضاعف)</td><td>—</td></tr>
+        <tr><td>كبوت (+ مشاريع المكبّت)</td><td>25</td><td>44</td></tr>
+        <tr><td>المضاعفة</td><td>دبل، ثري، فور، قهوة</td><td>دبل بس، بشرط 100</td></tr>
+      </tbody></table></div>
+    المشاريع تتضاعف في الدبل بس، وما تتضاعف في الثري والفور. والتعادل في الدبل خسارة على المدبّل.
+    <br>التعادل في جولة صافية بدون دبل: كل فريق ياخذ اللي له. <a href="https://enjoy.sa/media/j1ofreng/baloot.pdf" rel="noopener" target="_blank" style="color:inherit">اقرأ اللائحة الرسمية</a>.
+  </aside>
+
+  <section class="card cta" aria-labelledby="ctaH">
+    <h2 id="ctaH" style="color:var(--ink);font-size:17px">تلعبون في كشتة أو استراحة؟</h2>
+    <p style="margin:0;line-height:1.8">سجّلوا قطّة الكشتة في <b>ديفيزو</b>: كل واحد يضيف اللي دفعه، والتطبيق يقول مين يحوّل لمين. حساب واضح بدون إحراج.</p>
+    <a class="ctabtn" href="https://apps.apple.com/app/id6761329043?utm_source=web&amp;utm_medium=calculator&amp;utm_campaign=baloot_calculator">حمّل ديفيزو من App Store</a>
+  </section>
+  <section class="card" aria-labelledby="faqH"><h2 id="faqH">أسئلة شائعة</h2><details><summary style="cursor:pointer;font-weight:600">هل حاسبة البلوت مجانية؟</summary><p style="margin:6px 0 0;line-height:1.8">إيه، الحاسبة مجانية بالكامل وتشتغل من المتصفح بدون تسجيل وبدون تحميل.</p></details><details><summary style="cursor:pointer;font-weight:600">على أي قوانين تحسب؟</summary><p style="margin:6px 0 0;line-height:1.8">على «اللائحة العامة للعبة البلوت» من الهيئة العامة للترفيه: أبناط الجولة 16 في الحكم و26 في الصن، والصكة تخلص عند 152.</p></details><details><summary style="cursor:pointer;font-weight:600">كيف تحسب الدبل والمشاريع؟</summary><p style="margin:6px 0 0;line-height:1.8">المشاريع تتضاعف في الدبل بس، وما تتضاعف في الثري والفور. والبلوت 2 دائماً وما يتضاعف. والتعادل في الدبل خسارة على المدبّل.</p></details><details><summary style="cursor:pointer;font-weight:600">متى يحق الدبل في الصن؟</summary><p style="margin:6px 0 0;line-height:1.8">لما يكون الفريق اللي يدبّل عنده 100 أو أقل، والمشتري فوق 100، حسب اللائحة.</p></details><details><summary style="cursor:pointer;font-weight:600">تنحفظ الصكة لو قفلت الصفحة؟</summary><p style="margin:6px 0 0;line-height:1.8">إيه، الجولات تنحفظ في جهازك، وتقدر تكمل من نفس المكان أو تبدأ صكة جديدة.</p></details></section>
+  <nav class="links" aria-label="حاسبات ثانية"><a href="/tickler-calculator">حاسبة تكلير</a><a href="/">ديفيزو</a></nav>
+</div>
+
+<footer>من <a href="https://www.diviso.app/">ديفيزو</a>، تطبيق تقسيم مصاريف الشلة. الحاسبة للتسلية وحفظ النتائج بس، وما فيها أي ربط بالفلوس.</footer>
+
+<script>
+(function(){
+const VAL={hokm:{total:16,kaboot:25,proj:{"سرا":2,"خمسين":5,"مية":10,"بلوت":2}},
+           sun:{total:26,kaboot:44,proj:{"سرا":4,"خمسين":10,"مية":20,"أربعمية":40}}};
+const MULTS=[{k:1,l:"عادي"},{k:2,l:"دبل"},{k:3,l:"ثري"},{k:4,l:"فور"},{k:"q",l:"قهوة"}];
+let type="hokm",buyer="us",mult=1,kaboot=null;
+let proj={us:[],them:[]};
+const KEY="diviso_baloot_v1";let rounds=[];try{const v=JSON.parse(localStorage.getItem(KEY)||"null");if(Array.isArray(v))rounds=v;}catch(e){}
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(rounds));}catch(e){}}
+const $=s=>document.querySelector(s);
+
+function press(btns,on){btns.forEach(b=>b.setAttribute("aria-pressed",b===on));}
+function renderMults(){
+  const sm=sums(),other=buyer==="us"?"them":"us";
+  const sunDouble=sm[other]<=100&&sm[buyer]>100;   // اللائحة 7-2
+  const allowed=type==="sun"?(sunDouble?[1,2]:[1]):[1,2,3,4,"q"];
+  $("#mults").innerHTML=MULTS.filter(m=>allowed.includes(m.k)).map(m=>`<button data-m="${m.k}" aria-pressed="${m.k===mult}">${m.l}</button>`).join("");
+  if(!allowed.includes(mult)){mult=1;renderMults();return;}
+  $("#sunHint").hidden=!(type==="sun"&&!sunDouble);
+  document.querySelectorAll("#mults button").forEach(b=>b.onclick=()=>{mult=b.dataset.m==="q"?"q":Number(b.dataset.m);renderMults();renderResolve();});
+}
+function renderProj(){
+  ["us","them"].forEach(t=>{
+    const names=Object.keys(VAL[type].proj);
+    $("#"+t+"Proj").innerHTML=names.map(n=>`<button data-t="${t}" data-n="${n}">+ ${n}</button>`).join("")+`<button data-t="${t}" data-clear="1">مسح</button>`;
+    const s=proj[t].reduce((a,n)=>a+VAL[type].proj[n],0);
+    $("#"+t+"ProjSum").textContent=proj[t].length?`المشاريع: ${proj[t].join("، ")} = ${s}`:"بدون مشاريع";
+  });
+  document.querySelectorAll(".proj button").forEach(b=>b.onclick=()=>{
+    if(b.dataset.clear)proj[b.dataset.t]=[];else proj[b.dataset.t].push(b.dataset.n);
+    renderProj();renderResolve();});
+}
+function projSum(t){return proj[t].reduce((a,n)=>a+(VAL[type].proj[n]||0),0);}
+
+function compute(){
+  const V=VAL[type],other=buyer==="us"?"them":"us";
+  if(mult==="q") return {us:0,them:0,gahwa:true};
+  const bal=t=>proj[t].filter(n=>n==="بلوت").length*(V.proj["بلوت"]||0);
+  const pj=t=>projSum(t)-bal(t);                       // المشاريع بدون البلوت
+  const pm=mult===2?2:1;                                // اللائحة 5-4 و5-5: المشاريع تتضاعف في الدبل بس، والبلوت ما يتضاعف أبداً
+  if(kaboot){                                           // اللائحة 7-7: الكبوت 25/44 + مشاريع المكبّت، بدون مضاعفة
+    const res={us:0,them:0};res[kaboot]=V.kaboot+pj(kaboot)+bal(kaboot);
+    const o=kaboot==="us"?"them":"us";res[o]=bal(o);
+    return {res,note:`كبوت لـ${kaboot==="us"?"لنا":"لهم"}: ${V.kaboot} + مشاريعهم`};
+  }
+  let ab={us:Number($("#usAb").value||0),them:Number($("#themAb").value||0)};
+  if(ab.us+ab.them!==V.total) return {err:`مجموع الأبناط لازم يكون ${V.total} في ${type==="hokm"?"الحكم":"الصن"}.`};
+  const cmp={us:ab.us+pj("us")+bal("us"),them:ab.them+pj("them")+bal("them")};
+  const m=mult, all=(ab.us+ab.them)*m+(pj("us")+pj("them"))*pm;
+  let res={us:bal("us"),them:bal("them")},note="";
+  if(cmp[buyer]<cmp[other]){res[other]+=all;note=`المشتري (${buyer==="us"?"لنا":"لهم"}) خسر، والجولة للخصم`;}
+  else if(cmp[buyer]===cmp[other]){
+    if(m>1){res[buyer]+=all;note="تعادل في الدبل = المدبّل خسران (اللائحة 7-6)، والجولة للمشتري";}
+    else{res.us+=ab.us+pj("us");res.them+=ab.them+pj("them");note="تعادل (اللائحة 4-2 و4-3): كل فريق ياخذ اللي له · راجع تحت";}
+  }
+  else if(m>1){res[buyer]+=all;note=`${m===2?"دبل":m===3?"ثري":"فور"} ×${m}: الجولة كلها للمشتري${m>2?" · والمشاريع ما تتضاعف":""}`;}
+  else{res.us+=ab.us+pj("us");res.them+=ab.them+pj("them");note="الجولة انقسمت";}
+  if(bal("us")||bal("them"))note+=" · البلوت 2 لصاحبه وما يتضاعف";
+  return {res,note};
+}
+function renderResolve(){
+  const c=compute(),el=$("#resolve");
+  if(c.gahwa){el.innerHTML=`<b>قهوة:</b> اللي يفوز بالجولة ياخذ الصكة كاملة. اختار الفائز:<div class="row" style="margin-top:6px"><button id="gUs">لنا</button><button id="gThem">لهم</button></div>`;
+    $("#gUs").onclick=()=>gahwa("us");$("#gThem").onclick=()=>gahwa("them");return;}
+  if(c.err){el.innerHTML=`<span class="muted">${c.err}</span>`;return;}
+  el.innerHTML=`${c.note}<br>لنا <b>${c.res.us}</b> · لهم <b>${c.res.them}</b>`;
+}
+function gahwa(t){rounds.push({us:t==="us"?152:0,them:t==="them"?152:0,label:"قهوة",gahwa:t});reset();renderAll();}
+function sums(){return rounds.reduce((a,r)=>({us:a.us+r.us,them:a.them+r.them}),{us:0,them:0});}
+function renderSheet(){
+  persist();
+  const s=sums();
+  $("#sheet").innerHTML=`<thead><tr><th>#</th><th>لنا</th><th>لهم</th><th></th></tr></thead><tbody>${
+    rounds.map((r,i)=>`<tr><td>${i+1}</td><td>${r.us}</td><td>${r.them}</td><td class="k">${r.label}</td></tr>`).join("")
+  }</tbody><tfoot><tr><td>المجموع</td><td>${s.us}</td><td>${s.them}</td><td></td></tr></tfoot>`;
+  $("#usTot").textContent=s.us;$("#themTot").textContent=s.them;
+  $("#usBox").classList.toggle("lead",s.us>s.them);$("#themBox").classList.toggle("lead",s.them>s.us);
+  const wb=$("#winnerBox");const last=rounds[rounds.length-1];
+  if(last&&last.gahwa){wb.textContent=`☕ قهوة: الصكة لـ${last.gahwa==="us"?"لنا":"لهم"}`;wb.hidden=false;}
+  else if(s.us>=152||s.them>=152){wb.textContent=s.us===s.them?"تعادل فوق 152 · جولة فاصلة":`🏆 الصكة لـ${s.us>s.them?"لنا":"لهم"} (${Math.max(s.us,s.them)})`;wb.hidden=false;}
+  else wb.hidden=true;
+  $("#rNo").textContent=rounds.length+1;
+}
+function reset(){proj={us:[],them:[]};kaboot=null;mult=1;$("#usAb").value="";$("#themAb").value="";press([$("#kabootUs"),$("#kabootThem")],null);renderMults();renderProj();renderResolve();}
+function renderAll(){renderMults();renderProj();renderSheet();renderResolve();}
+
+$("#tHokm").onclick=()=>{type="hokm";press([$("#tHokm"),$("#tSun")],$("#tHokm"));proj={us:[],them:[]};renderAll();};
+$("#tSun").onclick=()=>{type="sun";press([$("#tHokm"),$("#tSun")],$("#tSun"));proj={us:[],them:[]};renderAll();};
+$("#bUs").onclick=()=>{buyer="us";press([$("#bUs"),$("#bThem")],$("#bUs"));renderMults();renderResolve();};
+$("#bThem").onclick=()=>{buyer="them";press([$("#bUs"),$("#bThem")],$("#bThem"));renderMults();renderResolve();};
+$("#usAb").oninput=()=>{const v=$("#usAb").value;$("#themAb").value=v===""?"":Math.max(0,VAL[type].total-Number(v));renderResolve();};
+$("#themAb").oninput=()=>{const v=$("#themAb").value;$("#usAb").value=v===""?"":Math.max(0,VAL[type].total-Number(v));renderResolve();};
+$("#kabootUs").onclick=()=>{kaboot=kaboot==="us"?null:"us";press([$("#kabootUs"),$("#kabootThem")],kaboot?$("#kabootUs"):null);renderResolve();};
+$("#kabootThem").onclick=()=>{kaboot=kaboot==="them"?null:"them";press([$("#kabootUs"),$("#kabootThem")],kaboot?$("#kabootThem"):null);renderResolve();};
+$("#save").onclick=()=>{const c=compute();if(c.err||c.gahwa)return;rounds.push({us:c.res.us,them:c.res.them,label:`${type==="hokm"?"حكم":"صن"}${mult>1?" ×"+mult:""}${kaboot?" · كبوت":""} · ${buyer==="us"?"لنا":"لهم"}`});reset();renderSheet();};
+$("#undo").onclick=()=>{rounds.pop();renderSheet();};
+let armed=null;
+$("#newGame").onclick=e=>{const b=e.currentTarget;
+  if(!armed){b.textContent="متأكد؟ اضغط مرة ثانية";armed=setTimeout(()=>{armed=null;b.textContent="صكة جديدة";},3000);return;}
+  clearTimeout(armed);armed=null;b.textContent="صكة جديدة";rounds=[];reset();renderAll();};
+renderAll();
+})();
+</script>
+</body>
+</html>

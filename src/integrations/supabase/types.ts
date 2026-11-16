@@ -6864,6 +6864,10 @@ export type Database = {
         Args: { p_group_id: string; p_plan_id: string }
         Returns: boolean
       }
+      log_event: {
+        Args: { p_event: string; p_props?: Json }
+        Returns: undefined
+      }
       log_security_event: {
         Args: { p_action: string; p_details?: Json; p_table_name?: string }
         Returns: undefined
@@ -6950,6 +6954,7 @@ export type Database = {
         }
         Returns: Json
       }
+      touch_last_active: { Args: never; Returns: undefined }
       transfer_group_ownership: {
         Args: { p_group_id: string; p_new_owner_id: string }
         Returns: Json

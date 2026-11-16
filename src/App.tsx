@@ -13,6 +13,7 @@ import { useServiceWorkerUpdate } from "@/hooks/useServiceWorkerUpdate";
 import { useNativeFeatures } from "@/hooks/useNativeFeatures";
 import { useDeepLinks } from "@/hooks/useDeepLinks";
 import { useActivityTracker } from "@/hooks/useActivityTracker";
+import { useEmailClickTracker } from "@/hooks/useEmailClickTracker";
 import { RoleAssignmentNotification } from "@/components/RoleAssignmentNotification";
 import { REDIRECTS } from "@/lib/redirects";
 
@@ -86,8 +87,11 @@ const AppRoutes: React.FC = () => {
   // Handle deep links
   useDeepLinks();
   
-  // Track user activity for founding users monthly credits
+  // Update profiles.last_active_at via touch_last_active() (ORD-014)
   useActivityTracker();
+
+  // email_click first-party event for links from our emails (ORD-014 ج)
+  useEmailClickTracker();
 
   // Track page views for SPA navigation (GTM/GA4)
   const location = useLocation();

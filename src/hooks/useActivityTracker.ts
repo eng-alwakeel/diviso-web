@@ -2,36 +2,39 @@ import { useEffect, useRef } from "react";
 import { supabase } from "@/integrations/supabase/client";
 
 /**
- * Hook to track user activity for founding users monthly credits
- * Updates last_active_at in profiles table on mount (once per session)
+ * Updates profiles.last_active_at (ORD-014).
+ *
+ * Calls touch_last_active(), which takes the user id from auth.uid() on the
+ * server and writes at most once per hour. The old update_user_activity(uuid)
+ * is locked (no EXECUTE for authenticated) and must not be re-opened.
+ *
+ * Runs on mount and again whenever a user signs in, so a session that starts
+ * signed-out is still counted once the user logs in.
  */
 export function useActivityTracker() {
-  const hasTracked = useRef(false);
+  const trackedUserId = useRef<string | null>(null);
 
   useEffect(() => {
-    // Only track once per session
-    if (hasTracked.current) return;
-    
-    const trackActivity = async () => {
+    const touch = async (userId: string | undefined) => {
+      if (!userId || trackedUserId.current === userId) return;
       try {
-        const { data: { user } } = await supabase.auth.getUser();
-        
-        if (user?.id) {
-          const { error } = await supabase.rpc('update_user_activity', { 
-            p_user_id: user.id 
-          });
-          
-          if (error) {
-            console.error('Error updating user activity:', error);
-          } else {
-            hasTracked.current = true;
-          }
+        const { error } = await supabase.rpc("touch_last_active");
+        if (error) {
+          console.error("Error updating user activity:", error);
+        } else {
+          trackedUserId.current = userId;
         }
       } catch (err) {
-        console.error('Activity tracking error:', err);
+        console.error("Activity tracking error:", err);
       }
     };
 
-    trackActivity();
+    supabase.auth.getUser().then(({ data: { user } }) => touch(user?.id));
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      if (event === "SIGNED_IN") touch(session?.user?.id);
+    });
+
+    return () => subscription.unsubscribe();
   }, []);
 }

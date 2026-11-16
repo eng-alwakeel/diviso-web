@@ -11,6 +11,28 @@ const corsHeaders = {
 const BATCH_SIZE = 50;
 const BATCH_DELAY_MS = 1000;
 
+// ORD-014 (ج): tag every link to our own site so the web app can log an
+// `email_click` event (useEmailClickTracker). External links are left alone,
+// and existing utm_* params are never overwritten.
+function addUtmToOwnLinks(html: string, campaign: string): string {
+  return html.replace(
+    /href="(https?:\/\/(?:www\.)?diviso\.app(?=[\/?#"])[^"]*)"/gi,
+    (_match, rawUrl: string) => {
+      try {
+        const url = new URL(rawUrl.replace(/&amp;/g, "&"));
+        if (url.searchParams.has("utm_medium")) return `href="${rawUrl}"`;
+        url.searchParams.set("utm_source", "email");
+        url.searchParams.set("utm_medium", "email");
+        url.searchParams.set("utm_campaign", campaign);
+        url.searchParams.set("utm_content", "broadcast");
+        return `href="${url.toString().replace(/&/g, "&amp;")}"`;
+      } catch {
+        return `href="${rawUrl}"`;
+      }
+    },
+  );
+}
+
 function buildEmailHtml(bodyHtml: string): string {
   return `<!DOCTYPE html>
 <html dir="rtl" lang="ar">
@@ -94,7 +116,7 @@ serve(async (req: Request) => {
 
     // --- Test email mode ---
     if (test_email) {
-      const fullHtml = buildEmailHtml(body_html);
+      const fullHtml = addUtmToOwnLinks(buildEmailHtml(body_html), "test");
       try {
         console.log("Sending test email to:", test_email);
         const result = await resend.emails.send({
@@ -176,7 +198,7 @@ serve(async (req: Request) => {
     // Send in batches
     let sentCount = 0;
     let failedCount = 0;
-    const fullHtml = buildEmailHtml(body_html);
+    const fullHtml = addUtmToOwnLinks(buildEmailHtml(body_html), String(campaign.id));
 
     for (let i = 0; i < allUsers.length; i += BATCH_SIZE) {
       const batch = allUsers.slice(i, i + BATCH_SIZE);

@@ -996,4 +996,18 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <url>
+    <loc>https://www.diviso.app/baloot-calculator</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.diviso.app/tickler-calculator</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>

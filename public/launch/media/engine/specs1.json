@@ -1,0 +1,10 @@
+[
+ {"id":"M01_bill","kind":"meme","img":"raw/bill_a.jpg","text":"لما توصل الفاتورة\nوفجأة الكل صار عنده شغلة","pos":"55%"},
+ {"id":"M02_kashta","kind":"meme","img":"raw/kashta_a.jpg","text":"حساب الكشتة\nبعد ما رجعنا:","pos":"60%"},
+ {"id":"M03_calc","kind":"meme","img":"raw/calc_b.jpg","text":"كل شلّة فيها واحد\nيقسمها بالهللة","pos":"40%"},
+ {"id":"M04_wallet","kind":"meme","img":"raw/wallet_b.jpg","text":"«والله نسيت المحفظة بالسيارة»\nنفس الشخص.. كل مرة","pos":"30%"},
+ {"id":"C1_cover","kind":"slide","img":"raw/kashta_b.jpg","text":"أنواع الناس\nفي القَطّة","sub":"منشن اللي يشبه كل واحد","pos":"45%"},
+ {"id":"C1_s1","kind":"slide","img":"raw/wallet_a.jpg","num":"١","text":"اللي ينسى محفظته","sub":"يتذكرها بس لما توصل الفاتورة","pos":"25%"},
+ {"id":"C1_s2","kind":"slide","img":"raw/calc_a.jpg","num":"٢","text":"اللي يحسبها بالهللة","sub":"«أنت أخذت ماء.. يعني عليك زيادة»","pos":"35%"},
+ {"id":"C1_cta","kind":"cta","text":"وأنت أي واحد؟","sub":"خلّ ديفيزو يحسبها عنكم\nكل واحد يعرف وش عليه"}
+]

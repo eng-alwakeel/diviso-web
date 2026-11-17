@@ -14097,9 +14097,38 @@ Splitwise deserves credit for pioneering the expense-splitting category. [Diviso
 2. سجّلوا كل مصروف فوراً
 3. استخدموا Diviso للتتبع
 
+## كيف تشتغل حاسبة تقسيم مصاريف الرحلة؟
+
+حاسبة تقسيم مصاريف الرحلة تعمل بخطوتين: أولاً تحسب **نصيب كل شخص العادل** (الإجمالي ÷ عدد المشاركين، بافتراض استخدام متساوٍ)، ثم تقارنه بما دفعه كل شخص فعلياً لتحدد **أقل عدد تحويلات** يسوّي الحساب بين الجميع.
+
+### مثال رقمي: 4 أصدقاء، رحلة 3 أيام
+
+رحلة لـ4 أصدقاء لمدة 3 أيام: شخص واحد حجز الطيران للجميع، شخص آخر حجز الفندق، والأكل تُدفع فيه بالتناوب يومياً. توزيع التكلفة على الإجمالي:
+
+- **الطيران** (حجزه الشخص أ لجميع الأربعة): 45% من إجمالي الرحلة
+- **الفندق** (حجزه الشخص ب لجميع الأربعة): 34% من الإجمالي
+- **الأكل** (3 دفعات يومية بالتناوب: ج اليوم الأول، د اليوم الثاني، أ اليوم الثالث): 7% من الإجمالي لكل يوم (21% بالمجموع)
+
+**نصيب كل شخص العادل** = 100% ÷ 4 = **25% من الإجمالي**، بغض النظر عن من دفع ماذا.
+
+بمقارنة ما دفعه كل شخص بنصيبه العادل:
+- الشخص أ دفع 52% (طيران + يوم أكل) → له فائض **27%**
+- الشخص ب دفع 34% (الفندق) → له فائض **9%**
+- الشخص ج دفع 7% فقط → عليه **18%**
+- الشخص د دفع 7% فقط → عليه **18%**
+
+**أقل عدد تحويلات لتسوية الحساب = 3 تحويلات فقط**: يحوّل ج للشخص أ 18%، يحوّل د للشخص أ 9% (يُسوَّى حساب أ بالكامل)، ثم يحوّل د للشخص ب 9% المتبقية. بهذه الطريقة يُسوّى حساب الأربعة بأقل عدد ممكن من التحويلات، لا بتحويل كل شخص لكل شخص آخر.
+
 ## الخلاصة
 
-Diviso يجعل تقسيم مصاريف السفر سهلاً ومريحاً.
+Diviso يجعل تقسيم مصاريف السفر سهلاً ومريحاً، ويحسب لكم أقل عدد تحويلات لتسوية الحساب تلقائياً.
+
+## أسئلة شائعة
+
+### ما أسهل طريقة لتقسيم مصاريف السفر مع الأصدقاء؟
+أسهل طريقة عملية هي تسجيل كل مصروف فور حدوثه (من دفعه ومن استفاد منه)، وترك حساب النصيب العادل وأقل عدد التحويلات للتطبيق بدلاً من حسابه يدوياً بعد الرحلة.
+
+**سوّ مجموعتك في Diviso الآن وأضف أول مصروف.**
     `,
     contentEn: `
 ## Introduction
@@ -14198,11 +14227,38 @@ This process takes 10 minutes instead of the usual hours of spreadsheet wranglin
 
 - **Trip budget, clear balances, and in-group chat** — Everything the trip needs in one group
 
+## How Does a Trip Expense Splitter Work?
+
+A trip expense splitter works in two steps: first it calculates **each person's fair share** (the total ÷ number of participants, assuming equal use), then compares that to what each person actually paid to find **the minimum number of transfers** needed to settle up between everyone.
+
+### Worked Example: 4 Friends, a 3-Day Trip
+
+A 3-day trip for 4 friends: one person booked the flights for everyone, another booked the hotel, and food was paid for in turns each day. The cost breakdown of the total trip:
+
+- **Flights** (booked by Person A for all 4): 45% of the trip total
+- **Hotel** (booked by Person B for all 4): 34% of the total
+- **Food** (3 daily payments in turns: C on day 1, D on day 2, A on day 3): 7% of the total per day (21% combined)
+
+**Each person's fair share** = 100% ÷ 4 = **25% of the total**, regardless of who paid for what.
+
+Comparing what each person actually paid to their fair share:
+- Person A paid 52% (flights + one day of food) → owed back **27%**
+- Person B paid 34% (the hotel) → owed back **9%**
+- Person C paid only 7% → owes **18%**
+- Person D paid only 7% → owes **18%**
+
+**The minimum number of transfers to settle up = just 3 transfers**: C transfers 18% to A, D transfers 9% to A (fully settling A's balance), then D transfers the remaining 9% to B. This settles all four balances with as few transfers as possible, instead of everyone transferring to everyone else.
+
 ## Conclusion
 
-Splitting travel expenses doesn't have to be awkward or stressful. With the right preparation, a simple logging habit, and a good app, you can handle the money side of group travel in minutes instead of hours.
+Splitting travel expenses doesn't have to be awkward or stressful. With the right preparation, a simple logging habit, and a good app, you can handle the money side of group travel in minutes instead of hours — including working out the minimum transfers needed to settle up.
 
-**[Try Diviso for your next trip](/auth?mode=signup)**
+## Frequently Asked Questions
+
+### What is the easiest way to split travel expenses with friends?
+The easiest practical approach is logging every expense the moment it happens (who paid and who benefited), and letting the app calculate each person's fair share and the minimum transfers instead of working it out by hand after the trip.
+
+**Create your group in Diviso now and add your first expense.**
     `
   },
 ];

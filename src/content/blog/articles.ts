@@ -9540,6 +9540,29 @@ Splitting the cost of the Eid al-Adha sacrifice among family becomes much easier
 - **حسب عدد أيام الوجود الفعلي بالشهر**: نفس منطق الكهرباء، لكن بعدد الأيام بدل الساعات
 - **استثناء استخدامات خاصة**: مثل شخص يغسل سيارته بانتظام بخرطوم المسكن — يمكن الاتفاق على مساهمة إضافية منه
 
+## كيف تقسم فاتورة المياه على الوحدات لما العمارة فيها عداد واحد؟
+
+هذا موقف مختلف عن تقسيم الفاتورة بين شركاء سكن داخل شقة واحدة: هنا عداد ماء واحد يغذي **عدة وحدات مستقلة** في نفس العمارة (شقق مختلفة، لكل واحدة سكانها الخاصون)، بدون عداد فرعي لكل وحدة. الطريقتان الأكثر استخداماً هما **عدد السكان في كل وحدة** أو **مساحة الوحدة** كنسبة من إجمالي مساحة العمارة.
+
+### مثال عملي: عمارة من 4 وحدات
+
+عمارة بها 4 وحدات تتشارك عداد ماء واحد. بيانات الوحدات:
+
+- **الوحدة 1**: 30% من إجمالي مساحة العمارة، يسكنها 4 أشخاص
+- **الوحدة 2**: 25% من المساحة، يسكنها 2 أشخاص
+- **الوحدة 3**: 25% من المساحة، يسكنها 3 أشخاص
+- **الوحدة 4**: 20% من المساحة، يسكنها شخص واحد
+
+**إجمالي عدد السكان في العمارة** = 4 + 2 + 3 + 1 = 10 أشخاص.
+
+**التقسيم حسب عدد السكان**: نصيب كل وحدة = (عدد سكانها ÷ 10) × 100
+- الوحدة 1: 40% | الوحدة 2: 20% | الوحدة 3: 30% | الوحدة 4: 10%
+
+**التقسيم حسب مساحة الوحدة**: نصيب كل وحدة = نسبة مساحتها كما هي
+- الوحدة 1: 30% | الوحدة 2: 25% | الوحدة 3: 25% | الوحدة 4: 20%
+
+لاحظوا الفرق: الوحدة 4 (شخص واحد لكن مساحة كبيرة نسبياً) تدفع 10% فقط حسب عدد السكان، لكن 20% حسب المساحة. الوحدات الكبيرة غالباً فيها استهلاك ماء أعلى (حدائق، عدة حمامات) حتى لو عدد سكانها قليل، فلهذا كثير من العمارات تعتمد التقسيم حسب مساحة الوحدة أو مزيجاً بين المساحة وعدد السكان، لا عدد السكان فقط.
+
 ## خطوات عملية لتطبيق هذا النظام
 
 ### الخطوة 1: اتفقوا على طريقة القياس قبل أول فاتورة
@@ -9639,6 +9662,29 @@ Water is harder to measure individually than electricity, so the common approach
 - **Equal split**: acceptable if usage is roughly similar across everyone
 - **By actual days present in the month**: the same logic as electricity, but using days instead of hours
 - **Excluding special usage**: like someone regularly washing their car with the house hose — the group can agree on an extra contribution from them
+
+## How Do You Split One Building Water Meter Across Units?
+
+This is a different situation from splitting a bill among roommates inside one apartment: here, a single water meter feeds **several independent units** in the same building (separate apartments, each with its own residents), with no sub-meter per unit. The two most common approaches are splitting by **the number of residents in each unit** or by **each unit's size** as a percentage of the building's total area.
+
+### A Worked Example: A 4-Unit Building
+
+A building with 4 units sharing one water meter. The units' data:
+
+- **Unit 1**: 30% of the building's total area, home to 4 people
+- **Unit 2**: 25% of the area, home to 2 people
+- **Unit 3**: 25% of the area, home to 3 people
+- **Unit 4**: 20% of the area, home to 1 person
+
+**Total residents in the building** = 4 + 2 + 3 + 1 = 10 people.
+
+**Splitting by number of residents**: each unit's share = (its resident count ÷ 10) × 100
+- Unit 1: 40% | Unit 2: 20% | Unit 3: 30% | Unit 4: 10%
+
+**Splitting by unit size**: each unit's share = its area percentage as-is
+- Unit 1: 30% | Unit 2: 25% | Unit 3: 25% | Unit 4: 20%
+
+Notice the difference: Unit 4 (one person, but a relatively large area) pays only 10% by resident count, but 20% by area. Larger units often have higher water usage (gardens, multiple bathrooms) even with fewer residents, which is why many buildings split by unit size, or a mix of size and resident count, rather than resident count alone.
 
 ## A Practical System for Applying This
 

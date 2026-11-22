@@ -11,7 +11,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
-import { appStoreUrl, trackAppStoreClick } from "@/lib/appStoreLinks";
+import { smartLinkUrl } from "@/lib/appStoreLinks";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -130,10 +130,9 @@ const BlogPost = () => {
               {isRTL ? "ابدأ بتقسيم مصاريفك مع أصدقائك بكل سهولة" : "Start splitting expenses with your friends easily"}
             </p>
             <a
-              href={appStoreUrl(`blog_${article.slug}`)}
+              href={smartLinkUrl(`blog_${article.slug}`, { source: "blog", medium: "article", campaign: `blog_${article.slug}` })}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => trackAppStoreClick(`blog_${article.slug}`)}
               className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
             >
               {isRTL ? "ابدأ الآن" : "Start now"}

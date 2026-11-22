@@ -7,7 +7,8 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Users, Sparkles, ArrowRight, AlertTriangle } from "lucide-react";
-import { APP_STORE_ID, EXTERNAL_LINK_PROPS, appStoreUrl, trackAppStoreClick } from "@/lib/appStoreLinks";
+import { APP_STORE_ID } from "@/lib/appStoreLinks";
+import { DeviceStoreButton, inviteStoreLinks } from "@/components/StoreBadges";
 
 interface InvitePreview {
   is_valid: boolean;
@@ -90,10 +91,12 @@ const InviteRoute = () => {
     return () => m.remove();
   }, [code]);
 
-  const handleDownload = () => {
-    trackAppStoreClick("invite_link");
-    trackAnalyticsEvent("download_clicked", { store: "ios", source: "invite", token: code });
-  };
+  // MSG-145: the button goes to the phone's own store; once installed, the
+  // same /i/ link opens the app (iOS universal link / Android App Link) and
+  // the app keeps the token through sign-in (pendingInviteTokenProvider).
+  const storeLinks = inviteStoreLinks("invite_link", "group_link", (store) =>
+    trackAnalyticsEvent("download_clicked", { store, source: "invite", token: code }),
+  );
 
   // ---------- Renders ----------
 
@@ -130,11 +133,9 @@ const InviteRoute = () => {
           <p className="text-sm text-muted-foreground">
             {t("groups:messages.invalid_invite_link_desc")}
           </p>
-          <Button asChild className="w-full">
-            <a href={appStoreUrl("invite_link")} {...EXTERNAL_LINK_PROPS} onClick={handleDownload}>
-              {t("groups:messages.download_app", { defaultValue: "حمّل التطبيق" })}
-            </a>
-          </Button>
+          <DeviceStoreButton links={storeLinks} size="default" className="w-full">
+            {t("groups:messages.download_app", { defaultValue: "حمّل التطبيق" })}
+          </DeviceStoreButton>
           <Button onClick={() => navigate("/")} variant="ghost" className="w-full">
             {t("groups:messages.back_to_home", { defaultValue: "العودة للرئيسية" })}
           </Button>
@@ -195,12 +196,10 @@ const InviteRoute = () => {
           })}
         </p>
 
-        <Button asChild size="lg" className="w-full gap-2 font-bold">
-          <a href={appStoreUrl("invite_link")} {...EXTERNAL_LINK_PROPS} onClick={handleDownload}>
-            {t("groups:messages.download_app", { defaultValue: "حمّل التطبيق" })}
-            <ArrowRight className="w-4 h-4" />
-          </a>
-        </Button>
+        <DeviceStoreButton links={storeLinks} className="w-full gap-2 font-bold">
+          {t("groups:messages.download_app", { defaultValue: "حمّل التطبيق" })}
+          <ArrowRight className="w-4 h-4" />
+        </DeviceStoreButton>
 
         <p className="text-[11px] text-muted-foreground/80">
           Diviso · {t("groups:messages.split_fairly", { defaultValue: "قسّم بذكاء" })}

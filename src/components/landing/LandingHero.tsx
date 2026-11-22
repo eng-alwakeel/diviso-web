@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { campaignToken } from '@/lib/appStoreLinks';
 import { BRAND_CONFIG } from '@/lib/brandConfig';
 
 interface LandingHeroProps {
@@ -11,9 +12,12 @@ interface LandingHeroProps {
 
 const LandingHero: React.FC<LandingHeroProps> = ({ title, ctaText, isRTL }) => {
   const navigate = useNavigate();
+  const { pathname } = useLocation();
+  // Smart link (MSG-145): the page picks the store per device; ct keeps this page's name.
+  const downloadPath = `/download?ct=${campaignToken(`web_${pathname.replace(/^\//, '')}`)}`;
 
   const handleCTA = () => {
-    navigate('/download');
+    navigate(downloadPath);
   };
 
   return (

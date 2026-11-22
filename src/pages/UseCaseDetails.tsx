@@ -111,7 +111,7 @@ const UseCaseDetails = () => {
           "@type": "SoftwareApplication",
           "name": "Diviso",
           "applicationCategory": "FinanceApplication",
-          "operatingSystem": "Web, iOS",
+          "operatingSystem": "Web, iOS, Android",
           "offers": {
             "@type": "Offer",
             "price": "0",

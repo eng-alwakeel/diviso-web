@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Button, ButtonProps } from "@/components/ui/button";
 import { Download } from "lucide-react";
-import { appStoreUrl, trackAppStoreClick } from "@/lib/appStoreLinks";
+import { appStoreUrl, trackAppStoreClick, trackPlayStoreClick, webPlayStoreUrl } from "@/lib/appStoreLinks";
 import { detectPlatform } from "@/lib/platform";
 import { useAnalyticsEvents } from "@/hooks/useAnalyticsEvents";
 
@@ -13,8 +13,8 @@ interface DownloadAppButtonProps extends Omit<ButtonProps, "onClick"> {
   showIcon?: boolean;
 }
 
-// Unified CTA: iOS devices go straight to the App Store, everyone else
-// lands on /download (platform picker + QR).
+// Unified CTA: iPhone/iPad go straight to the App Store, Android to Google
+// Play, computers land on /download (both badges + QR).
 export const DownloadAppButton: React.FC<DownloadAppButtonProps> = ({
   source = "cta",
   label,
@@ -28,10 +28,14 @@ export const DownloadAppButton: React.FC<DownloadAppButtonProps> = ({
 
   const handleClick = () => {
     const platform = detectPlatform();
-    trackEvent("download_clicked", { store: platform === "ios" ? "ios" : "download_page", source });
+    const store = platform === "desktop" ? "download_page" : platform;
+    trackEvent("download_clicked", { store, source });
     if (platform === "ios") {
       trackAppStoreClick(`web_${source}`);
       window.open(appStoreUrl(`web_${source}`), "_blank", "noopener,noreferrer");
+    } else if (platform === "android") {
+      trackPlayStoreClick(`web_${source}`);
+      window.open(webPlayStoreUrl(source), "_blank", "noopener,noreferrer");
     } else {
       navigate("/download");
     }

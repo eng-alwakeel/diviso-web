@@ -85,7 +85,8 @@ const costs = [
   { tier: "5️⃣", label: "خمس نقاط", items: "إنشاء مجموعة، مخطط الرحلة" },
 ];
 
-import { ANDROID_AVAILABLE, PLAY_STORE_URL, EXTERNAL_LINK_PROPS, appStoreUrl, trackAppStoreClick } from "@/lib/appStoreLinks";
+import { EXTERNAL_LINK_PROPS, appStoreUrl, trackAppStoreClick } from "@/lib/appStoreLinks";
+import { StoreBadges, webStoreLinks } from "@/components/StoreBadges";
 
 const Pricing = () => {
   const [cycle, setCycle] = useState<Cycle>("yearly");
@@ -385,57 +386,9 @@ const Pricing = () => {
         <section className="px-4 max-w-3xl mx-auto text-center">
           <h3 className="text-xl font-bold mb-2">حمّل التطبيق وابدأ الآن</h3>
           <p className="text-muted-foreground text-sm mb-6">
-            {ANDROID_AVAILABLE
-              ? "متاح على iPhone وiPad."
-              : "متاح على iPhone — نسخة أندرويد قريباً."}
+            حمّله على جوالك من App Store أو Google Play.
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-3">
-            <a
-              href={appStoreUrl("web_pricing_footer")}
-              {...EXTERNAL_LINK_PROPS}
-              onClick={() => trackAppStoreClick("web_pricing_footer")}
-              className="flex items-center gap-3 px-5 py-3 rounded-xl bg-foreground text-background hover:opacity-90 transition"
-              aria-label="Download on the App Store"
-            >
-              <svg viewBox="0 0 24 24" className="w-7 h-7 fill-current" aria-hidden>
-                <path d="M16.365 1.43c0 1.14-.493 2.27-1.177 3.08-.744.9-1.99 1.57-2.987 1.57-.12 0-.23-.02-.3-.03-.01-.06-.04-.22-.04-.39 0-1.15.572-2.27 1.206-2.98.804-.94 2.142-1.64 3.248-1.68.03.13.05.28.05.43zm4.565 15.71c-.03.07-.463 1.58-1.518 3.12-.945 1.34-1.94 2.71-3.43 2.71-1.517 0-1.9-.88-3.63-.88-1.698 0-2.302.91-3.67.91-1.377 0-2.332-1.26-3.428-2.8-1.287-1.82-2.323-4.65-2.323-7.34 0-4.31 2.797-6.6 5.552-6.6 1.448 0 2.675.95 3.6.95.865 0 2.222-1.01 3.902-1.01.613 0 2.886.06 4.374 2.19-.13.09-2.383 1.37-2.383 4.19 0 3.26 2.854 4.42 2.955 4.46z"/>
-              </svg>
-              <div className="text-start leading-tight">
-                <div className="text-[10px] opacity-80">Download on the</div>
-                <div className="text-base font-semibold -mt-0.5">App Store</div>
-              </div>
-            </a>
-            {ANDROID_AVAILABLE ? (
-              <a
-                href={PLAY_STORE_URL}
-                {...EXTERNAL_LINK_PROPS}
-                className="flex items-center gap-3 px-5 py-3 rounded-xl bg-foreground text-background hover:opacity-90 transition"
-                aria-label="Get it on Google Play"
-              >
-                <svg viewBox="0 0 24 24" className="w-7 h-7" aria-hidden>
-                  <path fill="#34A853" d="M3.609 1.814 13.792 12 3.61 22.186a1.5 1.5 0 0 1-.61-1.21V3.024c0-.474.225-.9.61-1.21z"/>
-                  <path fill="#FBBC04" d="m13.792 12 3.428-3.428 4.39 2.531c.99.57.99 1.225 0 1.795l-4.39 2.53L13.792 12z"/>
-                  <path fill="#EA4335" d="M17.22 8.572 4.5 1.245A1.5 1.5 0 0 0 3.609 1.814L13.792 12l3.428-3.428z"/>
-                  <path fill="#4285F4" d="M17.22 15.428 13.792 12 3.61 22.186A1.5 1.5 0 0 0 4.5 22.755l12.72-7.327z"/>
-                </svg>
-                <div className="text-start leading-tight">
-                  <div className="text-[10px] opacity-80">GET IT ON</div>
-                  <div className="text-base font-semibold -mt-0.5">Google Play</div>
-                </div>
-              </a>
-            ) : (
-              <div
-                className="flex items-center gap-3 px-5 py-3 rounded-xl border border-border bg-muted/30 text-muted-foreground cursor-not-allowed"
-                aria-label="Android coming soon"
-              >
-                <span className="text-2xl" aria-hidden>🤖</span>
-                <div className="text-start leading-tight">
-                  <div className="text-[10px] opacity-80">Android</div>
-                  <div className="text-base font-semibold -mt-0.5">قريباً</div>
-                </div>
-              </div>
-            )}
-          </div>
+          <StoreBadges links={webStoreLinks("pricing_footer")} height={48} />
         </section>
       </main>
 

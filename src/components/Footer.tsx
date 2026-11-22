@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { BrandedDiviso } from "@/components/ui/branded-diviso";
+import { StoreBadges, webStoreLinks } from "@/components/StoreBadges";
 
 const TikTokIcon = ({ className }: { className?: string }) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor">
@@ -42,6 +43,7 @@ export const Footer = () => {
             <p className="text-muted-foreground">
               {t('footer.description')}
             </p>
+            <StoreBadges links={webStoreLinks("footer")} height={40} align="start" />
           </div>
 
           {/* Useful Links */}

@@ -5,7 +5,8 @@ import { trackAnalyticsEvent } from "@/hooks/useAnalyticsEvents";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, AlertTriangle } from "lucide-react";
-import { APP_STORE_ID, APP_STORE_URL, EXTERNAL_LINK_PROPS } from "@/lib/appStoreLinks";
+import { APP_STORE_ID } from "@/lib/appStoreLinks";
+import { DeviceStoreButton, inviteStoreLinks } from "@/components/StoreBadges";
 
 /**
  * Fallback for a game-table invite `https://diviso.app/t/<code>` (1.0.21,
@@ -37,9 +38,11 @@ const TableInviteRoute = () => {
     return () => m.remove();
   }, [code, valid]);
 
-  const handleDownload = () => {
-    trackAnalyticsEvent("download_clicked", { store: "ios", source: "table_invite" });
-  };
+  // MSG-145: the phone's own store; after install the same /t/ link opens
+  // the table in the app (universal link / Android App Link).
+  const storeLinks = inviteStoreLinks("table_invite", "table_link", (store) =>
+    trackAnalyticsEvent("download_clicked", { store, source: "table_invite" }),
+  );
 
   if (!valid) {
     return (
@@ -73,12 +76,10 @@ const TableInviteRoute = () => {
 
         <p className="text-sm text-muted-foreground">{t("groups:table_invite.open_in_app")}</p>
 
-        <Button asChild size="lg" className="w-full gap-2 font-bold">
-          <a href={APP_STORE_URL} {...EXTERNAL_LINK_PROPS} onClick={handleDownload}>
-            {t("groups:table_invite.download")}
-            <ArrowRight className="w-4 h-4" />
-          </a>
-        </Button>
+        <DeviceStoreButton links={storeLinks} className="w-full gap-2 font-bold">
+          {t("groups:table_invite.download")}
+          <ArrowRight className="w-4 h-4" />
+        </DeviceStoreButton>
 
         <p className="text-[11px] text-muted-foreground/80">Diviso</p>
       </Card>

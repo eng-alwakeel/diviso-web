@@ -16,8 +16,8 @@ const faqItems = [
   {
     q: "كيف أبدأ بـ Diviso؟",
     qEn: "How do I get started?",
-    a: "حمّل التطبيق من App Store وسجّل دخول، وتبدأ مجموعتك على طول. وفيه باقات اختيارية داخل التطبيق لمزايا إضافية، تشوف تفاصيلها من داخله.",
-    aEn: "Download the app from the App Store, sign in, and start your group right away. Optional plans inside the app add extra features; see the details in the app.",
+    a: "حمّل التطبيق من App Store أو Google Play وسجّل دخول، وتبدأ مجموعتك على طول. وفيه باقات اختيارية داخل التطبيق لمزايا إضافية، تشوف تفاصيلها من داخله.",
+    aEn: "Download the app from the App Store or Google Play, sign in, and start your group right away. Optional plans inside the app add extra features; see the details in the app.",
   },
   {
     q: "هل يدعم Diviso الريال السعودي؟",

@@ -801,7 +801,7 @@ There's no absolute winner among Splitwise, Tricount, and Diviso; the right choi
 ### Diviso
 - **دعم العربية**: واجهة عربية أصلية مصممة بـ RTL من الأساس، لا كترجمة لاحقة
 - **الريال السعودي**: مدعوم
-- **آيفون**: ديفيزو متوفر على [App Store](https://apps.apple.com/app/id6761329043) لأجهزة iPhone وiPad
+- **آيفون**: ديفيزو متوفر على [App Store](https://apps.apple.com/app/id6761329043) لأجهزة iPhone وiPad، وعلى [Google Play](https://play.google.com/store/apps/details?id=app.diviso&referrer=utm_source%3Dblog%26utm_medium%3Darticle%26utm_campaign%3Dblog_inline) لأجهزة أندرويد
 
 ## ماذا يعني "دعم عربي أصلي" بالضبط؟
 
@@ -833,7 +833,7 @@ There's no absolute winner among Splitwise, Tricount, and Diviso; the right choi
 
 - ✅ واجهة عربية أصلية بتصميم RTL كامل منذ الأساس
 - ✅ تسجيل المصاريف بالريال السعودي
-- ✅ متوفر على [App Store](https://apps.apple.com/app/id6761329043) لأجهزة iPhone وiPad، وعبر المتصفح
+- ✅ متوفر على [App Store](https://apps.apple.com/app/id6761329043) لأجهزة iPhone وiPad، وعلى [Google Play](https://play.google.com/store/apps/details?id=app.diviso&referrer=utm_source%3Dblog%26utm_medium%3Darticle%26utm_campaign%3Dblog_inline) لأجهزة أندرويد، وعبر المتصفح
 
 ## أسئلة شائعة
 
@@ -883,7 +883,7 @@ When searching for a "bill-splitting app," most well-known options in this space
 ### Diviso
 - **Arabic support**: a native Arabic interface designed with RTL from the ground up, not a later translation layer
 - **Saudi Riyal**: supported
-- **iPhone**: Diviso is available on the [App Store](https://apps.apple.com/app/id6761329043) for iPhone and iPad
+- **iPhone**: Diviso is available on the [App Store](https://apps.apple.com/app/id6761329043) for iPhone and iPad, and on [Google Play](https://play.google.com/store/apps/details?id=app.diviso&referrer=utm_source%3Dblog%26utm_medium%3Darticle%26utm_campaign%3Dblog_inline) for Android
 
 ## What Does "Native Arabic Support" Actually Mean?
 
@@ -915,7 +915,7 @@ Is the app available as a standalone app on the App Store, or will usage be thro
 
 - ✅ A native Arabic interface designed with full RTL from the ground up
 - ✅ Logs expenses in Saudi riyal
-- ✅ Available on the [App Store](https://apps.apple.com/app/id6761329043) for iPhone and iPad, and on the web
+- ✅ Available on the [App Store](https://apps.apple.com/app/id6761329043) for iPhone and iPad, on [Google Play](https://play.google.com/store/apps/details?id=app.diviso&referrer=utm_source%3Dblog%26utm_medium%3Darticle%26utm_campaign%3Dblog_inline) for Android, and on the web
 
 ## Frequently Asked Questions
 
@@ -13532,7 +13532,7 @@ Calculating monthly expenses isn't hard — it just needs simple commitment. Sta
 - ريال سعودي
 - تقسيم ذكي (متساوي، نسبي)
 - دعوة الأصدقاء برابط
-- ديفيزو متوفر على [App Store](https://apps.apple.com/app/id6761329043) لأجهزة iPhone وiPad
+- ديفيزو متوفر على [App Store](https://apps.apple.com/app/id6761329043) لأجهزة iPhone وiPad، وعلى [Google Play](https://play.google.com/store/apps/details?id=app.diviso&referrer=utm_source%3Dblog%26utm_medium%3Darticle%26utm_campaign%3Dblog_inline) لأجهزة أندرويد
 
 **العيوب:**
 - جديد نسبياً في السوق
@@ -13619,7 +13619,7 @@ Every time you go out with friends or travel with family, splitting expenses bec
 - Saudi Riyal
 - Smart splitting (equal, proportional)
 - Invite friends via link
-- Diviso is available on the [App Store](https://apps.apple.com/app/id6761329043) for iPhone and iPad
+- Diviso is available on the [App Store](https://apps.apple.com/app/id6761329043) for iPhone and iPad, and on [Google Play](https://play.google.com/store/apps/details?id=app.diviso&referrer=utm_source%3Dblog%26utm_medium%3Darticle%26utm_campaign%3Dblog_inline) for Android
 
 **Cons:**
 - Relatively new in the market
@@ -13986,7 +13986,7 @@ Before diving into specific apps, here's what matters most:
 
 **Pros:**
 - ✅ Clean, modern interface
-- ✅ Available on the [App Store](https://apps.apple.com/app/id6761329043) for iPhone and iPad
+- ✅ Available on the [App Store](https://apps.apple.com/app/id6761329043) for iPhone and iPad, and on [Google Play](https://play.google.com/store/apps/details?id=app.diviso&referrer=utm_source%3Dblog%26utm_medium%3Darticle%26utm_campaign%3Dblog_inline) for Android
 
 **Cons:**
 - ❌ Newer app — smaller user base than Splitwise
@@ -13998,7 +13998,7 @@ The pioneer of expense splitting. Splitwise has a large user base and solid func
 
 **Pros:**
 - ✅ Large user base
-- ✅ Available on iOS (App Store) and web
+- ✅ Available on iOS (App Store), Android (Google Play) and web
 - ✅ Good group management
 
 **Cons:**

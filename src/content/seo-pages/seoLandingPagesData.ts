@@ -255,7 +255,7 @@ export const seoLandingPages: SEOLandingPageData[] = [
     slug: 'splitwise-alternative-root',
     route: '/splitwise-alternative',
     seoTitle: 'Splitwise Alternative 2026 — Apps Like Splitwise | Diviso',
-    metaDescription: 'Looking for a Splitwise alternative? Diviso splits group expenses: add who paid, split equally or by percentage, and see who owes whom. On the App Store for iPhone and iPad.',
+    metaDescription: 'Looking for a Splitwise alternative? Diviso splits group expenses: add who paid, split equally or by percentage, and see who owes whom. On the App Store for iPhone and iPad and on Google Play for Android.',
     h1: 'Splitwise Alternative — Diviso for Group Expenses',
     keywords: 'splitwise alternative, apps like splitwise, splitwise competitor 2026, app like splitwise, diviso vs splitwise',
     heroSubtitle: 'Diviso is an expense-splitting app for groups: add shared expenses, split them between members, and settle up. Try it without signup.',
@@ -278,10 +278,10 @@ export const seoLandingPages: SEOLandingPageData[] = [
     faqs: [
       { question: 'What apps are like Splitwise?', answer: 'Diviso is one Splitwise alternative: groups can add shared expenses, split them between members, and settle up.' },
       { question: 'Can I import data from Splitwise?', answer: 'There is no direct import from Splitwise.' },
-      { question: 'Is Diviso available on iPhone?', answer: 'Diviso is available on the App Store for iPhone and iPad.' },
+      { question: 'Is Diviso available on iPhone and Android?', answer: 'Yes. Diviso is on the App Store for iPhone and iPad and on Google Play for Android.' },
       { question: 'Does Diviso move money?', answer: 'No. Diviso does not transfer money or ask for bank details. It records who paid and who owes whom.' },
     ],
-    ctaText: 'Download on the App Store',
+    ctaText: 'Download the app',
     ctaSubtext: 'Try without signup.',
     relatedBlogSlugs: ['best-splitwise-alternatives', 'best-apps-to-split-bills', 'how-to-split-expenses-with-friends'],
     relatedPages: [
@@ -552,7 +552,7 @@ export const seoLandingPages: SEOLandingPageData[] = [
     features: [
       { icon: '🔍', title: 'Every Expense Logged', description: 'Each expense shows the amount, who paid, and who shares it.' },
       { icon: '💰', title: 'Net Balances', description: 'See the bottom line — who owes whom, simplified.' },
-      { icon: '📱', title: 'Mobile First', description: 'Log expenses on the go from your iPhone or iPad.' },
+      { icon: '📱', title: 'Mobile First', description: 'Log expenses on the go from your phone: iPhone, iPad or Android.' },
     ],
     useCases: [
       { title: 'Couples', description: 'Track shared household and lifestyle expenses transparently.' },
@@ -590,7 +590,7 @@ export const seoLandingPages: SEOLandingPageData[] = [
     features: [
       { icon: '🔍', title: 'كل مصروف مسجّل', description: 'كل مصروف يعرض المبلغ والدافع والمشاركين.' },
       { icon: '💰', title: 'حسابات صافية', description: 'شوف الخلاصة — مين عليه لمين، مبسّطة.' },
-      { icon: '📱', title: 'جوال أولاً', description: 'سجّل المصاريف وأنت متنقل من iPhone أو iPad.' },
+      { icon: '📱', title: 'جوال أولاً', description: 'سجّل المصاريف وأنت متنقل من جوالك: iPhone أو iPad أو أندرويد.' },
     ],
     useCases: [
       { title: 'الأزواج', description: 'تابع مصاريف البيت والحياة المشتركة بشفافية.' },
@@ -945,7 +945,7 @@ export const seoLandingPages: SEOLandingPageData[] = [
     slug: 'en-splitwise-alternative',
     route: '/en/splitwise-alternative',
     seoTitle: 'Splitwise Alternative 2026 — Apps Like Splitwise | Diviso',
-    metaDescription: 'Looking for apps like Splitwise? Diviso is a Splitwise alternative for splitting group expenses. Available on the App Store for iPhone and iPad, and on the web.',
+    metaDescription: 'Looking for apps like Splitwise? Diviso is a Splitwise alternative for splitting group expenses. Available on the App Store for iPhone and iPad, on Google Play for Android, and on the web.',
     h1: 'Apps Like Splitwise — Diviso as an Alternative',
     keywords: 'splitwise alternative 2026, apps like splitwise, splitwise competitor, app like splitwise, expense sharing app',
     heroSubtitle: 'Diviso is an expense-splitting app for groups: add shared expenses, split them between members, and settle up.',
@@ -955,7 +955,7 @@ export const seoLandingPages: SEOLandingPageData[] = [
     ],
     features: [
       { icon: '🎨', title: 'Modern Design', description: 'Clean, uncluttered interface built for mobile-first usage.' },
-      { icon: '📱', title: 'Works Everywhere', description: 'Available on the App Store for iPhone and iPad, and on the web.' },
+      { icon: '📱', title: 'Works Everywhere', description: 'Available on the App Store for iPhone and iPad, on Google Play for Android, and on the web.' },
     ],
     useCases: [
       { title: 'Switching from Splitwise', description: 'Create a group in Diviso and invite your members.' },
@@ -991,7 +991,7 @@ export const seoLandingPages: SEOLandingPageData[] = [
     features: [
       { icon: '➗', title: 'Fair Splits', description: 'Split each expense equally or by percentages, and choose who shares it.' },
       { icon: '🧮', title: 'Smart Math', description: 'Automatic balance calculations.' },
-      { icon: '📱', title: 'iPhone, iPad & Web', description: 'Available on the App Store for iPhone and iPad, and on the web.' },
+      { icon: '📱', title: 'iPhone, iPad, Android & Web', description: 'Available on the App Store for iPhone and iPad, on Google Play for Android, and on the web.' },
     ],
     useCases: [
       { title: 'Daily Life', description: 'Split coffee, meals, and everyday shared costs effortlessly with friends.' },
@@ -999,10 +999,10 @@ export const seoLandingPages: SEOLandingPageData[] = [
       { title: 'Events', description: 'Track every contribution to a shared event and see who owes whom.' },
     ],
     faqs: [
-      { question: 'Where can I use Diviso?', answer: 'Available on the App Store for iPhone and iPad, and on the web.' },
+      { question: 'Where can I use Diviso?', answer: 'Available on the App Store for iPhone and iPad, on Google Play for Android, and on the web.' },
       { question: 'How do I get started?', answer: 'Download Diviso, create a group, and add your first expense. You can try without even creating an account.' },
     ],
-    ctaText: 'Download on the App Store',
+    ctaText: 'Download the app',
     ctaSubtext: 'Try without signup.',
     relatedBlogSlugs: ['best-apps-to-split-bills', 'best-splitwise-alternatives'],
     relatedPages: [

@@ -4,10 +4,11 @@ import { SEO } from "@/components/SEO";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Gift, Sparkles, Users, Wallet, Apple, Smartphone, ArrowRight, Loader2 } from "lucide-react";
+import { Gift, Sparkles, Users, Wallet, ArrowRight, Loader2 } from "lucide-react";
 import { useAnalyticsEvents } from "@/hooks/useAnalyticsEvents";
 
-import { ANDROID_AVAILABLE, APP_STORE_ID, appStoreUrl, trackAppStoreClick, PLAY_STORE_URL, EXTERNAL_LINK_PROPS } from "@/lib/appStoreLinks";
+import { APP_STORE_ID, appStoreUrl, playStoreUrl, trackAppStoreClick, trackPlayStoreClick } from "@/lib/appStoreLinks";
+import { StoreBadges, StoreLinks } from "@/components/StoreBadges";
 import { detectPlatform, Platform } from "@/lib/platform";
 const DEEP_LINK_SCHEME = "diviso://referral";
 
@@ -54,7 +55,7 @@ export default function ReferralLanding() {
     })();
   }, [referralCode, trackEvent]);
 
-  // Inject Smart App Banner meta tags (iOS & Android)
+  // Smart App Banner (iOS only — Android has no equivalent meta tag)
   useEffect(() => {
     const tags: HTMLMetaElement[] = [];
     const add = (name: string, content: string) => {
@@ -68,17 +69,20 @@ export default function ReferralLanding() {
       "apple-itunes-app",
       `app-id=${APP_STORE_ID}, app-argument=diviso://referral/${referralCode ?? ""}`,
     );
-    if (ANDROID_AVAILABLE) {
-      add("google-play-app", "app-id=app.diviso");
-    }
     return () => tags.forEach((t) => t.remove());
   }, [referralCode]);
 
-  const handleDownload = (store: "ios" | "android") => {
-    if (store === "android" && !ANDROID_AVAILABLE) return;
-    trackEvent("download_clicked", { store, code: referralCode });
-    if (store === "ios") trackAppStoreClick("referral");
-    window.open(store === "ios" ? appStoreUrl("referral") : PLAY_STORE_URL, "_blank", "noopener,noreferrer");
+  const storeLinks: StoreLinks = {
+    ios: appStoreUrl("referral"),
+    android: playStoreUrl({ source: "referral", medium: "referral_link", campaign: "referral" }),
+    onIos: () => {
+      trackEvent("download_clicked", { store: "ios", code: referralCode });
+      trackAppStoreClick("referral");
+    },
+    onAndroid: () => {
+      trackEvent("download_clicked", { store: "android", code: referralCode });
+      trackPlayStoreClick("referral");
+    },
   };
 
   const handleOpenInApp = () => {
@@ -159,33 +163,7 @@ export default function ReferralLanding() {
           <p className="text-center text-sm font-medium text-muted-foreground">
             Download the app to get started
           </p>
-          <div className={`grid grid-cols-1 ${ANDROID_AVAILABLE ? "sm:grid-cols-2" : ""} gap-3`}>
-            <Button
-              size="lg"
-              variant="default"
-              onClick={() => handleDownload("ios")}
-              className="h-14 text-base"
-            >
-              <Apple className="h-5 w-5" />
-              Download on the App Store
-            </Button>
-            {ANDROID_AVAILABLE ? (
-              <Button
-                size="lg"
-                variant={platform === "ios" ? "outline" : "default"}
-                onClick={() => handleDownload("android")}
-                className="h-14 text-base"
-              >
-                <Smartphone className="h-5 w-5" />
-                Get it on Google Play
-              </Button>
-            ) : (
-              <div className="h-14 flex items-center justify-center gap-2 rounded-md border border-border bg-muted/30 text-muted-foreground text-base">
-                <Smartphone className="h-5 w-5" />
-                Android — coming soon
-              </div>
-            )}
-          </div>
+          <StoreBadges links={storeLinks} height={52} />
 
           {platform !== "desktop" && (
             <Button

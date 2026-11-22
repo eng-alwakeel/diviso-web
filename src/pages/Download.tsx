@@ -1,38 +1,58 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useMemo } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import { SEO } from "@/components/SEO";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Apple, Smartphone, Sparkles, Users, Wallet } from "lucide-react";
+import { Sparkles, Users, Wallet } from "lucide-react";
 import { useAnalyticsEvents } from "@/hooks/useAnalyticsEvents";
 import { QRCodeDisplay } from "@/components/QRCodeDisplay";
-import { ANDROID_AVAILABLE, PLAY_STORE_URL, appStoreUrl, trackAppStoreClick } from "@/lib/appStoreLinks";
-import { detectPlatform, Platform } from "@/lib/platform";
+import { SMART_LINK_URL, smartLinkTargets, trackAppStoreClick, trackPlayStoreClick } from "@/lib/appStoreLinks";
+import { StoreBadges, StoreLinks, usePlatform } from "@/components/StoreBadges";
 
+// MSG-145 smart link. Phones are normally redirected at the edge
+// (api/smart-link.js) before this page loads; this page covers the rest:
+// an iPad asking for the desktop site gets the App Store, a computer sees
+// both badges + a QR of this same link (the phone that scans it is sent to
+// its own store). `?web=1` = the edge sent a crawler here: never redirect.
 export default function Download() {
   const { trackEvent } = useAnalyticsEvents();
-  const [platform, setPlatform] = useState<Platform>("desktop");
+  const [params] = useSearchParams();
+  const platform = usePlatform();
+  const targets = useMemo(() => smartLinkTargets(params), [params]);
+  const ct = params.get("ct") || params.get("utm_campaign") || "smart_link";
+
+  const links: StoreLinks = {
+    ios: targets.ios,
+    android: targets.android,
+    onIos: () => {
+      trackAppStoreClick(ct);
+      trackEvent("download_clicked", { store: "ios", source: "download_page" });
+    },
+    onAndroid: () => {
+      trackPlayStoreClick(ct);
+      trackEvent("download_clicked", { store: "android", source: "download_page" });
+    },
+  };
 
   useEffect(() => {
-    const p = detectPlatform();
-    setPlatform(p);
-    trackEvent("download_page_viewed", { platform: p });
-  }, [trackEvent]);
+    trackEvent("download_page_viewed", { platform });
+    if (params.get("web") === "1" || platform === "desktop") return;
+    window.location.replace(platform === "ios" ? targets.ios : targets.android);
+  }, [platform, params, targets, trackEvent]);
 
-  const handleDownload = (store: "ios" | "android") => {
-    if (store === "android" && !ANDROID_AVAILABLE) return;
-    trackEvent("download_clicked", { store, source: "download_page" });
-    if (store === "ios") trackAppStoreClick("web_download");
-    window.open(store === "ios" ? appStoreUrl("web_download") : PLAY_STORE_URL, "_blank", "noopener,noreferrer");
-  };
+  // QR = this smart link with the same campaign, tagged as a QR scan.
+  const qrParams = new URLSearchParams(params);
+  qrParams.delete("web");
+  if (!qrParams.get("ct")) qrParams.set("ct", "web_download_qr");
+  if (!qrParams.get("utm_medium")) qrParams.set("utm_medium", "qr");
+  const qrValue = `${SMART_LINK_URL}?${qrParams.toString()}`;
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background via-background to-primary/5 flex flex-col">
       <SEO
         title="حمّل تطبيق ديفيزو | Download Diviso"
-        description="ديفيزو الآن على جوالك — قسّم المصاريف مع أصدقائك وعائلتك بذكاء. حمّل التطبيق من App Store."
+        description="ديفيزو على جوالك: قسّم المصاريف مع أصدقائك وعائلتك. حمّل التطبيق لجوالك."
         canonical="https://www.diviso.app/download"
       />
       <Header />
@@ -46,46 +66,20 @@ export default function Download() {
             ديفيزو الآن في تطبيق الجوال 📱
           </h1>
           <p className="text-lg text-muted-foreground max-w-md mx-auto">
-            انتقلت تجربة ديفيزو الكاملة إلى التطبيق — إدارة المجموعات، تقسيم المصاريف، والتسويات
-            كلها من جوالك. حمّل التطبيق وسجّل دخولك بنفس حسابك.
+            إدارة المجموعات، تقسيم المصاريف، والتسويات كلها من جوالك. حمّل التطبيق وسجّل دخولك
+            بنفس حسابك.
           </p>
         </section>
 
         <section className="mt-10 space-y-3">
-          <div className={`grid grid-cols-1 ${ANDROID_AVAILABLE ? "sm:grid-cols-2" : ""} gap-3`}>
-            <Button
-              size="lg"
-              variant="default"
-              onClick={() => handleDownload("ios")}
-              className="h-14 text-base"
-            >
-              <Apple className="h-5 w-5" />
-              حمّله من App Store
-            </Button>
-            {ANDROID_AVAILABLE ? (
-              <Button
-                size="lg"
-                variant={platform === "ios" ? "outline" : "default"}
-                onClick={() => handleDownload("android")}
-                className="h-14 text-base"
-              >
-                <Smartphone className="h-5 w-5" />
-                Get it on Google Play
-              </Button>
-            ) : (
-              <div className="h-14 flex items-center justify-center gap-2 rounded-md border border-border bg-muted/30 text-muted-foreground text-base">
-                <Smartphone className="h-5 w-5" />
-                نسخة أندرويد — قريبًا
-              </div>
-            )}
-          </div>
+          <StoreBadges links={links} height={52} />
 
           {platform === "desktop" && (
             <Card className="mt-6 p-6 flex flex-col items-center gap-3">
               <p className="text-sm font-medium text-muted-foreground">
                 امسح الرمز بكاميرا جوالك لتحميل التطبيق
               </p>
-              <QRCodeDisplay value={appStoreUrl("web_download_qr")} size={180} showActions={false} />
+              <QRCodeDisplay value={qrValue} size={180} showActions={false} />
             </Card>
           )}
         </section>

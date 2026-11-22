@@ -12,7 +12,10 @@ interface Props {
 
 const SEOLandingPage: React.FC<Props> = ({ data }) => {
   const navigate = useNavigate();
-  const handleCTA = () => navigate('/download');
+  const { pathname } = useLocation();
+  // Smart link (MSG-145): the page picks the store per device; ct keeps this page's name.
+  const downloadPath = `/download?ct=${campaignToken(`web_${pathname.replace(/^\//, '')}`)}`;
+  const handleCTA = () => navigate(downloadPath);
   const isArabic = data.lang === 'ar';
   const dir = data.dir || 'ltr';
 

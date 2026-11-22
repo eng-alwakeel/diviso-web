@@ -53,8 +53,8 @@ export const landingPagesData: LandingPageData[] = [
     exampleAfterEn: 'Diviso says: Ahmed is owed 450 SAR, Saad owes 200 SAR, Khalid owes 250 SAR',
     ctaText: 'سجّل الآن',
     ctaTextEn: 'Sign Up Now',
-    ctaSubtext: 'حمّل من App Store',
-    ctaSubtextEn: 'Download on the App Store'
+    ctaSubtext: 'حمّل من App Store أو Google Play',
+    ctaSubtextEn: 'Get it on the App Store or Google Play'
   },
   {
     slug: 'friends',
@@ -82,8 +82,8 @@ export const landingPagesData: LandingPageData[] = [
     exampleAfterEn: 'Everyone sees the numbers clearly, no one needs to ask for anything',
     ctaText: 'سجّل الآن',
     ctaTextEn: 'Sign Up Now',
-    ctaSubtext: 'حمّل من App Store',
-    ctaSubtextEn: 'Download on the App Store'
+    ctaSubtext: 'حمّل من App Store أو Google Play',
+    ctaSubtextEn: 'Get it on the App Store or Google Play'
   },
   {
     slug: 'shared-housing',
@@ -111,8 +111,8 @@ export const landingPagesData: LandingPageData[] = [
     exampleAfterEn: 'Everyone sees their balance and knows how much they owe and to whom',
     ctaText: 'سجّل الآن',
     ctaTextEn: 'Sign Up Now',
-    ctaSubtext: 'حمّل من App Store',
-    ctaSubtextEn: 'Download on the App Store'
+    ctaSubtext: 'حمّل من App Store أو Google Play',
+    ctaSubtextEn: 'Get it on the App Store or Google Play'
   },
   // Behavioral Use Cases
   {
@@ -141,8 +141,8 @@ export const landingPagesData: LandingPageData[] = [
     exampleAfterEn: 'All expenses recorded, and balances show who pays whom',
     ctaText: 'سجّل الآن',
     ctaTextEn: 'Sign Up Now',
-    ctaSubtext: 'حمّل من App Store',
-    ctaSubtextEn: 'Download on the App Store'
+    ctaSubtext: 'حمّل من App Store أو Google Play',
+    ctaSubtextEn: 'Get it on the App Store or Google Play'
   },
   {
     slug: 'groups',
@@ -170,8 +170,8 @@ export const landingPagesData: LandingPageData[] = [
     exampleAfterEn: 'Numbers are clear for everyone, no room for debate',
     ctaText: 'سجّل الآن',
     ctaTextEn: 'Sign Up Now',
-    ctaSubtext: 'حمّل من App Store',
-    ctaSubtextEn: 'Download on the App Store'
+    ctaSubtext: 'حمّل من App Store أو Google Play',
+    ctaSubtextEn: 'Get it on the App Store or Google Play'
   },
   {
     slug: 'who-paid-more',
@@ -199,8 +199,8 @@ export const landingPagesData: LandingPageData[] = [
     exampleAfterEn: 'Balances say: Saeed is owed 225 SAR, Mohammed owes 225 SAR',
     ctaText: 'سجّل الآن',
     ctaTextEn: 'Sign Up Now',
-    ctaSubtext: 'حمّل من App Store',
-    ctaSubtextEn: 'Download on the App Store'
+    ctaSubtext: 'حمّل من App Store أو Google Play',
+    ctaSubtextEn: 'Get it on the App Store or Google Play'
   },
   // Pain-Driven
   {
@@ -227,8 +227,8 @@ export const landingPagesData: LandingPageData[] = [
     exampleAfterEn: 'Everyone sees they owe you 100 SAR, and pays without you saying a word',
     ctaText: 'سجّل الآن',
     ctaTextEn: 'Sign Up Now',
-    ctaSubtext: 'حمّل من App Store',
-    ctaSubtextEn: 'Download on the App Store'
+    ctaSubtext: 'حمّل من App Store أو Google Play',
+    ctaSubtextEn: 'Get it on the App Store or Google Play'
   },
   // Educational
   {
@@ -257,8 +257,8 @@ export const landingPagesData: LandingPageData[] = [
     exampleAfterEn: 'One app, everything recorded, and calculations are automatic',
     ctaText: 'جرّب الآن',
     ctaTextEn: 'Try Now',
-    ctaSubtext: 'حمّل من App Store',
-    ctaSubtextEn: 'Download on the App Store'
+    ctaSubtext: 'حمّل من App Store أو Google Play',
+    ctaSubtextEn: 'Get it on the App Store or Google Play'
   },
   {
     slug: 'vs-notes-whatsapp',
@@ -284,8 +284,8 @@ export const landingPagesData: LandingPageData[] = [
     exampleAfterEn: 'Everyone opens Diviso and sees their current balance',
     ctaText: 'جرّب الفرق',
     ctaTextEn: 'Try the Difference',
-    ctaSubtext: 'حمّل من App Store',
-    ctaSubtextEn: 'Download on the App Store'
+    ctaSubtext: 'حمّل من App Store أو Google Play',
+    ctaSubtextEn: 'Get it on the App Store or Google Play'
   }
 ];
 

@@ -2,21 +2,91 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
+  "redirects": [
+    {
+      "source": "/:path((?!\\.well-known/).*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "^diviso\\.app$"
+        }
+      ],
+      "destination": "https://www.diviso.app/:path",
+      "permanent": true
+    }
+  ],
   "rewrites": [
-    { "source": "/((?!from/|launch/).*)", "destination": "/index.html" }
+    {
+      "source": "/download",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": ".*(iPhone|iPad|iPod|Android|android).*"
+        }
+      ],
+      "missing": [
+        {
+          "type": "query",
+          "key": "web"
+        }
+      ],
+      "destination": "/api/smart-link"
+    },
+    {
+      "source": "/((?!from/|launch/|api/).*)",
+      "destination": "/index.html"
+    }
   ],
   "headers": [
     {
       "source": "/index.html",
-      "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
     },
     {
       "source": "/sw.js",
-      "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
     },
     {
       "source": "/assets/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/.well-known/assetlinks.json",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    },
+    {
+      "source": "/.well-known/apple-app-site-association",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        }
+      ]
     }
   ]
 }

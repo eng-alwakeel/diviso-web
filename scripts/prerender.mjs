@@ -66,8 +66,10 @@ function formatContent(content) {
 
 // App Store campaign token: max 40 chars, [a-z0-9_].
 export const ct = (s) => s.toLowerCase().replace(/[^a-z0-9_]+/g, "_").slice(0, 40).replace(/_+$/, "");
-const appStoreUrl = (token) =>
-  `https://apps.apple.com/app/id${APP_STORE_ID}?pt=${PROVIDER_TOKEN}&ct=${ct(token)}&mt=8`;
+// MSG-145: download links go to the smart link — the site sends iPhone to
+// the App Store (this ct) and Android to Google Play (utm_campaign = ct).
+const smartLink = (token, source = "web", medium = "page") =>
+  `https://www.diviso.app/download?ct=${ct(token)}&amp;utm_source=${source}&amp;utm_medium=${medium}&amp;utm_campaign=${ct(token)}`;
 
 function setTag(html, regex, replacement) {
   return regex.test(html) ? html.replace(regex, replacement) : html.replace("</head>", `    ${replacement}\n  </head>`);
@@ -139,10 +141,10 @@ for (const a of blogArticles) {
   const body = `<div dir="rtl" lang="ar" data-prerender="blog">${nav(true)}<main><article>
 <h1>${esc(a.title)}</h1><p><time datetime="${a.publishDate}">${a.publishDate}</time> · ${a.readTime} د</p>
 ${formatContent(a.content)}
-<p><strong><a href="${appStoreUrl(token)}">حمّل Diviso من App Store</a></strong></p></article>
+<p><strong><a href="${smartLink(token, "blog", "article")}">حمّل تطبيق Diviso</a></strong></p></article>
 <article lang="en" dir="ltr"><h2>${esc(a.titleEn)}</h2>
 ${formatContent(a.contentEn)}
-<p><strong><a href="${appStoreUrl(token)}">Get Diviso on the App Store</a></strong></p></article>
+<p><strong><a href="${smartLink(token, "blog", "article")}">Get the Diviso app</a></strong></p></article>
 ${related ? `<nav><h2>مقالات ذات صلة</h2><ul>${related}</ul></nav>` : ""}</main></div>`;
   writeRoute(
     `/blog/${a.slug}`,
@@ -239,7 +241,7 @@ for (const p of seoLandingPages) {
 ${(p.features || []).length ? `<ul>${p.features.map((f) => `<li><strong>${esc(f.title)}</strong> — ${esc(f.description)}</li>`).join("")}</ul>` : ""}
 ${(p.useCases || []).length ? `<ul>${p.useCases.map((u) => `<li><strong>${esc(u.title)}</strong> — ${esc(u.description)}</li>`).join("")}</ul>` : ""}
 ${faqs ? `<section><h2>FAQ</h2>${faqs}</section>` : ""}
-<p><strong><a href="${appStoreUrl(`web_${p.slug}`)}">${esc(p.ctaText)}</a></strong></p></main></div>`;
+<p><strong><a href="${smartLink(`web_${p.slug}`, "web", "landing")}">${esc(p.ctaText)}</a></strong></p></main></div>`;
   const jsonLd = (p.faqs || []).length
     ? [
         {

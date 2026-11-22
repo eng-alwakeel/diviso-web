@@ -4,7 +4,7 @@
 
 Diviso helps groups log expenses, see who owes whom and who pays whom, record payments, and confirm receipt. Create a group and invite everyone with one invite link. Split equally or by agreed shares, choose who takes part in each expense, and let the group admin approve expenses. Groups also get a trip budget and an in-group chat. Diviso does not move money and never asks for bank details.
 
-Diviso is on the App Store for iPhone and iPad. Download it and start your group right away, with optional in-app plans for extra features. Built by Takamul Al-Bina Est. in Saudi Arabia.
+Diviso is on the App Store for iPhone and iPad and on Google Play for Android (https://www.diviso.app/download picks the right store). Download it and start your group right away, with optional in-app plans for extra features. Built by Takamul Al-Bina Est. in Saudi Arabia.
 
 ## Pages
 

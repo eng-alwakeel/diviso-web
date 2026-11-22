@@ -16,6 +16,176 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    slug: "split-shared-drinking-water-gallons-roommates",
+    title: "قوارير الماء (5 جالون) في السكن المشترك: صندوق شهري أم بالدور؟",
+    titleEn: "Shared Drinking Water Jugs in a Shared House: A Monthly Fund or Taking Turns?",
+    description: "في السكن المشترك، شراء قوارير الماء يُدار بطريقتين: صندوق شهري ثابت يُستخدم عند الحاجة، أو شراء بالتناوب بين الزملاء. أيهما أعدل يعتمد على مدى تقارب استهلاك كل شخص. دليل عملي بمثال لأربعة زملاء.",
+    descriptionEn: "In a shared house, buying drinking water jugs is usually managed one of two ways: a fixed monthly fund used as needed, or taking turns buying. Which is fairer depends on how similar each roommate's actual consumption is. A practical guide with a 4-roommate example.",
+    keywords: ["قوارير الماء في السكن المشترك", "تقسيم قوارير الماء بين الزملاء", "صندوق الماء الشهري للشقة", "شراء قوارير الماء بالتناوب", "تقسيم فاتورة الماء المعدني بين السكان", "من يشتري قارورة الماء في الشقة"],
+    keywordsEn: ["splitting water jug costs roommates", "shared water cooler bottle cost roommates", "monthly water fund shared house", "taking turns buying water jugs", "who buys the water bottle apartment", "split 5 gallon water cost roommates"],
+    category: "tips",
+    readTime: 9,
+    publishDate: "2026-11-22",
+    content: `
+## الإجابة المختصرة
+
+أفضل طريقة لإدارة شراء قوارير الماء في السكن المشترك تعتمد على **مدى تقارب استهلاك الزملاء**: نظام **"الصندوق الشهري"** (مساهمة ثابتة شهرية تُستخدم عند الحاجة) يناسب المجموعات ذات الاستهلاك المتقارب أو غير المنتظم، بينما نظام **"الدور"** (كل شخص يشتري قارورة بالتناوب) يناسب فقط من يستهلكون كميات متقاربة تقريباً — وإلا يصبح غير عادل مع الوقت.
+
+## الطريقة الأولى: صندوق شهري ثابت
+
+كل شخص يساهم بحصة متساوية (أو متناسبة مع استهلاكه) في صندوق مشترك شهري. أي زميل متوفر وقت انتهاء القارورة يشتري الجديدة من هذا الصندوق ويسجل المصروف، بدل أن ينتظر دوره أو يدفع من جيبه الخاص.
+
+## الطريقة الثانية: الشراء بالتناوب (الدور)
+
+لا يوجد صندوق منفصل؛ كل مرة تنتهي القارورة، يشتري الشخص التالي في ترتيب معروف للجميع قارورة جديدة على حسابه، ثم يأتي دور من بعده في المرة القادمة.
+
+## مثال عملي: 4 زملاء سكن ونظام الدور
+
+4 زملاء يتشاركون موزّع ماء، باستهلاك شهري إجمالي يمثل **100% من الكمية المستخدمة**، موزّع بينهم بشكل غير متساوٍ:
+
+- **الزميل أ**: يعمل من المنزل، يستهلك **40%** من الكمية الشهرية
+- **الزميل ب**: يستهلك **25%**
+- **الزميل ج**: يستهلك **20%**
+- **الزميل د**: يسافر كثيراً، يستهلك **15%** فقط
+
+لو استخدموا **نظام الدور** لشهر كامل (كل واحد يشتري بالتناوب، أي كل شخص يدفع 25% من إجمالي التكلفة بغض النظر عن استهلاكه الفعلي)، فإن الفرق بين ما استهلكه كل شخص وما دفعه فعلياً يكون:
+
+- الزميل أ: استهلك 40% لكن دفع 25% → **استهلك أكثر مما دفع بنسبة 15%**
+- الزميل ب: استهلك 25% ودفع 25% → **متوازن تماماً**
+- الزميل ج: استهلك 20% لكن دفع 25% → **دفع أكثر مما استهلك بنسبة 5%**
+- الزميل د: استهلك 15% لكن دفع 25% → **دفع أكثر مما استهلك بنسبة 10%**
+
+هذا يوضح أن نظام الدور البسيط يصبح غير عادل بوضوح كلما اختلف الاستهلاك الفعلي بين الزملاء — الزميل د يدفع ضعف نصيبه الحقيقي تقريباً، بينما الزميل أ يستفيد أكثر مما يدفع.
+
+## متى تتسوّى الحسبة؟
+
+### مراجعة شهرية ثابتة
+حددوا يوماً ثابتاً من كل شهر لمراجعة من اشترى كم، ومقارنتها بالاستهلاك التقريبي لكل شخص.
+
+### عند تغيّر واضح في جدول أحد الزملاء
+لو بدأ أحدهم العمل من المنزل أو سافر لفترة طويلة، هذا وقت مناسب لإعادة النظر في طريقة التقسيم بدل الانتظار لمراجعة شهرية فقط.
+
+### عند ملاحظة فرق واضح بين من يشتري أكثر ومن يستهلك أكثر
+إذا تكرر أن نفس الشخص يشتري أغلب القوارير دون أن يكون الأكثر استهلاكاً، فهذا مؤشر للتحول من الدور إلى الصندوق الشهري.
+
+## من يشتري القارورة الجديدة؟
+
+### في نظام الصندوق
+أي شخص متوفر وقت الحاجة يشتري القارورة ويسجل المصروف، والمبلغ يُخصم من الصندوق المشترك لا من جيبه الخاص.
+
+### في نظام الدور
+الشخص التالي في ترتيب معروف ومكتوب للجميع، لتجنب النزاع حول "دور من فعلاً".
+
+## أخطاء شائعة عند تقسيم تكلفة قوارير الماء
+
+- **الاستمرار بنظام الدور المتساوي رغم فرق واضح في الاستهلاك بين الزملاء**
+- **عدم تسجيل من اشترى آخر قارورة**، فيضيع ترتيب الدور ويتكرر النقاش حوله
+- **تأخير مراجعة الحسبة لفترة طويلة**، فتتراكم الفروقات الصغيرة حتى تصبح مبلغاً يصعب تذكّر تفاصيله
+
+## كيف يساعد Diviso في هذا الموقف؟
+
+- ✅ تسجيل كل قارورة وشرائها لحظة الشراء، ومن دفعها
+- ✅ عرض نصيب كل شخص بوضوح، سواء بالتساوي أو حسب نسبة استهلاكه
+- ✅ واجهة عربية أصلية وريال سعودي
+
+## أسئلة شائعة
+
+### هل نظام الدور عادل دائماً في شراء قوارير الماء؟
+لا، نظام الدور عادل فقط عندما يكون استهلاك جميع الزملاء متقارباً تقريباً. إذا اختلف الاستهلاك بوضوح، فالأعدل التحول لصندوق شهري يراعي نسبة استهلاك كل شخص الفعلية.
+
+### كل كم مدة يجب مراجعة حسبة قوارير الماء؟
+الأفضل مراجعة شهرية ثابتة في موعد معروف، بالإضافة لمراجعة فورية عند أي تغيّر واضح في جدول أو استهلاك أحد الزملاء.
+
+### ما الفرق بين نظام الصندوق ونظام الدور؟
+نظام الصندوق يعتمد على مساهمة ثابتة شهرية تُستخدم عند الحاجة من أي شخص متوفر، بينما نظام الدور يعتمد على شراء كل شخص قارورة على حسابه بالتناوب دون صندوق منفصل.
+
+## الخلاصة
+
+اختيار طريقة شراء قوارير الماء في السكن المشترك يعتمد على مدى تقارب استهلاك الزملاء: الدور المتساوي يناسب الاستهلاك المتقارب فقط، بينما الصندوق الشهري مع تسجيل الاستهلاك الفعلي يناسب الفروقات الواضحة بين الزملاء.
+
+**سجّل كل قارورة ماء ومن اشتراها في Diviso، ودع التطبيق يوضح نصيب كل شخص بدقة.**
+    `,
+    contentEn: `
+## The Short Answer
+
+The best way to manage buying drinking water jugs in a shared house depends on **how similar roommates' actual consumption is**: a **"monthly fund" system** (a fixed monthly contribution used as needed) suits groups with similar or irregular consumption, while a **"taking turns" system** (each person buys a jug in rotation) only works fairly for roommates who drink roughly the same amount — otherwise it becomes unfair over time.
+
+## Method 1: A Fixed Monthly Fund
+
+Each person contributes an equal (or usage-proportional) share to a shared monthly fund. Whoever is available when a jug runs out buys the new one from that fund and logs the expense, instead of waiting for their turn or paying out of pocket.
+
+## Method 2: Taking Turns (Rotation)
+
+There's no separate fund; each time a jug runs out, the next person in a known order buys a new one on their own, then it's the next person's turn the following time.
+
+## A Worked Example: 4 Roommates and a Rotation System
+
+4 roommates share a water dispenser, with total monthly consumption representing **100% of the amount used**, split unevenly between them:
+
+- **Roommate A**: works from home, drinks **40%** of the monthly amount
+- **Roommate B**: drinks **25%**
+- **Roommate C**: drinks **20%**
+- **Roommate D**: travels frequently, drinks only **15%**
+
+If they used a **rotation system** for a full month (each person buys in turn, meaning each pays 25% of the total cost regardless of actual consumption), the gap between what each person consumed and what they actually paid looks like this:
+
+- Roommate A: consumed 40% but paid 25% → **consumed 15% more than they paid for**
+- Roommate B: consumed 25% and paid 25% → **exactly balanced**
+- Roommate C: consumed 20% but paid 25% → **paid 5% more than they consumed**
+- Roommate D: consumed 15% but paid 25% → **paid 10% more than they consumed**
+
+This shows that a simple rotation system becomes clearly unfair once actual consumption differs between roommates — Roommate D ends up paying nearly double their real share, while Roommate A benefits more than they pay for.
+
+## When Should You Settle Up?
+
+### A Fixed Monthly Review
+Pick a fixed day each month to review who bought how much, and compare it to each person's approximate consumption.
+
+### When a Roommate's Schedule Clearly Changes
+If someone starts working from home or travels for an extended period, that's a good time to revisit the splitting method rather than waiting for the next monthly review.
+
+### When You Notice a Clear Gap Between Who Buys and Who Drinks More
+If the same person keeps buying most of the jugs without being the highest consumer, that's a sign to switch from rotation to a monthly fund.
+
+## Who Buys the New Jug?
+
+### Under the Fund System
+Whoever is available when it's needed buys the jug and logs the expense, with the amount deducted from the shared fund rather than their own pocket.
+
+### Under the Rotation System
+The next person in a clear, written order everyone knows, to avoid arguments over whose turn it actually is.
+
+## Common Mistakes When Splitting Water Jug Costs
+
+- **Sticking with an equal rotation despite a clear consumption gap between roommates**
+- **Not logging who bought the last jug**, which loses track of whose turn it is and causes repeated disputes
+- **Delaying the review for too long**, letting small differences pile up into an amount nobody remembers the details of
+
+## How Diviso Helps With This
+
+- ✅ Logs each jug purchase the moment it happens, and who paid for it
+- ✅ Clearly shows each person's share, whether split equally or by consumption percentage
+- ✅ A native Arabic interface and Saudi Riyal
+
+## Frequently Asked Questions
+
+### Is a rotation system always fair for buying water jugs?
+No, a rotation system is only fair when all roommates' consumption is roughly similar. If consumption clearly differs, it's fairer to switch to a monthly fund that accounts for each person's actual usage percentage.
+
+### How often should you review the water jug costs?
+Ideally a fixed monthly review on a set date, plus an immediate review whenever a roommate's schedule or consumption clearly changes.
+
+### What's the difference between a fund system and a rotation system?
+A fund system relies on a fixed monthly contribution used as needed by whoever is available, while a rotation system relies on each person buying a jug on their own in turn, with no separate fund.
+
+## Conclusion
+
+Choosing how to buy drinking water jugs in a shared house depends on how similar roommates' consumption actually is: an equal rotation only works for similar consumption, while a monthly fund that tracks actual usage fits clear differences between roommates.
+
+**Log every water jug and who bought it in Diviso, and let the app show each person's exact share.**
+    `
+  },
+  {
     slug: "ask-friend-to-pay-back-money-politely",
     title: "كيف تطالب صديقك بفلوسك بدون إحراج؟ 5 عبارات جاهزة وتوقيت مناسب",
     titleEn: "How to Ask a Friend to Pay You Back Without Awkwardness: 5 Ready Scripts and the Right Timing",

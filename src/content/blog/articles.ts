@@ -938,9 +938,9 @@ Choosing a bill-splitting app shouldn't rely on popularity alone: check for nati
   {
     slug: "how-to-split-rent-with-flatmates-uk",
     title: "كيف يُقسَّم الإيجار بين شركاء السكن؟ بالتساوي أم حسب حجم الغرفة أم الدخل",
-    titleEn: "How to Split Rent With Flatmates: Equal, by Room Size, or by Income",
+    titleEn: "How to Split Rent With Flatmates Fairly (UK): Equal, Room Size or Income — Worked Example",
     description: "ثلاث طرق شائعة لتقسيم إيجار شقة مشتركة: بالتساوي، حسب حجم ومزايا كل غرفة، أو حسب دخل كل شخص. الطريقة الأعدل تعتمد على مدى اختلاف الغرف وظروف الساكنين. دليل عملي بمثال محسوب بالنسب.",
-    descriptionEn: "There are three common ways flatmates split rent: equally, by each room's size and features, or by each person's income. Which one is fairest depends on how different the rooms and the flatmates' circumstances actually are. A practical guide with a percentage-based worked example and a UK bills note.",
+    descriptionEn: "Three fair ways to split rent with flatmates in the UK — equally, by room size, or by income — with a percentage worked example and a note on splitting bills.",
     keywords: ["تقسيم إيجار السكن المشترك", "تقسيم الإيجار حسب حجم الغرفة", "تقسيم الإيجار حسب الدخل", "كيف نقسم إيجار الشقة بين الشركاء", "إيجار عادل بين سكن مشترك", "فرق السعر بين غرف الشقة المشتركة"],
     keywordsEn: ["how to split rent with flatmates", "splitting rent by room size", "splitting rent by income", "fair way to divide rent in a shared house", "flatshare rent calculator method", "council tax flatshare who pays"],
     category: "guides",

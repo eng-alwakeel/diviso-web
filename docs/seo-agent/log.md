@@ -2,6 +2,7 @@
 
 One line per article, newest first.
 
+- 2026-11-26 | refresh | https://diviso.app/blog/how-to-split-rent-with-flatmates-uk | source: insights.md open item 2 (2026-11-23 refresh) — titleEn/descriptionEn retitle only (16 impressions at pos 4.6, 0 clicks); Arabic title/description, slug, keywords, body, CTA unchanged
 - 2026-11-24 | refresh | https://diviso.app/blog/ask-friend-to-pay-back-money-politely | source: insights.md open item 1 (2026-11-23 refresh) — title/description retitle only (113 impressions at pos 4.2 but 2.7% CTR; matches the visible query «أسلوب طلب فلوس»; old description opened with «أفضل طريقة», flagged as lesson Q2); slug/keywords/body/CTA unchanged
 - 2026-11-22 | new | https://diviso.app/blog/split-shared-drinking-water-gallons-roommates | source: insights.md open item 3 (2026-11-16 refresh) / backlog.md row 19 — monthly-fund vs rotation comparison, 4-roommate percentage worked example (40/25/20/15% consumption vs equal 25%-each rotation); no prices/fabricated stats; backlog row 19 moved to Published
 - 2026-11-19 | refresh | https://diviso.app/blog/split-electricity-water-bills-by-usage | source: insights.md open item 2 (2026-11-16 refresh) — added "splitting one building water meter across units" H2 in both languages, with a 4-unit worked example comparing by-residents vs by-unit-size splits (40/20/30/10% vs 30/25/25/20%), percentages only; publishDate left unchanged (no separate dateModified field); pre-existing SAR prices in the article's other example untouched, out of scope
